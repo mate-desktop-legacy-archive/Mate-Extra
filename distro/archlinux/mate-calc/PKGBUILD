@@ -12,8 +12,7 @@ url="http://matsusoft.com.ar/projects"
 build () 
 {
 	cd "${srcdir}/${pkgname}"
-	./autogen.sh
-	make || return 1
+	./autogen.sh; ./configure --prefix=/usr || return 1
 }
 
 
