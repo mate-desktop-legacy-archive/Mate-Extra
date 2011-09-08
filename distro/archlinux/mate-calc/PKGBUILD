@@ -9,15 +9,17 @@ makedepends('pkgconfig')
 groups=('mate-extra')
 url="http://matsusoft.com.ar/projects"
 
-build () 
+build() 
 {
 	cd "${srcdir}/${pkgname}"
-	./autogen.sh; ./configure --prefix=/usr || return 1
+	./autogen.sh || return 1
+	./configure --prefix=/usr || return 1
 }
 
 
 package()
 {
 	cd "${srcdir}/${pkgname}"
-	make DESTDIR="{pkgdir}" install
+	make DESTDIR="{pkgdir}" install || return 1
 }
+
