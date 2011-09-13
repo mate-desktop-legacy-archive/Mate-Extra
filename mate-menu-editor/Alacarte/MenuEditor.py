@@ -37,8 +37,8 @@ class MenuEditor:
 
 	def __loadMenus(self):
 		self.applications = Menu()
-		self.applications.tree = gmenu.lookup_tree('applications.menu', gmenu.FLAGS_SHOW_EMPTY|gmenu.FLAGS_INCLUDE_EXCLUDED|gmenu.FLAGS_INCLUDE_NODISPLAY|gmenu.FLAGS_SHOW_ALL_SEPARATORS)
-		self.applications.visible_tree = gmenu.lookup_tree('applications.menu')
+		self.applications.tree = gmenu.lookup_tree('mate-applications.menu', gmenu.FLAGS_SHOW_EMPTY|gmenu.FLAGS_INCLUDE_EXCLUDED|gmenu.FLAGS_INCLUDE_NODISPLAY|gmenu.FLAGS_SHOW_ALL_SEPARATORS)
+		self.applications.visible_tree = gmenu.lookup_tree('mate-applications.menu')
 		self.applications.tree.sort_key = gmenu.SORT_DISPLAY_NAME
 		self.applications.visible_tree.sort_key = gmenu.SORT_DISPLAY_NAME
 		self.applications.path = os.path.join(util.getUserMenuPath(), self.applications.tree.get_menu_file())
@@ -48,16 +48,16 @@ class MenuEditor:
 			self.applications.dom = xml.dom.minidom.parse(self.applications.path)
 		self.__remove_whilespace_nodes(self.applications.dom)
 
-		self.settings = Menu() 	 
-		self.settings.tree = gmenu.lookup_tree('settings.menu', gmenu.FLAGS_SHOW_EMPTY|gmenu.FLAGS_INCLUDE_EXCLUDED|gmenu.FLAGS_INCLUDE_NODISPLAY|gmenu.FLAGS_SHOW_ALL_SEPARATORS)
-		self.settings.visible_tree = gmenu.lookup_tree('settings.menu') 	 
+		self.settings = Menu()
+		self.settings.tree = gmenu.lookup_tree('mate-settings.menu', gmenu.FLAGS_SHOW_EMPTY|gmenu.FLAGS_INCLUDE_EXCLUDED|gmenu.FLAGS_INCLUDE_NODISPLAY|gmenu.FLAGS_SHOW_ALL_SEPARATORS)
+		self.settings.visible_tree = gmenu.lookup_tree('mate-settings.menu')
 		self.settings.tree.sort_key = gmenu.SORT_DISPLAY_NAME
 		self.settings.visible_tree.sort_key = gmenu.SORT_DISPLAY_NAME
-		self.settings.path = os.path.join(util.getUserMenuPath(), self.settings.tree.get_menu_file()) 	 
-		if not os.path.isfile(self.settings.path): 	 
-			self.settings.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.settings.tree)) 	 
-		else: 	 
-			self.settings.dom = xml.dom.minidom.parse(self.settings.path) 	 
+		self.settings.path = os.path.join(util.getUserMenuPath(), self.settings.tree.get_menu_file())
+		if not os.path.isfile(self.settings.path):
+			self.settings.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.settings.tree))
+		else:
+			self.settings.dom = xml.dom.minidom.parse(self.settings.path)
 		self.__remove_whilespace_nodes(self.settings.dom)
 
 		self.save(True)
