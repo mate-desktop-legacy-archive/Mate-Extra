@@ -1,0 +1,44 @@
+pkgname=mate-applets
+pkgver=2011.08.31
+pkgrel=1
+pkgdesc="MATE Applets"
+arch=(i686 x86_64)
+license=('GPL')
+depends=('gstreamer0.10-base-plugins' 'mate-panel' 'libgtop' 'libmatenotify' 'cpufrequtils')
+makedepends=('mate-doc-utils' 'pkgconfig' 'mate-settings-daemon' 'intltool' 'mate-icon-theme' 'networkmanager' 'mate-character-map') # 'mate-python-desktop'
+groups=('mate-extras')
+options=(!emptydirs)
+replace=('gnome-applets')
+conflicts=('gnome-applets')
+url="http://matsusoft.com.ar/projects"
+install=mate-applets.install
+source=(http://sourceforge.net/projects/matede/files/${pkgver}/${pkgname}.tar.gz/download)
+sha256sums=('795f38d3e2be522c3fabf3a49bb2bd9ff010abf2d7f0b9a3e026a7b7773aeefc')
+
+build() {
+	cd "${srcdir}/${pkgname}"
+	mate-doc-prepare
+	autoreconf -i
+	automake
+
+	PYTHON=/usr/bin/python2 ./configure --prefix=/usr --sysconfdir=/etc \
+		--libexecdir=/usr/lib/${pkgname} \
+		--localstatedir=/var --disable-static \
+		--disable-scrollkeeper --enable-mixer-applet \
+		--disable-schemas-install || return 1
+
+	# there is some pre-compiled files on the tar
+	make clean
+	make || return 1
+}
+
+package() {
+	cd "${srcdir}/${pkgname}"
+
+	make MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 DESTDIR="${pkgdir}" install || return 1
+	#rm -f ${pkgdir}/usr/lib/*.la # can be used options=(!libtools)
+
+	install -m755 -d "${pkgdir}/usr/share/mateconf/schemas"
+	mateconf-merge-schema "${pkgdir}/usr/share/mateconf/schemas/${pkgname}.schemas" --domain ${pkgname} ${pkgdir}/etc/mateconf/schemas/*.schemas || return 1
+	rm -f ${pkgdir}/etc/mateconf/schemas/*.schemas
+}
