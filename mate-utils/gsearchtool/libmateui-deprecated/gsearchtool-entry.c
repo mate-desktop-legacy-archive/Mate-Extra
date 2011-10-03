@@ -537,7 +537,6 @@ GtkWidget* gsearch_history_entry_new(const gchar *history_id, gboolean enable_co
 	ret = g_object_new(GSEARCH_TYPE_HISTORY_ENTRY,
 						"history-id", history_id,
 						"model", store,
-						"text-column", 0,
 						"has-entry", TRUE,
 						NULL);
 
