@@ -50,10 +50,11 @@
 #include "gdict-marshal.h"
 
 /**
- * G_UNICODE_COMBINING_MARK was deprecated on gtk 2.30
+ * G_UNICODE_COMBINING_MARK was deprecated on glib 2.30
  * use G_UNICODE_SPACING_MARK
  */
-#if !GTK_CHECK_VERSION(2, 30, 0)
+
+#if !GLIB_CHECK_VERSION(2, 29, 14)
 	#define G_UNICODE_SPACING_MARK G_UNICODE_COMBINING_MARK
 #endif
 
