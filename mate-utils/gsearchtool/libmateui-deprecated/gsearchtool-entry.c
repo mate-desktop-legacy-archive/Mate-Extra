@@ -18,7 +18,7 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, 
+ * Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  *
  * Author: Paolo Borelli  (gedit-history-entry.c)
@@ -54,13 +54,13 @@ struct _GsearchHistoryEntryPrivate
 {
 	gchar              *history_id;
 	guint               history_length;
-	
+
 	GtkEntryCompletion *completion;
-	
+
 	MateConfClient        *mateconf_client;
 };
 
-G_DEFINE_TYPE (GsearchHistoryEntry, gsearch_history_entry, GTK_TYPE_COMBO_BOX_ENTRY)
+G_DEFINE_TYPE (GsearchHistoryEntry, gsearch_history_entry, GTK_TYPE_COMBO_BOX)
 
 static void
 gsearch_history_entry_set_property (GObject      *object,
@@ -126,7 +126,7 @@ gsearch_history_entry_finalize (GObject *object)
 	GsearchHistoryEntryPrivate *priv;
 
 	priv = GSEARCH_HISTORY_ENTRY (object)->priv;
-	
+
 	g_free (priv->history_id);
 
 	if (priv->mateconf_client != NULL)
@@ -138,17 +138,17 @@ gsearch_history_entry_finalize (GObject *object)
 	G_OBJECT_CLASS (gsearch_history_entry_parent_class)->finalize (object);
 }
 
-static void 
+static void
 gsearch_history_entry_class_init (GsearchHistoryEntryClass *klass)
 {
 	GObjectClass   *object_class = G_OBJECT_CLASS (klass);
 	GtkObjectClass *gtkobject_class = GTK_OBJECT_CLASS (klass);
-	
+
 	object_class->set_property = gsearch_history_entry_set_property;
 	object_class->get_property = gsearch_history_entry_get_property;
 	object_class->finalize = gsearch_history_entry_finalize;
 	gtkobject_class->destroy = gsearch_history_entry_destroy;
-	
+
 	g_object_class_install_property (object_class,
 					 PROP_HISTORY_ID,
 					 g_param_spec_string ("history-id",
@@ -328,7 +328,7 @@ insert_history_item (GsearchHistoryEntry *entry,
 
 	if (g_utf8_strlen (text, -1) <= MIN_ITEM_LEN)
 		return;
-		
+
 	store = get_history_store (entry);
 
 	/* remove the text from the store if it was already
@@ -400,7 +400,7 @@ gsearch_history_entry_load_history (GsearchHistoryEntry *entry)
 	     l = l->next, i++)
 	{
 		gtk_list_store_append (store, &iter);
-		gtk_list_store_set (store, 
+		gtk_list_store_set (store,
 				    &iter,
 				    0,
 				    l->data,
@@ -437,7 +437,7 @@ gsearch_history_entry_init (GsearchHistoryEntry *entry)
 	priv->history_length = GSEARCH_HISTORY_ENTRY_HISTORY_LENGTH_DEFAULT;
 
 	priv->completion = NULL;
-	
+
 	priv->mateconf_client = mateconf_client_get_default ();
 }
 
@@ -474,16 +474,16 @@ gsearch_history_entry_set_enable_completion (GsearchHistoryEntry *entry,
 					     gboolean           enable)
 {
 	g_return_if_fail (GSEARCH_IS_HISTORY_ENTRY (entry));
-	
+
 	if (enable)
 	{
 		if (entry->priv->completion != NULL)
 			return;
-		
+
 		entry->priv->completion = gtk_entry_completion_new ();
-		gtk_entry_completion_set_model (entry->priv->completion, 
+		gtk_entry_completion_set_model (entry->priv->completion,
 						GTK_TREE_MODEL (get_history_store (entry)));
-		
+
 		/* Use model column 0 as the text column */
 		gtk_entry_completion_set_text_column (entry->priv->completion, 0);
 
@@ -492,9 +492,9 @@ gsearch_history_entry_set_enable_completion (GsearchHistoryEntry *entry,
 
 		gtk_entry_completion_set_popup_completion (entry->priv->completion, FALSE);
 		gtk_entry_completion_set_inline_completion (entry->priv->completion, TRUE);
-	
+
 		/* Assign the completion to the entry */
-		gtk_entry_set_completion (GTK_ENTRY (gsearch_history_entry_get_entry(entry)), 
+		gtk_entry_set_completion (GTK_ENTRY (gsearch_history_entry_get_entry(entry)),
 					  entry->priv->completion);
 	}
 	else
@@ -502,31 +502,29 @@ gsearch_history_entry_set_enable_completion (GsearchHistoryEntry *entry,
 		if (entry->priv->completion == NULL)
 			return;
 
-		gtk_entry_set_completion (GTK_ENTRY (gsearch_history_entry_get_entry (entry)), 
+		gtk_entry_set_completion (GTK_ENTRY (gsearch_history_entry_get_entry (entry)),
 					  NULL);
-		
+
 		g_object_unref (entry->priv->completion);
-		
+
 		entry->priv->completion = NULL;
 	}
 }
-							 
+
 gboolean
 gsearch_history_entry_get_enable_completion (GsearchHistoryEntry *entry)
 {
 	g_return_val_if_fail (GSEARCH_IS_HISTORY_ENTRY (entry), FALSE);
-	
+
 	return entry->priv->completion != NULL;
 }
 
-GtkWidget *
-gsearch_history_entry_new (const gchar *history_id,
-			   gboolean     enable_completion)
+GtkWidget* gsearch_history_entry_new(const gchar *history_id, gboolean enable_completion)
 {
-	GtkWidget *ret;
-	GtkListStore *store;
+	GtkWidget* ret;
+	GtkListStore* store;
 
-	g_return_val_if_fail (history_id != NULL, NULL);
+	g_return_val_if_fail(history_id != NULL, NULL);
 
 	/* Note that we are setting the model, so
 	 * user must be careful to always manipulate
@@ -534,23 +532,24 @@ gsearch_history_entry_new (const gchar *history_id,
 	 * functions.
 	 */
 
-	store = gtk_list_store_new (1, G_TYPE_STRING);
+	store = gtk_list_store_new(1, G_TYPE_STRING);
 
-	ret = g_object_new (GSEARCH_TYPE_HISTORY_ENTRY,
-			    "history-id", history_id,
-	                    "model", store,
-			    "text-column", 0,
-	                    NULL);
+	ret = g_object_new(GSEARCH_TYPE_HISTORY_ENTRY,
+						"history-id", history_id,
+						"model", store,
+						"text-column", 0,
+						"has-entry", TRUE,
+						NULL);
 
 	g_object_unref (store);
 
 	/* loading has to happen after the model
-	 * has been set. However the model is not a 
+	 * has been set. However the model is not a
 	 * G_PARAM_CONSTRUCT property of GtkComboBox
 	 * so we cannot do this in the constructor.
-	 * For now we simply do here since this widget is 
+	 * For now we simply do here since this widget is
 	 * not bound to other programming languages.
-	 * A maybe better alternative is to override the 
+	 * A maybe better alternative is to override the
 	 * model property of combobox and mark CONTRUCT_ONLY.
 	 * This would also ensure that the model cannot be
 	 * set explicitely at a later time.
@@ -559,14 +558,14 @@ gsearch_history_entry_new (const gchar *history_id,
 
 	gsearch_history_entry_set_enable_completion (GSEARCH_HISTORY_ENTRY (ret),
 						   enable_completion);
-						   
+
 	return ret;
 }
 
 /*
  * Utility function to get the editable text entry internal widget.
- * I would prefer to not expose this implementation detail and 
- * simply make the GsearchHistoryEntry widget implement the 
+ * I would prefer to not expose this implementation detail and
+ * simply make the GsearchHistoryEntry widget implement the
  * GtkEditable interface. Unfortunately both GtkEditable and
  * GtkComboBox have a "changed" signal and I am not sure how to
  * handle the conflict.

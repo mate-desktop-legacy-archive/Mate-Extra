@@ -117,9 +117,6 @@ EXEEXT = @EXEEXT@
 F77 = @F77@
 FC = @FC@
 FGREP = @FGREP@
-MATECONFTOOL = @MATECONFTOOL@
-MATECONF_SCHEMA_CONFIG_SOURCE = @MATECONF_SCHEMA_CONFIG_SOURCE@
-MATECONF_SCHEMA_FILE_DIR = @MATECONF_SCHEMA_FILE_DIR@
 GDICT_DEBUG_CFLAGS = @GDICT_DEBUG_CFLAGS@
 GDICT_MAJOR_VERSION = @GDICT_MAJOR_VERSION@
 GDICT_MICRO_VERSION = @GDICT_MICRO_VERSION@
@@ -137,6 +134,8 @@ GREP_COMMAND = @GREP_COMMAND@
 GTHREAD_CFLAGS = @GTHREAD_CFLAGS@
 GTHREAD_LIBS = @GTHREAD_LIBS@
 GTKDOC_CHECK = @GTKDOC_CHECK@
+GTKDOC_DEPS_CFLAGS = @GTKDOC_DEPS_CFLAGS@
+GTKDOC_DEPS_LIBS = @GTKDOC_DEPS_LIBS@
 GTKDOC_MKPDF = @GTKDOC_MKPDF@
 GTKDOC_REBASE = @GTKDOC_REBASE@
 HELP_DIR = @HELP_DIR@
@@ -173,6 +172,9 @@ MAINTAINER_CFLAGS = @MAINTAINER_CFLAGS@
 MAKEFLAGS = @MAKEFLAGS@
 MAKEINFO = @MAKEINFO@
 MANIFEST_TOOL = @MANIFEST_TOOL@
+MATECONFTOOL = @MATECONFTOOL@
+MATECONF_SCHEMA_CONFIG_SOURCE = @MATECONF_SCHEMA_CONFIG_SOURCE@
+MATECONF_SCHEMA_FILE_DIR = @MATECONF_SCHEMA_FILE_DIR@
 MATE_UTILS_CFLAGS = @MATE_UTILS_CFLAGS@
 MATE_UTILS_LIBS = @MATE_UTILS_LIBS@
 MKDIR_P = @MKDIR_P@
@@ -348,6 +350,7 @@ _DOC_C_HTML = $(foreach f,						\
 _DOC_POFILES = $(if $(DOC_MODULE)$(DOC_ID),					\
 	$(foreach lc,$(_DOC_REAL_LINGUAS),$(lc)/$(lc).po))
 
+_DOC_MOFILES = $(patsubst %.po,%.mo,$(_DOC_POFILES))
 _DOC_LC_MODULES = $(if $(DOC_MODULE),						\
 	$(foreach lc,$(_DOC_REAL_LINGUAS),$(lc)/$(DOC_MODULE).xml))
 
@@ -692,6 +695,9 @@ omf: $(_DOC_OMF_ALL)
 .PHONY: po
 po: $(_DOC_POFILES)
 
+.PHONY: mo
+mo: $(_DOC_MOFILES)
+
 $(_DOC_POFILES):
 	@if ! test -d $(dir $@); then \
 	  echo "mkdir $(dir $@)"; \
@@ -719,16 +725,23 @@ $(_DOC_POFILES):
 	    $(_xml2po) -m $(_xml2po_mode) -e -u $(notdir $@) $$docs); \
 	fi
 
+$(_DOC_MOFILES): %.mo: %.po
+	@if ! test -d $(dir $@); then \
+	  echo "mkdir $(dir $@)"; \
+	  mkdir "$(dir $@)"; \
+	fi
+	msgfmt -o $@ $<
+
 # FIXME: fix the dependancy
 # FIXME: hook xml2po up
-$(_DOC_LC_DOCS) : $(_DOC_POFILES)
+$(_DOC_LC_DOCS) : $(_DOC_MOFILES)
 $(_DOC_LC_DOCS) : $(_DOC_C_DOCS)
 	if ! test -d $(dir $@); then mkdir $(dir $@); fi
 	if [ -f "C/$(notdir $@)" ]; then d="../"; else d="$(_DOC_ABS_SRCDIR)/"; fi; \
-	po="$(dir $@)$(patsubst %/$(notdir $@),%,$@).po"; \
-	if [ -f "$${po}" ]; then po="../$${po}"; else po="$(_DOC_ABS_SRCDIR)/$${po}"; fi; \
+	mo="$(dir $@)$(patsubst %/$(notdir $@),%,$@).mo"; \
+	if [ -f "$${mo}" ]; then mo="../$${mo}"; else mo="$(_DOC_ABS_SRCDIR)/$${mo}"; fi; \
 	(cd $(dir $@) && \
-	  $(_xml2po) -m $(_xml2po_mode) -e -p "$${po}" \
+	  $(_xml2po) -m $(_xml2po_mode) -e -t "$${mo}" \
 	    "$${d}C/$(notdir $@)" > $(notdir $@).tmp && \
 	    cp $(notdir $@).tmp $(notdir $@) && rm -f $(notdir $@).tmp)
 .PHONY: pot
@@ -754,12 +767,14 @@ clean-doc-omf: ; rm -f $(_DOC_OMF_DB) $(_DOC_OMF_HTML)
 clean-doc-dsk: ; rm -f $(_DOC_DSK_DB) $(_DOC_DSK_HTML)
 clean-doc-lc:
 	rm -f $(_DOC_LC_DOCS)
+	rm -f $(_DOC_MOFILES)
 	@list='$(_DOC_POFILES)'; for po in $$list; do \
 	  if ! test "$$po" -ef "$(srcdir)/$$po"; then \
 	    echo "rm -f $$po"; \
 	    rm -f "$$po"; \
 	  fi; \
 	done
+#	.xml2.po.mo cleaning is obsolete as of 0.18.1 and could be removed in 0.20.x
 	@for lc in C $(_DOC_REAL_LINGUAS); do \
 	  if test -f "$$lc/.xml2po.mo"; then \
 	    echo "rm -f $$lc/.xml2po.mo"; \
