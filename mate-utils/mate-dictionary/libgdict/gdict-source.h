@@ -87,7 +87,7 @@ gchar *               gdict_source_to_data         (GdictSource           *sourc
 
 void                  gdict_source_set_name        (GdictSource           *source,
 						    const gchar           *name);
-constconst gchar *gdict_source_get_name        (GdictSource           *source);
+const gchar *gdict_source_get_name        (GdictSource           *source);
 void                  gdict_source_set_description (GdictSource           *source,
 						    const gchar           *description);
 const gchar *gdict_source_get_description (GdictSource           *source);
