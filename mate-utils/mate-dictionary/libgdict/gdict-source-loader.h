@@ -41,17 +41,17 @@ struct _GdictSourceLoader
 {
   /*< private >*/
   GObject parent_instance;
-  
+
   GdictSourceLoaderPrivate *priv;
 };
 
 struct _GdictSourceLoaderClass
 {
   GObjectClass parent_class;
-  
+
   void (*source_loaded) (GdictSourceLoader *loader,
   			 GdictSource       *source);
-  
+
   /* padding for future expansion */
   void (*_gdict_source_1) (void);
   void (*_gdict_source_2) (void);
@@ -65,10 +65,10 @@ GdictSourceLoader *    gdict_source_loader_new             (void);
 void                   gdict_source_loader_update          (GdictSourceLoader *loader);
 void                   gdict_source_loader_add_search_path (GdictSourceLoader *loader,
 							    const gchar       *path);
-G_CONST_RETURN GSList *gdict_source_loader_get_paths       (GdictSourceLoader *loader);
+const GSList *gdict_source_loader_get_paths       (GdictSourceLoader *loader);
 gchar **               gdict_source_loader_get_names       (GdictSourceLoader *loader,
 							    gsize             *length) G_GNUC_MALLOC;
-G_CONST_RETURN GSList *gdict_source_loader_get_sources     (GdictSourceLoader *loader);
+const GSList *gdict_source_loader_get_sources     (GdictSourceLoader *loader);
 GdictSource *          gdict_source_loader_get_source      (GdictSourceLoader *loader,
 							    const gchar       *name);
 gboolean               gdict_source_loader_has_source      (GdictSourceLoader *loader,

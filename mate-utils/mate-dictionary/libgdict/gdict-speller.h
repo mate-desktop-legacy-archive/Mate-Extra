@@ -39,7 +39,7 @@ typedef struct _GdictSpellerClass	GdictSpellerClass;
 struct _GdictSpeller
 {
   GtkVBox parent_instance;
-  
+
   /*< private >*/
   GdictSpellerPrivate *priv;
 };
@@ -56,7 +56,7 @@ struct _GdictSpellerClass
   void (*_gdict_speller_1) (void);
   void (*_gdict_speller_2) (void);
   void (*_gdict_speller_3) (void);
-  void (*_gdict_speller_4) (void);  
+  void (*_gdict_speller_4) (void);
 };
 
 GType                 gdict_speller_get_type         (void) G_GNUC_CONST;
@@ -69,10 +69,10 @@ void                  gdict_speller_set_context      (GdictSpeller *speller,
 GdictContext *        gdict_speller_get_context      (GdictSpeller *speller);
 void                  gdict_speller_set_database     (GdictSpeller *speller,
 						      const gchar *database);
-G_CONST_RETURN gchar *gdict_speller_get_database     (GdictSpeller *speller);
+const gchar *gdict_speller_get_database     (GdictSpeller *speller);
 void                  gdict_speller_set_strategy     (GdictSpeller *speller,
 						      const gchar  *strategy);
-G_CONST_RETURN gchar *gdict_speller_get_strategy     (GdictSpeller *speller);
+const gchar *gdict_speller_get_strategy     (GdictSpeller *speller);
 
 void                  gdict_speller_clear            (GdictSpeller *speller);
 void                  gdict_speller_match            (GdictSpeller *speller,

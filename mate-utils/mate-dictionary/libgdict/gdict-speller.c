@@ -21,7 +21,7 @@
  * SECTION:gdict-speller
  * @short_description: Display matching words
  *
- * #GdictSpeller is a widget showing a list of words returned by a 
+ * #GdictSpeller is a widget showing a list of words returned by a
  * #GdictContext query, using a specific database and a matching strategy.
  */
 
@@ -91,7 +91,7 @@ enum
 enum
 {
   PROP_0,
-  
+
   PROP_CONTEXT,
   PROP_WORD,
   PROP_DATABASE,
@@ -116,25 +116,25 @@ set_gdict_context (GdictSpeller *speller,
 		   GdictContext *context)
 {
   GdictSpellerPrivate *priv;
-  
+
   g_assert (GDICT_IS_SPELLER (speller));
-  
+
   priv = speller->priv;
   if (priv->context)
     {
       if (priv->start_id)
         {
           GDICT_NOTE (SPELLER, "Removing old context handlers");
-          
+
           g_signal_handler_disconnect (priv->context, priv->start_id);
           g_signal_handler_disconnect (priv->context, priv->match_id);
           g_signal_handler_disconnect (priv->context, priv->end_id);
-          
+
           priv->start_id = 0;
           priv->end_id = 0;
           priv->match_id = 0;
         }
-      
+
       if (priv->error_id)
         {
           g_signal_handler_disconnect (priv->context, priv->error_id);
@@ -143,7 +143,7 @@ set_gdict_context (GdictSpeller *speller,
         }
 
       GDICT_NOTE (SPELLER, "Removing old context");
-      
+
       g_object_unref (G_OBJECT (priv->context));
     }
 
@@ -158,7 +158,7 @@ set_gdict_context (GdictSpeller *speller,
     }
 
   GDICT_NOTE (SPELLER, "Setting new context\n");
-    
+
   priv->context = context;
   g_object_ref (G_OBJECT (priv->context));
 }
@@ -181,7 +181,7 @@ gdict_speller_finalize (GObject *gobject)
 
   if (priv->store)
     g_object_unref (priv->store);
-    
+
   G_OBJECT_CLASS (gdict_speller_parent_class)->finalize (gobject);
 }
 
@@ -262,7 +262,7 @@ row_activated_cb (GtkTreeView       *treeview,
 
       return;
     }
-  
+
   gtk_tree_model_get (GTK_TREE_MODEL (priv->store), &iter,
 		      MATCH_COLUMN_WORD, &word,
 		      MATCH_COLUMN_DB_NAME, &db_name,
@@ -273,7 +273,7 @@ row_activated_cb (GtkTreeView       *treeview,
   else
     {
       gchar *row = gtk_tree_path_to_string (path);
-      
+
       g_warning ("Row %s activated, but no word attached", row);
       g_free (row);
     }
@@ -303,13 +303,13 @@ gdict_speller_constructor (GType                  type,
   GtkCellRenderer *renderer;
   GtkTreeViewColumn *column;
   GtkWidget *hbox;
-  
+
   object = G_OBJECT_CLASS (gdict_speller_parent_class)->constructor (type,
   						                     n_params,
 								     params);
   speller = GDICT_SPELLER (object);
   priv = speller->priv;
-  
+
   gtk_widget_push_composite_child ();
 
   sw = gtk_scrolled_window_new (NULL, NULL);
@@ -365,12 +365,12 @@ static void
 gdict_speller_class_init (GdictSpellerClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-  
+
   gobject_class->finalize = gdict_speller_finalize;
   gobject_class->set_property = gdict_speller_set_property;
   gobject_class->get_property = gdict_speller_get_property;
   gobject_class->constructor = gdict_speller_constructor;
-  
+
   g_object_class_install_property (gobject_class,
   				   PROP_CONTEXT,
   				   g_param_spec_object ("context",
@@ -403,7 +403,7 @@ gdict_speller_class_init (GdictSpellerClass *klass)
 		  G_TYPE_NONE, 2,
 		  G_TYPE_STRING,
 		  G_TYPE_STRING);
-  
+
   g_type_class_add_private (gobject_class, sizeof (GdictSpellerPrivate));
 }
 
@@ -411,9 +411,9 @@ static void
 gdict_speller_init (GdictSpeller *speller)
 {
   GdictSpellerPrivate *priv;
-  
+
   speller->priv = priv = GDICT_SPELLER_GET_PRIVATE (speller);
-  
+
   priv->database = NULL;
   priv->strategy = NULL;
   priv->word = NULL;
@@ -461,7 +461,7 @@ GtkWidget *
 gdict_speller_new_with_context (GdictContext *context)
 {
   g_return_val_if_fail (GDICT_IS_CONTEXT (context), NULL);
-  
+
   return g_object_new (GDICT_TYPE_SPELLER,
 		       "context", context,
 		       NULL);
@@ -482,7 +482,7 @@ gdict_speller_set_context (GdictSpeller *speller,
 {
   g_return_if_fail (GDICT_IS_SPELLER (speller));
   g_return_if_fail (context == NULL || GDICT_IS_CONTEXT (context));
-  
+
   set_gdict_context (speller, context);
 
   g_object_notify (G_OBJECT (speller), "context");
@@ -520,14 +520,14 @@ gdict_speller_set_database (GdictSpeller *speller,
 			    const gchar  *database)
 {
   GdictSpellerPrivate *priv;
-  
+
   g_return_if_fail (GDICT_IS_SPELLER (speller));
 
   priv = speller->priv;
 
   if (!database || database[0] == '\0')
     database = GDICT_DEFAULT_DATABASE;
-  
+
   g_free (priv->database);
   priv->database = g_strdup (database);
 
@@ -544,7 +544,7 @@ gdict_speller_set_database (GdictSpeller *speller,
  *
  * Since: FIXME
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_speller_get_database (GdictSpeller *speller)
 {
   g_return_val_if_fail (GDICT_IS_SPELLER (speller), NULL);
@@ -566,14 +566,14 @@ gdict_speller_set_strategy (GdictSpeller *speller,
 			    const gchar  *strategy)
 {
   GdictSpellerPrivate *priv;
-  
+
   g_return_if_fail (GDICT_IS_SPELLER (speller));
 
   priv = speller->priv;
 
   if (!strategy || strategy[0] == '\0')
     strategy = GDICT_DEFAULT_STRATEGY;
-  
+
   g_free (priv->strategy);
   priv->strategy = g_strdup (strategy);
 
@@ -590,7 +590,7 @@ gdict_speller_set_strategy (GdictSpeller *speller,
  *
  * Since: FIXME
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_speller_get_strategy (GdictSpeller *speller)
 {
   g_return_val_if_fail (GDICT_IS_SPELLER (speller), NULL);
@@ -610,15 +610,15 @@ void
 gdict_speller_clear (GdictSpeller *speller)
 {
   GdictSpellerPrivate *priv;
-  
+
   g_return_if_fail (GDICT_IS_SPELLER (speller));
   priv = speller->priv;
 
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview), NULL);
-  
+
   gtk_list_store_clear (priv->store);
   priv->results = -1;
-  
+
   gtk_tree_view_set_model (GTK_TREE_VIEW (priv->treeview),
 		           GTK_TREE_MODEL (priv->store));
 }
@@ -663,7 +663,7 @@ match_found_cb (GdictContext *context,
   GdictSpeller *speller = GDICT_SPELLER (user_data);
   GdictSpellerPrivate *priv = speller->priv;
   GtkTreeIter iter;
-  
+
   GDICT_NOTE (SPELLER, "MATCH: `%s' (from `%s')",
               gdict_match_get_word (match),
               gdict_match_get_database (match));
@@ -693,7 +693,7 @@ error_cb (GdictContext *context,
 
   if (gtk_widget_get_window (GTK_WIDGET (speller)))
     gdk_window_set_cursor (gtk_widget_get_window (GTK_WIDGET (speller)), NULL);
-  
+
   g_free (priv->word);
   priv->word = NULL;
 
@@ -715,12 +715,12 @@ gdict_speller_match (GdictSpeller *speller,
 {
   GdictSpellerPrivate *priv;
   GError *match_error;
-  
+
   g_return_if_fail (GDICT_IS_SPELLER (speller));
   g_return_if_fail (word != NULL);
 
   priv = speller->priv;
-  
+
   if (!priv->context)
     {
       g_warning ("Attempting to match `%s', but no GdictContext "
@@ -737,7 +737,7 @@ gdict_speller_match (GdictSpeller *speller,
                                 _("Another search is in progress"),
                                 _("Please wait until the current search ends."));
 
-      return;    
+      return;
     }
 
   gdict_speller_clear (speller);
@@ -754,7 +754,7 @@ gdict_speller_match (GdictSpeller *speller,
 		      		       G_CALLBACK (lookup_end_cb),
 				       speller);
     }
-  
+
   if (!priv->error_id)
     priv->error_id = g_signal_connect (priv->context, "error",
 		    		       G_CALLBACK (error_cb),
@@ -779,7 +779,7 @@ gdict_speller_match (GdictSpeller *speller,
 			  MATCH_COLUMN_DB_NAME, _("Error while matching"),
 			  MATCH_COLUMN_WORD, NULL,
 			  -1);
-      
+
       g_warning ("Error while matching `%s': %s",
                  priv->word,
                  match_error->message);
@@ -802,7 +802,7 @@ gint
 gdict_speller_count_matches (GdictSpeller *speller)
 {
   g_return_val_if_fail (GDICT_IS_SPELLER (speller), -1);
-  
+
   return speller->priv->results;
 }
 
@@ -822,6 +822,6 @@ gdict_speller_get_matches (GdictSpeller *speller,
 			   gsize         length)
 {
   g_return_val_if_fail (GDICT_IS_SPELLER (speller), NULL);
-  
+
   return NULL;
 }

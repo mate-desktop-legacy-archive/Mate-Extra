@@ -83,7 +83,7 @@ sidebar_page_new (const gchar *id,
   SidebarPage *page;
 
   page = g_slice_new (SidebarPage);
-  
+
   page->id = g_strdup (id);
   page->name = g_strdup (name);
   page->child = widget;
@@ -100,7 +100,7 @@ sidebar_page_free (SidebarPage *page)
     {
       g_free (page->name);
       g_free (page->id);
-      
+
       g_slice_free (SidebarPage, page);
     }
 }
@@ -260,7 +260,7 @@ gdict_sidebar_menu_item_activate (GtkWidget *widget,
   menu_item = gtk_menu_get_active (GTK_MENU (priv->menu));
   id = g_object_get_qdata (G_OBJECT (menu_item), sidebar_page_id_quark);
   g_assert (id != NULL);
-  
+
   page = g_hash_table_lookup (priv->pages_by_id, id);
   g_assert (page != NULL);
 
@@ -281,7 +281,7 @@ gdict_sidebar_class_init (GdictSidebarClass *klass)
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
 
   g_type_class_add_private (gobject_class, sizeof (GdictSidebarPrivate));
-  
+
   sidebar_page_id_quark = g_quark_from_static_string ("gdict-sidebar-page-id");
 
   gobject_class->finalize = gdict_sidebar_finalize;
@@ -343,7 +343,7 @@ gdict_sidebar_init (GdictSidebar *sidebar)
   priv->select_button = select_button;
 
   select_hbox = gtk_hbox_new (FALSE, 0);
-  
+
   priv->label = gtk_label_new (NULL);
   gtk_misc_set_alignment (GTK_MISC (priv->label), 0.0, 0.5);
   gtk_box_pack_start (GTK_BOX (select_hbox), priv->label, FALSE, FALSE, 0);
@@ -406,14 +406,14 @@ gdict_sidebar_add_page (GdictSidebar *sidebar,
   GdictSidebarPrivate *priv;
   SidebarPage *page;
   GtkWidget *menu_item;
-  
+
   g_return_if_fail (GDICT_IS_SIDEBAR (sidebar));
   g_return_if_fail (page_id != NULL);
   g_return_if_fail (page_name != NULL);
   g_return_if_fail (GTK_IS_WIDGET (page_widget));
 
   priv = sidebar->priv;
-  
+
   if (g_hash_table_lookup (priv->pages_by_id, page_id))
     {
       g_warning ("Attempting to add a page to the sidebar with "
@@ -425,7 +425,7 @@ gdict_sidebar_add_page (GdictSidebar *sidebar,
 
   /* add the page inside the page list */
   page = sidebar_page_new (page_id, page_name, page_widget);
-  
+
   priv->pages = g_slist_append (priv->pages, page);
   g_hash_table_insert (priv->pages_by_id, page->id, page);
 
@@ -458,12 +458,12 @@ gdict_sidebar_remove_page (GdictSidebar *sidebar,
   GdictSidebarPrivate *priv;
   SidebarPage *page;
   GList *children, *l;
-  
+
   g_return_if_fail (GDICT_IS_SIDEBAR (sidebar));
   g_return_if_fail (page_id != NULL);
 
   priv = sidebar->priv;
-  
+
   if ((page = g_hash_table_lookup (priv->pages_by_id, page_id)) == NULL)
     {
       g_warning ("Attempting to remove a page from the sidebar with "
@@ -510,7 +510,7 @@ gdict_sidebar_view_page (GdictSidebar *sidebar,
 {
   GdictSidebarPrivate *priv;
   SidebarPage *page;
-  
+
   g_return_if_fail (GDICT_IS_SIDEBAR (sidebar));
   g_return_if_fail (page_id != NULL);
 
@@ -524,17 +524,17 @@ gdict_sidebar_view_page (GdictSidebar *sidebar,
   gtk_menu_shell_select_item (GTK_MENU_SHELL (priv->menu), page->menu_item);
 }
 
-G_CONST_RETURN gchar *
+const gchar *
 gdict_sidebar_current_page (GdictSidebar *sidebar)
 {
   GdictSidebarPrivate *priv;
   gint index;
   SidebarPage *page;
-  
+
   g_return_val_if_fail (GDICT_IS_SIDEBAR (sidebar), NULL);
 
   priv = sidebar->priv;
-  
+
   index = gtk_notebook_get_current_page (GTK_NOTEBOOK (priv->notebook));
   page = g_slist_nth_data (priv->pages, index);
   g_assert (page != NULL);

@@ -53,17 +53,17 @@
 struct _GdictSourceLoaderPrivate
 {
   GSList *paths;
-  
+
   GSList *sources;
   GHashTable *sources_by_name;
-  
+
   guint paths_dirty : 1;
 };
 
 enum
 {
   PROP_0,
-  
+
   PROP_PATHS,
   PROP_SOURCES
 };
@@ -71,7 +71,7 @@ enum
 enum
 {
   SOURCE_LOADED,
-  
+
   LAST_SIGNAL
 };
 
@@ -86,30 +86,30 @@ static void
 gdict_source_loader_finalize (GObject *object)
 {
   GdictSourceLoaderPrivate *priv = GDICT_SOURCE_LOADER_GET_PRIVATE (object);
-  
+
   if (priv->paths)
     {
       g_slist_foreach (priv->paths,
       		       (GFunc) g_free,
       		       NULL);
       g_slist_free (priv->paths);
-      
+
       priv->paths = NULL;
     }
-  
+
   if (priv->sources_by_name)
     g_hash_table_destroy (priv->sources_by_name);
-  
+
   if (priv->sources)
     {
       g_slist_foreach (priv->sources,
       		       (GFunc) g_object_unref,
       		       NULL);
       g_slist_free (priv->sources);
-      
+
       priv->sources = NULL;
     }
-  
+
   G_OBJECT_CLASS (gdict_source_loader_parent_class)->finalize (object);
 }
 
@@ -153,11 +153,11 @@ static void
 gdict_source_loader_class_init (GdictSourceLoaderClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-  
+
   gobject_class->set_property = gdict_source_loader_set_property;
   gobject_class->get_property = gdict_source_loader_get_property;
   gobject_class->finalize = gdict_source_loader_finalize;
-  
+
   /**
    * GdictSourceLoader:paths
    *
@@ -184,12 +184,12 @@ gdict_source_loader_class_init (GdictSourceLoaderClass *klass)
   				   			 _("Sources"),
   				   			 _("Dictionary sources found"),
   				   			 G_PARAM_READABLE));
-  
+
   /**
    * GdictSourceLoader::source-loaded
    * @loader: the object which received the signal
    * @source: the new #GdictSource object found
-   * 
+   *
    * This signal is emitted when a new dictionary source has been added
    * to the list.
    *
@@ -204,7 +204,7 @@ gdict_source_loader_class_init (GdictSourceLoaderClass *klass)
     		  gdict_marshal_VOID__OBJECT,
     		  G_TYPE_NONE, 1,
     		  GDICT_TYPE_SOURCE);
-  
+
   g_type_class_add_private (klass, sizeof (GdictSourceLoaderPrivate));
 }
 
@@ -212,19 +212,19 @@ static void
 gdict_source_loader_init (GdictSourceLoader *loader)
 {
   GdictSourceLoaderPrivate *priv;
-  
+
   priv = GDICT_SOURCE_LOADER_GET_PRIVATE (loader);
   loader->priv = priv;
-  
+
   priv->paths = NULL;
   /* add the default, system-wide path */
   priv->paths = g_slist_prepend (priv->paths, g_strdup (GDICTSOURCESDIR));
-  
+
   priv->sources = NULL;
   priv->sources_by_name = g_hash_table_new_full (g_str_hash, g_str_equal,
 		  				 (GDestroyNotify) g_free,
 						 NULL);
-  
+
   /* ensure that the sources list will be updated */
   priv->paths_dirty = TRUE;
 }
@@ -258,7 +258,7 @@ void
 gdict_source_loader_update (GdictSourceLoader *loader)
 {
   g_return_if_fail (GDICT_IS_SOURCE_LOADER (loader));
-  
+
   loader->priv->paths_dirty = TRUE;
 }
 
@@ -279,12 +279,12 @@ gdict_source_loader_add_search_path (GdictSourceLoader *loader,
 
   g_return_if_fail (GDICT_IS_SOURCE_LOADER (loader));
   g_return_if_fail (path != NULL);
- 
+
   /* avoid duplications */
   for (l = loader->priv->paths; l != NULL; l = l->next)
     if (strcmp (path, (gchar *) l->data) == 0)
       return;
-  
+
   loader->priv->paths = g_slist_append (loader->priv->paths, g_strdup (path));
   loader->priv->paths_dirty = TRUE;
 }
@@ -301,7 +301,7 @@ gdict_source_loader_add_search_path (GdictSourceLoader *loader,
  *
  * Since: 1.0
  */
-G_CONST_RETURN GSList *
+const GSList *
 gdict_source_loader_get_paths (GdictSourceLoader *loader)
 {
   g_return_val_if_fail (GDICT_IS_SOURCE_LOADER (loader), NULL);
@@ -317,33 +317,33 @@ static GSList *
 build_source_filenames (GdictSourceLoader *loader)
 {
   GSList *retval, *d;
-  
+
   g_assert (GDICT_IS_SOURCE_LOADER (loader));
-  
+
   if (!loader->priv->paths)
     return NULL;
-  
+
   retval = NULL;
   for (d = loader->priv->paths; d != NULL; d = d->next)
     {
       gchar *path = (gchar *) d->data;
       const gchar *filename;
       GDir *dir;
-      
+
       dir = g_dir_open (path, 0, NULL);
       if (!dir)
         continue;
-      
+
       do
         {
           filename = g_dir_read_name (dir);
           if (filename)
             {
               gchar *full_path;
-              
+
               if (!g_str_has_suffix (filename, GDICT_SOURCE_FILE_SUFFIX))
                 break;
-              
+
               full_path = g_build_filename (path, filename, NULL);
               if (g_file_test (full_path, G_FILE_TEST_IS_REGULAR))
                 {
@@ -363,7 +363,7 @@ static void
 gdict_source_loader_update_sources (GdictSourceLoader *loader)
 {
   GSList *filenames, *f;
-  
+
   g_assert (GDICT_IS_SOURCE_LOADER (loader));
 
   g_slist_foreach (loader->priv->sources,
@@ -382,7 +382,7 @@ gdict_source_loader_update_sources (GdictSourceLoader *loader)
       g_assert (path != NULL);
 
       source = gdict_source_new ();
-          
+
       load_err = NULL;
       gdict_source_load_from_file (source, path, &load_err);
       if (load_err)
@@ -391,10 +391,10 @@ gdict_source_loader_update_sources (GdictSourceLoader *loader)
                       path,
                       load_err->message);
            g_error_free (load_err);
-           
+
            continue;
         }
-      
+
       loader->priv->sources = g_slist_append (loader->priv->sources,
                                               source);
       g_hash_table_replace (loader->priv->sources_by_name,
@@ -403,12 +403,12 @@ gdict_source_loader_update_sources (GdictSourceLoader *loader)
 
       g_signal_emit (loader, loader_signals[SOURCE_LOADED], 0, source);
     }
-  
+
   g_slist_foreach (filenames,
                    (GFunc) g_free,
                    NULL);
   g_slist_free (filenames);
-  
+
   loader->priv->paths_dirty = FALSE;
 }
 
@@ -432,28 +432,28 @@ gdict_source_loader_get_names (GdictSourceLoader *loader,
   GSList *l;
   gchar **names;
   gsize i;
-  
+
   g_return_val_if_fail (GDICT_IS_SOURCE_LOADER (loader), NULL);
-  
+
   if (loader->priv->paths_dirty)
     gdict_source_loader_update_sources (loader);
-  
+
   names = g_new0 (gchar *, g_slist_length (loader->priv->sources) + 1);
-  
+
   i = 0;
   for (l = loader->priv->sources; l != NULL; l = l->next)
     {
       GdictSource *s = GDICT_SOURCE (l->data);
-      
+
       g_assert (s != NULL);
-      
+
       names[i++] = g_strdup (gdict_source_get_name (s));
     }
   names[i] = NULL;
-  
+
   if (length)
     *length = i;
-  
+
   return names;
 }
 
@@ -470,14 +470,14 @@ gdict_source_loader_get_names (GdictSourceLoader *loader,
  *
  * Since: 1.0
  */
-G_CONST_RETURN GSList *
+const GSList *
 gdict_source_loader_get_sources (GdictSourceLoader *loader)
 {
   g_return_val_if_fail (GDICT_IS_SOURCE_LOADER (loader), NULL);
-  
+
   if (loader->priv->paths_dirty)
     gdict_source_loader_update_sources (loader);
-  
+
   return loader->priv->sources;
 }
 
@@ -500,17 +500,17 @@ gdict_source_loader_get_source (GdictSourceLoader *loader,
 				const gchar       *name)
 {
   GdictSource *retval;
-  
+
   g_return_val_if_fail (GDICT_IS_SOURCE_LOADER (loader), NULL);
   g_return_val_if_fail (name != NULL, NULL);
-  
+
   if (loader->priv->paths_dirty)
     gdict_source_loader_update_sources (loader);
-  
+
   retval = g_hash_table_lookup (loader->priv->sources_by_name, name);
   if (retval)
     return g_object_ref (retval);
-  
+
   return NULL;
 }
 
@@ -532,46 +532,46 @@ gdict_source_loader_remove_source (GdictSourceLoader *loader,
 {
   GdictSourceLoaderPrivate *priv;
   GSList *l;
-  
+
   g_return_val_if_fail (GDICT_IS_SOURCE_LOADER (loader), FALSE);
   g_return_val_if_fail (name != NULL, FALSE);
-  
+
   priv = loader->priv;
-  
+
   if (priv->paths_dirty)
     gdict_source_loader_update_sources (loader);
-  
+
   for (l = priv->sources; l != NULL; l = l->next)
     {
       GdictSource *s = GDICT_SOURCE (l->data);
-      
+
       if (strcmp (gdict_source_get_name (s), name) == 0)
         {
           gchar *filename;
-          
+
           g_object_get (G_OBJECT (s), "filename", &filename, NULL);
-          
+
           if (g_unlink (filename) == -1)
             {
               g_warning ("Unable to remove filename '%s' for the "
                          "dictionary source '%s'\n",
                          filename,
                          name);
-              
+
               return FALSE;
             }
-          
+
           g_hash_table_remove (priv->sources_by_name, name);
-          
+
           priv->sources = g_slist_remove_link (priv->sources, l);
-          
+
           g_object_unref (s);
           g_slist_free (l);
-          
+
           return TRUE;
         }
     }
-  
+
   return FALSE;
 }
 

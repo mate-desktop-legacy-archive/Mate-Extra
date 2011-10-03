@@ -67,22 +67,22 @@ struct _GdictSourcePrivate
 {
   gchar *filename;
   GKeyFile *keyfile;
-  
+
   gchar *name;
   gchar *description;
-  
+
   gchar *database;
   gchar *strategy;
-  
+
   GdictSourceTransport transport;
-  
+
   GdictContext *context;
 };
 
 enum
 {
   PROP_0,
-  
+
   PROP_FILENAME,
   PROP_NAME,
   PROP_DESCRIPTION,
@@ -96,7 +96,7 @@ enum
 static const gchar *valid_transports[] =
 {
   "dictd",	/* GDICT_SOURCE_TRANSPORT_DICTD */
-  
+
   NULL		/* GDICT_SOURCE_TRANSPORT_INVALID */
 };
 
@@ -107,10 +107,10 @@ GQuark
 gdict_source_error_quark (void)
 {
   static GQuark quark = 0;
-  
+
   if (G_UNLIKELY (quark == 0))
     quark = g_quark_from_static_string ("gdict-source-error-quark");
-  
+
   return quark;
 }
 
@@ -126,7 +126,7 @@ gdict_source_set_property (GObject      *object,
 			   GParamSpec   *pspec)
 {
   GdictSource *source = GDICT_SOURCE (object);
-  
+
   switch (prop_id)
     {
     case PROP_NAME:
@@ -158,7 +158,7 @@ gdict_source_get_property (GObject    *object,
 {
   GdictSource *source = GDICT_SOURCE (object);
   GdictSourcePrivate *priv = source->priv;
-  
+
   switch (prop_id)
     {
     case PROP_FILENAME:
@@ -192,21 +192,21 @@ static void
 gdict_source_finalize (GObject *object)
 {
   GdictSourcePrivate *priv = GDICT_SOURCE_GET_PRIVATE (object);
-  
+
   g_free (priv->filename);
-  
+
   if (priv->keyfile)
     g_key_file_free (priv->keyfile);
-  
+
   g_free (priv->name);
   g_free (priv->description);
-  
+
   g_free (priv->database);
   g_free (priv->strategy);
-  
+
   if (priv->context)
     g_object_unref (priv->context);
-  
+
   G_OBJECT_CLASS (gdict_source_parent_class)->finalize (object);
 }
 
@@ -214,11 +214,11 @@ static void
 gdict_source_class_init (GdictSourceClass *klass)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
-  
+
   gobject_class->set_property = gdict_source_set_property;
   gobject_class->get_property = gdict_source_get_property;
   gobject_class->finalize = gdict_source_finalize;
-  
+
   /**
    * GdictSource:filename
    *
@@ -318,7 +318,7 @@ gdict_source_class_init (GdictSourceClass *klass)
   				   			_("The GdictContext bound to this source"),
   				   			GDICT_TYPE_CONTEXT,
   				   			G_PARAM_READABLE));
-  
+
   g_type_class_add_private (klass, sizeof (GdictSourcePrivate));
 }
 
@@ -326,19 +326,19 @@ static void
 gdict_source_init (GdictSource *source)
 {
   GdictSourcePrivate *priv;
-  
+
   priv = GDICT_SOURCE_GET_PRIVATE (source);
   source->priv = priv;
-  
+
   priv->filename = NULL;
   priv->keyfile = g_key_file_new ();
-  
+
   priv->name = NULL;
   priv->description = NULL;
   priv->database = NULL;
   priv->strategy = NULL;
   priv->transport = GDICT_SOURCE_TRANSPORT_INVALID;
-  
+
   priv->context = NULL;
 }
 
@@ -361,12 +361,12 @@ gdict_source_resolve_transport (const gchar *transport)
 {
   if (!transport)
     return GDICT_SOURCE_TRANSPORT_INVALID;
-  
+
   if (strcmp (transport, "dictd") == 0)
     return GDICT_SOURCE_TRANSPORT_DICTD;
   else
     return GDICT_SOURCE_TRANSPORT_INVALID;
-  
+
   g_assert_not_reached ();
 }
 
@@ -377,32 +377,32 @@ gdict_source_create_context (GdictSource           *source,
 {
   GdictSourcePrivate *priv;
   GdictContext *context;
-  
+
   g_assert (GDICT_IS_SOURCE (source));
-  
+
   priv = source->priv;
-  
+
   switch (transport)
     {
     case GDICT_SOURCE_TRANSPORT_DICTD:
       {
       gchar *hostname;
       gint port;
-      
+
       hostname = g_key_file_get_string (priv->keyfile,
       					SOURCE_GROUP,
       					SOURCE_KEY_HOSTNAME,
       					NULL);
-      
+
       port = g_key_file_get_integer (priv->keyfile,
       				     SOURCE_GROUP,
       				     SOURCE_KEY_PORT,
       				     NULL);
       if (!port)
         port = -1;
-      
+
       context = gdict_client_context_new (hostname, port);
-      
+
       if (hostname)
         g_free (hostname);
       }
@@ -416,7 +416,7 @@ gdict_source_create_context (GdictSource           *source,
     }
 
   g_assert (context != NULL);
-  
+
   if (priv->transport != transport)
     priv->transport = transport;
 
@@ -431,7 +431,7 @@ gdict_source_parse (GdictSource  *source,
   GError *parse_error;
   gchar *transport;
   GdictSourceTransport t;
-  
+
   priv = source->priv;
 
   if (!g_key_file_has_group (priv->keyfile, SOURCE_GROUP))
@@ -440,10 +440,10 @@ gdict_source_parse (GdictSource  *source,
                    GDICT_SOURCE_ERROR_PARSE,
                    _("No '%s' group found inside the dictionary source definition"),
                    SOURCE_GROUP);
-      
+
       return FALSE;
     }
-  
+
   /* fetch the name for the dictionary source definition */
   parse_error = NULL;
   priv->name = g_key_file_get_string (priv->keyfile,
@@ -459,13 +459,13 @@ gdict_source_parse (GdictSource  *source,
                    SOURCE_KEY_NAME,
                    parse_error->message);
       g_error_free (parse_error);
-      
+
       g_key_file_free (priv->keyfile);
       priv->keyfile = NULL;
-      
+
       return FALSE;
     }
-  
+
   /* if present, fetch the localized description */
   if (g_key_file_has_key (priv->keyfile, SOURCE_GROUP, SOURCE_KEY_DESCRIPTION, NULL))
     {
@@ -482,12 +482,12 @@ gdict_source_parse (GdictSource  *source,
                          "source definition: %s"),
                        SOURCE_KEY_DESCRIPTION,
                        parse_error->message);
-                       
+
           g_error_free (parse_error);
           g_key_file_free (priv->keyfile);
           priv->keyfile = NULL;
           g_free (priv->name);
-          
+
           return FALSE;
         }
     }
@@ -506,13 +506,13 @@ gdict_source_parse (GdictSource  *source,
                          "source definition: %s"),
                        SOURCE_KEY_DATABASE,
                        parse_error->message);
-                       
+
           g_error_free (parse_error);
           g_key_file_free (priv->keyfile);
           priv->keyfile = NULL;
           g_free (priv->name);
           g_free (priv->description);
-          
+
           return FALSE;
         }
     }
@@ -531,19 +531,19 @@ gdict_source_parse (GdictSource  *source,
                          "source definition: %s"),
                        SOURCE_KEY_STRATEGY,
                        parse_error->message);
-                       
+
           g_error_free (parse_error);
           g_key_file_free (priv->keyfile);
           priv->keyfile = NULL;
-          
+
           g_free (priv->name);
           g_free (priv->description);
           g_free (priv->database);
-          
+
           return FALSE;
         }
     }
-  
+
   transport = g_key_file_get_string (priv->keyfile,
   				     SOURCE_GROUP,
   				     SOURCE_KEY_TRANSPORT,
@@ -556,7 +556,7 @@ gdict_source_parse (GdictSource  *source,
       		     "source definition file: %s"),
       		   SOURCE_KEY_TRANSPORT,
       		   parse_error->message);
-      
+
       g_error_free (parse_error);
       g_key_file_free (priv->keyfile);
       priv->keyfile = NULL;
@@ -564,29 +564,29 @@ gdict_source_parse (GdictSource  *source,
       g_free (priv->description);
       g_free (priv->database);
       g_free (priv->strategy);
-      
+
       return FALSE;
     }
-  
+
   t = gdict_source_resolve_transport (transport);
   g_free (transport);
-  
+
   priv->context = gdict_source_create_context (source, t, &parse_error);
   if (parse_error)
     {
       g_propagate_error (error, parse_error);
-      
+
       g_key_file_free (priv->keyfile);
       priv->keyfile = NULL;
-      
+
       g_free (priv->name);
       g_free (priv->description);
       g_free (priv->database);
       g_free (priv->strategy);
-      
+
       return FALSE;
     }
-  
+
   return TRUE;
 }
 
@@ -611,15 +611,15 @@ gdict_source_load_from_file (GdictSource  *source,
   GdictSourcePrivate *priv;
   GError *read_error;
   GError *parse_error;
-  
+
   g_return_val_if_fail (GDICT_IS_SOURCE (source), FALSE);
   g_return_val_if_fail (filename != NULL, FALSE);
-  
+
   priv = source->priv;
-  
+
   if (!priv->keyfile)
     priv->keyfile = g_key_file_new ();
-  
+
   read_error = NULL;
   g_key_file_load_from_file (priv->keyfile,
                              filename,
@@ -628,23 +628,23 @@ gdict_source_load_from_file (GdictSource  *source,
   if (read_error)
     {
       g_propagate_error (error, read_error);
-      
+
       return FALSE;
     }
-  
+
   parse_error = NULL;
   gdict_source_parse (source, &parse_error);
   if (parse_error)
     {
       g_propagate_error (error, parse_error);
-      
+
       return FALSE;
     }
-  
+
   g_assert (priv->context != NULL);
-  
+
   priv->filename = g_strdup (filename);
-  
+
   return TRUE;
 }
 
@@ -671,15 +671,15 @@ gdict_source_load_from_data (GdictSource  *source,
   GdictSourcePrivate *priv;
   GError *read_error;
   GError *parse_error;
-  
+
   g_return_val_if_fail (GDICT_IS_SOURCE (source), FALSE);
   g_return_val_if_fail (data != NULL, FALSE);
-  
+
   priv = source->priv;
-  
+
   if (!priv->keyfile)
     priv->keyfile = g_key_file_new ();
-  
+
   read_error = NULL;
   g_key_file_load_from_data (priv->keyfile,
                              data,
@@ -689,24 +689,24 @@ gdict_source_load_from_data (GdictSource  *source,
   if (read_error)
     {
       g_propagate_error (error, read_error);
-      
+
       return FALSE;
     }
-  
+
   parse_error = NULL;
   gdict_source_parse (source, &parse_error);
   if (parse_error)
     {
       g_propagate_error (error, parse_error);
-      
+
       return FALSE;
     }
-  
+
   g_assert (priv->context != NULL);
-  
+
   g_free (priv->filename);
   priv->filename = NULL;
-  
+
   return TRUE;
 }
 
@@ -729,20 +729,20 @@ gdict_source_to_data (GdictSource  *source,
 {
   GdictSourcePrivate *priv;
   gchar *retval = NULL;
-  
+
   g_return_val_if_fail (GDICT_IS_SOURCE (source), NULL);
-  
+
   priv = source->priv;
-  
+
   if (!priv->name)
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
                    GDICT_SOURCE_ERROR_INVALID_NAME,
                    _("Dictionary source does not have name"));
-      
+
       return NULL;
     }
-  
+
   if (!IS_VALID_TRANSPORT (priv->transport))
     {
       g_set_error (error, GDICT_SOURCE_ERROR,
@@ -750,21 +750,21 @@ gdict_source_to_data (GdictSource  *source,
                    _("Dictionary source '%s' has invalid transport '%s'"),
                    priv->name,
                    valid_transports[priv->transport]);
-      
+
       return NULL;
     }
-  
+
   if (priv->keyfile)
     {
       GError *write_error = NULL;
-      
+
       retval = g_key_file_to_data (priv->keyfile,
       				   length,
       				   &write_error);
       if (write_error)
         g_propagate_error (error, write_error);
     }
-  
+
   return retval;
 }
 
@@ -783,13 +783,13 @@ gdict_source_set_name (GdictSource *source,
 {
   g_return_if_fail (GDICT_IS_SOURCE (source));
   g_return_if_fail (name != NULL);
-  
+
   g_free (source->priv->name);
   source->priv->name = g_strdup (name);
 
   if (!source->priv->keyfile)
     source->priv->keyfile = g_key_file_new ();
-  
+
   g_key_file_set_string (source->priv->keyfile,
     			 SOURCE_GROUP,
     			 SOURCE_KEY_NAME,
@@ -807,11 +807,11 @@ gdict_source_set_name (GdictSource *source,
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_source_get_name (GdictSource *source)
 {
   g_return_val_if_fail (GDICT_IS_SOURCE (source), NULL);
-  
+
   return source->priv->name;
 }
 
@@ -830,16 +830,16 @@ gdict_source_set_description (GdictSource *source,
 			      const gchar *description)
 {
   g_return_if_fail (GDICT_IS_SOURCE (source));
-  
+
   g_free (source->priv->description);
-  
+
   if (!source->priv->keyfile)
     source->priv->keyfile = g_key_file_new ();
-  
+
   if (description && description[0] != '\0')
     {
       source->priv->description = g_strdup (description);
-      
+
       g_key_file_set_string (source->priv->keyfile,
   			     SOURCE_GROUP,
   			     SOURCE_KEY_DESCRIPTION,
@@ -869,11 +869,11 @@ gdict_source_set_description (GdictSource *source,
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_source_get_description (GdictSource *source)
 {
   g_return_val_if_fail (GDICT_IS_SOURCE (source), NULL);
-  
+
   return source->priv->description;
 }
 
@@ -892,16 +892,16 @@ gdict_source_set_database (GdictSource *source,
 			   const gchar *database)
 {
   g_return_if_fail (GDICT_IS_SOURCE (source));
-  
+
   g_free (source->priv->database);
-  
+
   if (!source->priv->keyfile)
     source->priv->keyfile = g_key_file_new ();
-  
+
   if (database && database[0] != '\0')
     {
       source->priv->database = g_strdup (database);
-      
+
       g_key_file_set_string (source->priv->keyfile,
   			     SOURCE_GROUP,
   			     SOURCE_KEY_DATABASE,
@@ -931,11 +931,11 @@ gdict_source_set_database (GdictSource *source,
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_source_get_database (GdictSource *source)
 {
   g_return_val_if_fail (GDICT_IS_SOURCE (source), NULL);
-  
+
   return source->priv->database;
 }
 
@@ -954,16 +954,16 @@ gdict_source_set_strategy (GdictSource *source,
 			   const gchar *strategy)
 {
   g_return_if_fail (GDICT_IS_SOURCE (source));
-  
+
   g_free (source->priv->strategy);
-  
+
   if (!source->priv->keyfile)
     source->priv->keyfile = g_key_file_new ();
-  
+
   if (strategy && strategy[0] != '\0')
     {
       source->priv->strategy = g_strdup (strategy);
-      
+
       g_key_file_set_string (source->priv->keyfile,
   			     SOURCE_GROUP,
   			     SOURCE_KEY_STRATEGY,
@@ -993,11 +993,11 @@ gdict_source_set_strategy (GdictSource *source,
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_source_get_strategy (GdictSource *source)
 {
   g_return_val_if_fail (GDICT_IS_SOURCE (source), NULL);
-  
+
   return source->priv->strategy;
 }
 
@@ -1019,43 +1019,43 @@ gdict_source_set_transportv (GdictSource          *source,
 			     va_list               var_args)
 {
   GdictSourcePrivate *priv;
-  
+
   g_return_if_fail (GDICT_IS_SOURCE (source));
   g_return_if_fail (IS_VALID_TRANSPORT (transport));
-  
+
   priv = source->priv;
-  
+
   priv->transport = transport;
-      
+
   if (priv->context)
     g_object_unref (priv->context);
-  
+
   switch (priv->transport)
     {
     case GDICT_SOURCE_TRANSPORT_DICTD:
       priv->context = gdict_client_context_new (NULL, -1);
       g_assert (GDICT_IS_CLIENT_CONTEXT (priv->context));
-      
+
       g_object_set_valist (G_OBJECT (priv->context),
                            first_transport_property,
                            var_args);
-      
+
       break;
     case GDICT_SOURCE_TRANSPORT_INVALID:
     default:
       g_assert_not_reached ();
       break;
     }
-  
+
   /* update the keyfile */
   if (!priv->keyfile)
     priv->keyfile = g_key_file_new ();
-      
+
   g_key_file_set_string (priv->keyfile,
   			 SOURCE_GROUP,
   			 SOURCE_KEY_TRANSPORT,
   			 valid_transports[transport]);
-  
+
   switch (priv->transport)
     {
     case GDICT_SOURCE_TRANSPORT_DICTD:
@@ -1092,11 +1092,11 @@ gdict_source_set_transportv (GdictSource          *source,
  * implementation instance using g_object_set().
  *
  * Here's a simple example:
- * 
+ *
  * <informalexample><programlisting>
  * #include &lt;gdict/gdict.h&gt;
  *  GdictSource *source = gdict_source_new ();
- *  
+ *
  *  gdict_source_set_name (source, "My Source");
  *  gdict_source_set_transport (source, GDICT_SOURCE_TRANSPORT_DICTD,
  *                              "hostname", "dictionary-server.org",
@@ -1113,16 +1113,16 @@ gdict_source_set_transport (GdictSource          *source,
 			    ...)
 {
   va_list args;
-  
+
   g_return_if_fail (GDICT_IS_SOURCE (source));
   g_return_if_fail (IS_VALID_TRANSPORT (transport));
 
   va_start (args, first_transport_property);
-  
+
   gdict_source_set_transportv (source, transport,
                                first_transport_property,
                                args);
-  
+
   va_end (args);
 }
 
@@ -1140,7 +1140,7 @@ GdictSourceTransport
 gdict_source_get_transport (GdictSource *source)
 {
   g_return_val_if_fail (GDICT_IS_SOURCE (source), GDICT_SOURCE_TRANSPORT_INVALID);
-  
+
   return source->priv->transport;
 }
 
@@ -1159,7 +1159,7 @@ GdictContext *
 gdict_source_get_context (GdictSource *source)
 {
   GdictContext *retval;
-  
+
   g_return_val_if_fail (GDICT_IS_SOURCE (source), NULL);
 
   retval = gdict_source_create_context (source,

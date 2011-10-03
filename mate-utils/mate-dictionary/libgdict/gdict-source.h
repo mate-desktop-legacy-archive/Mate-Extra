@@ -41,7 +41,7 @@ typedef struct _GdictSourcePrivate GdictSourcePrivate;
 typedef enum
 {
   GDICT_SOURCE_TRANSPORT_DICTD,
-  
+
   GDICT_SOURCE_TRANSPORT_INVALID /* only for debug */
 } GdictSourceTransport;
 
@@ -61,7 +61,7 @@ struct _GdictSource
 {
   /*< private >*/
   GObject parent_instance;
-  
+
   GdictSourcePrivate *priv;
 };
 
@@ -84,19 +84,19 @@ gboolean              gdict_source_load_from_data  (GdictSource           *sourc
 gchar *               gdict_source_to_data         (GdictSource           *source,
 						    gsize                 *length,
 						    GError               **error) G_GNUC_MALLOC;
-						    
+
 void                  gdict_source_set_name        (GdictSource           *source,
 						    const gchar           *name);
-G_CONST_RETURN gchar *gdict_source_get_name        (GdictSource           *source);
+constconst gchar *gdict_source_get_name        (GdictSource           *source);
 void                  gdict_source_set_description (GdictSource           *source,
 						    const gchar           *description);
-G_CONST_RETURN gchar *gdict_source_get_description (GdictSource           *source);
+const gchar *gdict_source_get_description (GdictSource           *source);
 void                  gdict_source_set_database    (GdictSource           *source,
 						    const gchar           *database);
-G_CONST_RETURN gchar *gdict_source_get_database    (GdictSource           *source);
+const gchar *gdict_source_get_database    (GdictSource           *source);
 void                  gdict_source_set_strategy    (GdictSource           *source,
 						    const gchar           *strategy);
-G_CONST_RETURN gchar *gdict_source_get_strategy    (GdictSource           *source);
+const gchar *gdict_source_get_strategy    (GdictSource           *source);
 void                  gdict_source_set_transport   (GdictSource           *source,
 						    GdictSourceTransport   transport,
 						    const gchar           *first_transport_property,

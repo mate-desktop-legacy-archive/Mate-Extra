@@ -16,7 +16,7 @@
  * License along with this library; if not, write to the
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  */
- 
+
 #ifndef __GDICT_CONTEXT_H__
 #define __GDICT_CONTEXT_H__
 
@@ -82,8 +82,8 @@ GQuark gdict_context_error_quark (void);
 GType                 gdict_database_get_type        (void) G_GNUC_CONST;
 GdictDatabase *       gdict_database_ref             (GdictDatabase   *db);
 void                  gdict_database_unref           (GdictDatabase   *db);
-G_CONST_RETURN gchar *gdict_database_get_name        (GdictDatabase   *db);
-G_CONST_RETURN gchar *gdict_database_get_full_name   (GdictDatabase   *db);
+const gchar *gdict_database_get_name        (GdictDatabase   *db);
+const gchar *gdict_database_get_full_name   (GdictDatabase   *db);
 
 /**
  * GdictStrategy:
@@ -97,8 +97,8 @@ G_CONST_RETURN gchar *gdict_database_get_full_name   (GdictDatabase   *db);
 GType                 gdict_strategy_get_type        (void) G_GNUC_CONST;
 GdictStrategy *       gdict_strategy_ref             (GdictStrategy   *strat);
 void                  gdict_strategy_unref           (GdictStrategy   *strat);
-G_CONST_RETURN gchar *gdict_strategy_get_name        (GdictStrategy   *strat);
-G_CONST_RETURN gchar *gdict_strategy_get_description (GdictStrategy   *strat);
+const gchar *gdict_strategy_get_name        (GdictStrategy   *strat);
+const gchar *gdict_strategy_get_description (GdictStrategy   *strat);
 
 /**
  * GdictMatch:
@@ -111,8 +111,8 @@ G_CONST_RETURN gchar *gdict_strategy_get_description (GdictStrategy   *strat);
 GType                 gdict_match_get_type           (void) G_GNUC_CONST;
 GdictMatch *          gdict_match_ref                (GdictMatch      *match);
 void                  gdict_match_unref              (GdictMatch      *match);
-G_CONST_RETURN gchar *gdict_match_get_word           (GdictMatch      *match);
-G_CONST_RETURN gchar *gdict_match_get_database       (GdictMatch      *match);
+const gchar *gdict_match_get_word           (GdictMatch      *match);
+const gchar *gdict_match_get_database       (GdictMatch      *match);
 
 /**
  * GdictDefinition:
@@ -127,9 +127,9 @@ GType                 gdict_definition_get_type      (void) G_GNUC_CONST;
 GdictDefinition *     gdict_definition_ref           (GdictDefinition *def);
 void                  gdict_definition_unref         (GdictDefinition *def);
 gint                  gdict_definition_get_total     (GdictDefinition *def);
-G_CONST_RETURN gchar *gdict_definition_get_word      (GdictDefinition *def);
-G_CONST_RETURN gchar *gdict_definition_get_database  (GdictDefinition *def);
-G_CONST_RETURN gchar *gdict_definition_get_text      (GdictDefinition *def);
+const gchar *gdict_definition_get_word      (GdictDefinition *def);
+const gchar *gdict_definition_get_database  (GdictDefinition *def);
+const gchar *gdict_definition_get_text      (GdictDefinition *def);
 
 /**
  * GdictContextIface:
@@ -140,7 +140,7 @@ struct _GdictContextIface
 {
   /*< private >*/
   GTypeInterface base_iface;
-  
+
   /*< public >*/
   /* methods, not signals */
   gboolean (*get_databases)     (GdictContext  *context,
@@ -155,12 +155,12 @@ struct _GdictContextIface
   gboolean (*define_word)       (GdictContext  *context,
   			         const gchar   *database,
   			         const gchar   *word,
-  			         GError       **error);  
-  
+  			         GError       **error);
+
   /* signals */
   void (*lookup_start)     (GdictContext    *context);
   void (*lookup_end)       (GdictContext    *context);
-  
+
   void (*database_found)   (GdictContext    *context,
   			    GdictDatabase   *database);
   void (*strategy_found)   (GdictContext    *context,
@@ -169,7 +169,7 @@ struct _GdictContextIface
   			    GdictMatch      *match);
   void (*definition_found) (GdictContext    *context,
   			    GdictDefinition *definition);
-  
+
   /* fired each time there's an error; the GError is owned
    * by the context, and should never be modified or freed
    */

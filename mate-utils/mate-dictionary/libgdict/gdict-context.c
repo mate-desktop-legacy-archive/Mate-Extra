@@ -57,7 +57,7 @@ GType
 gdict_context_get_type (void)
 {
   static GType context_type = 0;
-  
+
   if (G_UNLIKELY (context_type == 0))
     {
       static GTypeInfo context_info =
@@ -67,13 +67,13 @@ gdict_context_get_type (void)
         NULL,                       /* base_finalize */
         (GClassInitFunc) gdict_context_class_init,
       };
-      
+
       context_type = g_type_register_static (G_TYPE_INTERFACE,
       					     "GdictContext",
       					     &context_info, 0);
       g_type_interface_add_prerequisite (context_type, G_TYPE_OBJECT);
     }
-  
+
   return context_type;
 }
 
@@ -88,7 +88,7 @@ gdict_context_class_init (gpointer g_iface)
    * @context: the object which received the signal
    *
    * This signal is emitted when a look up operation has been issued using
-   * a #GdictContext.  Since every operation using a context is 
+   * a #GdictContext.  Since every operation using a context is
    * asynchronous, you can use this signal to know if the request has been
    * issued or not.
    *
@@ -205,10 +205,10 @@ gdict_context_class_init (gpointer g_iface)
                 gdict_marshal_VOID__BOXED,
                 G_TYPE_NONE, 1,
                 GDICT_TYPE_DEFINITION);
-  
+
   /**
    * GdictContext:local-only
-   * 
+   *
    * Whether the context uses only local dictionaries or not.
    *
    * Since: 1.0
@@ -242,7 +242,7 @@ gdict_context_set_local_only (GdictContext *context,
 			      gboolean      local_only)
 {
   g_return_if_fail (GDICT_IS_CONTEXT (context));
-  
+
   g_object_set (context, "local-only", &local_only, NULL);
 }
 
@@ -260,11 +260,11 @@ gboolean
 gdict_context_get_local_only (GdictContext *context)
 {
   gboolean local_only;
-  
+
   g_return_val_if_fail (GDICT_IS_CONTEXT (context), FALSE);
-  
+
   g_object_get (context, "local-only", &local_only, NULL);
-  
+
   return local_only;
 }
 
@@ -291,10 +291,10 @@ gdict_context_lookup_databases (GdictContext  *context,
       g_warning ("Object `%s' does not implement the get_databases "
                  "virtual function.",
                  g_type_name (G_OBJECT_TYPE (context)));
-      
+
       return FALSE;
     }
-  
+
   return GDICT_CONTEXT_GET_IFACE (context)->get_databases (context, error);
 }
 
@@ -321,7 +321,7 @@ gdict_context_lookup_strategies (GdictContext  *context,
       g_warning ("Object `%s' does not implement the get_strategies "
                  "virtual function.",
                  g_type_name (G_OBJECT_TYPE (context)));
-      
+
       return FALSE;
     }
 
@@ -361,10 +361,10 @@ gdict_context_match_word (GdictContext  *context,
       g_warning ("Object `%s' does not implement the match_word "
                  "virtual function.",
                  g_type_name (G_OBJECT_TYPE (context)));
-      
+
       return FALSE;
     }
-  
+
   return GDICT_CONTEXT_GET_IFACE (context)->match_word (context,
   							database,
   							strategy,
@@ -395,16 +395,16 @@ gdict_context_define_word (GdictContext  *context,
 {
   g_return_val_if_fail (GDICT_IS_CONTEXT (context), FALSE);
   g_return_val_if_fail (word != NULL, FALSE);
-  
+
   if (!GDICT_CONTEXT_GET_IFACE (context)->define_word)
     {
       g_warning ("Object `%s' does not implement the define_word "
                  "virtual function.",
                  g_type_name (G_OBJECT_TYPE (context)));
-      
+
       return FALSE;
     }
-  
+
   return GDICT_CONTEXT_GET_IFACE (context)->define_word (context,
   							 database,
   							 word,
@@ -423,14 +423,14 @@ GdictDatabase *
 _gdict_database_new (const gchar *name)
 {
   GdictDatabase *retval;
-  
+
   g_return_val_if_fail (name != NULL, NULL);
-  
+
   retval = g_slice_new (GdictDatabase);
   retval->name = g_strdup (name);
   retval->full_name = NULL;
   retval->ref_count = 1;
-  
+
   return retval;
 }
 
@@ -448,11 +448,11 @@ GdictDatabase *
 gdict_database_ref (GdictDatabase *db)
 {
   g_return_val_if_fail (db != NULL, NULL);
-  
+
   g_assert (db->ref_count != 0);
-  
+
   db->ref_count += 1;
-  
+
   return db;
 }
 
@@ -469,15 +469,15 @@ void
 gdict_database_unref (GdictDatabase *db)
 {
   g_return_if_fail (db != NULL);
-  
+
   g_assert (db->ref_count != 0);
-  
+
   db->ref_count -= 1;
   if (db->ref_count == 0)
     {
       g_free (db->name);
       g_free (db->full_name);
-      
+
       g_slice_free (GdictDatabase, db);
     }
 }
@@ -494,11 +494,11 @@ gdict_database_unref (GdictDatabase *db)
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_database_get_name (GdictDatabase *db)
 {
   g_return_val_if_fail (db != NULL, NULL);
-  
+
   return db->name;
 }
 
@@ -513,11 +513,11 @@ gdict_database_get_name (GdictDatabase *db)
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_database_get_full_name (GdictDatabase *db)
 {
   g_return_val_if_fail (db != NULL, NULL);
-  
+
   return db->full_name;
 }
 
@@ -533,14 +533,14 @@ GdictStrategy *
 _gdict_strategy_new (const gchar *name)
 {
   GdictStrategy *strat;
-  
+
   g_return_val_if_fail (name != NULL, NULL);
-  
+
   strat = g_slice_new (GdictStrategy);
   strat->name = g_strdup (name);
   strat->description = NULL;
   strat->ref_count = 1;
-  
+
   return strat;
 }
 
@@ -559,11 +559,11 @@ GdictStrategy *
 gdict_strategy_ref (GdictStrategy   *strat)
 {
   g_return_val_if_fail (strat != NULL, NULL);
-  
+
   g_assert (strat->ref_count != 0);
-  
+
   strat->ref_count += 1;
-  
+
   return strat;
 }
 
@@ -580,15 +580,15 @@ void
 gdict_strategy_unref (GdictStrategy *strat)
 {
   g_return_if_fail (strat != NULL);
-  
+
   g_assert (strat->ref_count != 0);
-  
+
   strat->ref_count -= 1;
   if (strat->ref_count == 0)
     {
       g_free (strat->name);
       g_free (strat->description);
-      
+
       g_slice_free (GdictStrategy, strat);
     }
 }
@@ -603,11 +603,11 @@ gdict_strategy_unref (GdictStrategy *strat)
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_strategy_get_name (GdictStrategy *strat)
 {
   g_return_val_if_fail (strat != NULL, NULL);
-  
+
   return strat->name;
 }
 
@@ -621,11 +621,11 @@ gdict_strategy_get_name (GdictStrategy *strat)
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_strategy_get_description (GdictStrategy *strat)
 {
   g_return_val_if_fail (strat != NULL, NULL);
-  
+
   return strat->description;
 }
 
@@ -641,14 +641,14 @@ GdictMatch *
 _gdict_match_new (const gchar *word)
 {
   GdictMatch *match;
-  
+
   g_return_val_if_fail (word != NULL, NULL);
-  
+
   match = g_slice_new (GdictMatch);
   match->word = g_strdup (word);
   match->database = NULL;
   match->ref_count = 1;
-  
+
   return match;
 }
 
@@ -668,9 +668,9 @@ gdict_match_ref (GdictMatch *match)
   g_return_val_if_fail (match != NULL, NULL);
 
   g_assert (match->ref_count != 0);
-  
+
   match->ref_count += 1;
-  
+
   return match;
 }
 
@@ -686,16 +686,16 @@ void
 gdict_match_unref (GdictMatch *match)
 {
   g_return_if_fail (match != NULL);
-  
+
   g_assert (match->ref_count != 0);
-  
+
   match->ref_count -= 1;
-  
+
   if (match->ref_count == 0)
     {
       g_free (match->word);
       g_free (match->database);
-      
+
       g_slice_free (GdictMatch, match);
     }
 }
@@ -710,11 +710,11 @@ gdict_match_unref (GdictMatch *match)
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_match_get_word (GdictMatch *match)
 {
   g_return_val_if_fail (match != NULL, NULL);
-  
+
   return match->word;
 }
 
@@ -728,11 +728,11 @@ gdict_match_get_word (GdictMatch *match)
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_match_get_database (GdictMatch *match)
 {
   g_return_val_if_fail (match != NULL, NULL);
-  
+
   return match->database;
 }
 
@@ -749,15 +749,15 @@ GdictDefinition *
 _gdict_definition_new (gint total)
 {
   GdictDefinition *def;
-  
+
   def = g_slice_new (GdictDefinition);
-  
+
   def->total = total;
   def->word = NULL;
   def->database_name = NULL;
   def->database_full = NULL;
   def->ref_count = 1;
-  
+
   return def;
 }
 
@@ -769,18 +769,18 @@ _gdict_definition_new (gint total)
  *
  * Return value: the #GdictDefinition object with its reference count
  *   increased.
- * 
+ *
  * Since: 1.0
  */
 GdictDefinition *
 gdict_definition_ref (GdictDefinition *def)
 {
   g_return_val_if_fail (def != NULL, NULL);
-  
+
   g_assert (def->ref_count != 0);
-  
+
   def->ref_count += 1;
-  
+
   return def;
 }
 
@@ -797,16 +797,16 @@ void
 gdict_definition_unref (GdictDefinition *def)
 {
   g_return_if_fail (def != NULL);
-  
+
   g_assert (def->ref_count != 0);
-  
+
   def->ref_count -= 1;
   if (def->ref_count == 0)
     {
       g_free (def->word);
       g_free (def->database_name);
       g_free (def->database_full);
-      
+
       g_slice_free (GdictDefinition, def);
     }
 }
@@ -842,11 +842,11 @@ gdict_definition_get_total (GdictDefinition *def)
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_definition_get_word (GdictDefinition *def)
 {
   g_return_val_if_fail (def != NULL, NULL);
-  
+
   return def->word;
 }
 
@@ -863,11 +863,11 @@ gdict_definition_get_word (GdictDefinition *def)
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_definition_get_database (GdictDefinition *def)
 {
   g_return_val_if_fail (def != NULL, NULL);
-  
+
   return def->database_full;
 }
 
@@ -883,10 +883,10 @@ gdict_definition_get_database (GdictDefinition *def)
  *
  * Since: 1.0
  */
-G_CONST_RETURN gchar *
+const gchar *
 gdict_definition_get_text (GdictDefinition *def)
 {
   g_return_val_if_fail (def != NULL, NULL);
-  
+
   return def->definition;
 }

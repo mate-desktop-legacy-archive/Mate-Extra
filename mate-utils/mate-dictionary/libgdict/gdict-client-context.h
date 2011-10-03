@@ -16,7 +16,7 @@
  * License along with this library; if not, write to the
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  */
- 
+
 #ifndef __GDICT_CLIENT_CONTEXT_H__
 #define __GDICT_CLIENT_CONTEXT_H__
 
@@ -56,7 +56,7 @@ struct _GdictClientContext
 {
   /*< private >*/
   GObject parent_instance;
-  
+
   GdictClientContextPrivate *priv;
 };
 
@@ -64,14 +64,14 @@ struct _GdictClientContextClass
 {
   /*< private >*/
   GObjectClass parent_class;
-  
+
   /*< public >*/
   /* signals monitoring the lifetime of the connection with
    * the dictionary server
    */
   void (*connected)    (GdictClientContext *context);
   void (*disconnected) (GdictClientContext *context);
-  
+
   /*< private >*/
   /* padding for future expansion */
   void (*_gdict_client_1) (void);
@@ -87,12 +87,12 @@ GdictContext *        gdict_client_context_new          (const gchar        *hos
 
 void                  gdict_client_context_set_hostname (GdictClientContext *context,
 						         const gchar        *hostname);
-G_CONST_RETURN gchar *gdict_client_context_get_hostname (GdictClientContext *context);
+const gchar *gdict_client_context_get_hostname (GdictClientContext *context);
 void                  gdict_client_context_set_port     (GdictClientContext *context,
 							 gint                port);
 guint                 gdict_client_context_get_port     (GdictClientContext *context);
 void                  gdict_client_context_set_client   (GdictClientContext *context,
 							 const gchar        *client);
-G_CONST_RETURN gchar *gdict_client_context_get_client   (GdictClientContext *context);
+const gchar *gdict_client_context_get_client   (GdictClientContext *context);
 
 #endif /* __GDICT_CLIENT_CONTEXT_H__ */

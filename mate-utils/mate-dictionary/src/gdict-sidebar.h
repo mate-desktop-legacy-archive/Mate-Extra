@@ -68,7 +68,7 @@ void                  gdict_sidebar_remove_page  (GdictSidebar *sidebar,
 						  const gchar  *page_id);
 void                  gdict_sidebar_view_page    (GdictSidebar *sidebar,
 						  const gchar  *page_id);
-G_CONST_RETURN gchar *gdict_sidebar_current_page (GdictSidebar *sidebar);
+const gchar *gdict_sidebar_current_page (GdictSidebar *sidebar);
 gchar **              gdict_sidebar_list_pages   (GdictSidebar *sidebar,
                                                   gsize        *length) G_GNUC_MALLOC;
 

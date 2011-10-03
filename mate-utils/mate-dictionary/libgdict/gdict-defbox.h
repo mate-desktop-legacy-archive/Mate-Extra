@@ -40,14 +40,14 @@ struct _GdictDefbox
 {
   /*< private >*/
   GtkVBox parent_instance;
-  
+
   GdictDefboxPrivate *priv;
 };
 
 struct _GdictDefboxClass
 {
   GtkVBoxClass parent_class;
-  
+
   /* these are all RUN_ACTION signals for key bindings */
   void (*show_find)     (GdictDefbox *defbox);
   void (*hide_find)     (GdictDefbox *defbox);
@@ -57,7 +57,7 @@ struct _GdictDefboxClass
   /* signals */
   void (*link_clicked)  (GdictDefbox *defbox,
                          const gchar *link);
-  
+
   /* padding for future expansion */
   void (*_gdict_defbox_1) (void);
   void (*_gdict_defbox_2) (void);
@@ -74,8 +74,8 @@ void                  gdict_defbox_set_context        (GdictDefbox  *defbox,
 GdictContext *        gdict_defbox_get_context        (GdictDefbox  *defbox);
 void                  gdict_defbox_set_database       (GdictDefbox  *defbox,
 						       const gchar  *database);
-G_CONST_RETURN gchar *gdict_defbox_get_database       (GdictDefbox  *defbox);
-G_CONST_RETURN gchar *gdict_defbox_get_word           (GdictDefbox  *defbox);
+const gchar *gdict_defbox_get_database       (GdictDefbox  *defbox);
+const gchar *gdict_defbox_get_word           (GdictDefbox  *defbox);
 gchar *               gdict_defbox_get_text           (GdictDefbox  *defbox,
 						       gsize        *length) G_GNUC_MALLOC;
 void                  gdict_defbox_select_all         (GdictDefbox  *defbox);
@@ -94,7 +94,7 @@ void                  gdict_defbox_find_next          (GdictDefbox  *defbox);
 void                  gdict_defbox_find_previous      (GdictDefbox  *defbox);
 void                  gdict_defbox_set_font_name      (GdictDefbox  *defbox,
 						       const gchar  *font_name);
-G_CONST_RETURN gchar *gdict_defbox_get_font_name      (GdictDefbox  *defbox);
+const gchar *gdict_defbox_get_font_name      (GdictDefbox  *defbox);
 gchar *               gdict_defbox_get_selected_word  (GdictDefbox  *defbox) G_GNUC_MALLOC;
 
 G_END_DECLS
