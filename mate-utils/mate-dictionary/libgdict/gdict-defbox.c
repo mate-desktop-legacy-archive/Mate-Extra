@@ -49,6 +49,14 @@
 #include "gdict-enum-types.h"
 #include "gdict-marshal.h"
 
+/**
+ * G_UNICODE_COMBINING_MARK was deprecated on gtk 2.30
+ * use G_UNICODE_SPACING_MARK
+ */
+#if defined(G_UNICODE_COMBINING_MARK) && !defined(G_UNICODE_SPACING_MARK)
+	#define G_UNICODE_SPACING_MARK G_UNICODE_COMBINING_MARK
+#endif
+
 #define QUERY_MARGIN	48
 #define ERROR_MARGIN	24
 

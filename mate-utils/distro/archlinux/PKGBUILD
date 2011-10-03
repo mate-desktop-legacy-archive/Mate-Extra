@@ -11,7 +11,7 @@ install=mate-utils.install
 url="http://matsusoft.com.ar/projects"
 groups=('mate-extras')
 source=(http://sourceforge.net/projects/matede/files/${pkgver}/${pkgname}.tar.gz/download)
-sha256sums=('c79d140d5989fc580f928476ece3d272c102fc835672128b76db7c3280c2bc17')
+sha256sums=('8eaf67d552e650217e7018b8787548691f0c415e64a57136b2c934e7906b4507')
 
 build() {
 	cd "${srcdir}/${pkgname}"
