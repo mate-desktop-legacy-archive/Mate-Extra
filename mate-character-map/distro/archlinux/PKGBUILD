@@ -1,24 +1,23 @@
 pkgname=mate-character-map
-pkgver=2011.08.31
+pkgver=2011.10.7
 pkgrel=1
 pkgdesc="MATE Unicode Charmap"
-arch=(i686 x86_64)
+arch=('i686' 'x86_64')
 license=('GPL')
 depends=('mate-conf' 'hicolor-icon-theme')
 makedepends=('mate-doc-utils' 'pkgconfig' 'intltool')
 options=('!libtool' '!emptydirs')
 url="http://matsusoft.com.ar/projects"
 groups=('mate-extras')
-install=mate-character-map.install
+install='mate-character-map.install'
 conflicts=('gucharmap')
 provides=('gucharmap')
 source=(http://sourceforge.net/projects/matede/files/${pkgver}/${pkgname}.tar.gz/download)
-sha256sums=('5e5bb94a5a74c4394f70739621033b55b235518ba7ffd6edba514a2a9a8450ed')
+sha256sums=('67ff919609c62ec8e6566677cb7a4e7a345db5ff21196108e80879eb18d4716e')
 
 build() {
 	cd "${srcdir}/${pkgname}"
 
-	mate-doc-prepare || return 1
 	./configure --prefix=/usr --sysconfdir=/etc \
 		--localstatedir=/var --disable-static \
 		--disable-scrollkeeper || return 1
