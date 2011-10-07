@@ -16,7 +16,7 @@
 #   License along with this library; if not, write to the Free Software
 #   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-import gtk, gmenu, gobject, gio
+import gtk, matemenu, gobject, gio
 import cgi, os
 import gettext
 import subprocess
@@ -91,13 +91,13 @@ class MainWindow:
 		item_id, separator_path = None, None
 		if iter:
 			update_items = True
-			if items[iter][3].get_type() == gmenu.TYPE_DIRECTORY:
+			if items[iter][3].get_type() == matemenu.TYPE_DIRECTORY:
 				item_id = os.path.split(items[iter][3].get_desktop_file_path())[1]
 				update_items = True
-			elif items[iter][3].get_type() == gmenu.TYPE_ENTRY:
+			elif items[iter][3].get_type() == matemenu.TYPE_ENTRY:
 				item_id = items[iter][3].get_desktop_file_id()
 				update_items = True
-			elif items[iter][3].get_type() == gmenu.TYPE_SEPARATOR:
+			elif items[iter][3].get_type() == matemenu.TYPE_SEPARATOR:
 				item_id = items.get_path(iter)
 				update_items = True
 		menus, iter = menu_tree.get_selection().get_selected()
@@ -121,12 +121,12 @@ class MainWindow:
 			i = 0
 			for item in item_tree.get_model():
 				found = False
-				if item[3].get_type() == gmenu.TYPE_ENTRY and item[3].get_desktop_file_id() == item_id:
+				if item[3].get_type() == matemenu.TYPE_ENTRY and item[3].get_desktop_file_id() == item_id:
 					found = True
-				if item[3].get_type() == gmenu.TYPE_DIRECTORY and item[3].get_desktop_file_path():
+				if item[3].get_type() == matemenu.TYPE_DIRECTORY and item[3].get_desktop_file_path():
 					if os.path.split(item[3].get_desktop_file_path())[1] == item_id:
 						found = True
-				if item[3].get_type() == gmenu.TYPE_SEPARATOR:
+				if item[3].get_type() == matemenu.TYPE_SEPARATOR:
 					if not isinstance(item_id, tuple):
 						continue
 					#separators have no id, have to find them manually
@@ -201,7 +201,7 @@ class MainWindow:
 		items.enable_model_drag_dest(self.dnd_items, gtk.gdk.ACTION_PRIVATE)
 
 	def _cell_data_toggle_func(self, tree_column, renderer, model, treeiter):
-		if model[treeiter][3].get_type() == gmenu.TYPE_SEPARATOR:
+		if model[treeiter][3].get_type() == matemenu.TYPE_SEPARATOR:
 			renderer.set_property('visible', False)
 		else:
 			renderer.set_property('visible', True)
@@ -241,10 +241,10 @@ class MainWindow:
 		self.item_store.clear()
 		for item, show in self.editor.getItems(menu):
 			menu_icon = None
-			if item.get_type() == gmenu.TYPE_SEPARATOR:
+			if item.get_type() == matemenu.TYPE_SEPARATOR:
 				name = '---'
 				icon = None
-			elif item.get_type() == gmenu.TYPE_ENTRY:
+			elif item.get_type() == matemenu.TYPE_ENTRY:
 				if show:
 					name = cgi.escape(item.get_display_name())
 				else:
@@ -329,11 +329,11 @@ class MainWindow:
 		if not iter:
 			return
 		item = items[iter][3]
-		if item.get_type() == gmenu.TYPE_ENTRY:
+		if item.get_type() == matemenu.TYPE_ENTRY:
 			self.editor.deleteItem(item)
-		elif item.get_type() == gmenu.TYPE_DIRECTORY:
+		elif item.get_type() == matemenu.TYPE_DIRECTORY:
 			self.editor.deleteMenu(item)
-		elif item.get_type() == gmenu.TYPE_SEPARATOR:
+		elif item.get_type() == matemenu.TYPE_SEPARATOR:
 			self.editor.deleteSeparator(item)
 
 	def on_edit_revert_to_original_activate(self, menu):
@@ -342,9 +342,9 @@ class MainWindow:
 		if not iter:
 			return
 		item = items[iter][3]
-		if item.get_type() == gmenu.TYPE_ENTRY:
+		if item.get_type() == matemenu.TYPE_ENTRY:
 			self.editor.revertItem(item)
-		elif item.get_type() == gmenu.TYPE_DIRECTORY:
+		elif item.get_type() == matemenu.TYPE_DIRECTORY:
 			self.editor.revertMenu(item)
 
 	def on_edit_properties_activate(self, menu):
@@ -353,13 +353,13 @@ class MainWindow:
 		if not iter:
 			return
 		item = items[iter][3]
-		if item.get_type() not in (gmenu.TYPE_ENTRY, gmenu.TYPE_DIRECTORY):
+		if item.get_type() not in (matemenu.TYPE_ENTRY, matemenu.TYPE_DIRECTORY):
 			return
 
-		if item.get_type() == gmenu.TYPE_ENTRY:
+		if item.get_type() == matemenu.TYPE_ENTRY:
 			file_path = os.path.join(util.getUserItemPath(), item.get_desktop_file_id())
 			file_type = 'Item'
-		elif item.get_type() == gmenu.TYPE_DIRECTORY:
+		elif item.get_type() == matemenu.TYPE_DIRECTORY:
 			if item.get_desktop_file_path() == None:
 				file_path = util.getUniqueFileId('alacarte-made', '.directory')
 				parser = util.DesktopParser(file_path, 'Directory')
@@ -414,9 +414,9 @@ class MainWindow:
 				item = self.drag_data
 				new_parent = menus[path][2]
 				treeview.get_selection().select_path(path)
-				if item.get_type() == gmenu.TYPE_ENTRY:
+				if item.get_type() == matemenu.TYPE_ENTRY:
 					self.editor.copyItem(item, new_parent)
-				elif item.get_type() == gmenu.TYPE_DIRECTORY:
+				elif item.get_type() == matemenu.TYPE_DIRECTORY:
 					if self.editor.moveMenu(item, new_parent) == False:
 						self.loadUpdates()
 				else:
@@ -426,7 +426,7 @@ class MainWindow:
 
 	def on_item_tree_show_toggled(self, cell, path):
 		item = self.item_store[path][3]
-		if item.get_type() == gmenu.TYPE_SEPARATOR:
+		if item.get_type() == matemenu.TYPE_SEPARATOR:
 			return
 		if self.item_store[path][0]:
 			self.editor.setVisible(item, False)
@@ -445,7 +445,7 @@ class MainWindow:
 			self.tree.get_object('edit_revert_to_original').set_sensitive(True)
 		else:
 			self.tree.get_object('edit_revert_to_original').set_sensitive(False)
-		if not item.get_type() == gmenu.TYPE_SEPARATOR:
+		if not item.get_type() == matemenu.TYPE_SEPARATOR:
 			self.tree.get_object('edit_properties').set_sensitive(True)
 		else:
 			self.tree.get_object('edit_properties').set_sensitive(False)
@@ -512,12 +512,12 @@ class MainWindow:
 			else:
 				path = (len(items) - 1,)
 				after = items[path][3]
-			if item.get_type() == gmenu.TYPE_ENTRY:
+			if item.get_type() == matemenu.TYPE_ENTRY:
 				self.editor.moveItem(item, item.get_parent(), before, after)
-			elif item.get_type() == gmenu.TYPE_DIRECTORY:
+			elif item.get_type() == matemenu.TYPE_DIRECTORY:
 				if self.editor.moveMenu(item, item.get_parent(), before, after) == False:
 					self.loadUpdates()
-			elif item.get_type() == gmenu.TYPE_SEPARATOR:
+			elif item.get_type() == matemenu.TYPE_SEPARATOR:
 				self.editor.moveSeparator(item, item.get_parent(), before, after)
 			context.finish(True, True, etime)
 		elif selection.target == 'text/plain':
@@ -567,11 +567,11 @@ class MainWindow:
 			return
 		item = items[path][3]
 		before = items[(path[0] - 1,)][3]
-		if item.get_type() == gmenu.TYPE_ENTRY:
+		if item.get_type() == matemenu.TYPE_ENTRY:
 			self.editor.moveItem(item, item.get_parent(), before=before)
-		elif item.get_type() == gmenu.TYPE_DIRECTORY:
+		elif item.get_type() == matemenu.TYPE_DIRECTORY:
 			self.editor.moveMenu(item, item.get_parent(), before=before)
-		elif item.get_type() == gmenu.TYPE_SEPARATOR:
+		elif item.get_type() == matemenu.TYPE_SEPARATOR:
 			self.editor.moveSeparator(item, item.get_parent(), before=before)
 
 	def on_move_down_button_clicked(self, button):
@@ -585,11 +585,11 @@ class MainWindow:
 			return
 		item = items[path][3]
 		after = items[path][3]
-		if item.get_type() == gmenu.TYPE_ENTRY:
+		if item.get_type() == matemenu.TYPE_ENTRY:
 			self.editor.moveItem(item, item.get_parent(), after=after)
-		elif item.get_type() == gmenu.TYPE_DIRECTORY:
+		elif item.get_type() == matemenu.TYPE_DIRECTORY:
 			self.editor.moveMenu(item, item.get_parent(), after=after)
-		elif item.get_type() == gmenu.TYPE_SEPARATOR:
+		elif item.get_type() == matemenu.TYPE_SEPARATOR:
 			self.editor.moveSeparator(item, item.get_parent(), after=after)
 
 	def on_mainwindow_undo(self, accelgroup, window, keyval, modifier):

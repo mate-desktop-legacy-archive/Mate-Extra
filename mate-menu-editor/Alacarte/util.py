@@ -17,7 +17,7 @@
 #   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 import os
-import gtk, gmenu
+import gtk, matemenu
 from ConfigParser import ConfigParser
 
 class DesktopParser(ConfigParser):
@@ -226,9 +226,9 @@ def getIcon(item, for_properties=False):
 		if pixbuf == None:
 			if for_properties:
 				return None, None
-			if item.get_type() == gmenu.TYPE_DIRECTORY:
+			if item.get_type() == matemenu.TYPE_DIRECTORY:
 				iconName = 'mate-fs-directory'
-			elif item.get_type() == gmenu.TYPE_ENTRY:
+			elif item.get_type() == matemenu.TYPE_ENTRY:
 				iconName = 'application-default-icon'
 			try:
 				pixbuf = icon_theme.load_icon(iconName, 24, 0)
