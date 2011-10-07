@@ -40,12 +40,12 @@ typedef struct _MateConfKeyEditorClass MateConfKeyEditorClass;
 
 struct _MateConfKeyEditor {
 	GtkDialog parent_instance;
-	
+
 	int active_type;
 	GtkWidget *combobox;
 	GtkWidget *bool_box;
 	GtkWidget *bool_widget;
-	GtkWidget *int_box;	
+	GtkWidget *int_box;
 	GtkWidget *int_widget;
 	GtkWidget *string_box;
 	GtkWidget *string_widget;
@@ -53,7 +53,7 @@ struct _MateConfKeyEditor {
 	GtkWidget *float_widget;
 
 	GtkWidget *non_writable_label;
-	
+
 	GtkWidget *path_label;
 	GtkWidget *path_box;
 	GtkWidget *name_entry;
@@ -84,7 +84,7 @@ char *mateconf_key_editor_get_full_key_path (MateConfKeyEditor *editor);
 
 void                 mateconf_key_editor_set_key_name (MateConfKeyEditor *editor,
 						    const char     *path);
-G_CONST_RETURN char *mateconf_key_editor_get_key_name (MateConfKeyEditor *editor);
+const char* mateconf_key_editor_get_key_name(MateConfKeyEditor* editor);
 
 void mateconf_key_editor_set_writable	(MateConfKeyEditor *editor,
 					 gboolean        writable);

@@ -1,5 +1,5 @@
 /* -*- Mode: C; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*- */
-/* 
+/*
  * Copyright (C) 2001 Ximian, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -30,7 +30,7 @@
 #include "gst-dialog.h"
 
 #ifdef HAVE_POLKIT
-#include <polkitgtk/polkitgtk.h>
+	#include <polkitgtkmate/polkitgtkmate.h>
 #endif
 
 #define GST_DIALOG_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), GST_TYPE_DIALOG, GstDialogPrivate))
@@ -603,7 +603,7 @@ gst_dialog_try_set_sensitive (GstDialog *dialog, GtkWidget *w, gboolean sensitiv
 
 static void
 dialog_connect_signals (GstDialog *dialog, GstDialogSignal *signals, gboolean connect_after)
-{       
+{
 	GtkWidget *w;
 	guint sig;
 	int i;
@@ -625,7 +625,7 @@ dialog_connect_signals (GstDialog *dialog, GstDialogSignal *signals, gboolean co
 						G_CALLBACK (signals[i].func),
 						dialog);
 		}
-		
+
 		if (G_UNLIKELY (!sig))
 			g_error ("Error connecting signal `%s' in widget `%s'",
 				 signals[i].signal_name, signals[i].widget);

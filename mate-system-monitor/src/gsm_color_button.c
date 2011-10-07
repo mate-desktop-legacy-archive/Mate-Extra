@@ -271,17 +271,17 @@ render (GtkWidget * widget)
   if (color_button->priv->highlight > 0) {
     highlight_factor = 8192 * color_button->priv->highlight;
 
-    if (color->red + highlight_factor > 65535) 
+    if (color->red + highlight_factor > 65535)
       color->red = 65535;
     else
       color->red = color->red + highlight_factor;
-    
-    if (color->blue + highlight_factor > 65535) 
+
+    if (color->blue + highlight_factor > 65535)
       color->blue = 65535;
     else
       color->blue = color->blue + highlight_factor;
-    
-    if (color->green + highlight_factor > 65535) 
+
+    if (color->green + highlight_factor > 65535)
       color->green = 65535;
     else
       color->green = color->green + highlight_factor;
@@ -315,12 +315,12 @@ render (GtkWidget * widget)
       arc_end = -G_PI_2;
 
       cairo_set_line_width (cr, 1);
-      
+
       // Draw external stroke and fill
       if (color_button->priv->fraction < 0.01) {
         cairo_arc (cr, (width / 2) + .5, (height / 2) + .5, 4.5,
 		   0, 2 * G_PI);
-      } else if (color_button->priv->fraction > 0.99) { 
+      } else if (color_button->priv->fraction > 0.99) {
         cairo_arc (cr, (width / 2) + .5, (height / 2) + .5, radius - 2.25,
 		   0, 2 * G_PI);
       } else {
@@ -347,13 +347,13 @@ render (GtkWidget * widget)
 			    0, 2 * G_PI);
       } else {
         cairo_arc_negative (cr, (width / 2) + .5, (height / 2) + .5, radius - 3.5,
-		 arc_start + (1 / (radius - 3.75)), 
+		 arc_start + (1 / (radius - 3.75)),
 		 arc_end - (1 / (radius - 3.75)));
         cairo_arc_negative (cr, (width / 2) + .5, (height / 2) + .5, 3.25,
 		   arc_end - (1 / (radius - 3.75)),
                    arc_start + (1 / (radius - 3.75)));
         cairo_arc_negative (cr, (width / 2) + .5, (height / 2) + .5, radius - 3.5,
-		 arc_start + (1 / (radius - 3.75)), 
+		 arc_start + (1 / (radius - 3.75)),
 		 arc_start + (1 / (radius - 3.75)));
       }
       cairo_stroke (cr);
@@ -849,12 +849,11 @@ gsm_color_button_set_title (GSMColorButton * color_button,
   g_object_notify (G_OBJECT (color_button), "title");
 }
 
-G_CONST_RETURN gchar *
-gsm_color_button_get_title (GSMColorButton * color_button)
+const gchar* gsm_color_button_get_title(GSMColorButton* color_button)
 {
-  g_return_val_if_fail (GSM_IS_COLOR_BUTTON (color_button), NULL);
+	g_return_val_if_fail(GSM_IS_COLOR_BUTTON(color_button), NULL);
 
-  return color_button->priv->title;
+	return color_button->priv->title;
 }
 
 static void

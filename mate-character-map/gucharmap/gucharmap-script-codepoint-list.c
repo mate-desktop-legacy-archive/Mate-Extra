@@ -51,7 +51,7 @@ find_script (const gchar *script)
   min = 0;
   max = G_N_ELEMENTS (unicode_script_list_offsets) - 1;
 
-  while (max >= min) 
+  while (max >= min)
     {
       mid = (min + max) / 2;
 
@@ -115,7 +115,7 @@ get_chars_for_script (const gchar            *script,
 	      (*ranges)[j].start = prev_end + 1;
 	      (*ranges)[j].end = unicode_scripts[i].start - 1;
 	      (*ranges)[j].index = index;
-      
+
 	      index += (*ranges)[j].end - (*ranges)[j].start + 1;
 	      j++;
 	    }
@@ -165,8 +165,8 @@ ensure_initialized (GucharmapScriptCodepointList *guscl)
   g_assert (success);
 }
 
-static gunichar 
-get_char (GucharmapCodepointList *list, 
+static gunichar
+get_char (GucharmapCodepointList *list,
           gint                    index)
 {
   GucharmapScriptCodepointList *guscl = GUCHARMAP_SCRIPT_CODEPOINT_LIST (list);
@@ -178,7 +178,7 @@ get_char (GucharmapCodepointList *list,
   min = 0;
   max = priv->ranges->len - 1;
 
-  while (max >= min) 
+  while (max >= min)
     {
       UnicodeRange *range;
 
@@ -198,7 +198,7 @@ get_char (GucharmapCodepointList *list,
 
 /* XXX: linear search */
 static gint
-get_index (GucharmapCodepointList *list, 
+get_index (GucharmapCodepointList *list,
            gunichar                wc)
 {
   GucharmapScriptCodepointList *guscl = GUCHARMAP_SCRIPT_CODEPOINT_LIST (list);
@@ -271,11 +271,11 @@ gucharmap_script_codepoint_list_class_init (GucharmapScriptCodepointListClass *c
   codepoint_list_class->get_char = get_char;
   codepoint_list_class->get_index = get_index;
   codepoint_list_class->get_last_index = get_last_index;
-  
+
   gobject_class->finalize = gucharmap_script_codepoint_list_finalize;
 }
 
-static void 
+static void
 gucharmap_script_codepoint_list_init (GucharmapScriptCodepointList *guscl)
 {
   guscl->priv = G_TYPE_INSTANCE_GET_PRIVATE (guscl, GUCHARMAP_TYPE_SCRIPT_CODEPOINT_LIST, GucharmapScriptCodepointListPrivate);
@@ -289,7 +289,7 @@ gucharmap_script_codepoint_list_init (GucharmapScriptCodepointList *guscl)
  * Return value: the newly-created #GucharmapCodepointList. Use
  * g_object_unref() to free the result.
  **/
-GucharmapCodepointList * 
+GucharmapCodepointList *
 gucharmap_script_codepoint_list_new (void)
 {
   return GUCHARMAP_CODEPOINT_LIST (g_object_new (gucharmap_script_codepoint_list_get_type (), NULL));
@@ -300,12 +300,12 @@ gucharmap_script_codepoint_list_new (void)
  * @list: a GucharmapScriptCodepointList
  * @script: the script name
  *
- * Sets the script for the codepoint list. 
+ * Sets the script for the codepoint list.
  *
  * Return value: %TRUE on success, %FALSE if there is no such script, in
  * which case the script is not changed.
  **/
-gboolean 
+gboolean
 gucharmap_script_codepoint_list_set_script (GucharmapScriptCodepointList *list,
                                             const gchar                  *script)
 {
@@ -437,28 +437,36 @@ gucharmap_unicode_list_scripts (void)
  * character belongs. Characters that don't belong to an actual script
  * return %"Common".
  **/
-G_CONST_RETURN gchar *
-gucharmap_unicode_get_script_for_char (gunichar wc)
+const gchar* gucharmap_unicode_get_script_for_char(gunichar wc)
 {
-  gint min = 0;
-  gint mid;
-  gint max = sizeof (unicode_scripts) / sizeof (UnicodeScript) - 1;
+	gint min = 0;
+	gint mid;
+	gint max = sizeof(unicode_scripts) / sizeof(UnicodeScript) - 1;
 
-  if (wc > UNICHAR_MAX)
-    return NULL;
-  
-  while (max >= min) 
-    {
-      mid = (min + max) / 2;
-      if (wc > unicode_scripts[mid].end)
-        min = mid + 1;
-      else if (wc < unicode_scripts[mid].start)
-        max = mid - 1;
-      else
-        return unicode_script_list_strings + unicode_script_list_offsets[unicode_scripts[mid].script_index];
+	if (wc > UNICHAR_MAX)
+	{
+		return NULL;
     }
 
-  /* Unicode assigns "Common" as the script name for any character not
-   * specifically listed in Scripts.txt */
-  return N_("Common");
+	while (max >= min)
+	{
+		mid = (min + max) / 2;
+
+		if (wc > unicode_scripts[mid].end)
+		{
+			min = mid + 1;
+		}
+		else if (wc < unicode_scripts[mid].start)
+		{
+			max = mid - 1;
+		}
+		else
+		{
+			return unicode_script_list_strings + unicode_script_list_offsets[unicode_scripts[mid].script_index];
+		}
+	}
+
+	/* Unicode assigns "Common" as the script name for any character not
+	 * specifically listed in Scripts.txt */
+	return N_("Common");
 }

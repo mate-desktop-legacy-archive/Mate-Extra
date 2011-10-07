@@ -100,8 +100,8 @@ gucharmap_chartable_cell_accessible_get_extents (AtkComponent *component,
 
   if (cell->index >= chartable_priv->page_first_cell && cell->index < chartable_priv->page_first_cell + chartable_priv->rows * chartable_priv->cols)
     {
-      atk_component_get_extents (ATK_COMPONENT (cell_parent), 
-                                 &real_x, &real_y, &real_width, &real_height, 
+      atk_component_get_extents (ATK_COMPONENT (cell_parent),
+                                 &real_x, &real_y, &real_width, &real_height,
                                  coord_type);
       row = (cell->index - chartable_priv->page_first_cell)/ chartable_priv->cols;
       column = _gucharmap_chartable_cell_column (chartable, cell->index);
@@ -118,7 +118,7 @@ gucharmap_chartable_cell_accessible_get_extents (AtkComponent *component,
 }
 
 
-static gboolean 
+static gboolean
 gucharmap_chartable_cell_accessible_grab_focus (AtkComponent *component)
 {
   GucharmapChartableCellAccessible *cell = GUCHARMAP_CHARTABLE_CELL_ACCESSIBLE (component);
@@ -150,7 +150,7 @@ idle_do_action (gpointer data)
   chartable = GUCHARMAP_CHARTABLE (cell->widget);
   gucharmap_chartable_set_active_character (chartable, cell->index);
   g_signal_emit_by_name (chartable, "activate");
-  return FALSE; 
+  return FALSE;
 }
 
 
@@ -173,28 +173,33 @@ gucharmap_chartable_cell_accessible_action_do_action (AtkAction *action,
 }
 
 
-static G_CONST_RETURN gchar*
-gucharmap_chartable_cell_accessible_action_get_name (AtkAction *action,
-                          gint      index)
+static const gchar* gucharmap_chartable_cell_accessible_action_get_name(AtkAction* action, gint index)
 {
-  if (index == 0)
-    return "activate";
-  else
-    return NULL;
+	if (index == 0)
+	{
+		return "activate";
+	}
+	else
+	{
+		return NULL;
+	}
 }
 
 
-static G_CONST_RETURN gchar *
-gucharmap_chartable_cell_accessible_action_get_description (AtkAction *action,
-                                 gint      index)
+static const gchar* gucharmap_chartable_cell_accessible_action_get_description(AtkAction* action, gint index)
 {
-  GucharmapChartableCellAccessible *cell;
+	GucharmapChartableCellAccessible* cell;
 
-  cell = GUCHARMAP_CHARTABLE_CELL_ACCESSIBLE (action);
-  if (index == 0)
-    return cell->activate_description;
-  else
-    return NULL;
+	cell = GUCHARMAP_CHARTABLE_CELL_ACCESSIBLE(action);
+
+	if (index == 0)
+	{
+		return cell->activate_description;
+	}
+	else
+	{
+		return NULL;
+	}
 }
 
 
@@ -240,7 +245,7 @@ gucharmap_chartable_cell_accessible_object_finalize (GObject *obj)
       g_source_remove (cell->action_idle_handler);
       cell->action_idle_handler = 0;
     }
-     
+
   if (cell->state_set)
     g_object_unref (cell->state_set);
 
@@ -317,7 +322,7 @@ gucharmap_chartable_cell_accessible_add_state (GucharmapChartableCellAccessible 
   if (!atk_state_set_contains_state (cell->state_set, state_type))
     {
       gboolean rc;
-    
+
       rc = atk_state_set_add_state (cell->state_set, state_type);
       /*
        * The signal should only be generated if the value changed,

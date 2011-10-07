@@ -97,17 +97,17 @@ AC_SUBST(DBUS_CFLAGS)
 dnl PolicyKit-GTK support
 
 have_polkit=no
-AC_ARG_ENABLE(polkit-gtk,
-	AS_HELP_STRING([--enable-polkit-gtk],[Enable PolicyKit support using polkit-gtk (default yes)]),
-	[], [enable_polkit_gtk=yes])
+AC_ARG_ENABLE(polkit-gtk-mate,
+	AS_HELP_STRING([--enable-polkit-gtk-mate],[Enable PolicyKit support using polkit-gtk-mate (default yes)]),
+	[], [enable_polkit_gtk_mate=yes])
 
-if test "x$enable_polkit_gtk" = "xyes"; then
-	PKG_CHECK_MODULES(POLKIT_GTK,[polkit-gtk-1 >= $POLICYKIT_GTK_REQUIRED], have_polkit=yes)
+if test "x$enable_polkit_gtk_mate" = "xyes"; then
+	PKG_CHECK_MODULES(POLKIT_GTK_MATE,[polkit-gtk-mate-1 >= $POLICYKIT_GTK_REQUIRED], have_polkit=yes)
 
 	if test "$have_polkit" = "yes"; then
-		AC_DEFINE(HAVE_POLKIT, [1], [whether polkit-gtk was found])
+		AC_DEFINE(HAVE_POLKIT, [1], [whether polkit-gtk-mate was found])
 	else
-		AC_MSG_ERROR([PolicyKit support requested but polkit-gtk not found])
+		AC_MSG_ERROR([PolicyKit support requested but polkit-gtk-mate not found])
 	fi
 fi
 
@@ -126,22 +126,22 @@ dnl =====================================================
 
 
 AC_ARG_ENABLE(network,
-	      [  --enable-network        Enable build network module (default yes)], , 
+	      [  --enable-network        Enable build network module (default yes)], ,
 	      enable_network=yes)
 AC_ARG_ENABLE(services,
-	      [  --enable-services       Enable build services module (default yes)], , 
+	      [  --enable-services       Enable build services module (default yes)], ,
 	      enable_services=yes)
 AC_ARG_ENABLE(time,
-	      [  --enable-time           Enable build time module (default yes)], , 
+	      [  --enable-time           Enable build time module (default yes)], ,
 	      enable_time=yes)
 AC_ARG_ENABLE(users,
-	      [  --enable-users          Enable build users module (default yes)], , 
+	      [  --enable-users          Enable build users module (default yes)], ,
 	      enable_users=yes)
 AC_ARG_ENABLE(shares,
-	      [  --enable-shares         Enable build shares module (default yes)], , 
+	      [  --enable-shares         Enable build shares module (default yes)], ,
 	      enable_shares=yes)
 AC_ARG_ENABLE(caja,
-	      [  --enable-caja         Enable build caja shares module (default yes)], , 
+	      [  --enable-caja         Enable build caja shares module (default yes)], ,
 	      enable_caja=yes)
 
 AM_CONDITIONAL(BUILD_NETWORK, test x$enable_network = xyes)
@@ -175,7 +175,7 @@ dnl ========================================================
 
 
 dnl =====================================================
-dnl GST_LIBS & GST_CFLAGS 
+dnl GST_LIBS & GST_CFLAGS
 dnl =====================================================
 
 
@@ -234,14 +234,14 @@ fi
 dnl GST_DEPRECATED_FLAGS="-DG_DISABLE_DEPRECATED -DGDK_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED -DMATE_DISABLE_DEPRECATED"
 GST_DEPRECATED_FLAGS=""
 
-GST_LIBS="$GST_DEPENDS_LIBS $POLKIT_GTK_LIBS"
-GST_CFLAGS="$GST_DEPENDS_CFLAGS $POLKIT_GTK_CFLAGS $GST_DEPRECATED_FLAGS"
+GST_LIBS="$GST_DEPENDS_LIBS $POLKIT_GTK_MATE_LIBS"
+GST_CFLAGS="$GST_DEPENDS_CFLAGS $POLKIT_GTK_MATE_CFLAGS $GST_DEPRECATED_FLAGS"
 
 GST_TOOL_LIBS="\$(top_builddir)/src/common/libsetuptool.a $GST_LIBS"
 GST_TOOL_CFLAGS="-I\$(top_srcdir)/src/common $GST_CFLAGS"
 
 GST_TOOL_CLEANFILES="\$(desktop) \$(desktop).in"
-GST_TOOL_EXTRA_DIST="\$(toolpixmaps) \$(desktop).in.in" 
+GST_TOOL_EXTRA_DIST="\$(toolpixmaps) \$(desktop).in.in"
 GST_TOOL_DEPENDENCIES="\$(top_builddir)/src/common/libsetuptool.a"
 
 AC_SUBST(GST_LIBS)
@@ -349,7 +349,7 @@ Configuration (GST):
 	Time tool:         ${enable_time}
 	Shares tool:       ${enable_shares}
 	Caja support:  ${enable_caja}
-	Use PolKit-GTK:    ${have_polkit}
+	Use PolKit-GTK-Mate:    ${have_polkit}
 
 	Compiler:          ${CC}
 "

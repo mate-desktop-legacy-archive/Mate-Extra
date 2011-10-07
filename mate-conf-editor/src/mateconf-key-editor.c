@@ -48,14 +48,14 @@ combo_box_changed (GtkWidget *combo_box,
 	index = gtk_combo_box_get_active (GTK_COMBO_BOX (combo_box));
 
 	editor->active_type = index;
-		
-	gtk_window_set_resizable (GTK_WINDOW (editor), FALSE);	
+
+	gtk_window_set_resizable (GTK_WINDOW (editor), FALSE);
 	gtk_widget_hide (editor->int_box);
 	gtk_widget_hide (editor->bool_box);
 	gtk_widget_hide (editor->string_box);
 	gtk_widget_hide (editor->float_box);
 	gtk_widget_hide (editor->list_box);
-				       
+
 	switch (index) {
 		case EDIT_INTEGER:
 			gtk_widget_show_all (editor->int_box);
@@ -136,7 +136,7 @@ mateconf_key_editor_create_combo_box (MateConfKeyEditor *editor)
 	g_signal_connect (combo_box, "changed",
 			  G_CALLBACK (combo_box_changed),
 			  editor);
-	
+
 	gtk_widget_show_all (combo_box);
 	return combo_box;
 }
@@ -157,7 +157,7 @@ mateconf_key_editor_create_list_type_menu (MateConfKeyEditor *editor)
 	gtk_combo_box_append_text (GTK_COMBO_BOX (combo_box), _("String"));
 
 	gtk_combo_box_set_active (GTK_COMBO_BOX (combo_box), 0);
-	
+
 	g_signal_connect (combo_box, "changed",
 			  G_CALLBACK (list_type_menu_changed),
 			  editor);
@@ -230,7 +230,7 @@ list_add_clicked (GtkButton *button,
 	gtk_dialog_set_has_separator (GTK_DIALOG (dialog), FALSE);
 	gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
 	gtk_box_set_spacing (GTK_BOX (content_area), 2);
-	
+
 	hbox = gtk_hbox_new (FALSE, 12);
 	gtk_container_set_border_width (GTK_CONTAINER (hbox), 5);
 	gtk_box_pack_start (GTK_BOX (content_area), hbox, FALSE, FALSE, 0);
@@ -267,7 +267,7 @@ list_add_clicked (GtkButton *button,
 
 	if (response == GTK_RESPONSE_OK) {
 		MateConfValue *value;
-		
+
 	        value = NULL;
 
 		switch (gtk_combo_box_get_active (GTK_COMBO_BOX (editor->list_type_menu))) {
@@ -286,7 +286,7 @@ list_add_clicked (GtkButton *button,
 			case EDIT_STRING:
 		                {
 		                        char *text;
-				
+
 		                        text = gtk_editable_get_chars (GTK_EDITABLE (value_widget), 0, -1);
 		                        value = mateconf_value_new (MATECONF_VALUE_STRING);
 		                        mateconf_value_set_string (value, text);
@@ -295,7 +295,7 @@ list_add_clicked (GtkButton *button,
 	                	break;
 			default:
 				g_assert_not_reached ();
-				
+
 		}
 
 		gtk_list_store_append (editor->list_model, &iter);
@@ -304,7 +304,7 @@ list_add_clicked (GtkButton *button,
 		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (editor->list_widget));
 		gtk_tree_selection_select_iter(selection, &iter);
 	}
-	
+
 	gtk_widget_destroy (dialog);
 }
 
@@ -335,7 +335,7 @@ list_edit_element (MateConfKeyEditor *editor)
 	gtk_dialog_set_has_separator (GTK_DIALOG (dialog), FALSE);
 	gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
 	gtk_box_set_spacing (GTK_BOX (content_area), 2);
-	
+
 	hbox = gtk_hbox_new (FALSE, 12);
 	gtk_container_set_border_width (GTK_CONTAINER (hbox), 5);
 	gtk_box_pack_start (GTK_BOX (content_area), hbox, FALSE, FALSE, 0);
@@ -374,7 +374,7 @@ list_edit_element (MateConfKeyEditor *editor)
 
 	if (response == GTK_RESPONSE_OK) {
 		MateConfValue *value;
-		
+
 	        value = NULL;
 
 		switch (gtk_combo_box_get_active (GTK_COMBO_BOX (editor->list_type_menu))) {
@@ -393,7 +393,7 @@ list_edit_element (MateConfKeyEditor *editor)
 			case EDIT_STRING:
 		                {
 		                        char *text;
-				
+
 		                        text = gtk_editable_get_chars (GTK_EDITABLE (value_widget), 0, -1);
 		                        value = mateconf_value_new (MATECONF_VALUE_STRING);
 		                        mateconf_value_set_string (value, text);
@@ -402,12 +402,12 @@ list_edit_element (MateConfKeyEditor *editor)
 	                	break;
 			default:
 				g_assert_not_reached ();
-				
+
 		}
                 gtk_list_store_set (editor->list_model, &iter, 0, value, -1);
 
 	}
-	
+
 	gtk_widget_destroy (dialog);
 }
 
@@ -446,21 +446,21 @@ list_go_up_clicked (GtkButton *button,
 	GtkTreeIter iter_first;
 	GtkTreeIter iter_second;
 	GtkTreeSelection *selection;
-	
+
 	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (editor->list_widget));
 
 	if (gtk_tree_selection_get_selected (selection, NULL, &iter_second)) {
 		MateConfValue *first;
 		MateConfValue *second;
 		GtkTreePath *path;
-		
+
 		path = gtk_tree_model_get_path (GTK_TREE_MODEL (editor->list_model), &iter_second);
 		gtk_tree_path_prev (path);
 		gtk_tree_model_get_iter (GTK_TREE_MODEL (editor->list_model), &iter_first, path);
-		
+
 		gtk_tree_model_get (GTK_TREE_MODEL (editor->list_model), &iter_first, 0, &first, -1);
 		gtk_tree_model_get (GTK_TREE_MODEL (editor->list_model), &iter_second, 0, &second, -1);
-				
+
 		gtk_list_store_set (editor->list_model, &iter_first, 0, second, -1);
 		gtk_list_store_set (editor->list_model, &iter_second, 0, first, -1);
 
@@ -477,7 +477,7 @@ list_go_down_clicked (GtkButton *button,
 	GtkTreeIter iter_first;
 	GtkTreeIter iter_second;
 	GtkTreeSelection *selection;
-	
+
 	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (editor->list_widget));
 
 	if (gtk_tree_selection_get_selected (selection, NULL, &iter_first)) {
@@ -490,7 +490,7 @@ list_go_down_clicked (GtkButton *button,
 
 		gtk_tree_model_get (GTK_TREE_MODEL (editor->list_model), &iter_first, 0, &first, -1);
 		gtk_tree_model_get (GTK_TREE_MODEL (editor->list_model), &iter_second, 0, &second, -1);
-				
+
 		gtk_list_store_set (editor->list_model, &iter_first, 0, second, -1);
 		gtk_list_store_set (editor->list_model, &iter_second, 0, first, -1);
 		gtk_tree_selection_select_iter(selection, &iter_second);
@@ -544,7 +544,7 @@ mateconf_key_editor_init (MateConfKeyEditor *editor)
 	GtkWidget *sw;
 
 	gtk_dialog_add_buttons (GTK_DIALOG (editor),
-				GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, 
+				GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
 				GTK_STOCK_OK, GTK_RESPONSE_OK,
 				NULL);
 	content_area = gtk_dialog_get_content_area (GTK_DIALOG (editor));
@@ -561,7 +561,7 @@ mateconf_key_editor_init (MateConfKeyEditor *editor)
 	gtk_widget_show_all (vbox);
 
 	size_group = gtk_size_group_new (GTK_SIZE_GROUP_BOTH);
-	
+
 	editor->path_box = gtk_hbox_new (FALSE, 12);
 	label = gtk_label_new (_("Path:"));
 	gtk_size_group_add_widget (size_group, label);
@@ -634,7 +634,7 @@ mateconf_key_editor_init (MateConfKeyEditor *editor)
 	gtk_box_pack_start (GTK_BOX (editor->int_box), hbox, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (vbox), editor->int_box, FALSE, FALSE, 0);
 	gtk_widget_show_all (editor->int_box);
-	
+
 	/* EDIT_BOOLEAN */
 	editor->bool_box = gtk_hbox_new (FALSE, 0);
 	hbox = gtk_hbox_new (FALSE, 12);
@@ -663,7 +663,7 @@ mateconf_key_editor_init (MateConfKeyEditor *editor)
 	label = gtk_label_new_with_mnemonic (_("_Value:"));
 	editor->string_widget = gtk_entry_new ();
 	gtk_entry_set_activates_default (GTK_ENTRY (editor->string_widget), TRUE);
-	gtk_label_set_mnemonic_widget (GTK_LABEL (label), editor->string_widget);	
+	gtk_label_set_mnemonic_widget (GTK_LABEL (label), editor->string_widget);
 	gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (hbox), editor->string_widget, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (editor->string_box), hbox, TRUE, TRUE, 0);
@@ -709,7 +709,7 @@ mateconf_key_editor_init (MateConfKeyEditor *editor)
 
 	label = gtk_label_new_with_mnemonic (_("_Values:"));
 	gtk_misc_set_alignment(GTK_MISC (label), 0.0, 0.5);
-  
+
 	hbox = gtk_hbox_new (FALSE, 12);
 
 	sw = gtk_scrolled_window_new (NULL, NULL);
@@ -726,8 +726,8 @@ mateconf_key_editor_init (MateConfKeyEditor *editor)
 			  G_CALLBACK (list_view_row_activated), editor);
 	g_signal_connect (G_OBJECT (list_selection), "changed",
 			  G_CALLBACK (list_selection_changed), editor);
- 	
-	
+
+
 	cell_renderer = mateconf_cell_renderer_new ();
 	g_signal_connect (G_OBJECT (cell_renderer), "changed", G_CALLBACK (mateconf_key_editor_list_entry_changed), editor);
 
@@ -764,7 +764,7 @@ mateconf_key_editor_init (MateConfKeyEditor *editor)
 
 	update_list_buttons (editor);
 
-        gtk_label_set_mnemonic_widget (GTK_LABEL (label), editor->list_widget); 
+        gtk_label_set_mnemonic_widget (GTK_LABEL (label), editor->list_widget);
         gtk_box_pack_start (GTK_BOX (value_box), label, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (value_box), hbox, TRUE, TRUE, 0);
         gtk_box_pack_start (GTK_BOX (hbox), sw, TRUE, TRUE, 0);
@@ -821,7 +821,7 @@ mateconf_key_editor_new (MateConfKeyEditorAction action)
 	default:
 		break;
 	}
-	
+
 	return GTK_WIDGET (dialog);
 }
 
@@ -856,7 +856,7 @@ mateconf_key_editor_set_value (MateConfKeyEditor *editor, MateConfValue *value)
 	case MATECONF_VALUE_LIST:
 		{
 			GSList* iter = mateconf_value_get_list(value);
-			
+
 			switch (mateconf_value_get_list_type(value)) {
 				case MATECONF_VALUE_INT:
 					gtk_combo_box_set_active (GTK_COMBO_BOX (editor->list_type_menu), EDIT_INTEGER);
@@ -875,7 +875,7 @@ mateconf_key_editor_set_value (MateConfKeyEditor *editor, MateConfValue *value)
 			}
 
 			gtk_combo_box_set_active (GTK_COMBO_BOX (editor->combobox), EDIT_LIST);
-				
+
 		        while (iter != NULL) {
 				MateConfValue* element = (MateConfValue*) iter->data;
 				GtkTreeIter tree_iter;
@@ -890,7 +890,7 @@ mateconf_key_editor_set_value (MateConfKeyEditor *editor, MateConfValue *value)
 		g_assert_not_reached ();
 		break;
 	}
-	
+
 }
 
 MateConfValue*
@@ -899,7 +899,7 @@ mateconf_key_editor_get_value (MateConfKeyEditor *editor)
 	MateConfValue *value;
 
 	value = NULL;
-	
+
 	switch (editor->active_type) {
 
 	case EDIT_INTEGER:
@@ -917,7 +917,7 @@ mateconf_key_editor_get_value (MateConfKeyEditor *editor)
 	case EDIT_STRING:
 		{
 			char *text;
-			
+
 			text = gtk_editable_get_chars (GTK_EDITABLE (editor->string_widget), 0, -1);
 			value = mateconf_value_new (MATECONF_VALUE_STRING);
 			mateconf_value_set_string (value, text);
@@ -995,29 +995,25 @@ mateconf_key_editor_set_writable (MateConfKeyEditor *editor, gboolean writable)
 	gtk_widget_set_sensitive (editor->string_box, writable);
 }
 
-G_CONST_RETURN char *
-mateconf_key_editor_get_key_name (MateConfKeyEditor *editor)
+const char* mateconf_key_editor_get_key_name(MateConfKeyEditor* editor)
 {
-	return gtk_entry_get_text (GTK_ENTRY (editor->name_entry));
+	return gtk_entry_get_text(GTK_ENTRY(editor->name_entry));
 }
 
-char *
-mateconf_key_editor_get_full_key_path (MateConfKeyEditor *editor)
+char* mateconf_key_editor_get_full_key_path(MateConfKeyEditor* editor)
 {
-	char *full_key_path;
-	const char *key_path;
+	char* full_key_path;
+	const char* key_path;
 
-	key_path = gtk_label_get_text (GTK_LABEL (editor->path_label));
+	key_path = gtk_label_get_text(GTK_LABEL(editor->path_label));
 
-	if (key_path[strlen(key_path) - 1] != '/') {
-		full_key_path = g_strdup_printf ("%s/%s",
-						 key_path,
-						 gtk_entry_get_text (GTK_ENTRY (editor->name_entry)));
+	if (key_path[strlen(key_path) - 1] != '/')
+	{
+		full_key_path = g_strdup_printf("%s/%s", key_path, gtk_entry_get_text(GTK_ENTRY(editor->name_entry)));
 	}
-	else {
-		full_key_path = g_strdup_printf ("%s%s",
-						 key_path,
-						 gtk_entry_get_text (GTK_ENTRY (editor->name_entry)));
+	else
+	{
+		full_key_path = g_strdup_printf("%s%s", key_path, gtk_entry_get_text(GTK_ENTRY(editor->name_entry)));
 
 	}
 

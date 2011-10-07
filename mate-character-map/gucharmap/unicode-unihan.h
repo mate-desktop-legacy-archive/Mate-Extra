@@ -20,7 +20,7 @@ static const struct _Unihan
   gint32 kKorean;
   gint32 kJapaneseKun;
   gint32 kJapaneseOn;
-} 
+}
 unihan[] =
 {
   { 0x3400, 5, 0, 43, -1, -1, -1, -1 },
@@ -131568,14 +131568,18 @@ static inline const char * unihan_get_kDefinition (const Unihan *uh)
     return unihan_strings + offset;
 }
 
-G_CONST_RETURN gchar * 
-gucharmap_get_unicode_kDefinition (gunichar uc)
+const gchar* gucharmap_get_unicode_kDefinition(gunichar uc)
 {
-  const Unihan *uh = _get_unihan (uc);
-  if (uh == NULL)
-    return NULL;
-  else
-    return unihan_get_kDefinition (uh);
+	const Unihan* uh = _get_unihan(uc);
+
+	if (uh == NULL)
+	{
+		return NULL;
+	}
+	else
+	{
+		return unihan_get_kDefinition(uh);
+	}
 }
 
 
@@ -131587,33 +131591,45 @@ static inline const char * unihan_get_kCantonese (const Unihan *uh)
     return unihan_strings + offset;
 }
 
-G_CONST_RETURN gchar * 
-gucharmap_get_unicode_kCantonese (gunichar uc)
+const gchar* gucharmap_get_unicode_kCantonese(gunichar uc)
 {
-  const Unihan *uh = _get_unihan (uc);
-  if (uh == NULL)
-    return NULL;
-  else
-    return unihan_get_kCantonese (uh);
+	const Unihan* uh = _get_unihan(uc);
+
+	if (uh == NULL)
+	{
+		return NULL;
+	}
+	else
+	{
+		return unihan_get_kCantonese(uh);
+	}
 }
 
 
-static inline const char * unihan_get_kMandarin (const Unihan *uh)
+static inline const char* unihan_get_kMandarin (const Unihan* uh)
 {
-    gint32 offset = uh->kMandarin;
-    if (offset == -1)
-      return NULL;
-    return unihan_strings + offset;
+	gint32 offset = uh->kMandarin;
+
+	if (offset == -1)
+	{
+		return NULL;
+	}
+
+	return unihan_strings + offset;
 }
 
-G_CONST_RETURN gchar * 
-gucharmap_get_unicode_kMandarin (gunichar uc)
+const gchar* gucharmap_get_unicode_kMandarin(gunichar uc)
 {
-  const Unihan *uh = _get_unihan (uc);
-  if (uh == NULL)
-    return NULL;
-  else
-    return unihan_get_kMandarin (uh);
+	const Unihan* uh = _get_unihan(uc);
+
+	if (uh == NULL)
+	{
+		return NULL;
+	}
+	else
+	{
+		return unihan_get_kMandarin(uh);
+	}
 }
 
 
@@ -131625,14 +131641,18 @@ static inline const char * unihan_get_kTang (const Unihan *uh)
     return unihan_strings + offset;
 }
 
-G_CONST_RETURN gchar * 
-gucharmap_get_unicode_kTang (gunichar uc)
+const gchar* gucharmap_get_unicode_kTang(gunichar uc)
 {
-  const Unihan *uh = _get_unihan (uc);
-  if (uh == NULL)
-    return NULL;
-  else
-    return unihan_get_kTang (uh);
+	const Unihan* uh = _get_unihan(uc);
+
+	if (uh == NULL)
+	{
+		return NULL;
+	}
+	else
+	{
+		return unihan_get_kTang(uh);
+	}
 }
 
 
@@ -131644,52 +131664,72 @@ static inline const char * unihan_get_kKorean (const Unihan *uh)
     return unihan_strings + offset;
 }
 
-G_CONST_RETURN gchar * 
-gucharmap_get_unicode_kKorean (gunichar uc)
+const gchar* gucharmap_get_unicode_kKorean(gunichar uc)
 {
-  const Unihan *uh = _get_unihan (uc);
-  if (uh == NULL)
-    return NULL;
-  else
-    return unihan_get_kKorean (uh);
+	const Unihan* uh = _get_unihan(uc);
+
+	if (uh == NULL)
+	{
+		return NULL;
+	}
+	else
+	{
+		return unihan_get_kKorean(uh);
+	}
 }
 
 
-static inline const char * unihan_get_kJapaneseKun (const Unihan *uh)
+static inline const char* unihan_get_kJapaneseKun (const Unihan* uh)
 {
-    gint32 offset = uh->kJapaneseKun;
-    if (offset == -1)
-      return NULL;
-    return unihan_strings + offset;
+	gint32 offset = uh->kJapaneseKun;
+
+	if (offset == -1)
+	{
+		return NULL;
+	}
+
+	return unihan_strings + offset;
 }
 
-G_CONST_RETURN gchar * 
-gucharmap_get_unicode_kJapaneseKun (gunichar uc)
+const gchar* gucharmap_get_unicode_kJapaneseKun(gunichar uc)
 {
-  const Unihan *uh = _get_unihan (uc);
-  if (uh == NULL)
-    return NULL;
-  else
-    return unihan_get_kJapaneseKun (uh);
+	const Unihan* uh = _get_unihan(uc);
+
+	if (uh == NULL)
+	{
+		return NULL;
+	}
+	else
+	{
+		return unihan_get_kJapaneseKun(uh);
+	}
 }
 
 
-static inline const char * unihan_get_kJapaneseOn (const Unihan *uh)
+static inline const char* unihan_get_kJapaneseOn(const Unihan* uh)
 {
-    gint32 offset = uh->kJapaneseOn;
-    if (offset == -1)
-      return NULL;
-    return unihan_strings + offset;
+	gint32 offset = uh->kJapaneseOn;
+
+	if (offset == -1)
+	{
+		return NULL;
+	}
+
+	return unihan_strings + offset;
 }
 
-G_CONST_RETURN gchar * 
-gucharmap_get_unicode_kJapaneseOn (gunichar uc)
+const gchar* gucharmap_get_unicode_kJapaneseOn(gunichar uc)
 {
-  const Unihan *uh = _get_unihan (uc);
-  if (uh == NULL)
-    return NULL;
-  else
-    return unihan_get_kJapaneseOn (uh);
+	const Unihan* uh = _get_unihan(uc);
+
+	if (uh == NULL)
+	{
+		return NULL;
+	}
+	else
+	{
+		return unihan_get_kJapaneseOn(uh);
+	}
 }
 
 #endif  /* #ifndef UNICODE_UNIHAN_H */

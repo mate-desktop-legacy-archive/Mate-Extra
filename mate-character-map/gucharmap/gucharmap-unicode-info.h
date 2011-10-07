@@ -17,7 +17,7 @@
  */
 
 #if !defined (__GUCHARMAP_GUCHARMAP_H_INSIDE__) && !defined (GUCHARMAP_COMPILATION)
-#error "Only <gucharmap/gucharmap.h> can be included directly."
+	#error "Only <gucharmap/gucharmap.h> can be included directly."
 #endif
 
 #ifndef GUCHARMAP_UNICODE_INFO_H
@@ -28,57 +28,56 @@
 G_BEGIN_DECLS
 
 typedef enum {
-  GUCHARMAP_UNICODE_VERSION_UNASSIGNED,
-  GUCHARMAP_UNICODE_VERSION_1_1,
-  GUCHARMAP_UNICODE_VERSION_2_0,
-  GUCHARMAP_UNICODE_VERSION_2_1,
-  GUCHARMAP_UNICODE_VERSION_3_0,
-  GUCHARMAP_UNICODE_VERSION_3_1,
-  GUCHARMAP_UNICODE_VERSION_3_2,
-  GUCHARMAP_UNICODE_VERSION_4_0,
-  GUCHARMAP_UNICODE_VERSION_4_1,
-  GUCHARMAP_UNICODE_VERSION_5_0,
-  GUCHARMAP_UNICODE_VERSION_5_1,
-  GUCHARMAP_UNICODE_VERSION_5_2,
-  GUCHARMAP_UNICODE_VERSION_LATEST = GUCHARMAP_UNICODE_VERSION_5_2 /* private, will move forward with each revision */
+	GUCHARMAP_UNICODE_VERSION_UNASSIGNED,
+	GUCHARMAP_UNICODE_VERSION_1_1,
+	GUCHARMAP_UNICODE_VERSION_2_0,
+	GUCHARMAP_UNICODE_VERSION_2_1,
+	GUCHARMAP_UNICODE_VERSION_3_0,
+	GUCHARMAP_UNICODE_VERSION_3_1,
+	GUCHARMAP_UNICODE_VERSION_3_2,
+	GUCHARMAP_UNICODE_VERSION_4_0,
+	GUCHARMAP_UNICODE_VERSION_4_1,
+	GUCHARMAP_UNICODE_VERSION_5_0,
+	GUCHARMAP_UNICODE_VERSION_5_1,
+	GUCHARMAP_UNICODE_VERSION_5_2,
+	GUCHARMAP_UNICODE_VERSION_LATEST = GUCHARMAP_UNICODE_VERSION_5_2 /* private, will move forward with each revision */
 } GucharmapUnicodeVersion;
 
 /* return values are read-only */
-G_CONST_RETURN gchar *  gucharmap_get_unicode_name                (gunichar uc);
-G_CONST_RETURN gchar *  gucharmap_get_unicode_data_name           (gunichar uc);
-gint                    gucharmap_get_unicode_data_name_count     (void);
-GucharmapUnicodeVersion gucharmap_get_unicode_version             (gunichar wc);
-G_CONST_RETURN gchar *  gucharmap_get_unicode_category_name       (gunichar uc);
-gint                    gucharmap_get_unihan_count                (void);
-G_CONST_RETURN gchar *  gucharmap_get_unicode_kDefinition         (gunichar uc);
-G_CONST_RETURN gchar *  gucharmap_get_unicode_kCantonese          (gunichar uc);
-G_CONST_RETURN gchar *  gucharmap_get_unicode_kMandarin           (gunichar uc);
-G_CONST_RETURN gchar *  gucharmap_get_unicode_kTang               (gunichar uc);
-G_CONST_RETURN gchar *  gucharmap_get_unicode_kKorean             (gunichar uc);
-G_CONST_RETURN gchar *  gucharmap_get_unicode_kJapaneseKun        (gunichar uc);
-G_CONST_RETURN gchar *  gucharmap_get_unicode_kJapaneseOn         (gunichar uc);
+const gchar* gucharmap_get_unicode_name(gunichar uc);
+const gchar* gucharmap_get_unicode_data_name(gunichar uc);
+gint gucharmap_get_unicode_data_name_count(void);
+GucharmapUnicodeVersion gucharmap_get_unicode_version(gunichar wc);
+const gchar* gucharmap_get_unicode_category_name(gunichar uc);
+gint gucharmap_get_unihan_count(void);
+const gchar* gucharmap_get_unicode_kDefinition(gunichar uc);
+const gchar* gucharmap_get_unicode_kCantonese(gunichar uc);
+const gchar* gucharmap_get_unicode_kMandarin(gunichar uc);
+const gchar* gucharmap_get_unicode_kTang(gunichar uc);
+const gchar* gucharmap_get_unicode_kKorean(gunichar uc);
+const gchar* gucharmap_get_unicode_kJapaneseKun(gunichar uc);
+const gchar* gucharmap_get_unicode_kJapaneseOn(gunichar uc);
 
 /* nameslist stuff */
-G_CONST_RETURN gchar ** gucharmap_get_nameslist_stars             (gunichar  wc);
-G_CONST_RETURN gchar ** gucharmap_get_nameslist_equals            (gunichar  wc);
-gunichar *              gucharmap_get_nameslist_exes              (gunichar  wc);
-G_CONST_RETURN gchar ** gucharmap_get_nameslist_pounds            (gunichar  wc);
-G_CONST_RETURN gchar ** gucharmap_get_nameslist_colons            (gunichar  wc);
-gboolean                gucharmap_unichar_validate                (gunichar  wc);
-gint                    gucharmap_unichar_to_printable_utf8       (gunichar  wc, 
-                                                                   gchar    *outbuf);
-GUnicodeType            gucharmap_unichar_type                    (gunichar  wc);
-gboolean                gucharmap_unichar_isdefined               (gunichar  wc);
-gboolean                gucharmap_unichar_isgraph                 (gunichar  wc);
+const gchar** gucharmap_get_nameslist_stars(gunichar wc);
+const gchar** gucharmap_get_nameslist_equals(gunichar wc);
+gunichar* gucharmap_get_nameslist_exes(gunichar wc);
+const gchar** gucharmap_get_nameslist_pounds(gunichar wc);
+const gchar** gucharmap_get_nameslist_colons(gunichar wc);
+gboolean gucharmap_unichar_validate(gunichar wc);
+gint gucharmap_unichar_to_printable_utf8(gunichar wc, gchar* outbuf);
+GUnicodeType gucharmap_unichar_type(gunichar wc);
+gboolean gucharmap_unichar_isdefined(gunichar wc);
+gboolean gucharmap_unichar_isgraph(gunichar wc);
 
 /* defined in gucharmap-script-codepoint-list.c */
-G_CONST_RETURN gchar ** gucharmap_unicode_list_scripts            (void);
-G_CONST_RETURN gchar *  gucharmap_unicode_get_script_for_char     (gunichar wc);
+const gchar** gucharmap_unicode_list_scripts(void);
+const gchar* gucharmap_unicode_get_script_for_char(gunichar wc);
 
-G_CONST_RETURN gchar *  gucharmap_unicode_version_to_string       (GucharmapUnicodeVersion version);
+const gchar* gucharmap_unicode_version_to_string(GucharmapUnicodeVersion version);
 
 /* doesn't really belong here, but no better place was available */
-gunichar     gucharmap_unicode_get_locale_character (void);
+gunichar gucharmap_unicode_get_locale_character(void);
 
 G_END_DECLS
 

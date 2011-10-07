@@ -30,9 +30,9 @@
 #include <librsvg/rsvg-cairo.h>
 
 G_BEGIN_DECLS
-/* The GtkColorSelectionButton widget is a simple color picker in a button.	
- * The button displays a sample of the currently selected color.	When 
- * the user clicks on the button, a color selection dialog pops up.	
+/* The GtkColorSelectionButton widget is a simple color picker in a button.
+ * The button displays a sample of the currently selected color.	When
+ * the user clicks on the button, a color selection dialog pops up.
  * The color picker emits the "color_set" signal when the color is set.
  */
 #define GSM_TYPE_COLOR_BUTTON            (gsm_color_button_get_type ())
@@ -86,7 +86,7 @@ void gsm_color_button_get_color (GSMColorButton * color_button, GdkColor * color
 gdouble gsm_color_button_get_fraction (GSMColorButton * color_button);
 guint gsm_color_button_get_cbtype (GSMColorButton * color_button);
 void gsm_color_button_set_title (GSMColorButton * color_button, const gchar * title);
-G_CONST_RETURN gchar *gsm_color_button_get_title (GSMColorButton * color_button);
+const gchar* gsm_color_button_get_title(GSMColorButton* color_button);
 
 G_END_DECLS
 #endif /* __GSM_COLOR_BUTTON_H__ */

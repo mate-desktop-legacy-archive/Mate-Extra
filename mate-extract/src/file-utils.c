@@ -438,8 +438,7 @@ file_is_hidden (const gchar *name)
 
 /* like g_path_get_basename but does not warn about NULL and does not
  * alloc a new string. */
-G_CONST_RETURN gchar *
-file_name_from_path (const gchar *file_name)
+const gchar* file_name_from_path(const gchar *file_name)
 {
 	register char   *base;
 	register gssize  last_char;
@@ -877,7 +876,7 @@ remove_local_directory (const char *path)
 
 	if (path == NULL)
 		return TRUE;
-	
+
 	uri = g_filename_to_uri (path, NULL, NULL);
 	result = remove_directory (uri);
 	g_free (uri);
@@ -915,13 +914,13 @@ get_temp_work_dir (const char *parent_folder)
 	char    *template;
 	char    *result = NULL;
 
-	if (parent_folder == NULL) { 	
+	if (parent_folder == NULL) {
 		/* find the folder with more free space. */
-	
+
 		for (i = 0; try_folder[i] != NULL; i++) {
 			char    *folder;
 			guint64  size;
-	
+
 			folder = ith_temp_folder_to_try (i);
 			size = get_dest_free_space (folder);
 			if (max_size < size) {
@@ -932,13 +931,13 @@ get_temp_work_dir (const char *parent_folder)
 			else
 				g_free (folder);
 		}
-	}	
-	else 
+	}
+	else
 		best_folder = g_strdup (parent_folder);
-		
+
 	if (best_folder == NULL)
 		return NULL;
-	
+
 	template = g_strconcat (best_folder, "/.fr-XXXXXX", NULL);
 	result = mkdtemp (template);
 
