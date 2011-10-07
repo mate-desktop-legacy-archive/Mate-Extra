@@ -1555,7 +1555,8 @@ Optional Features:
                           Turn on compiler warnings
   --enable-iso-c          Try to warn if code is not ISO C
   --disable-mateconf      don't build with mateconf support
-  --disable-schemas-install	Disable the schemas installation
+  --disable-schemas-install
+                          Disable the schemas installation
   --disable-charmap       disable building the charmap programme
   --disable-unihan        don't build in CJK ideograph information
   --enable-python-bindings
@@ -1575,8 +1576,10 @@ Optional Packages:
   --with-sysroot=DIR Search for dependent libraries within DIR
                         (or the compiler's sysroot if not specified).
   --with-gtk=2.0|3.0      which gtk+ version to compile against (default: 2.0)
-  --with-mateconf-source=sourceaddress      Config database for installing schema files.
-  --with-mateconf-schema-file-dir=dir        Directory for installing schema files.
+  --with-mateconf-source=sourceaddress
+                          Config database for installing schema files.
+  --with-mateconf-schema-file-dir=dir
+                          Directory for installing schema files.
   --with-help-dir=DIR     path to help docs
   --with-omf-dir=DIR      path to OMF files
   --with-help-formats=FORMATS
