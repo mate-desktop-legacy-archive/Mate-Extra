@@ -1,0 +1,302 @@
+/* -*- Mode: C; indent-tabs-mode: nil; c-basic-offset: 4; tab-width: 8 -*- */
+%%
+headers
+#define NO_IMPORT_PYGOBJECT
+#include "pygobject.h"
+#include <pygtk/pygtk.h>
+#include <brasero-media.h>
+#include <brasero-drive.h>
+#include <brasero-medium.h>
+#include <brasero-tags.h>
+#include <brasero-enums.h>
+#include <brasero-error.h>
+#include <brasero-status.h>
+#include <brasero-burn-lib.h>
+#include <brasero-track-type.h>
+#include <brasero-track.h>
+#include <brasero-track-data.h>
+#include <brasero-track-data-cfg.h>
+#include <brasero-track-disc.h>
+#include <brasero-track-stream.h>
+#include <brasero-track-stream-cfg.h>
+#include <brasero-track-image.h>
+#include <brasero-track-image-cfg.h>
+#include <brasero-session.h>
+#include <brasero-session-span.h>
+#include <brasero-session-cfg.h>
+#include <brasero-burn.h>
+#include <brasero-burn-options.h>
+#include <brasero-burn-dialog.h>
+#include <brasero-tool-dialog.h>
+#include <brasero-sum-dialog.h>
+#include <brasero-blank-dialog.h>
+
+#include "config.h"
+#include "brasero-types.h"
+
+%%
+modulename braseroburn
+%%
+import gobject.GObject as PyGObject_Type
+import gio.Icon as PyGIcon_Type
+import gtk.Widget as PyGtkWidget_Type
+import gtk.Dialog as PyGtkDialog_Type
+import braseromedia.Medium as PyBraseroMedium_Type
+import braseromedia.Drive as PyBraseroDrive_Type
+%%
+ignore-glob
+  *_get_type
+%%
+ignore
+  brasero_burn_quark
+%%
+override brasero_burn_session_get_tracks noargs
+static PyObject *
+_wrap_brasero_burn_session_get_tracks (PyGObject *self)
+{
+  GSList *list, *l;
+  PyObject *ret;
+
+  pyg_begin_allow_threads;
+
+  list = brasero_burn_session_get_tracks (BRASERO_BURN_SESSION (self->obj));
+
+  pyg_end_allow_threads;
+
+  ret = PyList_New(0);
+  for (l = list; l; l = l->next) {
+    BraseroTrack *track = l->data;
+    PyObject *item = pygobject_new((GObject *)track);
+    PyList_Append(ret, item);
+    Py_DECREF(item);
+    /* Don't unref object track */
+  }
+  /* Don't free list */
+  return ret;
+}
+%%
+override brasero_track_data_cfg_get_available_media noargs
+static PyObject *
+_wrap_brasero_track_data_cfg_get_available_media (PyGObject *self)
+{
+  GSList *list, *l;
+  PyObject *ret;
+
+  pyg_begin_allow_threads;
+
+  list = brasero_track_data_cfg_get_available_media (BRASERO_TRACK_DATA_CFG (self->obj));
+
+  pyg_end_allow_threads;
+
+  ret = PyList_New(0);
+  for (l = list; l; l = l->next) {
+    BraseroMedium *medium = l->data;
+    PyObject *item = pygobject_new ((GObject *)medium);
+    PyList_Append(ret, item);
+    Py_DECREF(item);
+    g_object_unref(medium);
+  }
+  g_slist_free(list);
+
+  return ret;
+}
+%%
+override brasero_track_data_cfg_get_restored_list noargs
+static PyObject *
+_wrap_brasero_track_data_cfg_get_restored_list (PyGObject *self)
+{
+  GSList *list, *l;
+  PyObject *ret;
+
+  pyg_begin_allow_threads;
+
+  list = brasero_track_data_cfg_get_restored_list (BRASERO_TRACK_DATA_CFG (self->obj));
+
+  pyg_end_allow_threads;
+
+  ret = PyList_New(0);
+  for (l = list; l; l = l->next) {
+    gchar *uri = l->data;
+    PyObject *item = PyString_FromString(uri);
+    PyList_Append(ret, item);
+    Py_DECREF(item);
+    g_free (uri);
+  }
+  g_slist_free(list);
+
+  return ret;
+}
+%%
+override brasero_track_data_get_grafts noargs
+static PyObject *
+_wrap_brasero_track_data_get_grafts (PyGObject *self)
+{
+  GSList *list, *l;
+  PyObject *ret;
+
+  pyg_begin_allow_threads;
+
+  list = brasero_track_data_get_grafts (BRASERO_TRACK_DATA (self->obj));
+
+  pyg_end_allow_threads;
+
+  ret = PyList_New(0);
+  for (l = list; l; l = l->next) {
+    BraseroGraftPt *graft = l->data;
+    PyObject *item = PyBraseroGraftPoint_New (graft);
+    PyList_Append(ret, item);
+    Py_DECREF(item);
+    /* Don't free graft */
+  }
+  /* Dont free list */
+
+  return ret;
+}
+%%
+override brasero_track_data_get_excluded noargs
+static PyObject *
+_wrap_brasero_track_data_get_excluded (PyGObject *self)
+{
+  GSList *list, *l;
+  PyObject *ret;
+
+  pyg_begin_allow_threads;
+
+  list = brasero_track_data_get_excluded (BRASERO_TRACK_DATA (self->obj), FALSE);
+
+  pyg_end_allow_threads;
+
+  ret = PyList_New(0);
+  for (l = list; l; l = l->next) {
+    gchar *uri = l->data;
+    PyObject *item = PyString_FromString(uri);
+    PyList_Append(ret, item);
+    Py_DECREF(item);
+    /* Don't free uri */
+  }
+  /* Don't free list */
+
+  return ret;
+}
+%%
+override brasero_track_data_set_source kwargs
+static PyObject *
+_wrap_brasero_track_data_set_source (PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+  Py_ssize_t len, i;
+  BraseroBurnResult result;
+  GSList *grafts = NULL;
+  GSList *excluded = NULL;
+  PyObject *grafts_list = NULL;
+  PyObject *excluded_list = NULL;
+  static char *kwlist[] = { "grafts", "excluded", NULL };
+
+  if (!PyArg_ParseTupleAndKeywords (args, kwargs, "O!O:BraseroTrackData.set_source", kwlist, &PyList_Type, &grafts_list, &excluded_list))
+    return NULL;
+
+  if (!PyList_Check (grafts_list)) {
+    PyErr_SetString (PyExc_TypeError, "first parameter (grafts) must be a list");
+    return NULL;
+  }
+
+  if (excluded_list != Py_None && !PyList_Check (excluded_list)) {
+    PyErr_SetString (PyExc_TypeError, "second parameter (excluded) must be a list");
+    return NULL;
+  }
+
+  len = PyList_GET_SIZE (grafts_list);
+  for (i = 0; i < len; i++) {
+    PyBraseroGraftPoint *graft;
+    graft = (PyBraseroGraftPoint *) PyList_GET_ITEM (grafts_list, i);
+    if (!py_BraseroGraftPoint_Check ((PyObject*) graft)) {
+      PyErr_SetString (PyExc_TypeError, "Elements must be braseroburn.GraftPoint");
+      g_slist_foreach (grafts, (GFunc) brasero_graft_point_free, NULL);
+      g_slist_free (grafts);
+      return NULL;
+    }
+    grafts = g_slist_append (grafts, brasero_graft_point_copy (graft->graft));
+  }
+
+  if (PyList_Check (excluded_list)) {
+    len = PyList_GET_SIZE (excluded_list);
+    for (i = 0; i < len; i++) {
+      PyObject *excluded_item;
+      excluded_item = PyList_GET_ITEM (excluded_list, i);
+      if (!PyString_Check (excluded_item)) {
+        PyErr_SetString (PyExc_TypeError, "Elements must be strings");
+        g_slist_foreach (excluded, (GFunc) g_free, NULL);
+        g_slist_free (excluded);
+        g_slist_foreach (grafts, (GFunc) brasero_graft_point_free, NULL);
+        g_slist_free (grafts);
+        return NULL;
+      }
+      excluded = g_slist_append (excluded, g_strdup (PyString_AsString (excluded_item)));
+    }
+  }
+
+  pyg_begin_allow_threads;
+
+  /* NOTE: this function takes ownership of the lists and their contents */
+  result = brasero_track_data_set_source (BRASERO_TRACK_DATA (self->obj),
+                                          grafts,
+                                          excluded);
+
+  pyg_end_allow_threads;
+  return PyInt_FromLong (result);
+}
+%%
+override brasero_burn_library_start noargs
+static PyObject *
+_wrap_brasero_burn_library_start (PyGObject *self, PyObject *args)
+{
+    PyObject *av;
+    int argc, i;
+    char **argv;
+
+    /* The code from pygtk */
+    /* initialise libbraseroburn */
+    av = PySys_GetObject("argv");
+    if (av != NULL) {
+	if (!PyList_Check(av)) {
+	    PyErr_Warn(PyExc_Warning, "ignoring sys.argv: it must be a list of strings");
+	    av = NULL;
+	} else {
+	    argc = PyList_Size(av);
+	    for (i = 0; i < argc; i++)
+		if (!PyString_Check(PyList_GetItem(av, i))) {
+		    PyErr_Warn(PyExc_Warning, "ignoring sys.argv: it must be a list of strings");
+		    av = NULL;
+		    break;
+		}
+	}
+    }
+    if (av != NULL) {
+	argv = g_new(char *, argc);
+	for (i = 0; i < argc; i++)
+	    argv[i] = g_strdup(PyString_AsString(PyList_GetItem(av, i)));
+    } else {
+	    argc = 0;
+	    argv = NULL;
+    }
+
+    if (!brasero_burn_library_start (&argc, &argv)) {
+	if (argv != NULL) {
+	    for (i = 0; i < argc; i++)
+		g_free(argv[i]);
+	    g_free(argv);
+	}
+	PyErr_SetString(PyExc_RuntimeError, "could not start libbrasero-burn");
+	return NULL;
+    }
+
+    if (argv != NULL) {
+	PySys_SetArgv(argc, argv);
+	for (i = 0; i < argc; i++)
+	    g_free(argv[i]);
+	g_free(argv);
+    }
+
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+

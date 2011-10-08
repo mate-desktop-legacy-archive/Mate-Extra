@@ -1,0 +1,24 @@
+The kind of license that applies to mate-python-desktop varies for
+each python module.  Some are LGPL (see COPYING.LGPL), while others
+are GPL (see COPYING.GPL).
+
+The following table summarises the licenses of individual modules:
+
+Module name		License
+--------------------------------
+mateapplet		LGPL
+matedesktop		LGPL
+matekeyring		LGPL
+mateprint		LGPL
+mateprint.ui		LGPL
+gtksourceview		GPL
+gtop			GPL
+mediaprofiles		LGPL
+marco		GPL
+cajaburn		GPL
+rsvg			LGPL
+totem.plparser		LGPL
+wnck			LGPL
+evince                  LGPL
+braseromedia            GPL
+braseroburn             GPL

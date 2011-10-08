@@ -1,0 +1,339 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-mateprintjob">
+  <refnamediv>
+    <refname>mateprint.Job</refname>
+    <refpurpose>Job object for MatePrint</refpurpose>
+  </refnamediv>
+
+<!-- ******************************* -->
+<!-- BEGIN OF MATEPRINTJOB SYNOPSIS -->
+<!-- ******************************* -->
+
+<refsect1>
+    <title>Synopsis</title>
+
+    <classsynopsis language="python">
+    <ooclass><classname>mateprint.Job</classname></ooclass>
+    <ooclass><classname><link linkend="class-gobject">gobject.GObject</link></classname></ooclass>
+    
+    <constructorsynopsis language="python">
+	   <methodname><link linkend="constructor-mateprintjob">mateprint.Job</link></methodname>
+	   <methodparam><parameter role="keyword">config</parameter></methodparam>
+    </constructorsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-mateprintjob--get-config">get_config</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintjob--get-context">get_context</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintjob--close">close</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>    
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintjob--print">print</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintjob--render">render</link></methodname>
+        <methodparam><parameter role="keyword">ctx</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintjob--render-page">render_page</link></methodname>
+        <methodparam><parameter role="keyword">ctx</parameter></methodparam>
+        <methodparam><parameter role="keyword">page</parameter></methodparam>
+        <methodparam><parameter role="keyword">pageops</parameter></methodparam>
+    </methodsynopsis> 
+  
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintjob--get-pages">get_pages</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintjob--print-to-file">print_to_file</link></methodname>
+        <methodparam><parameter role="keyword">output</parameter></methodparam>
+    </methodsynopsis>
+
+  </classsynopsis>
+</refsect1>
+
+<!-- ******************************* -->
+<!-- BEGIN OF MATEPRINTJOB ANCESTRY -->
+<!-- ******************************* -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-mateprintjob">mateprint.Job</link>
+</synopsis>
+</refsect1>
+
+<!-- ********************************* -->
+<!-- BEGIN OF MATEPRINTJOB PROPERTIES -->
+<!-- ********************************* -->
+
+<refsect1>
+    <title>Properties</title>
+    
+    <blockquote role="properties">
+        <informaltable pgwide="1" frame="none">
+            <tgroup cols="3">
+                <colspec column="1" colwidth="1in"/>
+                <colspec column="2" colwidth="1in"/>
+                <colspec column="3" colwidth="4in"/>
+                <tbody>
+                    
+                    <row valign="top">
+                        <entry>"config"</entry>
+                        <entry>Read</entry>
+                        <entry>The configuration for the print job.</entry>
+                    </row>
+                    
+                    <row valign="top">
+                        <entry>"context"</entry>
+                        <entry>Read-Write</entry>
+                        <entry>The context for the print job.</entry>
+                    </row>
+                    
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </blockquote>
+</refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF MATEPRINTJOB DESCRIPTION -->
+<!-- ********************************** -->
+
+<refsect1 id="description-mateprintjob">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF MATEPRINTJOB CONSTRUCTOR -->
+<!-- ********************************** -->
+
+<refsect1 id="constructor-mateprintjob">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>mateprint.Job</methodname>
+	  <methodparam><parameter role="keyword">config</parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+          <term><parameter role="keyword">config</parameter>&nbsp;:</term>
+          <listitem><simpara> a <link linkend="class-mateprintconfig"><classname>mateprint.Config</classname></link>.</simpara></listitem>
+    </varlistentry>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-mateprintjob"><classname>mateprint.Job</classname></link>.
+        </simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-mateprintjob"><classname>mateprint.Job</classname></link> object.
+  </para>
+</refsect1>
+
+<!-- ****************************** -->
+<!-- BEGIN OF MATEPRINTJOB METHODS -->
+<!-- ****************************** -->
+
+<refsect1>
+    <title>Methods</title>
+
+    <refsect2 id="method-mateprintjob--get-config">
+        <title>mateprint.Job.get_config</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>get_config</methodname>
+                    <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+      
+            <variablelist>
+                <varlistentry>
+                    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                    <listitem><simpara> a referenced <link linkend="class-mateprintconfig"><classname>mateprint.Config</classname></link> for this job, 
+                            <literal>None</literal> on error.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>get_config</methodname>() method gets a reference to the configuration of the job.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintjob--get-context">
+        <title>mateprint.Job.get_context</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>get_context</methodname>
+                    <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+
+            <variablelist>
+                <varlistentry>
+                    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                    <listitem><simpara> the printing context, <literal>None</literal> on error.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>get_context</methodname>() method retrieve the <link linkend="class-mateprintcontext"><classname>mateprint.Context</classname></link> 
+            which applications print to.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintjob--close">
+        <title>mateprint.Job.close</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>close</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <para>
+            The <methodname>close</methodname>() method closes the <link linkend="class-mateprintjob"><classname>mateprint.Job</classname></link> job, ready for 
+            printing or previewing. To be called after the application has finished sending the drawing commands.
+        </para>
+    </refsect2>    
+    
+    
+    
+    <refsect2 id="method-mateprintjob--print">
+        <title>mateprint.Job.print</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>print</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK on success MATE_PRINT_ERROR_UNKNOWN otherwise.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>print</methodname>() method print the pages stored in the 
+            <link linkend="class-mateprintjob"><classname>mateprint.Job</classname></link> to the phyisical printing device.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintjob--render">
+        <title>mateprint.Job.render</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>render</methodname>
+                <methodparam><parameter role="keyword">ctx</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">ctx</parameter>&nbsp;:</term>
+                <listitem><simpara> a <link linkend="class-mateprintcontext"><classname>mateprint.Context</classname></link>.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>render</methodname>() renders printout to specified context (with layout, ignoring copies).
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintjob--render-page">
+        <title>mateprint.Job.render_page</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>render_page</methodname>
+                <methodparam><parameter role="keyword">ctx</parameter></methodparam>
+                <methodparam><parameter role="keyword">page</parameter></methodparam>
+                <methodparam><parameter role="keyword">pageops</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">ctx</parameter>&nbsp;:</term>
+                <listitem><simpara> a <link linkend="class-mateprintcontext"><classname>mateprint.Context</classname></link>.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">page</parameter>&nbsp;:</term>
+                <listitem><simpara> the page number to print.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">pageops</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>render_page</methodname>() method renders the specified page <parameter>page</parameter>.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintjob--get-pages">
+        <title>mateprint.Job.get_pages</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_pages</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> the number of pages, 0 on error.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_double</methodname>() method find the number of pages stored in a completed printout. This is the number of physical pages, so if 
+            the layout can hold 4 pages per page, and 5 logical pages are printed (5 beginpage/endpage convinations) 2 is returned
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintjob--print-to-file">
+        <title>mateprint.Job.print_to_file</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>print_to_file</methodname>
+                <methodparam><parameter role="keyword">output</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">output</parameter>&nbsp;:</term>
+                <listitem><simpara> filename.</simpara></listitem>
+            </varlistentry>
+
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>print_to_file</methodname>() method prints the output to <parameter>filename</parameter>.
+        </para>
+    </refsect2>
+  </refsect1>  
+</refentry>

@@ -1,0 +1,4 @@
+# -*- python -*-
+
+def build(bld):
+    bld.build_docs_for_module('gtksourceview')

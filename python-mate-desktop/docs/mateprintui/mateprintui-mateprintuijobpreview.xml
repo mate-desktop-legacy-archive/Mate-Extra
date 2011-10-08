@@ -1,0 +1,123 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-mateprintuijobpreview">
+  <refnamediv>
+    <refname>mateprint.ui.JobPreview</refname>
+    <refpurpose>JobPreview object for MatePrintui</refpurpose>
+  </refnamediv>
+
+<!-- **************************************** -->
+<!-- BEGIN OF MATEPRINTUIJOBPREVIEW SYNOPSIS -->
+<!-- **************************************** -->
+
+<refsect1>
+    <title>Synopsis</title>
+
+    <classsynopsis language="python">
+    <ooclass><classname>mateprint.ui.JobPreview</classname></ooclass>
+    <ooclass><classname><link linkend="class-gtkwindow">gtk.Window</link></classname></ooclass>
+    
+    <constructorsynopsis language="python">
+	   <methodname><link linkend="constructor-mateprintuijobpreview">mateprint.ui.JobPreview</link></methodname>
+       <methodparam><parameter role="keyword">title</parameter></methodparam>
+    </constructorsynopsis>
+    
+  </classsynopsis>
+</refsect1>
+
+<!-- **************************************** -->
+<!-- BEGIN OF MATEPRINTUIJOBPREVIEW ANCESTRY -->
+<!-- **************************************** -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-gtkobject">gtk.Object</link>
+    +-- <link linkend="class-gtkwidget">gtk.Widget</link>
+      +-- <link linkend="class-gtkcontainer">gtk.Container</link>
+        +-- <link linkend="class-gtkbin">gtk.Bin</link>
+          +-- <link linkend="class-gtkwindow">gtk.Window</link>
+            +-- <link linkend="class-mateprintuijobpreview">mateprint.ui.JobPreview</link>
+</synopsis>
+</refsect1>
+
+<!-- ****************************************** -->
+<!-- BEGIN OF MATEPRINTUIJOBPREVIEW PROPERTIES -->
+<!-- ****************************************** -->
+
+<refsect1>
+    <title>Properties</title>
+    
+    <blockquote role="properties">
+        <informaltable pgwide="1" frame="none">
+            <tgroup cols="3">
+                <colspec column="1" colwidth="1in"/>
+                <colspec column="2" colwidth="1in"/>
+                <colspec column="3" colwidth="4in"/>
+                <tbody>
+                    
+                    <row valign="top">
+                        <entry>"nx"</entry>
+                        <entry>Read-Write</entry>
+                        <entry>Number of pages horizontally. Allowed values: &gt;= 65535.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"ny"</entry>
+                        <entry>Read-Write</entry>
+                        <entry>Number of pages horizontally. Allowed values: &gt;= 65535.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"job"</entry>
+                        <entry>Read-Write</entry>
+                        <entry>a <methodname><link linkend="constructor-mateprintjob">mateprint.Job</link></methodname> to be used.</entry>
+                    </row>
+
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </blockquote>
+</refsect1>
+
+<!-- ******************************************* -->
+<!-- BEGIN OF MATEPRINTUIJOBPREVIEW DESCRIPTION -->
+<!-- ******************************************* -->
+
+<refsect1 id="description-mateprintuijobpreview">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- ******************************************* -->
+<!-- BEGIN OF MATEPRINTUIJOBPREVIEW CONSTRUCTOR -->
+<!-- ******************************************* -->
+
+<refsect1 id="constructor-mateprintuijobpreview">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>mateprint.ui.JobPreview</methodname>
+      <methodparam><parameter role="keyword">title</parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+        <term><parameter role="keyword">title</parameter>&nbsp;:</term>
+        <listitem><simpara> title of the window.</simpara></listitem>
+    </varlistentry>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-mateprintuijobpreview"><classname>mateprint.ui.JobPreview</classname></link>.
+        </simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-mateprintuijobpreview"><classname>mateprint.ui.JobPreview</classname></link> object.
+  </para>
+ </refsect1>
+</refentry>

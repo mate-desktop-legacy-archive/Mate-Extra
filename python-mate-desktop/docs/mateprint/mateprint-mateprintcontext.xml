@@ -1,0 +1,1428 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-mateprintcontext">
+  <refnamediv>
+    <refname>mateprint.Context</refname>
+    <refpurpose>Main object of MatePrint</refpurpose>
+  </refnamediv>
+
+<!-- *********************************** -->
+<!-- BEGIN OF MATEPRINTCONTEXT SYNOPSIS -->
+<!-- *********************************** -->
+
+<refsect1>
+    <title>Synopsis</title>
+
+    <classsynopsis language="python">
+    <ooclass><classname>mateprint.Context</classname></ooclass>
+    <ooclass><classname><link linkend="class-gobject">gobject.GObject</link></classname></ooclass>
+    
+    <constructorsynopsis language="python">
+	   <methodname><link linkend="constructor-mateprintcontext">mateprint.Context</link></methodname>
+	   <methodparam><parameter role="keyword">config</parameter></methodparam>
+    </constructorsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-mateprintcontext--newpath">newpath</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--moveto">moveto</link></methodname>
+        <methodparam><parameter role="keyword">x</parameter></methodparam>
+        <methodparam><parameter role="keyword">y</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--lineto">lineto</link></methodname>
+        <methodparam><parameter role="keyword">x</parameter></methodparam>
+        <methodparam><parameter role="keyword">y</parameter></methodparam>
+    </methodsynopsis>    
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--curveto">curveto</link></methodname>
+        <methodparam><parameter role="keyword">x1</parameter></methodparam>
+        <methodparam><parameter role="keyword">y1</parameter></methodparam>
+        <methodparam><parameter role="keyword">x2</parameter></methodparam>
+        <methodparam><parameter role="keyword">y2</parameter></methodparam>
+        <methodparam><parameter role="keyword">x3</parameter></methodparam>
+        <methodparam><parameter role="keyword">y3</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--closepath">closepath</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>    
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--strokepath">strokepath</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>      
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--bpath">bpath</link></methodname>
+        <methodparam><parameter role="keyword">bpath</parameter></methodparam>
+        <methodparam><parameter role="keyword">append</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--vpath">vpath</link></methodname>
+        <methodparam><parameter role="keyword">vpath</parameter></methodparam>
+        <methodparam><parameter role="keyword">append</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--arcto">arcto</link></methodname>
+        <methodparam><parameter role="keyword">x</parameter></methodparam>
+        <methodparam><parameter role="keyword">y</parameter></methodparam>
+        <methodparam><parameter role="keyword">radius</parameter></methodparam>
+        <methodparam><parameter role="keyword">angle1</parameter></methodparam>
+        <methodparam><parameter role="keyword">angle2</parameter></methodparam>
+        <methodparam><parameter role="keyword">direction</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--setrgbcolor">setrgbcolor</link></methodname>
+        <methodparam><parameter role="keyword">r</parameter></methodparam>
+        <methodparam><parameter role="keyword">g</parameter></methodparam>
+        <methodparam><parameter role="keyword">b</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--setopacity">setopacity</link></methodname>
+        <methodparam><parameter role="keyword">opacity</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--setlinewidth">setlinewidth</link></methodname>
+        <methodparam><parameter role="keyword">width</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--setmiterlimit">setmiterlimit</link></methodname>
+        <methodparam><parameter role="keyword">limit</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--setlinejoin">setlinejoin</link></methodname>
+        <methodparam><parameter role="keyword">join_type</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--setlinecap">setlinecap</link></methodname>
+        <methodparam><parameter role="keyword">cap_type</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--setdash">setdash</link></methodname>
+        <methodparam><parameter role="keyword">n_values</parameter></methodparam>
+        <methodparam><parameter role="keyword">values</parameter></methodparam>
+        <methodparam><parameter role="keyword">offset</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--setfont">setfont</link></methodname>
+        <methodparam><parameter role="keyword">font</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--clip">clip</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--eoclip">eoclip</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--concat">concat</link></methodname>
+        <methodparam><parameter role="keyword">matrix</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--scale">scale</link></methodname>
+        <methodparam><parameter role="keyword">sx</parameter></methodparam>
+        <methodparam><parameter role="keyword">sy</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--rotate">rotate</link></methodname>
+        <methodparam><parameter role="keyword">theta</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--translate">translate</link></methodname>
+        <methodparam><parameter role="keyword">x</parameter></methodparam>
+        <methodparam><parameter role="keyword">y</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--gsave">gsave</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--grestore">grestore</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--fill">fill</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--eofill">eofill</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--stroke">stroke</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--show">show</link></methodname>
+        <methodparam><parameter role="keyword">text</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--show_sized">show_sized</link></methodname>
+        <methodparam><parameter role="keyword">text</parameter></methodparam>
+        <methodparam><parameter role="keyword">bytes</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--glyphlist">glyphlist</link></methodname>
+        <methodparam><parameter role="keyword">glyphlist</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--grayimage">grayimage</link></methodname>
+        <methodparam><parameter role="keyword">data</parameter></methodparam>
+        <methodparam><parameter role="keyword">width</parameter></methodparam>
+        <methodparam><parameter role="keyword">height</parameter></methodparam>
+        <methodparam><parameter role="keyword">rowstride</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--rgbimage">rgbimage</link></methodname>
+        <methodparam><parameter role="keyword">data</parameter></methodparam>
+        <methodparam><parameter role="keyword">width</parameter></methodparam>
+        <methodparam><parameter role="keyword">height</parameter></methodparam>
+        <methodparam><parameter role="keyword">rowstride</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--rgbaimage">rgbaimage</link></methodname>
+        <methodparam><parameter role="keyword">data</parameter></methodparam>
+        <methodparam><parameter role="keyword">width</parameter></methodparam>
+        <methodparam><parameter role="keyword">height</parameter></methodparam>
+        <methodparam><parameter role="keyword">rowstride</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--beginpage">beginpage</link></methodname>
+        <methodparam><parameter role="keyword">name</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--showpage">showpage</link></methodname>
+        <methodparam><parameter role="keyword">name</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--line_stroked">line_stroked</link></methodname>
+        <methodparam><parameter role="keyword">x0</parameter></methodparam>
+        <methodparam><parameter role="keyword">y0</parameter></methodparam>
+        <methodparam><parameter role="keyword">x1</parameter></methodparam>
+        <methodparam><parameter role="keyword">y1</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--rect_stroked">rect_stroked</link></methodname>
+        <methodparam><parameter role="keyword">x</parameter></methodparam>
+        <methodparam><parameter role="keyword">y</parameter></methodparam>
+        <methodparam><parameter role="keyword">width</parameter></methodparam>
+        <methodparam><parameter role="keyword">height</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintcontext--rect_filled">rect_filled</link></methodname>
+        <methodparam><parameter role="keyword">x</parameter></methodparam>
+        <methodparam><parameter role="keyword">y</parameter></methodparam>
+        <methodparam><parameter role="keyword">width</parameter></methodparam>
+        <methodparam><parameter role="keyword">height</parameter></methodparam>
+    </methodsynopsis>
+  </classsynopsis>
+</refsect1>
+
+<!-- *********************************** -->
+<!-- BEGIN OF MATEPRINTCONTEXT ANCESTRY -->
+<!-- *********************************** -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-mateprintcontext">mateprint.Context</link>
+</synopsis>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF MATEPRINTCONTEXT DESCRIPTION -->
+<!-- ************************************** -->
+
+<refsect1 id="description-mateprintcontext">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF MATEPRINTCONTEXT CONSTRUCTOR -->
+<!-- ************************************** -->
+
+<refsect1 id="constructor-mateprintcontext">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>mateprint.Context</methodname>
+	  <methodparam><parameter role="keyword">config</parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+        <term><parameter role="keyword">config</parameter>&nbsp;:</term>
+        <listitem><simpara> a <link linkend="class-mateprintconfig"><classname>mateprint.Config</classname></link>.</simpara></listitem>
+    </varlistentry>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-mateprintcontext"><classname>mateprint.Context</classname></link>.
+        </simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-mateprintcontext"><classname>mateprint.Context</classname></link> object.
+  </para>
+</refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF MATEPRINTCONTEXT METHODS -->
+<!-- ********************************** -->
+
+<refsect1>
+    <title>Methods</title>
+
+    <refsect2 id="method-mateprintcontext--newpath">
+        <title>mateprint.Context.newpath</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>newpath</methodname>
+                    <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+      
+            <variablelist>
+                <varlistentry>
+                    <term><parameter role="keyword">config</parameter>&nbsp;:</term>
+                    <listitem><simpara> a <link linkend="class-mateprintconfig"><classname>mateprint.Config</classname></link>.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                    <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>newpath</methodname>() method resets currentpath to empty path. As currentpoint is defined as the last point of open path segment, is 
+            also erases currentpoint.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--moveto">
+        <title>mateprint.Context.moveto</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>moveto</methodname>
+                    <methodparam><parameter role="keyword">x</parameter></methodparam>
+                <methodparam><parameter role="keyword">y</parameter></methodparam>
+            </methodsynopsis></programlisting>
+
+            <variablelist>
+                <varlistentry>
+                    <term><parameter role="keyword">x</parameter>&nbsp;:</term>
+                    <listitem><simpara> X position in user coordinates.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">y</parameter>&nbsp;:</term>
+                    <listitem><simpara> Y position in user coordinates.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                    <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>moveto</methodname>() method starts new subpath in currentpath with coordinates x,y. Moves currentpoint to x,y.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--lineto">
+        <title>mateprint.Context.lineto</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>lineto</methodname>
+                <methodparam><parameter role="keyword">x</parameter></methodparam>
+                <methodparam><parameter role="keyword">y</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">x</parameter>&nbsp;:</term>
+                <listitem><simpara> X position in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y</parameter>&nbsp;:</term>
+                <listitem><simpara> Y position in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>moveto</methodname>() method adds new straight line segment from currentpoint to x,y to currentpath. Moves currentpoint to x,y. If 
+            currentpoint is not defined, returns MATE_PRINT_ERROR_NOCURRENTPOINT.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--curveto">
+        <title>mateprint.Context.curveto</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>curveto</methodname>
+                <methodparam><parameter role="keyword">x1</parameter></methodparam>
+                <methodparam><parameter role="keyword">y1</parameter></methodparam>
+                <methodparam><parameter role="keyword">x2</parameter></methodparam>
+                <methodparam><parameter role="keyword">y2</parameter></methodparam>
+                <methodparam><parameter role="keyword">x3</parameter></methodparam>
+                <methodparam><parameter role="keyword">y3</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">x1</parameter>&nbsp;:</term>
+                <listitem><simpara> X position of first control point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y1</parameter>&nbsp;:</term>
+                <listitem><simpara> Y position of first control point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">x2</parameter>&nbsp;:</term>
+                <listitem><simpara> X position of second control point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y2</parameter>&nbsp;:</term>
+                <listitem><simpara> Y position of second control point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">x3</parameter>&nbsp;:</term>
+                <listitem><simpara> X position of third control point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y3</parameter>&nbsp;:</term>
+                <listitem><simpara> Y position of third control point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>curveto</methodname>() method adds new cubig bezier segment with control points x1,y1 and x2,y2 and endpoint x3,y3 to currentpath. Moves
+            currentpoint to x3,y3. If currentpoint is not defined, returns MATE_PRINT_ERROR_NOCURRENTPOINT.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--closepath">
+        <title>mateprint.Context.closepath</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>closepath</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>closepath</methodname>() method closes the last segment of currentpath, optionally drawing straight line segment from its endpoint to 
+            starting point. Erases currentpoint. If currentpath is empty, returns MATE_PRINT_ERROR_NOCURRENTPATH.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--strokepath">
+        <title>mateprint.Context.strokepath</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>strokepath</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>strokepath</methodname>() method converts currentpath to new path, that is identical to area painted by mate_print_stroke function, using 
+            currentpath. I.e. strokepath followed by fill giver result identical to stroke. If currentpath is empty, returns MATE_PRINT_ERROR_NOCURRENTPATH. 
+            Stroked path is always closed, so currentpoint is erased.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--bpath">
+        <title>mateprint.Context.bpath</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>bpath</methodname>
+                <methodparam><parameter role="keyword">bpath</parameter></methodparam>
+                <methodparam><parameter role="keyword">append</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">bpath</parameter>&nbsp;:</term>
+                <listitem><simpara> a list of ArtBpath segments</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">append</parameter>&nbsp;:</term>
+                <listitem><simpara> whether to append to currentpath</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>bpath</methodname>() method adds all bpath segments up to ART_END to currentpath. If append is false, currentpath is cleared first, 
+            otherwise segments are appended to existing path. This is identical to adding all segments by hand, so the final state of currentpoint depends on 
+            segments processed.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--vpath">
+        <title>mateprint.Context.vpath</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>vpath</methodname>
+                <methodparam><parameter role="keyword">vpath</parameter></methodparam>
+                <methodparam><parameter role="keyword">append</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">vpath</parameter>&nbsp;:</term>
+                <listitem><simpara> a list of ArtVpath segments</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">append</parameter>&nbsp;:</term>
+                <listitem><simpara> whether to append to currentpath</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>vpath</methodname>() method adds all vpath line segments up to ART_END to currentpath. If append is false, currentpath is cleared first,
+            otherwise segments are appended to existing path. This is identical to adding all segments by hand, so the final state of currentpoint depends on 
+            segments processed.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--arcto">
+        <title>mateprint.Context.arcto</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>arcto</methodname>
+                <methodparam><parameter role="keyword">x</parameter></methodparam>
+                <methodparam><parameter role="keyword">y</parameter></methodparam>
+                <methodparam><parameter role="keyword">radius</parameter></methodparam>
+                <methodparam><parameter role="keyword">angle1</parameter></methodparam>
+                <methodparam><parameter role="keyword">angle2</parameter></methodparam>
+                <methodparam><parameter role="keyword">direction</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">x</parameter>&nbsp;:</term>
+                <listitem><simpara> X position of control point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y</parameter>&nbsp;:</term>
+                <listitem><simpara> Y position of control point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">radius</parameter>&nbsp;:</term>
+                <listitem><simpara> the radius of the arc.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">angle1</parameter>&nbsp;:</term>
+                <listitem><simpara> start angle in degrees.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">angle2</parameter>&nbsp;:</term>
+                <listitem><simpara> end angle in degrees.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">direction</parameter>&nbsp;:</term>
+                <listitem><simpara> direction of movement, 0 counterclockwise 1 clockwise.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>arcto</methodname>() method adds an arc with control points x and y with a radius radius and from angle1 to andgle2 in degrees. 
+            direction 1 is clockwise 0 counterclockwise
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--setrgbcolor">
+        <title>mateprint.Context.setrgbcolor</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>setrgbcolor</methodname>
+                <methodparam><parameter role="keyword">r</parameter></methodparam>
+                <methodparam><parameter role="keyword">g</parameter></methodparam>
+                <methodparam><parameter role="keyword">b</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">r</parameter>&nbsp;:</term>
+                <listitem><simpara> Red channel value.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">g</parameter>&nbsp;:</term>
+                <listitem><simpara> Green channel value.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">b</parameter>&nbsp;:</term>
+                <listitem><simpara> Blue channel value.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>setrgbcolor</methodname>() method sets color in graphic state to RGB triplet. This does not imply anything about which colorspace is 
+            used internally. Channel values are clamped to 0.0 - 1.0 region, 0.0 meaning minimum.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--setopacity">
+        <title>mateprint.Context.setopacity</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>setopacity</methodname>
+                <methodparam><parameter role="keyword">opacity</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">opacity</parameter>&nbsp;:</term>
+                <listitem><simpara> opacity value.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>setopacity</methodname>() method sets painting opacity in graphic state to given value. Value is clamped to 0.0 - 1.0 region, 0.0 
+            meaning full transparency and 1.0 completely opaque paint.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--setlinewidth">
+        <title>mateprint.Context.setlinewidth</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>setlinewidth</methodname>
+                <methodparam><parameter role="keyword">width</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">width</parameter>&nbsp;:</term>
+                <listitem><simpara> line width in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>setlinewidth</methodname>() method sets line width in graphic state to given value. Value is given in user coordinates, so effective 
+            line width depends on CTM at the moment of <link linkend="method-mateprintcontext--stroke">stroke</link> or 
+            <link linkend="method-mateprintcontext--strokepath">strokepath</link>. Line width is always uniform in all directions, regardless of stretch factor of 
+            CTM. Default line width is 1.0 in user coordinates.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--setmiterlimit">
+        <title>mateprint.Context.setmiterlimit</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>setmiterlimit</methodname>
+                <methodparam><parameter role="keyword">limit</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">limit</parameter>&nbsp;:</term>
+                <listitem><simpara> miter limit in degrees.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>setmiterlimit</methodname>() method sets minimum angle between two lines, in which case miter join is used. For smaller angles, join is 
+            beveled. Default miter limit is 4 degrees.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--setlinejoin">
+        <title>mateprint.Context.setlinejoin</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>setlinejoin</methodname>
+                <methodparam><parameter role="keyword">join_type</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">join_type</parameter>&nbsp;:</term>
+                <listitem><simpara> integer indicating join type.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>setlinejoin</methodname>() method sets join type for non-colinear line segments. 0 - miter 1 - round 2 - bevel Default join type is 
+            miter.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--setlinecap">
+        <title>mateprint.Context.setlinecap</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>setlinecap</methodname>
+                <methodparam><parameter role="keyword">cap_type</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">cap_type</parameter>&nbsp;:</term>
+                <listitem><simpara> integer indicating cap type.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>setlinecap</methodname>() method sets cap type for line endpoints. 0 - butt 1 - round 2 - square Default cap type is butt.
+        </para>
+    </refsect2>
+   
+    <refsect2 id="method-mateprintcontext--setdash">
+        <title>mateprint.Context.setdash</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>setdash</methodname>
+                <methodparam><parameter role="keyword">n_values</parameter></methodparam>
+                <methodparam><parameter role="keyword">values</parameter></methodparam>
+                <methodparam><parameter role="keyword">offset</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">n_values</parameter>&nbsp;:</term>
+                <listitem><simpara>  number of dash segment lengths.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">values</parameter>&nbsp;:</term>
+                <listitem><simpara>  nrray of dash segment lengths.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">offset</parameter>&nbsp;:</term>
+                <listitem><simpara>  line starting offset in dash.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>setdash</methodname>() method sets line dashing to given pattern. If n_dash is odd, the result is, as if actual number of segments is 2 
+            times bigger, and 2 copies of dash arrays concatenated. If n_values is 0, line is set solid. Dash segment lengths are given in user coordinates, so the 
+            actual dash lengths depend on CTM at the time of <link linkend="method-mateprintcontext--stroke">stroke</link> or 
+            <link linkend="method-mateprintcontext--strokepath">strokepath</link>. Dashing is always uniform in all directions, regardless of the stretching factor
+            of CTM. Default is solid line.
+        </para>
+    </refsect2>   
+    
+    <refsect2 id="method-mateprintcontext--setfont">
+        <title>mateprint.Context.setfont</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>setfont</methodname>
+                <methodparam><parameter role="keyword">font</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">font</parameter>&nbsp;:</term>
+                <listitem><simpara> MateFont to use for text.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>setfont</methodname>() method sets font in graphic state. Font is referenced by mate print, so caller may discard it immediately 
+            afterwards. Default font is system dependent.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintcontext--clip">
+        <title>mateprint.Context.clip</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>clip</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>clip</methodname>() method defines drawing region as inside area of currentpath. If path is self-intersecting or consists of several 
+            overlapping subpaths, nonzero rule is used to define the inside orea of path. All open subpaths of currentpath are closed. If currentpath is empty, 
+            MATE_PRINT_ERROR_NOCURRENTPATH is returned. Currentpath is emptied by this function.
+        </para>
+    </refsect2>    
+    
+    <refsect2 id="method-mateprintcontext--eoclip">
+        <title>mateprint.Context.eoclip</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>eoclip</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>erclip</methodname>() method defines drawing region as inside area of currentpath. If path is self-intersecting or consists of several 
+            overlapping subpaths, even-odd rule is used to define the inside area of path. All open subpaths of currentpath are closed. If currentpath is empty, 
+            MATE_PRINT_ERROR_NOCURRENTPATH is returned. Currentpath is emptied by this function.
+        </para>
+    </refsect2>    
+    
+    <refsect2 id="method-mateprintcontext--concat">
+        <title>mateprint.Context.concat</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>concat</methodname>
+                <methodparam><parameter role="keyword">matrix</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">matrix</parameter>&nbsp;:</term>
+                <listitem><simpara> 3x2 affine transformation matrix.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>concat</methodname>() method appends matrix to current transformation matrix (CTM). The resulting transformation from user coordinates 
+            to page coordinates is, as if coordinates would first be transformed by matrix, and the results by CTM. Matrix is given in column order, i.e. X' = X * 
+            m[0] + Y * m[2] + m[4] Y' = X * m[1] + Y * m[3] + m[5]
+        </para>
+    </refsect2>    
+    
+    <refsect2 id="method-mateprintcontext--scale">
+        <title>mateprint.Context.scale</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>scale</methodname>
+                <methodparam><parameter role="keyword">sx</parameter></methodparam>
+                <methodparam><parameter role="keyword">sy</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">sx</parameter>&nbsp;:</term>
+                <listitem><simpara> X scale.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">sy</parameter>&nbsp;:</term>
+                <listitem><simpara> Y scale.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>scale</methodname>() method scales user coordinate system by given X and Y values.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintcontext--rotate">
+        <title>mateprint.Context.rotate</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>rotate</methodname>
+                <methodparam><parameter role="keyword">theta</parameter></methodparam>
+        </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">theta</parameter>&nbsp;:</term>
+                <listitem><simpara> angle in degrees.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>scale</methodname>() method rotates user coordinate system theta degrees counterclockwise.
+        </para>
+    </refsect2>    
+    
+    <refsect2 id="method-mateprintcontext--translate">
+        <title>mateprint.Context.translate</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>translate</methodname>
+                <methodparam><parameter role="keyword">x</parameter></methodparam>
+                <methodparam><parameter role="keyword">y</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">x</parameter>&nbsp;:</term>
+                <listitem><simpara> new starting X.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y</parameter>&nbsp;:</term>
+                <listitem><simpara> new starting Y.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>translate</methodname>() method move the starting point of user coordinate system to given point.
+        </para>
+    </refsect2>    
+    
+    <refsect2 id="method-mateprintcontext--gsave">
+        <title>mateprint.Context.gsave</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>gsave</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>gsave</methodname>() method saves current graphic state (transformation, color, line properties, font) into stack (push). Values itself
+            remain unchanged. You can later restore saved values, using <link linkend="method-mateprintcontext--grestore">grestore</link>, but not over page 
+            boundaries. Graphic state stack has to be cleared for each <link linkend="method-mateprintcontext--showpage">showpage</link>, i.e. the number of 
+            <link linkend="method-mateprintcontext--gsave">gsave</link> has to match the number of 
+            <link linkend="method-mateprintcontext--grestore">grestore</link> for each page.
+        </para>
+    </refsect2>    
+    
+    <refsect2 id="method-mateprintcontext--grestore">
+        <title>mateprint.Context.grestore</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>grestore</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>grestore</methodname>() method retrieves last saved graphic state from stack (pop). Stack has to be at least the size of one.
+        </para>
+    </refsect2>        
+    
+    <refsect2 id="method-mateprintcontext--fill">
+        <title>mateprint.Context.fill</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>fill</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>fill</methodname>() method fills the inside area of currentpath, using current graphic state. If path is self-intersecting or consists 
+            of several overlapping subpaths, nonzero rule is used to define the inside area of path. All open subpaths of currentpath are closed. If currentpath is
+            empty, MATE_PRINT_ERROR_NOCURRENTPATH is returned. Currentpath is emptied by this function.
+        </para>
+    </refsect2>
+   
+    <refsect2 id="method-mateprintcontext--eofill">
+        <title>mateprint.Context.eofill</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>eofill</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>eofill</methodname>() method fills the inside area of currentpath, using current graphic state. If path is self-intersecting or 
+            consists of several overlapping subpaths, even-odd rule is used to define the inside area of path. All open subpaths of currentpath are closed. If 
+            currentpath is empty, MATE_PRINT_ERROR_NOCURRENTPATH is returned. Currentpath is emptied by this function.
+        </para>
+    </refsect2>    
+    
+    <refsect2 id="method-mateprintcontext--stroke">
+        <title>mateprint.Context.stroke</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>stroke</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>stroke</methodname>() method strokes currentpath, i.e. draws line along it, with style, defined by current graphic state values. If 
+            currentpath is empty, MATE_PRINT_ERROR_NOCURRENTPATH is returned. Currentpath is emptied by this function.
+        </para>
+    </refsect2>        
+    
+    <refsect2 id="method-mateprintcontext--show">
+        <title>mateprint.Context.show</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>show</methodname>
+                <methodparam><parameter role="keyword">text</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">text</parameter>&nbsp;:</term>
+                <listitem><simpara>  Null-terminated UTF-8 string.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>show</methodname>() method draws UTF-8 text at currentpoint, using current font from graphic state. Input text is validated, and 
+            MATE_PRINT_ERROR_BADVALUE returned, if it is not valid UTF-8. Both currentpath and currentpoint are erased.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintcontext--show_sized">
+        <title>mateprint.Context.show_sized</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>show_sized</methodname>
+                <methodparam><parameter role="keyword">text</parameter></methodparam>
+                <methodparam><parameter role="keyword">bytes</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">text</parameter>&nbsp;:</term>
+                <listitem><simpara> UTF-8 text string.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">bytes</parameter>&nbsp;:</term>
+                <listitem><simpara> number of bytes to use from string.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>show_sized</methodname>() method draws UTF-8 text at currentpoint, using current font from graphic state. Input text is validated, and 
+            MATE_PRINT_ERROR_BADVALUE returned, if it is not valid UTF-8. Both currentpath and currentpoint are erased.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintcontext--glyphlist">
+        <title>mateprint.Context.glyphlist</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>glyphlist</methodname>
+                <methodparam><parameter role="keyword">text</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">glyphlist</parameter>&nbsp;:</term>
+                <listitem><simpara>  MateGlyphList text object.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>glyphlist</methodname>() method draws text, using MateGlyphList rich text format. Glyphlist is rendered in user coordinates, starting 
+            from currentpoint. Both currentpath and currentpoint are erased.
+        </para>
+    </refsect2>   
+    
+    <refsect2 id="method-mateprintcontext--grayimage">
+        <title>mateprint.Context.grayimage</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>grayimage</methodname>
+                <methodparam><parameter role="keyword">data</parameter></methodparam>
+                <methodparam><parameter role="keyword">width</parameter></methodparam>
+                <methodparam><parameter role="keyword">height</parameter></methodparam>
+                <methodparam><parameter role="keyword">rowstride</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">data</parameter>&nbsp;:</term>
+                <listitem><simpara> pointer to image pixel buffer.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">width</parameter>&nbsp;:</term>
+                <listitem><simpara> image buffer width.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">height</parameter>&nbsp;:</term>
+                <listitem><simpara> image buffer height.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">rowstride</parameter>&nbsp;:</term>
+                <listitem><simpara> image buffer rowstride.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>grayimage</methodname>() method draws grayscale image into unit square (0,0 - 1,1) in current coordinate system. Image buffer has to be
+            1 byte per pixel, with value 255 marking white and 0 black.
+        </para>
+    </refsect2>       
+    
+    <refsect2 id="method-mateprintcontext--rgbimage">
+        <title>mateprint.Context.rgbimage</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>rgbimage</methodname>
+                <methodparam><parameter role="keyword">data</parameter></methodparam>
+                <methodparam><parameter role="keyword">width</parameter></methodparam>
+                <methodparam><parameter role="keyword">height</parameter></methodparam>
+                <methodparam><parameter role="keyword">rowstride</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">data</parameter>&nbsp;:</term>
+                <listitem><simpara> pointer to image pixel buffer.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">width</parameter>&nbsp;:</term>
+                <listitem><simpara> image buffer width.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">height</parameter>&nbsp;:</term>
+                <listitem><simpara> image buffer height.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">rowstride</parameter>&nbsp;:</term>
+                <listitem><simpara> image buffer rowstride.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>rgbimage</methodname>() method draws RGB color image into unit square (0,0 - 1,1) in current coordinate system. Image buffer has to be 
+            3 bytes per pixel, order RGB, with value 255 marking maximum and 0 minimum value.
+        </para>
+    </refsect2>    
+    
+    <refsect2 id="method-mateprintcontext--rgbaimage">
+        <title>mateprint.Context.rgbaimage</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>rgbaimage</methodname>
+                <methodparam><parameter role="keyword">data</parameter></methodparam>
+                <methodparam><parameter role="keyword">width</parameter></methodparam>
+                <methodparam><parameter role="keyword">height</parameter></methodparam>
+                <methodparam><parameter role="keyword">rowstride</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">data</parameter>&nbsp;:</term>
+                <listitem><simpara> pointer to image pixel buffer.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">width</parameter>&nbsp;:</term>
+                <listitem><simpara> image buffer width.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">height</parameter>&nbsp;:</term>
+                <listitem><simpara> image buffer height.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">rowstride</parameter>&nbsp;:</term>
+                <listitem><simpara> image buffer rowstride.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>rgbaimage</methodname>() method draws RGB color image with transparency channel image into unit square (0,0 - 1,1) in current 
+            coordinate system. Image buffer has to be 4 bytes per pixel, order RGBA, with value 255 marking maximum and 0 minimum value. Alpha value 255 means full
+            opacity, 0 full transparency.
+        </para>
+    </refsect2>        
+    
+    <refsect2 id="method-mateprintcontext--beginpage">
+        <title>mateprint.Context.beginpage</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>beginpage</methodname>
+                <methodparam><parameter role="keyword">name</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">name</parameter>&nbsp;:</term>
+                <listitem><simpara> name of the page, NULL if you just want to use the page number of the page.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>glyphlist</methodname>() method starts new output page with name. Naming is used for interactive contexts like MatePrintPreview and 
+            Document Structuring Convention conformant PostScript output. This function has to be called before any drawing methods and immediately after each 
+            <link linkend="method-mateprintcontext--showpage">showpage</link> albeit the last one. It also resets graphic state values (transformation, color, 
+            line properties, font), so one has to define these again at the beginning of each page.
+        </para>
+    </refsect2>       
+
+    <refsect2 id="method-mateprintcontext--showpage">
+        <title>mateprint.Context.showpage</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>showpage</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>showpage</methodname>() method finishes rendering of current page, and marks it as shown. All subsequent drawing methods will fail, 
+            until new page is started with <link linkend="method-mateprintcontext--newpage">newpage</link>. Printing contexts may process drawing methods 
+            differently - some do rendering immediately (like MatePrintPreview), some accumulate all operators to internal stack, and only after 
+            <link linkend="method-mateprintcontext--showpage">showpage</link> is any output produced.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--line_stroked">
+        <title>mateprint.Context.line_stroked</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>line_stroked</methodname>
+                <methodparam><parameter role="keyword">x0</parameter></methodparam>
+                <methodparam><parameter role="keyword">y0</parameter></methodparam>
+                <methodparam><parameter role="keyword">x1</parameter></methodparam>
+                <methodparam><parameter role="keyword">y1</parameter></methodparam>
+             </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">x0</parameter>&nbsp;:</term>
+                <listitem><simpara> X position of start point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y0</parameter>&nbsp;:</term>
+                <listitem><simpara> Y position of start point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">x1</parameter>&nbsp;:</term>
+                <listitem><simpara> X position of end point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y1</parameter>&nbsp;:</term>
+                <listitem><simpara> Y position of end point in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+         </variablelist>
+        
+        <para>
+            The <methodname>line_stroked</methodname>() method is a convenience function to draw a line. Uses 
+            <link linkend="method-mateprintcontext--stroke">stroke</link> to do the actual work.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--rect_stroked">
+        <title>mateprint.Context.rect_stroked</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>rect_stroked</methodname>
+                <methodparam><parameter role="keyword">x</parameter></methodparam>
+                <methodparam><parameter role="keyword">y</parameter></methodparam>
+                <methodparam><parameter role="keyword">width</parameter></methodparam>
+                <methodparam><parameter role="keyword">height</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">x</parameter>&nbsp;:</term>
+                <listitem><simpara> X position of origin of rectangle in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y</parameter>&nbsp;:</term>
+                <listitem><simpara> Y position of origin of rectangle in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">width</parameter>&nbsp;:</term>
+                <listitem><simpara> width of the rectangle.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">height</parameter>&nbsp;:</term>
+                <listitem><simpara> height of the rectangle.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>rect_stroked</methodname>() method is a convenience function to draw a rectangle. Uses 
+            <link linkend="method-mateprintcontext--stroke">stroke</link> to do the actual work.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintcontext--rect_filled">
+        <title>mateprint.Context.rect_filled</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>rect_filled</methodname>
+                <methodparam><parameter role="keyword">x</parameter></methodparam>
+                <methodparam><parameter role="keyword">y</parameter></methodparam>
+                <methodparam><parameter role="keyword">width</parameter></methodparam>
+                <methodparam><parameter role="keyword">height</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">x</parameter>&nbsp;:</term>
+                <listitem><simpara> X position of origin of rectangle in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">y</parameter>&nbsp;:</term>
+                <listitem><simpara> Y position of origin of rectangle in user coordinates.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">width</parameter>&nbsp;:</term>
+                <listitem><simpara> width of the rectangle.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">height</parameter>&nbsp;:</term>
+                <listitem><simpara> height of the rectangle.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> MATE_PRINT_OK or positive value on success, negative error code on failure.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>rect_filled</methodname>() method is a convenience function to draw a filled rectangle. Uses 
+            <link linkend="method-mateprintcontext--stroke">stroke</link> to do the actual work.
+        </para>
+    </refsect2>
+</refsect1>  
+</refentry>

@@ -1,0 +1,251 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-gtksourcemarker">
+  <refnamediv>
+    <refname>gtksourceview.SourceMarker</refname>
+    <refpurpose>Marker object for <link linkend="class-gtksourceview">gtksourceview.SourceView</link></refpurpose>
+  </refnamediv>
+
+<!-- ********************************* -->
+<!-- BEGIN OF GTKSOURCEMARKER SYNOPSIS -->
+<!-- ********************************* -->
+
+<refsect1>
+  <title>Synopsis</title>
+  
+    <classsynopsis language="python">
+    <ooclass><classname>gtksourceview.SourceMarker</classname></ooclass>
+    <ooclass><classname><link linkend="class-gtktextmark">gtk.TextMark</link></classname></ooclass>
+
+    <constructorsynopsis language="python">
+	    <methodname><link linkend="constructor-gtksourcemarker">gtksourceview.SourceMarker</link></methodname>
+	    <methodparam><parameter role="keyword"></parameter></methodparam>
+    </constructorsynopsis>    
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcemarker--set-marker-type">set_marker_type</link></methodname>
+	    <methodparam>type</methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcemarker--get-marker-type">get_marker_type</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcemarker--get-line">get_line</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+     <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcemarker--get-name">get_name</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>   
+    
+     <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcemarker--get-buffer">get_buffer</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>   
+    
+     <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcemarker--next">next</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>   
+    
+     <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcemarker--prev">prev</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>   
+  </classsynopsis>
+</refsect1>
+
+<!-- ********************************* -->
+<!-- BEGIN OF GTKSOURCEMARKER ANCESTRY -->
+<!-- ********************************* -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-gtksourcemarker">gtksourceview.SourceMarker</link>
+</synopsis>
+</refsect1>
+
+<!-- ************************************ -->
+<!-- BEGIN OF GTKSOURCEMARKER DESCRIPTION -->
+<!-- ************************************ -->
+
+<refsect1 id="description-gtktextmarker">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- ************************************ -->
+<!-- BEGIN OF GTKSOURCEMARKER CONSTRUCTOR -->
+<!-- ************************************ -->
+
+<refsect1 id="constructor-gtksourcemarker">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>gtksourceview.SourceMarker</methodname>
+	  <methodparam><parameter role="keyword"></parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link>.</simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link> object.
+  </para>
+</refsect1>
+
+<!-- ******************************** -->
+<!-- BEGIN OF GTKSOURCEMARKER METHODS -->
+<!-- ******************************** -->
+
+<refsect1>
+  <title>Methods</title>
+
+  <refsect2 id="method-gtksourcemarker--set-marker-type">
+    <title>gtksourceview.SourceMarker.set_marker_type</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>set_marker_type</methodname>
+	  <methodparam><parameter role="keyword">type</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter role="keyword">type</parameter>&nbsp;:</term>
+	      <listitem><simpara>	the type of marker.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>set_marker_type</methodname>() method sets the type of marker to the value of <parameter>type</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcemarker--get-marker-type">
+    <title>gtksourceview.SourceMarker.get_marker_type</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_marker_type</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the marker type.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_marker_type</methodname>() method gets the marker type of this <parameter>marker</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcemarker--get-line">
+    <title>gtksourceview.SourceMarker.get_line</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_line</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the line number.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_line</methodname>() method gets the line number of this <parameter>marker</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcemarker--get-name">
+    <title>gtksourceview.SourceMarker.get_name</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_name</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the name.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_name</methodname>() method gets the name of this <parameter>marker</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcemarker--get-buffer">
+    <title>gtksourceview.SourceMarker.get_buffer</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_buffer</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the <link linkend="class-gtksourcebuffer"><classname>gtksourceview.SourceBuffer</classname></link>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_buffer</methodname>() method gets the buffer associated with this <parameter>marker</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcemarker--next">
+    <title>gtksourceview.SourceMarker.next</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>next</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>next</methodname>() method gets the next marker after <parameter>marker</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcemarker--prev">
+    <title>gtksourceview.SourceMarker.prev</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>prev</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>prev</methodname>() method gets the previous marker before <parameter>marker</parameter>.
+	  </para>
+  </refsect2>
+</refsect1> 
+</refentry>

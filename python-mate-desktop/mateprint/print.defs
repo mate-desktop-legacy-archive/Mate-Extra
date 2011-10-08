@@ -1,0 +1,1212 @@
+;; -*- scheme -*-
+
+(include "art.defs")
+
+; boxed types
+(define-boxed Unit
+  (c-name "MatePrintUnit")
+  (gtype-id "MATE_TYPE_PRINT_UNIT")
+  (fields
+   '("guint"   "base")
+   '("gdouble" "unittobase")
+   '("gchar*"  "name")
+   '("gchar*"  "abbr")
+   '("gchar*"  "plural")
+   '("gchar*"  "abbr_plural"))
+)
+
+(define-boxed GlyphList
+  (c-name "MateGlyphList")
+  (gtype-id "MATE_TYPE_GLYPHLIST")
+)
+
+; object definitions ...
+(define-object Config
+  (parent "GObject")
+  (c-name "MatePrintConfig")
+  (gtype-id "MATE_TYPE_PRINT_CONFIG")
+)
+
+(define-object Context
+  (parent "GObject")
+  (c-name "MatePrintContext")
+  (gtype-id "MATE_TYPE_PRINT_CONTEXT")
+)
+
+(define-object Font
+  (parent "GObject")
+  (c-name "MateFont")
+  (gtype-id "MATE_TYPE_FONT")
+)
+
+(define-object FontFace
+  (parent "GObject")
+  (c-name "MateFontFace")
+  (gtype-id "MATE_TYPE_FONT_FACE")
+)
+
+(define-object Job
+  (parent "GObject")
+  (c-name "MatePrintJob")
+  (gtype-id "MATE_TYPE_PRINT_JOB")
+)
+
+; --- MatePrintConfig ---
+(define-method get
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_get")
+  (return-type "gchar*")
+  (parameters
+   '("const-gchar*" "key"))
+)
+
+(define-method set
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_set")
+  (return-type "gboolean")
+  (parameters
+   '("const-gchar*" "key")
+   '("const-gchar*" "value"))
+)
+
+(define-method get_boolean
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_get_boolean")
+  (return-type "gboolean")
+  (parameters
+   '("const-gchar*" "key"))
+)
+
+(define-method get_int
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_get_int")
+  (return-type "gboolean")
+  (parameters
+   '("const-gchar*" "key"))
+)
+
+(define-method get_double
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_get_double")
+  (return-type "gboolean")
+  (parameters
+   '("const-gchar*" "key"))
+)
+
+(define-method get_length
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_get_length")
+  (return-type "gboolean")
+  (parameters
+   '("const-gchar*"    "key")
+   '("MatePrintUnit*" "unit"))
+)
+
+
+(define-method set_boolean
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_set_boolean")
+  (return-type "gboolean")
+  (parameters
+   '("const-gchar*" "key")
+   '("gboolean"     "value"))
+)
+
+
+(define-method set_int
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_set_int")
+  (return-type "gboolean")
+  (parameters
+   '("const-gchar*" "key")
+   '("gint"     "value"))
+)
+
+(define-method set_double
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_set_double")
+  (return-type "gboolean")
+  (parameters
+   '("const-gchar*" "key")
+   '("gdouble"      "value"))
+)
+
+(define-method set_length
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_set_length")
+  (return-type "gboolean")
+  (parameters
+   '("const-gchar*"    "key")
+   '("gdouble"         "value")
+   '("MatePrintUnit*" "unit"))
+)
+
+(define-method to_string
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_to_string")
+  (return-type "gchar*")
+  (parameters
+   '("guint" "flags" (default "0")))
+)
+
+
+(define-function config_from_string
+  ;(is-constructor-of "MatePrintConfig")
+  (c-name "mate_print_config_from_string")
+  (return-type "MatePrintConfig*")
+  (parameters
+   '("const-gchar*" "str")
+   '("guint"        "flags" (default "0")))
+)
+
+
+(define-function config_default
+  ;(is-constructor-of "MatePrintConfig")
+  (c-name "mate_print_config_default")
+  (return-type "MatePrintConfig*")
+)
+
+
+(define-method dump
+  (of-object "MatePrintConfig")
+  (c-name "mate_print_config_dump")
+  (return-type "none")
+)
+
+
+; --- MatePrintContext ---
+
+(define-function mate_print_context_new
+  (is-constructor-of "MatePrintContext")
+  (c-name "mate_print_context_new")
+  (return-type "MatePrintContext*")
+  (parameters
+   '("MatePrintConfig*" "config"))
+)
+
+(define-method close
+  (of-object "MatePrintContext")
+  (c-name "mate_print_context_close")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method newpath
+  (of-object "MatePrintContext")
+  (c-name "mate_print_newpath")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method moveto
+  (of-object "MatePrintContext")
+  (c-name "mate_print_moveto")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "x")
+   '("gdouble" "y"))
+)
+
+(define-method lineto
+  (of-object "MatePrintContext")
+  (c-name "mate_print_lineto")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "x")
+   '("gdouble" "y"))
+)
+
+(define-method curveto
+  (of-object "MatePrintContext")
+  (c-name "mate_print_curveto")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "x1")
+   '("gdouble" "y1")
+   '("gdouble" "x2")
+   '("gdouble" "y2")
+   '("gdouble" "x3")
+   '("gdouble" "y3"))
+)
+
+(define-method closepath
+  (of-object "MatePrintContext")
+  (c-name "mate_print_closepath")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method strokepath
+  (of-object "MatePrintContext")
+  (c-name "mate_print_strokepath")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method bpath
+  (of-object "MatePrintContext")
+  (c-name "mate_print_bpath")
+  (parameters
+   '("ArtBpath*" "bpath")		; actually sequence<ArtBpath>
+   '("gboolean"  "append"))
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method vpath
+  (of-object "MatePrintContext")
+  (c-name "mate_print_vpath")
+  (parameters
+   '("ArtVpath*" "vpath")		; actually sequence<ArtVpath>
+   '("gboolean"  "append"))
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method arcto
+  (of-object "MatePrintContext")
+  (c-name "mate_print_arcto")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "x")
+   '("gdouble" "y")
+   '("gdouble" "radius")
+   '("gdouble" "angle1")
+   '("gdouble" "angle2")
+   '("gint"    "direction"))
+)
+
+(define-method setrgbcolor
+  (of-object "MatePrintContext")
+  (c-name "mate_print_setrgbcolor")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "r")
+   '("gdouble" "g")
+   '("gdouble" "b"))
+)
+
+(define-method setopacity
+  (of-object "MatePrintContext")
+  (c-name "mate_print_setopacity")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "opacity"))
+)
+
+(define-method setlinewidth
+  (of-object "MatePrintContext")
+  (c-name "mate_print_setlinewidth")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "width"))
+)
+
+(define-method setmiterlimit
+  (of-object "MatePrintContext")
+  (c-name "mate_print_setmiterlimit")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "limit"))
+)
+
+(define-method setlinejoin
+  (of-object "MatePrintContext")
+  (c-name "mate_print_setlinejoin")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gint" "jointype"))
+)
+
+(define-method setlinecap
+  (of-object "MatePrintContext")
+  (c-name "mate_print_setlinecap")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gint" "captype"))
+)
+
+(define-method setdash
+  (of-object "MatePrintContext")
+  (c-name "mate_print_setdash")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "values") ; actually sequence<float>
+   '("gdouble" "offset"))
+)
+
+(define-method setfont
+  (of-object "MatePrintContext")
+  (c-name "mate_print_setfont")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("MateFont*" "font"))
+)
+
+(define-method clip
+  (of-object "MatePrintContext")
+  (c-name "mate_print_clip")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method eoclip
+  (of-object "MatePrintContext")
+  (c-name "mate_print_eoclip")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method concat
+  (of-object "MatePrintContext")
+  (c-name "mate_print_concat")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "matrix"))	 ; actually sequence<float> with len=6
+)
+
+(define-method scale
+  (of-object "MatePrintContext")
+  (c-name "mate_print_scale")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "sx")
+   '("gdouble" "sy"))
+)
+
+(define-method rotate
+  (of-object "MatePrintContext")
+  (c-name "mate_print_rotate")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "theta"))
+)
+
+(define-method translate
+  (of-object "MatePrintContext")
+  (c-name "mate_print_translate")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "x")
+   '("gdouble" "y"))
+)
+
+(define-method gsave
+  (of-object "MatePrintContext")
+  (c-name "mate_print_gsave")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method grestore
+  (of-object "MatePrintContext")
+  (c-name "mate_print_grestore")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method fill
+  (of-object "MatePrintContext")
+  (c-name "mate_print_fill")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method eofill
+  (of-object "MatePrintContext")
+  (c-name "mate_print_eofill")
+  (return-type "MatePrintReturnCode")
+)
+
+(define-method stroke
+  (of-object "MatePrintContext")
+  (c-name "mate_print_stroke")
+  (return-type "MatePrintReturnCode")
+)
+
+
+(define-method show
+  (of-object "MatePrintContext")
+  (c-name "mate_print_show")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("const-gchar*" "text"))
+)
+
+(define-method glyphlist
+  (of-object "MatePrintContext")
+  (c-name "mate_print_glyphlist")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("MateGlyphList*" "glyphlist"))
+)
+
+; This one is overridden only to do runtime bounds checking on data
+(define-method grayimage
+  (of-object "MatePrintContext")
+  (c-name "mate_print_grayimage")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("const-guchar*" "data")
+   '("gint"          "width")
+   '("gint"          "height")
+   '("gint"          "rowstride"))
+)
+
+; This one is overridden only to do runtime bounds checking on data
+(define-method rgbimage
+  (of-object "MatePrintContext")
+  (c-name "mate_print_rgbimage")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("const-guchar*" "data")
+   '("gint"          "width")
+   '("gint"          "height")
+   '("gint"          "rowstride"))
+)
+
+; This one is overridden only to do runtime bounds checking on data
+(define-method rgbaimage
+  (of-object "MatePrintContext")
+  (c-name "mate_print_rgbaimage")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("const-guchar*" "data")
+   '("gint"          "width")
+   '("gint"          "height")
+   '("gint"          "rowstride"))
+)
+
+(define-method beginpage
+  (of-object "MatePrintContext")
+  (c-name "mate_print_beginpage")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("const-gchar*" "name"))
+)
+
+(define-method showpage
+  (of-object "MatePrintContext")
+  (c-name "mate_print_showpage")
+  (return-type "MatePrintReturnCode")
+)
+
+; mate_print_page_callback
+; mate_print_page_callback_closure
+
+;; This is wrapped around #ifdef MATE_PRINT_ENABLE_PAGE_CALLBACKS
+
+;(define-method page_callback
+;  (of-object "MatePrintContext")
+;  (c-name "mate_print_page_callback_closure")
+;  (parameters
+;   '("const-gchar*" "name")
+;   '("gpointer"     "pagedata")
+;   '("gpointer"     "docdata")
+;   '("GClosure*"    "closure"))
+;  (return-type "gint"))
+
+(define-method line_stroked
+  (of-object "MatePrintContext")
+  (c-name "mate_print_line_stroked")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "x0")
+   '("gdouble" "y0")
+   '("gdouble" "x1")
+   '("gdouble" "y1"))
+)
+
+(define-method rect_stroked
+  (of-object "MatePrintContext")
+  (c-name "mate_print_rect_stroked")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "x")
+   '("gdouble" "y")
+   '("gdouble" "width")
+   '("gdouble" "height"))
+)
+
+(define-method rect_filled
+  (of-object "MatePrintContext")
+  (c-name "mate_print_rect_filled")
+  (return-type "MatePrintReturnCode")
+  (parameters
+   '("gdouble" "x")
+   '("gdouble" "y")
+   '("gdouble" "width")
+   '("gdouble" "height"))
+)
+
+
+; --- MateFont ---
+
+(define-method get_name
+  (of-object "MateFont")
+  (c-name "mate_font_get_name")
+  (return-type "const-gchar*")
+)
+
+(define-method get_family_name
+  (of-object "MateFont")
+  (c-name "mate_font_get_family_name")
+  (return-type "const-gchar*")
+)
+
+(define-method get_species_name
+  (of-object "MateFont")
+  (c-name "mate_font_get_species_name")
+  (return-type "const-gchar*")
+)
+
+(define-method get_ps_name
+  (of-object "MateFont")
+  (c-name "mate_font_get_ps_name")
+  (return-type "const-gchar*")
+)
+
+(define-method lookup_default
+  (of-object "MateFont")
+  (c-name "mate_font_lookup_default")
+  (return-type "gint")
+  (parameters
+   '("gint" "unicode"))
+)
+
+(define-method get_glyph_stdbbox
+  (of-object "MateFont")
+  (c-name "mate_font_get_glyph_stdbbox")
+  (parameters
+   '("gint"       "glyph"))
+  (return-type "ArtDRect*")
+)
+(define-method get_glyph_stdadvance
+  (of-object "MateFont")
+  (c-name "mate_font_get_glyph_stdadvance")
+  (parameters
+   '("gint"       "glyph"))
+  (return-type "ArtPoint*")
+)
+(define-method get_glyph_stdoutline
+  (of-object "MateFont")
+  (c-name "mate_font_get_glyph_stdoutline")
+  (parameters
+   '("gint"       "glyph"))
+  (return-type "ArtBpath*")
+)
+(define-method get_glyph_stdkerning
+  (of-object "MateFont")
+  (c-name "mate_font_get_glyph_stdkerning")
+  (parameters
+   '("gint"       "glyph0")
+   '("gint"       "glyph1"))
+  (return-type "ArtPoint*")
+)
+
+(define-method get_face
+  (of-object "MateFont")
+  (c-name "mate_font_get_face")
+  (return-type "MateFontFace*")
+)
+
+(define-method get_size
+  (of-object "MateFont")
+  (c-name "mate_font_get_size")
+  (return-type "gdouble")
+)
+
+(define-method get_ascender
+  (of-object "MateFont")
+  (c-name "mate_font_get_ascender")
+  (return-type "gdouble")
+)
+
+(define-method get_descender
+  (of-object "MateFont")
+  (c-name "mate_font_get_descender")
+  (return-type "gdouble")
+)
+
+(define-method get_underline_position
+  (of-object "MateFont")
+  (c-name "mate_font_get_underline_position")
+  (return-type "gdouble")
+)
+
+(define-method get_underline_thickness
+  (of-object "MateFont")
+  (c-name "mate_font_get_underline_thickness")
+  (return-type "gdouble")
+)
+
+(define-method get_glyph_width
+  (of-object "MateFont")
+  (c-name "mate_font_get_glyph_width")
+  (return-type "gdouble")
+  (parameters
+   '("gint" "glyph"))
+)
+
+;; This one is declared in mate-font.h but not implemented anywhere!
+; (define-method get_glyph_kerning
+;   (of-object "MateFont")
+;   (c-name "mate_font_get_glyph_kerning")
+;   (return-type "gdouble")
+;   (parameters
+;    '("gint" "glyph1")
+;    '("gint" "glyph2"))
+; )
+
+(define-function font_find_closest_from_weight_slant
+  (c-name "mate_font_find_closest_from_weight_slant")
+  (return-type "MateFont*")
+  (parameters
+   '("const-gchar*" "family")
+   '("gint"         "weight")
+   '("gboolean"     "italic")
+   '("gdouble"      "size"))
+)
+
+(define-function font_find
+  (c-name "mate_font_find")
+  (is-constructor-of "MateFont")
+  (return-type "MateFont*")
+  (parameters
+   '("const-gchar*" "name")
+   '("gdouble"      "size"))
+)
+
+(define-function font_find_closest
+  (c-name "mate_font_find_closest")
+  (return-type "MateFont*")
+  (parameters
+   '("const-gchar*" "name")
+   '("gdouble"      "size"))
+)
+
+(define-function font_find_closest_from_full_name
+  (c-name "mate_font_find_closest_from_full_name")
+  (return-type "MateFont*")
+  (parameters
+   '("const-gchar*" "full_name"))
+)
+
+(define-function font_list
+  (c-name "mate_font_list")
+  (return-type "gint")			; actually tuple<string>
+)
+
+(define-function font_family_list
+  (c-name "mate_font_family_list")
+  (return-type "gint")			; actually tuple<string>
+)
+
+(define-function font_style_list
+  (c-name "mate_font_style_list")
+  (return-type "gint")			; actually tuple<string>
+  (parameters
+   '("const-gchar*" "family"))
+)
+
+(define-method get_full_name
+  (of-object "MateFont")
+  (c-name "mate_font_get_full_name")
+  (return-type "gchar*")
+  (caller-owns-return #t)
+)
+
+(define-method get_width_utf8
+  (of-object "MateFont")
+  (c-name "mate_font_get_width_utf8")
+  (return-type "double")
+  (parameters
+   '("const-gchar*" "str"))
+)
+
+; --- MateFontFace ---
+
+(define-function font_face_find
+  (c-name "mate_font_face_find")
+  (is-constructor-of "MateFontFace")
+  (return-type "MateFontFace*")
+  (parameters
+   '("const-gchar*" "name"))
+)
+
+(define-function font_face_find_closest
+  (c-name "mate_font_face_find_closest")
+  (is-constructor-of "MateFontFace")
+  (return-type "MateFontFace*")
+  (parameters
+   '("const-gchar*" "name"))
+)
+
+
+(define-function font_face_find_closest_from_weight_slant
+  (c-name "mate_font_face_find_closest_from_weight_slant")
+  (return-type "MateFontFace*")
+  (parameters
+   '("const-gchar*" "family")
+   '("gint"         "weigth")
+   '("gboolean"     "italic"))
+)
+
+(define-function font_face_find_closest_from_pango_font
+  (c-name "mate_font_face_find_closest_from_pango_font")
+  (return-type "MateFontFace*")
+  (parameters
+   '("PangoFont*" "pfont"))
+)
+
+(define-function font_face_find_closest_from_pango_description
+  (c-name "mate_font_face_find_closest_from_pango_description")
+  (return-type "MateFontFace*")
+  (parameters
+   '("PangoFontDescription*" "desc"))
+)
+
+(define-function font_face_find_from_family_and_style
+  (c-name "mate_font_face_find_from_family_and_style")
+  (return-type "MateFontFace*")
+  (parameters
+   '("const-gchar*" "family")
+   '("const-gchar*" "style"))
+)
+
+(define-method get_font
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_font")
+  (return-type "MateFont*")
+  (parameters
+   '("gdouble" "size")
+   '("gdouble" "xres" (default "600.0"))
+   '("gdouble" "yres" (default "600.0")))
+)
+
+(define-method get_name
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_name")
+  (return-type "const-gchar*")
+)
+
+(define-method get_family_name
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_family_name")
+  (return-type "const-gchar*")
+)
+
+(define-method get_species_name
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_species_name")
+  (return-type "const-gchar*")
+)
+
+(define-method get_ps_name
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_ps_name")
+  (return-type "const-gchar*")
+)
+
+(define-method get_num_glyphs
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_num_glyphs")
+  (return-type "gint")
+)
+
+(define-method lookup_default
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_lookup_default")
+  (return-type "gint")
+  (parameters
+   '("gint" "unicode"))
+)
+(define-method get_stdbbox
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_stdbbox")
+  (caller-owns-return #f)
+  (return-type "ArtDRect*")
+)
+(define-method get_glyph_stdbbox
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_glyph_stdbbox")
+  (parameters
+   '("gint"       "glyph"))
+  (return-type "ArtDRect*")
+)
+(define-method get_glyph_stdadvance
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_glyph_stdadvance")
+  (parameters
+   '("gint"       "glyph"))
+  (return-type "ArtPoint*")
+)
+(define-method get_glyph_stdoutline
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_glyph_stdoutline")
+  (parameters
+   '("gint"       "glyph"))
+  (return-type "ArtBpath*")
+)
+(define-method get_glyph_stdkerning
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_glyph_stdkerning")
+  (parameters
+   '("gint"       "glyph0")
+   '("gint"       "glyph1"))
+  (return-type "ArtPoint*")
+)
+
+(define-method get_sample
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_sample")
+  (return-type "const-gchar*")
+)
+
+(define-method get_weight_code
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_weight_code")
+  (return-type "gint")
+)
+
+(define-method is_italic
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_is_italic")
+  (return-type "gboolean")
+)
+
+(define-method is_fixed_width
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_is_fixed_width")
+  (return-type "gboolean")
+)
+
+(define-method get_ascender
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_ascender")
+  (return-type "gdouble")
+)
+
+(define-method get_descender
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_descender")
+  (return-type "gdouble")
+)
+
+(define-method get_underline_position
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_underline_position")
+  (return-type "gdouble")
+)
+
+(define-method get_underline_thickness
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_underline_thickness")
+  (return-type "gdouble")
+)
+
+(define-method get_glyph_width
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_glyph_width")
+  (return-type "gdouble")
+  (parameters
+   '("gint" "glyph"))
+)
+
+;; This one is declared in mate-font-face.h but not implemented anywhere!
+; (define-method get_glyph_kerning
+;   (of-object "MateFontFace")
+;   (c-name "mate_font_face_get_glyph_kerning")
+;   (return-type "gdouble")
+;   (parameters
+;    '("gint" "glyph1")
+;    '("gint" "glyph2"))
+; )
+
+(define-method get_glyph_ps_name
+  (of-object "MateFontFace")
+  (c-name "mate_font_face_get_glyph_ps_name")
+  (return-type "const-gchar*")
+  (parameters
+   '("gint" "glyph"))
+)
+
+
+;; ----- MatePrintJob -----
+
+(define-function new
+  (is-constructor-of "MatePrintJob")
+  (c-name "mate_print_job_new")
+  (return-type "MatePrintJob*")
+  (parameters
+   '("MatePrintConfig*" "config"))
+)
+
+(define-method get_config
+  (of-object "MatePrintJob")
+  (c-name "mate_print_job_get_config")
+  (return-type "MatePrintConfig*")
+  (caller-owns-return #t)
+)
+
+(define-method get_context
+  (of-object "MatePrintJob")
+  (c-name "mate_print_job_get_context")
+  (return-type "MatePrintContext*")
+  (caller-owns-return #t)
+)
+
+(define-method close
+  (of-object "MatePrintJob")
+  (c-name "mate_print_job_close")
+  (return-type "gint")
+)
+
+(define-method print
+  (of-object "MatePrintJob")
+  (c-name "mate_print_job_print")
+  (return-type "gint")
+)
+
+(define-method render
+  (of-object "MatePrintJob")
+  (c-name "mate_print_job_render")
+  (return-type "gint")
+  (parameters
+   '("MatePrintContext*" "context"))
+)
+
+(define-method render_page
+  (of-object "MatePrintJob")
+  (c-name "mate_print_job_render_page")
+  (return-type "gint")
+  (parameters
+   '("MatePrintContext*" "context")
+   '("gint"                "page")
+   '("gboolean"            "pageops"))
+)
+
+(define-method get_pages
+  (of-object "MatePrintJob")
+  (c-name "mate_print_job_get_pages")
+  (return-type "gint")
+)
+
+; This function actually returns (width, height) or None in case of error
+; FIXME: shouldn't this be a method of MatePrintConfig?...
+(define-function job_get_page_size_from_config
+  (c-name "mate_print_job_get_page_size_from_config")
+  (return-type "gdouble")
+  (parameters
+   '("MatePrintConfig*" "config"))
+)
+
+(define-method print_to_file
+  (of-object "MatePrintJob")
+  (c-name "mate_print_job_print_to_file")
+  (return-type "gint")
+  (parameters
+   '("const-gchar*" "output"))
+)
+
+; --- MatePrintUnit ---
+
+(define-function unit_get_identity
+  (c-name "mate_print_unit_get_identity")
+  (return-type "MatePrintUnit*")
+  (parameters
+   '("guint" "base"))
+)
+
+(define-function unit_get_default
+  (c-name "mate_print_unit_get_default")
+  (return-type "MatePrintUnit*")
+)
+
+(define-function unit_get_by_name
+  (c-name "mate_print_unit_get_by_name")
+  (return-type "MatePrintUnit*")
+  (parameters
+   '("const-gchar*" "name"))
+)
+
+(define-function unit_get_by_abbreviation
+  (c-name "mate_print_unit_get_by_abbreviation")
+  (return-type "MatePrintUnit*")
+  (parameters
+   '("const-gchar*" "abbreviation"))
+)
+
+(define-function convert_distance
+  (c-name "mate_print_convert_distance")
+  (parameters
+   '("gdouble" "distance")
+   '("MatePrintUnit*" "from")
+   '("MatePrintUnit*" "to"))
+   ;'("gdouble" "ctmscale") ; optional
+   ;'("gdouble" "devicescale") ; optional
+  (return-type "gdouble")
+)
+
+
+; --- MateGlyphList ---
+
+(define-function mate_glyphlist_new
+  (c-name "mate_glyphlist_new")
+  (is-constructor-of "MateGlyphList")
+  (return-type "MateGlyphList*")
+  (caller-owns-return #t)
+)
+
+(define-method duplicate
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_duplicate")
+  (return-type "MateGlyphList*")
+  (caller-owns-return #t)
+)
+
+(define-function glyphlist_from_text_dumb
+  (c-name "mate_glyphlist_from_text_dumb")
+  (return-type "MateGlyphList*")
+  (caller-owns-return #t)
+  (parameters
+   '("MateFont*"   "font")
+   '("guint32"      "color")
+   '("gdouble"      "kerning")
+   '("gdouble"      "letterspace")
+   '("const-gchar*" "text"))
+)
+
+(define-method advance
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_advance")
+  (parameters
+   '("gboolean" "advance"))
+)
+
+(define-method kerning
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_kerning")
+  (parameters
+   '("gboolean" "kerning"))
+)
+
+(define-method letterspace
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_letterspace")
+  (parameters
+   '("gdouble" "letterspace"))
+)
+(define-method font
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_font")
+  (parameters
+   '("MateFont*" "font"))
+)
+(define-method color
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_color")
+  (parameters
+   '("guint32" "color"))
+)
+
+(define-method moveto
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_moveto")
+  (parameters
+   '("gdouble" "x")
+   '("gdouble" "y"))
+)
+
+(define-method rmoveto
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_rmoveto")
+  (parameters
+   '("gdouble" "x")
+   '("gdouble" "y"))
+)
+
+(define-method glyph
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_glyph")
+  (parameters
+   '("gint" "glyph"))
+)
+
+(define-method glyphs
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_glyphs")
+  (parameters
+   '("gint" "glyphs"))			; actually sequence<int>
+)
+
+(define-method text_dumb
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_text_dumb")
+  (parameters
+   '("const-gchar*" "text"))
+)
+
+(define-method bbox
+  (of-object "MateGlyphList")
+  (c-name "mate_glyphlist_bbox")
+  (parameters
+   '("gdouble" "transform")		; actually sequence of 6 floats
+   '("gint"    "flags"))
+)
+
+;; From /opt/mate-2.5/include/libmateprint-2.2/libmateprint/mate-print-pango.h
+(ifdef HAVE_MATEPRINT28
+
+(define-function pango_font_map_new
+  (c-name "mate_print_pango_font_map_new")
+  (return-type "PangoFontMap*")
+)
+
+(define-function pango_get_default_font_map
+  (c-name "mate_print_pango_get_default_font_map")
+  (return-type "PangoFontMap*")
+)
+
+(define-function pango_create_context
+  (c-name "mate_print_pango_create_context")
+  (return-type "PangoContext*")
+  (parameters
+    '("PangoFontMap*" "fontmap")
+  )
+)
+
+(define-function pango_update_context
+  (c-name "mate_print_pango_update_context")
+  (return-type "none")
+  (parameters
+    '("PangoContext*" "context")
+    '("MatePrintContext*" "gpc")
+  )
+)
+
+(define-method pango_create_layout
+  (of-object "MatePrintContext")
+  (c-name "mate_print_pango_create_layout")
+  (return-type "PangoLayout*")
+)
+
+(define-method pango_glyph_string
+  (of-object "MatePrintContext")
+  (c-name "mate_print_pango_glyph_string")
+  (return-type "none")
+  (parameters
+    '("PangoFont*" "font")
+    '("PangoGlyphString*" "glyphs")
+  )
+)
+
+(define-method pango_layout_line
+  (of-object "MatePrintContext")
+  (c-name "mate_print_pango_layout_line")
+  (return-type "none")
+  (parameters
+    '("PangoLayoutLine*" "line")
+  )
+)
+
+(define-method pango_layout
+  (of-object "MatePrintContext")
+  (c-name "mate_print_pango_layout")
+  (return-type "none")
+  (parameters
+    '("PangoLayout*" "layout")
+  )
+)
+
+) ; (ifdef HAVE_MATEPRINT28
+

@@ -1,0 +1,402 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-mateprintuidialog">
+  <refnamediv>
+    <refname>mateprint.ui.Dialog</refname>
+    <refpurpose>Dialog object for MatePrintui</refpurpose>
+  </refnamediv>
+
+<!-- ************************************ -->
+<!-- BEGIN OF MATEPRINTUIDIALOG SYNOPSIS -->
+<!-- ************************************ -->
+
+<refsect1>
+    <title>Synopsis</title>
+
+    <classsynopsis language="python">
+    <ooclass><classname>mateprint.ui.Dialog</classname></ooclass>
+    <ooclass><classname><link linkend="class-gtkdialog">gtk.Dialog</link></classname></ooclass>
+    
+    <constructorsynopsis language="python">
+	   <methodname><link linkend="constructor-mateprintuidialog">mateprint.ui.Dialog</link></methodname>
+	   <methodparam><parameter role="keyword">job</parameter></methodparam>
+       <methodparam><parameter role="keyword">title</parameter></methodparam>
+       <methodparam><parameter role="keyword">flags</parameter><initializer>None</initializer></methodparam>
+    </constructorsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-mateprintuidialog--construct-range-any">construct_range_any</link></methodname>
+	    <methodparam><parameter role="keyword">flags</parameter></methodparam>
+        <methodparam><parameter role="keyword">range_widget</parameter></methodparam>
+        <methodparam><parameter role="keyword">currentlabel</parameter></methodparam>
+        <methodparam><parameter role="keyword">rangelabel</parameter></methodparam>
+    </methodsynopsis>
+ 
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-mateprintuidialog--construct-range-custom">construct_range_custom</link></methodname>
+	    <methodparam><parameter role="keyword">custom</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-mateprintuidialog--construct-range-page">construct_range_page</link></methodname>
+	    <methodparam><parameter role="keyword">flags</parameter></methodparam>
+        <methodparam><parameter role="keyword">start</parameter></methodparam>
+        <methodparam><parameter role="keyword">end</parameter></methodparam>
+        <methodparam><parameter role="keyword">currentlabel</parameter></methodparam>
+        <methodparam><parameter role="keyword">rangelabel</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintuidialog--get-config">get_config</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>    
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintuidialog--get-copies">get_copies</link></methodname>
+ 	    <methodparam><parameter role="keyword">copies</parameter></methodparam>
+        <methodparam><parameter role="keyword">collate</parameter></methodparam>
+     </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintuidialog--get-range">get_range</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+  
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintuidialog--get-range-page">get_range_page</link></methodname>
+        <methodparam><parameter role="keyword">start</parameter></methodparam>
+        <methodparam><parameter role="keyword">end</parameter></methodparam>
+    </methodsynopsis> 
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintuidialog--set-copies">set_copies</link></methodname>
+        <methodparam><parameter role="keyword">copies</parameter></methodparam>
+        <methodparam><parameter role="keyword">collate</parameter></methodparam>
+    </methodsynopsis>
+  </classsynopsis>
+</refsect1>
+
+<!-- ************************************ -->
+<!-- BEGIN OF MATEPRINTUIDIALOG ANCESTRY -->
+<!-- ************************************ -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-gtkobject">gtk.Object</link>
+    +-- <link linkend="class-gtkwidget">gtk.Widget</link>
+      +-- <link linkend="class-gtkcontainer">gtk.Container</link>
+        +-- <link linkend="class-gtkbin">gtk.Bin</link>
+          +-- <link linkend="class-gtkwindow">gtk.Window</link>
+            +-- <link linkend="class-gtkdialog">gtk.Dialog</link>
+              +-- <link linkend="class-mateprintuidialog">mateprint.ui.Dialog</link>
+</synopsis>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF MATEPRINTUIDIALOG PROPERTIES -->
+<!-- ************************************** -->
+
+<refsect1>
+    <title>Properties</title>
+    
+    <blockquote role="properties">
+        <informaltable pgwide="1" frame="none">
+            <tgroup cols="3">
+                <colspec column="1" colwidth="1in"/>
+                <colspec column="2" colwidth="1in"/>
+                <colspec column="3" colwidth="4in"/>
+                <tbody>
+                    
+                    <row valign="top">
+                        <entry>"print-config"</entry>
+                        <entry>Read-Write</entry>
+                        <entry>The printing configuration to be used.</entry>
+                    </row>
+
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </blockquote>
+</refsect1>
+
+<!-- *************************************** -->
+<!-- BEGIN OF MATEPRINTUIDIALOG DESCRIPTION -->
+<!-- *************************************** -->
+
+<refsect1 id="description-mateprintuidialog">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- *************************************** -->
+<!-- BEGIN OF MATEPRINTUIDIALOG CONSTRUCTOR -->
+<!-- *************************************** -->
+
+<refsect1 id="constructor-mateprintuidialog">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>mateprint.ui.Dialog</methodname>
+	  <methodparam><parameter role="keyword">job</parameter></methodparam>
+      <methodparam><parameter role="keyword">title</parameter></methodparam>
+      <methodparam><parameter role="keyword">flags</parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+      <varlistentry>
+          <term><parameter role="keyword">job</parameter>&nbsp;:</term>
+          <listitem><simpara> a <link linkend="class-mateprintjob"><classname>mateprint.Job</classname></link>.</simpara></listitem>
+    </varlistentry>
+    <varlistentry>
+        <term><parameter role="keyword">title</parameter>&nbsp;:</term>
+        <listitem><simpara> title of the window.</simpara></listitem>
+    </varlistentry>
+    <varlistentry>
+        <term><parameter role="keyword">flags</parameter>&nbsp;:</term>
+        <listitem><simpara> options for created widget.</simpara></listitem>
+    </varlistentry>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-mateprintuidialog"><classname>mateprint.ui.Dialog</classname></link>.
+        </simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-mateprintuidialog"><classname>mateprint.ui.Dialog</classname></link> object, the following options flags 
+    are available: mateprint.DIALOG_RANGE: A range widget container will be created. A range widget must be created separately, 
+    using the constructor. mateprint.DIALOG_COPIES: A copies widget will be created.
+  </para>
+</refsect1>
+
+<!-- *********************************** -->
+<!-- BEGIN OF MATEPRINTUIDIALOG METHODS -->
+<!-- *********************************** -->
+
+<refsect1>
+    <title>Methods</title>
+
+    <refsect2 id="method-mateprintuidialog--construct-range-any">
+        <title>mateprint.ui.Dialog.construct_range_any</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>construct_range_any</methodname>
+                    <methodparam><parameter role="keyword">flags</parameter></methodparam>
+                    <methodparam><parameter role="keyword">range_widget</parameter></methodparam>
+                    <methodparam><parameter role="keyword">currentlabel</parameter></methodparam>
+                    <methodparam><parameter role="keyword">rangelabel</parameter></methodparam>
+            </methodsynopsis></programlisting>
+      
+            <variablelist>
+                <varlistentry>
+                    <term><parameter role="keyword">flags</parameter>&nbsp;:</term>
+                    <listitem><simpara> Options flags, which ranges are displayed.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">range_widget</parameter>&nbsp;:</term>
+                    <listitem><simpara> Widget to display for the range option.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">currentlabel</parameter>&nbsp;:</term>
+                    <listitem><simpara> Label to display next to the 'current page' button.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">rangelabel</parameter>&nbsp;:</term>
+                    <listitem><simpara> Label to display next to the 'range' button.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>construct_range_any</methodname>() method create a generic range area within the print range dialogue. 
+            The flags field contains a mask of which options you wish displayed: mateprint.RANGE_CURRENT: A label currentlabel will 
+            be displayed. mateprint.RANGE_ALL: A label "All" will be displayed. mateprint.RANGE_RANGE: A label rangelabel will be displayed, 
+            next to the range specification widget range_widget. mateprint.RANGE_SELECTION: A label "Selection" will be displayed.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintuidialog--construct-range-custom">
+        <title>mateprint.ui.Dialog.construct_range_custom</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>construct_range_custom</methodname>
+                    <methodparam><parameter role="keyword">custom</parameter></methodparam>
+            </methodsynopsis></programlisting>
+      
+            <variablelist>
+                <varlistentry>
+                    <term><parameter role="keyword">custom</parameter>&nbsp;:</term>
+                    <listitem><simpara> A widget which will be placed in a "Range" frame in the main display.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>construct_range_custom</methodname>() method install a custom range specification widget.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintuidialog--construct-range-page">
+        <title>mateprint.ui.Dialog.construct_range_page</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>construct_range_page</methodname>
+                    <methodparam><parameter role="keyword">flags</parameter></methodparam>
+                    <methodparam><parameter role="keyword">start</parameter></methodparam>
+                    <methodparam><parameter role="keyword">end</parameter></methodparam>
+                    <methodparam><parameter role="keyword">currentlabel</parameter></methodparam>
+                    <methodparam><parameter role="keyword">rangelabel</parameter></methodparam>
+            </methodsynopsis></programlisting>
+      
+            <variablelist>
+                <varlistentry>
+                    <term><parameter role="keyword">flags</parameter>&nbsp;:</term>
+                    <listitem><simpara> Options flags, see 
+                    <methodname><link linkend="method-mateprintuidialog--construct-range-any">construct_range_any</link></methodname>.
+                    </simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">start</parameter>&nbsp;:</term>
+                    <listitem><simpara> First page which may be printed.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">end</parameter>&nbsp;:</term>
+                    <listitem><simpara> Last page which may be printed.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">currentlabel</parameter>&nbsp;:</term>
+                    <listitem><simpara> Label text for current option.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">rangelabel</parameter>&nbsp;:</term>
+                    <listitem><simpara> Label text for range option.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>construct_range_page</methodname>() method construct a generic page/sheet range area.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintuidialog--get-config">
+        <title>mateprint.ui.Dialog.get_config</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_config</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> the config.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_config</methodname>() method 
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintuidialog--get-copies">
+        <title>mateprint.ui.Dialog.get_copies</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>get_copies</methodname>
+                    <methodparam><parameter role="keyword">copies</parameter></methodparam>
+                    <methodparam><parameter role="keyword">collate</parameter></methodparam>
+            </methodsynopsis></programlisting>
+      
+            <variablelist>
+                <varlistentry>
+                    <term><parameter role="keyword">copies</parameter>&nbsp;:</term>
+                    <listitem><simpara> Return for the number of copies.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">collate</parameter>&nbsp;:</term>
+                    <listitem><simpara> Return for collation flag.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>get_copies</methodname>() method retrieves the number of copies and collation indicator from the print dialogue. 
+            If the print dialogue does not have a copies indicator, then a default of 1 copy is returned.
+        </para>
+    </refsect2> 
+    
+    <refsect2 id="method-mateprintuidialog--get-range">
+        <title>mateprint.ui.Dialog.get_range</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_range</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> A bitmask with one option set.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_range</methodname>() method return the range option selected by the user. 
+            This is a bitmask with only 1 bit set, out of:
+            mateprint.RANGE_CURRENT: The current option selected. mateprint.RANGE_ALL: The all option selected. 
+            mateprint.RANGE_RANGE The range option selected. mateprint.RANGE_SELECTION: The selection option selected.
+        </para>
+    </refsect2>
+        
+    <refsect2 id="method-mateprintuidialog--get-range-page">
+        <title>mateprint.ui.Dialog.get_range_page</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_range_page</methodname>
+                <methodparam><parameter role="keyword">start</parameter></methodparam>
+                <methodparam><parameter role="keyword">end</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                    <term><parameter role="keyword">start</parameter>&nbsp;:</term>
+                    <listitem><simpara> Return for the user-specified start page.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                    <term><parameter role="keyword">end</parameter>&nbsp;:</term>
+                    <listitem><simpara> Return for the user-specified end page.</simpara></listitem>
+                </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> A bitmask with the user-selection set. See 
+                <methodname><link linkend="method-mateprintuidialog--get-range">get_range</link></methodname></simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_range_page</methodname>() method retrieves the user choice for range type and range, 
+            if the user has requested a range of pages to print.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintuidialog--set-copies">
+        <title>mateprint.ui.Dialog.set_copies</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>set_copies</methodname>
+                    <methodparam><parameter role="keyword">copies</parameter></methodparam>
+                    <methodparam><parameter role="keyword">collate</parameter></methodparam>
+            </methodsynopsis></programlisting>
+      
+            <variablelist>
+                <varlistentry>
+                    <term><parameter role="keyword">copies</parameter>&nbsp;:</term>
+                    <listitem><simpara> New number of copies.</simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">collate</parameter>&nbsp;:</term>
+                    <listitem><simpara> New collation status.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>set_copies</methodname>() method sets the print copies and collation status in the print dialogue.
+        </para>
+    </refsect2>    
+  </refsect1>
+</refentry>

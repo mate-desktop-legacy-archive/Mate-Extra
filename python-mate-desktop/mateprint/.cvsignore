@@ -1,0 +1,12 @@
+Makefile
+Makefile.in
+*.o
+*.lo
+*.la
+*.so
+.libs
+.deps
+*.pyc
+*.pyo
+print.c
+printui.c

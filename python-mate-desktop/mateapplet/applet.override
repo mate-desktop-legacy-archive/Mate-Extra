@@ -1,0 +1,282 @@
+/* -*- Mode: C; c-basic-offset: 4 -*- */
+%%
+headers
+#include <Python.h>
+#include <mate-panel-applet.h>
+#include <matecomponent/matecomponent-ui-util.h>
+#include <libmate/mate-program.h>
+#include <libmateui/libmateui.h>
+
+#define NO_IMPORT_PYGOBJECT
+#include "pygobject.h"
+
+#include "config.h"
+
+
+%%
+modulename mate.applet
+%%
+import gobject.GObject as PyGObject_Type
+import gtk.EventBox as PyGtkEventBox_Type
+import gtk.Widget as PyGtkWidget_Type
+%%
+ignore-glob
+  *_get_type
+%%
+override mate_panel_applet_factory_main_closure kwargs
+static PyObject*
+_wrap_mate_panel_applet_factory_main_closure (PyGObject * self,
+			                 PyObject *  args,
+					 PyObject * kwargs)
+{
+    static char *kwlist[] = { "iid", "applet_type", "func", "extra_data", NULL };
+    gchar *iid;
+    PyObject *pytype;
+    PyObject *callback;
+    PyObject *params = NULL;
+    GType type;
+    int retval;
+    
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+				     "sOO|O:MatePanelAppletFactory.__init__",
+				     kwlist, &iid, &pytype, &callback, &params)) {
+        return NULL;
+    }
+
+    if (!PyCallable_Check (callback)) {
+        PyErr_SetString (PyExc_TypeError, "second arg not callable");
+	return NULL;
+    }
+    
+    type = pyg_type_from_object (pytype);
+    
+    pyg_begin_allow_threads;
+    retval = mate_panel_applet_factory_main_closure (iid,
+    	     				       	type,
+                                                pyg_closure_new (callback, params, NULL));
+    pyg_end_allow_threads;
+    return PyInt_FromLong (retval);
+}
+%%
+override panel__applet_matecomponent_factory kwargs
+static PyObject *
+_wrap_panel__applet_matecomponent_factory (PyGObject * self,
+ 			            PyObject *  args,
+				    PyObject * kwargs)
+{
+	static char *kwlist[] = { "iid", "type", "name", "version", "func", "extra_data", NULL };
+	gchar *iid;
+	PyObject *pytype;
+	gchar *name;
+	gchar *version;
+	PyObject *callback;
+	PyObject *params = NULL;
+	GType type;
+	PyObject *av;
+	int argc;
+	char **argv;
+	int i;
+	
+	if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+					 "sOssO|O:mate.applet.matecomponent_factory",
+					 kwlist, &iid, &pytype, &name, &version, &callback, &params)) {
+		return NULL;
+	}
+	
+	if (!PyCallable_Check (callback)) {
+		PyErr_SetString (PyExc_TypeError, "second arg not callable");
+		return NULL;
+	}
+	
+	type = pyg_type_from_object (pytype);
+	
+	/* get argc and argv */
+	av = PySys_GetObject ("argv");
+	argc = PyList_Size (av);
+	argv = g_new (char *, argc);
+	for (i = 0; i < argc; i++) {
+		argv[i] = g_strdup (PyString_AsString (PyList_GetItem (av, i)));
+	}
+	
+	mate_program_init (name, version,     
+			    LIBMATEUI_MODULE,             
+			    argc, argv,                                         
+			    MATE_PARAM_NONE,
+                            MATE_CLIENT_PARAM_SM_CONNECT, FALSE,
+			    NULL);            
+
+        pyg_begin_allow_threads;
+        mate_panel_applet_factory_main_closure (iid,
+	                                   type,
+					   pyg_closure_new (callback, params, NULL));
+        pyg_end_allow_threads;
+	
+	/* TODO: Check if it's really neccessary to set argc and argv here */
+	PySys_SetArgv (argc, argv);
+	if (argv != NULL) {
+		for (i = 0; i < argc; i++)
+			g_free (argv[i]);
+		g_free (argv);
+	}
+	
+	Py_INCREF (Py_None);
+	return Py_None;
+}
+%%
+override mate_panel_applet_setup_menu kwargs
+static PyObject *
+_wrap_mate_panel_applet_setup_menu (PyGObject * self,
+			       PyObject *  args,
+			       PyObject *  kwargs)
+{
+    static char *kwlist[] = { "xml", "list", "extra_data", NULL };
+    gchar *             xml;
+    PyObject *          list;
+    PyObject *          params = NULL;
+    MateComponentUIComponent * popup_component;
+    int                 len, i;
+    PyObject *          item;
+    char *              cname;
+    PyObject *          callback;
+    
+    if (!PyArg_ParseTupleAndKeywords (args, kwargs,
+				      "sO|O:MatePanelApplet.setup_menu", 
+				      kwlist, &xml, &list, &params)) {
+	return NULL;
+    }
+
+    if (!PySequence_Check (list)) {
+	PyErr_SetString (PyExc_TypeError, "entries must be a sequence");
+	return NULL;
+    }
+    
+    /* Copied from mate-panel-applet.c */
+    popup_component = mate_panel_applet_get_popup_component (MATE_PANEL_APPLET (self->obj));
+	    
+    matecomponent_ui_component_set (popup_component, "/", "<popups/>", NULL);
+ 
+    matecomponent_ui_component_set_translate (popup_component, "/popups", xml, NULL);
+    /* end copy */
+    
+    len = PySequence_Size (list);
+    for (i = 0; i < len; i++) {
+	item = PySequence_GetItem (list, i);
+	Py_DECREF (item);
+	
+	if (!PyArg_ParseTuple (item, "sO", &cname, &callback)) {
+	    return NULL;
+	}
+
+	matecomponent_ui_component_add_verb_full (popup_component, cname,
+					   pyg_closure_new (callback, params, NULL));
+    }
+
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+%%
+override mate_panel_applet_setup_menu_from_file kwargs
+static PyObject *
+_wrap_mate_panel_applet_setup_menu_from_file (PyGObject * self,
+					 PyObject *  args,
+					 PyObject *  kwargs)
+{
+    static char *kwlist[] = { "opt_datadir", "file", "opt_app_name", "list", "extra_data", NULL };
+    gchar *             opt_datadir;
+    gchar *             file;
+    gchar *             opt_app_name;
+    PyObject *          list;
+    PyObject *          params = NULL;
+    MateComponentUIComponent * popup_component;
+    gchar *             app_name = NULL;
+    int                 len, i;
+    PyObject *          item;
+    char *              cname;
+    PyObject *          callback;
+    
+    if (!PyArg_ParseTupleAndKeywords (args, kwargs,
+				      "zszO|O:MatePanelApplet.setup_menu_from_file", 
+				      kwlist, &opt_datadir, &file, &opt_app_name, &list, &params)) {
+	return NULL;
+    }
+
+    if (!PySequence_Check (list)) {
+	PyErr_SetString (PyExc_TypeError, "entries must be a sequence");
+	return NULL;
+    }
+    
+    /* Copied from mate-panel-applet.c */
+    if (!opt_app_name)
+	opt_app_name = app_name = g_strdup_printf ("%d", getpid ());
+
+    popup_component = mate_panel_applet_get_popup_component (MATE_PANEL_APPLET (self->obj));
+
+    matecomponent_ui_util_set_ui (popup_component, opt_datadir, file, opt_app_name, NULL);
+    /* end copy */
+    
+    len = PySequence_Size (list);
+    for (i = 0; i < len; i++) {
+	item = PySequence_GetItem (list, i);
+	Py_DECREF (item);
+	
+	if (!PyArg_ParseTuple (item, "sO", &cname, &callback)) {
+	    return NULL;
+	}
+
+	matecomponent_ui_component_add_verb_full (popup_component, cname,
+					   pyg_closure_new (callback, params, NULL));
+    }
+    
+    if (app_name) {
+	g_free (app_name);
+    }
+    
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+%%
+override mate_panel_applet_new noargs
+static int
+_wrap_mate_panel_applet_new(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    GType obj_type = pyg_type_from_object((PyObject *) self);
+
+    if (obj_type != PANEL_TYPE_APPLET) {
+        PyErr_SetString(PyExc_RuntimeError, "cannot subclass mate.applet.Applet");
+        return -1;
+    }
+    self->obj = (GObject *) mate_panel_applet_new();
+    if (!self->obj) {
+        PyErr_SetString(PyExc_RuntimeError, "could not create mate.applet.Applet object");
+        return -1;
+    }
+    pygobject_register_wrapper((PyObject *)self);
+    return 0;
+}
+%%
+override mate_panel_applet_get_background noargs
+static PyObject *
+_wrap_mate_panel_applet_get_background(PyGObject *self)
+{
+    MatePanelAppletBackgroundType ret;
+    GdkColor color;
+    GdkPixmap *pixmap = NULL;
+    PyObject *pyretval = NULL;
+
+    ret = mate_panel_applet_get_background(MATE_PANEL_APPLET(self->obj), &color, &pixmap);
+
+    switch (ret)
+    {
+    case PANEL_COLOR_BACKGROUND:
+        return pyg_boxed_new(GDK_TYPE_COLOR, &color, TRUE, TRUE);
+    case PANEL_NO_BACKGROUND:
+        Py_INCREF(Py_None);
+        return Py_None;
+    case PANEL_PIXMAP_BACKGROUND:
+        pyretval = pygobject_new(G_OBJECT(pixmap));
+        g_object_unref(G_OBJECT(pixmap));
+        return pyretval;
+    }
+    PyErr_SetString(PyExc_RuntimeError, "strange value returned by mate_panel_applet_get_background");
+    return NULL;
+}

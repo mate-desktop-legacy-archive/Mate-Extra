@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  ]>
+<book id="pygtksourceview" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <bookinfo>
+    <pubdate>April 17, 2005</pubdate>
+    <title>Python GtkSourceView Reference Manual</title>
+    <authorgroup>
+      <author>
+	<firstname>Gian Mario</firstname>
+	<surname>Tagliaretti</surname>
+      </author>
+    </authorgroup>
+    <abstract>
+      <para>This reference describes the classes of the Python GtkSourceView module.</para>
+    </abstract>
+  </bookinfo>
+  <toc>
+  </toc>
+
+
+  <chapter id="gtksourceview-class-reference" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>The GtkSourceView Class Reference</title>
+
+    <!-- GTKSOURCEVIEW OBJECTS -->
+
+    <xi:include href="gtksourceview-gtksourceview.xml"/>
+    <xi:include href="gtksourceview-gtksourcebuffer.xml"/>
+    <xi:include href="gtksourceview-gtksourcelanguage.xml"/>
+    <xi:include href="gtksourceview-gtksourcelanguagesmanager.xml"/>
+    <xi:include href="gtksourceview-gtksourcemarker.xml"/>
+    <xi:include href="gtksourceview-gtksourcestylescheme.xml"/>
+    <xi:include href="gtksourceview-gtksourcetag.xml"/>
+    <xi:include href="gtksourceview-gtksourcetagtable.xml"/>
+    <xi:include href="gtksourceview-gtksourcetagstyle.xml"/>
+    <xi:include href="gtksourceview-gtksourceprintjob.xml"/>
+    
+  </chapter>
+
+</book>

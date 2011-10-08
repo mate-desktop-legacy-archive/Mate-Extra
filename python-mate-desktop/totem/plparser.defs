@@ -1,0 +1,349 @@
+;; -*- scheme -*-
+; object definitions ...
+
+(define-object Parser
+  (in-module "totem.plparser")
+  (parent "GObject")
+  (c-name "TotemPlParser")
+  (gtype-id "TOTEM_TYPE_PL_PARSER")
+)
+
+(define-object Playlist
+  (in-module "totem.playlist")
+  (parent "GObject")
+  (c-name "TotemPlPlaylist")
+  (gtype-id "TOTEM_TYPE_PL_PLAYLIST")
+)
+
+;; Enumerations and flags ...
+
+
+(define-enum PlParserResult
+  (in-module "Totem")
+  (c-name "TotemPlParserResult")
+  (gtype-id "TOTEM_TYPE_PL_PARSER_RESULT")
+  (values
+    '("unhandled" "TOTEM_PL_PARSER_RESULT_UNHANDLED")
+    '("error" "TOTEM_PL_PARSER_RESULT_ERROR")
+    '("success" "TOTEM_PL_PARSER_RESULT_SUCCESS")
+    '("ignored" "TOTEM_PL_PARSER_RESULT_IGNORED")
+    '("cancelled" "TOTEM_PL_PARSER_RESULT_CANCELLED")
+  )
+)
+
+(define-enum PlParserType
+  (in-module "Totem")
+  (c-name "TotemPlParserType")
+  (gtype-id "TOTEM_TYPE_PL_PARSER_TYPE")
+  (values
+    '("pls" "TOTEM_PL_PARSER_PLS")
+    '("m3u" "TOTEM_PL_PARSER_M3U")
+    '("m3u-dos" "TOTEM_PL_PARSER_M3U_DOS")
+    '("xspf" "TOTEM_PL_PARSER_XSPF")
+    '("iriver-pla" "TOTEM_PL_PARSER_IRIVER_PLA")
+  )
+)
+
+(define-enum PlParserError
+  (in-module "Totem")
+  (c-name "TotemPlParserError")
+  (gtype-id "TOTEM_TYPE_PL_PARSER_ERROR")
+  (values
+    '("no-disc" "TOTEM_PL_PARSER_ERROR_NO_DISC")
+    '("mount-failed" "TOTEM_PL_PARSER_ERROR_MOUNT_FAILED")
+  )
+)
+
+
+;; From totem-pl-parser.h
+
+(define-function error_quark
+  (c-name "totem_pl_parser_error_quark")
+  (return-type "GQuark")
+)
+
+(define-function get_type
+  (c-name "totem_pl_parser_get_type")
+  (return-type "GType")
+)
+
+(define-function parse_duration
+  (c-name "totem_pl_parser_parse_duration")
+  (return-type "gint64")
+  (parameters
+    '("const-char*" "duration")
+    '("gboolean" "debug")
+  )
+)
+
+(define-function parse_date
+  (c-name "totem_pl_parser_parse_date")
+  (return-type "guint64")
+  (parameters
+    '("const-char*" "date_str")
+    '("gboolean" "debug")
+  )
+)
+
+(define-method save
+  (of-object "TotemPlParser")
+  (c-name "totem_pl_parser_save")
+  (return-type "gboolean")
+  (parameters
+    '("TotemPlPlaylist*" "playlist")
+    '("GFile*" "dest")
+    '("const-gchar*" "title")
+    '("TotemPlParserType" "type")
+    '("GError**" "error")
+  )
+)
+
+(define-method add_ignored_scheme
+  (of-object "TotemPlParser")
+  (c-name "totem_pl_parser_add_ignored_scheme")
+  (return-type "none")
+  (parameters
+    '("const-char*" "scheme")
+  )
+)
+
+(define-method add_ignored_mimetype
+  (of-object "TotemPlParser")
+  (c-name "totem_pl_parser_add_ignored_mimetype")
+  (return-type "none")
+  (parameters
+    '("const-char*" "mimetype")
+  )
+)
+
+(define-method parse
+  (of-object "TotemPlParser")
+  (c-name "totem_pl_parser_parse")
+  (return-type "TotemPlParserResult")
+  (parameters
+    '("const-char*" "uri")
+    '("gboolean" "fallback")
+  )
+)
+
+(define-method parse_async
+  (of-object "TotemPlParser")
+  (c-name "totem_pl_parser_parse_async")
+  (return-type "none")
+  (parameters
+    '("const-char*" "uri")
+    '("gboolean" "fallback")
+    '("GCancellable*" "cancellable")
+    '("GAsyncReadyCallback" "callback")
+    '("gpointer" "user_data")
+  )
+)
+
+(define-method parse_finish
+  (of-object "TotemPlParser")
+  (c-name "totem_pl_parser_parse_finish")
+  (return-type "TotemPlParserResult")
+  (parameters
+    '("GAsyncResult*" "async_result")
+    '("GError**" "error")
+  )
+)
+
+(define-method parse_with_base
+  (of-object "TotemPlParser")
+  (c-name "totem_pl_parser_parse_with_base")
+  (return-type "TotemPlParserResult")
+  (parameters
+    '("const-char*" "uri")
+    '("const-char*" "base")
+    '("gboolean" "fallback")
+  )
+)
+
+(define-method parse_with_base_async
+  (of-object "TotemPlParser")
+  (c-name "totem_pl_parser_parse_with_base_async")
+  (return-type "none")
+  (parameters
+    '("const-char*" "uri")
+    '("const-char*" "base")
+    '("gboolean" "fallback")
+    '("GCancellable*" "cancellable")
+    '("GAsyncReadyCallback" "callback")
+    '("gpointer" "user_data")
+  )
+)
+
+(define-function new
+  (c-name "totem_pl_parser_new")
+  (is-constructor-of "TotemPlParser")
+  (return-type "TotemPlParser*")
+)
+
+(define-function metadata_get_type
+  (c-name "totem_pl_parser_metadata_get_type")
+  (return-type "GType")
+)
+
+
+
+;; From totem-pl-parser-mini.h
+
+(define-function can_parse_from_data
+  (c-name "totem_pl_parser_can_parse_from_data")
+  (return-type "gboolean")
+  (parameters
+    '("const-char*" "data")
+    '("gsize" "len")
+    '("gboolean" "debug")
+  )
+)
+
+(define-function can_parse_from_filename
+  (c-name "totem_pl_parser_can_parse_from_filename")
+  (return-type "gboolean")
+  (parameters
+    '("const-char*" "filename")
+    '("gboolean" "debug")
+  )
+)
+
+
+
+;; From totem-pl-playlist.h
+
+(define-function totem_pl_playlist_get_type
+  (c-name "totem_pl_playlist_get_type")
+  (return-type "GType")
+)
+
+(define-function totem_pl_playlist_new
+  (c-name "totem_pl_playlist_new")
+  (is-constructor-of "TotemPlPlaylist")
+  (return-type "TotemPlPlaylist*")
+)
+
+(define-method size
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_size")
+  (return-type "guint")
+)
+
+(define-method prepend
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_prepend")
+  (return-type "none")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+  )
+)
+
+(define-method append
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_append")
+  (return-type "none")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+  )
+)
+
+(define-method insert
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_insert")
+  (return-type "none")
+  (parameters
+    '("gint" "position")
+    '("TotemPlPlaylistIter*" "iter")
+  )
+)
+
+(define-method iter_first
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_iter_first")
+  (return-type "gboolean")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+  )
+)
+
+(define-method iter_next
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_iter_next")
+  (return-type "gboolean")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+  )
+)
+
+(define-method iter_prev
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_iter_prev")
+  (return-type "gboolean")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+  )
+)
+
+(define-method get_value
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_get_value")
+  (return-type "gboolean")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+    '("const-gchar*" "key")
+    '("GValue*" "value")
+  )
+)
+
+(define-method get_valist
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_get_valist")
+  (return-type "none")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+    '("va_list" "args")
+  )
+)
+
+(define-method get
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_get")
+  (return-type "none")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+  )
+  (varargs #t)
+)
+
+(define-method set_value
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_set_value")
+  (return-type "gboolean")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+    '("const-gchar*" "key")
+    '("GValue*" "value")
+  )
+)
+
+(define-method set_valist
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_set_valist")
+  (return-type "none")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+    '("va_list" "args")
+  )
+)
+
+(define-method set
+  (of-object "TotemPlPlaylist")
+  (c-name "totem_pl_playlist_set")
+  (return-type "none")
+  (parameters
+    '("TotemPlPlaylistIter*" "iter")
+  )
+  (varargs #t)
+)
+
+

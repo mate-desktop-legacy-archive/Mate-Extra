@@ -1,0 +1,45 @@
+# -*- python -*-
+# encoding: utf-8
+
+def configure(conf):
+    conf.env.append_value('MODULES_AVAILABLE', 'mateprint')
+    if 'mateprint' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('MATEPRINT',
+                                  'libmateprint-2.2 >= 2.2.0 pygobject-2.0 ',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'mateprint')
+
+    conf.env.append_value('MODULES_AVAILABLE', 'mateprint.ui')
+    if 'mateprint.ui' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('MATEPRINTUI',
+                                  'libmateprintui-2.2 >= 2.2.0 pygobject-2.0 ',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'mateprint.ui')
+
+def build(bld):
+    
+    if 'mateprint' in bld.env['MODULES_TO_BUILD']:
+        bld.codegen('print', local_load_types=['print-arg-types.py'])
+        pyext = bld.create_pyext()
+        pyext.source = 'printmodule.c print.c art-gtype.c'
+        pyext.target = '_print'
+        pyext.uselib = 'MATEPRINT'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0/mateprint'
+        pyext.includes = '.'
+
+    if 'mateprint.ui' in bld.env['MODULES_TO_BUILD']:
+        bld.codegen('printui', local_load_types=['print-arg-types.py'])
+        pyext = bld.create_pyext()
+        pyext.source = 'printuimodule.c printui.c'
+        pyext.target = 'ui'
+        pyext.uselib = 'MATEPRINTUI'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0/mateprint'
+        pyext.includes = '.'
+
+    py = bld.new_task_gen('py')
+    py.install_path = '${PYTHONDIR}/gtk-2.0/mateprint'
+    py.source = "__init__.py"
+
+    bld.install_files('${DATADIR}//pygtk/2.0/defs',
+                      ['print.defs', 'printui.defs'])
+

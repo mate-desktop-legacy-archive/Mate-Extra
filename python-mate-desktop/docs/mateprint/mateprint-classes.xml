@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+  "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  ]>
+<book id="pymateprint" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <bookinfo>
+    <pubdate>June 08, 2005</pubdate>
+    <title>Python Mateprint Reference Manual</title>
+    <authorgroup>
+      <author>
+	<firstname>Gian Mario</firstname>
+	<surname>Tagliaretti</surname>
+      </author>
+    </authorgroup>
+    <abstract>
+      <para>This reference describes the classes of the Python Mateprint module.</para>
+    </abstract>
+  </bookinfo>
+  <toc>
+  </toc>
+
+
+  <chapter id="mateprint-class-reference" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>The Mateprint Class Reference</title>
+
+    <!-- MATEPRINT OBJECTS -->
+
+    <xi:include href="mateprint-mateprintcontext.xml"/>
+    <xi:include href="mateprint-mateprintconfig.xml"/>
+    <xi:include href="mateprint-mateprintjob.xml"/>
+    <xi:include href="mateprint-mateprintfont.xml"/>
+    <xi:include href="mateprint-mateprintfontface.xml"/>
+    <xi:include href="mateprint-mateprintglyphlist.xml"/>
+    
+  </chapter>
+
+</book>

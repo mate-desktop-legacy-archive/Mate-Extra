@@ -1,0 +1,1147 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-gtksourcebuffer">
+  <refnamediv>
+    <refname>gtksourceview.SourceBuffer</refname>
+    <refpurpose>Text buffer object for <link linkend="class-gtksourceview">gtksourceview.SourceView</link></refpurpose>
+  </refnamediv>
+
+<!-- ********************************* -->
+<!-- BEGIN OF GTKSOURCEBUFFER SYNOPSIS -->
+<!-- ********************************* -->
+
+<refsect1>
+    <title>Synopsis</title>
+
+    <classsynopsis language="python">
+    <ooclass><classname>gtksourceview.SourceBuffer</classname></ooclass>
+    <ooclass><classname><link linkend="class-gtktextbuffer">gtk.TextBuffer</link></classname></ooclass>
+    
+    <constructorsynopsis language="python">
+	<methodname><link linkend="constructor-gtksourcebuffer">gtksourceview.SourceBuffer</link></methodname>
+	<methodparam><parameter role="keyword">buffer</parameter><initializer>None</initializer></methodparam>
+    </constructorsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--set-check-brackets">set_check_brackets</link></methodname>
+	<methodparam><parameter role="keyword">check_brackets</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--get-check-brackets">get_check_brackets</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--set-bracket-match-style">set_bracket_match_style</link></methodname>
+	<methodparam><parameter role="keyword">style</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--set-highlight">set_highlight</link></methodname>
+	<methodparam><parameter role="keyword">highlight</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--get-highlight">get_highlight</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--set-max-undo-levels">set_max_undo_levels</link></methodname>
+	<methodparam><parameter role="keyword">max_undo_levels</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--get-max-undo-levels">get_max_undo_levels</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+      
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--set-language">set_language</link></methodname>
+	<methodparam><parameter role="keyword">language</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--get-language">get_language</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--set-escape-char">set_escape_char</link></methodname>
+	<methodparam><parameter role="keyword">escape_char</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--get-escape-char">get_escape_char</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--can-undo">can_undo</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--can-redo">can_redo</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--undo">undo</link></methodname>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--redo">redo</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--begin-not-undoable-action">begin_not_undoable_action</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--end-not-undoable-action">end_not_undoable_action</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	<methodname><link linkend="method-gtksourcebuffer--create-marker">create_marker</link></methodname>
+	<methodparam><parameter role="keyword">name</parameter></methodparam>
+    <methodparam><parameter role="keyword">type</parameter></methodparam>
+    <methodparam><parameter role="keyword">where</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--move-marker">move_marker</link></methodname>
+	<methodparam><parameter role="keyword">marker</parameter></methodparam>
+    <methodparam><parameter role="keyword">where</parameter></methodparam>
+    </methodsynopsis>
+	
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--delete-marker">delete_marker</link></methodname>
+	<methodparam><parameter role="keyword">marker</parameter></methodparam>
+    </methodsynopsis>
+	
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--get-marker">get_marker</link></methodname>
+    <methodparam><parameter role="keyword">name</parameter></methodparam>
+    </methodsynopsis>
+	
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--get-markers-in-region">get_marker_in_region</link></methodname>
+    <methodparam><parameter role="keyword">start</parameter></methodparam>
+    <methodparam><parameter role="keyword">end</parameter></methodparam>
+    </methodsynopsis>
+ 	
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--get-first-marker">get_first_marker</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>     
+ 	
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--get-last-marker">get_last_marker</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>     
+ 	
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--get-iter-at-marker">get_iter_at_marker</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>     
+ 	
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--get-next-marker">get_next_marker</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+ 	
+    <methodsynopsis language="python">
+    <methodname><link linkend="method-gtksourcebuffer--get-prev-marker">get_prev_marker</link></methodname>
+	<methodparam></methodparam>
+    </methodsynopsis>
+</classsynopsis>
+
+<programlisting>
+<emphasis role="bold">Functions</emphasis>
+
+<methodsynopsis language="python">
+<methodname><link linkend="function-gtksourcebuffer--new-with-language">gtksourceview.gtk_source_buffer_new_with_language</link></methodname>
+<methodparam><parameter role="keyword"><link linkend="class-gtktextbuffer">gtksourceview.SourceLanguage</link></parameter></methodparam>
+</methodsynopsis></programlisting>
+</refsect1>
+
+<!-- ********************************* -->
+<!-- BEGIN OF GTKSOURCEBUFFER ANCESTRY -->
+<!-- ********************************* -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-gtktextbuffer">gtk.TextBuffer</link>
+    +-- <link linkend="class-gtksourcebuffer">gtksourceview.SourceBuffer</link>
+</synopsis>
+</refsect1>
+
+<!-- *********************************** -->
+<!-- BEGIN OF GTKSOURCEBUFFER PROPERTIES -->
+<!-- *********************************** -->
+
+<refsect1>
+    <title>Properties</title>
+
+    <blockquote role="properties">
+      <informaltable pgwide="1" frame="none">
+	<tgroup cols="3">
+	  <colspec column="1" colwidth="1in"/>
+	  <colspec column="2" colwidth="1in"/>
+	  <colspec column="3" colwidth="4in"/>
+	  <tbody>
+
+	    <row valign="top">
+	      <entry>"check-brackets"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>If <literal>TRUE</literal> bracket match highlighting is activated.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"escape-char"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Escaping character for syntax patterns.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"highlight"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>If <literal>TRUE</literal> the syntax highlighting is activated.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"language"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Language object to get highlighting patterns from.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"max-undo-levels"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Number of undo levels for the buffer.</entry>
+	    </row>
+
+    </tbody>
+	</tgroup>
+      </informaltable>
+    </blockquote>
+</refsect1>
+
+<!-- ****************************************** -->
+<!-- BEGIN OF GTKSOURCEBUFFER SIGNAL PROTOTYPES -->
+<!-- ****************************************** -->
+
+<refsect1>
+    <title>Signal Prototypes</title>
+    <variablelist>
+      <varlistentry>
+        <term>"<link linkend="signal-gtksourcebuffer--can-redo">"can-redo"</link>"</term>
+        <listitem>
+          <methodsynopsis language="python"><methodname>callback</methodname>
+            <methodparam><parameter>sourceview</parameter></methodparam>
+            <methodparam><parameter>arg1</parameter></methodparam>
+            <methodparam><parameter>user_param1</parameter></methodparam>
+            <methodparam><parameter>...</parameter></methodparam>
+          </methodsynopsis>
+        </listitem>
+      </varlistentry>
+      
+      <varlistentry>
+        <term>"<link linkend="signal-gtksourcebuffer--can-undo">"can-undo"</link>"</term>
+        <listitem>
+          <methodsynopsis language="python"><methodname>callback</methodname>
+            <methodparam><parameter>sourceview</parameter></methodparam>
+            <methodparam><parameter>arg1</parameter></methodparam>
+            <methodparam><parameter>user_param1</parameter></methodparam>
+            <methodparam><parameter>...</parameter></methodparam>
+          </methodsynopsis>
+        </listitem>
+      </varlistentry>
+      
+      <varlistentry>
+        <term>"<link linkend="signal-gtksourcebuffer--highlight-updated">"highlight-updated"</link>"</term>
+        <listitem>
+          <methodsynopsis language="python"><methodname>callback</methodname>
+            <methodparam><parameter>sourceview</parameter></methodparam>
+            <methodparam><parameter>start</parameter></methodparam>
+            <methodparam><parameter>end</parameter></methodparam>
+            <methodparam><parameter>user_param1</parameter></methodparam>
+            <methodparam><parameter>...</parameter></methodparam>
+          </methodsynopsis>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>"<link linkend="signal-gtksourcebuffer--marker-updated">"marker-updated"</link>"</term>
+        <listitem>
+          <methodsynopsis language="python"><methodname>callback</methodname>
+            <methodparam><parameter>sourceview</parameter></methodparam>
+            <methodparam><parameter>iter</parameter></methodparam>
+            <methodparam><parameter>user_param1</parameter></methodparam>
+            <methodparam><parameter>...</parameter></methodparam>
+          </methodsynopsis>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+</refsect1>
+
+<!-- ************************************ -->
+<!-- BEGIN OF GTKSOURCEBUFFER DESCRIPTION -->
+<!-- ************************************ -->
+
+<refsect1 id="description-gtksourcebuffer">
+    <title>Description</title>
+
+<para>
+The <link linkend="class-gtksourcebuffer"><classname>gtksourceview.SourceBuffer</classname></link>
+is the model for <link linkend="class-gtksourceview"><classname>gtksourceview.SourceView</classname></link>
+widgets. It extends the <link linkend="class-gtktextbuffer"><classname>gtk.TextBuffer</classname></link>
+object by adding features necessary to display and edit source code: syntax highlighting, bracket matching and markers. 
+It also implements support for undo/redo operations.
+</para>
+
+<para>
+To create a <link linkend="class-gtksourcebuffer"><classname>gtksourceview.SourceBuffer</classname></link> 
+use <link linkend="function-gtksourcebuffer--new"><methodname>gtksourceview.gtk_source_buffer_new</methodname>()</link> 
+or <link linkend="function-gtksourcebuffer--new-with-language"><methodname>gtksourceview.gtk_source_buffer_new_with_language</methodname></link>.
+The second form is just a convenience function which allows you to initially set a 
+<link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link>.
+</para>
+
+<para>
+By default highlighting is enabled, but you can disable it with 
+<link linkend="method-gtksourcebuffer--set-highlight"><methodname>set_highlight</methodname>()</link>. This can be useful if you're not using 
+<link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link> 
+objects to set the highlighting patterns, and instead you're manually adding 
+<link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link> objects to the buffer's tag table.
+</para>
+</refsect1>
+
+<!-- ************************************ -->
+<!-- BEGIN OF GTKSOURCEBUFFER CONSTRUCTOR -->
+<!-- ************************************ -->
+
+<refsect1 id="constructor-gtksourcebuffer">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>gtksourceview.SourceBuffer</methodname>
+	  <methodparam><parameter role="keyword">table</parameter><initializer>None</initializer></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+	    <term><parameter role="keyword">table</parameter>&nbsp;:</term>
+	    <listitem><simpara>a <link linkend="class-gtksourcetagtable"><classname>gtksourceview.SourceTagTable</classname></link> 
+      or <literal>None</literal></simpara></listitem>
+    </varlistentry>
+
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-gtksourcebuffer"><classname>gtksourceview.SourceBuffer</classname></link>.
+        </simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-gtksourcebuffer"><classname>gtksourceview.SourceBuffer</classname></link> object.
+  </para>
+</refsect1>
+
+<!-- ******************************** -->
+<!-- BEGIN OF GTKSOURCEBUFFER METHODS -->
+<!-- ******************************** -->
+
+<refsect1>
+    <title>Methods</title>
+
+  <refsect2 id="method-gtksourcebuffer--set-check-brackets">
+      <title>gtksourceview.SourceBuffer.set_check_brackets</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_check_brackets</methodname>
+	  <methodparam><parameter role="keyword">check_brackets</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">check_brackets</parameter>&nbsp;:</term>
+	  <listitem><simpara>if <literal>TRUE</literal> turns on the matching brackets highlight.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+      The <methodname>set_check_brackets</methodname>() method controls the bracket match highlighting function in the buffer. 
+      If activated, when you position your cursor over a bracket character (a parenthesis, a square bracket, etc.) the matching 
+      opening or closing bracket character will be highlighted. You can specify the style with the 
+      <link linkend="method-gtksourcebuffer--set-bracket-match-style"><methodname>set_bracket_match_style</methodname></link> function.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--get-check-brackets">
+    <title>gtksourceview.SourceBuffer.get_check_brackets</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_check_brackets</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara><literal>TRUE</literal> if the matching brackets highlight is active, 
+	      <literal>FALSE</literal> otherwise.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_check_brackets</methodname>() method returns the
+      value of the "check-brackets" property which determines if the matching brackets highlight is active.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--set-bracket-match-style">
+      <title>gtksourceview.SourceBuffer.set_bracket_match_style</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_bracket_match_style</methodname>
+	  <methodparam><parameter role="keyword">style</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">style</parameter>&nbsp;:</term>
+	  <listitem><simpara>the <link linkend="class-gtksourcetagstyle"><classname>gtksourceview.SourceTagStyle</classname></link> 
+    specifying colors and text attributes.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+      The <methodname>set_bracket_match_style</methodname>() method sets the style used for highlighting matching brackets.
+	  </para>
+  </refsect2>
+  
+  <refsect2 id="method-gtksourcebuffer--set-highlight">
+    <title>gtksourceview.SourceBuffer.set_highlight</title>
+    <programlisting><methodsynopsis language="python">
+	    <methodname>set_highlight</methodname>
+	    <methodparam><parameter role="keyword">highlight</parameter></methodparam>
+	    </methodsynopsis></programlisting>
+      
+      <variablelist>
+	      <varlistentry>
+	      <term><parameter role="keyword">highlight</parameter>&nbsp;:</term>
+	      <listitem><simpara>if <literal>TRUE</literal> turns on the source highlighting.</simpara></listitem>
+	      </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_highlight</methodname>() method controls whether text is highlighted in the buffer. If 
+        <parameter role="keyword">highlight</parameter> is <literal>TRUE</literal> , the text will be highlighted 
+        according to the patterns installed in the buffer (either set with 
+        <methodname><link linkend="method-gtksourcebuffer--set-language">set_language</link></methodname> or 
+        by adding individual <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link> 
+        tags to the buffer's tag table). Otherwise, any current highlighted text will be restored to the default buffer style.
+      </para>
+      <para>
+        Tags not of <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link> 
+        type will not be removed by this option, and normal GtkTextTag priority settings apply when highlighting is enabled.
+      </para>
+      <para>
+        If not using a <link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link> 
+        for setting the highlighting patterns in the buffer, it is recommended for performance reasons that you add all the 
+        <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link> 
+        tags with highlighting disabled and enable it when finished.
+      </para>
+  </refsect2>
+   
+  <refsect2 id="method-gtksourcebuffer--get-highlight">
+    <title>gtksourceview.SourceBuffer.get_highlight</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_highlight</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara><literal>TRUE</literal> if the source highlighting is active, 
+	      <literal>FALSE</literal> otherwise.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_highlight</methodname>() method returns the
+      value of the "highlight" property which determines if the text highlighting is active.
+    </para>
+  </refsect2>      
+      
+  <refsect2 id="method-gtksourcebuffer--set-max-undo-levels">
+    <title>gtksourceview.SourceBuffer.set_max_undo_levels</title>
+    <programlisting><methodsynopsis language="python">
+	    <methodname>set_max_undo_levels</methodname>
+	    <methodparam><parameter role="keyword">max_undo_levels</parameter></methodparam>
+	    </methodsynopsis></programlisting>
+      
+      <variablelist>
+	      <varlistentry>
+	      <term><parameter role="keyword">max_undo_levels</parameter>&nbsp;:</term>
+	      <listitem><simpara>	 the desired maximum number of undo levels.</simpara></listitem>
+	      </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_max_undo_levels</methodname>() method Sets the number of undo levels for user actions
+        the buffer will track. If the number of user actions exceeds the limit set by this function, older actions will be discarded.
+      </para>
+      <para>
+        A new action is started whenever the function 
+        <methodname><link linkend="method-gtktextbuffer--begin-user-action">begin_user_action</link></methodname>
+        is called. In general, this happens whenever the user presses any key which modifies the buffer, but the undo manager 
+        will try to merge similar consecutive actions, such as multiple character insertions into one action. 
+        But, inserting a newline does start a new action.
+      </para>
+  </refsect2> 
+   
+  <refsect2 id="method-gtksourcebuffer--get-max-undo-levels">
+    <title>gtksourceview.SourceBuffer.get_max_undo_levels</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_max_undo_levels</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara>the maximum number of possible undo levels.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_max_undo_levels</methodname>() method returns the
+      value of the "max-undo-levels" property which determines the number of undo levels the buffer will track for buffer edits.
+    </para>
+  </refsect2>      
+  
+  <refsect2 id="method-gtksourcebuffer--set-language">
+      <title>gtksourceview.SourceBuffer.set_language</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_language</methodname>
+	  <methodparam><parameter role="keyword">language</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">language</parameter>&nbsp;:</term>
+	  <listitem><simpara>A <link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link> 
+    or <literal>None</literal>.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+      The <methodname>set_check_brackets</methodname>() method Sets the 
+      <link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link> 
+      the source buffer will use, adding 
+      <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link> 
+      tags with the language's patterns and setting the escape character with 
+      <methodname><link linkend="method-gtksourcebuffer--set-escape-char">set_escape_char</link></methodname>.
+      Note that this will remove any 
+      <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link> 
+      tags currently in the buffer's tag table. The buffer holds a reference to the <parameter role="keyword">language</parameter> set.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--get-language">
+    <title>gtksourceview.SourceBuffer.get_language</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_language</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the 
+        <link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link> 
+        set by <methodname><link linkend="method-gtksourcebuffer--set-language">set_language</link></methodname>.
+        </simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+    <para>
+      The <methodname>get_check_brackets</methodname>() method determines the 
+        <link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link> 
+        used by the buffer. The returned object should not be unreferenced by the user.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--set-escape-char">
+      <title>gtksourceview.SourceBuffer.set_escape_char</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_escape_char</methodname>
+	  <methodparam><parameter role="keyword">escape_char</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">escape_char</parameter>&nbsp;:</term>
+	  <listitem><simpara> the escape character the buffer should use.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+    <para>
+      The <methodname>set_check_brackets</methodname>() method sets the escape character to be used by the highlighting engine.
+	  </para>
+    <para>
+    When performing the initial analysis, the engine will discard a matching syntax pattern if it's prefixed with an odd number 
+    of escape characters. This allows for example to correctly highlight strings with escaped quotes embedded.
+    </para>
+    <para>
+    This setting affects only syntax patterns (i.e. those defined in 
+    <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link> tags).
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--get-escape-char">
+    <title>gtksourceview.SourceBuffer.get_escape_char</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_escape_char</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the UTF-8 character for the escape character the buffer is using.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+    <para>
+      The <methodname>get_escape_char</methodname>() method determines the escaping character used by the source buffer highlighting engine.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--can-undo">
+    <title>gtksourceview.SourceBuffer.can_undo</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>can_undo</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> <literal>TRUE</literal> if it's possible to undo the last action.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+    <para>
+      The <methodname>can_undo</methodname>() method determines whether a source buffer can undo the last action.
+    </para>
+  </refsect2>
+  
+  <refsect2 id="method-gtksourcebuffer--can-redo">
+    <title>gtksourceview.SourceBuffer.can_redo</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>can_redo</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> <literal>TRUE</literal> if a redo is possible.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>can_redo</methodname>() method Determines whether a source buffer can redo the last action 
+      (i.e. if the last operation was an undo).
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--undo">
+    <title>gtksourceview.SourceBuffer.undo</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>undo</methodname><methodparam></methodparam></methodsynopsis></programlisting>
+    <para>
+      The <methodname>undo</methodname>() Undoes the last user action which modified the buffer. Use 
+      <methodname><link linkend="method-gtksourcebuffer--can-undo">can_undo</link></methodname> 
+      to check whether a call to this function will have any effect.
+    </para>
+    <para>
+      Actions are defined as groups of operations between a call to 
+      <methodname><link linkend="method-gtktextbuffer--begin-user-action">begin_user_action</link></methodname>() and 
+      <methodname><link linkend="method-gtktextbuffer--end-user-action">end_user_action</link></methodname>(), 
+      or sequences of similar edits (inserts or deletes) on the same line.
+    </para>
+  </refsect2>
+  
+  <refsect2 id="method-gtksourcebuffer--redo">
+    <title>gtksourceview.SourceBuffer.redo</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>redo</methodname><methodparam></methodparam></methodsynopsis></programlisting>
+    <para>
+      The <methodname>redo</methodname>() method redoes the last undo operation. Use 
+      <methodname><link linkend="method-gtksourcebuffer--can-redo">can_redo</link></methodname>
+      to check whether a call to this function will have any effect.
+    </para>
+  </refsect2> 
+
+  <refsect2 id="method-gtksourcebuffer--begin-not-undoable-action">
+    <title>gtksourceview.SourceBuffer.begin_not_undoable_action</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>begin_not_undoable_action</methodname><methodparam></methodparam></methodsynopsis></programlisting>
+    <para>
+      The <methodname>begin_not_undoable_action</methodname>() marks the beginning of a not undoable action on the buffer, 
+      disabling the undo manager. Typically you would call this function before initially setting the contents of the buffer 
+      (e.g. when loading a file in a text editor).
+    </para>
+    <para>
+      You may nest <methodname><link linkend="method-gtksourcebuffer--begin-not-undoable-action">begin_not_undoable_action</link></methodname>() / 
+      <methodname><link linkend="method-gtksourcebuffer--end-not-undoable-action">end_not_undoable_action</link></methodname>() blocks.
+    </para>
+    
+  </refsect2>
+  
+  <refsect2 id="method-gtksourcebuffer--end-not-undoable-action">
+    <title>gtksourceview.SourceBuffer.end_not_undoable_action</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>end_not_undoable_action</methodname><methodparam></methodparam></methodsynopsis></programlisting>
+    <para>
+      The <methodname>end_not_undoable_action</methodname>() method marks the end of a not undoable action on the buffer. 
+      When the last not undoable block is closed through the call to this function, the list of undo actions is cleared 
+      and the undo manager is re-enabled.
+    </para>
+  </refsect2> 
+
+  <refsect2 id="method-gtksourcebuffer--create-marker">
+    <title>gtksourceview.SourceBuffer.create_marker</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>create_marker</methodname>
+	  <methodparam><parameter role="keyword">name</parameter></methodparam>
+	  <methodparam><parameter role="keyword">type</parameter></methodparam>
+    <methodparam><parameter role="keyword">where</parameter></methodparam>
+    </methodsynopsis></programlisting>
+    <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">name</parameter>&nbsp;:</term>
+    <listitem><simpara> the name of the marker, or <literal>None</literal>.</simpara></listitem></varlistentry>
+    <varlistentry><term><parameter role="keyword">type</parameter>&nbsp;:</term>
+    <listitem><simpara> a string defining the marker type, or <literal>None</literal>.</simpara></listitem></varlistentry>
+    <varlistentry><term><parameter role="keyword">where</parameter>&nbsp;:</term>
+    <listitem><simpara> location to place the marker.</simpara></listitem></varlistentry>
+	  <varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term>
+    <listitem><simpara> a new
+    <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link>
+    </simpara></listitem></varlistentry>
+    </variablelist>
+
+    <para>
+    The <methodname>set_marker_pixbuf</methodname>() method creates a marker in the 
+    <methodname><link linkend="constructor-gtksourcebuffer">gtksourceview.SourceBuffer</link></methodname> of type 
+    <parameter>type</parameter>. A marker is semantically very similar to a 
+    <classname><link linkend="class-gtktextmark">gtk.TextMark</link></classname>, except it has a type which is used by the 
+    <classname><link linkend="class-gtksourceview">gtksourceview.SourceView</link></classname> displaying the buffer to show 
+    a pixmap on the left margin, at the line the marker is in. Because of this, a marker is generally associated to a line 
+    and not a character position. Markers are also accessible through a position or range in the buffer.
+    </para>
+    <para>
+    Markers are implemented using <classname><link linkend="class-gtktextmark">gtk.TextMark</link></classname>, so all 
+    characteristics and restrictions to marks apply to markers too. These includes life cycle issues 
+    and "mark-set" and "mark-deleted" signal emissions.
+    </para>
+    <para>
+    Like a <classname><link linkend="class-gtktextmark">gtk.TextMark</link></classname>, a 
+    <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link>
+    can be anonymous if the passed <parameter>name</parameter> is <literal>None</literal>. 
+    Also, the buffer owns the markers so you shouldn't unreference it.
+    </para>
+    <para>
+    Markers always have left gravity and are moved to the beginning of the line when the user deletes the line they were in. 
+    Also, if the user deletes a region of text which contained lines with markers, those are deleted.
+    </para>
+    <para>
+    Typical uses for a marker are bookmarks, breakpoints, current executing instruction indication in a source file, etc..
+    </para>
+    </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--move-marker">
+    <title>gtksourceview.SourceBuffer.move_marker</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>move_marker</methodname>
+	  <methodparam><parameter role="keyword">marker</parameter></methodparam>
+    <methodparam><parameter role="keyword">where</parameter></methodparam>
+    </methodsynopsis></programlisting>
+    <variablelist>
+	  <varlistentry>
+    <term><parameter role="keyword">marker</parameter>&nbsp;:</term>
+    <listitem><simpara> a <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link>.</simpara></listitem></varlistentry>
+    <varlistentry><term><parameter role="keyword">where</parameter>&nbsp;:</term>
+    <listitem><simpara> the new location for the marker.</simpara></listitem>
+    </varlistentry>
+    </variablelist>
+
+    <para>
+    Moves <parameter>marker</parameter> to the new location <parameter>where</parameter>.
+    </para>
+    </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--delete-marker">
+    <title>gtksourceview.SourceBuffer.delete_marker</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>delete_marker</methodname>
+	  <methodparam><parameter role="keyword">marker</parameter></methodparam>
+    </methodsynopsis></programlisting>
+    <variablelist>
+	  <varlistentry>
+    <term><parameter role="keyword">marker</parameter>&nbsp;:</term>
+    <listitem><simpara> a <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link>.</simpara></listitem></varlistentry>
+    <varlistentry><term><parameter role="keyword">where</parameter>&nbsp;:</term>
+    <listitem><simpara> the new location for the marker.</simpara></listitem>
+    </varlistentry>
+    </variablelist>
+
+    <para>
+    Deletes <parameter>marker</parameter> from the source buffer. The same conditions as for 
+    <classname><link linkend="class-gtktextmark">gtk.TextMark</link></classname>
+    apply here. The marker is no longer accessible from the buffer, but if you held a reference to it, it will not be destroyed.
+    </para>
+    </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--get-marker">
+    <title>gtksourceview.SourceBuffer.get_marker</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_marker</methodname>
+	  <methodparam><parameter role="keyword">name</parameter></methodparam>
+    </methodsynopsis></programlisting>
+    <variablelist>
+	  <varlistentry>
+    <term><parameter role="keyword">name</parameter>&nbsp;:</term>
+    <listitem><simpara> name of the <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link> 
+    to retreive.</simpara></listitem></varlistentry>
+    </variablelist>
+
+    <para>
+    Looks up the <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link> 
+    named <parameter role="keyword">name</parameter> in <parameter role="keyword">buffer</parameter>, returning 
+    <literal>None</literal> if it doesn't exists.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--get-markers-in-region">
+    <title>gtksourceview.SourceBuffer.get_markers_in_region</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_markers_in_region</methodname>
+	  <methodparam><parameter role="keyword">begin</parameter></methodparam>
+    <methodparam><parameter role="keyword">end</parameter></methodparam>
+    </methodsynopsis></programlisting>
+    <variablelist>
+    <varlistentry><term><parameter role="keyword">begin</parameter>&nbsp;:</term>
+    <listitem><simpara> beginning of the range.</simpara></listitem></varlistentry>
+    <varlistentry><term><parameter role="keyword">end</parameter>&nbsp;:</term>
+    <listitem><simpara> end of the range.</simpara></listitem></varlistentry>
+    <varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term>
+    <listitem><simpara> a list of the <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link> 
+    in the range.</simpara></listitem></varlistentry>
+    </variablelist>
+
+    <para>
+    Returns an ordered (by position) list of <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link> 
+    objects inside the region delimited by the <classname><link linkend="class-gtktextiter">gtk.TextIter</link></classname> 
+    <parameter>begin</parameter> and <parameter>end</parameter>. The iters may be in any order.
+    </para>
+  </refsect2>    
+    
+  <refsect2 id="method-gtksourcebuffer--get-first-marker">
+    <title>gtksourceview.SourceBuffer.get_first_marker</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_first_marker</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a reference to the first
+        <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link>, 
+        or <literal>None</literal> if there are no markers in the buffer.
+        </simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+    <para>
+      Returns the first (nearest to the top of the buffer) marker in buffer.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--get-last-marker">
+    <title>gtksourceview.SourceBuffer.get_last_marker</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_last_marker</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a reference to the last
+        <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link>, 
+        or <literal>None</literal> if there are no markers in the buffer.
+        </simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+    <para>
+      Returns the last (nearest to the bottom of the buffer) marker in buffer.
+    </para>
+  </refsect2>    
+
+  <refsect2 id="method-gtksourcebuffer--get-iter-at-marker">
+    <title>gtksourceview.SourceBuffer.get_iter_at_marker</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_iter_at_marker</methodname>
+	  <methodparam><parameter role="keyword">iter</parameter></methodparam>
+    <methodparam><parameter role="keyword">marker</parameter></methodparam>
+    </methodsynopsis></programlisting>
+    <variablelist>
+    <varlistentry><term><parameter role="keyword">iter</parameter>&nbsp;:</term>
+    <listitem><simpara> a <classname><link linkend="class-gtktextiter">gtk.TextIter</link></classname> to initialize.
+    </simpara></listitem></varlistentry>
+    <varlistentry><term><parameter role="keyword">marker</parameter>&nbsp;:</term>
+    <listitem><simpara> a <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link> of buffer.
+    </simpara></listitem></varlistentry>
+    </variablelist>
+
+    <para>
+    Initializes <parameter>iter</parameter> at the location of <parameter>marker</parameter>.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--get-next-marker">
+    <title>gtksourceview.SourceBuffer.get_next_marker</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_next_marker</methodname>
+	  <methodparam><parameter role="keyword">iter</parameter></methodparam>
+    </methodsynopsis></programlisting>
+    <variablelist>
+    <varlistentry><term><parameter role="keyword">iter</parameter>&nbsp;:</term>
+    <listitem><simpara> the location to start searching from.</simpara></listitem></varlistentry>
+    <varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term>
+    <listitem><simpara> the <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link> 
+    nearest to the right of <parameter>iter</parameter>, or <literal>None</literal> if there are no more markers after 
+    <parameter>iter</parameter>.</simpara></listitem></varlistentry>
+    </variablelist>
+
+    <para>
+    Returns the nearest marker to the right of <parameter>iter</parameter>. If there are multiple markers at the same position, 
+    this function will always return the first one (from the internal linked list), even if starting the search exactly at its location. 
+    You can get the others using <methodname><link linkend="method-gtksourcemarker--next">next</link></methodname>().
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcebuffer--get-prev-marker">
+    <title>gtksourceview.SourceBuffer.get_prev_marker</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_prev_marker</methodname>
+	  <methodparam><parameter role="keyword">iter</parameter></methodparam>
+    </methodsynopsis></programlisting>
+    <variablelist>
+    <varlistentry><term><parameter role="keyword">iter</parameter>&nbsp;:</term>
+    <listitem><simpara> the location to start searching from.</simpara></listitem></varlistentry>
+    <varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term>
+    <listitem><simpara> the <link linkend="class-gtksourcemarker"><classname>gtksourceview.SourceMarker</classname></link> 
+    nearest to the left of <parameter>iter</parameter>, or <literal>None</literal> if there are no more markers before 
+    <parameter>iter</parameter>.</simpara></listitem></varlistentry>
+    </variablelist>
+
+    <para>
+    Returns the nearest marker to the left of <parameter>iter</parameter>. If there are multiple markers at the same position, 
+    this function will always return the first one (from the internal linked list), even if starting the search exactly at its location. 
+    You can get the others using <methodname><link linkend="method-gtksourcemarker--prev">prev</link></methodname>().
+    </para>
+  </refsect2>
+</refsect1>  
+
+<!-- ********************************** -->
+<!-- BEGIN OF GTKSOURCEBUFFER FUNCTIONS -->
+<!-- ********************************** -->
+
+<refsect1>
+    <title>Functions</title>
+
+  <refsect2 id="function-gtksourcebuffer--new-with-language">
+    <title>gtksourceview.SourceBuffer.gtk_source_buffer_new_with_language</title>
+    <programlisting><methodsynopsis language="python">
+  	  <methodname>gtksourceview.SourceBuffer.gtk_source_buffer_new_with_language</methodname>
+      <methodparam><parameter role="keyword">language</parameter></methodparam>
+      </methodsynopsis></programlisting>
+        
+    <variablelist>
+	    <varlistentry>
+        <term><parameter role="keyword">language</parameter>&nbsp;:</term>
+        <listitem><simpara> a <link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link>.
+        </simpara></listitem>
+      </varlistentry>
+	    <varlistentry>
+        <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a new source buffer which will highlight text according to <parameter>language</parameter>.</simpara></listitem>
+      </varlistentry>
+    </variablelist>
+
+      <para>
+        Creates a new source buffer using the highlighting patterns in <parameter>language</parameter>. 
+        This is equivalent to creating a new source buffer with the default tag table and then calling 
+        <methodname><link linkend="method-gtksourcebuffer--set-language">set_language</link></methodname>
+      </para>
+
+  </refsect2>
+</refsect1> 
+  
+<!-- ******************************** -->
+<!-- BEGIN OF GTKSOURCEBUFFER SIGNALS -->
+<!-- ******************************** --> 
+ 
+<refsect1>
+    <title>Signals</title>
+
+  <refsect2 id="signal-gtksourcebuffer--can-redo">
+    <title>The "can-redo" gtksourceview.SourceBuffer Signal</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>callback</methodname>
+	  <methodparam><parameter>sourcebuffer</parameter></methodparam>
+    <methodparam><parameter>arg1</parameter></methodparam>
+	  <methodparam><parameter>user_param1</parameter></methodparam>
+	  <methodparam><parameter>...</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter>sourcebuffer</parameter>&nbsp;:</term>
+	      <listitem><simpara>the sourcebuffer that received the signal</simpara></listitem>
+	    </varlistentry>
+      <varlistentry>
+	      <term><parameter>arg1</parameter>&nbsp;:</term>
+          <listitem><simpara>TRUE if the buffer can now perform a redo.</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>user_param1</parameter>&nbsp;:</term>
+          <listitem><simpara>the first user parameter (if any) specified with the 
+          <link linkend="method-gobject--connect"><methodname>connect</methodname>()</link> method</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>...</parameter>&nbsp;:</term>
+	      <listitem><simpara>additional user parameters (if any)</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The "can-redo" signal is emitted when there is a change in the buffer's ability to redo an operation.
+    </para>
+
+  </refsect2>
+
+  <refsect2 id="signal-gtksourcebuffer--can-undo">
+    <title>The "can-undo" gtksourceview.SourceBuffer Signal</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>callback</methodname>
+	  <methodparam><parameter>sourcebuffer</parameter></methodparam>
+	  <methodparam><parameter>arg1</parameter></methodparam>
+    <methodparam><parameter>user_param1</parameter></methodparam>
+	  <methodparam><parameter>...</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter>sourcebuffer</parameter>&nbsp;:</term>
+	      <listitem><simpara>the sourcebuffer that received the signal</simpara></listitem>
+	    </varlistentry>
+       <varlistentry>
+	      <term><parameter>arg1</parameter>&nbsp;:</term>
+          <listitem><simpara>TRUE if the buffer can now perform an undo.</simpara></listitem>
+	    </varlistentry>     
+	    <varlistentry>
+	      <term><parameter>user_param1</parameter>&nbsp;:</term>
+        <listitem><simpara>the first user parameter (if any) specified with the 
+        <link linkend="method-gobject--connect"><methodname>connect</methodname>()</link> method</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>...</parameter>&nbsp;:</term>
+	      <listitem><simpara>additional user parameters (if any)</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The "can-undo" signal is emitted when there is a change in the buffer's ability to undo an operation.
+    </para>
+  </refsect2>
+
+  <refsect2 id="signal-gtksourcebuffer--highlight-updated">
+    <title>The "highlight-updated" gtksourceview.SourceBuffer Signal</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>callback</methodname>
+	  <methodparam><parameter>sourcebuffer</parameter></methodparam>
+	  <methodparam><parameter>start</parameter></methodparam>
+    <methodparam><parameter>end</parameter></methodparam>
+    <methodparam><parameter>user_param1</parameter></methodparam>
+	  <methodparam><parameter>...</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter>sourcebuffer</parameter>&nbsp;:</term>
+	      <listitem><simpara>the sourcebuffer that received the signal</simpara></listitem>
+	    </varlistentry>
+      <varlistentry>
+	      <term><parameter>start</parameter>&nbsp;:</term>
+          <listitem><simpara>the <classname><link linkend="class-gtktextiter">gtk.TextIter</link></classname>
+          at the start of the updated region.</simpara></listitem>
+	    </varlistentry>
+      <varlistentry>
+	      <term><parameter>end</parameter>&nbsp;:</term>
+          <listitem><simpara>the <classname><link linkend="class-gtktextiter">gtk.TextIter</link></classname>
+          at the end of the updated region.</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>user_param1</parameter>&nbsp;:</term>
+        <listitem><simpara>the first user parameter (if any) specified with the 
+        <link linkend="method-gobject--connect"><methodname>connect</methodname>()</link> method</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>...</parameter>&nbsp;:</term>
+	      <listitem><simpara>additional user parameters (if any)</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The "highlight-updated" signal is emitted whenever the syntax highlighting information has been updated, 
+      so that views can request a redraw if the region changed is visible. Usually only view widgets displaying 
+      this buffer will be interested in this signal.
+    </para>
+
+  </refsect2>
+
+  <refsect2 id="signal-gtksourcebuffer--marker-updated">
+    <title>The "marker-updated" gtksourceview.SourceBuffer Signal</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>callback</methodname>
+	  <methodparam><parameter>sourcebuffer</parameter></methodparam>
+	  <methodparam><parameter>arg1</parameter></methodparam>
+    <methodparam><parameter>user_param1</parameter></methodparam>
+	  <methodparam><parameter>...</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter>sourcebuffer</parameter>&nbsp;:</term>
+	      <listitem><simpara>the sourcebuffer that received the signal</simpara></listitem>
+	    </varlistentry>
+      <varlistentry>
+	      <term><parameter>end</parameter>&nbsp;:</term>
+          <listitem><simpara>the <classname><link linkend="class-gtktextiter">gtk.TextIter</link></classname>
+          at the location where the change occurred.</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>user_param1</parameter>&nbsp;:</term>
+        <listitem><simpara>the first user parameter (if any) specified with the 
+        <link linkend="method-gobject--connect"><methodname>connect</methodname>()</link> method</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>...</parameter>&nbsp;:</term>
+	      <listitem><simpara>additional user parameters (if any)</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The "can-undo" signal is emitted whenever a marker of <parameter>sourcebuffer</parameter> has changed and 
+      needs to be redisplayed by the view. A change in a marker's type or location can trigger this signal.
+    </para>
+  </refsect2>
+</refsect1>
+</refentry>

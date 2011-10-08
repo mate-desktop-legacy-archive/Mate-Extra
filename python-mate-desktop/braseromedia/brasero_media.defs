@@ -1,0 +1,726 @@
+;; -*- scheme -*-
+; boxed definitions ...
+
+; interface definitions ...
+
+; object definitions ...
+
+(define-object Drive
+  (in-module "Brasero")
+  (parent "GObject")
+  (c-name "BraseroDrive")
+  (gtype-id "BRASERO_TYPE_DRIVE")
+)
+
+(define-object DriveSelection
+  (in-module "Brasero")
+  (parent "GtkComboBox")
+  (c-name "BraseroDriveSelection")
+  (gtype-id "BRASERO_TYPE_DRIVE_SELECTION")
+)
+
+(define-object Medium
+  (in-module "Brasero")
+  (parent "GObject")
+  (c-name "BraseroMedium")
+  (gtype-id "BRASERO_TYPE_MEDIUM")
+)
+
+(define-object MediumMonitor
+  (in-module "Brasero")
+  (parent "GObject")
+  (c-name "BraseroMediumMonitor")
+  (gtype-id "BRASERO_TYPE_MEDIUM_MONITOR")
+)
+
+(define-object MediumSelection
+  (in-module "Brasero")
+  (parent "GtkComboBox")
+  (c-name "BraseroMediumSelection")
+  (gtype-id "BRASERO_TYPE_MEDIUM_SELECTION")
+)
+
+(define-object Volume
+  (in-module "Brasero")
+  (parent "BraseroMedium")
+  (c-name "BraseroVolume")
+  (gtype-id "BRASERO_TYPE_VOLUME")
+)
+
+; pointer definitions ...
+
+;; Enumerations and Flags ...
+
+;; Untyped enumerations and flags ...
+
+(define-flags MediaType
+  (in-module "Brasero")
+  (c-name "BraseroMediaType")
+  (values
+    '("none" "BRASERO_MEDIA_TYPE_NONE")
+    '("file" "BRASERO_MEDIA_TYPE_FILE")
+    '("data" "BRASERO_MEDIA_TYPE_DATA")
+    '("audio" "BRASERO_MEDIA_TYPE_AUDIO")
+    '("writable" "BRASERO_MEDIA_TYPE_WRITABLE")
+    '("rewritable" "BRASERO_MEDIA_TYPE_REWRITABLE")
+    '("any-in-burner" "BRASERO_MEDIA_TYPE_ANY_IN_BURNER")
+    '("all-but-file" "BRASERO_MEDIA_TYPE_ALL_BUT_FILE")
+    '("all" "BRASERO_MEDIA_TYPE_ALL")
+  )
+)
+
+(define-flags DriveType
+  (in-module "Brasero")
+  (c-name "BraseroDriveType")
+  (values
+    '("none" "BRASERO_DRIVE_TYPE_NONE")
+    '("file" "BRASERO_DRIVE_TYPE_FILE")
+    '("writer" "BRASERO_DRIVE_TYPE_WRITER")
+    '("reader" "BRASERO_DRIVE_TYPE_READER")
+    '("all-but-file" "BRASERO_DRIVE_TYPE_ALL_BUT_FILE")
+    '("all" "BRASERO_DRIVE_TYPE_ALL")
+  )
+)
+
+(define-enum MediaError
+  (in-module "Brasero")
+  (c-name "BraseroMediaError")
+  (values
+    '("none" "BRASERO_MEDIA_ERROR_NONE")
+    '("general" "BRASERO_MEDIA_ERROR_GENERAL")
+    '("image-invalid" "BRASERO_MEDIA_ERROR_IMAGE_INVALID")
+  )
+)
+
+(define-flags Media
+  (in-module "Brasero")
+  (c-name "BraseroMedia")
+  (values
+    '("unsupported" "BRASERO_MEDIUM_UNSUPPORTED")
+    '("busy" "BRASERO_MEDIUM_BUSY")
+    '("none" "BRASERO_MEDIUM_NONE")
+    '("file" "BRASERO_MEDIUM_FILE")
+    '("cd" "BRASERO_MEDIUM_CD")
+    '("dvd" "BRASERO_MEDIUM_DVD")
+    '("bd" "BRASERO_MEDIUM_BD")
+    '("dual-l" "BRASERO_MEDIUM_DUAL_L")
+    '("ram" "BRASERO_MEDIUM_RAM")
+    '("plus" "BRASERO_MEDIUM_PLUS")
+    '("sequential" "BRASERO_MEDIUM_SEQUENTIAL")
+    '("restricted" "BRASERO_MEDIUM_RESTRICTED")
+    '("jump" "BRASERO_MEDIUM_JUMP")
+    '("random" "BRASERO_MEDIUM_RANDOM")
+    '("srm" "BRASERO_MEDIUM_SRM")
+    '("pow" "BRASERO_MEDIUM_POW")
+    '("rewritable" "BRASERO_MEDIUM_REWRITABLE")
+    '("writable" "BRASERO_MEDIUM_WRITABLE")
+    '("rom" "BRASERO_MEDIUM_ROM")
+    '("blank" "BRASERO_MEDIUM_BLANK")
+    '("closed" "BRASERO_MEDIUM_CLOSED")
+    '("appendable" "BRASERO_MEDIUM_APPENDABLE")
+    '("unformatted" "BRASERO_MEDIUM_UNFORMATTED")
+    '("protected" "BRASERO_MEDIUM_PROTECTED")
+    '("has-data" "BRASERO_MEDIUM_HAS_DATA")
+    '("has-audio" "BRASERO_MEDIUM_HAS_AUDIO")
+  )
+)
+
+(define-flags DriveCaps
+  (in-module "Brasero")
+  (c-name "BraseroDriveCaps")
+  (values
+    '("none" "BRASERO_DRIVE_CAPS_NONE")
+    '("cdr" "BRASERO_DRIVE_CAPS_CDR")
+    '("cdrw" "BRASERO_DRIVE_CAPS_CDRW")
+    '("dvdr" "BRASERO_DRIVE_CAPS_DVDR")
+    '("dvdrw" "BRASERO_DRIVE_CAPS_DVDRW")
+    '("dvdr-plus" "BRASERO_DRIVE_CAPS_DVDR_PLUS")
+    '("dvdrw-plus" "BRASERO_DRIVE_CAPS_DVDRW_PLUS")
+    '("dvdr-plus-dl" "BRASERO_DRIVE_CAPS_DVDR_PLUS_DL")
+    '("dvdrw-plus-dl" "BRASERO_DRIVE_CAPS_DVDRW_PLUS_DL")
+    '("dvdram" "BRASERO_DRIVE_CAPS_DVDRAM")
+    '("bdr" "BRASERO_DRIVE_CAPS_BDR")
+    '("bdrw" "BRASERO_DRIVE_CAPS_BDRW")
+  )
+)
+
+
+;; From brasero-drive-selection.h
+
+(define-function brasero_drive_selection_get_type
+  (c-name "brasero_drive_selection_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_drive_selection_new
+  (c-name "brasero_drive_selection_new")
+  (is-constructor-of "BraseroDriveSelection")
+  (return-type "GtkWidget*")
+)
+
+(define-method get_active
+  (of-object "BraseroDriveSelection")
+  (c-name "brasero_drive_selection_get_active")
+  (return-type "BraseroDrive*")
+)
+
+(define-method set_active
+  (of-object "BraseroDriveSelection")
+  (c-name "brasero_drive_selection_set_active")
+  (return-type "gboolean")
+  (parameters
+    '("BraseroDrive*" "drive")
+  )
+)
+
+(define-method show_type
+  (of-object "BraseroDriveSelection")
+  (c-name "brasero_drive_selection_show_type")
+  (return-type "none")
+  (parameters
+    '("BraseroDriveType" "type")
+  )
+)
+
+(define-virtual drive_changed
+  (of-object "BraseroDriveSelection")
+  (return-type "none")
+  (parameters
+    '("BraseroDrive*" "drive")
+  )
+)
+
+
+
+;; From brasero-drive.h
+
+(define-function brasero_drive_get_type
+  (c-name "brasero_drive_get_type")
+  (return-type "GType")
+)
+
+(define-method reprobe
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_reprobe")
+  (return-type "none")
+)
+
+(define-method get_medium
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_get_medium")
+  (return-type "BraseroMedium*")
+)
+
+(define-method get_gdrive
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_get_gdrive")
+  (return-type "GDrive*")
+)
+
+(define-method get_udi
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_get_udi")
+  (return-type "const-gchar*")
+)
+
+(define-method is_fake
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_is_fake")
+  (return-type "gboolean")
+)
+
+(define-method get_display_name
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_get_display_name")
+  (return-type "gchar*")
+)
+
+(define-method get_device
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_get_device")
+  (return-type "const-gchar*")
+)
+
+(define-method get_block_device
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_get_block_device")
+  (return-type "const-gchar*")
+)
+
+(define-method get_bus_target_lun_string
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_get_bus_target_lun_string")
+  (return-type "gchar*")
+)
+
+(define-method get_caps
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_get_caps")
+  (return-type "BraseroDriveCaps")
+)
+
+(define-method can_write
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_can_write")
+  (return-type "gboolean")
+)
+
+(define-method can_eject
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_can_eject")
+  (return-type "gboolean")
+)
+
+(define-method eject
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_eject")
+  (return-type "gboolean")
+  (parameters
+    '("gboolean" "wait")
+    '("GError**" "error")
+  )
+)
+
+(define-method is_door_open
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_is_door_open")
+  (return-type "gboolean")
+)
+
+(define-method can_use_exclusively
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_can_use_exclusively")
+  (return-type "gboolean")
+)
+
+(define-method lock
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_lock")
+  (return-type "gboolean")
+  (parameters
+    '("const-gchar*" "reason")
+    '("gchar**" "reason_for_failure")
+  )
+)
+
+(define-method unlock
+  (of-object "BraseroDrive")
+  (c-name "brasero_drive_unlock")
+  (return-type "gboolean")
+)
+
+(define-virtual medium_added
+  (of-object "BraseroDrive")
+  (return-type "none")
+  (parameters
+    '("BraseroMedium*" "medium")
+  )
+)
+
+(define-virtual medium_removed
+  (of-object "BraseroDrive")
+  (return-type "none")
+  (parameters
+    '("BraseroMedium*" "medium")
+  )
+)
+
+
+
+;; From brasero-media.h
+
+(define-function brasero_media_library_start
+  (c-name "brasero_media_library_start")
+  (return-type "none")
+)
+
+(define-function brasero_media_library_stop
+  (c-name "brasero_media_library_stop")
+  (return-type "none")
+)
+
+(define-function brasero_media_get_option_group
+  (c-name "brasero_media_get_option_group")
+  (return-type "GOptionGroup*")
+)
+
+(define-function brasero_media_quark
+  (c-name "brasero_media_quark")
+  (return-type "GQuark")
+)
+
+
+
+;; From brasero-medium-monitor.h
+
+(define-function brasero_medium_monitor_get_type
+  (c-name "brasero_medium_monitor_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_medium_monitor_get_default
+  (c-name "brasero_medium_monitor_get_default")
+  (return-type "BraseroMediumMonitor*")
+)
+
+(define-method get_media
+  (of-object "BraseroMediumMonitor")
+  (c-name "brasero_medium_monitor_get_media")
+  (return-type "GSList*")
+  (parameters
+    '("BraseroMediaType" "type")
+  )
+)
+
+(define-method get_drives
+  (of-object "BraseroMediumMonitor")
+  (c-name "brasero_medium_monitor_get_drives")
+  (return-type "GSList*")
+  (parameters
+    '("BraseroDriveType" "type")
+  )
+)
+
+(define-method get_drive
+  (of-object "BraseroMediumMonitor")
+  (c-name "brasero_medium_monitor_get_drive")
+  (return-type "BraseroDrive*")
+  (parameters
+    '("const-gchar*" "device")
+  )
+)
+
+(define-method is_probing
+  (of-object "BraseroMediumMonitor")
+  (c-name "brasero_medium_monitor_is_probing")
+  (return-type "gboolean")
+)
+
+(define-virtual drive_added
+  (of-object "BraseroMediumMonitor")
+  (return-type "none")
+  (parameters
+    '("BraseroDrive*" "drive")
+  )
+)
+
+(define-virtual drive_removed
+  (of-object "BraseroMediumMonitor")
+  (return-type "none")
+  (parameters
+    '("BraseroDrive*" "drive")
+  )
+)
+
+(define-virtual medium_added
+  (of-object "BraseroMediumMonitor")
+  (return-type "none")
+  (parameters
+    '("BraseroMedium*" "medium")
+  )
+)
+
+(define-virtual medium_removed
+  (of-object "BraseroMediumMonitor")
+  (return-type "none")
+  (parameters
+    '("BraseroMedium*" "medium")
+  )
+)
+
+
+
+;; From brasero-medium-selection.h
+
+(define-function brasero_medium_selection_get_type
+  (c-name "brasero_medium_selection_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_medium_selection_new
+  (c-name "brasero_medium_selection_new")
+  (is-constructor-of "BraseroMediumSelection")
+  (return-type "GtkWidget*")
+)
+
+(define-method get_active
+  (of-object "BraseroMediumSelection")
+  (c-name "brasero_medium_selection_get_active")
+  (return-type "BraseroMedium*")
+)
+
+(define-method set_active
+  (of-object "BraseroMediumSelection")
+  (c-name "brasero_medium_selection_set_active")
+  (return-type "gboolean")
+  (parameters
+    '("BraseroMedium*" "medium")
+  )
+)
+
+(define-method show_media_type
+  (of-object "BraseroMediumSelection")
+  (c-name "brasero_medium_selection_show_media_type")
+  (return-type "none")
+  (parameters
+    '("BraseroMediaType" "type")
+  )
+)
+
+(define-virtual medium_changed
+  (of-object "BraseroMediumSelection")
+  (return-type "none")
+  (parameters
+    '("BraseroMedium*" "medium")
+  )
+)
+
+(define-virtual format_medium_string
+  (of-object "BraseroMediumSelection")
+  (return-type "gchar*")
+  (parameters
+    '("BraseroMedium*" "medium")
+  )
+)
+
+
+
+;; From brasero-medium.h
+
+(define-function brasero_medium_get_type
+  (c-name "brasero_medium_get_type")
+  (return-type "GType")
+)
+
+(define-method get_status
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_status")
+  (return-type "BraseroMedia")
+)
+
+(define-method get_max_write_speed
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_max_write_speed")
+  (return-type "gint64")
+)
+
+(define-method get_write_speeds
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_write_speeds")
+  (return-type "gint64*")
+)
+
+(define-method get_free_space
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_free_space")
+  (return-type "none")
+  (parameters
+    '("gint64*" "size")
+    '("gint64*" "blocks")
+  )
+)
+
+(define-method get_capacity
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_capacity")
+  (return-type "none")
+  (parameters
+    '("gint64*" "size")
+    '("gint64*" "blocks")
+  )
+)
+
+(define-method get_data_size
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_data_size")
+  (return-type "none")
+  (parameters
+    '("gint64*" "size")
+    '("gint64*" "blocks")
+  )
+)
+
+(define-method get_next_writable_address
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_next_writable_address")
+  (return-type "gint64")
+)
+
+(define-method can_be_rewritten
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_can_be_rewritten")
+  (return-type "gboolean")
+)
+
+(define-method can_be_written
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_can_be_written")
+  (return-type "gboolean")
+)
+
+(define-method get_CD_TEXT_title
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_CD_TEXT_title")
+  (return-type "const-gchar*")
+)
+
+(define-method get_type_string
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_type_string")
+  (return-type "const-gchar*")
+)
+
+(define-method get_tooltip
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_tooltip")
+  (return-type "gchar*")
+)
+
+(define-method get_drive
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_drive")
+  (return-type "BraseroDrive*")
+)
+
+(define-method get_track_num
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_track_num")
+  (return-type "guint")
+)
+
+(define-method get_last_data_track_space
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_last_data_track_space")
+  (return-type "gboolean")
+  (parameters
+    '("gint64*" "size")
+    '("gint64*" "blocks")
+  )
+)
+
+(define-method get_last_data_track_address
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_last_data_track_address")
+  (return-type "gboolean")
+  (parameters
+    '("gint64*" "byte")
+    '("gint64*" "sector")
+  )
+)
+
+(define-method get_track_space
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_track_space")
+  (return-type "gboolean")
+  (parameters
+    '("guint" "num")
+    '("gint64*" "size")
+    '("gint64*" "blocks")
+  )
+)
+
+(define-method get_track_address
+  (of-object "BraseroMedium")
+  (c-name "brasero_medium_get_track_address")
+  (return-type "gboolean")
+  (parameters
+    '("guint" "num")
+    '("gint64*" "byte")
+    '("gint64*" "sector")
+  )
+)
+
+
+
+;; From brasero-units.h
+
+(define-function brasero_units_get_time_string
+  (c-name "brasero_units_get_time_string")
+  (return-type "gchar*")
+  (parameters
+    '("guint64" "time")
+    '("gboolean" "with_unit")
+    '("gboolean" "round")
+  )
+)
+
+(define-function brasero_units_get_time_string_from_size
+  (c-name "brasero_units_get_time_string_from_size")
+  (return-type "gchar*")
+  (parameters
+    '("gint64" "size")
+    '("gboolean" "with_unit")
+    '("gboolean" "round")
+  )
+)
+
+
+
+;; From brasero-volume.h
+
+(define-function brasero_volume_get_type
+  (c-name "brasero_volume_get_type")
+  (return-type "GType")
+)
+
+(define-method get_name
+  (of-object "BraseroVolume")
+  (c-name "brasero_volume_get_name")
+  (return-type "gchar*")
+)
+
+(define-method get_icon
+  (of-object "BraseroVolume")
+  (c-name "brasero_volume_get_icon")
+  (return-type "GIcon*")
+)
+
+(define-method get_gvolume
+  (of-object "BraseroVolume")
+  (c-name "brasero_volume_get_gvolume")
+  (return-type "GVolume*")
+)
+
+(define-method is_mounted
+  (of-object "BraseroVolume")
+  (c-name "brasero_volume_is_mounted")
+  (return-type "gboolean")
+)
+
+(define-method get_mount_point
+  (of-object "BraseroVolume")
+  (c-name "brasero_volume_get_mount_point")
+  (return-type "gchar*")
+  (parameters
+    '("GError**" "error")
+  )
+)
+
+(define-method umount
+  (of-object "BraseroVolume")
+  (c-name "brasero_volume_umount")
+  (return-type "gboolean")
+  (parameters
+    '("gboolean" "wait")
+    '("GError**" "error")
+  )
+)
+
+(define-method mount
+  (of-object "BraseroVolume")
+  (c-name "brasero_volume_mount")
+  (return-type "gboolean")
+  (parameters
+    '("GtkWindow*" "parent_window")
+    '("gboolean" "wait")
+    '("GError**" "error")
+  )
+)
+
+(define-method cancel_current_operation
+  (of-object "BraseroVolume")
+  (c-name "brasero_volume_cancel_current_operation")
+  (return-type "none")
+)
+
+

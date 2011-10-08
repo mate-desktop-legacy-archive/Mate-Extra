@@ -1,0 +1,70 @@
+# -*- python -*-
+# encoding: utf-8
+
+
+def configure(conf):
+    conf.env.append_value('MODULES_AVAILABLE', 'evolution.ebook')
+    if 'evolution.ebook' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('EVOLUTION_EBOOK',
+                                  'libebook-1.2 >= 1.4 pygobject-2.0 gdk-pixbuf-2.0 pango',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'evolution.ebook')
+
+    conf.env.append_value('MODULES_AVAILABLE', 'evolution.ecal')
+    if 'evolution.ecal' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('EVOLUTION_ECAL',
+                                  'libecal-1.2 >= 1.4 pygobject-2.0 gdk-pixbuf-2.0 pango',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'evolution.ecal')            
+
+
+
+def build(bld):
+    evolution_common = bld.new_task_gen('cc', 'objects', 'pyext')
+    evolution_common.name = 'evolution_common'
+    evolution_common.target = 'evolution_common'
+    evolution_common.source = 'override_common.c'
+    evolution_common.includes = '.'
+    evolution_common.uselib = 'PYGTK'
+    evolution_common.env.append_value('CCFLAGS', evolution_common.env['shlib_CCFLAGS'])
+    
+    if 'evolution.ebook' in bld.env['MODULES_TO_BUILD']:
+        bld.codegen('ebook', py_ssize_t_clean=False)
+        pyext = bld.create_pyext()
+        pyext.includes = '.'
+        pyext.source = '''
+	ebookmodule.c
+	ebook.c
+	evo-ebook-environment.c
+	evo-contact.c
+	evo-addressbook.c
+	ebook-enums.c
+'''
+        pyext.add_objects = 'evolution_common'
+        pyext.target = 'ebook'
+        pyext.uselib = 'EVOLUTION_EBOOK'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0/evolution'
+
+    if 'evolution.ecal' in bld.env['MODULES_TO_BUILD']:
+        bld.codegen('ecal', py_ssize_t_clean=False)
+        pyext = bld.create_pyext()
+        pyext.includes = '.'
+        pyext.source = '''
+	ecalmodule.c
+	ecal.c
+	evo-ecal-environment.c
+	evo-calendar.c
+'''
+        pyext.add_objects = 'evolution_common'
+        pyext.target = 'ecal'
+        pyext.uselib = 'EVOLUTION_ECAL'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0/evolution'
+
+    if 'evolution.ecal' in bld.env['MODULES_TO_BUILD'] \
+            or 'evolution.ebook' in bld.env['MODULES_TO_BUILD']:
+        py = bld.new_task_gen('py')
+        py.install_path = '${PYTHONDIR}/gtk-2.0/evolution'
+        py.source = "__init__.py"
+
+    bld.install_files('${DATADIR}/pygtk/2.0/defs', ['ebook.defs', 'ecal.defs'])
+

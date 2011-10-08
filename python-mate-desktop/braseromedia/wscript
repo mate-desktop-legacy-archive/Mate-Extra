@@ -1,0 +1,24 @@
+# -*- python -*-
+# encoding: utf-8
+
+def configure(conf):
+    conf.env.append_value('MODULES_AVAILABLE', 'braseromedia')
+    if 'braseromedia' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('BRASEROMEDIA',
+                                  'libbrasero-media >= 2.29 pygobject-2.0',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'braseromedia')
+
+
+def build(bld):
+    if 'braseromedia' in bld.env['MODULES_TO_BUILD']:
+        bld.codegen('brasero_media', prefix='brasero_media')
+        pyext = bld.create_pyext()
+        pyext.source = 'bm_module.c brasero_media.c'
+        pyext.includes = '.'
+        pyext.target = 'braseromedia'
+        pyext.uselib = 'BRASEROMEDIA'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0'
+
+        bld.install_files('${DATADIR}/pygtk/2.0/defs', 'brasero_media.defs')
+

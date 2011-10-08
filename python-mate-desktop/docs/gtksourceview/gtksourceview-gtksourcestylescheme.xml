@@ -1,0 +1,197 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-gtksourcestylescheme">
+  <refnamediv>
+    <refname>gtksourceview.SourceStyleScheme</refname>
+    <refpurpose>StyleScheme object for <link linkend="class-gtksourceview">gtksourceview.SourceView</link></refpurpose>
+  </refnamediv>
+
+<!-- ************************************** -->
+<!-- BEGIN OF GTKSOURCESTYLESCHEME SYNOPSIS -->
+<!-- ************************************** -->
+
+<refsect1>
+  <title>Synopsis</title>
+
+    <classsynopsis language="python">
+    <ooclass><classname>gtksourceview.SourceStyleScheme</classname></ooclass>
+    <ooclass><classname><link linkend="class-gobjectginterface">gobject.GInterface</link></classname></ooclass>
+
+    <constructorsynopsis language="python">
+	    <methodname><link linkend="constructor-gtksourcestylescheme">gtksourceview.SourceStyleScheme</link></methodname>
+	    <methodparam><parameter role="keyword"></parameter></methodparam>
+    </constructorsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcestylescheme--get-tag-style">get_tag_style</link></methodname>
+	    <methodparam>style_name</methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcestylescheme--get-name">get_name</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcestylescheme--get-style-names">get_style_names</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+  </classsynopsis>
+
+<programlisting>
+<emphasis role="bold">Functions</emphasis>
+
+<methodsynopsis language="python">
+<methodname><link linkend="function-gtksourcestylescheme--get-default">gtksourceview.gtk_source_style_scheme_get_default</link></methodname>
+<methodparam></methodparam>
+</methodsynopsis></programlisting>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF GTKSOURCESTYLESCHEME ANCESTRY -->
+<!-- ************************************** -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobjectginterface">gobject.GInterface</link>
+  +-- <link linkend="class-gtksourcestylescheme">gtksourceview.SourceStyleScheme</link>
+</synopsis>
+</refsect1>
+
+<!-- ***************************************** -->
+<!-- BEGIN OF GTKSOURCESTYLESCHEME DESCRIPTION -->
+<!-- ***************************************** -->
+
+<refsect1 id="description-gtksourcestylescheme">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- ***************************************** -->
+<!-- BEGIN OF GTKSOURCESTYLESCHEME CONSTRUCTOR -->
+<!-- ***************************************** -->
+
+<refsect1 id="constructor-gtksourcestylescheme">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>gtksourceview.SourceStyleScheme</methodname>
+	  <methodparam><parameter role="keyword"></parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-gtksourcestylescheme"><classname>gtksourceview.SourceStyleScheme</classname></link>.</simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-gtksourcestylescheme"><classname>gtksourceview.SourceStyleScheme</classname></link> object.
+  </para>
+</refsect1>
+
+<!-- ************************************* -->
+<!-- BEGIN OF GTKSOURCESTYLESCHEME METHODS -->
+<!-- ************************************* -->
+
+<refsect1>
+  <title>Methods</title>
+
+  <refsect2 id="method-gtksourcestylescheme--get-tag-style">
+    <title>gtksourceview.SourceStyleScheme.get_tag_style</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_tag_style</methodname>
+	  <methodparam><parameter role="keyword">style_name</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter role="keyword">style_name</parameter>&nbsp;:</term>
+	      <listitem><simpara>	the name of a style.</simpara></listitem>
+	    </varlistentry>
+      <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a <link linkend="class-gtksourcetagstyle">gtksourceview.SourceTagStyle</link>.</simpara></listitem>
+	    </varlistentry>
+      
+    </variablelist>
+
+    <para>
+      The <methodname>get_tag_style</methodname>() method gets the tag associated with the given <parameter>style_name</parameter> in the style scheme.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcestylescheme--get-name">
+    <title>gtksourceview.SourceStyleScheme.get_name</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_name</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the name of the style scheme.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_name</methodname>() method gets the name of the style scheme.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcestylescheme--get-style-names">
+    <title>gtksourceview.SourceStyleScheme.get_style_names</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_style_names</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a list of style names.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_style_names</methodname>() method gets a list of style names in the given style scheme.
+	  </para>
+  </refsect2>
+</refsect1> 
+
+
+<!-- *************************************** -->
+<!-- BEGIN OF GTKSOURCESTYLESCHEME FUNCTIONS -->
+<!-- *************************************** -->
+
+<refsect1>
+    <title>Functions</title>
+
+  <refsect2 id="function-gtksourcestylescheme--get-default">
+    <title>gtksourceview.gtk_source_style_scheme_get_default</title>
+    <programlisting><methodsynopsis language="python">
+  	  <methodname>gtksourceview.gtk_source_style_scheme_get_default</methodname>
+      <methodparam></methodparam>
+      </methodsynopsis></programlisting>
+        
+    <variablelist>
+	    <varlistentry>
+        <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a <link linkend="class-gtksourcestylescheme">gtksourceview.SourceStyleScheme</link></simpara></listitem>
+      </varlistentry>
+    </variablelist>
+
+      <para>
+        The <methodname>gtk_source_style_scheme_get_default</methodname>() function gets the default style scheme.
+      </para>
+
+  </refsect2>
+</refsect1>
+</refentry>

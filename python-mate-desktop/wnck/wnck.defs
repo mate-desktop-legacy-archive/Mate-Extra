@@ -1,0 +1,1475 @@
+;; -*- scheme -*-
+; object definitions ...
+(define-object Application
+  (in-module "Wnck")
+  (parent "GObject")
+  (c-name "WnckApplication")
+  (gtype-id "WNCK_TYPE_APPLICATION")
+)
+
+(define-object ClassGroup
+  (in-module "Wnck")
+  (parent "GObject")
+  (c-name "WnckClassGroup")
+  (gtype-id "WNCK_TYPE_CLASS_GROUP")
+)
+
+(define-object Pager
+  (in-module "Wnck")
+  (parent "GtkContainer")
+  (c-name "WnckPager")
+  (gtype-id "WNCK_TYPE_PAGER")
+)
+
+(define-object Screen
+  (in-module "Wnck")
+  (parent "GObject")
+  (c-name "WnckScreen")
+  (gtype-id "WNCK_TYPE_SCREEN")
+)
+
+(define-object Tasklist
+  (in-module "Wnck")
+  (parent "GtkContainer")
+  (c-name "WnckTasklist")
+  (gtype-id "WNCK_TYPE_TASKLIST")
+)
+
+(define-object Window
+  (in-module "Wnck")
+  (parent "GObject")
+  (c-name "WnckWindow")
+  (gtype-id "WNCK_TYPE_WINDOW")
+)
+
+(define-object Workspace
+  (in-module "Wnck")
+  (parent "GObject")
+  (c-name "WnckWorkspace")
+  (gtype-id "WNCK_TYPE_WORKSPACE")
+)
+
+(define-object Selector
+  (in-module "Wnck")
+  (parent "GtkMenuBar")
+  (c-name "WnckSelector")
+  (gtype-id "WNCK_TYPE_SELECTOR")
+)
+
+;; Enumerations and flags ...
+
+(define-enum ClientType
+  (in-module "Wnck")
+  (c-name "WnckClientType")
+  (values
+   '("application" "WNCK_CLIENT_TYPE_APPLICATION")
+   '("pager" "WNCK_CLIENT_TYPE_PAGER")
+  )
+)
+
+(define-enum PagerDisplayMode
+  (in-module "Wnck")
+  (c-name "WnckPagerDisplayMode")
+  (gtype-id "WNCK_TYPE_PAGER_DISPLAY_MODE")
+  (values
+    '("name" "WNCK_PAGER_DISPLAY_NAME")
+    '("content" "WNCK_PAGER_DISPLAY_CONTENT")
+  )
+)
+
+(define-enum MotionDirection
+  (in-module "Wnck")
+  (c-name "WnckMotionDirection")
+  (gtype-id "WNCK_TYPE_MOTION_DIRECTION")
+  (values
+    '("up" "WNCK_MOTION_UP")
+    '("down" "WNCK_MOTION_DOWN")
+    '("left" "WNCK_MOTION_LEFT")
+    '("right" "WNCK_MOTION_RIGHT")
+  )
+)
+
+(define-enum TasklistGroupingType
+  (in-module "Wnck")
+  (c-name "WnckTasklistGroupingType")
+  (gtype-id "WNCK_TYPE_TASKLIST_GROUPING_TYPE")
+  (values
+    '("never-group" "WNCK_TASKLIST_NEVER_GROUP")
+    '("auto-group" "WNCK_TASKLIST_AUTO_GROUP")
+    '("always-group" "WNCK_TASKLIST_ALWAYS_GROUP")
+  )
+)
+
+(define-enum WindowState
+  (in-module "Wnck")
+  (c-name "WnckWindowState")
+  (gtype-id "WNCK_TYPE_WINDOW_STATE")
+  (values
+    '("minimized" "WNCK_WINDOW_STATE_MINIMIZED")
+    '("maximized-horizontally" "WNCK_WINDOW_STATE_MAXIMIZED_HORIZONTALLY")
+    '("maximized-vertically" "WNCK_WINDOW_STATE_MAXIMIZED_VERTICALLY")
+    '("shaded" "WNCK_WINDOW_STATE_SHADED")
+    '("skip-pager" "WNCK_WINDOW_STATE_SKIP_PAGER")
+    '("skip-tasklist" "WNCK_WINDOW_STATE_SKIP_TASKLIST")
+    '("sticky" "WNCK_WINDOW_STATE_STICKY")
+    '("hidden" "WNCK_WINDOW_STATE_HIDDEN")
+    '("fullscreen" "WNCK_WINDOW_STATE_FULLSCREEN")
+    '("demands-attention" "WNCK_WINDOW_STATE_DEMANDS_ATTENTION")
+    '("urgent" "WNCK_WINDOW_STATE_URGENT")
+    '("above" "WNCK_WINDOW_STATE_ABOVE")
+    '("below" "WNCK_WINDOW_STATE_BELOW")
+  )
+)
+
+(define-enum WindowActions
+  (in-module "Wnck")
+  (c-name "WnckWindowActions")
+  (gtype-id "WNCK_TYPE_WINDOW_ACTIONS")
+  (values
+    '("move" "WNCK_WINDOW_ACTION_MOVE")
+    '("resize" "WNCK_WINDOW_ACTION_RESIZE")
+    '("shade" "WNCK_WINDOW_ACTION_SHADE")
+    '("stick" "WNCK_WINDOW_ACTION_STICK")
+    '("maximize-horizontally" "WNCK_WINDOW_ACTION_MAXIMIZE_HORIZONTALLY")
+    '("maximize-vertically" "WNCK_WINDOW_ACTION_MAXIMIZE_VERTICALLY")
+    '("change-workspace" "WNCK_WINDOW_ACTION_CHANGE_WORKSPACE")
+    '("close" "WNCK_WINDOW_ACTION_CLOSE")
+    '("unmaximize-horizontally" "WNCK_WINDOW_ACTION_UNMAXIMIZE_HORIZONTALLY")
+    '("unmaximize-vertically" "WNCK_WINDOW_ACTION_UNMAXIMIZE_VERTICALLY")
+    '("unshade" "WNCK_WINDOW_ACTION_UNSHADE")
+    '("unstick" "WNCK_WINDOW_ACTION_UNSTICK")
+    '("minimize" "WNCK_WINDOW_ACTION_MINIMIZE")
+    '("unminimize" "WNCK_WINDOW_ACTION_UNMINIMIZE")
+    '("maximize" "WNCK_WINDOW_ACTION_MAXIMIZE")
+    '("unmaximize" "WNCK_WINDOW_ACTION_UNMAXIMIZE")
+    '("fullscreen" "WNCK_WINDOW_ACTION_FULLSCREEN")
+    '("above" "WNCK_WINDOW_ACTION_ABOVE")
+    '("below" "WNCK_WINDOW_ACTION_BELOW")
+  )
+)
+
+(define-enum WindowType
+  (in-module "Wnck")
+  (c-name "WnckWindowType")
+  (gtype-id "WNCK_TYPE_WINDOW_TYPE")
+  (values
+    '("normal" "WNCK_WINDOW_NORMAL")
+    '("desktop" "WNCK_WINDOW_DESKTOP")
+    '("dock" "WNCK_WINDOW_DOCK")
+    '("dialog" "WNCK_WINDOW_DIALOG")
+    '("modal-dialog" "WNCK_WINDOW_MODAL_DIALOG")
+    '("toolbar" "WNCK_WINDOW_TOOLBAR")
+    '("menu" "WNCK_WINDOW_MENU")
+    '("utility" "WNCK_WINDOW_UTILITY")
+    '("splashscreen" "WNCK_WINDOW_SPLASHSCREEN")
+  )
+)
+
+(define-enum WindowGravity
+  (in-module "Wnck")
+  (c-name "WnckWindowGravity")
+  (gtype-id "WNCK_TYPE_WINDOW_GRAVITY")
+  (values
+    '("current" "WNCK_WINDOW_GRAVITY_CURRENT")
+    '("northwest" "WNCK_WINDOW_GRAVITY_NORTHWEST")
+    '("north" "WNCK_WINDOW_GRAVITY_NORTH")
+    '("northeast" "WNCK_WINDOW_GRAVITY_NORTHEAST")
+    '("west" "WNCK_WINDOW_GRAVITY_WEST")
+    '("center" "WNCK_WINDOW_GRAVITY_CENTER")
+    '("east" "WNCK_WINDOW_GRAVITY_EAST")
+    '("southwest" "WNCK_WINDOW_GRAVITY_SOUTHWEST")
+    '("south" "WNCK_WINDOW_GRAVITY_SOUTH")
+    '("southeast" "WNCK_WINDOW_GRAVITY_SOUTHEAST")
+    '("static" "WNCK_WINDOW_GRAVITY_STATIC")
+  )
+)
+
+(define-enum WindowMoveResizeMask
+  (in-module "Wnck")
+  (c-name "WnckWindowMoveResizeMask")
+  (gtype-id "WNCK_TYPE_WINDOW_MOVE_RESIZE_MASK")
+  (values
+    '("change-x" "WNCK_WINDOW_CHANGE_X")
+    '("change-y" "WNCK_WINDOW_CHANGE_Y")
+    '("change-width" "WNCK_WINDOW_CHANGE_WIDTH")
+    '("change-height" "WNCK_WINDOW_CHANGE_HEIGHT")
+  )
+)
+
+
+;; From /usr/include/libwnck-1.0/libwnck/application.h
+
+(define-function wnck_application_get_type
+  (c-name "wnck_application_get_type")
+  (return-type "GType")
+)
+
+(define-function application_get
+  (c-name "wnck_application_get")
+  (return-type "WnckApplication*")
+  (parameters
+    '("gulong" "xwindow")
+  )
+)
+
+(define-method get_xid
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_xid")
+  (return-type "gulong")
+)
+
+(define-method get_windows
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_windows")
+  (return-type "GList*")
+)
+
+(define-method get_n_windows
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_n_windows")
+  (return-type "int")
+)
+
+(define-method get_name
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_name")
+  (return-type "const-char*")
+)
+
+(define-method get_icon_name
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_icon_name")
+  (return-type "const-char*")
+)
+
+(define-method get_pid
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_pid")
+  (return-type "int")
+)
+
+(define-method get_icon
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_icon")
+  (return-type "GdkPixbuf*")
+)
+
+(define-method get_mini_icon
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_mini_icon")
+  (return-type "GdkPixbuf*")
+)
+
+(define-method get_icon_is_fallback
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_icon_is_fallback")
+  (return-type "gboolean")
+)
+
+(define-method get_startup_id
+  (of-object "WnckApplication")
+  (c-name "wnck_application_get_startup_id")
+  (return-type "const-char*")
+)
+
+
+
+;; From /usr/include/libwnck-1.0/libwnck/class-group.h
+
+(define-function class_group_get_type
+  (c-name "wnck_class_group_get_type")
+  (return-type "GType")
+)
+
+(define-function class_group_get
+  (c-name "wnck_class_group_get")
+  (return-type "WnckClassGroup*")
+  (parameters
+    '("const-char*" "res_class")
+  )
+)
+
+(define-method get_windows
+  (of-object "WnckClassGroup")
+  (c-name "wnck_class_group_get_windows")
+  (return-type "GList*")
+)
+
+(define-method get_res_class
+  (of-object "WnckClassGroup")
+  (c-name "wnck_class_group_get_res_class")
+  (return-type "const-char*")
+)
+
+(define-method get_name
+  (of-object "WnckClassGroup")
+  (c-name "wnck_class_group_get_name")
+  (return-type "const-char*")
+)
+
+(define-method get_icon
+  (of-object "WnckClassGroup")
+  (c-name "wnck_class_group_get_icon")
+  (return-type "GdkPixbuf*")
+)
+
+(define-method get_mini_icon
+  (of-object "WnckClassGroup")
+  (c-name "wnck_class_group_get_mini_icon")
+  (return-type "GdkPixbuf*")
+)
+
+
+
+;; From /usr/include/libwnck-1.0/libwnck/libwnck.h
+
+
+
+;; From /usr/include/libwnck-1.0/libwnck/pager.h
+
+(define-function wnck_pager_get_type
+  (c-name "wnck_pager_get_type")
+  (return-type "GType")
+)
+
+(define-function wnck_pager_new
+  (c-name "wnck_pager_new")
+  (is-constructor-of "WnckPager")
+  (return-type "GtkWidget*")
+  (parameters
+    '("WnckScreen*" "screen")
+  )
+)
+
+(define-method set_screen
+  (of-object "WnckPager")
+  (c-name "wnck_pager_set_screen")
+  (return-type "none")
+  (parameters
+    '("WnckScreen*" "screen")
+  )
+)
+
+(define-method set_orientation
+  (of-object "WnckPager")
+  (c-name "wnck_pager_set_orientation")
+  (return-type "none")
+  (parameters
+    '("GtkOrientation" "orientation")
+  )
+)
+
+(define-method set_n_rows
+  (of-object "WnckPager")
+  (c-name "wnck_pager_set_n_rows")
+  (return-type "none")
+  (parameters
+    '("int" "n_rows")
+  )
+)
+
+(define-method set_display_mode
+  (of-object "WnckPager")
+  (c-name "wnck_pager_set_display_mode")
+  (return-type "none")
+  (parameters
+    '("WnckPagerDisplayMode" "mode")
+  )
+)
+
+(define-method set_show_all
+  (of-object "WnckPager")
+  (c-name "wnck_pager_set_show_all")
+  (return-type "none")
+  (parameters
+    '("gboolean" "show_all_workspaces")
+  )
+)
+
+(define-method set_shadow_type
+  (of-object "WnckPager")
+  (c-name "wnck_pager_set_shadow_type")
+  (return-type "none")
+  (parameters
+    '("GtkShadowType" "shadow_type")
+  )
+)
+
+
+
+;; From /usr/include/libwnck-1.0/libwnck/screen.h
+
+(define-function wnck_screen_get_type
+  (c-name "wnck_screen_get_type")
+  (return-type "GType")
+)
+
+(define-function screen_get_default
+  (c-name "wnck_screen_get_default")
+  (return-type "WnckScreen*")
+)
+
+(define-function screen_get
+  (c-name "wnck_screen_get")
+  (return-type "WnckScreen*")
+  (parameters
+    '("int" "index")
+  )
+)
+
+(define-function screen_get_for_root
+  (c-name "wnck_screen_get_for_root")
+  (return-type "WnckScreen*")
+  (parameters
+    '("gulong" "root_window_id")
+  )
+)
+
+(define-method get_number
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_number")
+  (return-type "int")
+)
+
+(define-method get_workspace
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_workspace")
+  (return-type "WnckWorkspace*")
+  (parameters
+    '("int" "workspace")
+  )
+)
+
+(define-method get_workspace_index
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_workspace_index")
+  (return-type "int")
+  (parameters
+    '("WnckWorkspace*" "space")
+  )
+)
+
+(define-method get_workspace_neighbor
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_workspace_neighbor")
+  (return-type "WnckWorkspace*")
+  (parameters
+    '("WnckWorkspace*" "space")
+    '("WnckMotionDirection" "direction")
+  )
+)
+
+(define-method get_active_workspace
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_active_workspace")
+  (return-type "WnckWorkspace*")
+)
+
+(define-method get_workspaces
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_workspaces")
+  (return-type "GList*")
+)
+
+(define-method get_active_window
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_active_window")
+  (return-type "WnckWindow*")
+)
+
+(define-method get_previously_active_window
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_previously_active_window")
+  (return-type "WnckWindow*")
+)
+
+(define-method get_windows
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_windows")
+  (return-type "GList*")
+)
+
+(define-method get_windows_stacked
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_windows_stacked")
+  (return-type "GList*")
+)
+
+(define-method force_update
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_force_update")
+  (return-type "none")
+)
+
+(define-method get_workspace_count
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_workspace_count")
+  (return-type "int")
+)
+
+(define-method change_workspace_count
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_change_workspace_count")
+  (return-type "none")
+  (parameters
+    '("int" "count")
+  )
+)
+
+(define-method get_window_manager_name
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_window_manager_name")
+  (return-type "const-char*")
+)
+
+(define-method net_wm_supports
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_net_wm_supports")
+  (return-type "gboolean")
+  (parameters
+    '("const-char*" "atom")
+  )
+)
+
+(define-method get_background_pixmap
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_background_pixmap")
+  (return-type "gulong")
+)
+
+(define-method get_width
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_width")
+  (return-type "int")
+)
+
+(define-method get_height
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_height")
+  (return-type "int")
+)
+
+(define-method get_showing_desktop
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_get_showing_desktop")
+  (return-type "gboolean")
+)
+
+(define-method toggle_showing_desktop
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_toggle_showing_desktop")
+  (return-type "none")
+  (parameters
+    '("gboolean" "show")
+  )
+)
+
+(define-method move_viewport
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_move_viewport")
+  (return-type "none")
+  (parameters
+    '("int" "x")
+    '("int" "y")
+  )
+)
+
+(define-method try_set_workspace_layout
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_try_set_workspace_layout")
+  (return-type "int")
+  (parameters
+    '("int" "current_token")
+    '("int" "rows")
+    '("int" "columns")
+  )
+)
+
+(define-method release_workspace_layout
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_release_workspace_layout")
+  (return-type "none")
+  (parameters
+    '("int" "current_token")
+  )
+)
+
+(define-method calc_workspace_layout
+  (of-object "WnckScreen")
+  (c-name "wnck_screen_calc_workspace_layout")
+  (return-type "none")
+  (parameters
+    '("int" "num_workspaces")
+    '("int" "space_index")
+    '("WnckWorkspaceLayout*" "layout")
+  )
+)
+
+(define-function wnck_screen_free_workspace_layout
+  (c-name "wnck_screen_free_workspace_layout")
+  (return-type "none")
+  (parameters
+    '("WnckWorkspaceLayout*" "layout")
+  )
+)
+
+
+
+;; From /usr/include/libwnck-1.0/libwnck/tasklist.h
+
+(define-function wnck_tasklist_get_type
+  (c-name "wnck_tasklist_get_type")
+  (return-type "GType")
+)
+
+(define-function wnck_tasklist_new
+  (c-name "wnck_tasklist_new")
+  (is-constructor-of "WnckTasklist")
+  (return-type "GtkWidget*")
+  (parameters
+    '("WnckScreen*" "screen")
+  )
+)
+
+(define-method set_screen
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_set_screen")
+  (return-type "none")
+  (parameters
+    '("WnckScreen*" "screen")
+  )
+)
+
+(define-method get_size_hint_list
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_get_size_hint_list")
+  (return-type "const-int*")
+  (parameters
+    '("int*" "n_elements")
+  )
+)
+
+(define-method set_grouping
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_set_grouping")
+  (return-type "none")
+  (parameters
+    '("WnckTasklistGroupingType" "grouping")
+  )
+)
+
+(define-method set_switch_workspace_on_unminimize
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_set_switch_workspace_on_unminimize")
+  (return-type "none")
+  (parameters
+    '("gboolean" "switch_workspace_on_unminimize")
+  )
+)
+
+(define-method set_grouping_limit
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_set_grouping_limit")
+  (return-type "none")
+  (parameters
+    '("gint" "limit")
+  )
+)
+
+(define-method set_include_all_workspaces
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_set_include_all_workspaces")
+  (return-type "none")
+  (parameters
+    '("gboolean" "include_all_workspaces")
+  )
+)
+
+(define-method set_button_relief
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_set_button_relief")
+  (return-type "none")
+  (parameters
+    '("GtkReliefStyle" "relief")
+  )
+)
+
+(define-method set_minimum_width
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_set_minimum_width")
+  (return-type "none")
+  (parameters
+    '("gint" "size")
+  )
+)
+
+(define-method get_minimum_width
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_get_minimum_width")
+  (return-type "gint")
+)
+
+(define-method set_minimum_height
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_set_minimum_height")
+  (return-type "none")
+  (parameters
+    '("gint" "size")
+  )
+)
+
+(define-method get_minimum_height
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_get_minimum_height")
+  (return-type "gint")
+)
+
+(define-method set_icon_loader
+  (of-object "WnckTasklist")
+  (c-name "wnck_tasklist_set_icon_loader")
+  (return-type "none")
+  (parameters
+    '("WnckLoadIconFunction" "load_icon_func")
+    '("void*" "data")
+    '("GDestroyNotify" "free_data_func")
+  )
+)
+
+
+
+;; From /usr/include/libwnck-1.0/libwnck/util.h
+
+(define-function set_client_type
+  (c-name "wnck_set_client_type")
+  (return-type "none")
+  (parameters
+    '("WnckClientType" "ewmh_sourceindication_client_type")
+  ))
+
+(define-function gtk_window_set_dock_type
+  (c-name "wnck_gtk_window_set_dock_type")
+  (return-type "none")
+  (parameters
+    '("GtkWindow*" "window")
+  )
+)
+
+(define-function xid_read_resource_usage
+  (c-name "wnck_xid_read_resource_usage")
+  (return-type "none")
+  (parameters
+    '("GdkDisplay*" "gdk_display")
+    '("unsigned-long" "xid")
+    '("WnckResourceUsage*" "usage")
+  )
+)
+
+(define-function pid_read_resource_usage
+  (c-name "wnck_pid_read_resource_usage")
+  (return-type "none")
+  (parameters
+    '("GdkDisplay*" "gdk_display")
+    '("unsigned-long" "pid")
+    '("WnckResourceUsage*" "usage")
+  )
+)
+
+
+
+;; From /usr/include/libwnck-1.0/libwnck/window-action-menu.h
+
+(define-function create_window_action_menu
+  (c-name "wnck_create_window_action_menu")
+  (return-type "GtkWidget*")
+  (parameters
+    '("WnckWindow*" "window")
+  )
+)
+
+
+
+;; From /usr/include/libwnck-1.0/libwnck/window.h
+
+(define-function wnck_window_get_type
+  (c-name "wnck_window_get_type")
+  (return-type "GType")
+)
+
+(define-function window_get
+  (c-name "wnck_window_get")
+  (return-type "WnckWindow*")
+  (parameters
+    '("gulong" "xwindow")
+  )
+)
+
+(define-method get_screen
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_screen")
+  (return-type "WnckScreen*")
+)
+
+(define-method has_name
+  (of-object "WnckWindow")
+  (c-name "wnck_window_has_name")
+  (return-type "gboolean")
+)
+
+(define-method get_name
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_name")
+  (return-type "const-char*")
+)
+
+(define-method has_icon_name
+  (of-object "WnckWindow")
+  (c-name "wnck_window_has_icon_name")
+  (return-type "gboolean")
+)
+
+(define-method get_icon_name
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_icon_name")
+  (return-type "const-char*")
+)
+
+(define-method get_application
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_application")
+  (return-type "WnckApplication*")
+)
+
+(define-method get_transient
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_transient")
+  (return-type "WnckWindow*")
+)
+
+(define-method get_group_leader
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_group_leader")
+  (return-type "gulong")
+)
+
+(define-method get_xid
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_xid")
+  (return-type "gulong")
+)
+
+(define-method get_class_group
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_class_group")
+  (return-type "WnckClassGroup*")
+)
+
+(define-method get_session_id
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_session_id")
+  (return-type "const-char*")
+)
+
+(define-method get_session_id_utf8
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_session_id_utf8")
+  (return-type "const-char*")
+)
+
+(define-method get_pid
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_pid")
+  (return-type "int")
+)
+
+(define-method get_sort_order
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_sort_order")
+  (return-type "gint")
+)
+
+(define-method set_sort_order
+  (of-object "WnckWindow")
+  (c-name "wnck_window_set_sort_order")
+  (return-type "none")
+  (parameters
+    '("gint" "order")
+  )
+)
+
+(define-method get_window_type
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_window_type")
+  (return-type "WnckWindowType")
+)
+
+(define-method set_window_type
+  (of-object "WnckWindow")
+  (c-name "wnck_window_set_window_type")
+  (return-type "none")
+  (parameters
+    '("WnckWindowType" "wintype")
+  )
+)
+
+(define-method is_minimized
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_minimized")
+  (return-type "gboolean")
+)
+
+(define-method is_maximized_horizontally
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_maximized_horizontally")
+  (return-type "gboolean")
+)
+
+(define-method is_maximized_vertically
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_maximized_vertically")
+  (return-type "gboolean")
+)
+
+(define-method is_maximized
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_maximized")
+  (return-type "gboolean")
+)
+
+(define-method is_shaded
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_shaded")
+  (return-type "gboolean")
+)
+
+(define-method is_above
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_above")
+  (return-type "gboolean")
+)
+
+(define-method is_below
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_below")
+  (return-type "gboolean")
+)
+
+(define-method is_skip_pager
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_skip_pager")
+  (return-type "gboolean")
+)
+
+(define-method is_skip_tasklist
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_skip_tasklist")
+  (return-type "gboolean")
+)
+
+(define-method is_fullscreen
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_fullscreen")
+  (return-type "gboolean")
+)
+
+(define-method is_sticky
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_sticky")
+  (return-type "gboolean")
+)
+
+(define-method needs_attention
+  (of-object "WnckWindow")
+  (c-name "wnck_window_needs_attention")
+  (return-type "gboolean")
+)
+
+(define-method or_transient_needs_attention
+  (of-object "WnckWindow")
+  (c-name "wnck_window_or_transient_needs_attention")
+  (return-type "gboolean")
+)
+
+(define-method set_skip_pager
+  (of-object "WnckWindow")
+  (c-name "wnck_window_set_skip_pager")
+  (return-type "none")
+  (parameters
+    '("gboolean" "skip")
+  )
+)
+
+(define-method set_skip_tasklist
+  (of-object "WnckWindow")
+  (c-name "wnck_window_set_skip_tasklist")
+  (return-type "none")
+  (parameters
+    '("gboolean" "skip")
+  )
+)
+
+(define-method set_fullscreen
+  (of-object "WnckWindow")
+  (c-name "wnck_window_set_fullscreen")
+  (return-type "none")
+  (parameters
+    '("gboolean" "fullscreen")
+  )
+)
+
+(define-method close
+  (of-object "WnckWindow")
+  (c-name "wnck_window_close")
+  (return-type "none")
+  (parameters
+    '("guint32" "timestamp")
+  )
+)
+
+(define-method minimize
+  (of-object "WnckWindow")
+  (c-name "wnck_window_minimize")
+  (return-type "none")
+)
+
+(define-method unminimize
+  (of-object "WnckWindow")
+  (c-name "wnck_window_unminimize")
+  (return-type "none")
+  (parameters
+    '("guint32" "timestamp")
+  )
+)
+
+(define-method maximize
+  (of-object "WnckWindow")
+  (c-name "wnck_window_maximize")
+  (return-type "none")
+)
+
+(define-method unmaximize
+  (of-object "WnckWindow")
+  (c-name "wnck_window_unmaximize")
+  (return-type "none")
+)
+
+(define-method maximize_horizontally
+  (of-object "WnckWindow")
+  (c-name "wnck_window_maximize_horizontally")
+  (return-type "none")
+)
+
+(define-method unmaximize_horizontally
+  (of-object "WnckWindow")
+  (c-name "wnck_window_unmaximize_horizontally")
+  (return-type "none")
+)
+
+(define-method maximize_vertically
+  (of-object "WnckWindow")
+  (c-name "wnck_window_maximize_vertically")
+  (return-type "none")
+)
+
+(define-method unmaximize_vertically
+  (of-object "WnckWindow")
+  (c-name "wnck_window_unmaximize_vertically")
+  (return-type "none")
+)
+
+(define-method shade
+  (of-object "WnckWindow")
+  (c-name "wnck_window_shade")
+  (return-type "none")
+)
+
+(define-method unshade
+  (of-object "WnckWindow")
+  (c-name "wnck_window_unshade")
+  (return-type "none")
+)
+
+(define-method make_above
+  (of-object "WnckWindow")
+  (c-name "wnck_window_make_above")
+  (return-type "none")
+)
+
+(define-method unmake_above
+  (of-object "WnckWindow")
+  (c-name "wnck_window_unmake_above")
+  (return-type "none")
+)
+
+(define-method make_below
+  (of-object "WnckWindow")
+  (c-name "wnck_window_make_below")
+  (return-type "none")
+)
+
+(define-method unmake_below
+  (of-object "WnckWindow")
+  (c-name "wnck_window_unmake_below")
+  (return-type "none")
+)
+
+(define-method stick
+  (of-object "WnckWindow")
+  (c-name "wnck_window_stick")
+  (return-type "none")
+)
+
+(define-method unstick
+  (of-object "WnckWindow")
+  (c-name "wnck_window_unstick")
+  (return-type "none")
+)
+
+(define-method keyboard_move
+  (of-object "WnckWindow")
+  (c-name "wnck_window_keyboard_move")
+  (return-type "none")
+)
+
+(define-method keyboard_size
+  (of-object "WnckWindow")
+  (c-name "wnck_window_keyboard_size")
+  (return-type "none")
+)
+
+(define-method get_workspace
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_workspace")
+  (return-type "WnckWorkspace*")
+)
+
+(define-method move_to_workspace
+  (of-object "WnckWindow")
+  (c-name "wnck_window_move_to_workspace")
+  (return-type "none")
+  (parameters
+    '("WnckWorkspace*" "space")
+  )
+)
+
+(define-method is_pinned
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_pinned")
+  (return-type "gboolean")
+)
+
+(define-method pin
+  (of-object "WnckWindow")
+  (c-name "wnck_window_pin")
+  (return-type "none")
+)
+
+(define-method unpin
+  (of-object "WnckWindow")
+  (c-name "wnck_window_unpin")
+  (return-type "none")
+)
+
+(define-method activate
+  (of-object "WnckWindow")
+  (c-name "wnck_window_activate")
+  (return-type "none")
+  (parameters
+    '("guint32" "timestamp")
+  )
+)
+
+(define-method is_active
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_active")
+  (return-type "gboolean")
+)
+
+(define-method is_most_recently_activated
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_most_recently_activated")
+  (return-type "gboolean")
+)
+
+(define-method activate_transient
+  (of-object "WnckWindow")
+  (c-name "wnck_window_activate_transient")
+  (return-type "none")
+  (parameters
+    '("guint32" "timestamp")
+  )
+)
+
+(define-method transient_is_most_recently_activated
+  (of-object "WnckWindow")
+  (c-name "wnck_window_transient_is_most_recently_activated")
+  (return-type "gboolean")
+)
+
+(define-method get_icon
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_icon")
+  (return-type "GdkPixbuf*")
+)
+
+(define-method get_mini_icon
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_mini_icon")
+  (return-type "GdkPixbuf*")
+)
+
+(define-method get_icon_is_fallback
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_icon_is_fallback")
+  (return-type "gboolean")
+)
+
+(define-method set_icon_geometry
+  (of-object "WnckWindow")
+  (c-name "wnck_window_set_icon_geometry")
+  (return-type "none")
+  (parameters
+    '("int" "x")
+    '("int" "y")
+    '("int" "width")
+    '("int" "height")
+  )
+)
+
+(define-method get_actions
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_actions")
+  (return-type "WnckWindowActions")
+)
+
+(define-method get_state
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_state")
+  (return-type "WnckWindowState")
+)
+
+(define-method get_client_window_geometry
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_client_window_geometry")
+  (return-type "none")
+  (parameters
+    '("int*" "xp")
+    '("int*" "yp")
+    '("int*" "widthp")
+    '("int*" "heightp")
+  )
+)
+
+(define-method get_geometry
+  (of-object "WnckWindow")
+  (c-name "wnck_window_get_geometry")
+  (return-type "none")
+  (parameters
+    '("int*" "xp")
+    '("int*" "yp")
+    '("int*" "widthp")
+    '("int*" "heightp")
+  )
+)
+
+(define-method set_geometry
+  (of-object "WnckWindow")
+  (c-name "wnck_window_set_geometry")
+  (return-type "none")
+  (parameters
+    '("WnckWindowGravity" "gravity")
+    '("WnckWindowMoveResizeMask" "geometry_mask")
+    '("int" "x")
+    '("int" "y")
+    '("int" "width")
+    '("int" "height")
+  )
+)
+
+(define-method is_visible_on_workspace
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_visible_on_workspace")
+  (return-type "gboolean")
+  (parameters
+    '("WnckWorkspace*" "workspace")
+  )
+)
+
+(define-method is_on_workspace
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_on_workspace")
+  (return-type "gboolean")
+  (parameters
+    '("WnckWorkspace*" "workspace")
+  )
+)
+
+(define-method is_in_viewport
+  (of-object "WnckWindow")
+  (c-name "wnck_window_is_in_viewport")
+  (return-type "gboolean")
+  (parameters
+    '("WnckWorkspace*" "workspace")
+  )
+)
+
+
+
+;; From /usr/include/libwnck-1.0/libwnck/wnck-enum-types.h
+
+(define-function wnck_pager_display_mode_get_type
+  (c-name "wnck_pager_display_mode_get_type")
+  (return-type "GType")
+)
+
+(define-function wnck_motion_direction_get_type
+  (c-name "wnck_motion_direction_get_type")
+  (return-type "GType")
+)
+
+(define-function wnck_tasklist_grouping_type_get_type
+  (c-name "wnck_tasklist_grouping_type_get_type")
+  (return-type "GType")
+)
+
+(define-function wnck_client_type_get_type
+  (c-name "wnck_client_type_get_type")
+  (return-type "GType")
+)
+
+(define-function wnck_window_state_get_type
+  (c-name "wnck_window_state_get_type")
+  (return-type "GType")
+)
+
+(define-function wnck_window_actions_get_type
+  (c-name "wnck_window_actions_get_type")
+  (return-type "GType")
+)
+
+(define-function wnck_window_type_get_type
+  (c-name "wnck_window_type_get_type")
+  (return-type "GType")
+)
+
+
+(define-function wnck_window_gravity_get_type
+  (c-name "wnck_window_gravity_get_type")
+  (return-type "GType")
+)
+
+(define-function wnck_window_move_resize_mask_get_type
+  (c-name "wnck_window_move_resize_mask_get_type")
+  (return-type "GType")
+)
+
+
+;; From /usr/include/libwnck-1.0/libwnck/workspace.h
+
+(define-function wnck_workspace_get_type
+  (c-name "wnck_workspace_get_type")
+  (return-type "GType")
+)
+
+(define-method get_number
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_number")
+  (return-type "int")
+)
+
+(define-method get_name
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_name")
+  (return-type "const-char*")
+)
+
+(define-method change_name
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_change_name")
+  (return-type "none")
+  (parameters
+    '("const-char*" "name")
+  )
+)
+
+(define-method get_screen
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_screen")
+  (return-type "WnckScreen*")
+)
+
+(define-method activate
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_activate")
+  (return-type "none")
+  (parameters
+    '("guint32" "timestamp")
+  )
+)
+
+(define-method get_width
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_width")
+  (return-type "int")
+)
+
+(define-method get_height
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_height")
+  (return-type "int")
+)
+
+(define-method get_viewport_x
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_viewport_x")
+  (return-type "int")
+)
+
+(define-method get_viewport_y
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_viewport_y")
+  (return-type "int")
+)
+
+(define-method is_virtual
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_is_virtual")
+  (return-type "gboolean")
+)
+
+
+(define-method get_layout_row
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_layout_row")
+  (return-type "int")
+)
+
+(define-method get_layout_column
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_layout_column")
+  (return-type "int")
+)
+
+(define-method get_neighbor
+  (of-object "WnckWorkspace")
+  (c-name "wnck_workspace_get_neighbor")
+  (return-type "WnckWorkspace*")
+  (parameters
+    '("WnckMotionDirection" "direction")
+  )
+)
+
+
+
+;; From selector.h
+
+(define-function selector_new
+  (c-name "wnck_selector_new")
+  (is-constructor-of "WnckSelector")
+  (return-type "GtkWidget*")
+)
+
+(define-function selector_get_type
+  (c-name "wnck_selector_get_type")
+  (return-type "GType")
+)
+

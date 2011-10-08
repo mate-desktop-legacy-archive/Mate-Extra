@@ -1,0 +1,25 @@
+#!/bin/sh
+
+ChangeLog=$(dirname $0)/ChangeLog
+chmod u+w $ChangeLog 2> /dev/null
+
+if [ -d .bzr ]; then
+  ## Uses the GNU ChangeLog formatter plugin:
+  ##   http://telecom.inescporto.pt/~gjc/gnulog.py
+  export BZR_PLUGIN_PATH=`pwd`/bzrplugins
+  bzr log -v --log-format 'gnu' -r 538..-1   > $ChangeLog
+
+elif [ -d .git ]; then
+
+  $(dirname $0)/gitlog2changelog.py
+
+else
+
+  echo "ERROR: not a bzr or git repository, cannot generate ChangeLog."
+  exit 2;
+
+fi
+
+chmod a-w $ChangeLog
+
+

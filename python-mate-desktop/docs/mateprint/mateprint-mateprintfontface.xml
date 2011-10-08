@@ -1,0 +1,940 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-mateprintfontface">
+  <refnamediv>
+    <refname>mateprint.FontFace</refname>
+    <refpurpose>FontFace object for MatePrint</refpurpose>
+  </refnamediv>
+
+<!-- ************************************ -->
+<!-- BEGIN OF MATEPRINTFONTFACE SYNOPSIS -->
+<!-- ************************************ -->
+
+<refsect1>
+    <title>Synopsis</title>
+
+    <classsynopsis language="python">
+    <ooclass><classname>mateprint.FontFace</classname></ooclass>
+    <ooclass><classname><link linkend="class-gobject">gobject.GObject</link></classname></ooclass>
+    
+    <constructorsynopsis language="python">
+	   <methodname><link linkend="constructor-mateprintfontface">mateprint.FontFace</link></methodname>
+	   <methodparam><parameter role="keyword">face</parameter></methodparam>
+       <methodparam><parameter role="keyword">size</parameter></methodparam>
+    </constructorsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-mateprintfontface--get-ascender">get_ascender</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-descender">get_descender</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-family-name">get_family_name</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-font">get_font</link></methodname>
+        <methodparam><parameter role="keyword">size</parameter></methodparam>
+        <methodparam><parameter role="keyword">xres</parameter></methodparam>
+        <methodparam><parameter role="keyword">yres</parameter></methodparam>
+    </methodsynopsis>    
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-glyph-ps-name">get_glyph_ps_name</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-glyph-stdadvance">get_glyph_stdadvance</link></methodname>
+        <methodparam><parameter role="keyword">glyph</parameter></methodparam>
+        <methodparam><parameter role="keyword">advance</parameter></methodparam>
+    </methodsynopsis> 
+  
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-glyph-stdbbox">get_glyph_stdbbox</link></methodname>
+        <methodparam><parameter role="keyword">glyph</parameter></methodparam>
+        <methodparam><parameter role="keyword">bbox</parameter></methodparam>
+    </methodsynopsis> 
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-glyph-stdkerning">get_glyph_stdkerning</link></methodname>
+        <methodparam><parameter role="keyword">glyph0</parameter></methodparam>
+        <methodparam><parameter role="keyword">glyph1</parameter></methodparam>
+        <methodparam><parameter role="keyword">kerning</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-glyph-stdoutline">get_glyph_stdoutline</link></methodname>
+        <methodparam><parameter role="keyword">glyph</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-glyph-width">get_glyph_width</link></methodname>
+        <methodparam><parameter role="keyword">glyph</parameter></methodparam>
+    </methodsynopsis> 
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-name">get_name</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-num-glyphs">get_num_glyphs</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-ps-name">get_ps_name</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-sample">get_sample</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+  
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-species-name">get_species_name</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-stdbbox">get_stdbbox</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-underline-position">get_underline_position</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+  
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-underline-thickness">get_underline_thickness</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--get-weight-code">get_weight_code</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--is-fixed-width">is_fixed_width</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--is-italic">is_italic</link></methodname>
+        <methodparam></methodparam>
+    </methodsynopsis> 
+    
+    <methodsynopsis language="python">
+        <methodname><link linkend="method-mateprintfontface--lookup-default">lookup_default</link></methodname>
+        <methodparam><parameter role="keyword">unicode</parameter></methodparam>
+    </methodsynopsis> 
+  </classsynopsis>
+
+<programlisting>
+<emphasis role="bold">Functions</emphasis>
+    
+<methodsynopsis language="python">
+    <methodname><link linkend="function-mateprint--font-face-find-closest-from-pango-description">mateprint.font_face_find_closest_from_pango_description</link></methodname>
+    <methodparam><parameter role="keyword">desc</parameter></methodparam>
+</methodsynopsis><methodsynopsis language="python">
+    <methodname><link linkend="function-mateprint--font-face-find-closest-from-pango-font">mateprint.font_face_find_closest_from_pango_font</link></methodname>
+    <methodparam><parameter role="keyword">pfont</parameter></methodparam>
+</methodsynopsis><methodsynopsis language="python">
+    <methodname><link linkend="function-mateprint--font-face-find-closest-from-weight-slant">mateprint.font_face_find_closest_from_weight_slant</link></methodname>
+    <methodparam><parameter role="keyword">family</parameter></methodparam>
+    <methodparam><parameter role="keyword">weight</parameter></methodparam>
+    <methodparam><parameter role="keyword">italic</parameter></methodparam>
+</methodsynopsis><methodsynopsis language="python">
+    <methodname><link linkend="function-mateprint--font-face-find-from-family-and-style">mateprint.font_face_find_from_family_and_style</link></methodname>
+    <methodparam><parameter role="keyword">family</parameter></methodparam>
+    <methodparam><parameter role="keyword">style</parameter></methodparam>
+</methodsynopsis></programlisting>
+
+</refsect1>
+
+<!-- ************************************ -->
+<!-- BEGIN OF MATEPRINTFONTFACE ANCESTRY -->
+<!-- ************************************ -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-mateprintfontface">mateprint.FontFace</link>
+</synopsis>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF MATEPRINTFONTFACE PROPERTIES -->
+<!-- ************************************** -->
+
+<refsect1>
+    <title>Properties</title>
+    
+    <blockquote role="properties">
+        <informaltable pgwide="1" frame="none">
+            <tgroup cols="3">
+                <colspec column="1" colwidth="1in"/>
+                <colspec column="2" colwidth="1in"/>
+                <colspec column="3" colwidth="4in"/>
+                <tbody>
+                    
+                    <row valign="top">
+                        <entry>"FontName"</entry>
+                        <entry>Read</entry>
+                        <entry>The font name.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"FullName"</entry>
+                        <entry>Read</entry>
+                        <entry>The font full name.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"FamilyName"</entry>
+                        <entry>Read</entry>
+                        <entry>The font family name.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"Weight"</entry>
+                        <entry>Read</entry>
+                        <entry>The font weight.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"ItalicAngle"</entry>
+                        <entry>Read</entry>
+                        <entry>The angle of the italic font.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"IsFixedPitch"</entry>
+                        <entry>Read</entry>
+                        <entry><literal>TRUE</literal> if the font is fixed pitch, <literal>FALSE</literal> otherwise.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"FontBBox"</entry>
+                        <entry>Read</entry>
+                        <entry></entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"UnderlinePosition"</entry>
+                        <entry>Read</entry>
+                        <entry>The underline position of the font.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"UnderlineThickness"</entry>
+                        <entry>Read</entry>
+                        <entry>The underline thickness of the font.</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"Version"</entry>
+                        <entry>Read</entry>
+                        <entry></entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"CapHeight"</entry>
+                        <entry>Read</entry>
+                        <entry></entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"XHeight"</entry>
+                        <entry>Read</entry>
+                        <entry></entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"Ascender"</entry>
+                        <entry>Read</entry>
+                        <entry>The ascender of the font</entry>
+                    </row>
+                    <row valign="top">
+                        <entry>"Descender"</entry>
+                        <entry>Read</entry>
+                        <entry>The descender of the font</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+    </blockquote>
+</refsect1>
+
+<!-- *************************************** -->
+<!-- BEGIN OF MATEPRINTFONTFACE DESCRIPTION -->
+<!-- *************************************** -->
+
+<refsect1 id="description-mateprintfontface">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- *************************************** -->
+<!-- BEGIN OF MATEPRINTFONTFACE CONSTRUCTOR -->
+<!-- *************************************** -->
+
+<refsect1 id="constructor-mateprintfontface">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>mateprint.FontFace</methodname>
+	  <methodparam><parameter role="keyword">name</parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+      <varlistentry>
+          <term><parameter role="keyword">name</parameter>&nbsp;:</term>
+          <listitem><simpara> a font name.</simpara></listitem>
+    </varlistentry>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-mateprintfontface"><classname>mateprint.FontFace</classname></link>.
+        </simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-mateprintfontface"><classname>mateprint.FontFace</classname></link> object.
+  </para>
+</refsect1>
+
+<!-- *********************************** -->
+<!-- BEGIN OF MATEPRINTFONTFACE METHODS -->
+<!-- *********************************** -->
+
+<refsect1>
+    <title>Methods</title>
+
+    <refsect2 id="method-mateprintfontface--get-ascender">
+        <title>mateprint.FontFace.get_ascender</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>get_ascender</methodname>
+                    <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+      
+            <variablelist>
+                <varlistentry>
+                    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                    <listitem><simpara> the ascender of the font.</simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>get_ascender</methodname>() method works with the standard Adobe encoding and without kerning or ligatures. 
+            When the text libs get written, this function will be deprecated.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintfontface--get-descender">
+        <title>mateprint.FontFace.get_descender</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_descender</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> the descender of the font.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_descender</methodname>() method works with the standard Adobe encoding and without kerning or ligatures. When the text libs get 
+            written, this function will be deprecated.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintfontface--get-family-name">
+        <title>mateprint.FontFace.get_family_name</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_family_name</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> the name, <literal>None</literal> on error.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_family_name</methodname>() method get the family name.
+        </para>
+    </refsect2>
+ 
+    <refsect2 id="method-mateprintfontface--get-font">
+        <title>mateprint.FontFace.get_font</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_font</methodname>
+                <methodparam><parameter role="keyword">size</parameter></methodparam>
+                <methodparam><parameter role="keyword">xres</parameter></methodparam>
+                <methodparam><parameter role="keyword">yres</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">size</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">xres</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">yres</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> the face of the font.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_face</methodname>() method 
+        </para>
+    </refsect2>
+           
+    <refsect2 id="method-mateprintfontface--get-glyph-ps-name">
+        <title>mateprint.FontFace.get_glyph_ps_name</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_glyph_ps_name</methodname>
+                <methodparam><parameter role="keyword">glyph</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">glyph</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> the full name of the font.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_glyph_ps_name</methodname>() method 
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintfontface--get-glyph-stdadvance">
+        <title>mateprint.FontFace.get_glyph_stdadvance</title>
+            <programlisting><methodsynopsis language="python">
+                <methodname>get_glyph_stdadvance</methodname>
+                    <methodparam><parameter role="keyword">glyph</parameter></methodparam>
+                    <methodparam><parameter role="keyword">advance</parameter></methodparam>
+            </methodsynopsis></programlisting>
+
+            <variablelist>
+                <varlistentry>
+                    <term><parameter role="keyword">glyph</parameter>&nbsp;:</term>
+                    <listitem><simpara> </simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><parameter role="keyword">advance</parameter>&nbsp;:</term>
+                    <listitem><simpara> </simpara></listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                    <listitem><simpara> </simpara></listitem>
+                </varlistentry>
+            </variablelist>
+
+        <para>
+            The <methodname>get_glyph_stdadvance</methodname>() method 
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintfontface--get-glyph-stdbbox">
+        <title>mateprint.FontFace.get_glyph_stdbbox</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_glyph_stdbbox</methodname>
+                <methodparam><parameter role="keyword">glyph</parameter></methodparam>
+                <methodparam><parameter role="keyword">bbox</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">glyph</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">bbox</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_glyph_stdbbox</methodname>() method 
+        </para>
+    </refsect2>
+  
+    <refsect2 id="method-mateprintfontface--get-glyph-stdkerning">
+        <title>mateprint.FontFace.get_glyph_stdkerning</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_glyph_stdkerning</methodname>
+                <methodparam><parameter role="keyword">glyph0</parameter></methodparam>
+                <methodparam><parameter role="keyword">glyph1</parameter></methodparam>
+                <methodparam><parameter role="keyword">kerning</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">glyph0</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">glyph1</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">kerning</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_glyph_stdkerning</methodname>() method 
+        </para>
+    </refsect2>
+  
+    <refsect2 id="method-mateprintfontface--get-glyph-stdoutline">
+        <title>mateprint.FontFace.get_glyph_stdoutline</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_glyph_stdoutline</methodname>
+                <methodparam><parameter role="keyword">glyph</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">glyph</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_glyph_stdoutline</methodname>() method 
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintfontface--get-glyph-width">
+        <title>mateprint.FontFace.get_glyph_width</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_glyph_width</methodname>
+                <methodparam><parameter role="keyword">glyph</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">glyph</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_glyph_width</methodname>() method 
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintfontface--get-name">
+        <title>mateprint.FontFace.get_name</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_name</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_name</methodname>() method 
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintfontface--get-num-glyphs">
+        <title>mateprint.FontFace.get_num_glyphs</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_num_glyphs</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> the number of glyphs, 0 on error.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_num_glyphs</methodname>() method returns the number of glyphs in the font.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintfontface--get-ps-name">
+        <title>mateprint.FontFace.get_ps_name</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_ps_name</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_ps_name</methodname>() method 
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintfontface--get-sample">
+        <title>mateprint.FontFace.get_sample</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_sample</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_sample</methodname>() method 
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintfontface--get-species-name">
+        <title>mateprint.FontFace.get_species_name</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_species_name</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_species_name</methodname>() method 
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintfontface--get-stdbbox">
+        <title>mateprint.FontFace.get_stdbbox</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_stdbbox</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_stdbbox</methodname>() method 
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintfontface--get-underline-position">
+        <title>mateprint.FontFace.get_underline_position</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_underline_position</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> the underline position of the font.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_underline_position</methodname>() method works with the standard Adobe encoding and without kerning or ligatures. When the text libs
+            get written, this function will be deprecated.
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintfontface--get-underline-thickness">
+        <title>mateprint.FontFace.get_underline_thickness</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_underline_thickness</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> the underline thickness of the font.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_underline_thickness</methodname>() method works with the standard Adobe encoding and without kerning or ligatures. When the text 
+            libs get written, this function will be deprecated.
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintfontface--get-weight-code">
+        <title>mateprint.FontFace.get_weight_code</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>get_weight_code</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>get_weight_code</methodname>() method 
+        </para>
+    </refsect2>
+    
+    <refsect2 id="method-mateprintfontface--is-fixed-width">
+        <title>mateprint.FontFace.is_fixed_width</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>is_fixed_width</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>is_fixed_width</methodname>() method 
+        </para>
+    </refsect2>
+
+    <refsect2 id="method-mateprintfontface--is-italic">
+        <title>mateprint.FontFace.is_italic</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>is_italic</methodname>
+                <methodparam></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>is_italic</methodname>() method 
+        </para>
+    </refsect2>  
+    
+    <refsect2 id="method-mateprintfontface--lookup-default">
+        <title>mateprint.FontFace.lookup_default</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>lookup_default</methodname>
+                <methodparam><parameter role="keyword">unicode</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">unicode</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> glyph number, -1 if it is not mapped.</simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>lookup_default</methodname>() method get the glyph number corresponding to a given unicode.
+        </para>
+    </refsect2>
+  </refsect1>
+
+  <!-- ************************************* -->
+  <!-- BEGIN OF MATEPRINTFONTFACE FUNCTIONS -->
+  <!-- ************************************* -->
+  
+  <refsect1>
+      <title>Functions</title>
+      
+      <refsect2 id="function-mateprint--font-face-find-closest-from-pango-description">
+          <title>mateprint.font_face_find_closest_from_pango_description</title>
+          <programlisting><methodsynopsis language="python">
+                  <methodname>mateprint.font_face_find_closest_from_pango_description</methodname>
+                  <methodparam><parameter role="keyword">desc</parameter></methodparam>
+              </methodsynopsis></programlisting>
+          
+          <variablelist>
+              <varlistentry>
+                <term><parameter role="keyword">desc</parameter>&nbsp;:</term>
+                <listitem><simpara> a <link linkend="class-pangofontdescription"><classname>pango.FontDescription</classname></link>.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                  <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                  <listitem><simpara> </simpara></listitem>
+              </varlistentry>
+          </variablelist>
+          
+          <para>
+              The <methodname>font_face_find_closest_from_pango_description</methodname>() function 
+          </para>
+      </refsect2>
+    
+    <refsect2 id="function-mateprint--font-face-find-closest-from-pango-font">
+        <title>mateprint.font_face_find_closest_from_pango_font</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>mateprint.font_face_find_closest_from_pango_font</methodname>
+                <methodparam><parameter role="keyword">pfont</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">pfont</parameter>&nbsp;:</term>
+                <listitem><simpara> a <link linkend="class-pangofont"><classname>pango.Font</classname></link>.</simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>font_face_find_closest_from_pango_font</methodname>() function 
+        </para>
+    </refsect2>
+
+    <refsect2 id="function-mateprint--font-face-find-closest-from-full-name">
+        <title>mateprint.font_find_closest_from_full_name</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>mateprint.font_find_closest_from_full_name</methodname>
+                <methodparam><parameter role="keyword">string</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">string</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>font_find_closest_from_full_name</methodname>() function 
+        </para>
+    </refsect2>
+
+    <refsect2 id="function-mateprint--font-face-find-closest-from-weight-slant">
+        <title>mateprint.font_face_find_closest_from_weight_slant</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>mateprint.font_face_find_closest_from_weight_slant</methodname>
+                <methodparam><parameter role="keyword">family</parameter></methodparam>
+                <methodparam><parameter role="keyword">weight</parameter></methodparam>
+                <methodparam><parameter role="keyword">italic</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">family</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">weight</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">italic</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>font_face_find_closest_from_weight_slant</methodname>() function 
+        </para>
+    </refsect2>
+
+    <refsect2 id="function-mateprint--font-face-find-from-family-and-style">
+        <title>mateprint.font_face_find_from_family_and_style</title>
+        <programlisting><methodsynopsis language="python">
+                <methodname>mateprint.font_face_find_from_family_and_style</methodname>
+                <methodparam><parameter role="keyword">family</parameter></methodparam>
+                <methodparam><parameter role="keyword">style</parameter></methodparam>
+            </methodsynopsis></programlisting>
+        
+        <variablelist>
+            <varlistentry>
+                <term><parameter role="keyword">family</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><parameter role="keyword">style</parameter>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+            <varlistentry>
+                <term><emphasis>Returns</emphasis>&nbsp;:</term>
+                <listitem><simpara> </simpara></listitem>
+            </varlistentry>
+        </variablelist>
+        
+        <para>
+            The <methodname>font_face_find_from_family_and_style</methodname>() function 
+        </para>
+      </refsect2>
+
+  </refsect1> 
+</refentry>

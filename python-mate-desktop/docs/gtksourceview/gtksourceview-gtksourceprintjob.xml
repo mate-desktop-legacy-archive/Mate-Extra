@@ -1,0 +1,1577 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-gtksourceprintjob">
+  <refnamediv>
+    <refname>gtksourceview.SourcePrintJob</refname>
+    <refpurpose>Print Job object for <link linkend="class-gtksourceview">gtksourceview.SourceView</link></refpurpose>
+  </refnamediv>
+
+<!-- *********************************** -->
+<!-- BEGIN OF GTKSOURCEPRINTJOB SYNOPSIS -->
+<!-- *********************************** -->
+
+<refsect1>
+    <title>Synopsis</title>
+
+    <classsynopsis language="python">
+    <ooclass><classname>gtksourceview.SourcePrintJob</classname></ooclass>
+    <ooclass><classname><link linkend="class-gobject">gobject.GObject</link></classname></ooclass>
+    
+    <constructorsynopsis language="python">
+	    <methodname><link linkend="constructor-gtksourceprintjob">gtksourceview.SourcePrintJob</link></methodname>
+	    <methodparam><parameter role="keyword">buffer</parameter><initializer>None</initializer></methodparam>
+    </constructorsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-config">set_config</link></methodname>
+	    <methodparam><parameter role="keyword">config</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-config">get_config</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-buffer">set_buffer</link></methodname>
+	    <methodparam><parameter role="keyword">buffer</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-buffer">get_buffer</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--setup-from-view">setup_from_view</link></methodname>
+	    <methodparam><parameter role="keyword">view</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-tabs-width">set_tabs_width</link></methodname>
+	    <methodparam><parameter role="keyword">tabs_width</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-tabs-width">get_tabs_width</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-wrap-mode">set_wrap_mode</link></methodname>
+	    <methodparam><parameter role="keyword">wrap</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-wrap-mode">get_wrap_mode</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-highlight">set_highlight</link></methodname>
+	    <methodparam><parameter role="keyword">highlight</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-highlight">get_highlight</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-font-desc">set_font_desc</link></methodname>
+	    <methodparam><parameter role="keyword">font_desc</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-font-desc">get_font_desc</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-font">set_font</link></methodname>
+	    <methodparam><parameter role="keyword">highlight</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-font">get_font</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-numbers-font-desc">set_numbers_font_desc</link></methodname>
+	    <methodparam><parameter role="keyword">desc</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-numbers-font-desc">get_numbers_font_desc</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-numbers-font">set_numbers_font</link></methodname>
+	    <methodparam><parameter role="keyword">font_name</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-numbers-font">get_numbers_font</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-font">get_font</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-print-numbers">set_print_numbers</link></methodname>
+	    <methodparam><parameter role="keyword">interval</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-print-numbers">get_print_numbers</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-text-margins">set_text_margins</link></methodname>
+	    <methodparam><parameter role="keyword">top</parameter></methodparam>
+        <methodparam><parameter role="keyword">bottom</parameter></methodparam>
+        <methodparam><parameter role="keyword">left</parameter></methodparam>
+        <methodparam><parameter role="keyword">right</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-text-margins">get_text_margins</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--print">print</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--print-range">print_range</link></methodname>
+	    <methodparam><parameter role="keyword">start</parameter></methodparam>
+        <methodparam><parameter role="keyword">end</parameter></methodparam>
+    </methodsynopsis>
+    
+     <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--print-range-async">print_range_async</link></methodname>
+	    <methodparam><parameter role="keyword">start</parameter></methodparam>
+        <methodparam><parameter role="keyword">end</parameter></methodparam>
+    </methodsynopsis>   
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--cancel">cancel</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>    
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-print-job">get_print_job</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>    
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-page">get_page</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>    
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-page-count">get_page_count</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>    
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-print-context">get_print_context</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>    
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-print-header">set_print_header</link></methodname>
+	    <methodparam><parameter role="keyword">setting</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-print-header">get_print_header</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-print-footer">set_print_footer</link></methodname>
+	    <methodparam><parameter role="keyword">setting</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-print-footer">get_print_footer</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-header-footer-font-desc">set_header_footer_font_desc</link></methodname>
+	    <methodparam><parameter role="keyword">desc</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-header-footer-font-desc">get_header_footer_font_desc</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-header-footer-font">set_header_footer_font</link></methodname>
+	    <methodparam><parameter role="keyword">font_name</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--get-header-footer-font">get_header_footer_font</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-header-format">set_header_format</link></methodname>
+	    <methodparam><parameter role="keyword">left</parameter></methodparam>
+        <methodparam><parameter role="keyword">center</parameter></methodparam>
+        <methodparam><parameter role="keyword">right</parameter></methodparam>
+        <methodparam><parameter role="keyword">separator</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourceprintjob--set-footer-format">set_footer_format</link></methodname>
+	    <methodparam><parameter role="keyword">left</parameter></methodparam>
+        <methodparam><parameter role="keyword">center</parameter></methodparam>
+        <methodparam><parameter role="keyword">right</parameter></methodparam>
+        <methodparam><parameter role="keyword">separator</parameter></methodparam>
+    </methodsynopsis>
+  </classsynopsis>  
+</refsect1>
+
+<!-- *********************************** -->
+<!-- BEGIN OF GTKSOURCEPRINTJOB ANCESTRY -->
+<!-- *********************************** -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-gtksourceprintjob">gtksourceview.SourcePrintJob</link>
+</synopsis>
+</refsect1>
+
+<!-- ************************************* -->
+<!-- BEGIN OF GTKSOURCEPRINTJOB PROPERTIES -->
+<!-- ************************************* -->
+
+<refsect1>
+    <title>Properties</title>
+
+    <blockquote role="properties">
+      <informaltable pgwide="1" frame="none">
+	<tgroup cols="3">
+	  <colspec column="1" colwidth="1in"/>
+	  <colspec column="2" colwidth="1in"/>
+	  <colspec column="3" colwidth="4in"/>
+	  <tbody>
+
+	    <row valign="top">
+	      <entry>"buffer"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>The <link linked="class-gtksourcebuffer">gtksourceview.SourceBuffer</link> to print.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"config"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Configuration options for the print job.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"font"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>MateFont name to use for the document text (deprecated), default None.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"font-desc"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Font to use for the document text (e.g. "Monospace 10").</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"header-footer-font"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>MateFont name to use for the header and footer (deprecated), default None.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"header-footer-font-desc"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Font to use for headers and footers (e.g. "Monospace 10").</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"highlight"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Whether to print the document with highlighted syntax, default True.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"numbers-font"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>MateFont name to use for the line numbers (deprecated), default None.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"numbers-font-desc"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Font description to use for the line numbers (e.g. "Monospace 10").</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"print-footer"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Whether to print a footer in each page, default False.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"print-header"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Whether to print an header in each page, default False.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"print-numbers"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Interval of printed line numbers (0 means no numbers), allowed values: minor or equal to 100, default value: 1.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"tabs-width"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Width in equivalent space characters of tabs, allowed values: minor or equal to 100, default value: 8.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"wrap-mode"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>Word wrapping mode, default value: GTK_WRAP_NONE.</entry>
+	    </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+ </blockquote>
+</refsect1>
+
+<!-- ******************************************** -->
+<!-- BEGIN OF GTKSOURCEPRINTJOB SIGNAL PROTOTYPES -->
+<!-- ******************************************** -->
+
+<refsect1>
+    <title>Signal Prototypes</title>
+    <variablelist>
+      <varlistentry>
+        <term><link linkend="signal-gtksourceprintjob--begin-page">"begin-page"</link></term>
+        <listitem>
+          <methodsynopsis language="python"><methodname>callback</methodname>
+            <methodparam><parameter>sourceprintjob</parameter></methodparam>
+            <methodparam><parameter>arg1</parameter></methodparam>
+            <methodparam><parameter>user_param1</parameter></methodparam>
+            <methodparam><parameter>...</parameter></methodparam>
+          </methodsynopsis>
+        </listitem>
+      </varlistentry>
+      
+      <varlistentry>
+        <term><link linkend="signal-gtksourceprintjob--finished">"finished"</link></term>
+        <listitem>
+          <methodsynopsis language="python"><methodname>callback</methodname>
+            <methodparam><parameter>sourceprintjob</parameter></methodparam>
+            <methodparam><parameter>arg1</parameter></methodparam>
+            <methodparam><parameter>user_param1</parameter></methodparam>
+            <methodparam><parameter>...</parameter></methodparam>
+          </methodsynopsis>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF GTKSOURCEPRINTJOB DESCRIPTION -->
+<!-- ************************************** -->
+
+<refsect1 id="description-gtksourceprintjob">
+    <title>Description</title>
+
+    <para>
+        The <link linkend="class-gtksourceprintjob">gtksourceview.SourcePrintJob</link> object is used to print the contents of a 
+        <link linkend="class-gtksourcebuffer">gtksourceview.SourceBuffer</link>. You can set various configuration options to 
+        customize the printed output, and the result is obtained as a 
+        <link linkend="class-gtksourceview">gtksourceview.SourcePrintJob</link> object, which you can then preview with 
+        <link linkend="class-mateprintuijobpreview">mateprint.ui.JobPreview</link> or print directly with 
+        <link linkend="class-mateprintjob-print">mateprint.Job.print</link>
+    </para>
+    
+    <para>
+        Printing can be done synchronously and asynchronously. Asynchronous methods are provided so you can give the user feedback 
+        about what's going on when printing long documents (see the <link linkend="signal-gtksourceprintjob--begin-page">"begin-page"</link> 
+        and <link linkend="signal-gtksourceprintjob--finished">"finished"</link> signals).
+    </para>
+    
+    <para>
+        The task of a <link linkend="class-gtksourceprintjob">gtksourceview.SourcePrintJob</link> is to produce a 
+        <link linkend="class-mateprintjob">mateprint.Job</link>. What this means is that once you get the resulting 
+        <link linkend="class-mateprintjob">mateprint.Job</link>, you might reuse the 
+        <link linkend="class-gtksourceprintjob">gtksourceview.SourcePrintJob</link> to produce another output 
+        (with different configuration options for example) or just unreference it and forget about it. 
+        The lifetime of the produced object is independent of that of the producer.
+    </para>
+    
+    <para>
+        Before printing you should at least set the <link linkend="class-gtksourcebuffer">gtksourceview.SourceBuffer</link> 
+        you want to print (using <link linkend="method-gtksourceprintjob--set-buffer">set_buffer</link>). 
+        Besides that, you might configure word wrapping, font, whether to print hightlighted text as seen in the 
+        <link linkend="class-gtksourceview">gtksourceview.SourceView</link>, line numbers, basic headers and footers.
+    </para>
+    
+    <para>
+        <link linkend="class-gtksourceprintjob">gtksourceview.SourcePrintJob</link> can print basic headers and footers in each page. 
+        You can specify the time like strings for text on the left, right and center of the top and bottom of the page. 
+        You can also make <link linkend="class-gtksourceprintjob">gtksourceview.SourcePrintJob</link> draw a separator line between 
+        the text document and the header and footer. And you can specify a different font (from that used for the text document).
+    </para>
+    
+    <para>
+        Customization beyond that is possible, but you have to do the printing manually. To do that, you need to connect to the 
+        <link linkend="signal-gtksourceprintjob--begin-page">"begin-page"</link> signal of the job and allocate some space in the 
+        page using <link linkend="method-gtksourceprintjob--set-text-margins">set_text_margins</link>. 
+        Whenever <link linkend="class-gtksourceprintjob">gtksourceview.SourcePrintJob</link> is about to print a new text page, 
+        the signal will be emitted. You can then get the <link linkend="class-mateprintcontext">mateprint.Context</link> being 
+        used with <link linkend="method-gtksourceprintjob--get-print-context">get_print_context</link> and use Mate Print functions 
+        directly. The space you allocate is inside the document margins defined in the specified 
+        <link linkend="class-mateprintconfig">mateprint.Config</link>, but outside all print area used by 
+        <link linkend="class-gtksourceprintjob">gtksourceview.SourcePrintJob</link> itself.
+    </para>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF GTKSOURCEPRINTJOB CONSTRUCTOR -->
+<!-- ************************************** -->
+
+<refsect1 id="constructor-gtksourceprintjob">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>gtksourceview.SourcePrintJob</methodname>
+	  <methodparam><parameter role="keyword">buffer</parameter><initializer>None</initializer></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+	    <term><parameter role="keyword">buffer</parameter>&nbsp;:</term>
+	    <listitem><simpara>a <link linkend="class-gtksourcebuffer"><classname>gtksourceview.SourceBuffer</classname></link> 
+      or <literal>None</literal></simpara></listitem>
+    </varlistentry>
+
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-gtksourceprintjob"><classname>gtksourceview.SourcePrintJob</classname></link>.
+        </simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-gtksourceprintjob"><classname>gtksourceview.SourcePrintJob</classname></link> object.
+  </para>
+</refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF GTKSOURCEPRINTJOB METHODS -->
+<!-- ********************************** -->
+
+<refsect1>
+    <title>Methods</title>
+
+  <refsect2 id="method-gtksourceprintjob--set-config">
+      <title>gtksourceview.SourcePrintJob.set_config</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_config</methodname>
+	  <methodparam><parameter role="keyword">config</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">config</parameter>&nbsp;:</term>
+	  <listitem><simpara> a <link linkend="class-mateprintconfig">mateprint.Config</link> object to get printing configuration from.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_config</methodname>() method sets the print configuration for the job. 
+        If you don't set a configuration object for the print job, when needed one 
+        will be created with <link linkend="class-mateprintconfig">mateprint.Config</link>
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-config">
+    <title>gtksourceview.SourcePrintJob.get_config</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_config</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the <link linkend="class-mateprintconfig">mateprint.Config</link> for the print job.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_config</methodname>() method gets the current <link linkend="class-mateprintconfig">mateprint.Config</link> 
+      the print job will use. If not previously set, this will create a default configuration and return it. The returned object reference 
+      is owned by the print job.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-buffer">
+      <title>gtksourceview.SourcePrintJob.set_buffer</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_buffer</methodname>
+	  <methodparam><parameter role="keyword">buffer</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">buffer</parameter>&nbsp;:</term>
+	  <listitem><simpara> a <link linkend="class-gtksourcebuffer">gtksourceview.SourceBuffer</link>.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_buffer</methodname>() method sets the <link linkend="class-gtksourcebuffer">gtksourceview.SourceBuffer</link> 
+        the print job will print. You need to specify a buffer to print, either by the use of this function or by creating the print 
+        job passing the parameter <methodparam>buffer</methodparam> at the constructor.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-buffer">
+    <title>gtksourceview.SourcePrintJob.get_buffer</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_buffer</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the <link linkend="class-gtksourcebuffer">gtksourceview.SourceBuffer</link> to print.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_buffer</methodname>() method gets the <link linkend="class-gtksourcebuffer">gtksourceview.SourceBuffer</link> 
+      the print job would print. The returned object reference (if non <literal>None</literal>) is owned by the job object and should not be unreferenced
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--setup-from-view">
+      <title>gtksourceview.SourcePrintJob.setup_from_view</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>setup_from_view</methodname>
+	  <methodparam><parameter role="keyword">view</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	    <varlistentry>
+	        <term><parameter role="keyword">view</parameter>&nbsp;:</term>
+	        <listitem><simpara> a <link linkend="class-gtksourceview">gtksourceview.SourceView</link> to get configuration from.</simpara></listitem>
+	    </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>setup_from_view</methodname>() method is a convenience function to set several configuration options at once, 
+        so that the printed output matches view. The options set are buffer (if not set already), tabs width, highlighting, wrap mode 
+        and default font.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-tabs-width">
+      <title>gtksourceview.SourcePrintJob.set_tabs_width</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_tabs_width</methodname>
+	  <methodparam><parameter role="keyword">tabs_width</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">tabs_width</parameter>&nbsp;:</term>
+	  <listitem><simpara> the number of equivalent spaces for a tabulation.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_tabs_width</methodname>() method sets the width (in equivalent spaces) of tabulations for the printed text. 
+        The width in printing units will be calculated as the width of a string containing tabs_width spaces of the default font. 
+        Tabulation stops are set for the full width of printed text.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-tabs-width">
+    <title>gtksourceview.SourcePrintJob.get_tabs_width</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_tabs_width</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the width (in equivalent spaces) of a tabulation.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_tabs_width</methodname>() method determines the configured width (in equivalent spaces) of tabulations. 
+      The default value is 8.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-wrap-mode">
+      <title>gtksourceview.SourcePrintJob.set_wrap_mode</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_wrap_mode</methodname>
+	  <methodparam><parameter role="keyword">wrap</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">wrap</parameter>&nbsp;:</term>
+	  <listitem><simpara> the wrap mode.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_wrap_mode</methodname>() method sets the wrap mode for lines of text larger than the printable width. 
+        See GtkWrapMode for a definition of the possible values.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-wrap-mode">
+    <title>gtksourceview.SourcePrintJob.get_wrap_mode</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_wrap_mode</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the current wrapping mode for the print job.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_tabs_width</methodname>() method determines the wrapping style for text lines wider than the printable width. 
+      The default is no wrapping.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-highlight">
+      <title>gtksourceview.SourcePrintJob.set_highlight</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_highlight</methodname>
+	  <methodparam><parameter role="keyword">highlight</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">highlight</parameter>&nbsp;:</term>
+	  <listitem><simpara> if <literal>TRUE</literal> the printed text should be highlighted.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_highlight</methodname>() method sets whether the printed text will be highlighted according to the buffer 
+        rules. Both color and font style are applied.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-highlight">
+    <title>gtksourceview.SourcePrintJob.get_highlight</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_highlight</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara><literal>TRUE</literal> if the printed output will be highlighted.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_tabs_width</methodname>() method determines if the job is configured to print the text highlighted with 
+      colors and font styles. Note that highlighting will happen only if the buffer to print has highlighting activated.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-font-desc">
+      <title>gtksourceview.SourcePrintJob.set_font_desc</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_font_desc</methodname>
+	  <methodparam><parameter role="keyword">desc</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">desc</parameter>&nbsp;:</term>
+	  <listitem><simpara>  the PangoFontDescription for the default font.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_font_desc</methodname>() method sets the default font for the printed text.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-font-desc">
+    <title>gtksourceview.SourcePrintJob.get_font_desc</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_font_desc</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the current text font description.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_font_desc</methodname>() method determines the default font to be used for the printed text. 
+      The returned string is of the form "Fontfamily Style Size", for example "Monospace Regular 10.0".
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-font">
+      <title>gtksourceview.SourcePrintJob.set_font</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_font</methodname>
+	  <methodparam><parameter role="keyword">font_name</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">font_name</parameter>&nbsp;:</term>
+	  <listitem><simpara> the name of the default font.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_font</methodname>() method sets the default font for the printed text. 
+        <parameter>font_name</parameter> should be a full font name MatePrint can understand (e.g. "Monospace Regular 10.0")
+	  </para>
+      
+      <note>
+        Note that font_name is a MateFont name not a Pango font description string. This function is deprecated since MateFont 
+        is no longer used when implementing printing for GtkSourceView; 
+        you should use <link linkend="method-gtksourceprintjob--set-font-desc">set_font_desc</link> instead.
+      </note>
+      
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-font">
+    <title>gtksourceview.SourcePrintJob.get_font</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_font</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara>  a newly allocated string with the name of the current text font.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_font</methodname>() method determines the default font to be used for the printed text. 
+      The returned string is of the form "Fontfamily Style Size", for example "Monospace Regular 10.0". 
+    </para>
+    
+    <note>
+        Note that font_name is a MateFont name not a Pango font description string. This function is deprecated since MateFont 
+        is no longer used when implementing printing for GtkSourceView; 
+        you should use <link linkend="method-gtksourceprintjob--get-font-desc">get_font_desc</link> instead.
+    </note>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-numbers-font-desc">
+      <title>gtksourceview.SourcePrintJob.set_numbers_font_desc</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_numbers_font_desc</methodname>
+	  <methodparam><parameter role="keyword">desc</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">desc</parameter>&nbsp;:</term>
+	  <listitem><simpara>  the PangoFontDescription for the default font for the line numbers or <literal>None</literal>.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_numbers_font_desc</methodname>() method sets the font for printing line numbers on the left margin. 
+        If <literal>None</literal> is supplied, the default font (i.e. the one being used for the text) will be used instead.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-numbers-font-desc">
+    <title>gtksourceview.SourcePrintJob.get_numbers_font_desc</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_numbers_font_desc</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the line numbers font description or <literal>None</literal>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_font_desc</methodname>() method determines the font to be used for the line numbers. 
+      This function might return <literal>None</literal> if a specific font for numbers has not been set.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-numbers-font">
+      <title>gtksourceview.SourcePrintJob.set_numbers_font</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_numbers_font</methodname>
+	  <methodparam><parameter role="keyword">font_name</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">font_name</parameter>&nbsp;:</term>
+	  <listitem><simpara> the full name of the font for line numbers, or <literal>None</literal>.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_font</methodname>() method sets the font for printing line numbers on the left margin. 
+        If <literal>None</literal> is supplied, the default font (i.e. the one being used for the text) will be used instead.
+	  </para>
+      
+      <note>
+        Note that font_name is a MateFont name not a Pango font description string. This function is deprecated since MateFont 
+        is no longer used when implementing printing for GtkSourceView; 
+        you should use <link linkend="method-gtksourceprintjob--set-numbers-font">set_numbers_font</link> instead.
+      </note>
+      
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-numbers-font">
+    <title>gtksourceview.SourcePrintJob.get_numbers_font</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_numbers_font</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a newly allocated string with the name of the current line numbers font, or <literal>None</literal>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_numbers_font</methodname>() method determines the font to be used for the line numbers. 
+      The returned string is of the form "Fontfamily Style Size", for example "Monospace Regular 10.0". 
+      This function might return <literal>None</literal> if a specific font for numbers has not been set.
+    </para>
+    
+    <note>
+        Note that font_name is a MateFont name not a Pango font description string. This function is deprecated since MateFont 
+        is no longer used when implementing printing for GtkSourceView; 
+        you should use <link linkend="method-gtksourceprintjob--get-numbers-font">get_numbers_font</link> instead.
+    </note>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-print-numbers">
+      <title>gtksourceview.SourcePrintJob.set_print_numbers</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_print_numbers</methodname>
+	  <methodparam><parameter role="keyword">interval</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">interval</parameter>&nbsp;:</term>
+	  <listitem><simpara> interval for printed line numbers.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+        The <methodname>set_print_numbers</methodname>() method sets the interval for printed line numbers. 
+        If interval is 0 no numbers will be printed. If greater than 0, a number will be printed every interval lines 
+        (i.e. 1 will print all line numbers).
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-print-numbers">
+    <title>gtksourceview.SourcePrintJob.get_print_numbers</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_print_numbers</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the interval of printed line numbers.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_font_desc</methodname>() method determines the interval used for line number printing. 
+      If the value is 0, no line numbers will be printed. The default value is 1 (i.e. numbers printed in all lines).
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-text-margins">
+      <title>gtksourceview.SourcePrintJob.set_text_margins</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_text_margins</methodname>
+	  <methodparam><parameter role="keyword">top</parameter></methodparam>
+      <methodparam><parameter role="keyword">bottom</parameter></methodparam>
+      <methodparam><parameter role="keyword">left</parameter></methodparam>
+      <methodparam><parameter role="keyword">right</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	    <varlistentry>
+	        <term><parameter role="keyword">top</parameter>&nbsp;:</term>
+	        <listitem><simpara> the top user margin.</simpara></listitem>
+	    </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	    <varlistentry>
+	        <term><parameter role="keyword">bottom</parameter>&nbsp;:</term>
+	        <listitem><simpara> the bottom user margin.</simpara></listitem>
+	    </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	    <varlistentry>
+	        <term><parameter role="keyword">left</parameter>&nbsp;:</term>
+	        <listitem><simpara> the left user margin.</simpara></listitem>
+	    </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	    <varlistentry>
+	        <term><parameter role="keyword">right</parameter>&nbsp;:</term>
+	        <listitem><simpara> the right user margin.</simpara></listitem>
+	    </varlistentry>
+      </variablelist>
+      <para>
+        The <methodname>set_text_margins</methodname>() method sets the four user margins for the print job. 
+        These margins are in addition to the document margins provided in the MatePrintConfig and will not be used for headers, 
+        footers or line numbers (those are calculated separatedly). You can print in the space allocated by these margins by 
+        connecting to the "begin_page" signal. The space is around the printed text, and inside the margins specified in 
+        the MatePrintConfig.
+	  </para>
+      
+      <para>
+        The margin numbers are given in device units. If any of the given values is less than 0, that particular 
+        margin is not altered by this function.
+      </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-text-margins">
+    <title>gtksourceview.SourcePrintJob.get_text_margins</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_text_margins</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a list of margin numbers.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_text_margins</methodname>() method determines the user set margins for the job. 
+      This function retrieves the values previously set by 
+      <link linkend="method-gtksourceprintjob--set-text-margins">set_text_margins</link>. 
+      The default for all four margins is 0. Any of the pointers can be <literal>None</literal> if you want to ignore that value.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--print">
+    <title>gtksourceview.SourcePrintJob.print</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>print</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+      <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara>  a closed MatePrintJob with the printed document, or <literal>None</literal> if printing 
+          could not be completed.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>print</methodname>() method produces a MatePrintJob with the printed document. 
+      The whole contents of the configured <link linkend="class-gtksourcebuffer"><classname>gtksourceview.SourceBuffer</classname></link> 
+      are printed. The returned job is already closed and ready to be previewed 
+      (using <link linkend="class-mateprintuijobpreview">mateprint.ui.JobPreview</link>) or printed directly. 
+      The caller of this function owns a reference to the returned object, so job can be destroyed and the output will still be valid, 
+      or the document can be printed again with different settings.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--print-range">
+    <title>gtksourceview.SourcePrintJob.print_range</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>print_range</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+      
+      <variablelist>
+	    <varlistentry>
+	        <term><parameter role="keyword">start</parameter>&nbsp;:</term>
+	        <listitem><simpara> the start of the region of text to print.</simpara></listitem>
+	    </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	    <varlistentry>
+	        <term><parameter role="keyword">end</parameter>&nbsp;:</term>
+	        <listitem><simpara> the end of the region of text to print.</simpara></listitem>
+	    </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a closed MatePrintJob with the text from start to end printed, or <literal>None</literal> 
+          if job could not print.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>print_range</methodname>() method is similar to <link linkend="method-gtksourceprintjob--print">print</link>, 
+      except you can specify a range of text to print. The passed GtkTextIter values might be out of order.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--print-range-async">
+    <title>gtksourceview.SourcePrintJob.print_range_async</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>print_range_async</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+      
+      <variablelist>
+	    <varlistentry>
+	        <term><parameter role="keyword">start</parameter>&nbsp;:</term>
+	        <listitem><simpara> the start of the region of text to print.</simpara></listitem>
+	    </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	    <varlistentry>
+	        <term><parameter role="keyword">end</parameter>&nbsp;:</term>
+	        <listitem><simpara> the end of the region of text to print.</simpara></listitem>
+	    </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> <literal>True</literal> if the print started.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>print_range_async</methodname>() method starts to print job asynchronously. 
+      This function will ready the job for printing and install an idle handler that will render one page at a time.
+    </para>
+    
+    <para>
+        This function will not return immediatly, as only page rendering is done asynchronously. 
+        Text retrieval and paginating happens within this function. Also, if highlighting is enabled, the whole buffer 
+        needs to be highlighted first.
+    </para>
+    
+    <para>
+        To get notification when the job has finished, you must connect to the 
+        <link linkend="signal-gtksourceprintjob--finished">"finished"</link> signal. 
+        After this signal is emitted you can retrieve the resulting MatePrintJob with 
+        <link linkend="method-gtksourceprintjob--get-print-job">get_print_job</link>. 
+        You may cancel the job with <link linkend="method-gtksourceprintjob--cancel">cancel</link>
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--cancel">
+    <title>gtksourceview.SourcePrintJob.cancel</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>cancel</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+
+    <para>
+      The <methodname>cancel</methodname>() method cancels an asynchronous printing operation. 
+      This will remove any pending print idle handler and unref the current MatePrintJob
+    </para>
+    
+    <para>
+        Note that if you got a reference to the job's MatePrintJob 
+        (using <link linkend="method-gtksourceprintjob--get-print-job">get_print_job</link>) it will not be destroyed 
+        (since you hold a reference to it), but it will not be closed either. 
+        If you wish to show or print the partially printed document you need to close it yourself.
+    </para>
+    
+    <para>
+        This function has no effect when called from a non-asynchronous print operation.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-print-job">
+    <title>gtksourceview.SourcePrintJob.get_print_job</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_print_job</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a new reference to the job's MatePrintJob, or <literal>None</literal>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_font_desc</methodname>() method gets a reference to the MatePrintJob which the job is printing 
+      or has recently finished printing. You need to unref the returned object.
+    </para>
+    	You may call this function in the middle of an asynchronous printing operation, but the returned MatePrintJob 
+    	will not be closed until the last page is printed and the "finished" signal is emitted.
+    <para>
+        
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-page">
+    <title>gtksourceview.SourcePrintJob.get_page</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_page</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the current page number.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_page</methodname>() method determines the currently printing page number. 
+      This function is only valid while printing (either synchronously or asynchronously).
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-page-count">
+    <title>gtksourceview.SourcePrintJob.get_page_count</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_page_count</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the number of pages of the printed job.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_page_count</methodname>() method determines the total number of pages the job will print. 
+      The returned value is only meaninful after pagination has finished. In practice, for synchronous printing this means when 
+      <link linkend="signal-gtksourceprintjob--begin-page">"begin-page"</link> is emitted, or after 
+      <link linkend="method-gtksourceprintjob--print-range-async">print_range_async</link> has returned.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--get-print-context">
+    <title>gtksourceview.SourcePrintJob.get_print_context</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_print_context</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the current MatePrintContext. The returned object is owned by job.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_print_context</methodname>() method determines the MatePrintContext of the current job. 
+      This function is only valid while printing. Normally you would use this function to print in the margins set by 
+      <link linkend="method-gtksourceprintjob--set-text-margins">set_text_margins</link> in a handler for the 
+      <link linkend="signal-gtksourceprintjob--begin-page">"begin-page"</link> signal.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-print-header">
+	  <title>gtksourceview.SourcePrintJob.set_print_header</title>
+	  <programlisting><methodsynopsis language="python">
+			  <methodname>set_print_header</methodname>
+			  <methodparam><parameter role="keyword">setting</parameter></methodparam>
+		  </methodsynopsis></programlisting>
+	  
+	  <variablelist>
+		  <varlistentry>
+			  <term><parameter role="keyword">setting</parameter>&nbsp;:</term>
+              <listitem><simpara> if <literal>TRUE</literal> you want the header to be printed.</simpara></listitem>
+		  </varlistentry>
+	  </variablelist>
+	  
+	  <para>
+          The <methodname>set_print_header</methodname>() method sets whether you want to print a header in each page. The default header consists of three pieces 
+          of text and an optional line separator, configurable with <link linkend="method-gtksourceprintjob--set-header-format">set_header_format</link>.
+	  </para>
+  </refsect2>
+  
+  <refsect2 id="method-gtksourceprintjob--get-print-header">
+	  <title>gtksourceview.SourcePrintJob.get_print_header</title>
+	  
+	  <programlisting><methodsynopsis language="python">
+			  <methodname>get_print_header</methodname>
+			  <methodparam></methodparam></methodsynopsis></programlisting>
+	  <variablelist>
+		  <varlistentry>
+			  <term><emphasis>Returns</emphasis>&nbsp;:</term>
+              <listitem><simpara> <literal>TRUE</literal> if the header is set to be printed.</simpara></listitem>
+		  </varlistentry>
+	  </variablelist>
+	  
+	  <para>
+          The <methodname>get_print_header</methodname>() method Determines if a header is set to be printed for each page. A header will be printed if this 
+          function returns <literal>TRUE</literal> and some format strings have been specified with 
+          <link linkend="method-gtksourceprintjob--set-header-format">set_header_format</link>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-print-footer">
+      <title>gtksourceview.SourcePrintJob.set_print_footer</title>
+      <programlisting><methodsynopsis language="python">
+              <methodname>set_print_footer</methodname>
+              <methodparam><parameter role="keyword">setting</parameter></methodparam>
+          </methodsynopsis></programlisting>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">setting</parameter>&nbsp;:</term>
+              <listitem><simpara> if <literal>TRUE</literal> you want the footer to be printed.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <para>
+          The <methodname>set_print_footer</methodname>() method sets whether you want to print a footer in each page. The default header consists of three pieces 
+          of text and an optional line separator, configurable with <link linkend="method-gtksourceprintjob--set-footer-format">set_footer_format</link>.
+      </para>
+      
+      <note>
+        By default the footer format is unspecified, and if it's empty it will not be printed, regardless of this setting.
+      </note>
+  </refsect2>
+  
+  <refsect2 id="method-gtksourceprintjob--get-print-footer">
+      <title>gtksourceview.SourcePrintJob.get_print_footer</title>
+      
+      <programlisting><methodsynopsis language="python">
+              <methodname>get_print_footer</methodname>
+              <methodparam></methodparam></methodsynopsis></programlisting>
+      <variablelist>
+          <varlistentry>
+              <term><emphasis>Returns</emphasis>&nbsp;:</term>
+              <listitem><simpara> <literal>TRUE</literal> if the footer is set to be printed.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <para>
+          The <methodname>get_print_footer</methodname>() method determines if a footer is set to be printed for each page. A header will be printed if this 
+          function returns <literal>TRUE</literal> and some format strings have been specified with 
+          <link linkend="method-gtksourceprintjob--set-footer-format">set_header_format</link>.
+      </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-header-footer-font-desc">
+      <title>gtksourceview.SourcePrintJob.set_header_footer_font_desc</title>
+      <programlisting><methodsynopsis language="python">
+              <methodname>set_header_footer_font_desc</methodname>
+              <methodparam><parameter role="keyword">desc</parameter></methodparam>
+          </methodsynopsis></programlisting>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">desc</parameter>&nbsp;:</term>
+              <listitem><simpara> the PangoFontDescription for the font to be used in headers and footers, or <literal>None</literal>.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <para>
+          The <methodname>set_header_footer_font_desc</methodname>() method sets the font for printing headers and footers. If <literal>None</literal> is supplied,
+          the default font (i.e. the one being used for the text) will be used instead.
+      </para>
+  </refsect2>
+  
+  <refsect2 id="method-gtksourceprintjob--get-header-footer-desc">
+      <title>gtksourceview.SourcePrintJob.get_header_footer_font_desc</title>
+      
+      <programlisting><methodsynopsis language="python">
+              <methodname>get_header_footer_font_desc</methodname>
+              <methodparam></methodparam></methodsynopsis></programlisting>
+      <variablelist>
+          <varlistentry>
+              <term><emphasis>Returns</emphasis>&nbsp;:</term>
+              <listitem><simpara>  the header and footer font description or <literal>None</literal>.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <para>
+          The <methodname>get_header_footer_font_desc</methodname>() method determines the font to be used for the header and footer. This function might return 
+          <literal>None</literal> if a specific font has not been set.
+      </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-header-footer-font">
+      <title>gtksourceview.SourcePrintJob.set_header_footer_font</title>
+      <programlisting><methodsynopsis language="python">
+              <methodname>set_header_footer_font</methodname>
+              <methodparam><parameter role="keyword">font_name</parameter></methodparam>
+          </methodsynopsis></programlisting>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">font_name</parameter>&nbsp;:</term>
+              <listitem><simpara> the full name of the font to be used in headers and footers, or <literal>None</literal>.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <para>
+          The <methodname>set_header_footer_font</methodname>() method sets the font for printing headers and footers. If <literal>None</literal> is supplied, the 
+          default font (i.e. the one being used for the text) will be used instead.
+      </para>
+      
+      <note>
+          the result is a MateFont name not a Pango font description string. This function is deprecated since MateFont is no longer used when implementing 
+          printing for <link linkend="class-gtksourceview">gtksourceview.SourceView</link>; you should use 
+          <link linkend="method-gtksourceprintjob--set-header-footer-font-desc">set_header_footer_font_desc</link> instead.
+      </note>
+  </refsect2>
+  
+  <refsect2 id="method-gtksourceprintjob--get-header-footer-font">
+      <title>gtksourceview.SourcePrintJob.get_header_footer_font</title>
+      
+      <programlisting><methodsynopsis language="python">
+              <methodname>get_header_footer_font</methodname>
+              <methodparam></methodparam></methodsynopsis></programlisting>
+      <variablelist>
+          <varlistentry>
+              <term><emphasis>Returns</emphasis>&nbsp;:</term>
+              <listitem><simpara>  a newly allocated string with the name of the current header and footer font, or <literal>None</literal>.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <para>
+          The <methodname>get_header_footer_font_desc</methodname>() method determines the font to be used for the header and footer. The returned string is of the
+          form "Fontfamily Style Size", for example "Monospace Regular 10.0". The returned value should be freed when no longer needed. This function might return 
+          <literal>None</literal> if a specific font has not been set.
+      </para>
+      
+      <note>
+          the result is a MateFont name not a Pango font description string. This function is deprecated since MateFont is no longer used when implementing 
+          printing for <link linkend="class-gtksourceview">gtksourceview.SourceView</link>; you should use 
+          <link linkend="method-gtksourceprintjob--get-header-footer-font-desc">get_header_footer_font_desc</link> instead.
+      </note>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-header-format">
+      <title>gtksourceview.SourcePrintJob.set_header_format</title>
+      <programlisting><methodsynopsis language="python">
+              <methodname>set_header_format</methodname>
+              <methodparam><parameter role="keyword">left</parameter></methodparam>
+              <methodparam><parameter role="keyword">center</parameter></methodparam>
+              <methodparam><parameter role="keyword">right</parameter></methodparam>
+              <methodparam><parameter role="keyword">separator</parameter></methodparam>
+          </methodsynopsis></programlisting>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">left</parameter>&nbsp;:</term>
+              <listitem><simpara> a format string to print on the left of the header.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">center</parameter>&nbsp;:</term>
+              <listitem><simpara> a format string to print on the center of the header.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">right</parameter>&nbsp;:</term>
+              <listitem><simpara> a format string to print on the right of the header.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">right</parameter>&nbsp;:</term>
+              <listitem><simpara> <literal>TRUE</literal> if you want a separator line to be printed.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      <para>
+          The <methodname>set_header_format</methodname>() method sets time() like header format strings, to be printed on the left, center and right of the top of
+          each page. The strings may include strftime(3) codes which will be expanded at print time. All time() codes are accepted, with the addition of N for the 
+          page number and Q for the page count.
+      </para>
+      
+      <para>
+          Separator specifies if a solid line should be drawn to separate the header from the document text.
+      </para>
+      
+      <para>
+          If <literal>None</literal> is given for any of the three arguments, that particular string will not be printed. For the header to be printed, in addition to specifying format strings, you need to enable header printing with <link linkend="method-gtksourceprintjob--set-print-header">set_print_header</link>.
+      </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourceprintjob--set-footer-format">
+      <title>gtksourceview.SourcePrintJob.set_footer_format</title>
+      <programlisting><methodsynopsis language="python">
+              <methodname>set_footer_format</methodname>
+              <methodparam><parameter role="keyword">left</parameter></methodparam>
+              <methodparam><parameter role="keyword">center</parameter></methodparam>
+              <methodparam><parameter role="keyword">right</parameter></methodparam>
+              <methodparam><parameter role="keyword">separator</parameter></methodparam>
+          </methodsynopsis></programlisting>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">left</parameter>&nbsp;:</term>
+              <listitem><simpara> a format string to print on the left of the footer.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">center</parameter>&nbsp;:</term>
+              <listitem><simpara> a format string to print on the center of the footer.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">right</parameter>&nbsp;:</term>
+              <listitem><simpara> a format string to print on the right of the footer.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      
+      <variablelist>
+          <varlistentry>
+              <term><parameter role="keyword">right</parameter>&nbsp;:</term>
+              <listitem><simpara> <literal>TRUE</literal> if you want a separator line to be printed.</simpara></listitem>
+          </varlistentry>
+      </variablelist>
+      <para>
+          The <methodname>set_footer_format</methodname>() method sets time() like footer format strings, to be printed on the left, center and right of the top of
+          each page. The strings may include strftime(3) codes which will be expanded at print time. All time() codes are accepted, with the addition of N for the 
+          page number and Q for the page count.
+      </para>
+      
+      <para>
+          Separator specifies if a solid line should be drawn to separate the header from the document text.
+      </para>
+      
+      <para>
+          If <literal>None</literal> is given for any of the three arguments, that particular string will not be printed. For the header to be printed, in addition to specifying format strings, you need to enable header printing with <link linkend="method-gtksourceprintjob--set-print-footer">set_print_footer</link>.
+      </para>
+  </refsect2>
+</refsect1>
+  
+<!-- ******************************** -->
+<!-- BEGIN OF GTKSOURCEBUFFER SIGNALS -->
+<!-- ******************************** --> 
+ 
+<refsect1>
+    <title>Signals</title>
+
+  <refsect2 id="signal-gtksourceprintjob--begin-page">
+    <title>The "begin-page" gtksourceprintjob.SourcePrintJob Signal</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>callback</methodname>
+	  <methodparam><parameter>sourceprintjob</parameter></methodparam>
+      <methodparam><parameter>user_param1</parameter></methodparam>
+	  <methodparam><parameter>...</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter>sourceprintjob</parameter>&nbsp;:</term>
+	      <listitem><simpara>the sourceprintjob that received the signal</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>user_param1</parameter>&nbsp;:</term>
+        <listitem><simpara>the first user parameter (if any) specified with the 
+        <link linkend="method-gobject--connect"><methodname>connect</methodname>()</link> method</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>...</parameter>&nbsp;:</term>
+	      <listitem><simpara>additional user parameters (if any)</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+        The "begin-page" signal is emitted when the sourceprintjob is about to print a new text page. You can connect to this signal to provide the user with 
+        feedback about the progress of printing, or to customize the printed page by for example, printing your own headers and footers.
+    </para>
+  </refsect2>
+
+  <refsect2 id="signal-gtksourceprintjob--finished">
+    <title>The "finished" gtksourceprintjob.SourcePrintJob Signal</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>callback</methodname>
+	  <methodparam><parameter>sourceprintjob</parameter></methodparam>
+      <methodparam><parameter>user_param1</parameter></methodparam>
+	  <methodparam><parameter>...</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter>sourcebuffer</parameter>&nbsp;:</term>
+	      <listitem><simpara>the sourcebuffer that received the signal</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>user_param1</parameter>&nbsp;:</term>
+        <listitem><simpara>the first user parameter (if any) specified with the 
+        <link linkend="method-gobject--connect"><methodname>connect</methodname>()</link> method</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>...</parameter>&nbsp;:</term>
+	      <listitem><simpara>additional user parameters (if any)</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+        The "finished" signal is emitted whenever an asynchronous print job has finished. You can connect to this signal to get notification when a job has 
+        finished printing. When it's emitted, the MatePrintJob the sourceprintjob was producing has been closed and it can be either previewed or printed to the 
+        physical device.
+    </para>
+
+  </refsect2>
+</refsect1>
+</refentry>

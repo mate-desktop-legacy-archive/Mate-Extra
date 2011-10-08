@@ -1,0 +1,113 @@
+/* -*- Mode: C; indent-tabs-mode: nil; c-basic-offset: 4; tab-width: 8 -*- */
+%%
+headers
+#define NO_IMPORT_PYGOBJECT
+#include "pygobject.h"
+#include <brasero-media.h>
+#include <brasero-drive.h>
+#include <brasero-drive-selection.h>
+#include <brasero-medium-selection.h>
+#include <brasero-volume.h>
+#include <brasero-units.h>
+
+#include "config.h"
+
+%%
+modulename braseromedia
+%%
+import gio.Icon as PyGIcon_Type
+import gio.Drive as PyGDrive_Type
+import gio.Volume as PyGVolume_Type
+import gtk.ComboBox as PyGtkComboBox_Type
+import gobject.GObject as PyGObject_Type
+import gtk.Window as PyGtkWindow_Type
+%%
+ignore-glob
+  *_get_type
+%%
+ignore
+  brasero_media_quark
+%%
+override brasero_medium_monitor_get_media kwargs
+static PyObject *
+_wrap_brasero_medium_monitor_get_media (PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+  static char *kwlist[] = { "MediaType", NULL };
+  BraseroMediaType media_type;
+  GSList *list, *l;
+  PyObject *ret;
+
+  if (!PyArg_ParseTupleAndKeywords (args, kwargs, "i:BraseroMediumMonitor.get_media", kwlist, &media_type))
+    return NULL;
+
+  pyg_begin_allow_threads;
+
+  list = brasero_medium_monitor_get_media (BRASERO_MEDIUM_MONITOR (self->obj), media_type);
+
+  pyg_end_allow_threads;
+
+  ret = PyList_New(0);
+  for (l = list; l; l = l->next) {
+    BraseroMedium *medium = l->data;
+    PyObject *item = pygobject_new ((GObject *) medium);
+    PyList_Append(ret, item);
+    Py_DECREF(item);
+    g_object_unref(medium);
+  }
+  g_slist_free(list);
+
+  return ret;
+}
+%%
+override brasero_medium_monitor_get_drives kwargs
+static PyObject *
+_wrap_brasero_medium_monitor_get_drives (PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+  static char *kwlist[] = { "DriveType", NULL };
+  BraseroDriveType drive_type;
+  GSList *list, *l;
+  PyObject *ret;
+
+  if (!PyArg_ParseTupleAndKeywords (args, kwargs, "i:BraseroMediumMonitor.get_drives", kwlist, &drive_type))
+    return NULL;
+
+  pyg_begin_allow_threads;
+
+  list = brasero_medium_monitor_get_drives (BRASERO_MEDIUM_MONITOR (self->obj), drive_type);
+
+  pyg_end_allow_threads;
+
+  ret = PyList_New(0);
+  for (l = list; l; l = l->next) {
+    BraseroDrive *drive = l->data;
+    PyObject *item = pygobject_new ((GObject *) drive);
+    PyList_Append(ret, item);
+    Py_DECREF(item);
+    g_object_unref (drive);
+  }
+  g_slist_free(list);
+
+  return ret;
+}
+%%
+override brasero_drive_lock kwargs
+static PyObject *
+_wrap_brasero_drive_lock(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "reason", NULL };
+    char *reason, *failure = NULL;
+    int ret;
+
+    /* This was ported from former cajaburn module */
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,"s:BraseroDrive.lock", kwlist, &reason))
+        return NULL;
+    
+    ret = brasero_drive_lock (BRASERO_DRIVE(self->obj), reason, &failure);
+    if (failure) {
+        PyErr_SetString(PyExc_RuntimeError, failure);
+        return NULL;
+    }
+    return PyInt_FromLong (ret);
+}
+
+

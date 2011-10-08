@@ -1,0 +1,191 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-gtksourcetagtable">
+  <refnamediv>
+    <refname>gtksourceview.SourceTagTable</refname>
+    <refpurpose>Text Tag Table object for <link linkend="class-gtksourceview">gtksourceview.SourceView</link></refpurpose>
+  </refnamediv>
+
+<!-- *********************************** -->
+<!-- BEGIN OF GTKSOURCETAGTABLE SYNOPSIS -->
+<!-- *********************************** -->
+
+<refsect1>
+  <title>Synopsis</title>
+
+  <classsynopsis language="python">
+  <ooclass><classname>gtksourceview.SourceTagTable</classname></ooclass>
+  <ooclass><classname><link linkend="class-gtktexttagtable">gtk.TextTagTable</link></classname></ooclass>
+
+  <constructorsynopsis language="python">
+	  <methodname><link linkend="constructor-gtksourcetagtable">gtksourceview.SourceTagTable</link></methodname>
+	  <methodparam><parameter role="keyword"></parameter></methodparam>
+  </constructorsynopsis>     
+
+  <methodsynopsis language="python">
+	  <methodname><link linkend="method-gtksourcetagtable--add-tags">add_tags</link></methodname>
+	  <methodparam><parameter role="keyword">tags</parameter></methodparam>
+  </methodsynopsis>
+    
+  <methodsynopsis language="python">
+  	<methodname><link linkend="method-gtksourcetagtable--remove-source-tags">remove_source_tags</link></methodname>
+	  <methodparam></methodparam>
+  </methodsynopsis>
+</classsynopsis>
+</refsect1>
+
+<!-- *********************************** -->
+<!-- BEGIN OF GTKSOURCETAGTABLE ANCESTRY -->
+<!-- *********************************** -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-gtktexttagtable">gtk.TextTagTable</link>
+    +-- <link linkend="class-gtksourcetagtable">gtksourceview.SourceTagTable</link>
+</synopsis>
+</refsect1>
+
+<!-- ******************************************** -->
+<!-- BEGIN OF GTKSOURCETAGTABLE SIGNAL PROTOTYPES -->
+<!-- ******************************************** -->
+
+<refsect1>
+    <title>Signal Prototypes</title>
+    <variablelist>
+      
+      <varlistentry>
+        <term>"<link linkend="signal-gtksourcetagtable--changed">"changed"</link>"</term>
+        <listitem>
+          <methodsynopsis language="python"><methodname>callback</methodname>
+            <methodparam><parameter>sourcetagtable</parameter></methodparam>
+            <methodparam><parameter>user_param1</parameter></methodparam>
+            <methodparam><parameter>...</parameter></methodparam>
+          </methodsynopsis>
+        </listitem>
+      </varlistentry>
+      
+    </variablelist>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF GTKSOURCETAGTABLE DESCRIPTION -->
+<!-- ************************************** -->
+
+<refsect1 id="description-gtksourcetagtable">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF GTKSOURCETAGTABLE CONSTRUCTOR -->
+<!-- ************************************** -->
+
+<refsect1 id="constructor-gtksourcetagtable">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>gtksourceview.SourceTagTable</methodname>
+	  <methodparam><parameter role="keyword"></parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-gtksourcetagtable"><classname>gtksourceview.SourceTagTable</classname></link>.</simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-gtksourcetagtable"><classname>gtksourceview.SourceTagTable</classname></link> object.
+  </para>
+</refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF GTKSOURCETAGTABLE METHODS -->
+<!-- ********************************** -->
+
+<refsect1>
+  <title>Methods</title>
+
+  <refsect2 id="method-gtksourcetagtable--add-tags">
+    <title>gtksourceview.SourceTagTable.add_tags</title>
+    <programlisting><methodsynopsis language="python">
+	    <methodname>add_tags</methodname>
+  	  <methodparam><parameter role="keyword">tags</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+  	  <term><parameter role="keyword">tags</parameter>&nbsp;:</term>
+	    <listitem><simpara> a list conteining 
+      <link linkend="class-gtksourcetagtable"><classname>gtksourceview.SourceTag</classname></link> objects.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+      <para>
+      The <methodname>set_check_brackets</methodname>() method Add a list of tag to the table. 
+      The added tags are assigned the highest priority in the table.
+      If a tag is already present in table or has the same name as an already-added tag, then it is not added to the table.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcetagtable--remove-source-tags">
+    <title>gtksourceview.SourceTagTable.remove_source_tags</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>remove_source_tags</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+
+    <para>
+      The <methodname>remove_source_tags</methodname>() method removes all the source tags from the table. 
+      This will remove the table's reference to the tags, so be careful - tags will end up destroyed if you don't have a reference to them.
+    </para>
+  </refsect2>
+
+</refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF GTKSOURCETAGTABLE SIGNALS -->
+<!-- ********************************** --> 
+ 
+<refsect1>
+    <title>Signals</title>
+
+  <refsect2 id="signal-gtksourcetagtable--changed">
+    <title>The "changed" gtksourceview.SourceTagTable Signal</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>callback</methodname>
+	  <methodparam><parameter>sourcetagtable</parameter></methodparam>
+	  <methodparam><parameter>user_param1</parameter></methodparam>
+	  <methodparam><parameter>...</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter>sourcetagtable</parameter>&nbsp;:</term>
+	      <listitem><simpara>the sourcetagtable that received the signal</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>user_param1</parameter>&nbsp;:</term>
+          <listitem><simpara>the first user parameter (if any) specified with the 
+          <link linkend="method-gobject--connect"><methodname>connect</methodname>()</link> method</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>...</parameter>&nbsp;:</term>
+	      <listitem><simpara>additional user parameters (if any)</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The "changed" signal is emitted when ....
+    </para>
+
+  </refsect2>
+</refsect1>
+</refentry>

@@ -1,0 +1,1913 @@
+;; -*- scheme -*-
+; object definitions ...
+(define-object Burn
+  (in-module "Brasero")
+  (parent "GObject")
+  (c-name "BraseroBurn")
+  (gtype-id "BRASERO_TYPE_BURN")
+)
+
+(define-object BurnDialog
+  (in-module "Brasero")
+  (parent "GtkDialog")
+  (c-name "BraseroBurnDialog")
+  (gtype-id "BRASERO_TYPE_BURN_DIALOG")
+)
+
+(define-object BurnOptions
+  (in-module "Brasero")
+  (parent "GtkDialog")
+  (c-name "BraseroBurnOptions")
+  (gtype-id "BRASERO_TYPE_BURN_OPTIONS")
+)
+
+(define-object BurnSession
+  (in-module "Brasero")
+  (parent "GObject")
+  (c-name "BraseroBurnSession")
+  (gtype-id "BRASERO_TYPE_BURN_SESSION")
+)
+
+(define-object SessionSpan
+  (in-module "Brasero")
+  (parent "BraseroBurnSession")
+  (c-name "BraseroSessionSpan")
+  (gtype-id "BRASERO_TYPE_SESSION_SPAN")
+)
+
+(define-object SessionCfg
+  (in-module "Brasero")
+  (parent "BraseroSessionSpan")
+  (c-name "BraseroSessionCfg")
+  (gtype-id "BRASERO_TYPE_SESSION_CFG")
+)
+
+(define-object ToolDialog
+  (in-module "Brasero")
+  (parent "GtkDialog")
+  (c-name "BraseroToolDialog")
+  (gtype-id "BRASERO_TYPE_TOOL_DIALOG")
+)
+
+(define-object SumDialog
+  (in-module "Brasero")
+  (parent "BraseroToolDialog")
+  (c-name "BraseroSumDialog")
+  (gtype-id "BRASERO_TYPE_SUM_DIALOG")
+)
+
+(define-object BlankDialog
+  (in-module "Brasero")
+  (parent "BraseroToolDialog")
+  (c-name "BraseroBlankDialog")
+  (gtype-id "BRASERO_TYPE_BLANK_DIALOG")
+)
+
+(define-object Track
+  (in-module "Brasero")
+  (parent "GObject")
+  (c-name "BraseroTrack")
+  (gtype-id "BRASERO_TYPE_TRACK")
+)
+
+(define-object TrackData
+  (in-module "Brasero")
+  (parent "BraseroTrack")
+  (c-name "BraseroTrackData")
+  (gtype-id "BRASERO_TYPE_TRACK_DATA")
+)
+
+(define-object TrackDataCfg
+  (in-module "Brasero")
+  (parent "BraseroTrackData")
+  (c-name "BraseroTrackDataCfg")
+  (gtype-id "BRASERO_TYPE_TRACK_DATA_CFG")
+)
+
+(define-object TrackDisc
+  (in-module "Brasero")
+  (parent "BraseroTrack")
+  (c-name "BraseroTrackDisc")
+  (gtype-id "BRASERO_TYPE_TRACK_DISC")
+)
+
+(define-object TrackImage
+  (in-module "Brasero")
+  (parent "BraseroTrack")
+  (c-name "BraseroTrackImage")
+  (gtype-id "BRASERO_TYPE_TRACK_IMAGE")
+)
+
+(define-object TrackImageCfg
+  (in-module "Brasero")
+  (parent "BraseroTrackImage")
+  (c-name "BraseroTrackImageCfg")
+  (gtype-id "BRASERO_TYPE_TRACK_IMAGE_CFG")
+)
+
+(define-object TrackStream
+  (in-module "Brasero")
+  (parent "BraseroTrack")
+  (c-name "BraseroTrackStream")
+  (gtype-id "BRASERO_TYPE_TRACK_STREAM")
+)
+
+(define-object TrackStreamCfg
+  (in-module "Brasero")
+  (parent "BraseroTrackStream")
+  (c-name "BraseroTrackStreamCfg")
+  (gtype-id "BRASERO_TYPE_TRACK_STREAM_CFG")
+)
+
+;; Enumerations and flags ...
+
+(define-enum BurnResult
+  (in-module "Brasero")
+  (c-name "BraseroBurnResult")
+  (values
+    '("ok" "BRASERO_BURN_OK")
+    '("err" "BRASERO_BURN_ERR")
+    '("retry" "BRASERO_BURN_RETRY")
+    '("cancel" "BRASERO_BURN_CANCEL")
+    '("running" "BRASERO_BURN_RUNNING")
+    '("dangerous" "BRASERO_BURN_DANGEROUS")
+    '("not-ready" "BRASERO_BURN_NOT_READY")
+    '("not-running" "BRASERO_BURN_NOT_RUNNING")
+    '("need-reload" "BRASERO_BURN_NEED_RELOAD")
+    '("not-supported" "BRASERO_BURN_NOT_SUPPORTED")
+  )
+)
+
+(define-flags BurnFlag
+  (in-module "Brasero")
+  (c-name "BraseroBurnFlag")
+  (values
+    '("none" "BRASERO_BURN_FLAG_NONE")
+    '("check-size" "BRASERO_BURN_FLAG_CHECK_SIZE")
+    '("nograce" "BRASERO_BURN_FLAG_NOGRACE")
+    '("eject" "BRASERO_BURN_FLAG_EJECT")
+    '("merge" "BRASERO_BURN_FLAG_MERGE")
+    '("multi" "BRASERO_BURN_FLAG_MULTI")
+    '("append" "BRASERO_BURN_FLAG_APPEND")
+    '("burnproof" "BRASERO_BURN_FLAG_BURNPROOF")
+    '("no-tmp-files" "BRASERO_BURN_FLAG_NO_TMP_FILES")
+    '("dummy" "BRASERO_BURN_FLAG_DUMMY")
+    '("overburn" "BRASERO_BURN_FLAG_OVERBURN")
+    '("blank-before-write" "BRASERO_BURN_FLAG_BLANK_BEFORE_WRITE")
+    '("fast-blank" "BRASERO_BURN_FLAG_FAST_BLANK")
+    '("dao" "BRASERO_BURN_FLAG_DAO")
+    '("raw" "BRASERO_BURN_FLAG_RAW")
+    '("last" "BRASERO_BURN_FLAG_LAST")
+  )
+)
+
+(define-enum BurnAction
+  (in-module "Brasero")
+  (c-name "BraseroBurnAction")
+  (values
+    '("none" "BRASERO_BURN_ACTION_NONE")
+    '("getting-size" "BRASERO_BURN_ACTION_GETTING_SIZE")
+    '("creating-image" "BRASERO_BURN_ACTION_CREATING_IMAGE")
+    '("recording" "BRASERO_BURN_ACTION_RECORDING")
+    '("blanking" "BRASERO_BURN_ACTION_BLANKING")
+    '("checksum" "BRASERO_BURN_ACTION_CHECKSUM")
+    '("drive-copy" "BRASERO_BURN_ACTION_DRIVE_COPY")
+    '("file-copy" "BRASERO_BURN_ACTION_FILE_COPY")
+    '("analysing" "BRASERO_BURN_ACTION_ANALYSING")
+    '("transcoding" "BRASERO_BURN_ACTION_TRANSCODING")
+    '("preparing" "BRASERO_BURN_ACTION_PREPARING")
+    '("leadin" "BRASERO_BURN_ACTION_LEADIN")
+    '("recording-cd-text" "BRASERO_BURN_ACTION_RECORDING_CD_TEXT")
+    '("fixating" "BRASERO_BURN_ACTION_FIXATING")
+    '("leadout" "BRASERO_BURN_ACTION_LEADOUT")
+    '("start-recording" "BRASERO_BURN_ACTION_START_RECORDING")
+    '("finished" "BRASERO_BURN_ACTION_FINISHED")
+    '("last" "BRASERO_BURN_ACTION_LAST")
+  )
+)
+
+(define-flags ImageFS
+  (in-module "Brasero")
+  (c-name "BraseroImageFS")
+  (values
+    '("fs-none" "BRASERO_IMAGE_FS_NONE")
+    '("fs-iso" "BRASERO_IMAGE_FS_ISO")
+    '("fs-udf" "BRASERO_IMAGE_FS_UDF")
+    '("fs-joliet" "BRASERO_IMAGE_FS_JOLIET")
+    '("fs-video" "BRASERO_IMAGE_FS_VIDEO")
+    '("fs-symlink" "BRASERO_IMAGE_FS_SYMLINK")
+    '("iso-fs-level-3" "BRASERO_IMAGE_ISO_FS_LEVEL_3")
+    '("iso-fs-deep-directory" "BRASERO_IMAGE_ISO_FS_DEEP_DIRECTORY")
+    '("fs-any" "BRASERO_IMAGE_FS_ANY")
+  )
+)
+
+(define-flags StreamFormat
+  (in-module "Brasero")
+  (c-name "BraseroStreamFormat")
+  (values
+    '("audio-format-none" "BRASERO_AUDIO_FORMAT_NONE")
+    '("audio-format-undefined" "BRASERO_AUDIO_FORMAT_UNDEFINED")
+    '("audio-format-4-channel" "BRASERO_AUDIO_FORMAT_4_CHANNEL")
+    '("audio-format-raw" "BRASERO_AUDIO_FORMAT_RAW")
+    '("audio-format-ac3" "BRASERO_AUDIO_FORMAT_AC3")
+    '("audio-format-mp2" "BRASERO_AUDIO_FORMAT_MP2")
+    '("audio-format-44100" "BRASERO_AUDIO_FORMAT_44100")
+    '("audio-format-48000" "BRASERO_AUDIO_FORMAT_48000")
+    '("video-format-undefined" "BRASERO_VIDEO_FORMAT_UNDEFINED")
+    '("video-format-vcd" "BRASERO_VIDEO_FORMAT_VCD")
+    '("video-format-video-dvd" "BRASERO_VIDEO_FORMAT_VIDEO_DVD")
+    '("metadata-info" "BRASERO_METADATA_INFO")
+  )
+)
+
+(define-flags ImageFormat
+  (in-module "Brasero")
+  (c-name "BraseroImageFormat")
+  (values
+    '("none" "BRASERO_IMAGE_FORMAT_NONE")
+    '("bin" "BRASERO_IMAGE_FORMAT_BIN")
+    '("cue" "BRASERO_IMAGE_FORMAT_CUE")
+    '("clone" "BRASERO_IMAGE_FORMAT_CLONE")
+    '("cdrdao" "BRASERO_IMAGE_FORMAT_CDRDAO")
+    '("any" "BRASERO_IMAGE_FORMAT_ANY")
+  )
+)
+
+(define-enum BurnError
+  (in-module "Brasero")
+  (c-name "BraseroBurnError")
+  (values
+    '("error-none" "BRASERO_BURN_ERROR_NONE")
+    '("error-general" "BRASERO_BURN_ERROR_GENERAL")
+    '("error-plugin-misbehavior" "BRASERO_BURN_ERROR_PLUGIN_MISBEHAVIOR")
+    '("error-slow-dma" "BRASERO_BURN_ERROR_SLOW_DMA")
+    '("error-permission" "BRASERO_BURN_ERROR_PERMISSION")
+    '("error-drive-busy" "BRASERO_BURN_ERROR_DRIVE_BUSY")
+    '("error-disk-space" "BRASERO_BURN_ERROR_DISK_SPACE")
+    '("error-empty" "BRASERO_BURN_ERROR_EMPTY")
+    '("error-input-invalid" "BRASERO_BURN_ERROR_INPUT_INVALID")
+    '("error-output-none" "BRASERO_BURN_ERROR_OUTPUT_NONE")
+    '("error-file-invalid" "BRASERO_BURN_ERROR_FILE_INVALID")
+    '("error-file-folder" "BRASERO_BURN_ERROR_FILE_FOLDER")
+    '("error-file-playlist" "BRASERO_BURN_ERROR_FILE_PLAYLIST")
+    '("error-file-not-found" "BRASERO_BURN_ERROR_FILE_NOT_FOUND")
+    '("error-file-not-local" "BRASERO_BURN_ERROR_FILE_NOT_LOCAL")
+    '("error-write-medium" "BRASERO_BURN_ERROR_WRITE_MEDIUM")
+    '("error-write-image" "BRASERO_BURN_ERROR_WRITE_IMAGE")
+    '("error-image-invalid" "BRASERO_BURN_ERROR_IMAGE_INVALID")
+    '("error-image-joliet" "BRASERO_BURN_ERROR_IMAGE_JOLIET")
+    '("error-image-last-session" "BRASERO_BURN_ERROR_IMAGE_LAST_SESSION")
+    '("error-medium-none" "BRASERO_BURN_ERROR_MEDIUM_NONE")
+    '("error-medium-invalid" "BRASERO_BURN_ERROR_MEDIUM_INVALID")
+    '("error-medium-space" "BRASERO_BURN_ERROR_MEDIUM_SPACE")
+    '("error-medium-no-data" "BRASERO_BURN_ERROR_MEDIUM_NO_DATA")
+    '("error-medium-not-writable" "BRASERO_BURN_ERROR_MEDIUM_NOT_WRITABLE")
+    '("error-medium-not-rewritable" "BRASERO_BURN_ERROR_MEDIUM_NOT_REWRITABLE")
+    '("error-medium-need-reloading" "BRASERO_BURN_ERROR_MEDIUM_NEED_RELOADING")
+    '("error-bad-checksum" "BRASERO_BURN_ERROR_BAD_CHECKSUM")
+    '("warning-checksum" "BRASERO_BURN_WARNING_CHECKSUM")
+    '("warning-insert-after-copy" "BRASERO_BURN_WARNING_INSERT_AFTER_COPY")
+  )
+)
+
+(define-enum SessionError
+  (in-module "Brasero")
+  (c-name "BraseroSessionError")
+  (values
+    '("valid" "BRASERO_SESSION_VALID")
+    '("no-cd-text" "BRASERO_SESSION_NO_CD_TEXT")
+    '("not-ready" "BRASERO_SESSION_NOT_READY")
+    '("empty" "BRASERO_SESSION_EMPTY")
+    '("no-input-image" "BRASERO_SESSION_NO_INPUT_IMAGE")
+    '("unknown-image" "BRASERO_SESSION_UNKNOWN_IMAGE")
+    '("no-input-medium" "BRASERO_SESSION_NO_INPUT_MEDIUM")
+    '("no-output" "BRASERO_SESSION_NO_OUTPUT")
+    '("insufficient-space" "BRASERO_SESSION_INSUFFICIENT_SPACE")
+    '("overburn-necessary" "BRASERO_SESSION_OVERBURN_NECESSARY")
+    '("not-supported" "BRASERO_SESSION_NOT_SUPPORTED")
+    '("disc-protected" "BRASERO_SESSION_DISC_PROTECTED")
+  )
+)
+
+(define-enum StatusType
+  (in-module "Brasero")
+  (c-name "BraseroStatusType")
+  (values
+    '("ok" "BRASERO_STATUS_OK")
+    '("error" "BRASERO_STATUS_ERROR")
+    '("question" "BRASERO_STATUS_QUESTION")
+    '("information" "BRASERO_STATUS_INFORMATION")
+  )
+)
+
+(define-enum TrackDataCfgColumn
+  (in-module "Brasero")
+  (c-name "BraseroTrackDataCfgColumn")
+  (values
+    '("name" "BRASERO_DATA_TREE_MODEL_NAME")
+    '("uri" "BRASERO_DATA_TREE_MODEL_URI")
+    '("mime-desc" "BRASERO_DATA_TREE_MODEL_MIME_DESC")
+    '("mime-icon" "BRASERO_DATA_TREE_MODEL_MIME_ICON")
+    '("size" "BRASERO_DATA_TREE_MODEL_SIZE")
+    '("show-percent" "BRASERO_DATA_TREE_MODEL_SHOW_PERCENT")
+    '("percent" "BRASERO_DATA_TREE_MODEL_PERCENT")
+    '("style" "BRASERO_DATA_TREE_MODEL_STYLE")
+    '("color" "BRASERO_DATA_TREE_MODEL_COLOR")
+    '("editable" "BRASERO_DATA_TREE_MODEL_EDITABLE")
+    '("is-file" "BRASERO_DATA_TREE_MODEL_IS_FILE")
+    '("is-loading" "BRASERO_DATA_TREE_MODEL_IS_LOADING")
+    '("is-imported" "BRASERO_DATA_TREE_MODEL_IS_IMPORTED")
+    '("col-num" "BRASERO_DATA_TREE_MODEL_COL_NUM")
+  )
+)
+
+(define-flags ChecksumType
+  (in-module "Brasero")
+  (c-name "BraseroChecksumType")
+  (values
+    '("none" "BRASERO_CHECKSUM_NONE")
+    '("detect" "BRASERO_CHECKSUM_DETECT")
+    '("md5" "BRASERO_CHECKSUM_MD5")
+    '("md5-file" "BRASERO_CHECKSUM_MD5_FILE")
+    '("sha1" "BRASERO_CHECKSUM_SHA1")
+    '("sha1-file" "BRASERO_CHECKSUM_SHA1_FILE")
+    '("sha256" "BRASERO_CHECKSUM_SHA256")
+    '("sha256-file" "BRASERO_CHECKSUM_SHA256_FILE")
+  )
+)
+
+;; From brasero-blank-dialog.h
+
+(define-function brasero_blank_dialog_get_type
+  (c-name "brasero_blank_dialog_get_type")
+  (return-type "GType")
+  (parameters
+  )
+)
+
+(define-function brasero_blank_dialog_new
+  (c-name "brasero_blank_dialog_new")
+  (is-constructor-of "BraseroBlankDialog")
+  (return-type "BraseroBlankDialog*")
+  (parameters
+  )
+)
+
+
+
+;; From brasero-burn-dialog.h
+
+(define-function brasero_burn_dialog_get_type
+  (c-name "brasero_burn_dialog_get_type")
+  (return-type "GType")
+  (parameters
+  )
+)
+
+(define-function brasero_burn_dialog_new
+  (c-name "brasero_burn_dialog_new")
+  (is-constructor-of "BraseroBurnDialog")
+  (return-type "GtkWidget*")
+)
+
+(define-method run
+  (of-object "BraseroBurnDialog")
+  (c-name "brasero_burn_dialog_run")
+  (return-type "gboolean")
+  (parameters
+    '("BraseroBurnSession*" "session")
+  )
+)
+
+(define-method cancel
+  (of-object "BraseroBurnDialog")
+  (c-name "brasero_burn_dialog_cancel")
+  (return-type "gboolean")
+  (parameters
+    '("gboolean" "force_cancellation")
+  )
+)
+
+
+
+;; From brasero-burn.h
+
+(define-function brasero_burn_get_type
+  (c-name "brasero_burn_get_type")
+  (return-type "GType")
+  (parameters
+  )
+)
+
+(define-function brasero_burn_new
+  (c-name "brasero_burn_new")
+  (is-constructor-of "BraseroBurn")
+  (return-type "BraseroBurn*")
+  (parameters
+  )
+)
+
+(define-method record
+  (of-object "BraseroBurn")
+  (c-name "brasero_burn_record")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroBurnSession*" "session")
+    '("GError**" "error")
+  )
+)
+
+(define-method check
+  (of-object "BraseroBurn")
+  (c-name "brasero_burn_check")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroBurnSession*" "session")
+    '("GError**" "error")
+  )
+)
+
+(define-method blank
+  (of-object "BraseroBurn")
+  (c-name "brasero_burn_blank")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroBurnSession*" "session")
+    '("GError**" "error")
+  )
+)
+
+(define-method cancel
+  (of-object "BraseroBurn")
+  (c-name "brasero_burn_cancel")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("gboolean" "protect")
+  )
+)
+
+(define-method status
+  (of-object "BraseroBurn")
+  (c-name "brasero_burn_status")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroMedia*" "media")
+    '("goffset*" "isosize")
+    '("goffset*" "written")
+    '("guint64*" "rate")
+  )
+)
+
+(define-method get_action_string
+  (of-object "BraseroBurn")
+  (c-name "brasero_burn_get_action_string")
+  (return-type "none")
+  (parameters
+    '("BraseroBurnAction" "action")
+    '("gchar**" "string")
+  )
+)
+
+
+
+;; From brasero-burn-lib.h
+
+(define-function start
+  (c-name "brasero_burn_library_start")
+  (return-type "gboolean")
+  (parameters
+    '("int*" "argc")
+    '("char**-argv" "[]")
+  )
+)
+
+(define-function stop
+  (c-name "brasero_burn_library_stop")
+  (return-type "none")
+)
+
+(define-function get_option_group
+  (c-name "brasero_burn_library_get_option_group")
+  (return-type "GOptionGroup*")
+)
+
+;; This is of no use until brasero-plugin.h gets exported
+;;(define-function brasero_burn_library_get_plugins_list
+;;  (c-name "brasero_burn_library_get_plugins_list")
+;;  (return-type "GSList*")
+;;)
+
+(define-function can_checksum
+  (c-name "brasero_burn_library_can_checksum")
+  (return-type "gboolean")
+)
+
+(define-function input_supported
+  (c-name "brasero_burn_library_input_supported")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroTrackType*" "type")
+  )
+)
+
+(define-function get_media_capabilities
+  (c-name "brasero_burn_library_get_media_capabilities")
+  (return-type "BraseroMedia")
+  (parameters
+    '("BraseroMedia" "media")
+  )
+)
+
+
+
+;; From brasero-burn-options.h
+
+(define-function brasero_burn_options_get_type
+  (c-name "brasero_burn_options_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_burn_options_new
+  (c-name "brasero_burn_options_new")
+  (is-constructor-of "BraseroBurnOptions")
+  (return-type "GtkWidget*")
+  (parameters
+    '("BraseroSessionCfg*" "session")
+  )
+)
+
+(define-method add_options
+  (of-object "BraseroBurnOptions")
+  (c-name "brasero_burn_options_add_options")
+  (return-type "none")
+  (parameters
+    '("GtkWidget*" "options")
+  )
+)
+
+
+
+;; From brasero-enums.h
+
+
+
+;; From brasero-error.h
+
+(define-function brasero_burn_quark
+  (c-name "brasero_burn_quark")
+  (return-type "GQuark")
+)
+
+
+
+;; From brasero-session-cfg.h
+
+(define-function brasero_session_cfg_get_type
+  (c-name "brasero_session_cfg_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_session_cfg_new
+  (c-name "brasero_session_cfg_new")
+  (is-constructor-of "BraseroSessionCfg")
+  (return-type "BraseroSessionCfg*")
+)
+
+(define-method get_error
+  (of-object "BraseroSessionCfg")
+  (c-name "brasero_session_cfg_get_error")
+  (return-type "BraseroSessionError")
+)
+
+(define-method add_flags
+  (of-object "BraseroSessionCfg")
+  (c-name "brasero_session_cfg_add_flags")
+  (return-type "none")
+  (parameters
+    '("BraseroBurnFlag" "flags")
+  )
+)
+
+(define-method remove_flags
+  (of-object "BraseroSessionCfg")
+  (c-name "brasero_session_cfg_remove_flags")
+  (return-type "none")
+  (parameters
+    '("BraseroBurnFlag" "flags")
+  )
+)
+
+(define-method is_supported
+  (of-object "BraseroSessionCfg")
+  (c-name "brasero_session_cfg_is_supported")
+  (return-type "gboolean")
+  (parameters
+    '("BraseroBurnFlag" "flag")
+  )
+)
+
+(define-method is_compulsory
+  (of-object "BraseroSessionCfg")
+  (c-name "brasero_session_cfg_is_compulsory")
+  (return-type "gboolean")
+  (parameters
+    '("BraseroBurnFlag" "flag")
+  )
+)
+
+(define-method has_default_output_path
+  (of-object "BraseroSessionCfg")
+  (c-name "brasero_session_cfg_has_default_output_path")
+  (return-type "gboolean")
+)
+
+(define-method enable
+  (of-object "BraseroSessionCfg")
+  (c-name "brasero_session_cfg_enable")
+  (return-type "none")
+)
+
+(define-method disable
+  (of-object "BraseroSessionCfg")
+  (c-name "brasero_session_cfg_disable")
+  (return-type "none")
+)
+
+
+
+;; From brasero-session.h
+
+(define-function brasero_burn_session_get_type
+  (c-name "brasero_burn_session_get_type")
+  (return-type "GType")
+  (parameters
+  )
+)
+
+(define-function brasero_burn_session_new
+  (c-name "brasero_burn_session_new")
+  (is-constructor-of "BraseroBurnSession")
+  (return-type "BraseroBurnSession*")
+  (parameters
+  )
+)
+
+(define-method add_track
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_add_track")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroTrack*" "new_track" (null-ok) (default "NULL"))
+    '("BraseroTrack*" "sibling" (null-ok) (default "NULL"))
+  )
+)
+
+(define-method move_track
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_move_track")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroTrack*" "track")
+    '("BraseroTrack*" "sibling" (null-ok) (default "NULL"))
+  )
+)
+
+(define-method remove_track
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_remove_track")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroTrack*" "track")
+  )
+)
+
+;;
+;; wrapped in brasero-session.override
+;;
+(define-method get_tracks
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_tracks")
+  (return-type "GSList*")
+)
+
+(define-method get_status
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_status")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroStatus*" "status")
+  )
+)
+
+(define-method get_size
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_size")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("goffset*" "blocks")
+    '("goffset*" "bytes")
+  )
+)
+
+(define-method get_input_type
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_input_type")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroTrackType*" "type")
+  )
+)
+
+(define-method tag_lookup
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_tag_lookup")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "tag")
+    '("GValue**" "value")
+  )
+)
+
+(define-method tag_add
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_tag_add")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "tag")
+    '("GValue*" "value")
+  )
+)
+
+(define-method tag_remove
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_tag_remove")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "tag")
+  )
+)
+
+(define-method get_burner
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_burner")
+  (return-type "BraseroDrive*")
+)
+
+(define-method set_burner
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_set_burner")
+  (return-type "none")
+  (parameters
+    '("BraseroDrive*" "drive")
+  )
+)
+
+(define-method set_image_output_full
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_set_image_output_full")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroImageFormat" "format")
+    '("const-gchar*" "image")
+    '("const-gchar*" "toc")
+  )
+)
+
+(define-method get_output
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_output")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("gchar**" "image")
+    '("gchar**" "toc")
+  )
+)
+
+(define-method get_output_format
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_output_format")
+  (return-type "BraseroImageFormat")
+)
+
+(define-method get_label
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_label")
+  (return-type "const-gchar*")
+)
+
+(define-method set_label
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_set_label")
+  (return-type "none")
+  (parameters
+    '("const-gchar*" "label" (null-ok) (default "NULL"))
+  )
+)
+
+(define-method set_rate
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_set_rate")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("guint64" "rate")
+  )
+)
+
+(define-method get_rate
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_rate")
+  (return-type "guint64")
+)
+
+(define-method set_flags
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_set_flags")
+  (return-type "none")
+  (parameters
+    '("BraseroBurnFlag" "flags")
+  )
+)
+
+(define-method add_flag
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_add_flag")
+  (return-type "none")
+  (parameters
+    '("BraseroBurnFlag" "flags")
+  )
+)
+
+(define-method remove_flag
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_remove_flag")
+  (return-type "none")
+  (parameters
+    '("BraseroBurnFlag" "flags")
+  )
+)
+
+(define-method get_flags
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_flags")
+  (return-type "BraseroBurnFlag")
+)
+
+(define-method set_tmpdir
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_set_tmpdir")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "path")
+  )
+)
+
+(define-method get_tmpdir
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_tmpdir")
+  (return-type "const-gchar*")
+)
+
+(define-method get_burn_flags
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_burn_flags")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroBurnFlag*" "supported")
+    '("BraseroBurnFlag*" "compulsory")
+  )
+)
+
+(define-method get_blank_flags
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_blank_flags")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroBurnFlag*" "supported")
+    '("BraseroBurnFlag*" "compulsory")
+  )
+)
+
+(define-method can_blank
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_can_blank")
+  (return-type "BraseroBurnResult")
+)
+
+(define-method can_burn
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_can_burn")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("gboolean" "use_flags")
+  )
+)
+
+(define-method input_supported
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_input_supported")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroTrackType*" "input")
+    '("gboolean" "use_flags")
+  )
+)
+
+(define-method output_supported
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_output_supported")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroTrackType*" "output")
+  )
+)
+
+(define-method get_required_media_type
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_required_media_type")
+  (return-type "BraseroMedia")
+)
+
+(define-method get_possible_output_formats
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_possible_output_formats")
+  (return-type "guint")
+  (parameters
+    '("BraseroImageFormat*" "formats")
+  )
+)
+
+(define-method get_default_output_format
+  (of-object "BraseroBurnSession")
+  (c-name "brasero_burn_session_get_default_output_format")
+  (return-type "BraseroImageFormat")
+)
+
+
+
+;; From brasero-session-span.h
+
+(define-function brasero_session_span_get_type
+  (c-name "brasero_session_span_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_session_span_new
+  (c-name "brasero_session_span_new")
+  (is-constructor-of "BraseroSessionSpan")
+  (return-type "BraseroSessionSpan*")
+)
+
+(define-method again
+  (of-object "BraseroSessionSpan")
+  (c-name "brasero_session_span_again")
+  (return-type "BraseroBurnResult")
+)
+
+(define-method possible
+  (of-object "BraseroSessionSpan")
+  (c-name "brasero_session_span_possible")
+  (return-type "BraseroBurnResult")
+)
+
+(define-method start
+  (of-object "BraseroSessionSpan")
+  (c-name "brasero_session_span_start")
+  (return-type "BraseroBurnResult")
+)
+
+(define-method next
+  (of-object "BraseroSessionSpan")
+  (c-name "brasero_session_span_next")
+  (return-type "BraseroBurnResult")
+)
+
+(define-method stop
+  (of-object "BraseroSessionSpan")
+  (c-name "brasero_session_span_stop")
+  (return-type "none")
+)
+
+
+
+;; From brasero-status.h
+
+(define-function brasero_status_new
+  (c-name "brasero_status_new")
+  (is-constructor-of "BraseroStatus")
+  (return-type "BraseroStatus*")
+)
+
+(define-method free
+  (of-object "BraseroStatus")
+  (c-name "brasero_status_free")
+  (return-type "none")
+)
+
+(define-method get_result
+  (of-object "BraseroStatus")
+  (c-name "brasero_status_get_result")
+  (return-type "BraseroBurnResult")
+)
+
+(define-method get_progress
+  (of-object "BraseroStatus")
+  (c-name "brasero_status_get_progress")
+  (return-type "gdouble")
+)
+
+(define-method get_error
+  (of-object "BraseroStatus")
+  (c-name "brasero_status_get_error")
+  (return-type "GError*")
+)
+
+(define-method get_current_action
+  (of-object "BraseroStatus")
+  (c-name "brasero_status_get_current_action")
+  (return-type "gchar*")
+)
+
+(define-method set_completed
+  (of-object "BraseroStatus")
+  (c-name "brasero_status_set_completed")
+  (return-type "none")
+)
+
+(define-method set_not_ready
+  (of-object "BraseroStatus")
+  (c-name "brasero_status_set_not_ready")
+  (return-type "none")
+  (parameters
+    '("gdouble" "progress")
+    '("const-gchar*" "current_action")
+  )
+)
+
+(define-method set_error
+  (of-object "BraseroStatus")
+  (c-name "brasero_status_set_error")
+  (return-type "none")
+  (parameters
+    '("GError*" "error")
+  )
+)
+
+
+
+;; From brasero-sum-dialog.h
+
+(define-function brasero_sum_dialog_get_type
+  (c-name "brasero_sum_dialog_get_type")
+  (return-type "GType")
+  (parameters
+  )
+)
+
+(define-function brasero_sum_dialog_new
+  (c-name "brasero_sum_dialog_new")
+  (is-constructor-of "BraseroSumDialog")
+  (return-type "BraseroSumDialog*")
+  (parameters
+  )
+)
+
+
+
+;; From brasero-tags.h
+
+
+
+;; From brasero-tool-dialog.h
+
+(define-function brasero_tool_dialog_get_type
+  (c-name "brasero_tool_dialog_get_type")
+  (return-type "GType")
+  (parameters
+  )
+)
+
+(define-method cancel
+  (of-object "BraseroToolDialog")
+  (c-name "brasero_tool_dialog_cancel")
+  (return-type "gboolean")
+)
+
+(define-method set_medium
+  (of-object "BraseroToolDialog")
+  (c-name "brasero_tool_dialog_set_medium")
+  (return-type "gboolean")
+  (parameters
+    '("BraseroMedium*" "medium")
+  )
+)
+
+
+
+;; From brasero-track-data-cfg.h
+
+(define-function brasero_track_data_cfg_get_type
+  (c-name "brasero_track_data_cfg_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_track_data_cfg_new
+  (c-name "brasero_track_data_cfg_new")
+  (is-constructor-of "BraseroTrackDataCfg")
+  (return-type "BraseroTrackDataCfg*")
+)
+
+(define-method add
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_add")
+  (return-type "gboolean")
+  (parameters
+    '("const-gchar*" "uri")
+    '("GtkTreePath*" "parent")
+  )
+)
+
+(define-method add_empty_directory
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_add_empty_directory")
+  (return-type "GtkTreePath*")
+  (parameters
+    '("const-gchar*" "name")
+    '("GtkTreePath*" "parent")
+  )
+)
+
+(define-method remove
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_remove")
+  (return-type "gboolean")
+  (parameters
+    '("GtkTreePath*" "treepath")
+  )
+)
+
+(define-method rename
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_rename")
+  (return-type "gboolean")
+  (parameters
+    '("const-gchar*" "newname")
+    '("GtkTreePath*" "treepath")
+  )
+)
+
+(define-method reset
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_reset")
+  (return-type "gboolean")
+)
+
+(define-method load_medium
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_load_medium")
+  (return-type "gboolean")
+  (parameters
+    '("BraseroMedium*" "medium")
+    '("GError**" "error")
+  )
+)
+
+(define-method unload_current_medium
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_unload_current_medium")
+  (return-type "none")
+)
+
+(define-method get_current_medium
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_get_current_medium")
+  (return-type "BraseroMedium*")
+)
+
+(define-method get_available_media
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_get_available_media")
+  (return-type "GSList*")
+)
+
+(define-method dont_filter_uri
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_dont_filter_uri")
+  (return-type "none")
+  (parameters
+    '("const-gchar*" "uri")
+  )
+)
+
+(define-method get_restored_list
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_get_restored_list")
+  (return-type "GSList*")
+)
+
+(define-method restore
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_restore")
+  (return-type "none")
+  (parameters
+    '("GtkTreePath*" "treepath")
+  )
+)
+
+(define-method get_filtered_model
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_get_filtered_model")
+  (return-type "GtkTreeModel*")
+)
+
+(define-method span
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_span")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("goffset" "sectors")
+    '("BraseroTrackData*" "new_track")
+  )
+)
+
+(define-method span_again
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_span_again")
+  (return-type "BraseroBurnResult")
+)
+
+(define-method span_possible
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_span_possible")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("goffset" "sectors")
+  )
+)
+
+(define-method span_stop
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_span_stop")
+  (return-type "none")
+)
+
+(define-method get_icon
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_get_icon")
+  (return-type "GIcon*")
+)
+
+(define-method get_icon_path
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_get_icon_path")
+  (return-type "gchar*")
+)
+
+(define-method set_icon
+  (of-object "BraseroTrackDataCfg")
+  (c-name "brasero_track_data_cfg_set_icon")
+  (return-type "gboolean")
+  (parameters
+    '("const-gchar*" "icon_path")
+    '("GError**" "error")
+  )
+)
+
+
+
+;; From brasero-track-data.h
+
+;; no need for this function as BraseroGraftPoint
+;; has been wrapped in a class
+;;(define-function brasero_graft_point_free
+;;  (c-name "brasero_graft_point_free")
+;;  (return-type "none")
+;;  (parameters
+;;    '("BraseroGraftPt*" "graft")
+;;  )
+;;)
+
+;; no need for this function as BraseroGraftPoint
+;; has been wrapped in a class
+;;(define-function brasero_graft_point_copy
+;;  (c-name "brasero_graft_point_copy")
+;;  (return-type "BraseroGraftPt*")
+;;  (parameters
+;;    '("BraseroGraftPt*" "graft")
+;;  )
+;;)
+
+(define-function brasero_track_data_get_type
+  (c-name "brasero_track_data_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_track_data_new
+  (c-name "brasero_track_data_new")
+  (is-constructor-of "BraseroTrackData")
+  (return-type "BraseroTrackData*")
+)
+
+(define-method set_source
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_set_source")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("GSList*" "grafts")
+    '("GSList*" "unreadable" (null-ok) (default "NULL"))
+  )
+)
+
+(define-method add_fs
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_add_fs")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroImageFS" "fstype")
+  )
+)
+
+(define-method rm_fs
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_rm_fs")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroImageFS" "fstype")
+  )
+)
+
+(define-method set_data_blocks
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_set_data_blocks")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("goffset" "blocks")
+  )
+)
+
+(define-method set_file_num
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_set_file_num")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("guint64" "number")
+  )
+)
+
+(define-method get_grafts
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_get_grafts")
+  (return-type "GSList*")
+)
+
+(define-method get_excluded
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_get_excluded")
+  (return-type "GSList*")
+  (parameters
+    '("gboolean" "copy")
+  )
+)
+
+(define-method get_paths
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_get_paths")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("gboolean" "use_joliet")
+    '("const-gchar*" "grafts_path")
+    '("const-gchar*" "excluded_path")
+    '("const-gchar*" "emptydir")
+    '("const-gchar*" "videodir" (null-ok) (default "NULL"))
+    '("GError**" "error")
+  )
+)
+
+(define-method get_file_num
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_get_file_num")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("guint64*" "file_num")
+  )
+)
+
+(define-method get_fs
+  (of-object "BraseroTrackData")
+  (c-name "brasero_track_data_get_fs")
+  (return-type "BraseroImageFS")
+)
+
+
+
+;; From brasero-track-disc.h
+
+(define-function brasero_track_disc_get_type
+  (c-name "brasero_track_disc_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_track_disc_new
+  (c-name "brasero_track_disc_new")
+  (is-constructor-of "BraseroTrackDisc")
+  (return-type "BraseroTrackDisc*")
+)
+
+(define-method set_drive
+  (of-object "BraseroTrackDisc")
+  (c-name "brasero_track_disc_set_drive")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroDrive*" "drive")
+  )
+)
+
+(define-method get_drive
+  (of-object "BraseroTrackDisc")
+  (c-name "brasero_track_disc_get_drive")
+  (return-type "BraseroDrive*")
+)
+
+(define-method set_track_num
+  (of-object "BraseroTrackDisc")
+  (c-name "brasero_track_disc_set_track_num")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("guint" "num")
+  )
+)
+
+(define-method get_track_num
+  (of-object "BraseroTrackDisc")
+  (c-name "brasero_track_disc_get_track_num")
+  (return-type "guint")
+)
+
+(define-method get_medium_type
+  (of-object "BraseroTrackDisc")
+  (c-name "brasero_track_disc_get_medium_type")
+  (return-type "BraseroMedia")
+)
+
+
+
+;; From brasero-track.h
+
+(define-function brasero_track_get_type
+  (c-name "brasero_track_get_type")
+  (return-type "GType")
+)
+
+(define-method changed
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_changed")
+  (return-type "none")
+)
+
+(define-method get_size
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_get_size")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("goffset*" "blocks")
+    '("goffset*" "bytes")
+  )
+)
+
+(define-method get_status
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_get_status")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroStatus*" "status")
+  )
+)
+
+(define-method set_checksum
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_set_checksum")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroChecksumType" "type")
+    '("const-gchar*" "checksum")
+  )
+)
+
+(define-method get_checksum
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_get_checksum")
+  (return-type "const-gchar*")
+)
+
+(define-method get_checksum_type
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_get_checksum_type")
+  (return-type "BraseroChecksumType")
+)
+
+(define-method tag_add
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_tag_add")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "tag")
+    '("GValue*" "value")
+  )
+)
+
+(define-method tag_lookup
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_tag_lookup")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "tag")
+    '("GValue**" "value")
+  )
+)
+
+(define-method tag_copy_missing
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_tag_copy_missing")
+  (return-type "none")
+  (parameters
+    '("BraseroTrack*" "src")
+  )
+)
+
+(define-method tag_add_string
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_tag_add_string")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "tag")
+    '("const-gchar*" "string")
+  )
+)
+
+(define-method tag_lookup_string
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_tag_lookup_string")
+  (return-type "const-gchar*")
+  (parameters
+    '("const-gchar*" "tag")
+  )
+)
+
+(define-method tag_add_int
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_tag_add_int")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "tag")
+    '("int" "value")
+  )
+)
+
+(define-method tag_lookup_int
+  (of-object "BraseroTrack")
+  (c-name "brasero_track_tag_lookup_int")
+  (return-type "int")
+  (parameters
+    '("const-gchar*" "tag")
+  )
+)
+
+
+
+;; From brasero-track-image-cfg.h
+
+(define-function brasero_track_image_cfg_get_type
+  (c-name "brasero_track_image_cfg_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_track_image_cfg_new
+  (c-name "brasero_track_image_cfg_new")
+  (is-constructor-of "BraseroTrackImageCfg")
+  (return-type "BraseroTrackImageCfg*")
+)
+
+(define-method set_source
+  (of-object "BraseroTrackImageCfg")
+  (c-name "brasero_track_image_cfg_set_source")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "uri")
+  )
+)
+
+(define-method force_format
+  (of-object "BraseroTrackImageCfg")
+  (c-name "brasero_track_image_cfg_force_format")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroImageFormat" "format")
+  )
+)
+
+(define-method get_forced_format
+  (of-object "BraseroTrackImageCfg")
+  (c-name "brasero_track_image_cfg_get_forced_format")
+  (return-type "BraseroImageFormat")
+)
+
+
+
+;; From brasero-track-image.h
+
+(define-function brasero_track_image_get_type
+  (c-name "brasero_track_image_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_track_image_new
+  (c-name "brasero_track_image_new")
+  (is-constructor-of "BraseroTrackImage")
+  (return-type "BraseroTrackImage*")
+)
+
+(define-method set_source
+  (of-object "BraseroTrackImage")
+  (c-name "brasero_track_image_set_source")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "image" (null-ok) (default "NULL"))
+    '("const-gchar*" "toc" (null-ok) (default "NULL"))
+    '("BraseroImageFormat" "format")
+  )
+)
+
+(define-method set_block_num
+  (of-object "BraseroTrackImage")
+  (c-name "brasero_track_image_set_block_num")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("goffset" "blocks")
+  )
+)
+
+(define-method get_source
+  (of-object "BraseroTrackImage")
+  (c-name "brasero_track_image_get_source")
+  (return-type "gchar*")
+  (parameters
+    '("gboolean" "uri")
+  )
+)
+
+(define-method get_toc_source
+  (of-object "BraseroTrackImage")
+  (c-name "brasero_track_image_get_toc_source")
+  (return-type "gchar*")
+  (parameters
+    '("gboolean" "uri")
+  )
+)
+
+(define-method get_format
+  (of-object "BraseroTrackImage")
+  (c-name "brasero_track_image_get_format")
+  (return-type "BraseroImageFormat")
+)
+
+
+
+;; From brasero-track-stream-cfg.h
+
+(define-function brasero_track_stream_cfg_get_type
+  (c-name "brasero_track_stream_cfg_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_track_stream_cfg_new
+  (c-name "brasero_track_stream_cfg_new")
+  (is-constructor-of "BraseroTrackStreamCfg")
+  (return-type "BraseroTrackStreamCfg*")
+)
+
+
+
+;; From brasero-track-stream.h
+
+(define-function brasero_track_stream_get_type
+  (c-name "brasero_track_stream_get_type")
+  (return-type "GType")
+)
+
+(define-function brasero_track_stream_new
+  (c-name "brasero_track_stream_new")
+  (is-constructor-of "BraseroTrackStream")
+  (return-type "BraseroTrackStream*")
+)
+
+(define-method set_source
+  (of-object "BraseroTrackStream")
+  (c-name "brasero_track_stream_set_source")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("const-gchar*" "uri")
+  )
+)
+
+(define-method set_format
+  (of-object "BraseroTrackStream")
+  (c-name "brasero_track_stream_set_format")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("BraseroStreamFormat" "format")
+  )
+)
+
+(define-method set_boundaries
+  (of-object "BraseroTrackStream")
+  (c-name "brasero_track_stream_set_boundaries")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("gint64" "start")
+    '("gint64" "end")
+    '("gint64" "gap")
+  )
+)
+
+(define-method get_source
+  (of-object "BraseroTrackStream")
+  (c-name "brasero_track_stream_get_source")
+  (return-type "gchar*")
+  (parameters
+    '("gboolean" "uri")
+  )
+)
+
+(define-method get_length
+  (of-object "BraseroTrackStream")
+  (c-name "brasero_track_stream_get_length")
+  (return-type "BraseroBurnResult")
+  (parameters
+    '("guint64*" "length")
+  )
+)
+
+(define-method get_start
+  (of-object "BraseroTrackStream")
+  (c-name "brasero_track_stream_get_start")
+  (return-type "guint64")
+)
+
+(define-method get_end
+  (of-object "BraseroTrackStream")
+  (c-name "brasero_track_stream_get_end")
+  (return-type "guint64")
+)
+
+(define-method get_gap
+  (of-object "BraseroTrackStream")
+  (c-name "brasero_track_stream_get_gap")
+  (return-type "guint64")
+)
+
+(define-method get_format
+  (of-object "BraseroTrackStream")
+  (c-name "brasero_track_stream_get_format")
+  (return-type "BraseroStreamFormat")
+)
+
+
+
+;; From brasero-track-type.h
+
+(define-function brasero_track_type_new
+  (c-name "brasero_track_type_new")
+  (is-constructor-of "BraseroTrackType")
+  (return-type "BraseroTrackType*")
+)
+
+(define-method free
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_free")
+  (return-type "none")
+)
+
+(define-method is_empty
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_is_empty")
+  (return-type "gboolean")
+)
+
+(define-method get_has_data
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_get_has_data")
+  (return-type "gboolean")
+)
+
+(define-method get_has_image
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_get_has_image")
+  (return-type "gboolean")
+)
+
+(define-method get_has_stream
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_get_has_stream")
+  (return-type "gboolean")
+)
+
+(define-method get_has_medium
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_get_has_medium")
+  (return-type "gboolean")
+)
+
+(define-method set_has_data
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_set_has_data")
+  (return-type "none")
+)
+
+(define-method set_has_image
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_set_has_image")
+  (return-type "none")
+)
+
+(define-method set_has_stream
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_set_has_stream")
+  (return-type "none")
+)
+
+(define-method set_has_medium
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_set_has_medium")
+  (return-type "none")
+)
+
+(define-method get_stream_format
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_get_stream_format")
+  (return-type "BraseroStreamFormat")
+)
+
+(define-method get_image_format
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_get_image_format")
+  (return-type "BraseroImageFormat")
+)
+
+(define-method get_medium_type
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_get_medium_type")
+  (return-type "BraseroMedia")
+)
+
+(define-method get_data_fs
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_get_data_fs")
+  (return-type "BraseroImageFS")
+)
+
+(define-method set_stream_format
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_set_stream_format")
+  (return-type "none")
+  (parameters
+    '("BraseroStreamFormat" "format")
+  )
+)
+
+(define-method set_image_format
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_set_image_format")
+  (return-type "none")
+  (parameters
+    '("BraseroImageFormat" "format")
+  )
+)
+
+(define-method set_medium_type
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_set_medium_type")
+  (return-type "none")
+  (parameters
+    '("BraseroMedia" "media")
+  )
+)
+
+(define-method set_data_fs
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_set_data_fs")
+  (return-type "none")
+  (parameters
+    '("BraseroImageFS" "fs_type")
+  )
+)
+
+(define-method equal
+  (of-object "BraseroTrackType")
+  (c-name "brasero_track_type_equal")
+  (return-type "gboolean")
+  (parameters
+    '("const-BraseroTrackType*" "type_B")
+  )
+)
+
+

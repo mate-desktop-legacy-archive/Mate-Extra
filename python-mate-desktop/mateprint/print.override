@@ -1,0 +1,812 @@
+/* -*- Mode: C; c-basic-offset: 4 -*- */
+%%
+headers
+#include <Python.h>
+
+#define NO_IMPORT_PYGOBJECT
+#include "pygobject.h"
+#include <libmateprint/mate-print.h>
+#include <libmateprint/mate-print-job.h>
+#ifdef HAVE_MATEPRINT28
+# include <libmateprint/mate-print-pango.h>
+#endif
+#include "art-gtype.h"
+#include "config.h"
+
+gboolean pymateprint_check_error (MatePrintReturnCode error);
+
+
+%%
+modulename mateprint
+%%
+import gobject.GObject as PyGObject_Type
+import pango.Font as PyPangoFont_Type
+import pango.Layout as PyPangoLayout_Type
+import pango.FontMap as PyPangoFontMap_Type
+import pango.Context as PyPangoContext_Type
+%%
+ignore-glob 
+  *_get_type
+
+%%
+override mate_print_config_get_boolean kwargs
+static PyObject *
+_wrap_mate_print_config_get_boolean(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "key", NULL };
+    char        *key;
+    gboolean     val;
+    gboolean     ret;
+    PyObject    *py_ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s:MatePrintConfig.get_boolean", kwlist, &key))
+        return NULL;
+    ret = mate_print_config_get_boolean(MATE_PRINT_CONFIG(self->obj), key, &val);
+    if (ret)
+	py_ret = val? Py_True : Py_False;
+    else
+	py_ret = Py_None;
+    Py_INCREF(py_ret);
+    return py_ret;
+}
+
+%%
+override mate_print_config_get_int kwargs
+static PyObject *
+_wrap_mate_print_config_get_int(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "key", NULL };
+    char        *key;
+    gint         val;
+    gboolean     ret;
+    PyObject    *py_ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s:MatePrintConfig.get_int", kwlist, &key))
+        return NULL;
+    ret = mate_print_config_get_int(MATE_PRINT_CONFIG(self->obj), key, &val);
+    if (ret)
+	py_ret = PyInt_FromLong(val);
+    else
+	Py_INCREF(py_ret = Py_None);
+    return py_ret;
+}
+
+%%
+override mate_print_config_get_double kwargs
+static PyObject *
+_wrap_mate_print_config_get_double(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "key", NULL };
+    char        *key;
+    gdouble      val;
+    gboolean     ret;
+    PyObject    *py_ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s:MatePrintConfig.get_double", kwlist, &key))
+        return NULL;
+    ret = mate_print_config_get_double(MATE_PRINT_CONFIG(self->obj), key, &val);
+    if (ret)
+	py_ret = PyFloat_FromDouble(val);
+    else
+	Py_INCREF(py_ret = Py_None);
+    return py_ret;
+}
+
+%%
+override mate_print_setdash kwargs
+static PyObject *
+_wrap_mate_print_setdash(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "values", "offset", NULL };
+    int          ret, len, i;
+    PyObject    *values;
+    double       offset, *cvalues;
+    PyObject    *item;
+    gboolean     ok;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "Od:MatePrintContext.setdash",
+				     kwlist, &values, &offset))
+        return NULL;
+    if (!PySequence_Check(values)) {
+	PyErr_SetString(PyExc_TypeError, "MatePrintContext.setdash: "
+			"'values' must be sequence of floats");
+	return NULL;
+    }
+    len = PySequence_Size(values);
+      /* before building cvalues vector, check argument types */
+    ok = TRUE;
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(values, i);
+	ok = PyFloat_Check(item);
+	Py_XDECREF(item);
+	if (!ok) break;
+    }
+    if (!ok) {
+	PyErr_SetString(PyExc_TypeError, "MatePrintContext.setdash: "
+			"'values' must be sequence of floats");
+	return NULL;
+    }
+      /* Build vector of doubles in cvalues (this cannot fail) */
+    cvalues = g_new(gdouble, len);
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(values, i);
+	cvalues[i] = PyFloat_AsDouble(item);
+	Py_XDECREF(item);
+    }
+      /* finally, call the C function */
+    ret = mate_print_setdash(MATE_PRINT_CONTEXT(self->obj), len, cvalues, offset);
+    g_free(cvalues);
+    return PyInt_FromLong(ret);
+}
+
+%%
+override mate_print_concat kwargs
+static PyObject *
+_wrap_mate_print_concat(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "matrix", NULL };
+    int          ret, len, i;
+    PyObject    *matrix;
+    double       *cmatrix;
+    PyObject    *item;
+    gboolean     ok;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "Od:MatePrintContext.concat",
+				     kwlist, &matrix))
+        return NULL;
+    if (!PySequence_Check(matrix)) {
+	PyErr_SetString(PyExc_TypeError, "MatePrintContext.concat: "
+			"'matrix' must be sequence of 6 floats");
+	return NULL;
+    }
+    if ((len = PySequence_Size(matrix)) != 6) {
+	PyErr_SetString(PyExc_TypeError, "MatePrintContext.concat: "
+			"'matrix' must be sequence of 6 floats");
+	return NULL;
+    }
+      /* before building cmatrix vector, check argument types */
+    ok = TRUE;
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(matrix, i);
+	ok = PyFloat_Check(item);
+	Py_XDECREF(item);
+	if (!ok) break;
+    }
+    if (!ok) {
+	PyErr_SetString(PyExc_TypeError, "MatePrintContext.concat: "
+			"'values' must be sequence of floats");
+	return NULL;
+    }
+      /* Build vector of doubles in cmatrix (this cannot fail) */
+    cmatrix = g_new(gdouble, len);
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(matrix, i);
+	cmatrix[i] = PyFloat_AsDouble(item);
+	Py_XDECREF(item);
+    }
+      /* finally, call the C function */
+    ret = mate_print_concat(MATE_PRINT_CONTEXT(self->obj), cmatrix);
+    g_free(cmatrix);
+    return PyInt_FromLong(ret);
+}
+
+
+%%
+override mate_print_grayimage kwargs
+static PyObject *
+_wrap_mate_print_grayimage(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "data", "width", "height", "rowstride", NULL };
+    int data_len, width, height, rowstride, ret;
+    guchar *data;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s#iii:MatePrintContext.grayimage",
+				     kwlist, &data, &data_len, &width, &height, &rowstride))
+        return NULL;
+    if (data_len < (height - 1)*rowstride + width) {
+	PyErr_SetString(PyExc_ValueError, "MatePrintContext.grayimage: "
+			"data is too short for width/height/rowstride dimmensions");
+	return NULL;
+    }
+    ret = mate_print_grayimage(MATE_PRINT_CONTEXT(self->obj), data, width, height, rowstride);
+    return PyInt_FromLong(ret);
+}
+
+
+%%
+override mate_print_rgbimage kwargs
+static PyObject *
+_wrap_mate_print_rgbimage(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "data", "width", "height", "rowstride", NULL };
+    int data_len, width, height, rowstride, ret;
+    guchar *data;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s#iii:MatePrintContext.rgbimage",
+				     kwlist, &data, &data_len, &width, &height, &rowstride))
+        return NULL;
+    if (data_len < (height - 1)*rowstride + width*3) {
+	PyErr_SetString(PyExc_ValueError, "MatePrintContext.rgbimage: "
+			"data is too short for width/height/rowstride dimmensions");
+	return NULL;
+    }
+    ret = mate_print_rgbimage(MATE_PRINT_CONTEXT(self->obj), data, width, height, rowstride);
+    return PyInt_FromLong(ret);
+}
+
+%%
+override mate_print_rgbaimage kwargs
+static PyObject *
+_wrap_mate_print_rgbaimage(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "data", "width", "height", "rowstride", NULL };
+    int data_len, width, height, rowstride, ret;
+    guchar *data;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s#iii:MatePrintContext.rgbaimage",
+				     kwlist, &data, &data_len, &width, &height, &rowstride))
+        return NULL;
+    if (data_len < (height - 1)*rowstride + width*4) {
+	PyErr_SetString(PyExc_ValueError, "MatePrintContext.rgbaimage: "
+			"data is too short for width/height/rowstride dimmensions");
+	return NULL;
+    }
+    ret = mate_print_rgbaimage(MATE_PRINT_CONTEXT(self->obj), data, width, height, rowstride);
+    return PyInt_FromLong(ret);
+}
+%%
+override mate_font_list
+static PyObject *
+_wrap_mate_font_list(PyObject *self)
+{
+    GList    *font_list, *l;
+    PyObject *ret;
+    int       len, i;
+
+    font_list = mate_font_list();
+    len = g_list_length(font_list);
+    ret = PyTuple_New(len);
+    for (l = font_list, i = 0; l; l = l->next, ++i)
+	PyTuple_SET_ITEM(ret, i, PyString_FromString((const char *) l->data));
+    mate_font_list_free(font_list);
+    return ret;
+}
+
+%%
+override mate_font_family_list
+static PyObject *
+_wrap_mate_font_family_list(PyObject *self)
+{
+    GList    *family_list, *l;
+    PyObject *ret;
+    int       len, i;
+
+    family_list = mate_font_family_list();
+    len = g_list_length(family_list);
+    ret = PyTuple_New(len);
+    for (l = family_list, i = 0; l; l = l->next, ++i)
+	PyTuple_SET_ITEM(ret, i, PyString_FromString((const char *) l->data));
+    mate_font_family_list_free(family_list);
+    return ret;
+}
+
+
+%%
+override mate_font_style_list
+static PyObject *
+_wrap_mate_font_style_list(PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "family", NULL };
+    char        *family;
+    GList       *style_list, *l;
+    PyObject    *ret;
+    int          len, i;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s:font_style_list", kwlist, &family))
+        return NULL;
+    style_list = mate_font_style_list(family);
+    len = g_list_length(style_list);
+    ret = PyTuple_New(len);
+    for (l = style_list, i = 0; l; l = l->next, ++i)
+	PyTuple_SET_ITEM(ret, i, PyString_FromString((const char *) l->data));
+    mate_font_style_list_free(style_list);
+    return ret;
+}
+
+
+%%
+override mate_print_job_get_page_size_from_config kwargs
+static PyObject *
+_wrap_mate_print_job_get_page_size_from_config(PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "config", NULL };
+    PyGObject *config;
+    gboolean ret;
+    gdouble width, height;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O!:job_get_page_size_from_config",
+				     kwlist, &PyMatePrintConfig_Type, &config))
+        return NULL;
+    ret = mate_print_job_get_page_size_from_config(MATE_PRINT_CONFIG(config->obj),
+						    &width, &height);
+    if (ret)
+	return Py_BuildValue("(dd)", width, height);
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+
+%%
+override mate_print_config_get_length kwargs
+static PyObject *
+_wrap_mate_print_config_get_length(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "key", NULL };
+    char *key;
+    MatePrintUnit const *unit = NULL;
+    gboolean ok;
+    gdouble ret;
+    PyObject *py_unit;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s:MatePrintConfig.get_length",
+				     kwlist, &key))
+        return NULL;
+    ok = mate_print_config_get_length(MATE_PRINT_CONFIG(self->obj), key, &ret, &unit);
+    if (ok) {
+	py_unit = pyg_boxed_new(MATE_TYPE_PRINT_UNIT, (MatePrintUnit *) unit, FALSE, FALSE);
+	return Py_BuildValue("dO", ret, py_unit);
+    } else {
+	Py_INCREF(Py_None);
+	return Py_None;
+    }
+}
+%%
+override mate_font_face_get_glyph_stdbbox kwargs
+static PyObject *
+_wrap_mate_font_face_get_glyph_stdbbox(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "glyph", NULL };
+    int glyph;
+    ArtDRect drect;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+				     "i:MateFontFace.get_glyph_stdbbox",
+				     kwlist, &glyph))
+        return NULL;
+    if (mate_font_face_get_glyph_stdbbox(MATE_FONT_FACE(self->obj), glyph, &drect))
+	return pyg_boxed_new(ART_TYPE_DRECT, &drect, TRUE, TRUE);
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+%%
+override mate_font_face_get_glyph_stdadvance kwargs
+static PyObject *
+_wrap_mate_font_face_get_glyph_stdadvance(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "glyph", NULL };
+    int glyph;
+    ArtPoint point;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+				     "i:MateFontFace.get_glyph_stdadvance",
+				     kwlist, &glyph))
+        return NULL;
+    if (mate_font_face_get_glyph_stdadvance(MATE_FONT_FACE(self->obj), glyph, &point))
+	return pyg_boxed_new(ART_TYPE_POINT, &point, TRUE, TRUE);
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+%%
+override mate_font_face_get_glyph_stdoutline kwargs
+static PyObject *
+_wrap_mate_font_face_get_glyph_stdoutline(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "glyph", NULL };
+    int glyph;
+    int i, len;
+    PyObject *item, *tuple;
+    ArtBpath const *ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+				     "i:MateFontFace.get_glyph_stdoutline",
+				     kwlist, &glyph))
+        return NULL;
+    ret = mate_font_face_get_glyph_stdoutline(MATE_FONT_FACE(self->obj), glyph);
+    if (!ret) {
+	Py_INCREF(Py_None);
+	return Py_None;
+    }
+      /* count number of items */
+    for (len = 0; ret[len].code != ART_END; ++len);
+      /* build tuple of ArtBpath */
+    tuple = PyTuple_New(len);
+    for (i = 0; i < len; ++i) {
+	item = pyg_boxed_new(ART_TYPE_BPATH, (ArtBpath *) &ret[i], TRUE, TRUE);
+	PyTuple_SET_ITEM(tuple, i, item);
+    }
+    return tuple;
+}
+
+%%
+override mate_font_face_get_glyph_stdkerning kwargs
+static PyObject *
+_wrap_mate_font_face_get_glyph_stdkerning(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "glyph0", "glyph1", NULL };
+    int glyph0, glyph1;
+    ArtPoint ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+				     "ii:MateFontFace.get_glyph_stdkerning",
+				     kwlist, &glyph0, &glyph1))
+        return NULL;
+    if (mate_font_face_get_glyph_stdkerning
+	(MATE_FONT_FACE(self->obj), glyph0, glyph1, &ret))
+	  /* pyg_boxed_new handles NULL checking */
+	return pyg_boxed_new(ART_TYPE_POINT, &ret, TRUE, TRUE);
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+
+%%
+override mate_font_get_glyph_stdbbox kwargs
+static PyObject *
+_wrap_mate_font_get_glyph_stdbbox(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "glyph", NULL };
+    int glyph;
+    ArtDRect drect;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+				     "i:MateFont.get_glyph_stdbbox",
+				     kwlist, &glyph))
+        return NULL;
+    if (mate_font_get_glyph_stdbbox(MATE_FONT(self->obj), glyph, &drect))
+	return pyg_boxed_new(ART_TYPE_DRECT, &drect, TRUE, TRUE);
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+%%
+override mate_font_get_glyph_stdadvance kwargs
+static PyObject *
+_wrap_mate_font_get_glyph_stdadvance(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "glyph", NULL };
+    int glyph;
+    ArtPoint point;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+				     "i:MateFont.get_glyph_stdadvance",
+				     kwlist, &glyph))
+        return NULL;
+    if (mate_font_get_glyph_stdadvance(MATE_FONT(self->obj), glyph, &point))
+	return pyg_boxed_new(ART_TYPE_POINT, &point, TRUE, TRUE);
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+%%
+override mate_font_get_glyph_stdoutline kwargs
+static PyObject *
+_wrap_mate_font_get_glyph_stdoutline(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "glyph", NULL };
+    int glyph;
+    int i, len;
+    PyObject *item, *tuple;
+    ArtBpath const *ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+				     "i:MateFont.get_glyph_stdoutline",
+				     kwlist, &glyph))
+        return NULL;
+    ret = mate_font_get_glyph_stdoutline(MATE_FONT(self->obj), glyph);
+    if (!ret) {
+	Py_INCREF(Py_None);
+	return Py_None;
+    }
+      /* count number of items */
+    for (len = 0; ret[len].code != ART_END; ++len);
+      /* build tuple of ArtBpath */
+    tuple = PyTuple_New(len);
+    for (i = 0; i < len; ++i) {
+	item = pyg_boxed_new(ART_TYPE_BPATH, (ArtBpath *) &ret[i], TRUE, TRUE);
+	PyTuple_SET_ITEM(tuple, i, item);
+    }
+    return tuple;
+}
+
+%%
+override mate_font_get_glyph_stdkerning kwargs
+static PyObject *
+_wrap_mate_font_get_glyph_stdkerning(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "glyph0", "glyph1", NULL };
+    int glyph0, glyph1;
+    ArtPoint ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs,
+				     "ii:MateFont.get_glyph_stdkerning",
+				     kwlist, &glyph0, &glyph1))
+        return NULL;
+    if (mate_font_get_glyph_stdkerning
+	(MATE_FONT(self->obj), glyph0, glyph1, &ret))
+	  /* pyg_boxed_new handles NULL checking */
+	return pyg_boxed_new(ART_TYPE_POINT, &ret, TRUE, TRUE);
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+
+%%
+override mate_print_bpath kwargs
+static PyObject *
+_wrap_mate_print_bpath(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "bpath", "append", NULL };
+    PyObject *py_bpath, *item;
+    int append, ret, len, i;
+    ArtBpath *bpath;
+    
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "Oi:MatePrintContext.bpath",
+				     kwlist, &py_bpath, &append))
+        return NULL;
+    if (!PySequence_Check(py_bpath)) {
+        PyErr_SetString(PyExc_TypeError, "bpath should be a sequence of ArtBpath");
+        return NULL;
+    }
+    len = PySequence_Size(py_bpath);
+      /* type checking */
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(py_bpath, i);
+	if (!pyg_boxed_check(py_bpath, ART_TYPE_BPATH)) {
+	    Py_XDECREF(item);
+	    PyErr_SetString(PyExc_TypeError, "bpath should be a sequence of ArtBpath");
+	    return NULL;
+	}
+	Py_DECREF(item);
+    }
+      /* build contiguous vector of ArtBpath elements */
+    bpath = g_new(ArtBpath, len + 1);
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(py_bpath, i);
+	memcpy(bpath + i, pyg_boxed_get(py_bpath, ArtBpath), sizeof(ArtBpath));
+	Py_DECREF(item);
+    }
+    bpath[len].code = ART_END;
+    ret = mate_print_bpath(MATE_PRINT_CONTEXT(self->obj), bpath, append);
+    g_free(bpath);
+    return PyInt_FromLong(ret);
+}
+
+%%
+override mate_print_vpath kwargs
+static PyObject *
+_wrap_mate_print_vpath(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "vpath", "append", NULL };
+    PyObject *py_vpath, *item;
+    int append, ret, len, i;
+    ArtVpath *vpath;
+    
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "Oi:MatePrintContext.vpath",
+				     kwlist, &py_vpath, &append))
+        return NULL;
+    if (!PySequence_Check(py_vpath)) {
+        PyErr_SetString(PyExc_TypeError, "vpath should be a sequence of ArtVpath");
+        return NULL;
+    }
+    len = PySequence_Size(py_vpath);
+      /* type checking */
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(py_vpath, i);
+	if (!pyg_boxed_check(py_vpath, ART_TYPE_VPATH)) {
+	    Py_XDECREF(item);
+	    PyErr_SetString(PyExc_TypeError, "vpath should be a sequence of ArtVpath");
+	    return NULL;
+	}
+	Py_DECREF(item);
+    }
+      /* build contiguous vector of ArtVpath elements */
+    vpath = g_new(ArtVpath, len + 1);
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(py_vpath, i);
+	memcpy(vpath + i, pyg_boxed_get(py_vpath, ArtVpath), sizeof(ArtVpath));
+	Py_DECREF(item);
+    }
+    vpath[len].code = ART_END;
+    ret = mate_print_vpath(MATE_PRINT_CONTEXT(self->obj), vpath, append);
+    g_free(vpath);
+    return PyInt_FromLong(ret);
+}
+
+%%
+override mate_glyphlist_glyphs kwargs
+static PyObject *
+_wrap_mate_glyphlist_glyphs(PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "glyphs", NULL };
+    PyObject *glyphs = NULL, *item;
+    int      *glyphv;
+    int i, len;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O:MateGlyphList.glyphs", kwlist, &glyphs))
+        return NULL;
+    if (!PySequence_Check(glyphs)) {
+        PyErr_SetString(PyExc_TypeError, "glyphs should be a sequence of integers");
+        return NULL;
+    }
+    len = PySequence_Size(glyphs);
+      /* typecheck */
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(glyphs, i);
+	if (!PyInt_Check(item)) {
+	    Py_XDECREF(item);
+	    PyErr_SetString(PyExc_TypeError, "glyphs should be a sequence of integers");
+	    return NULL;
+	}
+	Py_XDECREF(item);
+    }
+      /* build int vector */
+    glyphv = g_new(gint, len);
+    for (i = 0; i < len; ++i) {
+	item = PySequence_GetItem(glyphs, i);
+	glyphv[i] = PyInt_AsLong(item);
+	Py_DECREF(item);
+    }
+    mate_glyphlist_glyphs(pyg_boxed_get(self, MateGlyphList), glyphv, len);
+    g_free(glyphv);
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+
+%%
+override mate_glyphlist_bbox kwargs
+static PyObject *
+_wrap_mate_glyphlist_bbox(PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "transform", "flags", NULL };
+    int flags = 0;
+    PyObject *transform = NULL, *item;
+    gdouble   ctransform[6];
+    int i, len;
+    ArtDRect drect;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "|Oi:MateGlyphList.bbox", kwlist, &transform, &flags))
+        return NULL;
+
+    if (transform) {
+	len = PySequence_Size(transform);
+	for (i = 0; i < len; ++i) {
+	    item = PySequence_GetItem(transform, i);
+	    if (!PyFloat_Check(item)) {
+		Py_XDECREF(item);
+		PyErr_SetString(PyExc_TypeError, "transform should be a sequence of 6 floats");
+		return NULL;
+	    }
+	    ctransform[i] = PyFloat_AsDouble(item);
+	    Py_XDECREF(item);
+	}
+    }
+
+    if (!mate_glyphlist_bbox(pyg_boxed_get(self, MateGlyphList),
+			      transform? ctransform : NULL, flags, &drect)) {
+	Py_INCREF(Py_None);
+	return Py_None;
+    }
+    
+    return pyg_boxed_new(ART_TYPE_DRECT, (ArtDRect *) &drect, TRUE, TRUE);
+}
+
+%%
+override mate_font_face_get_stdbbox
+static PyObject *
+_wrap_mate_font_face_get_stdbbox(PyGObject *self)
+{
+    ArtDRect const *ret;
+
+    ret = mate_font_face_get_stdbbox(MATE_FONT_FACE(self->obj));
+    /* pyg_boxed_new handles NULL checking */
+    return pyg_boxed_new(ART_TYPE_DRECT, (ArtDRect *) ret, TRUE, TRUE);
+}
+
+%%
+override mate_print_unit_get_identity kwargs
+static PyObject *
+_wrap_mate_print_unit_get_identity(PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "base", NULL };
+    int base;
+    MatePrintUnit const *ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "i:unit_get_identity", kwlist, &base))
+        return NULL;
+    ret = mate_print_unit_get_identity(base);
+    /* pyg_boxed_new handles NULL checking */
+    return pyg_boxed_new(MATE_TYPE_PRINT_UNIT, (MatePrintUnit *) ret, TRUE, TRUE);
+}
+
+%%
+override mate_print_unit_get_default
+static PyObject *
+_wrap_mate_print_unit_get_default(PyObject *self)
+{
+    MatePrintUnit const *ret;
+
+    ret = mate_print_unit_get_default();
+    /* pyg_boxed_new handles NULL checking */
+    return pyg_boxed_new(MATE_TYPE_PRINT_UNIT, (MatePrintUnit *) ret, TRUE, TRUE);
+}
+
+%%
+override mate_print_unit_get_by_name kwargs
+static PyObject *
+_wrap_mate_print_unit_get_by_name(PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "name", NULL };
+    char *name;
+    MatePrintUnit const *ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s:unit_get_by_name", kwlist, &name))
+        return NULL;
+    ret = mate_print_unit_get_by_name(name);
+    /* pyg_boxed_new handles NULL checking */
+    return pyg_boxed_new(MATE_TYPE_PRINT_UNIT, (MatePrintUnit *) ret, TRUE, TRUE);
+}
+
+%%
+override mate_print_unit_get_by_abbreviation kwargs
+static PyObject *
+_wrap_mate_print_unit_get_by_abbreviation(PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "abbreviation", NULL };
+    char *abbreviation;
+    MatePrintUnit const *ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s:unit_get_by_abbreviation", kwlist, &abbreviation))
+        return NULL;
+    ret = mate_print_unit_get_by_abbreviation(abbreviation);
+    /* pyg_boxed_new handles NULL checking */
+    return pyg_boxed_new(MATE_TYPE_PRINT_UNIT, (MatePrintUnit *) ret, TRUE, TRUE);
+}
+
+%%
+override mate_print_convert_distance kwargs
+static PyObject *
+_wrap_mate_print_convert_distance(PyObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "distance", "from_", "to", "ctmscale", "devicescale", NULL };
+    PyObject *py_from, *py_to;
+    double distance, ctmscale = G_MAXDOUBLE, devicescale = G_MAXDOUBLE;
+    MatePrintUnit *from = NULL, *to = NULL;
+    gboolean ok;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "dOO|dd:convert_distance",
+				     kwlist, &distance, &py_from, &py_to,
+				     &ctmscale, &devicescale))
+        return NULL;
+    if (ctmscale != G_MAXDOUBLE && devicescale == G_MAXDOUBLE) {
+        PyErr_SetString(PyExc_TypeError, "ctmscale given but not devicescale");
+        return NULL;
+    }
+    if (pyg_boxed_check(py_from, MATE_TYPE_PRINT_UNIT))
+        from = pyg_boxed_get(py_from, MatePrintUnit);
+    else {
+        PyErr_SetString(PyExc_TypeError, "from should be a MatePrintUnit");
+        return NULL;
+    }
+    if (pyg_boxed_check(py_to, MATE_TYPE_PRINT_UNIT))
+        to = pyg_boxed_get(py_to, MatePrintUnit);
+    else {
+        PyErr_SetString(PyExc_TypeError, "to should be a MatePrintUnit");
+        return NULL;
+    }
+    if (ctmscale == G_MAXDOUBLE)
+	ok = mate_print_convert_distance(&distance, from, to);
+    else
+	ok = mate_print_convert_distance_full(&distance, from, to, ctmscale, devicescale);
+    if (!ok) {
+	PyErr_SetString(PyExc_RuntimeError, "mateprint.convert_distance:"
+			" could not perform conversion");
+	return NULL;
+    }
+    return PyFloat_FromDouble(distance);
+}
+

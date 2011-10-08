@@ -1,0 +1,929 @@
+/* -*- Mode: C; c-basic-offset: 4; tab-width: 4 -*- */
+%%
+headers
+#include <Python.h>
+#include "config.h"
+#include <time.h>
+#define NO_IMPORT_PYGOBJECT
+#include "pygobject.h"
+
+#include "override_common.h"
+
+#include "evo-ebook-environment.h"
+#include "evo-contact.h"
+#include "evo-addressbook.h"
+#include "ebook-enums.h"
+
+static PyObject *
+_helper_wrap_glist_of_evo_locations(GList *locations)
+{
+	PyObject *result;
+	int i;
+
+	if ((result = PyList_New (g_list_length (locations))) == NULL)
+		return NULL;
+
+	i = 0;
+	for (; locations != NULL; locations = locations->next) {
+		evo_location_t *path = (evo_location_t *) locations->data;
+		PyObject *t = PyTuple_New (2);
+		if (path->name == NULL) {
+			Py_INCREF (Py_None);
+			PyTuple_SET_ITEM (t, 0, Py_None);
+		} else {
+			PyTuple_SET_ITEM (t, 0, PyString_FromString(path->name));
+		}
+		
+		if (path->uri == NULL) {
+			Py_INCREF (Py_None);
+			PyTuple_SET_ITEM (t, 1, Py_None);
+		} else {
+			PyTuple_SET_ITEM (t, 1, PyString_FromString(path->uri));
+		}
+
+		PyList_SET_ITEM (result, i, t);
+		i++;
+	}
+	return result;
+}
+
+/* EBookQuery */
+
+typedef struct {
+	PyObject_HEAD
+	EBookQuery *query;
+} PyEBookQuery;
+
+/* Forward function declarations */
+static PyObject *pyebook_query_new(EBookQuery *query);
+static void pyebook_query_dealloc(PyEBookQuery *self);
+static PyObject *pyebook_query_str(PyEBookQuery *self);
+
+static PyObject *pyebook_query_from_string(PyEBookQuery *self,
+                                           PyObject *args,
+                                           PyObject *kwargs);
+static PyObject *pyebook_query_field_exists(PyEBookQuery *self,
+                                            PyObject *args,
+                                            PyObject *kwargs);
+static PyObject *pyebook_query_vcard_field_exists(PyEBookQuery *self,
+                                                  PyObject *args,
+                                                  PyObject *kwargs);
+static PyObject *pyebook_query_field_test(PyEBookQuery *self,
+                                          PyObject *args,
+                                          PyObject *kwargs);
+static PyObject *pyebook_query_any_field_contains(PyEBookQuery *self,
+                                                  PyObject *args,
+                                                  PyObject *kwargs);
+static PyObject *pyebook_query_and(PyEBookQuery *self,
+                                   PyObject *args,
+                                   PyObject *kwargs);
+static PyObject *pyebook_query_or(PyEBookQuery *self,
+                                   PyObject *args,
+                                   PyObject *kwargs);
+static PyObject *pyebook_query_not(PyEBookQuery *self,
+                                   PyObject *args);
+static PyObject *pyebook_query_copy(PyEBookQuery *self,
+                                    PyObject *args);
+
+static PyMethodDef PyEBookQuery_methods[] = {
+    {"from_string", (PyCFunction)pyebook_query_from_string,
+        METH_KEYWORDS | METH_VARARGS | METH_CLASS,
+        "Creates a new query from a string."},
+    {"field_exists", (PyCFunction)pyebook_query_field_exists,
+        METH_KEYWORDS | METH_VARARGS | METH_CLASS,
+        "Replaces this query with a new query to check if the given \
+        field exists"},
+    {"vcard_field_exists",
+        (PyCFunction)pyebook_query_vcard_field_exists,
+        METH_KEYWORDS | METH_VARARGS | METH_CLASS,
+        "Replaces this query with a new query to check if the given \
+        vcard field exists"},
+    {"field_test", (PyCFunction)pyebook_query_field_test,
+        METH_KEYWORDS | METH_VARARGS | METH_CLASS,
+        "Replaces this query with a new query with a given test."},
+    {"any_field_contains",
+        (PyCFunction)pyebook_query_any_field_contains,
+        METH_KEYWORDS | METH_VARARGS | METH_CLASS,
+        "Replaces this query with a new 'generic' query."},
+    {"_and",
+        (PyCFunction)pyebook_query_and,
+        METH_KEYWORDS | METH_VARARGS,
+        "Creates a new query with a 'and' operation with the given \
+        query list and this query."},
+     {"_or",
+        (PyCFunction)pyebook_query_or,
+        METH_KEYWORDS | METH_VARARGS,
+        "Creates a new querywith a 'or' operation with the given \
+        query list and this query."},
+     {"_not",
+     (PyCFunction)pyebook_query_not,
+        METH_NOARGS,
+        "Creates a new query with a 'not' operation with this query."},
+     {"copy",
+     (PyCFunction)pyebook_query_copy,
+        METH_NOARGS,
+        "Copies this query."},
+   {NULL}
+};
+
+PyTypeObject PyEBookQuery_Type = {
+	PyObject_HEAD_INIT(NULL)
+	0,                  /* ob_size */
+	"ebook.EBookQuery",          /* tp_name */
+	sizeof(PyEBookQuery),       /* tp_basicsize */
+	0,                  /* tp_itemsize */
+	/* methods */
+	(destructor)pyebook_query_dealloc,   /* tp_dealloc */
+	(printfunc)0,           /* tp_print */
+	(getattrfunc)0,   /* tp_getattr */
+	(setattrfunc)0,         /* tp_setattr */
+	(cmpfunc)0,  /* tp_compare */
+	(reprfunc)0,            /* tp_repr */
+	0,                  /* tp_as_number */
+	0,                  /* tp_as_sequence */
+	0,                  /* tp_as_mapping */
+	(hashfunc)0,    /* tp_hash */
+	(ternaryfunc)0,         /* tp_call */
+	(reprfunc) pyebook_query_str,            /* tp_str */
+	(getattrofunc)0,            /* tp_getattro */
+	(setattrofunc)0,            /* tp_setattro */
+	0,                  /* tp_as_buffer */
+	Py_TPFLAGS_DEFAULT,         /* tp_flags */
+	NULL, /* Documentation string */
+	(traverseproc)0,            /* tp_traverse */
+	(inquiry)0,             /* tp_clear */
+	(richcmpfunc)0,         /* tp_richcompare */
+	0,                  /* tp_weaklistoffset */
+	(getiterfunc)0,         /* tp_iter */
+	(iternextfunc)0,            /* tp_iternext */
+	PyEBookQuery_methods,       /* tp_methods */
+	0,                  /* tp_members */
+	0,       /* tp_getset */
+	(PyTypeObject *)0,          /* tp_base */
+	(PyObject *)0,          /* tp_dict */
+	0,                  /* tp_descr_get */
+	0,                  /* tp_descr_set */
+	0,                  /* tp_dictoffset */
+	(initproc)0,            /* tp_init */
+	(allocfunc)0,           /* tp_alloc */
+	(newfunc)0,             /* tp_new */
+	0,                  /* tp_free */
+	(inquiry)0,             /* tp_is_gc */
+	(PyObject *)0,          /* tp_bases */
+};
+
+static PyObject *
+pyebook_query_new(EBookQuery *query)
+{
+	PyEBookQuery *self;
+
+	self = (PyEBookQuery *)PyObject_NEW(PyEBookQuery, &PyEBookQuery_Type);
+
+	if (self == NULL)
+		return NULL;
+
+	self->query = query;
+
+	return (PyObject *)self;
+}
+
+static void
+pyebook_query_dealloc(PyEBookQuery *self)
+{
+	if (self == NULL)
+		return;
+
+    if (self->query != NULL)
+    	e_book_query_unref(self->query);
+    PyObject_DEL(self);
+}
+
+static PyObject *
+pyebook_query_str(PyEBookQuery *self){
+
+    char *repr = NULL;
+    PyObject *ret;
+
+    if (self->query != NULL)
+        repr = e_book_query_to_string(self->query);
+
+    ret = PyString_FromString( repr != NULL ? repr : "<Uninitialized>");
+
+    if (repr != NULL)
+        free(repr);
+
+    return ret;
+}
+
+static PyObject *
+pyebook_query_from_string(PyEBookQuery *self,
+                          PyObject *args,
+                          PyObject *kwargs)
+{
+    static char *kwlist[] = { "query", NULL };
+    char *query;
+    EBookQuery *new_query;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s", kwlist, &query))
+        return NULL;
+
+    new_query = e_book_query_from_string(query);
+
+    return pyebook_query_new(new_query);
+}
+
+static PyObject *
+pyebook_query_field_exists(PyEBookQuery *self,
+                           PyObject *args,
+                           PyObject *kwargs)
+{
+    static char *kwlist[] = { "field", NULL };
+    PyObject *py_type;
+    EContactField field;
+    EBookQuery *new_query;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O", kwlist, &py_type))
+        return NULL;
+
+    if(pyg_enum_get_value(E_TYPE_CONTACT_FIELD, py_type, (gint *)&field))
+        return NULL;
+
+    new_query = e_book_query_field_exists(field);
+
+    return pyebook_query_new(new_query);
+}
+
+static PyObject *
+pyebook_query_vcard_field_exists(PyEBookQuery *self,
+                                 PyObject *args,
+                                 PyObject *kwargs)
+{
+    static char *kwlist[] = { "field", NULL };
+    char *field;
+    EBookQuery *new_query;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s", kwlist, &field))
+        return NULL;
+
+    new_query = e_book_query_vcard_field_exists(field);
+
+    return pyebook_query_new(new_query);
+}
+
+static PyObject *
+pyebook_query_field_test(PyEBookQuery *self,
+                         PyObject *args,
+                         PyObject *kwargs)
+{
+    static char *kwlist[] = { "field", "test", "value", NULL };
+    PyObject *py_field;
+    PyObject *py_test;
+    EContactField field;
+    EBookQueryTest test;
+    char *value;
+    EBookQuery *new_query;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOs", kwlist,
+                                     &py_field, &py_test, &value))
+        return NULL;
+
+    if(pyg_enum_get_value(E_TYPE_CONTACT_FIELD, py_field, (gint *)&field))
+        return NULL;
+
+    if(pyg_enum_get_value(E_TYPE_BOOK_QUERY_TEST, py_test, (gint *)&test))
+        return NULL;
+
+    new_query = e_book_query_field_test(field, test, value);
+
+    return pyebook_query_new(new_query);
+}
+
+static PyObject *
+pyebook_query_any_field_contains(PyEBookQuery *self,
+                                 PyObject *args,
+                                 PyObject *kwargs)
+{
+    static char *kwlist[] = { "field", NULL };
+    char *field;
+    EBookQuery *new_query;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "s", kwlist, &field))
+        return NULL;
+
+    new_query = e_book_query_any_field_contains(field);
+
+    return pyebook_query_new(new_query);
+}
+
+static PyObject *
+pyebook_query_and(PyEBookQuery *self,
+                  PyObject *args,
+                  PyObject *kwargs)
+{
+    static char *kwlist[] = { "queries", NULL };
+    PyObject *list;
+    int size;
+    int i;
+    int has_self = 0;
+    EBookQuery **queries = NULL;
+    EBookQuery *new_query = NULL;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O!", kwlist,
+                                     &PyList_Type, &list))
+        return NULL;
+
+    size = PyList_Size(list);
+
+    if (size == 0){
+        Py_INCREF(Py_None);
+        return Py_None;
+    }
+
+    if (self->query != NULL) {
+        queries = (EBookQuery **)malloc(sizeof(EBookQuery *)*(size+1));
+        queries[0] = self->query;
+        has_self = 1;
+    } else {
+        queries = (EBookQuery **)malloc(sizeof(EBookQuery *)*(size));
+    }
+
+    for (i = 0; i < size; i++){
+        PyEBookQuery *query;
+
+        /* FIXME Check for EBookQuery type */
+        query = (PyEBookQuery *) PyList_GetItem(list, i);
+
+        queries[i+has_self] = query->query;
+    }
+
+    new_query = e_book_query_and(size+has_self, queries, FALSE);
+
+    return pyebook_query_new(new_query);
+}
+
+static PyObject *
+pyebook_query_or(PyEBookQuery *self,
+                 PyObject *args,
+                 PyObject *kwargs)
+{
+    static char *kwlist[] = { "queries", NULL };
+    PyObject *list;
+    int size;
+    int i;
+    int has_self = 0;
+    EBookQuery **queries = NULL;
+    EBookQuery *new_query = NULL;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O!", kwlist,
+                                     &PyList_Type, &list))
+        return NULL;
+
+    size = PyList_Size(list);
+
+    if (size == 0){
+        Py_INCREF(Py_None);
+        return Py_None;
+    }
+
+    if (self->query != NULL) {
+        queries = (EBookQuery **)malloc(sizeof(EBookQuery *)*(size+1));
+        queries[0] = self->query;
+        has_self = 1;
+    } else {
+        queries = (EBookQuery **)malloc(sizeof(EBookQuery *)*(size));
+    }
+
+    for (i = 0; i < size; i++){
+        PyEBookQuery *query;
+
+        /* FIXME Check for EBookQuery type */
+        query = (PyEBookQuery *) PyList_GetItem(list, i);
+
+        queries[i+has_self] = query->query;
+    }
+
+    new_query = e_book_query_or(size+has_self, queries, FALSE);
+
+    return pyebook_query_new(new_query);
+}
+
+static PyObject *
+pyebook_query_not(PyEBookQuery *self,
+                  PyObject *args)
+{
+    EBookQuery *new_query = NULL;
+
+    if (self->query != NULL)
+        new_query = e_book_query_not(self->query, FALSE);
+
+    return pyebook_query_new(new_query);
+}
+
+
+static PyObject *
+pyebook_query_copy(PyEBookQuery *self,
+                   PyObject *args)
+{
+	return pyebook_query_new(e_book_query_copy(self->query));
+}
+
+/*** Types, helper functions and callbacks for EBookView ***/
+
+typedef PyObject *(*GlistToPyListConverter)(gpointer);
+
+/* Struct used to pack data passed to EBookView signals */
+struct bookview_cb_t{
+    GlistToPyListConverter converter;
+    PyObject *callback;
+    PyObject *extra_data;
+};
+
+static PyObject *
+glist_to_pylist(GList *list, GlistToPyListConverter converter)
+{
+    PyObject *pylist;
+    GList *node;
+    int size;
+    int i;
+
+    size = g_list_length(list);
+    pylist = PyList_New(size);
+    node = list;
+
+    for (i=0; i < size; i++){
+        PyObject *pyobj;
+
+        pyobj = converter(node->data);
+        PyList_SetItem(pylist, i, pyobj);
+
+        node = node->next;
+    }
+
+    return pylist;
+}
+
+PyObject *econtact_to_pycontact(EContact *contact)
+{
+    return pygobject_new(G_OBJECT(contact));
+}
+
+/* wrapper for callbacks that receive a GList as parameter */
+static void
+contacts_list_cb(EBookView *ebookview, GList *contacts, gpointer user_data)
+{
+    PyObject *list;
+    PyObject *pybookview;
+    PyObject *extra_args;
+    PyObject *callback;
+    PyObject *arguments;
+    PyObject *result;
+    struct bookview_cb_t *data;
+    int i;
+    int extra_size;
+    PyGILState_STATE state;
+
+    /* Required for threaded code. No effect in single threads. */
+    state = pyg_gil_state_ensure();
+
+    pybookview = pygobject_new((GObject *) ebookview);
+
+    data = (struct bookview_cb_t*)user_data;
+
+    callback = data->callback;
+    extra_args = data->extra_data;
+
+    list = glist_to_pylist(contacts, data->converter);
+
+    if (extra_args != NULL){
+        extra_size = PyTuple_Size(extra_args);
+    } else {
+        extra_size = 0;
+    }
+
+    arguments = PyTuple_New(extra_size+2);
+
+    Py_INCREF(pybookview);
+    PyTuple_SetItem(arguments, 0, pybookview);
+    Py_INCREF(list);
+    PyTuple_SetItem(arguments, 1, list);
+
+    for (i = 2; i < extra_size+2; i++) {
+        PyObject *obj;
+
+        obj = PyTuple_GetItem(extra_args, i-2);
+        Py_INCREF(obj);
+        PyTuple_SetItem(arguments, i, obj);
+    }
+
+    result = PyObject_CallObject(callback, arguments);
+
+    Py_XDECREF(result);
+    Py_XDECREF(arguments);
+    Py_XDECREF(pybookview);
+    Py_XDECREF(list); /* Will decref its childs too? */
+
+    pyg_gil_state_release(state);
+
+    return;
+}
+
+%%
+init
+	PyEBookQuery_Type.tp_alloc = PyType_GenericAlloc;
+	PyEBookQuery_Type.tp_new = PyType_GenericNew;
+	if (PyType_Ready(&PyEBookQuery_Type) < 0)
+		return;
+
+%%
+modulename ebook
+%%
+import gobject.GObject as PyGObject_Type  
+%%
+ignore-glob
+	init
+	free_*
+	*_get_type
+%%
+override evo_environment_list_addressbooks noargs
+static PyObject*
+_wrap_evo_environment_list_addressbooks(PyGObject *self) 
+{
+    return _helper_wrap_glist_of_evo_locations(evo_environment_list_addressbooks());
+}
+%%
+override evo_addressbook_get_all_contacts noargs
+static PyObject*
+_wrap_evo_addressbook_get_all_contacts(PyGObject *self) 
+{
+    GList *contacts = NULL;
+
+    EBookQuery *query = e_book_query_any_field_contains("");
+    e_book_get_contacts(E_BOOK(self->obj), query, &contacts, NULL);
+
+    e_book_query_unref(query);
+
+    return _helper_wrap_gobject_glist(contacts);
+}
+%%
+override evo_addressbook_free_text_search args
+static PyObject*
+_wrap_evo_addressbook_free_text_search(PyGObject *self, PyObject *args) 
+{
+    char *query = NULL;
+    GList *list = NULL;
+
+    if (PyArg_ParseTuple(args, "s",&query))
+	{
+        list = evo_addressbook_free_text_search(E_BOOK(self->obj), query);
+	}
+    return _helper_wrap_gobject_glist(list);
+}
+%%
+override evo_addressbook_get_changed_contacts args
+static PyObject *
+_wrap_evo_addressbook_get_changed_contacts(PyGObject *self, PyObject *args)
+{
+    char *change_id = NULL;
+
+    GList *added = NULL;
+    GList *modified = NULL;
+    GList *deleted = NULL;
+
+    if (PyArg_ParseTuple(args, "s",&change_id)) {
+        evo_addressbook_get_changed_contacts(E_BOOK(self->obj), &added, &modified, &deleted, change_id);
+    }
+
+    return Py_BuildValue("OOO",
+                        _helper_wrap_gobject_glist(added),
+                        _helper_wrap_gobject_glist(modified),
+                        _helper_wrap_gobject_glist(deleted)
+                        );
+    
+}
+%%
+override e_contact_new kwargs
+static int
+_wrap_e_contact_new(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = { "vcard", NULL };
+    gchar *vcard = NULL;
+    EContact *contact = NULL;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "|z:EContact.__init__",
+                                     kwlist, &vcard))
+        return -1;
+
+    if (vcard)
+        contact = (EContact *) e_contact_new_from_vcard(vcard);
+    else
+        contact = (EContact *) e_contact_new();
+
+    if (!contact) {
+        PyErr_SetString(PyExc_RuntimeError, "could not create EContact object");
+        return -1;
+    } else {
+        self->obj = (GObject*) contact;
+        pygobject_register_wrapper((PyObject *)self);
+        return 0;
+    }
+
+}
+%%
+override evo_contact_get_modified noargs
+static PyObject *
+_wrap_evo_contact_get_modified(PyGObject *self)
+{
+    EContact *contact = NULL;
+    glong seconds = 0;
+    char *timestr = NULL;
+    struct tm *time = NULL;
+
+    contact = E_CONTACT(self->obj);
+    timestr = (char *)e_contact_get(contact, E_CONTACT_REV);
+
+    if (timestr) {
+        time = g_malloc0 (sizeof (struct tm));
+        /* Evolution stores REV field in the following strftime format
+        "%Y-%m-%dT%H:%M:%SZ" 
+        Unparse it and reparse it to time since epoch
+        */
+        if (strptime(timestr, "%Y-%m-%dT%H:%M:%SZ", time)) {
+            char seconds_string[25] = {0};
+
+            strftime (seconds_string, sizeof(seconds_string), "%s", time);
+            seconds = strtol(seconds_string, NULL, 10);
+        }
+    }
+
+    g_free(time);
+    g_free(timestr);
+
+    return PyLong_FromLong((long) seconds);
+}
+%%
+override e_book_commit_contact kwargs
+static PyObject *
+_wrap_e_book_commit_contact(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = {"contact", NULL};
+    PyGObject *pycontact;
+    PyObject *pyret;
+    EBook *book;
+    EContact *contact;
+    gboolean ret;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O!:EBook.commit_contact",
+                                     kwlist, &PyEContact_Type,
+                                     (PyObject **)&pycontact)){
+        return NULL;
+    }
+
+    contact = (EContact *)pycontact->obj;
+    book = (EBook *)self->obj;
+
+    ret = e_book_commit_contact(book, contact, NULL);
+
+    if (ret) {
+        pyret = Py_True;
+    } else {
+        pyret = Py_False;
+    }
+
+    Py_XINCREF(pyret);
+    return pyret;
+}
+%%
+override e_book_get_book_view kwargs
+static PyObject *
+_wrap_e_book_get_book_view(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] = {"query", "fields", "max", NULL};
+    int results = 0;
+    PyObject *pyfields = NULL;
+    GList *fields = NULL;
+    PyObject *query = NULL;
+    PyObject *ret = NULL;
+    int cret;
+    EBookView *view = NULL;
+    EBookQuery *equery = NULL;
+    GError *err = NULL;
+
+    if(!PyArg_ParseTupleAndKeywords(args, kwargs, "O!|O!i:EBook.get_book_view",
+                                    kwlist, &PyEBookQuery_Type, &query, &PyList_Type, &pyfields,
+                                    &results))
+        return NULL;
+
+    if (pyfields != NULL) {
+        /* Translating to glist */
+        int len;
+        int i;
+
+        len = PyList_Size(pyfields);
+
+        for(i = 0; i < len; i++){
+            PyObject *item;
+            EContactField field;
+            const char *name;
+
+            item = PyList_GetItem(pyfields, i);
+
+            pyg_enum_get_value(E_TYPE_CONTACT_FIELD, item, (gint *)&field);
+            name = e_contact_field_name(field);
+            fields = g_list_append(fields, (gpointer) name);
+        }
+    }
+
+    equery = ((PyEBookQuery *)query)->query;
+    cret = e_book_get_book_view(E_BOOK(self->obj), equery, fields, results, &view, &err);
+
+    /* Create the bookview object */
+    ret = pygobject_new(G_OBJECT(view));
+
+    /* e_book_query_unref(equery); The book view gets the ownership of the ref */
+    if (fields != NULL)
+        g_list_free(fields);
+
+    Py_XINCREF(ret);
+    return ret;
+}
+%%
+override e_book_view_set_contacts_added_cb kwargs
+static PyObject *
+_wrap_e_book_view_set_contacts_added_cb(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    PyObject *callback;
+    PyObject *extra_args;
+    struct bookview_cb_t *data;
+    int len;
+    guint result;
+
+    len = PyTuple_Size(args);
+    if (len < 1){
+        PyErr_SetString(PyExc_TypeError,
+                        "EBookView.set_contacts_added_cb requires at least one argument");
+        return NULL;
+    }
+
+    data = g_new(struct bookview_cb_t, 1);
+
+    callback = PyTuple_GetItem(args, 0);
+
+    if(!PyCallable_Check(callback)){
+        PyErr_SetString(PyExc_TypeError, "callback must be callable");
+        return NULL;
+    }
+
+    Py_XINCREF(callback);
+    data->callback = callback;
+
+    if (len > 1){
+        extra_args = PySequence_GetSlice(args, 1, len);
+    } else {
+        extra_args = NULL;
+    }
+
+    data->extra_data = extra_args;
+    data->converter = (GlistToPyListConverter) econtact_to_pycontact;
+
+    result = g_signal_connect(self->obj, "contacts-added", (GCallback) contacts_list_cb, data);
+
+    return PyInt_FromLong(result);
+}
+%%
+override e_book_view_remove_contacts_added_cb kwargs
+static PyObject *
+_wrap_e_book_view_remove_contacts_added_cb(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] ={"handler_id", NULL};
+    int handler;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "i", kwlist, &handler)) {
+        return NULL;
+    }
+
+    g_signal_handler_disconnect(self->obj, handler);
+
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+%%
+override e_book_view_set_contacts_changed_cb kwargs
+static PyObject *
+_wrap_e_book_view_set_contacts_changed_cb(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    PyObject *callback;
+    PyObject *extra_args;
+    struct bookview_cb_t *data;
+    int len;
+    guint result;
+
+    len = PyTuple_Size(args);
+    if (len < 1){
+        PyErr_SetString(PyExc_TypeError,
+                        "EBookView.set_contacts_added_cb requires at least one argument");
+        return NULL;
+    }
+
+    data = g_new(struct bookview_cb_t, 1);
+
+    callback = PyTuple_GetItem(args, 0);
+
+    if(!PyCallable_Check(callback)){
+        PyErr_SetString(PyExc_TypeError, "callback must be callable");
+        return NULL;
+    }
+
+    Py_XINCREF(callback);
+    data->callback = callback;
+
+    if (len > 1){
+        extra_args = PySequence_GetSlice(args, 1, len);
+    } else {
+        extra_args = NULL;
+    }
+
+    data->extra_data = extra_args;
+    data->converter = (GlistToPyListConverter) econtact_to_pycontact;
+
+    result = g_signal_connect(self->obj, "contacts-changed", (GCallback) contacts_list_cb, data);
+
+    return PyInt_FromLong(result);
+}
+%%
+override e_book_view_remove_contacts_changed_cb kwargs
+static PyObject *
+_wrap_e_book_view_remove_contacts_changed_cb(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] ={"handler_id", NULL};
+    int handler;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "i", kwlist, &handler)) {
+        return NULL;
+    }
+
+    g_signal_handler_disconnect(self->obj, handler);
+
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+%%
+override e_book_view_set_contacts_removed_cb kwargs
+static PyObject *
+_wrap_e_book_view_set_contacts_removed_cb(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    PyObject *callback;
+    PyObject *extra_args;
+    struct bookview_cb_t *data;
+    int len;
+    guint result;
+
+    len = PyTuple_Size(args);
+    if (len < 1){
+        PyErr_SetString(PyExc_TypeError,
+                        "EBookView.set_contacts_removed_cb requires at least one argument");
+        return NULL;
+    }
+
+    data = g_new(struct bookview_cb_t, 1);
+
+    callback = PyTuple_GetItem(args, 0);
+
+    if(!PyCallable_Check(callback)){
+        PyErr_SetString(PyExc_TypeError, "callback must be callable");
+        return NULL;
+    }
+
+    Py_XINCREF(callback);
+    data->callback = callback;
+
+    if (len > 1){
+        extra_args = PySequence_GetSlice(args, 1, len);
+    } else {
+        extra_args = NULL;
+    }
+
+    data->extra_data = extra_args;
+    data->converter = (GlistToPyListConverter) PyString_FromString;
+
+    result = g_signal_connect(self->obj, "contacts-removed", (GCallback) contacts_list_cb, data);
+
+    return PyInt_FromLong(result);
+}
+%%
+override e_book_view_remove_contacts_removed_cb kwargs
+static PyObject *
+_wrap_e_book_view_remove_contacts_removed_cb(PyGObject *self, PyObject *args, PyObject *kwargs)
+{
+    static char *kwlist[] ={"handler_id", NULL};
+    int handler;
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, "i", kwlist, &handler)) {
+        return NULL;
+    }
+
+    g_signal_handler_disconnect(self->obj, handler);
+
+    Py_INCREF(Py_None);
+    return Py_None;
+}
+

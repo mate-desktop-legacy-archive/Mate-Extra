@@ -1,0 +1,24 @@
+# -*- python -*-
+# encoding: utf-8
+
+
+def configure(conf):
+    conf.env.append_value('MODULES_AVAILABLE', 'rsvg')
+    if 'rsvg' in conf.env['ENABLE_MODULES'] or 'all' in conf.env['ENABLE_MODULES']:
+        if conf.pkg_check_modules('RSVG',
+                                  'librsvg-2.0 >= 2.14 pycairo pygobject-2.0 ',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'rsvg')
+
+
+def build(bld):
+    if 'rsvg' in bld.env['MODULES_TO_BUILD']:
+        bld.codegen('rsvg')
+        pyext = bld.create_pyext()
+        pyext.source = 'rsvgmodule.c rsvg.c'
+        pyext.target = 'rsvg'
+        pyext.uselib = 'RSVG'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0'
+
+        bld.install_files('${DATADIR}/pygtk/2.0/defs', 'rsvg.defs')
+

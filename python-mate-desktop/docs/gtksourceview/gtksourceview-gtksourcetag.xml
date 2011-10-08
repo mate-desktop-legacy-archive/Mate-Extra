@@ -1,0 +1,185 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-gtksourcetag">
+  <refnamediv>
+    <refname>gtksourceview.SourceTag</refname>
+    <refpurpose>Tag object for <link linkend="class-gtksourceview">gtksourceview.SourceView</link></refpurpose>
+  </refnamediv>
+
+<!-- ****************************** -->
+<!-- BEGIN OF GTKSOURCETAG SYNOPSIS -->
+<!-- ****************************** -->
+
+<refsect1>
+  <title>Synopsis</title>
+
+  <classsynopsis language="python">
+  <ooclass><classname>gtksourceview.SourceTag</classname></ooclass>
+  <ooclass><classname><link linkend="class-gtktexttag">gtk.TextTag</link></classname></ooclass>
+    
+  <methodsynopsis language="python">
+	  <methodname><link linkend="method-gtksourcetag--get-id">get_id</link></methodname>
+	  <methodparam></methodparam>
+  </methodsynopsis>
+    
+  <methodsynopsis language="python">
+	  <methodname><link linkend="method-gtksourcetag--get-style">get_style</link></methodname>
+	  <methodparam></methodparam>
+  </methodsynopsis>
+    
+  <methodsynopsis language="python">
+	  <methodname><link linkend="method-gtksourcetag--set-style">set_style</link></methodname>
+	  <methodparam><parameter role="keyword">style</parameter></methodparam>
+  </methodsynopsis>
+</classsynopsis>
+</refsect1>
+
+<!-- ****************************** -->
+<!-- BEGIN OF GTKSOURCETAG ANCESTRY -->
+<!-- ****************************** -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-gtktexttag">gtk.TextTag</link>
+    +-- <link linkend="class-gtksourcetag">gtksourceview.SourceTag</link>
+      +-- <link linkend="class-gtksyntaxtag">gtksourceview.SourceSyntaxTag</link>
+      +-- <link linkend="class-gtkpatterntag">gtksourceview.SourcePatternTag</link>
+</synopsis>
+</refsect1>
+
+<!-- ******************************** -->
+<!-- BEGIN OF GTKSOURCETAG PROPERTIES -->
+<!-- ******************************** -->
+
+<refsect1>
+    <title>Properties</title>
+
+    <blockquote role="properties">
+      <informaltable pgwide="1" frame="none">
+	<tgroup cols="3">
+	  <colspec column="1" colwidth="1in"/>
+	  <colspec column="2" colwidth="1in"/>
+	  <colspec column="3" colwidth="4in"/>
+	  <tbody>
+
+	    <row valign="top">
+	      <entry>"id"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>ID used to refer to the source tag.</entry>
+	    </row>
+
+	    <row valign="top">
+	      <entry>"tag-style"</entry>
+	      <entry>Read-Write</entry>
+	      <entry>The style associated to the source tag.</entry>
+	    </row>
+    </tbody>
+  </tgroup>
+  </informaltable>
+  </blockquote>
+</refsect1>
+
+<!-- ********************************* -->
+<!-- BEGIN OF GTKSOURCETAG DESCRIPTION -->
+<!-- ********************************* -->
+
+<refsect1 id="description-gtksourcetag">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF GTKSOURCETAG CONSTRUCTORS -->
+<!-- ********************************** -->
+
+<refsect1 id="constructor-gtksourcetag">
+  <title>Constructors</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>gtksourceview.SourceTag</methodname>
+	  <methodparam><parameter role="keyword"></parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link>.</simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link>.
+  </para>
+</refsect1>
+
+<!-- ***************************** -->
+<!-- BEGIN OF GTKSOURCETAG METHODS -->
+<!-- ***************************** -->
+
+<refsect1>
+  <title>Methods</title>
+
+  <refsect2 id="method-gtksourcetag--get-id">
+  <title>gtksourceview.SourceTag.get_id</title>
+  <programlisting><methodsynopsis language="python">
+	  <methodname>get_id</methodname>
+	  <methodparam></methodparam>
+  </methodsynopsis></programlisting>
+      
+  <variablelist>
+	  <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>.......</simpara></listitem>
+	  </varlistentry>
+  </variablelist>
+
+  <para>
+    The <methodname>get_id</methodname>() method .....
+	</para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcetag--get-style">
+    <title>gtksourceview.SourceTag.get_style</title>
+
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_style</methodname>
+	  <methodparam></methodparam></methodsynopsis></programlisting>
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara>a <link linkend="class-gtksourcetagstyle"><classname>gtksourceview.SourceTagStyle</classname></link> 
+        if found, or <literal>None</literal> if not found.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_style</methodname>() method gets the style associated with the tag.
+    </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcetag--set-style">
+      <title>gtksourceview.SourceTag.set_style</title>
+      <programlisting><methodsynopsis language="python">
+	  <methodname>set_style</methodname>
+	  <methodparam><parameter role="keyword">style</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+      <variablelist>
+	  <varlistentry>
+	  <term><parameter role="keyword">style</parameter>&nbsp;:</term>
+	  <listitem><simpara> the <link linkend="class-gtksourcetagstyle"><classname>gtksourceview.SourceTagStyle</classname></link>.</simpara></listitem>
+	  </varlistentry>
+      </variablelist>
+
+      <para>
+      The <methodname>set_style</methodname>() Associates a given <parameter>style</parameter> with the current tag.
+	  </para>
+  </refsect2>
+</refsect1>  
+</refentry>

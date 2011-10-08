@@ -1,0 +1,438 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<refentry id="class-gtksourcelanguage">
+  <refnamediv>
+    <refname>gtksourceview.SourceLanguage</refname>
+    <refpurpose>Source language object for <link linkend="class-gtksourceview">gtksourceview.SourceView</link></refpurpose>
+  </refnamediv>
+
+<!-- *********************************** -->
+<!-- BEGIN OF GTKSOURCELANGUAGE SYNOPSIS -->
+<!-- *********************************** -->
+
+<refsect1>
+  <title>Synopsis</title>
+  
+    <classsynopsis language="python">
+    <ooclass><classname>gtksourceview.SourceLanguage</classname></ooclass>
+    <ooclass><classname><link linkend="class-gobject">gobject.GObject</link></classname></ooclass>
+
+    <constructorsynopsis language="python">
+	    <methodname><link linkend="constructor-gtksourcelanguage">gtksourceview.SourceLanguage</link></methodname>
+	    <methodparam><parameter role="keyword"></parameter></methodparam>
+    </constructorsynopsis>    
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcelanguage--get-name">get_name</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcelanguage--get-section">get_section</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcelanguage--get-tags">get_tags</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcelanguage--get-escape-char">get_escape_char</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+      <methodname><link linkend="method-gtksourcelanguage--get-mime-types">get_mime_types</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+      <methodname><link linkend="method-gtksourcelanguage--set-mime-types">set_mime_types</link></methodname>
+    	<methodparam><parameter role="keyword">mime_types</parameter></methodparam>
+    </methodsynopsis>
+
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcelanguage--get-style-scheme">get_style_scheme</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+      
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcelanguage--set-style-scheme">set_style_scheme</link></methodname>
+	    <methodparam><parameter role="keyword">style_scheme</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcelanguage--get-tag-style">get_tag_style</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+	    <methodname><link linkend="method-gtksourcelanguage--set-tag-style">set_tag_style</link></methodname>
+	    <methodparam><parameter role="keyword">tag_style</parameter></methodparam>
+    </methodsynopsis>
+    
+    <methodsynopsis language="python">
+    	<methodname><link linkend="method-gtksourcelanguage--get-tag-default-style">get_tag_default_style</link></methodname>
+	    <methodparam></methodparam>
+    </methodsynopsis>
+  </classsynopsis>
+</refsect1>
+
+
+<!-- *********************************** -->
+<!-- BEGIN OF GTKSOURCELANGUAGE ANCESTRY -->
+<!-- *********************************** -->
+
+<refsect1>
+    <title>Ancestry</title>
+
+<synopsis>+-- <link linkend="class-gobject">gobject.GObject</link>
+  +-- <link linkend="class-gtksourcelanguage">gtksourceview.SourceLanguage</link>
+</synopsis>
+</refsect1>
+
+
+
+<!-- ******************************************** -->
+<!-- BEGIN OF GTKSOURCELANGUAGE SIGNAL PROTOTYPES -->
+<!-- ******************************************** -->
+
+<refsect1>
+    <title>Signal Prototypes</title>
+    <variablelist>
+      <varlistentry>
+        <term>"<link linkend="signal-gtksourcelanguage--tag-style-changed">"tag-style-changed"</link>"</term>
+        <listitem>
+          <methodsynopsis language="python"><methodname>callback</methodname>
+            <methodparam><parameter>sourcelanguage</parameter></methodparam>
+            <methodparam><parameter>arg1</parameter></methodparam>
+            <methodparam><parameter>user_param1</parameter></methodparam>
+            <methodparam><parameter>...</parameter></methodparam>
+          </methodsynopsis>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF GTKSOURCELANGUAGE DESCRIPTION -->
+<!-- ************************************** -->
+
+<refsect1 id="description-gtksourcelanguage">
+    <title>Description</title>
+
+<para>
+
+</para>
+</refsect1>
+
+<!-- ************************************** -->
+<!-- BEGIN OF GTKSOURCELANGUAGE CONSTRUCTOR -->
+<!-- ************************************** -->
+
+<refsect1 id="constructor-gtksourcelanguage">
+  <title>Constructor</title>
+
+  <programlisting><constructorsynopsis language="python">
+	  <methodname>gtksourceview.SourceLanguage</methodname>
+	  <methodparam><parameter role="keyword"></parameter></methodparam>
+  </constructorsynopsis></programlisting>
+    
+  <variablelist>
+    <varlistentry>
+	    <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	    <listitem><simpara>a new <link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link>.</simpara></listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>
+    Creates a new <link linkend="class-gtksourcelanguage"><classname>gtksourceview.SourceLanguage</classname></link> object.
+  </para>
+</refsect1>
+
+<!-- ********************************** -->
+<!-- BEGIN OF GTKSOURCELANGUAGE METHODS -->
+<!-- ********************************** -->
+
+<refsect1>
+  <title>Methods</title>
+
+  <refsect2 id="method-gtksourcelanguage--get-name">
+    <title>gtksourceview.SourceLanguage.get_name</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_name</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara>	the name of <parameter>language</parameter>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_name</methodname>() method returns the localized name of the language.
+	  </para>
+  </refsect2>
+
+
+  <refsect2 id="method-gtksourcelanguage--get-section">
+    <title>gtksourceview.SourceLanguage.get_section</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_section</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara>	the section of <parameter>language</parameter>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_section</methodname>() method returns the localized section of the language. 
+      Each language belong to a section (ex. HTML belogs to the Markup section)
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcelanguage--get-tags">
+    <title>gtksourceview.SourceLanguage.get_tags</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_tags</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a list of <link linkend="class-gtksourcetagstyle"><classname>gtksourceview.SourceTagStyle</classname></link> 
+        objects.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_tags</methodname>() method Returns a list of tags for the given <parameter>language</parameter>. 
+      You should unref the tags and free the list after usage.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcelanguage--get-escape-char">
+    <title>gtksourceview.SourceLanguage.get_escape_char</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_escape_char</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> the value of the ESC character.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_escape_char</methodname>() method gets the value of the ESC character in the given <parameter>language</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcelanguage--get-mime-types">
+    <title>gtksourceview.SourceLanguage.get_mime_types</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_mime_types</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a list of mime types (strings).</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_mime_types</methodname>() method returns a list of mime types for the given <parameter>language</parameter>. 
+      After usage you should free each element of the list as well as the list itself.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcelanguage--set-mime-types">
+    <title>gtksourceview.SourceLanguage.set_mime_types</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>set_mime_types</methodname>
+	  <methodparam><parameter role="keyword">mime_types</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter role="keyword">mime_types</parameter>&nbsp;:</term>
+	      <listitem><simpara> a list of mime types (strings).</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>set_mime_types</methodname>() method sets a list of <parameter>mime_types</parameter> for the given 
+      <parameter>language</parameter>. If <parameter>mime_types</parameter> is <literal>None</literal> this function 
+      will use the default mime types from the language file.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcelanguage--get-style-scheme">
+    <title>gtksourceview.SourceLanguage.get_style_scheme</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_style_scheme</methodname>
+	  <methodparam></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a <link linkend="class-gtksourcestylescheme"><classname>gtksourceview.SourceStyleScheme</classname></link>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_style_scheme</methodname>() method gets the style scheme associated with the given <parameter>language</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcelanguage--set-style-scheme">
+    <title>gtksourceview.SourceLanguage.set_style_scheme</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>set_style_scheme</methodname>
+	  <methodparam><parameter role="keyword">style_scheme</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter role="keyword">style_scheme</parameter>&nbsp;:</term>
+	      <listitem><simpara> a <link linkend="class-gtksourcestylescheme"><classname>gtksourceview.SourceStyleScheme</classname></link>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>set_style_scheme</methodname>() method Sets the style scheme of the given <parameter>language</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcelanguage--get-tag-style">
+    <title>gtksourceview.SourceLanguage.get_tag_style</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_tag_style</methodname>
+	  <methodparam><parameter role="keyword">tag_id</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter role="keyword">tag_id</parameter>&nbsp;:</term>
+	      <listitem><simpara> the ID of a <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link>.</simpara></listitem>
+	    </varlistentry>
+      <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a <link linkend="class-gtksourcetagstyle"><classname>gtksourceview.SourceTagStyle</classname></link>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_tag_style</methodname>() method gets the style of the tag whose ID is <parameter>tag_id</parameter>. 
+      If the style is not defined then returns the default style.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcelanguage--set-tag-style">
+    <title>gtksourceview.SourceLanguage.set_style_scheme</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>set_tag_style</methodname>
+	  <methodparam><parameter role="keyword">tag_id</parameter></methodparam>
+    <methodparam><parameter role="keyword">style</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter role="keyword">tag_id</parameter>&nbsp;:</term>
+	      <listitem><simpara> the ID of a <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link>.</simpara></listitem>
+	    </varlistentry>
+      <varlistentry>
+	      <term><parameter role="keyword">style</parameter>&nbsp;:</term>
+	      <listitem><simpara> a <link linkend="class-gtksourcetagstyle"><classname>gtksourceview.SourceTagStyle</classname></link>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>set_tag_style</methodname>() method sets the <parameter>style</parameter> of the tag whose 
+      ID is <parameter>tag_id</parameter>. If style is <literal>None</literal> restore the default <parameter>style</parameter>.
+	  </para>
+  </refsect2>
+
+  <refsect2 id="method-gtksourcelanguage--get-tag-default-style">
+    <title>gtksourceview.SourceLanguage.get_tag_default_style</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>get_tag_default_style</methodname>
+	  <methodparam><parameter role="keyword">tag_id</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+      
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter role="keyword">tag_id</parameter>&nbsp;:</term>
+	      <listitem><simpara> the ID of a <link linkend="class-gtksourcetag"><classname>gtksourceview.SourceTag</classname></link>.</simpara></listitem>
+	    </varlistentry>
+      <varlistentry>
+	      <term><emphasis>Returns</emphasis>&nbsp;:</term>
+	      <listitem><simpara> a <link linkend="class-gtksourcetagstyle"><classname>gtksourceview.SourceTagStyle</classname></link>.</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The <methodname>get_tag_default_style</methodname>() method gets the default style of the tag whose ID is <parameter>tag_id</parameter>. 
+	  </para>
+  </refsect2>
+</refsect1> 
+
+<!-- ********************************** -->
+<!-- BEGIN OF GTKSOURCELANGUAGE SIGNALS -->
+<!-- ********************************** --> 
+ 
+<refsect1>
+    <title>Signals</title>
+
+  <refsect2 id="signal-gtksourcelanguage--tag-style-changed">
+    <title>The "tag-style-changed" gtksourceview.SourceLanguage Signal</title>
+    <programlisting><methodsynopsis language="python">
+	  <methodname>callback</methodname>
+	  <methodparam><parameter>sourcelanguage</parameter></methodparam>
+    <methodparam><parameter>arg1</parameter></methodparam>
+	  <methodparam><parameter>user_param1</parameter></methodparam>
+	  <methodparam><parameter>...</parameter></methodparam>
+	  </methodsynopsis></programlisting>
+
+    <variablelist>
+	    <varlistentry>
+	      <term><parameter>sourcelanguage</parameter>&nbsp;:</term>
+	      <listitem><simpara>the sourcelanguage that received the signal</simpara></listitem>
+	    </varlistentry>
+      <varlistentry>
+	      <term><parameter>arg1</parameter>&nbsp;:</term>
+          <listitem><simpara></simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>user_param1</parameter>&nbsp;:</term>
+          <listitem><simpara>the first user parameter (if any) specified with the 
+          <link linkend="method-gobject--connect"><methodname>connect</methodname>()</link> method</simpara></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><parameter>...</parameter>&nbsp;:</term>
+	      <listitem><simpara>additional user parameters (if any)</simpara></listitem>
+	    </varlistentry>
+    </variablelist>
+
+    <para>
+      The "tag-style-changed" signal is emitted when ....
+    </para>
+
+  </refsect2>
+
+</refsect1>
+</refentry>

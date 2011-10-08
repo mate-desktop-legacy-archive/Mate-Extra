@@ -1,0 +1,548 @@
+;; -*- scheme -*-
+; object definitions ...
+
+(define-object Drive
+  (parent "GObject")
+  (c-name "CajaBurnDrive")
+  (gtype-id "CAJA_BURN_TYPE_DRIVE")
+)
+
+(define-object DriveMonitor
+  (parent "GObject")
+  (c-name "CajaBurnDriveMonitor")
+  (gtype-id "CAJA_BURN_TYPE_DRIVE_MONITOR")
+)
+
+(define-object Recorder
+  (parent "GObject")
+  (c-name "CajaBurnRecorder")
+  (gtype-id "CAJA_BURN_TYPE_RECORDER")
+)
+
+(define-object DriveSelection
+  (parent "GtkComboBox")
+  (c-name "CajaBurnDriveSelection")
+  (gtype-id "CAJA_BURN_TYPE_DRIVE_SELECTION")
+)
+
+;; Enumerations and flags ...
+
+(define-enum MediaType
+  (in-module "Caja")
+  (c-name "CajaBurnMediaType")
+  ;(gtype-id "CAJA_BURN_TYPE_MEDIA_TYPE")
+  (values
+    '("busy" "CAJA_BURN_MEDIA_TYPE_BUSY")
+    '("error" "CAJA_BURN_MEDIA_TYPE_ERROR")
+    '("unknown" "CAJA_BURN_MEDIA_TYPE_UNKNOWN")
+    '("cd" "CAJA_BURN_MEDIA_TYPE_CD")
+    '("cdr" "CAJA_BURN_MEDIA_TYPE_CDR")
+    '("cdrw" "CAJA_BURN_MEDIA_TYPE_CDRW")
+    '("dvd" "CAJA_BURN_MEDIA_TYPE_DVD")
+    '("dvdr" "CAJA_BURN_MEDIA_TYPE_DVDR")
+    '("dvdrw" "CAJA_BURN_MEDIA_TYPE_DVDRW")
+    '("dvd-ram" "CAJA_BURN_MEDIA_TYPE_DVD_RAM")
+    '("dvd-plus-r" "CAJA_BURN_MEDIA_TYPE_DVD_PLUS_R")
+    '("dvd-plus-rw" "CAJA_BURN_MEDIA_TYPE_DVD_PLUS_RW")
+    '("dvd-plus-r-dl" "CAJA_BURN_MEDIA_TYPE_DVD_PLUS_R_DL")
+  )
+)
+
+(define-flags DriveType
+  (in-module "Caja")
+  (c-name "CajaBurnDriveType")
+  ;(gtype-id "CAJA_BURN_TYPE_DRIVE_TYPE")
+  (values
+    '("file" "CAJA_BURN_DRIVE_TYPE_FILE")
+    '("cd-recorder" "CAJA_BURN_DRIVE_TYPE_CD_RECORDER")
+    '("cdrw-recorder" "CAJA_BURN_DRIVE_TYPE_CDRW_RECORDER")
+    '("dvd-ram-recorder" "CAJA_BURN_DRIVE_TYPE_DVD_RAM_RECORDER")
+    '("dvd-rw-recorder" "CAJA_BURN_DRIVE_TYPE_DVD_RW_RECORDER")
+    '("dvd-plus-r-recorder" "CAJA_BURN_DRIVE_TYPE_DVD_PLUS_R_RECORDER")
+    '("dvd-plus-rw-recorder" "CAJA_BURN_DRIVE_TYPE_DVD_PLUS_RW_RECORDER")
+    '("cd-drive" "CAJA_BURN_DRIVE_TYPE_CD_DRIVE")
+    '("dvd-drive" "CAJA_BURN_DRIVE_TYPE_DVD_DRIVE")
+    '("dvd-plus-r-dl-recorder" "CAJA_BURN_DRIVE_TYPE_DVD_PLUS_R_DL_RECORDER")
+  )
+)
+
+(define-enum RecorderError
+  (in-module "Caja")
+  (c-name "CajaBurnRecorderError")
+  ;(gtype-id "CAJA_BURN_TYPE_RECORDER_ERROR")
+  (values
+    '("internal" "CAJA_BURN_RECORDER_ERROR_INTERNAL")
+    '("general" "CAJA_BURN_RECORDER_ERROR_GENERAL")
+  )
+)
+
+(define-enum RecorderResult
+  (in-module "Caja")
+  (c-name "CajaBurnRecorderResult")
+  ;(gtype-id "CAJA_BURN_TYPE_RECORDER_RESULT")
+  (values
+    '("error" "CAJA_BURN_RECORDER_RESULT_ERROR")
+    '("cancel" "CAJA_BURN_RECORDER_RESULT_CANCEL")
+    '("finished" "CAJA_BURN_RECORDER_RESULT_FINISHED")
+    '("retry" "CAJA_BURN_RECORDER_RESULT_RETRY")
+  )
+)
+
+(define-enum RecorderResponse
+  (in-module "Caja")
+  (c-name "CajaBurnRecorderResponse")
+  ;(gtype-id "CAJA_BURN_TYPE_RECORDER_RESPONSE")
+  (values
+    '("none" "CAJA_BURN_RECORDER_RESPONSE_NONE")
+    '("cancel" "CAJA_BURN_RECORDER_RESPONSE_CANCEL")
+    '("erase" "CAJA_BURN_RECORDER_RESPONSE_ERASE")
+    '("retry" "CAJA_BURN_RECORDER_RESPONSE_RETRY")
+  )
+)
+
+(define-enum RecorderTrackType
+  (in-module "Caja")
+  (c-name "CajaBurnRecorderTrackType")
+  ;(gtype-id "CAJA_BURN_TYPE_RECORDER_TRACK_TYPE")
+  (values
+    '("unknown" "CAJA_BURN_RECORDER_TRACK_TYPE_UNKNOWN")
+    '("audio" "CAJA_BURN_RECORDER_TRACK_TYPE_AUDIO")
+    '("data" "CAJA_BURN_RECORDER_TRACK_TYPE_DATA")
+    '("cue" "CAJA_BURN_RECORDER_TRACK_TYPE_CUE")
+    '("graft-list" "CAJA_BURN_RECORDER_TRACK_TYPE_GRAFT_LIST")
+  )
+)
+
+(define-flags RecorderWriteFlags
+  (in-module "Caja")
+  (c-name "CajaBurnRecorderWriteFlags")
+  ;(gtype-id "CAJA_BURN_TYPE_RECORDER_WRITE_FLAGS")
+  (values
+    '("none" "CAJA_BURN_RECORDER_WRITE_NONE")
+    '("eject" "CAJA_BURN_RECORDER_WRITE_EJECT")
+    '("blank" "CAJA_BURN_RECORDER_WRITE_BLANK")
+    '("dummy-write" "CAJA_BURN_RECORDER_WRITE_DUMMY_WRITE")
+    '("disc-at-once" "CAJA_BURN_RECORDER_WRITE_DISC_AT_ONCE")
+    '("debug" "CAJA_BURN_RECORDER_WRITE_DEBUG")
+    '("overburn" "CAJA_BURN_RECORDER_WRITE_OVERBURN")
+    '("burnproof" "CAJA_BURN_RECORDER_WRITE_BURNPROOF")
+    '("joliet" "CAJA_BURN_RECORDER_WRITE_JOLIET")
+  )
+)
+
+(define-flags RecorderBlankFlags
+  (in-module "Caja")
+  (c-name "CajaBurnRecorderBlankFlags")
+  ;(gtype-id "CAJA_BURN_TYPE_RECORDER_BLANK_FLAGS")
+  (values
+    '("none" "CAJA_BURN_RECORDER_BLANK_NONE")
+    '("dummy-write" "CAJA_BURN_RECORDER_BLANK_DUMMY_WRITE")
+    '("debug" "CAJA_BURN_RECORDER_BLANK_DEBUG")
+  )
+)
+
+(define-enum RecorderBlankType
+  (in-module "Caja")
+  (c-name "CajaBurnRecorderBlankType")
+  ;(gtype-id "CAJA_BURN_TYPE_RECORDER_BLANK_TYPE")
+  (values
+    '("ast" "CAJA_BURN_RECORDER_BLANK_FAST")
+    '("ull" "CAJA_BURN_RECORDER_BLANK_FULL")
+  )
+)
+
+(define-enum RecorderActions
+  (in-module "Caja")
+  (c-name "CajaBurnRecorderActions")
+  ;(gtype-id "CAJA_BURN_TYPE_RECORDER_ACTIONS")
+  (values
+    '("preparing-write" "CAJA_BURN_RECORDER_ACTION_PREPARING_WRITE")
+    '("writing" "CAJA_BURN_RECORDER_ACTION_WRITING")
+    '("fixating" "CAJA_BURN_RECORDER_ACTION_FIXATING")
+    '("blanking" "CAJA_BURN_RECORDER_ACTION_BLANKING")
+  )
+)
+
+(define-enum RecorderMedia
+  (in-module "Caja")
+  (c-name "CajaBurnRecorderMedia")
+  ;(gtype-id "CAJA_BURN_TYPE_RECORDER_MEDIA")
+  (values
+    '("cd" "CAJA_BURN_RECORDER_MEDIA_CD")
+    '("dvd" "CAJA_BURN_RECORDER_MEDIA_DVD")
+  )
+)
+
+
+;; From caja-burn-drive.h
+
+(define-function drive_get_type
+  (c-name "caja_burn_drive_get_type")
+  (return-type "GType")
+)
+
+(define-method ref
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_ref")
+  (return-type "CajaBurnDrive*")
+)
+
+(define-method unref
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_unref")
+  (return-type "none")
+)
+
+(define-method equal
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_equal")
+  (return-type "gboolean")
+  (parameters
+    '("CajaBurnDrive*" "b")
+  )
+)
+
+(define-method lock
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_lock")
+  (return-type "gboolean")
+  (parameters
+    '("const-char*" "reason")
+    '("char**" "reason_for_failure")
+  )
+)
+
+(define-method unlock
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_unlock")
+  (return-type "gboolean")
+)
+
+(define-method unmount
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_unmount")
+  (return-type "gboolean")
+)
+
+(define-method is_mounted
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_is_mounted")
+  (return-type "gboolean")
+)
+
+(define-method eject
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_eject")
+  (return-type "gboolean")
+)
+
+(define-method door_is_open
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_door_is_open")
+  (return-type "gboolean")
+)
+
+(define-method get_drive_type
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_drive_type")
+  (return-type "int")
+)
+
+(define-method get_name_for_display
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_name_for_display")
+  (return-type "char*")
+)
+
+(define-method get_device
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_device")
+  (return-type "const-char*")
+)
+
+(define-method can_write
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_can_write")
+  (return-type "gboolean")
+)
+
+(define-method can_rewrite
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_can_rewrite")
+  (return-type "gboolean")
+)
+
+(define-method get_max_speed_write
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_max_speed_write")
+  (return-type "int")
+)
+
+(define-method get_max_speed_read
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_max_speed_read")
+  (return-type "int")
+)
+
+(define-method get_write_speeds
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_write_speeds")
+  (return-type "const-int*")
+)
+
+(define-method get_media_type
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_media_type")
+  (return-type "CajaBurnMediaType")
+)
+
+(define-method get_media_type_full
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_media_type_full")
+  (return-type "CajaBurnMediaType")
+  (parameters
+    ;'("gboolean*" "is_rewritable")
+    ;'("gboolean*" "is_blank")
+    ;'("gboolean*" "has_data")
+    ;'("gboolean*" "has_audio")
+  )
+)
+
+(define-method get_media_capacity
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_media_capacity")
+  (return-type "gint64")
+)
+
+(define-method get_media_size
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_media_size")
+  (return-type "gint64")
+)
+
+(define-method get_media_label
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_media_label")
+  (return-type "char*")
+)
+
+(define-method media_is_appendable
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_media_is_appendable")
+  (return-type "gboolean")
+)
+
+(define-function drive_media_type_get_string
+  (c-name "caja_burn_drive_media_type_get_string")
+  (return-type "const-char*")
+  (parameters
+    '("CajaBurnMediaType" "type")
+  )
+)
+
+(define-method get_supported_media_string
+  (of-object "CajaBurnDrive")
+  (c-name "caja_burn_drive_get_supported_media_string")
+  (return-type "char*")
+  (parameters
+    '("gboolean" "writable_only")
+  )
+)
+
+(define-function drive_media_type_is_writable
+  (c-name "caja_burn_drive_media_type_is_writable")
+  (return-type "gboolean")
+  (parameters
+    '("CajaBurnMediaType" "type")
+    '("gboolean" "is_blank")
+  )
+)
+
+
+
+;; From caja-burn-drive-monitor.h
+
+(define-function drive_monitor_get_type
+  (c-name "caja_burn_drive_monitor_get_type")
+  (return-type "GType")
+)
+
+(define-function get_drive_monitor
+  (c-name "caja_burn_get_drive_monitor")
+  (return-type "CajaBurnDriveMonitor*")
+)
+
+(define-method get_drives
+  (of-object "CajaBurnDriveMonitor")
+  (c-name "caja_burn_drive_monitor_get_drives")
+  (return-type "GList*")
+)
+
+(define-method get_recorder_drives
+  (of-object "CajaBurnDriveMonitor")
+  (c-name "caja_burn_drive_monitor_get_recorder_drives")
+  (return-type "GList*")
+)
+
+(define-method get_drive_for_device
+  (of-object "CajaBurnDriveMonitor")
+  (c-name "caja_burn_drive_monitor_get_drive_for_device")
+  (return-type "CajaBurnDrive*")
+  (parameters
+    '("const-char*" "path")
+  )
+)
+
+
+(define-method get_drive_for_image
+  (of-object "CajaBurnDriveMonitor")
+  (c-name "caja_burn_drive_monitor_get_drive_for_image")
+  (return-type "CajaBurnDrive*")
+)
+
+
+
+;; From caja-burn-drive-selection.h
+
+(define-function drive_selection_get_type
+  (c-name "caja_burn_drive_selection_get_type")
+  (return-type "GtkType")
+)
+
+(define-function drive_selection_new
+  (c-name "caja_burn_drive_selection_new")
+  (is-constructor-of "CajaBurnDriveSelection")
+  (return-type "GtkWidget*")
+)
+
+(define-method set_active
+  (of-object "CajaBurnDriveSelection")
+  (c-name "caja_burn_drive_selection_set_active")
+  (return-type "none")
+  (parameters
+    '("CajaBurnDrive*" "drive")
+  )
+)
+
+(define-method get_active
+  (of-object "CajaBurnDriveSelection")
+  (c-name "caja_burn_drive_selection_get_active")
+  (return-type "CajaBurnDrive*")
+)
+
+(define-method get_drive
+  (of-object "CajaBurnDriveSelection")
+  (c-name "caja_burn_drive_selection_get_drive")
+  (return-type "const-CajaBurnDrive*")
+)
+
+(define-method set_device
+  (of-object "CajaBurnDriveSelection")
+  (c-name "caja_burn_drive_selection_set_device")
+  (return-type "none")
+  (parameters
+    '("const-char*" "device")
+  )
+)
+
+(define-method get_device
+  (of-object "CajaBurnDriveSelection")
+  (c-name "caja_burn_drive_selection_get_device")
+  (return-type "const-char*")
+)
+
+(define-method get_default_device
+  (of-object "CajaBurnDriveSelection")
+  (c-name "caja_burn_drive_selection_get_default_device")
+  (return-type "const-char*")
+)
+
+
+
+;; From caja-burn-features.h
+
+
+
+;; From caja-burn.h
+
+
+
+;; From caja-burn-init.h
+
+(define-function init
+  (c-name "caja_burn_init")
+  (return-type "gboolean")
+)
+
+(define-function initialized
+  (c-name "caja_burn_initialized")
+  (return-type "gboolean")
+)
+
+(define-function shutdown
+  (c-name "caja_burn_shutdown")
+  (return-type "none")
+)
+
+
+
+;; From caja-burn-recorder.h
+
+(define-function recorder_error_quark
+  (c-name "caja_burn_recorder_error_quark")
+  (return-type "GQuark")
+)
+
+(define-function recorder_get_type
+  (c-name "caja_burn_recorder_get_type")
+  (return-type "GType")
+)
+
+(define-function recorder_new
+  (c-name "caja_burn_recorder_new")
+  (is-constructor-of "CajaBurnRecorder")
+  (return-type "CajaBurnRecorder*")
+)
+
+(define-method write_tracks
+  (of-object "CajaBurnRecorder")
+  (c-name "caja_burn_recorder_write_tracks")
+  (return-type "int")
+  (parameters
+    '("CajaBurnDrive*" "drive")
+    '("GList*" "tracks")
+    '("gint" "speed")
+    '("CajaBurnRecorderWriteFlags" "flags")
+    '("GError**" "error")
+  )
+)
+
+(define-method blank_disc
+  (of-object "CajaBurnRecorder")
+  (c-name "caja_burn_recorder_blank_disc")
+  (unblock-threads #t)
+  (return-type "int")
+  (parameters
+    '("CajaBurnDrive*" "drive")
+    '("CajaBurnRecorderBlankType" "type")
+    '("CajaBurnRecorderBlankFlags" "flags")
+    '("GError**" "error")
+  )
+)
+
+(define-method cancel
+  (of-object "CajaBurnRecorder")
+  (c-name "caja_burn_recorder_cancel")
+  (return-type "gboolean")
+  (parameters
+    '("gboolean" "skip_if_dangerous")
+  )
+)
+
+(define-method free
+  (of-object "CajaBurnRecorderTrack")
+  (c-name "caja_burn_recorder_track_free")
+  (return-type "none")
+)
+
+

@@ -1,0 +1,17 @@
+This package contains a few python modules that used to live in mate-python-extras:
+
+  - mateapplet
+  - mateprint, mateprint.ui
+  - gtksourceview
+  - wnck
+  - totem.plparser
+  - gtop
+  - cajaburn
+  - mediaprofiles
+  - marco
+
+Note: this branch requires a special branch of WAF: https://code.launchpad.net/~gjc/waf/cmd
+This WAF version can be retrieved by this command:
+
+$ bzr co lp:~gjc/waf/cmd waf-cmd
+

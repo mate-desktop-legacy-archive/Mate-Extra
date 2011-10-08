@@ -1,0 +1,37 @@
+/* -*- Mode: C; c-basic-offset: 4 -*- */
+%%
+headers
+#include <Python.h>
+
+#define NO_IMPORT_PYGOBJECT
+#include <pygobject.h>
+
+#include <marco-private/preview-widget.h>
+/* #include <marco-private/enum-types.h> */
+#include <marco-private/theme-parser.h>
+
+#include "config.h"
+
+GType
+meta_theme_get_type(void)
+{
+    static GType type = 0;
+
+    if (!type)
+	type = g_pointer_type_register_static("MetaTheme");
+    return type;
+}
+
+#define META_TYPE_THEME (meta_theme_get_type())
+%%
+modulename marco
+%%
+import gobject.GObject as PyGObject_Type
+import gtk.gdk.Pixbuf as PyGdkPixbuf_Type
+import gtk.Widget as PyGtkWidget_Type
+import gtk.Bin as PyGtkBin_Type
+import pango.Context as PyPangoContext_Type
+%%
+ignore-glob
+ _*u
+ *_get_type

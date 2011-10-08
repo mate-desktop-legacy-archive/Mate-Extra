@@ -1,0 +1,33 @@
+# -*- python -*-
+# encoding: utf-8
+
+import os
+import Options
+
+def set_options(opt):
+    opt.add_option('--enable-marco',
+                   help=('Enable marco bindings.'
+                         ' WARNING: these bindings are not very well maintained '
+                         'and may not work or even compile.'),
+                   action="store_true", default=False,
+                   dest='enable_marco')
+    
+def configure(conf):
+    conf.env.append_value('MODULES_AVAILABLE', 'marco')
+    if 'marco' in conf.env['ENABLE_MODULES'] or Options.options.enable_marco:
+        if conf.pkg_check_modules('MARCO', 'libmarco-private >= 2.19.8 pygobject-2.0 ',
+                                  mandatory=False):
+            conf.env.append_value('MODULES_TO_BUILD', 'marco')
+
+def build(bld):
+    env = bld.env
+    if 'marco' in env['MODULES_TO_BUILD']:
+        bld.codegen('marco')
+        pyext = bld.create_pyext()
+        pyext.source = 'marcomodule.c marco.c'
+        pyext.target = 'marco'
+        pyext.uselib = 'MARCO'
+        pyext.install_path = '${PYTHONDIR}/gtk-2.0'
+
+        bld.install_files('${DATADIR}/pygtk/2.0/defs', ['marco.defs'])
+

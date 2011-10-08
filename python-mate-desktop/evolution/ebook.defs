@@ -1,0 +1,509 @@
+
+;;------------------------------------------------------------------------------
+;; Object Definitions
+;;------------------------------------------------------------------------------
+(define-object EContact
+  (in-module "EBook")
+  (parent "EVCard")
+  (c-name "EContact")
+  (gtype-id "E_TYPE_CONTACT")
+)
+
+(define-object EVCard
+  (in-module "EBook")
+  (parent "GObject")
+  (c-name "EVCard")
+  (gtype-id "E_TYPE_VCARD")
+)
+
+(define-object EBook
+  (in-module "EBook")
+  (parent "GObject")
+  (c-name "EBook")
+  (gtype-id "E_TYPE_BOOK")
+)
+
+(define-object EBookView
+  (in-module "EBook")
+  (parent "GObject")
+  (c-name "EBookView")
+  (gtype-id "E_TYPE_BOOK_VIEW")
+)
+
+;;------------------------------------------------------------------------------
+;; EVContact
+;;------------------------------------------------------------------------------
+(define-function e_contact_new
+  (c-name "e_contact_new")
+  (is-constructor-of "EContact")
+  (return-type "EContact*")
+)
+
+(define-method get_vcard_string
+  (of-object "EContact")
+  (c-name "evo_contact_get_vcard_string")
+  (return-type "char*")
+  (parameters
+  )
+)
+
+(define-method get_name
+  (of-object "EContact")
+  (c-name "evo_contact_get_name")
+  (return-type "char*")
+  (parameters
+  )
+)
+
+(define-method get_uid
+  (of-object "EContact")
+  (c-name "evo_contact_get_uid")
+  (return-type "char*")
+  (parameters
+  )
+)
+
+(define-method get_modified
+  (of-object "EContact")
+  (c-name "evo_contact_get_modified")
+  (return-type "char*")
+  (parameters
+  )
+)
+
+(define-method get_photo
+  (of-object "EContact")
+  (c-name "evo_contact_get_photo")
+  (return-type "GdkPixbuf*")
+  (parameters
+    '("gint" "pixbuf_size")
+  )
+)
+
+; Contact enums
+(define-enum EContactField
+  (in-module "evolution")
+  (c-name "EContactField")
+  (gtype-id "E_TYPE_CONTACT_FIELD")
+  (values
+    '("uid" "E_CONTACT_UID")
+    '("file-as" "E_CONTACT_FILE_AS")
+    '("book-uri" "E_CONTACT_BOOK_URI")
+    '("full-name" "E_CONTACT_FULL_NAME")
+    '("given-name" "E_CONTACT_GIVEN_NAME")
+    '("family-name" "E_CONTACT_FAMILY_NAME")
+    '("nickname" "E_CONTACT_NICKNAME")
+    '("email-1" "E_CONTACT_EMAIL_1")
+    '("email-2" "E_CONTACT_EMAIL_2")
+    '("email-3" "E_CONTACT_EMAIL_3")
+    '("email-4" "E_CONTACT_EMAIL_4")
+    '("mailer" "E_CONTACT_MAILER")
+    '("address-label-home" "E_CONTACT_ADDRESS_LABEL_HOME")
+    '("address-label-work" "E_CONTACT_ADDRESS_LABEL_WORK")
+    '("address-label-other" "E_CONTACT_ADDRESS_LABEL_OTHER")
+    '("phone-assistant" "E_CONTACT_PHONE_ASSISTANT")
+    '("phone-business" "E_CONTACT_PHONE_BUSINESS")
+    '("phone-business-2" "E_CONTACT_PHONE_BUSINESS_2")
+    '("phone-business-fax" "E_CONTACT_PHONE_BUSINESS_FAX")
+    '("phone-callback" "E_CONTACT_PHONE_CALLBACK")
+    '("phone-car" "E_CONTACT_PHONE_CAR")
+    '("phone-company" "E_CONTACT_PHONE_COMPANY")
+    '("phone-home" "E_CONTACT_PHONE_HOME")
+    '("phone-home-2" "E_CONTACT_PHONE_HOME_2")
+    '("phone-home-fax" "E_CONTACT_PHONE_HOME_FAX")
+    '("phone-isdn" "E_CONTACT_PHONE_ISDN")
+    '("phone-mobile" "E_CONTACT_PHONE_MOBILE")
+    '("phone-other" "E_CONTACT_PHONE_OTHER")
+    '("phone-other-fax" "E_CONTACT_PHONE_OTHER_FAX")
+    '("phone-pager" "E_CONTACT_PHONE_PAGER")
+    '("phone-primary" "E_CONTACT_PHONE_PRIMARY")
+    '("phone-radio" "E_CONTACT_PHONE_RADIO")
+    '("phone-telex" "E_CONTACT_PHONE_TELEX")
+    '("phone-ttytdd" "E_CONTACT_PHONE_TTYTDD")
+    '("org" "E_CONTACT_ORG")
+    '("org-unit" "E_CONTACT_ORG_UNIT")
+    '("office" "E_CONTACT_OFFICE")
+    '("title" "E_CONTACT_TITLE")
+    '("role" "E_CONTACT_ROLE")
+    '("manager" "E_CONTACT_MANAGER")
+    '("assistant" "E_CONTACT_ASSISTANT")
+    '("homepage-url" "E_CONTACT_HOMEPAGE_URL")
+    '("blog-url" "E_CONTACT_BLOG_URL")
+    '("categories" "E_CONTACT_CATEGORIES")
+    '("calendar-uri" "E_CONTACT_CALENDAR_URI")
+    '("freebusy-url" "E_CONTACT_FREEBUSY_URL")
+    '("ics-calendar" "E_CONTACT_ICS_CALENDAR")
+    '("video-url" "E_CONTACT_VIDEO_URL")
+    '("spouse" "E_CONTACT_SPOUSE")
+    '("note" "E_CONTACT_NOTE")
+    '("im-aim-home-1" "E_CONTACT_IM_AIM_HOME_1")
+    '("im-aim-home-2" "E_CONTACT_IM_AIM_HOME_2")
+    '("im-aim-home-3" "E_CONTACT_IM_AIM_HOME_3")
+    '("im-aim-work-1" "E_CONTACT_IM_AIM_WORK_1")
+    '("im-aim-work-2" "E_CONTACT_IM_AIM_WORK_2")
+    '("im-aim-work-3" "E_CONTACT_IM_AIM_WORK_3")
+    '("im-groupwise-home-1" "E_CONTACT_IM_GROUPWISE_HOME_1")
+    '("im-groupwise-home-2" "E_CONTACT_IM_GROUPWISE_HOME_2")
+    '("im-groupwise-home-3" "E_CONTACT_IM_GROUPWISE_HOME_3")
+    '("im-groupwise-work-1" "E_CONTACT_IM_GROUPWISE_WORK_1")
+    '("im-groupwise-work-2" "E_CONTACT_IM_GROUPWISE_WORK_2")
+    '("im-groupwise-work-3" "E_CONTACT_IM_GROUPWISE_WORK_3")
+    '("im-jabber-home-1" "E_CONTACT_IM_JABBER_HOME_1")
+    '("im-jabber-home-2" "E_CONTACT_IM_JABBER_HOME_2")
+    '("im-jabber-home-3" "E_CONTACT_IM_JABBER_HOME_3")
+    '("im-jabber-work-1" "E_CONTACT_IM_JABBER_WORK_1")
+    '("im-jabber-work-2" "E_CONTACT_IM_JABBER_WORK_2")
+    '("im-jabber-work-3" "E_CONTACT_IM_JABBER_WORK_3")
+    '("im-yahoo-home-1" "E_CONTACT_IM_YAHOO_HOME_1")
+    '("im-yahoo-home-2" "E_CONTACT_IM_YAHOO_HOME_2")
+    '("im-yahoo-home-3" "E_CONTACT_IM_YAHOO_HOME_3")
+    '("im-yahoo-work-1" "E_CONTACT_IM_YAHOO_WORK_1")
+    '("im-yahoo-work-2" "E_CONTACT_IM_YAHOO_WORK_2")
+    '("im-yahoo-work-3" "E_CONTACT_IM_YAHOO_WORK_3")
+    '("im-msn-home-1" "E_CONTACT_IM_MSN_HOME_1")
+    '("im-msn-home-2" "E_CONTACT_IM_MSN_HOME_2")
+    '("im-msn-home-3" "E_CONTACT_IM_MSN_HOME_3")
+    '("im-msn-work-1" "E_CONTACT_IM_MSN_WORK_1")
+    '("im-msn-work-2" "E_CONTACT_IM_MSN_WORK_2")
+    '("im-msn-work-3" "E_CONTACT_IM_MSN_WORK_3")
+    '("im-icq-home-1" "E_CONTACT_IM_ICQ_HOME_1")
+    '("im-icq-home-2" "E_CONTACT_IM_ICQ_HOME_2")
+    '("im-icq-home-3" "E_CONTACT_IM_ICQ_HOME_3")
+    '("im-icq-work-1" "E_CONTACT_IM_ICQ_WORK_1")
+    '("im-icq-work-2" "E_CONTACT_IM_ICQ_WORK_2")
+    '("im-icq-work-3" "E_CONTACT_IM_ICQ_WORK_3")
+    '("rev" "E_CONTACT_REV")
+    '("name-or-org" "E_CONTACT_NAME_OR_ORG")
+    '("address" "E_CONTACT_ADDRESS")
+    '("address-home" "E_CONTACT_ADDRESS_HOME")
+    '("address-work" "E_CONTACT_ADDRESS_WORK")
+    '("address-other" "E_CONTACT_ADDRESS_OTHER")
+    '("category-list" "E_CONTACT_CATEGORY_LIST")
+    '("photo" "E_CONTACT_PHOTO")
+    '("logo" "E_CONTACT_LOGO")
+    '("name" "E_CONTACT_NAME")
+    '("email" "E_CONTACT_EMAIL")
+    '("im-aim" "E_CONTACT_IM_AIM")
+    '("im-groupwise" "E_CONTACT_IM_GROUPWISE")
+    '("im-jabber" "E_CONTACT_IM_JABBER")
+    '("im-yahoo" "E_CONTACT_IM_YAHOO")
+    '("im-msn" "E_CONTACT_IM_MSN")
+    '("im-icq" "E_CONTACT_IM_ICQ")
+    '("wants-html" "E_CONTACT_WANTS_HTML")
+    '("is-list" "E_CONTACT_IS_LIST")
+    '("list-show-addresses" "E_CONTACT_LIST_SHOW_ADDRESSES")
+    '("birth-date" "E_CONTACT_BIRTH_DATE")
+    '("anniversary" "E_CONTACT_ANNIVERSARY")
+    '("x509-cert" "E_CONTACT_X509_CERT")
+    '("field-last" "E_CONTACT_FIELD_LAST")
+    '("field-first" "E_CONTACT_FIELD_FIRST")
+    '("last-simple-string" "E_CONTACT_LAST_SIMPLE_STRING")
+    '("first-phone-id" "E_CONTACT_FIRST_PHONE_ID")
+    '("last-phone-id" "E_CONTACT_LAST_PHONE_ID")
+    '("first-email-id" "E_CONTACT_FIRST_EMAIL_ID")
+    '("last-email-id" "E_CONTACT_LAST_EMAIL_ID")
+    '("first-address-id" "E_CONTACT_FIRST_ADDRESS_ID")
+    '("last-address-id" "E_CONTACT_LAST_ADDRESS_ID")
+    '("first-label-id" "E_CONTACT_FIRST_LABEL_ID")
+    '("last-label-id" "E_CONTACT_LAST_LABEL_ID")
+  )
+)
+
+
+;;------------------------------------------------------------------------------
+;; EBook
+;;------------------------------------------------------------------------------
+(define-function new_system_addressbook
+  (c-name "e_book_new_system_addressbook")
+  (return-type "EBook*")
+  (parameters
+    '("GError**" "error")
+  )
+)
+
+(define-function new_default_addressbook
+  (c-name "e_book_new_default_addressbook")
+  (return-type "EBook*")
+  (parameters
+    '("GError**" "error")
+  )
+)
+
+(define-method open
+  (of-object "EBook")
+  (c-name "e_book_open")
+  (return-type "gboolean")
+  (parameters
+    '("gboolean" "only_if_exists")
+    '("GError**" "error")
+  )
+)
+
+(define-function is_self
+  (c-name "e_book_is_self")
+  (return-type "gboolean")
+  (parameters
+    '("EContact*" "contact")
+  )
+)
+
+(define-function e_book_new
+  (c-name "e_book_new")
+  (is-constructor-of "EBook")
+  (return-type "EBook*")
+  (parameters
+    '("ESource*" "source")
+    '("GError**" "error")
+  )
+)
+
+(define-method get_all_contacts
+  (of-object "EBook")
+  (c-name "evo_addressbook_get_all_contacts")
+  (return-type "GList*")
+  (parameters
+  )
+)
+
+(define-method get_uid
+  (of-object "EBook")
+  (c-name "evo_addressbook_get_uid")
+  (return-type "char*")
+  (parameters
+  )
+)
+
+(define-method get_contact
+  (of-object "EBook")
+  (c-name "evo_addressbook_get_contact")
+  (return-type "EContact*")
+  (parameters
+    '("const-char*" "uid")
+  )
+)
+
+(define-method get_changed_contacts
+  (of-object "EBook")
+  (c-name "evo_addressbook_get_changed_contacts")
+  (return-type "GList*")
+  (parameters
+    '("const-char*" "change_id")
+  )
+)
+
+(define-method search
+  (of-object "EBook")
+  (c-name "evo_addressbook_free_text_search")
+  (return-type "GList*")
+  (parameters
+    '("const-char*" "query")
+  )
+)
+
+(define-method remove
+  (of-object "EBook")
+  (c-name "e_book_remove")
+  (return-type "gboolean")
+  (parameters
+    '("GError**" "error")
+  )
+)
+
+(define-method remove_contact
+  (of-object "EBook")
+  (c-name "evo_addressbook_remove_contact")
+  (return-type "gboolean")
+  (parameters
+    '("EContact*" "contact")
+  )
+)
+
+(define-method remove_contact_by_id
+  (of-object "EBook")
+  (c-name "e_book_remove_contact")
+  (return-type "gboolean")
+  (parameters
+    '("const-char*" "id")
+    '("GError**" "error")
+  )
+)
+
+(define-method add_contact
+  (of-object "EBook")
+  (c-name "evo_addressbook_add_contact")
+  (return-type "char*")
+  (parameters
+    '("EContact*" "contact")
+  )
+)
+
+(define-method contact_exists
+  (of-object "EBook")
+  (c-name "evo_addressbook_contact_exists")
+  (return-type "gboolean")
+  (parameters
+    '("EContact*" "contact")
+  )
+)
+
+(define-method commit_contact
+  (of-object "EBook")
+  (c-name "e_book_commit_contact")
+  (return-type "gboolean")
+  (parameters
+    '("EContact*" "contact")
+  )
+)
+
+(define-method is_opened
+  (of-object "EBook")
+  (c-name "e_book_is_opened")
+  (return-type "gboolean")
+)
+
+(define-method is_writable
+  (of-object "EBook")
+  (c-name "e_book_is_writable")
+  (return-type "gboolean")
+)
+
+(define-method is_online
+  (of-object "EBook")
+  (c-name "e_book_is_online")
+  (return-type "gboolean")
+)
+
+(define-method get_uri
+  (of-object "EBook")
+  (c-name "e_book_get_uri")
+  (return-type "const-char*")
+)
+
+(define-method set_default_addressbook
+  (of-object "EBook")
+  (c-name "e_book_set_default_addressbook")
+  (return-type "gboolean")
+  (parameters
+    '("GError**" "error")
+  )
+)
+
+; New get_book_view
+(define-method get_book_view
+  (of-object "EBook")
+  (c-name "e_book_get_book_view")
+  (return-type "gboolean")
+  (parameters
+    '("EBookQuery*" "query")
+    '("GList*" "requested_fields")
+    '("int" "max_results")
+    '("EBookView**" "book_view")
+    '("GError**" "error")
+  )
+)
+
+;; EBookQuery enumerations
+(define-enum EBookQueryTest
+  (in-module "evolution")
+  (c-name "EBookQueryTest")
+  (gtype-id "E_TYPE_BOOK_QUERY_TEST")
+  (values
+    '("is" "E_BOOK_QUERY_IS")
+    '("contains" "E_BOOK_QUERY_CONTAINS")
+    '("begins-with" "E_BOOK_QUERY_BEGINS_WITH")
+    '("ends-with" "E_BOOK_QUERY_ENDS_WITH")
+  )
+)
+
+;;------------------------------------------------------------------------------
+;; EBookView
+;;------------------------------------------------------------------------------
+
+(define-function e_book_view_get_type
+  (c-name "e_book_view_get_type")
+  (return-type "GType")
+)
+
+(define-method start
+  (of-object "EBookView")
+  (c-name "e_book_view_start")
+  (return-type "none")
+)
+
+(define-method stop
+  (of-object "EBookView")
+  (c-name "e_book_view_stop")
+  (return-type "none")
+)
+
+(define-method set_contacts_added_cb
+  (of-object "EBookView")
+  (c-name "e_book_view_set_contacts_added_cb")
+  (return-type "int")
+)
+
+(define-method remove_contacts_added_cb
+  (of-object "EBookView")
+  (c-name "e_book_view_remove_contacts_added_cb")
+  (parameters
+    '("int" "handler_id")
+  )
+  (return-type "none")
+)
+
+(define-method set_contacts_changed_cb
+  (of-object "EBookView")
+  (c-name "e_book_view_set_contacts_changed_cb")
+  (return-type "int")
+)
+
+(define-method remove_contacts_changed_cb
+  (of-object "EBookView")
+  (c-name "e_book_view_remove_contacts_changed_cb")
+  (parameters
+    '("int" "handler_id")
+  )
+  (return-type "none")
+)
+
+(define-method set_contacts_removed_cb
+  (of-object "EBookView")
+  (c-name "e_book_view_set_contacts_removed_cb")
+  (return-type "int")
+)
+
+(define-method remove_contacts_removed_cb
+  (of-object "EBookView")
+  (c-name "e_book_view_remove_contacts_removed_cb")
+  (parameters
+    '("int" "handler_id")
+  )
+  (return-type "none")
+)
+
+;;------------------------------------------------------------------------------
+;; evo-environment
+;;------------------------------------------------------------------------------
+(define-function list_addressbooks
+  (c-name "evo_environment_list_addressbooks")
+  (return-type "GList*")
+  (parameters
+  )
+)
+
+(define-function get_self_contact
+  (c-name "evo_environment_get_self_contact")
+  (return-type "EContact*")
+  (parameters
+  )
+)
+
+(define-function open_addressbook
+  (c-name "evo_addressbook_open")
+  (return-type "EBook*")
+  (parameters
+    '("const-char*" "uri")
+  )
+)
+
+
