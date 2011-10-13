@@ -6,9 +6,6 @@
 /* Name of the default gettext domain */
 #undef GETTEXT_PACKAGE
 
-/* locale directory */
-#undef MATELOCALEDIR
-
 /* Define to 1 if you have the `bind_textdomain_codeset' function. */
 #undef HAVE_BIND_TEXTDOMAIN_CODESET
 
@@ -60,6 +57,9 @@
 /* Define to the sub-directory in which libtool stores uninstalled libraries.
    */
 #undef LT_OBJDIR
+
+/* locale directory */
+#undef MATELOCALEDIR
 
 /* Define to 1 if your C compiler doesn't accept -c and -o together. */
 #undef NO_MINUS_C_MINUS_O
