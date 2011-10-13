@@ -17,40 +17,40 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "Atentigilo pri iu labortabla elemento, kiu bezonas vian atenton."
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "Indikila aplikaĵeto"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "Unuiĝinta aplikaĵeto kiu enhavas ĉiujn indikilojn"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "Indikila aplikaĵeto preta"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "Kromprogramo kiu enhavas la aplikaĵajn menuojn."
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "Indikila kromprogramo Appmenu"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr ""
 "Tie vi povas agordi vian staton, ŝanĝi uzantajn informojn aŭ ĉesigi vian "
 "seancon."
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "Seanco de indikila aplikaĵeto"
@@ -123,5 +123,5 @@ msgstr "Neniu indikilo"
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "Kreanta instaldosierujojn. Bezonas okokupa nombro."
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "Agordanta bazan GConf"
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "Agordanta bazan MateConf"

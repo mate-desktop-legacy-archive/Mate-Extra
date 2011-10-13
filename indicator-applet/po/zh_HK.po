@@ -17,38 +17,38 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "一個讓您知道桌面上有什麼值得注意的指示器"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "指示器面板程式"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "一個包含所有的指示器的統合面板程式"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "指示器面板完成"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "包含應用軟體選單的面板程式。"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "指示器面板程式之程式選單"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr "用來調整您的狀態、變更使用者或離開您的作業階段的地方。"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "指示器面板作業階段"
@@ -112,5 +112,5 @@ msgstr "沒有指示"
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "建立安裝目錄中。需要一個虛擬值。"
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "正在設定基礎的 GConf"
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "正在設定基礎的 MateConf"

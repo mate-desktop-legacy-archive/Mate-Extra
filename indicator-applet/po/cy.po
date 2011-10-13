@@ -17,38 +17,38 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "Dangosydd ar gyfer rhywbeth sydd angen dy sylw ar y bwrdd gwaith"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "Rhaglennig Dangosydd"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "Rhaglennig cyfannol sy'n cynnwys pob dangosydd."
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr ""
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "Rhaglennig sy'n cynnwys dewislenni rhaglenni."
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "Dewislen Rhaglennig Dangosydd"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr "Lle i newid dy statws, newid defnyddwyr a gadael y sesiwn."
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "Sesiwn Rhaglennig Dangosydd"
@@ -117,5 +117,5 @@ msgstr "Dim Dangosyddion"
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "Creu cyfeiriaduron sefydlu. Angen gwerth ffug."
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "Sefyldu GConf elfennol"
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "Sefyldu MateConf elfennol"

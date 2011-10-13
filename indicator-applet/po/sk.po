@@ -17,40 +17,40 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "Indikátor niečoho, čo si vyžaduje vašu pozornosť na pracovnej ploche"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "Indikačný aplet"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "Jednotný aplet obsahujúci všetky indikátory."
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "Indikačný aplet sa ukončil"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "Aplet obsahujúci ponuky aplikácií."
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "Indikačný aplet Appmenu"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr ""
 "Miesto kde si môžete zmeniť váš stav, prepnúť používateľov alebo opustiť "
 "vašu reláciu."
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "Indikačný aplet relácie"
@@ -119,7 +119,7 @@ msgstr "Indikačný aplet ponuky aplikácie"
 msgid "No Indicators"
 msgstr "Žiadne indikátory"
 
-#~ msgid "Setting up basic GConf"
+#~ msgid "Setting up basic MateConf"
 #~ msgstr "Nastavujú sa základné Gconf nastavenia"
 
 #~ msgid "Building up install directories. Need a dummy value."

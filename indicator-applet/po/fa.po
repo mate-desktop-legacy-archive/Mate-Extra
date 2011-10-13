@@ -17,38 +17,38 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "نمایشگری برای برخی چیز‌ها که نیازمند توجه شما در میزکار هستند."
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "ابزارک نمایشگر"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "ابزارکی برای نمایش متحد تمام نمایشگرها."
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "ابزارک نمایشگر کامل"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "ابزارکی که فهرست برنامه‌ها را در بر دارد."
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "فهرست برنامه ابزارک نمایشگر"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr "مکانی برای تنظیم وضعیت خود، تغییر کاربر یا خروج از جلسه فعلی."
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "جلسه ابزارک نمایشگر"
@@ -118,5 +118,5 @@ msgstr "نمایشگری موجود نیست"
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "درحال ساخت پوشه نصب. به یک مقدار کاذب نیاز است."
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "در حال تنظیم ساده GConf"
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "در حال تنظیم ساده MateConf"

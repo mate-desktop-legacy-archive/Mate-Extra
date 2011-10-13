@@ -759,7 +759,7 @@ GMOFILES
 CATOBJEXT
 CATALOGS
 MSGFMT_OPTS
-GNOMELOCALEDIR
+MATELOCALEDIR
 GETTEXT_PACKAGE
 INDICATORICONSDIR
 INDICATORDIR
@@ -12086,18 +12086,18 @@ if test -n "$APPLET_CFLAGS"; then
     if test -n "$PKG_CONFIG" && \
     { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"gtk+-2.0 >= \$GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= \$INDICATOR_REQUIRED_VERSION\""; } >&5
   ($PKG_CONFIG --exists --print-errors "gtk+-2.0 >= $GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= $INDICATOR_REQUIRED_VERSION") 2>&5
   ac_status=$?
   $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
   test $ac_status = 0; }; then
   pkg_cv_APPLET_CFLAGS=`$PKG_CONFIG --cflags "gtk+-2.0 >= $GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= $INDICATOR_REQUIRED_VERSION" 2>/dev/null`
 else
   pkg_failed=yes
@@ -12111,18 +12111,18 @@ if test -n "$APPLET_LIBS"; then
     if test -n "$PKG_CONFIG" && \
     { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"gtk+-2.0 >= \$GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= \$INDICATOR_REQUIRED_VERSION\""; } >&5
   ($PKG_CONFIG --exists --print-errors "gtk+-2.0 >= $GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= $INDICATOR_REQUIRED_VERSION") 2>&5
   ac_status=$?
   $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
   test $ac_status = 0; }; then
   pkg_cv_APPLET_LIBS=`$PKG_CONFIG --libs "gtk+-2.0 >= $GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= $INDICATOR_REQUIRED_VERSION" 2>/dev/null`
 else
   pkg_failed=yes
@@ -12145,12 +12145,12 @@ fi
         if test $_pkg_short_errors_supported = yes; then
 	        APPLET_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors "gtk+-2.0 >= $GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= $INDICATOR_REQUIRED_VERSION" 2>&1`
         else
 	        APPLET_PKG_ERRORS=`$PKG_CONFIG --print-errors "gtk+-2.0 >= $GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= $INDICATOR_REQUIRED_VERSION" 2>&1`
         fi
 	# Put the nasty error message in config.log where it belongs
@@ -12158,7 +12158,7 @@ fi
 
 	as_fn_error $? "Package requirements (gtk+-2.0 >= $GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= $INDICATOR_REQUIRED_VERSION) were not met:
 
 $APPLET_PKG_ERRORS
@@ -12244,11 +12244,11 @@ _ACEOF
   test "x$exec_prefix" = xNONE && exec_prefix='${prefix}'
   ac_define_path=`eval echo $"${datadir}/locale"`
   ac_define_path=`eval echo $ac_define_path`
-  GNOMELOCALEDIR="$ac_define_path"
+  MATELOCALEDIR="$ac_define_path"
 
 
 cat >>confdefs.h <<_ACEOF
-#define GNOMELOCALEDIR "$ac_define_path"
+#define MATELOCALEDIR "$ac_define_path"
 _ACEOF
 
 

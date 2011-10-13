@@ -17,39 +17,39 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "អ្នកឲ្យការណ៍ចំពោះអ្វីផ្សេងៗដែលទាមទារការចាប់អារម្មណ៍ពីអ្នកនៅលើផ្ទៃតុ"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "កម្មវិធីឲ្យការណ៍"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "កម្មវិធីរួមដែលផ្ទុកនូវអ្នកឲ្យការណ៍ទាំងអស់ ។"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "កម្មវិធីឲ្យការណ៍ពេញលេង"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "កម្មវិធីដែលផ្ទុកបញ្ជីរបស់កម្មវិធី ។"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "កម្មវិធីឲ្យការណ៍ Appmenu"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr ""
 "កន្លែងកែតម្រូវស្ថានភាពរបស់អ្នក, ប្ដូរអ្នកប្រើ ឬ ចាកចេញពីវគ្គរបស់អ្នក ។"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "វគ្គកម្មវិធីឲ្យការណ៍"
@@ -118,5 +118,5 @@ msgstr "គ្មានអ្នកឲ្យការណ៍"
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "កំពុងបង្កើតថតឯកសារដំឡើង ។ ត្រូវការតម្លៃធម្មតា ។"
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "កំពុងកំណត់ GConf មូលដ្ឋាន"
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "កំពុងកំណត់ MateConf មូលដ្ឋាន"

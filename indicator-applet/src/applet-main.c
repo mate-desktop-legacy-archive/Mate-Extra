@@ -1,6 +1,6 @@
 /*
 A small wrapper utility to load indicators and put them as menu items
-into the gnome-panel using it's applet interface.
+into the mate-panel using it's applet interface.
 
 Copyright 2009-2010 Canonical Ltd.
 
@@ -24,7 +24,7 @@ with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <string.h>
 #include <config.h>
 #include <glib/gi18n.h>
-#include <panel-applet.h>
+#include <mate-panel-applet.h>
 #include <gdk/gdkkeysyms.h>
 
 #include "libindicator/indicator-object.h"
@@ -41,17 +41,17 @@ static gchar * indicator_order[] = {
 };
 
 static GtkPackDirection packdirection;
-static PanelAppletOrient orient;
+static MatePanelAppletOrient orient;
 
 #define  MENU_DATA_INDICATOR_OBJECT  "indicator-object"
 #define  MENU_DATA_INDICATOR_ENTRY   "indicator-entry"
 
 #define  IO_DATA_ORDER_NUMBER        "indicator-order-number"
 
-static gboolean     applet_fill_cb (PanelApplet * applet, const gchar * iid, gpointer data);
+static gboolean     applet_fill_cb (MatePanelApplet * applet, const gchar * iid, gpointer data);
 
-static void cw_panel_background_changed (PanelApplet               *applet,
-                                         PanelAppletBackgroundType  type,
+static void cw_panel_background_changed (MatePanelApplet               *applet,
+                                         MatePanelAppletBackgroundType  type,
                         				         GdkColor                  *colour,
                         				         GdkPixmap                 *pixmap,
                                          GtkWidget                 *menubar);
@@ -62,25 +62,25 @@ static void update_accessible_desc (IndicatorObjectEntry * entry, GtkWidget * me
  * ***********/
 
 #ifdef INDICATOR_APPLET
-PANEL_APPLET_OUT_PROCESS_FACTORY ("IndicatorAppletFactory",
+MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("IndicatorAppletFactory",
                PANEL_TYPE_APPLET,
                "indicator-applet",
                applet_fill_cb, NULL);
 #endif
 #ifdef INDICATOR_APPLET_SESSION
-PANEL_APPLET_OUT_PROCESS_FACTORY ("FastUserSwitchAppletFactory",
+MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("FastUserSwitchAppletFactory",
                PANEL_TYPE_APPLET,
                "indicator-applet-session",
                applet_fill_cb, NULL);
 #endif
 #ifdef INDICATOR_APPLET_COMPLETE
-PANEL_APPLET_OUT_PROCESS_FACTORY ("IndicatorAppletCompleteFactory",
+MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("IndicatorAppletCompleteFactory",
                PANEL_TYPE_APPLET,
                "indicator-applet-complete",
                applet_fill_cb, NULL);
 #endif
 #ifdef INDICATOR_APPLET_APPMENU
-PANEL_APPLET_OUT_PROCESS_FACTORY ("IndicatorAppletAppmenuFactory",
+MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("IndicatorAppletAppmenuFactory",
                PANEL_TYPE_APPLET,
                "indicator-applet-appmenu",
                applet_fill_cb, NULL);
@@ -324,7 +324,7 @@ entry_added (IndicatorObject * io, IndicatorObjectEntry * entry, GtkWidget * men
 				break;
 			case GTK_PACK_DIRECTION_TTB:
 				gtk_label_set_angle(GTK_LABEL(entry->label),
-						(orient == PANEL_APPLET_ORIENT_LEFT) ? 
+						(orient == MATE_PANEL_APPLET_ORIENT_LEFT) ? 
 						270.0 : 90.0);
 				break;
 			default:
@@ -668,7 +668,7 @@ swap_orient_cb (GtkWidget *item, gpointer data)
 				break;
 			case GTK_PACK_DIRECTION_TTB:
 				gtk_label_set_angle(GTK_LABEL(item),
-						(orient == PANEL_APPLET_ORIENT_LEFT) ? 
+						(orient == MATE_PANEL_APPLET_ORIENT_LEFT) ? 
 						270.0 : 90.0);
 				break;
 			default:
@@ -696,18 +696,18 @@ reorient_box_cb (GtkWidget *menuitem, gpointer data)
 }
 
 static gboolean
-panelapplet_reorient_cb (GtkWidget *applet, PanelAppletOrient neworient,
+matepanelapplet_reorient_cb (GtkWidget *applet, MatePanelAppletOrient neworient,
 		gpointer data)
 {
 	GtkWidget *menubar = (GtkWidget *)data;
-	if ((((neworient == PANEL_APPLET_ORIENT_UP) || 
-			(neworient == PANEL_APPLET_ORIENT_DOWN)) && 
-			((orient == PANEL_APPLET_ORIENT_LEFT) || 
-			(orient == PANEL_APPLET_ORIENT_RIGHT))) || 
-			(((neworient == PANEL_APPLET_ORIENT_LEFT) || 
-			(neworient == PANEL_APPLET_ORIENT_RIGHT)) && 
-			((orient == PANEL_APPLET_ORIENT_UP) ||
-			(orient == PANEL_APPLET_ORIENT_DOWN)))) {
+	if ((((neworient == MATE_PANEL_APPLET_ORIENT_UP) || 
+			(neworient == MATE_PANEL_APPLET_ORIENT_DOWN)) && 
+			((orient == MATE_PANEL_APPLET_ORIENT_LEFT) || 
+			(orient == MATE_PANEL_APPLET_ORIENT_RIGHT))) || 
+			(((neworient == MATE_PANEL_APPLET_ORIENT_LEFT) || 
+			(neworient == MATE_PANEL_APPLET_ORIENT_RIGHT)) && 
+			((orient == MATE_PANEL_APPLET_ORIENT_UP) ||
+			(orient == MATE_PANEL_APPLET_ORIENT_DOWN)))) {
 		packdirection = (packdirection == GTK_PACK_DIRECTION_LTR) ?
 				GTK_PACK_DIRECTION_TTB : GTK_PACK_DIRECTION_LTR;
 		gtk_menu_bar_set_pack_direction(GTK_MENU_BAR(menubar),
@@ -782,7 +782,7 @@ log_to_file (const gchar * domain G_GNUC_UNUSED,
 }
 
 static gboolean
-applet_fill_cb (PanelApplet * applet, const gchar * iid G_GNUC_UNUSED,
+applet_fill_cb (MatePanelApplet * applet, const gchar * iid G_GNUC_UNUSED,
                 gpointer data G_GNUC_UNUSED)
 {
 	static const GtkActionEntry menu_actions[] = {
@@ -797,8 +797,8 @@ applet_fill_cb (PanelApplet * applet, const gchar * iid G_GNUC_UNUSED,
 
 #ifdef INDICATOR_APPLET_SESSION
 	/* check if we are running stracciatella session */
-	if (g_strcmp0(g_getenv("GDMSESSION"), "gnome-stracciatella") == 0) {
-		g_debug("Running stracciatella GNOME session, disabling myself");
+	if (g_strcmp0(g_getenv("MDMSESSION"), "mate-stracciatella") == 0) {
+		g_debug("Running stracciatella MATE session, disabling myself");
 		return TRUE;
 	}
 #endif
@@ -826,14 +826,14 @@ applet_fill_cb (PanelApplet * applet, const gchar * iid G_GNUC_UNUSED,
 
 	/* Set panel options */
 	gtk_container_set_border_width(GTK_CONTAINER (applet), 0);
-	panel_applet_set_flags(applet, PANEL_APPLET_EXPAND_MINOR);
+	mate_panel_applet_set_flags(applet, MATE_PANEL_APPLET_EXPAND_MINOR);
 	menubar = gtk_menu_bar_new();
 	action_group = gtk_action_group_new ("Indicator Applet Actions");
 	gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
 	gtk_action_group_add_actions (action_group, menu_actions,
 	                              G_N_ELEMENTS (menu_actions),
 	                              menubar);
-	panel_applet_setup_menu(applet, menu_xml, action_group);
+	mate_panel_applet_setup_menu(applet, menu_xml, action_group);
 	g_object_unref(action_group);
 #ifdef INDICATOR_APPLET
 	atk_object_set_name (gtk_widget_get_accessible (GTK_WIDGET (applet)),
@@ -885,9 +885,9 @@ applet_fill_cb (PanelApplet * applet, const gchar * iid G_GNUC_UNUSED,
 	gtk_widget_set_name(GTK_WIDGET (applet), "fast-user-switch-applet");
 
 	/* Build menubar */
-	orient = (panel_applet_get_orient(applet));
-	packdirection = ((orient == PANEL_APPLET_ORIENT_UP) ||
-			(orient == PANEL_APPLET_ORIENT_DOWN)) ? 
+	orient = (mate_panel_applet_get_orient(applet));
+	packdirection = ((orient == MATE_PANEL_APPLET_ORIENT_UP) ||
+			(orient == MATE_PANEL_APPLET_ORIENT_DOWN)) ? 
 			GTK_PACK_DIRECTION_LTR : GTK_PACK_DIRECTION_TTB;
 	gtk_menu_bar_set_pack_direction(GTK_MENU_BAR(menubar),
 			packdirection);
@@ -896,7 +896,7 @@ applet_fill_cb (PanelApplet * applet, const gchar * iid G_GNUC_UNUSED,
 	g_signal_connect(menubar, "button-press-event", G_CALLBACK(menubar_press), NULL);
 	g_signal_connect_after(menubar, "expose-event", G_CALLBACK(menubar_on_expose), menubar);
 	g_signal_connect(applet, "change-orient", 
-			G_CALLBACK(panelapplet_reorient_cb), menubar);
+			G_CALLBACK(matepanelapplet_reorient_cb), menubar);
 	gtk_container_set_border_width(GTK_CONTAINER(menubar), 0);
 
 	/* Add in filter func */
@@ -947,7 +947,7 @@ applet_fill_cb (PanelApplet * applet, const gchar * iid G_GNUC_UNUSED,
 		gtk_widget_show(item);
 	} else {
 		gtk_container_add(GTK_CONTAINER(applet), menubar);
-		panel_applet_set_background_widget(applet, menubar);
+		mate_panel_applet_set_background_widget(applet, menubar);
 		gtk_widget_show(menubar);
 	}
 
@@ -962,8 +962,8 @@ applet_fill_cb (PanelApplet * applet, const gchar * iid G_GNUC_UNUSED,
 }
 
 static void
-cw_panel_background_changed (PanelApplet               *applet,
-                             PanelAppletBackgroundType  type,
+cw_panel_background_changed (MatePanelApplet               *applet,
+                             MatePanelAppletBackgroundType  type,
                              GdkColor                  *colour,
                              GdkPixmap                 *pixmap,
                              GtkWidget                 *menubar)

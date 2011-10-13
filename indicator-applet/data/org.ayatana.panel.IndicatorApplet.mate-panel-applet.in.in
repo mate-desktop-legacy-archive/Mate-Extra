@@ -8,4 +8,4 @@ Description=Indicator Applet Factory
 _Name=Indicator Applet
 _Description=An indicator of something that needs your attention on the desktop
 Icon=indicator-applet
-BonoboId=OAFIID:GNOME_IndicatorApplet
+MateComponentId=OAFIID:MATE_IndicatorApplet

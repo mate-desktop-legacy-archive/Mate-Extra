@@ -17,40 +17,40 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "Сіздің қатысуын қажет ететін оқиғалар туралы мәлімдемелер"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "Мәлімдеме апплеті"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "Жүйенің барлық мәлімдеме түрлері бар біріктіруші апплет."
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "Мәлімдеме апплеті дайын"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "Бағдарламалар мәзірі бар апплет."
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "Мәлімдеу апплетінің бағдарламалар мәзірі"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr ""
 "Күйді (статусты) өзгертуді, пайдаланушылар арасымен алмасуды немесе сеансты "
 "жабуды басқару құралы."
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "Мәлімдеме апплеті сеансы"
@@ -116,8 +116,8 @@ msgstr "Мәлімдеу апплетінің бағдарламалар мәз�
 msgid "No Indicators"
 msgstr "Мәлімдеме жоқ"
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "GConf-та негізгі конфигурацияның қалыпқа келтірілуі"
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "MateConf-та негізгі конфигурацияның қалыпқа келтірілуі"
 
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "Орнатылым бумаларының құрылуы. Жалған мән қажет."

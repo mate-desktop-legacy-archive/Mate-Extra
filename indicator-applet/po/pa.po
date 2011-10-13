@@ -17,38 +17,38 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "ਇੰਡੀਕੇਟਰ ਹੈ, ਜਿਸ ਉੱਤੇ ਤੁਹਾਨੂੰ ਡੈਸਕਟਾਪ ਉੱਤੇ ਧਿਆਨ ਦੇਣ ਦੀ ਲੋੜ ਹੈ"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "ਇੰਡੀਕੇਟਰ ਐਪਲਿਟ"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "ਸਭ ਇੰਡੀਕੇਟਰ ਰੱਖਣ ਵਾਲਾ ਇਕਸਾਰ ਐਪਲਿਟ ਹੈ।"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "ਇੰਡੀਕੇਟਰ ਐਪਲਿਟ ਪੂਰਾ"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "ਐਪਲੀਕੇਸ਼ਨ ਮੇਨੂ ਰੱਖਣ ਵਾਲਾ ਐਪਲਿਟ ਹੈ।"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "ਇੰਡੀਕੇਟਰ ਐਪਲਿਟ ਐਪਮੇਨੂ"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr "ਆਪਣੀ ਹਾਲਤ ਅਡਜੱਸਟ ਕਰਨ, ਯੂਜ਼ਰ ਬਦਲਣ ਜਾਂ ਆਪਣਾ ਸ਼ੈਸ਼ਨ ਬੰਦ ਕਰਨ ਦੀ ਥਾਂ ਹੈ।"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "ਇੰਡੀਕੇਟਰ ਐਪਲਿਟ ਸ਼ੈਸ਼ਨ"
@@ -111,5 +111,5 @@ msgstr "ਕੋਈ ਇੰਡੀਕੇਟਰ ਨਹੀਂ"
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "ਇੰਸਟਾਲ ਡਾਇਰੈਕਟਰੀਆਂ ਬਣਾਈਆਂ ਜਾ ਰਹੀਆਂ ਹਨ। ਫਰਜ਼ੀ ਮੁੱਲ ਚਾਹੀਦਾ ਹੈ।"
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "ਮੁੱਢਲਾ GConf ਸੈੱਟਅੱਪ"
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "ਮੁੱਢਲਾ MateConf ਸੈੱਟਅੱਪ"

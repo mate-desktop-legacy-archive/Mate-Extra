@@ -17,41 +17,41 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr ""
 "ഡെസ്ക്‌ടോപ്പില്‍ നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യപ്പെടുന്ന എന്തിനെയോ കുറിച്ച് ഒരു സൂചകം"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "ലഘുപ്രയോഗ സൂചന"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "എല്ലാ സൂചനകളും ഏകീകരിച്ച ഒരു ലഘുപ്രയോഗം"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "സൂചന ലഘുപ്രയോഗം പൂര്‍ണം"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr ""
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr ""
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr ""
 "നിങ്ങളുടെ അവസ്ഥ ക്രമീകരിക്കുന്നതിനോ, ഉപഭോക്താവിനെ മാറ്റുന്നതിനോ, സെഷന്‍ "
 "അവസാനിപ്പിക്കുന്നതിനോ ഉള്ള ഇടം."
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "സൂചക ലഘുപ്രയോഗ സെഷന്‍"
@@ -125,5 +125,5 @@ msgstr "സൂചനകള്‍ ഇല്ല"
 #~ "വിന്യസിക്കേണ്ട തട്ടുകള്‍ നിര്‍മ്മിച്ചു‌ കൊണ്ടിരിക്കുന്നു. ഒരു വ്യാജ മൂല്യം "
 #~ "ആവശ്യമാണ്."
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "അടിസ്ഥാന GConf സജ്ജീകരിക്കുന്നു."
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "അടിസ്ഥാന MateConf സജ്ജീകരിക്കുന്നു."

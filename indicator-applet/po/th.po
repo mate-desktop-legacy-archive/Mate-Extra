@@ -17,38 +17,38 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "ตัวบ่งชี้ตัวหนึ่งบนพื้นโต๊ะต้องการให้คุณพิจารณา"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "แอพเพล็ตสำหรับบ่งชี้"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "ตัวรวมแอพเพล็ตบรรจุตัวบ่งชี้ทั้งหมด"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "แอพเพล็ตแสดงความพร้อม"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "แอพเพล็ตประกอบด้วยเมนูโปรแกรม"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "แอพเพล็ตเมนูโปรแกรม"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr "ที่สำหรับเปลี่ยนสถานะของคุณ เปลี่ยนผู้ใช้หรือออกจากวาระของคุณ"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "แอพเพล็ตแสดงวาระ"
@@ -118,5 +118,5 @@ msgstr "ไม่มีตัวบ่งชี้"
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "การติดตั้งไดเรกทอรีเพิ่ม จำเป็นต้องใส่ค่า"
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "กำลังติดตั้งค่าพื้นฐานของ GConf"
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "กำลังติดตั้งค่าพื้นฐานของ MateConf"

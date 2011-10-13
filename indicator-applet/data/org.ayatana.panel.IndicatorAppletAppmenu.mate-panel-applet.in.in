@@ -8,4 +8,4 @@ Description=Indicator Applet Appmenu Factory
 _Name=Indicator Applet Appmenu
 _Description=A applet containing the application menus.
 Icon=indicator-applet
-BonoboId=OAFIID:GNOME_IndicatorAppletAppmenu
+MateComponentId=OAFIID:MATE_IndicatorAppletAppmenu

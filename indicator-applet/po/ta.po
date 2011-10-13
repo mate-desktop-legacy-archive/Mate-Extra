@@ -17,40 +17,40 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "உங்கள் கவனத்தை எதன் மீதோ ஈர்க்க  மேல் மேசையில் காட்டும் சுட்டி"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "சுட்டிக்காட்டி குறும்பயன்"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "அனைத்து சுட்டிகாட்டிகளையும் கொண்ட ஒருங்கிணைந்த குறுநிரல்"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "சுட்டிக்காட்டி குறு நிரல் முழுமையானது"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "பயன்பாடுகளின் பட்டியலை கொண்ட குறுநிரல்"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "சுட்டிக்காட்டி குறிநிரல் பயன்பாடு பட்டியல்"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr ""
 "இவ்விடத்தில் தங்கள் தகுதி அறிக்கையை சரிசெய்யவோ, உபயோகிப்பாளரை மாற்றவோ அல்லது "
 "தங்களது உபயோக களத்தில் இருந்து வெளியேறவோ முடியும்."
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "சுட்டிக்காட்டி குறுநிரல் அமர்வு"
@@ -126,5 +126,5 @@ msgstr "சுட்டிக்காட்டிகள் இல்லை"
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "நிறுவுதல் கட்டுகள் உருவாக்கப்படுகின்றன. போலி மதிப்பு தேவை."
 
-#~ msgid "Setting up basic GConf"
+#~ msgid "Setting up basic MateConf"
 #~ msgstr "அடிப்படையான க்கொன்ஃப் அமைக்கிறது"

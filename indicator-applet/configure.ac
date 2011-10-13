@@ -30,7 +30,7 @@ INDICATOR_REQUIRED_VERSION=0.3.22
 
 PKG_CHECK_MODULES(APPLET, gtk+-2.0 >= $GTK_REQUIRED_VERSION
                           x11
-                          libpanelapplet-3.0
+                          libmatepanelapplet-3.0
                           indicator >= $INDICATOR_REQUIRED_VERSION)
 AC_SUBST(APPLET_CFLAGS)
 AC_SUBST(APPLET_LIBS)
@@ -80,7 +80,7 @@ AC_DEFUN([AC_DEFINE_PATH], [
 GETTEXT_PACKAGE=indicator-applet
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Name of the default gettext domain])
-AC_DEFINE_PATH(GNOMELOCALEDIR, "${datadir}/locale", [locale directory])
+AC_DEFINE_PATH(MATELOCALEDIR, "${datadir}/locale", [locale directory])
 
 ALL_LINGUAS="af am an ar ast az be bg bn br bs ca ca@valencia crh csb cs cv cy da de dv el en_AU en_CA en_GB eo es et eu fa fi fr fur fy gl gv he hi hr hu hy id is it ja ka kk km kn ko ku la lb lt lv mk ml mr ms nb ne nl nn oc pa pl pt_BR pt ro ru sc sd si sk sl sq sr sv ta te th tr ug uk ur vec vi zh_CN zh_HK zh_TW"
 

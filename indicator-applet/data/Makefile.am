@@ -4,20 +4,20 @@
 # Applets
 ##############################
 
-appletdir       = $(datadir)/gnome-panel/applets
+appletdir       = $(datadir)/mate-panel/applets
 applet_in_files = \
-	org.ayatana.panel.IndicatorApplet.panel-applet.in \
-	org.ayatana.panel.IndicatorAppletComplete.panel-applet.in \
-	org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in \
-	org.ayatana.panel.FastUserSwitchApplet.panel-applet.in
-applet_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
+	org.ayatana.panel.IndicatorApplet.mate-panel-applet.in \
+	org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in \
+	org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in \
+	org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in
+applet_DATA     = $(applet_in_files:.mate-panel-applet.in=.mate-panel-applet)
 
-%.panel-applet.in: %.panel-applet.in.in Makefile
+%.mate-panel-applet.in: %.mate-panel-applet.in.in Makefile
 	$(AM_V_GEN)sed \
 	    -e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
 	    $< > $@
 
-%.panel-applet: %.panel-applet.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po) ; $(AM_V_GEN) LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
+%.mate-panel-applet: %.mate-panel-applet.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po) ; $(AM_V_GEN) LC_ALL=C $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
 
 
 ##############################
@@ -26,10 +26,10 @@ applet_DATA     = $(applet_in_files:.panel-applet.in=.panel-applet)
 
 servicedir       = $(datadir)/dbus-1/services
 service_in_files = \
-	org.gnome.panel.applet.IndicatorAppletFactory.service.in \
-	org.gnome.panel.applet.IndicatorAppletCompleteFactory.service.in \
-	org.gnome.panel.applet.IndicatorAppletAppmenuFactory.service.in \
-	org.gnome.panel.applet.FastUserSwitchAppletFactory.service.in
+	org.mate.panel.applet.IndicatorAppletFactory.service.in \
+	org.mate.panel.applet.IndicatorAppletCompleteFactory.service.in \
+	org.mate.panel.applet.IndicatorAppletAppmenuFactory.service.in \
+	org.mate.panel.applet.FastUserSwitchAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
 %.service: %.service.in Makefile

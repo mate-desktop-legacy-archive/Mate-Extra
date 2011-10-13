@@ -105,19 +105,19 @@
 
 2011-01-06  Ted Gould  <ted@gould.cx>
 
-	Port to the non-Bonobo panel
+	Port to the non-MateComponent panel
 
 2010-11-10  Michael Terry  <mike@mterry.name>
 
-	port to libpanel-applet-3
+	port to libmate-panel-applet-3
 
 2010-10-08  Ted Gould  <ted@gould.cx>
 
-	Removing unused GConf support
+	Removing unused MateConf support
 
 2010-10-07  Sebastien Bacher  <seb128@ubuntu.com>
 
-	don't use gconf in the build system since the source doesn't use it
+	don't use mateconf in the build system since the source doesn't use it
 
 2010-09-22  Ted Gould  <ted@gould.cx>
 
@@ -273,7 +273,7 @@
 
 2010-04-26  Ted Gould  <ted@gould.cx>
 
-	Adding a bonobo server for the appmenu applet.
+	Adding a matecomponent server for the appmenu applet.
 
 2010-04-26  Ted Gould  <ted@gould.cx>
 
@@ -333,7 +333,7 @@
 
 2010-04-16  MarkieB  <launchpad.org.Markie1@dfgh.net>
 
-	add reorientation to panel-applet-* applets
+	add reorientation to mate-panel-applet-* applets
 
 2010-04-16  Ted Gould  <ted@gould.cx>
 
@@ -343,7 +343,7 @@
 
 	mark unused function parameters
 	this makes the code -Wall clean, but for a message about missing
-	initializers due to https://bugzilla.gnome.org/show_bug.cgi?id=615986
+	initializers due to https://bugzilla.mate.org/show_bug.cgi?id=615986
 
 2010-04-16  Kevin Turner  <http://keturn.net/>
 
@@ -371,7 +371,7 @@
 
 2010-04-02  Ted Gould  <ted@gould.cx>
 
-	Magic code, idea stolen from gnome-panel but mixed with updated GTK code and other things.  What ever, it works.
+	Magic code, idea stolen from mate-panel but mixed with updated GTK code and other things.  What ever, it works.
 
 2010-04-01  Ted Gould  <ted@gould.cx>
 
@@ -567,7 +567,7 @@
 
 2010-01-04  Ted Gould  <ted@gould.cx>
 
-	Fix Bonobo file
+	Fix MateComponent file
 
 2010-01-04  Ted Gould  <ted@gould.cx>
 
@@ -579,7 +579,7 @@
 
 2010-01-04  Ted Gould  <ted@gould.cx>
 
-	Making a Bonobo applet server file for the Complete applet
+	Making a MateComponent applet server file for the Complete applet
 
 2010-01-04  Ted Gould  <ted@gould.cx>
 
@@ -647,7 +647,7 @@
 
 2009-10-26  Ted Gould  <ted@canonical.com>
 
-	Cleaning up the about dialogs to have better names (same as service files, no translations), the right version numbers, and use the GTK API instead of libgnomeui.
+	Cleaning up the about dialogs to have better names (same as service files, no translations), the right version numbers, and use the GTK API instead of libmateui.
 
 2009-10-26  Ted Gould  <ted@canonical.com>
 
@@ -667,11 +667,11 @@
 
 2009-10-26  Ted Gould  <ted@canonical.com>
 
-	Fixing the description in the about to match the Bonobo config.
+	Fixing the description in the about to match the MateComponent config.
 
 2009-10-26  Ted Gould  <ted@canonical.com>
 
-	Removing dependency on libgnomeui
+	Removing dependency on libmateui
 
 2009-10-26  Ted Gould  <ted@canonical.com>
 
@@ -679,11 +679,11 @@
 
 2009-10-26  Ted Gould  <ted@canonical.com>
 
-	Replacing gnome_program_init with g_set_application_name
+	Replacing mate_program_init with g_set_application_name
 
 2009-10-15  Martin Pitt  <martin.pitt@ubuntu.com>
 
-	GNOME Stracciatella fix to disable the session applet.
+	MATE Stracciatella fix to disable the session applet.
 
 2009-10-14  Martin Pitt  <martin.pitt@canonical.com>
 
@@ -725,7 +725,7 @@
 
 2009-08-18  Ted Gould  <ted@canonical.com>
 
-	Changed the name of the Bonobo service file.  Oops, should have done
+	Changed the name of the MateComponent service file.  Oops, should have done
 	this earlier.
 
 2009-08-18  Ted Gould  <ted@canonical.com>
@@ -734,7 +734,7 @@
 
 2009-08-18  Ted Gould  <ted@canonical.com>
 
-	Changing build targets and the Bonobo descriptors that love them.
+	Changing build targets and the MateComponent descriptors that love them.
 
 2009-08-18  Ted Gould  <ted@canonical.com>
 
@@ -754,7 +754,7 @@
 
 2009-08-07  Ted Gould  <ted@canonical.com>
 
-	Changing the Bonobo server description file name to match that of FUSA.
+	Changing the MateComponent server description file name to match that of FUSA.
 
 2009-08-07  Ted Gould  <ted@canonical.com>
 
@@ -774,7 +774,7 @@
 
 2009-08-07  Ted Gould  <ted@canonical.com>
 
-	Fixing the generation rules for the bonobo server files.
+	Fixing the generation rules for the matecomponent server files.
 
 2009-08-07  Ted Gould  <ted@canonical.com>
 
@@ -954,7 +954,7 @@
 
 2009-07-03  Ted Gould  <ted@canonical.com>
 
-	A little like mentioned on the GNOME Wiki, but doesn't work until I have a higher version of automake.  Doesn't seem to cause problems though.
+	A little like mentioned on the MATE Wiki, but doesn't work until I have a higher version of automake.  Doesn't seem to cause problems though.
 
 2009-06-08  Ted Gould  <ted@canonical.com>
 
@@ -1529,11 +1529,11 @@
 
 2009-03-26  Ted Gould  <ted@canonical.com>
 
-	Merging in Eitan's changes to make the applet a GNOME Program
+	Merging in Eitan's changes to make the applet a MATE Program
 
 2009-03-26  Eitan Isaacson  <eitan@ascender.com>
 
-	Add gnome_program_init with LIBGNOMEUI_MODULE.
+	Add mate_program_init with LIBMATEUI_MODULE.
 
 2009-03-18  Ted Gould  <ted@canonical.com>
 
@@ -1782,7 +1782,7 @@
 
 2009-02-15  Ted Gould  <ted@canonical.com>
 
-	Putting a little handle on the indicators.  Works for GNOME Panel.
+	Putting a little handle on the indicators.  Works for MATE Panel.
 
 2009-02-15  Ted Gould  <ted@canonical.com>
 
@@ -2156,7 +2156,7 @@
 
 2009-02-03  Neil Jagdish Patel  <neil.patel@canonical.com>
 
-	Enable support for a "transparent" panel applet, which reacts to the gnome-
+	Enable support for a "transparent" panel applet, which reacts to the mate-
 	panel theme changes
 
 2009-02-03  Ted Gould  <ted@canonical.com>

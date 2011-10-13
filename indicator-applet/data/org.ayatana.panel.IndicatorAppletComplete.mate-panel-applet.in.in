@@ -8,4 +8,4 @@ Description=Indicator Applet Complete Factory
 _Name=Indicator Applet Complete
 _Description=A unified applet containing all of the indicators.
 Icon=indicator-applet
-BonoboId=OAFIID:GNOME_IndicatorAppletComplete
+MateComponentId=OAFIID:MATE_IndicatorAppletComplete

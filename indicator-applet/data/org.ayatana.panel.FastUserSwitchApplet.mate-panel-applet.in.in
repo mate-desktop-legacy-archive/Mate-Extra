@@ -8,4 +8,4 @@ Description=Indicator Applet Factory
 _Name=Indicator Applet Session
 _Description=A place to adjust your status, change users or exit your session.
 Icon=indicator-applet
-BonoboId=OAFIID:GNOME_FastUserSwitchApplet
+MateComponentId=OAFIID:MATE_FastUserSwitchApplet

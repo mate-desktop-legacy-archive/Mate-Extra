@@ -17,40 +17,40 @@ msgstr ""
 "X-Launchpad-Export-Date: 2011-04-14 21:28+0000\n"
 "X-Generator: Launchpad (build 12792)\n"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:1
 msgid "An indicator of something that needs your attention on the desktop"
 msgstr "এমন কিছুর নির্দেশক যেটি ডেক্সটপে আপনার দৃষ্টি আকর্ষন করবে"
 
-#: ../data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:799
 msgid "Indicator Applet"
 msgstr "নির্দেশক অ্যাপ্লেট"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:1
 msgid "A unified applet containing all of the indicators."
 msgstr "সকল নির্দেশক ধারন করে এমন অ্যাপ্লেট।"
 
-#: ../data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletComplete.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:805
 msgid "Indicator Applet Complete"
 msgstr "নির্দেশক অ্যাপ্লেট সম্পন্ন"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:1
 msgid "A applet containing the application menus."
 msgstr "অ্যাপলিকেশন মেনু রয়েছে এমন অ্যাপ্লেট।"
 
-#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.IndicatorAppletAppmenu.mate-panel-applet.in.in.h:2
 msgid "Indicator Applet Appmenu"
 msgstr "ইন্ডিকেটর অ্যাপ্লেট"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:1
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:1
 #: ../src/applet-main.c:623
 msgid "A place to adjust your status, change users or exit your session."
 msgstr ""
 "একটি স্থান যেখান থেকে আপনার অবস্থা, ব্যবহারকারী পরিবর্তন অথবা সেশন থেকে "
 "প্রস্থানের কাজটি করা যাবে।"
 
-#: ../data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in.h:2
+#: ../data/org.ayatana.panel.FastUserSwitchApplet.mate-panel-applet.in.in.h:2
 #: ../src/applet-main.c:802
 msgid "Indicator Applet Session"
 msgstr "নির্দেশক অ্যাপ্লেট সেশন"
@@ -117,8 +117,8 @@ msgstr "ইন্ডিকেটর অ্যাপ্লেট অ্যাপ�
 msgid "No Indicators"
 msgstr "কোন নির্দেশন না"
 
-#~ msgid "Setting up basic GConf"
-#~ msgstr "সাধারণ GConf ব্যবস্থাপনা"
+#~ msgid "Setting up basic MateConf"
+#~ msgstr "সাধারণ MateConf ব্যবস্থাপনা"
 
 #~ msgid "Building up install directories. Need a dummy value."
 #~ msgstr "ইনস্টলেশন ডিরেক্টরি তৈরী করা হচ্ছে। একটি মান প্রয়োজন।"
