@@ -2,7 +2,7 @@
 
 pkgname=mate-applets
 
-usr/sbin/mateconfpkg --install ${pkgname}
-gtk-update-icon-cache -q -t -f usr/share/icons/hicolor
+/usr/sbin/mateconfpkg --install ${pkgname}
+gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 
 exit 0
