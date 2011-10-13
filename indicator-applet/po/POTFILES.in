@@ -1,0 +1,6 @@
+[encoding: UTF-8]
+[type: gettext/keys]data/org.ayatana.panel.IndicatorApplet.panel-applet.in.in
+[type: gettext/keys]data/org.ayatana.panel.IndicatorAppletComplete.panel-applet.in.in
+[type: gettext/keys]data/org.ayatana.panel.IndicatorAppletAppmenu.panel-applet.in.in
+[type: gettext/keys]data/org.ayatana.panel.FastUserSwitchApplet.panel-applet.in.in
+src/applet-main.c
