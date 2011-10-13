@@ -1,0 +1,128 @@
+#!/bin/bash
+
+# $Id: PKGBUILD 105796 2011-01-11 20:47:13Z andyrtr $
+# Maintainer:
+# Contributor: Tobias Kieslich <tobias (at) archlinux.org>
+
+pkgname=xfce4-xfapplet-plugin
+pkgver=0.1.0
+pkgrel=7
+pkgdesc="plugin that allows to use mate applets in the Xfce4 panel"
+#arch=('i686' 'x86_64')
+#license=('GPL2')
+#url="http://xfce-goodies.berlios.de/"
+#groups=('xfce4-goodies')
+#depends=('xfce4-panel' 'libxfcegui4' 'mate-panel' 'libmatecomponent' 'libmatecomponentui')
+#makedepends=('')
+#source=(http://archive.xfce.org/src/panel-plugins/${pkgname}/0.1/${pkgname}-${pkgver}.tar.bz2)
+#md5sums=('6a06c44b18a97626f44a240ad3bc3244')
+
+build() {
+	cd $pkgsrc
+	wget -c http://archive.xfce.org/src/panel-plugins/${pkgname}/0.1/${pkgname}-${pkgver}.tar.bz2
+	tar xjvf ${pkgname}-${pkgver}.tar.bz2 || exit 1
+
+    cd $pkgsrc/${pkgname}-${pkgver} || exit 1
+
+    # fix for mate panel
+    #libpanelapplet-2.0
+    DIR_LIST=`ls -c`" "$(for F in `ls -c panel-plugin`;do echo "panel-plugin/$F ";done;)
+
+    for FILENAME in ${DIR_LIST}; do
+        # check if its a folder
+        if [ -f "${FILENAME}" ]; then
+            echo "patching file $FILENAME"
+            sed -i "s/panel-applet/mate-panel-applet/g" ${FILENAME}
+            sed -i "s/panelapplet/matepanelapplet/g" ${FILENAME}
+            sed -i "s/panel_applet/mate_panel_applet/g" ${FILENAME}
+            sed -i "s/PANEL_APPLET/MATE_PANEL_APPLET/g" ${FILENAME}
+            sed -i "s/PanelApplet/MatePanelApplet/g" ${FILENAME}
+
+            sed -i "s/mate-mate-panel-applet/mate-panel-applet/g" ${FILENAME}
+            sed -i "s/matematepanelapplet/matepanelapplet/g" ${FILENAME}
+            sed -i "s/mate_mate_panel_applet/mate_panel_applet/g" ${FILENAME}
+            sed -i "s/MATE_MATE_PANEL_APPLET/MATE_PANEL_APPLET/g" ${FILENAME}
+            sed -i "s/MateMatePanelApplet/MatePanelApplet/g" ${FILENAME}
+
+            sed -i "s/gnome/mate/g" ${FILENAME}
+            sed -i "s/GNOME/MATE/g" ${FILENAME}
+            sed -i "s/Gnome/Mate/g" ${FILENAME}
+
+            sed -i "s/Metacity/Marco/g" ${FILENAME}
+            sed -i "s/metacity/marco/g" ${FILENAME}
+            sed -i "s/METACITY/MARCO/g" ${FILENAME}
+
+            sed -i "s/Nautilus/Caja/g" ${FILENAME}
+            sed -i "s/nautilus/caja/g" ${FILENAME}
+            sed -i "s/NAUTILUS/CAJA/g" ${FILENAME}
+
+            sed -i "s/Zenity/MateDialog/g" ${FILENAME}
+            sed -i "s/zenity/matedialog/g" ${FILENAME}
+            sed -i "s/ZENITY/MATEDIALOG/g" ${FILENAME}
+
+            sed -i "s/MATE|Utilities/GNOME|Utilities/g" ${FILENAME}
+            sed -i "s/MATE|Desktop/GNOME|Desktop/g" ${FILENAME}
+            sed -i "s/MATE|Applets/GNOME|Applets/g" ${FILENAME}
+            sed -i "s/MATE|Applications/GNOME|Applications/g" ${FILENAME}
+            sed -i "s/MATE|Multimedia/GNOME|Multimedia/g" ${FILENAME}
+
+            sed -i "s/libnotify/libmatenotify/g" ${FILENAME}
+            sed -i "s/LIBNOTIFY/LIBMATENOTIFY/g" ${FILENAME}
+            sed -i "s/Libnotify/Libmatenotify/g" ${FILENAME}
+
+            sed -i "s/bonobo/matecomponent/g" ${FILENAME}
+            sed -i "s/Bonobo/MateComponent/g" ${FILENAME}
+            sed -i "s/BONOBO/MATECOMPONENT/g" ${FILENAME}
+            sed -i "s/bonoboui/matecomponentui/g" ${FILENAME}
+            sed -i "s/BONOBOUI/MATECOMPONENTUI/g" ${FILENAME}
+
+            sed -i "s/gconf/mateconf/g" ${FILENAME}
+            sed -i "s/GConf/MateConf/g" ${FILENAME}
+            sed -i "s/GCONF/MATECONF/g" ${FILENAME}
+
+            sed -i "s/pkmateconfig/pkgconfig/g" ${FILENAME}
+            sed -i "s/PKMATECONFIG/PKGCONFIG/g" ${FILENAME}
+
+            sed -i "s/gweather/mateweather/g" ${FILENAME}
+            sed -i "s/GWeather/MateWeather/g" ${FILENAME}
+            sed -i "s/GWEATHER/MATEWEATHER/g" ${FILENAME}
+
+            sed -i "s/ORBit/MateCORBA/g" ${FILENAME}
+            sed -i "s/orbit/matecorba/g" ${FILENAME}
+            sed -i "s/ORBIT/MATECORBA/g" ${FILENAME}
+
+            sed -i "s/panel-applet/mate-panel-applet/g" ${FILENAME}
+            sed -i "s/panelapplet/matepanelapplet/g" ${FILENAME}
+            sed -i "s/panel_applet/mate_panel_applet/g" ${FILENAME}
+            sed -i "s/PANEL_APPLET/MATE_PANEL_APPLET/g" ${FILENAME}
+            sed -i "s/PanelApplet/MatePanelApplet/g" ${FILENAME}
+
+            sed -i "s/mate-mate-panel-applet/mate-panel-applet/g" ${FILENAME}
+            sed -i "s/matematepanelapplet/matepanelapplet/g" ${FILENAME}
+            sed -i "s/mate_mate_panel_applet/mate_panel_applet/g" ${FILENAME}
+            sed -i "s/MATE_MATE_PANEL_APPLET/MATE_PANEL_APPLET/g" ${FILENAME}
+            sed -i "s/MateMatePanelApplet/MatePanelApplet/g" ${FILENAME}
+
+            sed -i "s/soup-mate/soup-gnome/g" ${FILENAME}
+            sed -i "s/SOUP_TYPE_MATE_FEATURES_2_26/SOUP_TYPE_GNOME_FEATURES_2_26/g" ${FILENAME}
+            sed -i "s/mateconfaudiosink/gconfaudiosink/g" ${FILENAME}
+            sed -i "s/mateconfvideosink/gconfvideosink/g" ${FILENAME}
+
+            sed -i "s/TAMATECONFIG/TAGCONFIG/g" ${FILENAME}
+        fi
+    done
+
+    ./configure --prefix=/usr \
+        --sysconfdir=/etc \
+        --libexecdir=/usr/lib/ \
+        --localstatedir=/var \
+        --disable-static \
+        --disable-debug || exit 1
+    make || exit 1
+
+    make DESTDIR=${pkgdir} install || exit 1
+}
+
+
+# esto incluye la parte que se repite en la mayoria de los builds
+. /usr/share/mate-doc-utils/mate-debian.sh
