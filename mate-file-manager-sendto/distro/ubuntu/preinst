@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+pkgname=mate-file-manager-sendto
+
+if [ -f /usr/share/mateconf/schemas/${pkgname}.schemas ]; then
+	/usr/sbin/mateconfpkg --uninstall ${pkgname}
+fi
+
+
