@@ -2,7 +2,7 @@
 
 # fill it
 pkgname=mate-terminal
-pkgver=2011.08.31
+pkgver=2011.10.14
 pkgrel=1
 pkgdesc="The MATE Terminal Emulator"
 #depends="gstreamer0.10-base-plugins, mate-panel, mate-character-map, libgtop, libmatenotify, cpufrequtils"
@@ -14,13 +14,10 @@ build() {
 	# entramos a la carpeta
 	cd ${pkgname}
 
-	mate-doc-prepare --copy
-	make distclean
 	./configure --prefix=/usr --sysconfdir=/etc --disable-static \
 		--localstatedir=/var --disable-scrollkeeper || return 1
 
 	# there is some pre-compiled files on the tar
-	make clean
 	make || return 1
 
 	make MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 DESTDIR="${pkgdir}" install || return 1
