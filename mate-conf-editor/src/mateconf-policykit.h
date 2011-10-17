@@ -1,6 +1,6 @@
 /* -*- Mode: C; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 8 -*-
  *
- * Copyright (C) 2008 Vincent Untz <vuntz@mate.org>
+ * Copyright (C) 2008 Vincent Untz <vuntz@gnome.org>
  *
  * Based on set-timezone.h from mate-panel which was GPLv2+ with this
  * copyright:

@@ -3,8 +3,8 @@
 #
 # This file is distributed under the same license as the evince package.
 #
-# Maintainer: Danilo Šegan <danilo@mate.org>
-# Reviewed on 2005-09-03 by: Danilo Šegan <danilo@mate.org>
+# Maintainer: Danilo Šegan <danilo@gnome.org>
+# Reviewed on 2005-09-03 by: Danilo Šegan <danilo@gnome.org>
 # Translated on 2007-03-12 by: Igor Nestorović <igor@prevod.org>
 # Miloš Popović <gpopac@gmail.com>, 2010.
 #
@@ -1332,7 +1332,7 @@ msgstr "© 1996-2007 Evinsovi autori"
 #: ../shell/ev-window.c:4605
 msgid "translator-credits"
 msgstr ""
-"Danilo Šegan <danilo@mate.org>\n"
+"Danilo Šegan <danilo@gnome.org>\n"
 "Slobodan D. Sredojević <slobo@akrep.be>\n"
 "Goran Rakić <grakic@devbase.net>\n"
 "Miloš Popović <gpopac@gmail.com>\n"

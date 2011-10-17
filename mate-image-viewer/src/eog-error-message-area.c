@@ -2,10 +2,10 @@
  *
  * Copyright (C) 2007 The Free Software Foundation
  *
- * Author: Lucas Rocha <lucasr@mate.org>
+ * Author: Lucas Rocha <lucasr@gnome.org>
  *
  * Based on gedit code (gedit/gedit-message-area.h) by:
- * 	- Paolo Maggi <paolo@mate.org>
+ * 	- Paolo Maggi <paolo@gnome.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

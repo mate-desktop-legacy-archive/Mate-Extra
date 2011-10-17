@@ -35,9 +35,9 @@
 # Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 1999.
 # Simos Xenitellis <simos@hellug.gr>, 1999, 2000, 2001, 2002.
 # Sarantis Paskalis <paskalis@di.uoa.gr>, 2000.
-# Kostas Papadimas <pkst@mate.org>,  2002,2003, 2004, 2005, 2006, 2008.
+# Kostas Papadimas <pkst@gnome.org>,  2002,2003, 2004, 2005, 2006, 2008.
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2004.
-# Simos Xenitellis <simos@mate.org>, 2005.
+# Simos Xenitellis <simos@gnome.org>, 2005.
 # Marios Zindilis <m.zindilis@dmajor.org>, 2009.
 msgid ""
 msgstr ""
@@ -71,9 +71,9 @@ msgstr "Εμφανίζει την κατάσταση των λειτουργιώ
 msgid "translator-credits"
 msgstr ""
 "Σπύρος Παπαδημητρίου <spapadim+@cs.cmu.edu>\n"
-"Σίμος Ξενιτέλλης <simos@mate.org>\n"
+"Σίμος Ξενιτέλλης <simos@gnome.org>\n"
 "Σαράντης Πασχάλης <paskalis@di.uoa.gr>\n"
-"Κώστας Παπαδήμας <pkst@mate.org>\n"
+"Κώστας Παπαδήμας <pkst@gnome.org>\n"
 "Νίκος Χαρωνιτάκης <charosn@her.forthnet.gr>\n"
 "Μάριος Ζηντίλης <m.zindilis@dmajor.org>"
 

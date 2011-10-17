@@ -5,7 +5,7 @@
 #
 # Maintainer: Милош Поповић <gpopac@gmail.com>
 # Prevous maintainer: Вељко М. Станојевић <veljko@vms.homelinux.net>
-# Reviewed on 2005-07-11 by Данило Шеган <danilo@mate.org>
+# Reviewed on 2005-07-11 by Данило Шеган <danilo@gnome.org>
 # Reviewed on 2005-09-03 by Андрија Зарић <andrija@gmail.com>
 # Милош Поповић <gpopac@gmail.com>, 2010.
 #
@@ -1227,7 +1227,7 @@ msgstr "Сва права задржана © 2002–2009 Бастијен Но�
 msgid "translator-credits"
 msgstr ""
 "Вељко Станојевић <veljko@vms.homelinux.net>\n"
-"Данило Шеган <danilo@mate.org>\n"
+"Данило Шеган <danilo@gnome.org>\n"
 "Андрија Зарић <andrija@gmail.com>\n"
 "Слободан Д. Средојевић <slobo@akrep.be>\n"
 "Милош Поповић <gpopac@gmail.com>\n"

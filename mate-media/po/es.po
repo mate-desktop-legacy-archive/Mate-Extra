@@ -23,7 +23,7 @@ msgstr ""
 "POT-Creation-Date: 2010-08-04 13:24+0000\n"
 "PO-Revision-Date: 2010-08-05 11:05+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.mate.org>\n"
-"Language-Team: Español <mate-es-list@mate.org>\n"
+"Language-Team: Español <mate-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -598,10 +598,10 @@ msgstr "Frec. de bits:"
 #: ../grecord/src/gsr-window.c:1241
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "Un grabador de sonido para MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 # grecord/src/grec.c:122
 #: ../grecord/src/gsr-window.c:1512

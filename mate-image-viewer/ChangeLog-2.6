@@ -25,7 +25,7 @@
 
 	* NEWS: Updated.
 
-2004-03-19  Seth Nickell  <seth@mate.org>
+2004-03-19  Seth Nickell  <seth@gnome.org>
 
 	* libeog/eog-file-selection.c: (eog_file_selection_new):
 
@@ -87,7 +87,7 @@
 	* libeog/eog-file-selection.c (eog_folder_selection_new): Removed
 	this function, incorporated the functionality into eog_file_selection_new.
 
-2004-03-05  Jonathan Blandford  <jrb@mate.org>
+2004-03-05  Jonathan Blandford  <jrb@gnome.org>
 
 	* libeog/eog-file-selection.c: There are now 4 actions. - Fixes #135816
 
@@ -1297,7 +1297,7 @@
 
 	* configure.in: Added "is" into ALL_LINGUAS
 
-2003-06-05  Christian Schaller <Uraeus@mate.org>
+2003-06-05  Christian Schaller <Uraeus@gnome.org>
 
 	* MATE_EOG.server.in.in: Add image/svg+xml to supported mimetype list i
 	since just image/SVG isn't the proper mimetype. This tiny fix should
@@ -2337,7 +2337,7 @@
 
 	* configure.in: Added Amharic (am) and Macedonian (mk) to ALL_LINGUAS.
 
-2003-01-07  Alex Duggan <aldug@mate.org>
+2003-01-07  Alex Duggan <aldug@gnome.org>
 
 	* eog.desktop.in: add startup-notification support to
 	.desktop file.  Fixes # 101086
@@ -2365,7 +2365,7 @@
 
 	* Release version 1.1.2.
 
-2002-11-22  Kjartan Maraas  <kmaraas@mate.org>
+2002-11-22  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* eog.schemas.in: Fix a small typo.
 
@@ -2401,7 +2401,7 @@
 	* help/C/l10n.txt: new file containing instructions for
 	  the L10N team about how to take screenshots for the manual
 
-2002-10-15  Kjartan Maraas  <kmaraas@mate.org>
+2002-10-15  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* viewer/eog-image-view-ui.xml: Fix a typo.
 	* eog.glade: Fix another typo.
@@ -2485,7 +2485,7 @@
 
 	* viewer/eog-image-view.h: Adapted mateconf keys.
 
-2002-10-10  Kjartan Maraas  <kmaraas@mate.org>
+2002-10-10  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* shell/eog-window.c (eog_window_init): Plug a leak.
 	#95358.
@@ -4633,7 +4633,7 @@
 
 	* shell/main.c (main): set the default window icon
 
-2001-07-13  Kjartan Maraas  <kmaraas@mate.org>
+2001-07-13  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Added nn to ALL_LINGUAS.
 
@@ -4735,7 +4735,7 @@
 	let configure have access to cached values, reduce configure.in by 2
 	lines and print a nice warning about cross compilation issues.
 
-2001-07-03  Jens Finke <jens@mate.org>
+2001-07-03  Jens Finke <jens@gnome.org>
 
 	Finally added a patch from
 	Juan Pablo Mendoza <pablo_juan@yahoo.com>:
@@ -4744,19 +4744,19 @@
 	for GDK_ACTION_ASK when draging files to EOG.
 	(set_drag_dest): Also accept GDK_ACTION_ASK.
 
-2001-06-30  Jens Finke <jens@mate.org>
+2001-06-30  Jens Finke <jens@gnome.org>
 
 	* viewer/eog-image.c: Call gdk_pixbuf_loader_close before
 	gdk_pixbuf_loader_get_pixbuf. Otherwise we fail to open xpm and
 	tiff images, due to some hacks in gdk-pixbuf.
 
-2001-06-30  Jens Finke <jens@mate.org>
+2001-06-30  Jens Finke <jens@gnome.org>
 
 	* collection/eog-image-loader.c: Call gdk_pixbuf_loader_close
 	before gdk_pixbuf_loader_get_pixbuf. Otherwise we fail to open xpm
 	and tiff images, due to some hacks in gdk-pixbuf.
 
-2001-06-30  Jens Finke <jens@mate.org>
+2001-06-30  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-control.c: Don't store reference to
 	root widget.
@@ -4868,7 +4868,7 @@
 	* configure.in: Give the user the option to compile with evolution
 	support (sending images via evolution's composer).
 
-2001-06-14  Jens Finke <jens@mate.org>
+2001-06-14  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-preferences.c:
 	(ecp_create_view_page): Merged code from
@@ -4920,7 +4920,7 @@
 	* configure.in: add configure option to enable new file selector
 	(off by default)
 
-2001-06-05  Jens Finke <jens@mate.org>
+2001-06-05  Jens Finke <jens@gnome.org>
 
 	To see the effect of these changes go into a directory with a lot
 	of .png's and type: eog *.png.
@@ -4952,11 +4952,11 @@
 	are *NOT* to be installed manually; they need to be installed with
 	MateConf's tools.
 
-2001-06-05  Jens Finke <jens@mate.org>
+2001-06-05  Jens Finke <jens@gnome.org>
 
 	* README: Updated URLs, dependencies and authors list.
 
-2001-06-01  Jens Finke <jens@mate.org>
+2001-06-01  Jens Finke <jens@gnome.org>
 
 	* collection/Makefile.am (INCLUDES), (eog_collection_LDADD): Added
 	mate-vfs flags.
@@ -4995,7 +4995,7 @@
 
 	* collection/main.c (init_server_factory): Call mate-vfs-init.
 
-2001-05-31  Jens Finke <jens@mate.org>
+2001-05-31  Jens Finke <jens@gnome.org>
 
 	* viewer/Makefile.am: Stop building the sample-container program.
 	(INCLUDES), (eog_image_viewer_LDADD): Added MateVFS flags.
@@ -5006,7 +5006,7 @@
 
 	* viewer/main.c (init_server_factory): Added mate_vfs_init call.
 
-2001-05-31  Jens Finke <jens@mate.org>
+2001-05-31  Jens Finke <jens@gnome.org>
 
 	* shell/Makefile.am (INCLUDES), (eog_LDADD): Added vfs flags.
 
@@ -5016,23 +5016,23 @@
 
 	* shell/main.c (main): Added mate_vfs_init () call.
 
-2001-05-31  Jens Finke <jens@mate.org>
+2001-05-31  Jens Finke <jens@gnome.org>
 
 	* shell/Makefile.am: Renamed binary from eog-shell to eog.
 
-2001-05-31  Jens Finke <jens@mate.org>
+2001-05-31  Jens Finke <jens@gnome.org>
 
 	* collection/Makefile.am (INCLUDES): Added $(EXTRA_MATE_CFLAGS)
 	[all these extra flags are really a mess, maybe its time for a
 	cleanup].
 	(eog_collection_LDADD): Added $(EXTAR_MATE_LIBS).
 
-2001-05-31  Jens Finke <jens@mate.org>
+2001-05-31  Jens Finke <jens@gnome.org>
 
 	* configure.in: Added check for mate-vfs >= 1.0.0 and set
 	appropriate variables.
 
-2001-05-30  Jens Finke <jens@mate.org>
+2001-05-30  Jens Finke <jens@gnome.org>
 
 	* collection/cimage.[ch]: (cimage_set_dimensions),
 	(cimage_get_width), (cimage_get_height): New functions.
@@ -5049,7 +5049,7 @@
 	* collection/eog-image-loader.c (loading_finished): Set image
 	dimensions.
 
-2001-05-29  Jens Finke <jens@mate.org>
+2001-05-29  Jens Finke <jens@gnome.org>
 
 	* viewer/eog-image-view.c:
 	(eog_image_view_get_prop): Set only image filename as window
@@ -5059,14 +5059,14 @@
 	(eog_image_view_construct): Connect to 'zoom_changed' signal, add
 	matecomponent property 'window/status'.
 
-2001-05-29  Jens Finke <jens@mate.org>
+2001-05-29  Jens Finke <jens@gnome.org>
 
 	* viewer/eog-image-view.c (eog_image_view_construct): Changed
 	properties to 'image/width', 'image/height' and
 	'window/title'. This is more consistent with the rest of the
 	matecomponent property naming scheme.
 
-2001-05-29  Jens Finke <jens@mate.org>
+2001-05-29  Jens Finke <jens@gnome.org>
 
 	* shell/eog-window.c (eog_window_construct): Added a statusbar to
 	the window bottom.
@@ -5078,14 +5078,14 @@
 	them.
 	(eog_window_open): Make sure the path is an absolute path.
 
-2001-05-29  Jens Finke <jens@mate.org>
+2001-05-29  Jens Finke <jens@gnome.org>
 
 	* libeog/image-view.[ch]: Added new 'zoom_changed' signal.
 	(image_view_key_pres): Use GDK_plus key as shortcut for zooming
 	into an image (enables this also for non-american keyboards).
 	(image_view_set_zoom): Emit 'zoom_changed' signal.
 
-2001-05-29  Jens Finke <jens@mate.org>
+2001-05-29  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-model.[ch]:
 	(eog_collection_model_class_init): Add 'base_uri_changed' signal.
@@ -5112,7 +5112,7 @@
 	which introduce a nice async property change client notification.
 	(eog_collection_view_construct): Connect to new model signals.
 
-2001-05-28  Jens Finke <jens@mate.org>
+2001-05-28  Jens Finke <jens@gnome.org>
 
 	* viewer/eog-print-setup.c (eog_print_setup_new): Added gettext
 	hint for translation. This should fix bug #55349.
@@ -5122,25 +5122,25 @@
 	* libeog/Makefile.am: $(BUILT_SOURCES) got added to CLEANFILES two
 	times? I guess one time is enough...
 
-2001-05-22  Jens Finke <jens@mate.org>
+2001-05-22  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-view.c: Oops, forgot it at last
 	commit.
 
-2001-05-21  Jens Finke <jens@mate.org>
+2001-05-21  Jens Finke <jens@gnome.org>
 
 	* viewer/eog-image-view.c: Renamed matecomponent:title property to
 	window_title, due to problems with the matecomponent_event_make_name
 	function in matecomponent-listener.c.
 
-2001-05-21  Jens Finke <jens@mate.org>
+2001-05-21  Jens Finke <jens@gnome.org>
 
 	* viewer/eog-image.c (load_image_from_stream): Try to retrieve the
 	name of the stream and set it as filename. We need this to
 	assemble a nice matecomponent:title. Unfourtunately the matecomponent stream
 	implementation is broken, so it doesn't work yet.
 
-2001-05-21  Jens Finke <jens@mate.org>
+2001-05-21  Jens Finke <jens@gnome.org>
 
 	* viewer/eog-image-view.c: Added three new read-only properties:
 	'image_width', 'image_height' and 'matecomponent:title'.
@@ -5151,21 +5151,21 @@
 	* viewer/eog-image.c (load_image_from_file): Initialize filename
 	in the Image-struct.
 
-2001-05-21  Jens Finke <jens@mate.org>
+2001-05-21  Jens Finke <jens@gnome.org>
 
 	* shell/eog-window.c (title_changed_cb) New function to update the
 	window title.
 	(set_window_title): Listen to changes to the 'window_title'
 	property of the embedded control.
 
-2001-05-21  Jens Finke <jens@mate.org>
+2001-05-21  Jens Finke <jens@gnome.org>
 
 	* shell/eog-window.c (set_window_title): New function, which
 	retrieves the window title from the control property
 	'matecomponent:title'.
 	(eog_window_open): Call set_window_title.
 
-2001-05-21  Jens Finke <jens@mate.org>
+2001-05-21  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-model.c:
 	* collection/eog-image-loader.c:
@@ -5174,7 +5174,7 @@
 	COLLECTION_DEBUG. Some were so unneccessary that I removed them
 	completely.
 
-2001-05-21  Jens Finke <jens@mate.org>
+2001-05-21  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-control.c (eog_control_construct): Add
 	property bag to control.
@@ -5197,19 +5197,19 @@
 	(eog_collection_view_construct): Create property bag and listen to
 	model interval changes.
 
-2001-05-18  Jens Finke <jens@mate.org>
+2001-05-18  Jens Finke <jens@gnome.org>
 
 	* viewer/eog-image-view.c (image_set_image_cb): Enlarge window to
 	image size on loading.
 
-2001-05-18  Jens Finke <jens@mate.org>
+2001-05-18  Jens Finke <jens@gnome.org>
 
 	* shell/eog-window.c (eog_window_construct): Removed
 	gtk_widget_set_usize function and replaced it with
 	gtk_window_set_geometry_hints. Added window icon and allowed the
 	window to shrink automatically.
 
-2001-05-18  Jens Finke <jens@mate.org>
+2001-05-18  Jens Finke <jens@gnome.org>
 
 	* libeog/image-view.[ch] (image_view_get_scaled_size): New
 	function, which returns the image width and height, but takes also
@@ -5231,17 +5231,17 @@
 	* libeog/ui-image.[c,h]: Get the pixbuf using the ImageView, not
 	Image.
 
-2001-04-27  Jens Finke <jens@mate.org>
+2001-04-27  Jens Finke <jens@gnome.org>
 
 	* configure.in: Check for matecomponent version >= 1.0.0. We really need
 	this, otherwise the collection crashes.
 
-2001-04-23  Jens Finke <jens@mate.org>
+2001-04-23  Jens Finke <jens@gnome.org>
 
 	* idl/Eog.idl (MATE::EOG:URIList): Added.
 	(MATE::EOG::ImageCollection): New method openURIList.
 
-2001-04-23  Jens Finke <jens@mate.org>
+2001-04-23  Jens Finke <jens@gnome.org>
 
 	This patch enables the collection component to load a bunch of
 	single files too. It's even possible to mix directory contents and
@@ -5261,7 +5261,7 @@
 	* collection/eog-collection-view.c
 	(impl_MATE_EOG_ImageCollection_openURIList): New function.
 
-2001-04-23  Jens Finke <jens@mate.org>
+2001-04-23  Jens Finke <jens@gnome.org>
 
 	* collection/cimage.[ch]: s/path/uri/
 
@@ -5286,7 +5286,7 @@
 	* collection/eog_item_factory_simple.c (ii_factory_update_item): Use
 	cimage_get_uri.
 
-2001-04-18  Jens Finke <jens@mate.org>
+2001-04-18  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-preferences.[ch]:
 	* collection/eog-item-factory-simple.[ch]:
@@ -5309,7 +5309,7 @@
 	* libeog/MATE_EOG.oaf.in: make caja_view_as values
 	translatable.
 
-2001-04-11  Jens Finke <jens@mate.org>
+2001-04-11  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-preferences.[ch]: New files.
 
@@ -5334,7 +5334,7 @@
 	(eog_wrap_list_set_background_color): New function declarations.
 	(EogLayoutMode): New enumeration.
 
-2001-04-10  Jens Finke <jens@mate.org>
+2001-04-10  Jens Finke <jens@gnome.org>
 
 	I did the changes since 2001-04-02 on holidays in the south france
 	sun without internet access, so I commit these at once now. Its
@@ -5364,7 +5364,7 @@
 	* viewer/eog-util.[ch]: Implement overlap support. Moved the unit
 	selection out of the notebook as it now affects overlap, too.
 
-2001-04-07  Jens Finke <jens@mate.org>
+2001-04-07  Jens Finke <jens@gnome.org>
 
 	* collection/eog-wrap-list.c (handle_item_event): Recognize CTRL
 	and SHIFT key modifiers and behave accordingly.
@@ -5410,7 +5410,7 @@
 
 	* viewer/eog-print-setup.c: Implement unit support.
 
-2001-04-05  Jens Finke <jens@mate.org>
+2001-04-05  Jens Finke <jens@gnome.org>
 
 	* collection/eog-wrap-list.c (EogWrapListPrivate struct): Added
 	view_order list.
@@ -5427,7 +5427,7 @@
 	* viewer/eog-print-setup.c: First work towards supporting
 	units. Not functional yet, though.
 
-2001-04-04  Jens Finke <jens@mate.org>
+2001-04-04  Jens Finke <jens@gnome.org>
 
 	* collection/cimage.[ch] (cimage_toggle_select_status): New
 	function
@@ -5480,7 +5480,7 @@
 	* viewer/eog-image-view.c: Print a warning that we havent'
 	implemented the printing of the cutting help yet...
 
-2001-04-02  Jens Finke <jens@mate.org>
+2001-04-02  Jens Finke <jens@gnome.org>
 
 	* collection/eog-wrap-list.c (do_item_added_update): Attach unique
 	id to canvas item and connect to 'event' signal.
@@ -5505,7 +5505,7 @@
 	* viewer/eog-print-setup: Just show a eog-preview instead of
 	creating hboxes and vboxes.
 
-2001-03-29  Jens Finke <jens@mate.org>
+2001-03-29  Jens Finke <jens@gnome.org>
 
 	* collection/Makefile.am (SOURCES): Removed
 	mate-icon-item-factory.[ch] and mate-list-item-factory.[ch],
@@ -5541,7 +5541,7 @@
 
 	* shell/Makefile.am (INCLUDES): builddir != srcdir fix.
 
-2001-03-28 Jens Finke <jens@mate.org>
+2001-03-28 Jens Finke <jens@gnome.org>
 
 	* shell/Makefile.am (EXTRA_DIST): Removed glade_messages in order
 	to create buildable tarballs.
@@ -5550,7 +5550,7 @@
 
 	* collection/Makefile.am (INCLUDES): builddir != srcdir fix.
 
-2001-03-28  Jens Finke <jens@mate.org>
+2001-03-28  Jens Finke <jens@gnome.org>
 
 	* autogen.sh: Use 'shell' and 'viewer/main.c' to check for eog
 	toplevel directory.
@@ -5561,13 +5561,13 @@
 	* Makefile.am (SUBDIRS): Finally removed src
 	directory.
 
-2001-03-27  Jens Finke <jens@mate.org>
+2001-03-27  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-model.c:
 	* collection/eog-wrap-list.c: Use hash table to hold all the
 	loaded images, instead of a simple list.
 
-2001-03-27  Jens Finke <jens@mate.org>
+2001-03-27  Jens Finke <jens@gnome.org>
 
 	* collection/eog-image-list.[ch]:
 	* collection/eog-image-selection-model.[ch]:
@@ -5670,7 +5670,7 @@
 	as the default interpolation type - Hyperbolic is buggy at ~1.0
 	zoom levels, no crashes - just a tartan texture.
 
-2001-03-12  Jens Finke <jens@mate.org>
+2001-03-12  Jens Finke <jens@gnome.org>
 
 	* shell/eog-window.c (eog_window_construct): Add
 	MateComponentControlFrame interface to object.
@@ -5679,12 +5679,12 @@
 	interface.
 	(eog_window_open): Set MateComponentControlFrame for controls.
 
-2001-03-12  Jens Finke <jens@mate.org>
+2001-03-12  Jens Finke <jens@gnome.org>
 
 	* idl/Eog.idl (MATE::EOG::ImageCollection) Removed 'setStorage',
 	added 'openURI'.
 
-2001-03-12  Jens Finke <jens@mate.org>
+2001-03-12  Jens Finke <jens@gnome.org>
 
 	* collection/eog-collection-control.[ch]: Parent class is
 	EogCollectionView now. Use MateComponentXObject functionality.
@@ -5720,13 +5720,13 @@
 	* collection/mate-wrap-list.h (_MateWrapListClass): Signal
 	'item_dbl_click' added.
 
-2001-03-09  Jens Finke <jens@mate.org>
+2001-03-09  Jens Finke <jens@gnome.org>
 
 	* shell/eog-shell-ui.xml: Added stock pixmap to 'FileNewWindow'
 	command and accelerators for 'FileNewWindow', 'FileOpen' and
 	'FileCloseWindow'.
 
-2001-03-07  Jens Finke <jens@mate.org>
+2001-03-07  Jens Finke <jens@gnome.org>
 
 	* collection/Makefile.am: Added support for xml-i18n-tools.
 
@@ -5734,19 +5734,19 @@
 	MATE_EOG_Collection.oaf.in and marked strings for translation
 	where appropriate.
 
-2001-03-06  Jens Finke <jens@mate.org>
+2001-03-06  Jens Finke <jens@gnome.org>
 
 	* shell/eog-window-c (get_dir_images) Removed.
 	(get_file_control): Use MateComponent_Storage Objects and new
 	ImageCollection interface.
 
-2001-03-06  Jens Finke <jens@mate.org>
+2001-03-06  Jens Finke <jens@gnome.org>
 
 	* idl/Eog.idl (typedef Files): Removed.
 	(MATE::EOG::ImageCollection): Removed 'addFiles', added
 	'setStorage'.
 
-2001-03-06  Jens Finke <jens@mate.org>
+2001-03-06  Jens Finke <jens@gnome.org>
 
 	* collection/MATE_EOG_Collection.oafinfo: Added
 	'x-directory/normal' to list of supported mime types.
@@ -5802,7 +5802,7 @@
 	(eog_image_save_to_stream): New function, redirects to function
 	above.
 
-2001-03-01  Jens Finke <jens@mate.org>
+2001-03-01  Jens Finke <jens@gnome.org>
 
 	* shell/eog-shell-ui.xml: Renamed 'Create New Window' to 'New
 	Window' and 'Close Window' to 'Close'. So it's more consistent
@@ -5813,7 +5813,7 @@
 	* shell/eog-shell-ui.xml: Added 'FileOperations' placeholder and
 	put 'FileOpen' in it.
 
-2001-03-01  Jens Finke <jens@mate.org>
+2001-03-01  Jens Finke <jens@gnome.org>
 
 	* collection/eog_collection_view.[ch]: Use MateComponentXObject.
 	(eog_collection_view_get_epv): Removed.
@@ -5823,13 +5823,13 @@
 	MATECOMPONENT_X_TYPE_FUNC_FULL.
 	(eog_collection_view_corba_object_create): Removed.
 
-2001-02-28 Jens Finke <jens@mate.org>
+2001-02-28 Jens Finke <jens@gnome.org>
 
 	* libeog/: Copied cursors and stock directories from ../src.
 
 	* libeog/Makefile.am (SUBDIRS): Added cursors and stock directory.
 
-2001-02-27  Jens Finke <jens@mate.org>
+2001-02-27  Jens Finke <jens@gnome.org>
 
 	Applied patch from Lutz Mueller <urc8@rz.uni-karlsruhe.de>:
 
@@ -5838,7 +5838,7 @@
 
 	* viewer/eog-image-view-ui.xml: Removed 'Component' placeholder.
 
-2001-02-27  Jens Finke <jens@mate.org>
+2001-02-27  Jens Finke <jens@gnome.org>
 
 	Applied patch from Lutz Mueller <urc8@rz.uni-karlsruhe.de>:
 
@@ -5917,7 +5917,7 @@
 	* autogen.sh: fix so we actually configure.
 	* configure.in: ditto.
 
-2001-02-15  Jens Finke <jens@mate.org>
+2001-02-15  Jens Finke <jens@gnome.org>
 
 	* viewer/eog-control.c (toolbar definition): Changed name to
 	'Toolbar', set correct pixmaps for 'ZoomIn' and 'ZoomOut' items.
@@ -5931,7 +5931,7 @@
 	preferences-dialog.glade, util.[ch]: Replaced with a direct CVS
 	copy which has the full history.
 
-2001-02-15  Jens Finke <jens@mate.org>
+2001-02-15  Jens Finke <jens@gnome.org>
 
 	* shell/eog-window.[ch]:
 	* shell/eog-shell-ui.xml:
@@ -5962,7 +5962,7 @@
 	(CheckType, CheckSize, ScrollType, FullScreenZoom): Moved here
 	from preferences.h and don't include it.
 
-2001-02-15  Jens Finke <jens@mate.org>
+2001-02-15  Jens Finke <jens@gnome.org>
 
 	* idl/Eog.idl (typedef Files): Added.
         (MATE::EOG:ImageCollection): New interface.
@@ -5973,7 +5973,7 @@
 	function.
 	(last_id): Moved into get_unique_id ().
 
-2001-02-15  Jens Finke <jens@mate.org>
+2001-02-15  Jens Finke <jens@gnome.org>
 
 	Imported first version of the image collection component.
 
@@ -5998,7 +5998,7 @@
 
 	* libeog/: New directory.
 
-2001-02-15  Jens Finke <jens@mate.org>
+2001-02-15  Jens Finke <jens@gnome.org>
 
 	* collection/: New directory.
 
@@ -6174,11 +6174,11 @@
 
 	* viewer/sample-container.c (main): frendlify
 
-2000-12-08  Arik Devens  <arik@mate.org>
+2000-12-08  Arik Devens  <arik@gnome.org>
 
 	* README: Added myself as an author.
 
-2000-12-07  Arik Devens  <arik@mate.org>
+2000-12-07  Arik Devens  <arik@gnome.org>
 
 	* THANKS: Ditto.
 

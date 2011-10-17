@@ -11,7 +11,7 @@
 # Taco Witte <T.C.Witte@phys.uu.nl>, 2002.
 # Daniel van Eeden <daniel_e@dds.nl>, 2004.
 # Tino Meinen <a.t.meinen@chello.nl>, 2005, 2006.
-# Wouter Bolsterlee <wbolster@mate.org>, 2008–2010.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2008–2010.
 # Rob van den Berg <linuxned@gmail.com>, 2010.
 # Kenneth Venken <kenneth.venken@gmail.com>, 2010.
 # Hannie Dumoleyn <lafeber-dumoleyn2@zonnet.nl>, 2010.

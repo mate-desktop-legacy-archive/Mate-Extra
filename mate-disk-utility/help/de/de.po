@@ -1,13 +1,13 @@
 # German translation of the mate-disk-utility manual.
-# Mario Blättermann <mariobl@mate.org>, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-disk-utility\n"
 "POT-Creation-Date: 2009-04-21 08:39+0000\n"
 "PO-Revision-Date: 2009-05-02 19:05+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@mate.org>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -128,5 +128,5 @@ msgstr "Palimpsest Disk Utility ist ein komplexes Programm mit vielen fortgeschr
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
 #: C/palimpsest.xml:0(None)
 msgid "translator-credits"
-msgstr "Mario Blättermann <mariobl@mate.org>, 2009"
+msgstr "Mario Blättermann <mariobl@gnome.org>, 2009"
 

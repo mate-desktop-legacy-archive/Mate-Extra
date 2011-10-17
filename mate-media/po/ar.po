@@ -563,10 +563,10 @@ msgstr "نسبة البايتات:"
 #: ../grecord/src/gsr-window.c:1242
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "مسجل أصوت لجنوم\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1513
 msgid "Playing…"

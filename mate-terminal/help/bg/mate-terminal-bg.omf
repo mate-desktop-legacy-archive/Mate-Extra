@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <omf>
   <resource>
-    <creator>docs@mate.org (GDP)</creator>
-    <maintainer>docs@mate.org (GDP)</maintainer>
+    <creator>docs@gnome.org (GDP)</creator>
+    <maintainer>docs@gnome.org (GDP)</maintainer>
     <title>Ръководство на Терминал на MATE, версия 2.8</title>
     <date>2004-03-03</date>
     <version identifier="2.8" date="2004-03-03" description="Updated for MATE 2.6, program version 2.5.90."/>

@@ -1,7 +1,7 @@
 /* logview-about.h - authors and contributors information
  *
  * Copyright (C) 2004 Vincent Noel <vnoel@cox.net>
- * Copyright (C) 2008 Cosimo Cecchi <cosimoc@mate.org>
+ * Copyright (C) 2008 Cosimo Cecchi <cosimoc@gnome.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -32,9 +32,9 @@ static const char *logview_about_authors[] = {
   "Christian Neumair  <chris@mate-de.org>",
   "Jan Arne Petersen  <jpetersen@uni-bonn.de>",
   "Jason Long  <jlong@messiah.edu>",
-  "Kjartan Maraas  <kmaraas@mate.org>",
+  "Kjartan Maraas  <kmaraas@gnome.org>",
   "Vincent Noel  <vincent.noel@gmail.com>",
-  "Cosimo Cecchi <cosimoc@mate.org>",
+  "Cosimo Cecchi <cosimoc@gnome.org>",
   NULL
 };
 

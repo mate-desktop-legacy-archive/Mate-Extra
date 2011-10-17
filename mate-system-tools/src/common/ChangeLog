@@ -6,21 +6,21 @@
 
 ==================== 2.22.1 ====================
 
-2008-03-09  Carlos Garnacho  <carlosg@mate.org>
+2008-03-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.22.0
 
-2008-02-26  Carlos Garnacho  <carlosg@mate.org>
+2008-02-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-polkit-action.c (gst_polkit_action_init): Do not spew extra
 	critical warnings if any of the DBusConnections can't be created.
 	Fixes what can be fixed in #518796.
 
-2008-02-25  Carlos Garnacho  <carlosg@mate.org>
+2008-02-25  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.92
 
-2008-02-17  Carlos Garnacho  <carlosg@mate.org>
+2008-02-17  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-tool.[ch] (gst_tool_add_configuration_object)
 	(configuration_object_committed) (configuration_object_changed)
@@ -28,49 +28,49 @@
 	quite certain possibility that the tool is the one that caused the
 	change.
 
-2008-02-16  Carlos Garnacho  <carlosg@mate.org>
+2008-02-16  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.[ch] (gst_dialog_get_topmost_edit_dialog): Added.
 	* gst-tool.[ch] (configuration_object_changed): Use topmost edit
 	dialog as the parent for the "configuration changed" dialog. Also, do
 	not show another of these dialogs if there's already one present.
 
-2008-02-12  Carlos Garnacho  <carlosg@mate.org>
+2008-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.91
 
-2008-01-28  Carlos Garnacho  <carlosg@mate.org>
+2008-01-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.90
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5.1
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5
 
-2008-01-13  Carlos Garnacho  <carlosg@mate.org>
+2008-01-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.[ch] (gst_dialog_authenticate): Added, programatically
 	tells the tool to unlock.
 
-2008-01-07  Carlos Garnacho  <carlosg@mate.org>
+2008-01-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-polkit-action.c, gst-polkit-button.c: Display an error dialog if
 	the call to org.mate.PolicyKit returns some error.
 
-2007-12-26  Carlos Garnacho  <carlosg@mate.org>
+2007-12-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.c (gst_dialog_constructor): Display the GError message
 	when the builder file can't be loaded.
 
-2007-12-18  Carlos Garnacho  <carlosg@mate.org>
+2007-12-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.3
 
-2007-12-12  Carlos Garnacho  <carlosg@mate.org>
+2007-12-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.[ch] (gst_dialog_add_edit_dialog)
 	(gst_dialog_remove_edit_dialog) (gst_dialog_stop_editing)
@@ -82,15 +82,15 @@
 	user has opened a dialog that might be doing some change to the
 	configuration.
 
-2007-11-14  Carlos Garnacho  <carlosg@mate.org>
+2007-11-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2.1
 
-2007-11-13  Carlos Garnacho  <carlosg@mate.org>
+2007-11-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2
 
-2007-11-12  Carlos Garnacho  <carlosg@mate.org>
+2007-11-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	Made a couple of improvements to widget policies handling.
 
@@ -103,18 +103,18 @@
 	* Makefile.am: remove gst-types.h
 	* gst.h: remove gst-types.h include
 
-2007-11-12  Carlos Garnacho  <carlosg@mate.org>
+2007-11-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-polkit-action.[ch]: Added, keeps track of a PolicyKit action and
 	the corresponding permissions management.
 	* gst-polkit-button.[ch]: Use GstPolKitAction underneath.
 	* Makefile.am: added gst-polkit-action.[ch]
 
-2007-10-30  Carlos Garnacho  <carlosg@mate.org>
+2007-10-30  Carlos Garnacho  <carlosg@gnome.org>
 
         * Release 2.21.1
 
-2007-10-21  Carlos Garnacho  <carlosg@mate.org>
+2007-10-21  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.c: do not surround widget policies code with ifdef
 	HAVE_POLKIT, less ifdefs is less clutter, and the essential code was
@@ -136,7 +136,7 @@
 	is used by the tools to mark certain controls as requiring
 	authentication, and remove all references to GstWidget.
 
-2007-10-10  Carlos Garnacho  <carlosg@mate.org>
+2007-10-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	Add optional PolicyKit support.
 
@@ -151,13 +151,13 @@
 	* gst-widget.c: update callers.
 	* gst-widget.h: make GstWidget struct a bit more compact.
 
-2007-10-10  Carlos Garnacho  <carlosg@mate.org>
+2007-10-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-tool.c (show_access_denied_dialog) (gst_tool_constructor)
 	(on_commit_finalized) (gst_tool_commit_async): prepare it to show
 	access denied dialog on commit operations too.
 
-2007-09-29  Carlos Garnacho  <carlosg@mate.org>
+2007-09-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.[ch]: improve freeze/thaw logic, make it so you have to 
 	thaw it as many times as you froze it.
@@ -171,46 +171,46 @@
 	configuration objects itself.
 	(gst_tool_constructor): call gst_tool_update_async().
 
-2007-09-26  Carlos Garnacho  <carlosg@mate.org>
+2007-09-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-service-role.c: put courier in the right position, spotted by
 	Ermanno Scaglione  <e.scaglione@arcor.de>
 
-2007-09-13  Carlos Garnacho  <carlosg@mate.org>
+2007-09-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.h: remove glade include
 	* gst-tool.[ch], gst-dialog.c: use GtkBuilder API
 
-2007-09-03  Carlos Garnacho  <carlosg@mate.org>
+2007-09-03  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.92
 
-2007-08-28  Carlos Garnacho  <carlosg@mate.org>
+2007-08-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.91
 
-2007-07-28  Carlos Garnacho  <carlosg@mate.org>
+2007-07-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.1
 
-2007-07-10  Carlos Garnacho  <carlosg@mate.org>
+2007-07-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.0
 
-2007-04-09  Carlos Garnacho  <carlosg@mate.org>
+2007-04-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.1
 
-2007-03-12  Carlos Garnacho  <carlosg@mate.org>
+2007-03-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.0
 
-2007-03-01  Carlos Garnacho  <carlosg@mate.org>
+2007-03-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-service-role.c: do not fool bsearch with postgresql*, add
 	postgresql-8.2.
 
-2007-02-27  Carlos Garnacho  <carlosg@mate.org>
+2007-02-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.92
 
@@ -219,40 +219,40 @@
 	* gst-tool.c (gst_tool_show_help): spawn mate-help directly to avoid
 	libmate use.
 
-2007-02-19  Carlos Garnacho  <carlosg@mate.org>
+2007-02-19  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.c (gst_dialog_response): Usually when the main window is
 	insensitive it's because it's busy with important stuff, prevent it
 	from closing through "delete-event" if it's in that state. Fixes
 	#358383.
 
-2007-02-18  Carlos Garnacho  <carlosg@mate.org>
+2007-02-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.c (gst_dialog_delete_event): added and attached, returns
 	TRUE to prevent early dialog destruction. Fixes #403599.
 
-2007-02-12  Carlos Garnacho  <carlosg@mate.org>
+2007-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.91
 
-2007-01-09  Carlos Garnacho  <carlosg@mate.org>
+2007-01-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-service-role.c: add "ntp" service.
 
-2007-01-09  Carlos Garnacho  <carlosg@mate.org>
+2007-01-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.5
 
-2007-01-08  Carlos Garnacho  <carlosg@mate.org>
+2007-01-08  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.4
 
-2007-01-01  Carlos Garnacho  <carlosg@mate.org>
+2007-01-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-tool.[ch] (gst_tool_commit_async): add function hook to be run
 	after the commit operation has ended.
 
-2006-12-04  Carlos Garnacho  <carlosg@mate.org>
+2006-12-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.c (gst_dialog_constructor): destroy toplevel of the
 	widget we embed in the main dialog.
@@ -261,32 +261,32 @@
 	(gst_tool_show_report_window): do not throw critical warnings if
 	there's already a pending operation.
 
-2006-12-01  Carlos Garnacho  <carlosg@mate.org>
+2006-12-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.3
 
-2006-11-28  Carlos Garnacho  <carlosg@mate.org>
+2006-11-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-platforms-dialog.c: do not use distro pixmaps, present the
 	distros info as a tree.
 
-2006-11-26  Carlos Garnacho  <carlosg@mate.org>
+2006-11-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-service-role.c: ditto with ntpd.
 
-2006-11-10  Carlos Garnacho  <carlosg@mate.org>
+2006-11-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-service-role.c: ditto with ssh/sshd
 
-2006-11-10  Carlos Garnacho  <carlosg@mate.org>
+2006-11-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-service-role.c: do not fool bsearch with apache2
 
-2006-11-05  Carlos Garnacho  <carlosg@mate.org>
+2006-11-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.2
 
-2006-11-03  Carlos Garnacho  <carlosg@mate.org>
+2006-11-03  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-types.h: remove some uneeded typedefs and defines.
 	* gst-conf.[ch]: define GST_MATECONF_ROOT here.
@@ -297,7 +297,7 @@
 	* gst-widget.[ch]: simplify widget policies, there's no longer
 	advanced/basic modes.
 
-2006-11-03  Carlos Garnacho  <carlosg@mate.org>
+2006-11-03  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-tool.[ch]: remove heaps of unused code.
 	(gst_init_tool): plug a leak.
@@ -306,12 +306,12 @@
 	* gst-dialog.c (gst_dialog_constructor): exit if the glade file could
 	not be found.
 
-2006-10-05  Carlos Garnacho  <carlosg@mate.org>
+2006-10-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-service-role.c: add one test service for SunOS, of course more
 	are needed.
 
-2006-09-30  Carlos Garnacho  <carlosg@mate.org>
+2006-09-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.5
 
@@ -320,21 +320,21 @@
 	* gst-tool.c: optionally use MateProgram if --disable-mate is not
 	present.
 
-2006-09-16  Carlos Garnacho  <carlosg@mate.org>
+2006-09-16  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-platform.c, gst-tool.c: adapt to latest liboobs API changes.
 	Show an "Access denied" dialog if the user can't access the backends
 	due to backend policies.
 
-2006-09-07  Carlos Garnacho  <carlosg@mate.org>
+2006-09-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.4
 
-2006-09-04  Carlos Garnacho  <carlosg@mate.org>
+2006-09-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.3
 
-2006-09-04  Carlos Garnacho  <carlosg@mate.org>
+2006-09-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-service-role.[ch]: added, guesses a system service role from
 	the name. This functionality was before down in the stack (namely
@@ -342,11 +342,11 @@
 	* Makefile.am: add those files.
 	* gst.h: add gst-service-roles.h #include
 
-2006-09-01  Carlos Garnacho  <carlosg@mate.org>
+2006-09-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-tool.[ch] (gst_tool_update_config): expose this functionality.
 
-2006-09-01  Carlos Garnacho  <carlosg@mate.org>
+2006-09-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-report-hook.[ch], gst-report-line.[ch], gst-ui.[ch],
 	gst-util.[ch], gst-xml.[ch], text.[ch]: old and unused code, to the
@@ -354,7 +354,7 @@
 	* Makefile.am: remove those files
 	* gst-tool.c, gst.h: remove unnecessary includes
 
-2006-08-23  Carlos Garnacho  <carlosg@mate.org>
+2006-08-23  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-platform-dialog.c (gst_platform_dialog_set_property): own a
 	reference of the OobsSession object.
@@ -369,48 +369,48 @@
 	* gst-tool.h (gst_tool_close): added
 	* gst-dialog.c (gst_dialog_response): call gst_tool_close().
 
-2006-08-11  Carlos Garnacho  <carlosg@mate.org>
+2006-08-11  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.2
 
-2006-08-02  Carlos Garnacho  <carlosg@mate.org>
+2006-08-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.1
 
-2006-08-02  Carlos Garnacho  <carlosg@mate.org>
+2006-08-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-tool.c: remove unnecessary code
 
-2006-06-06  Carlos Garnacho  <carlosg@mate.org>
+2006-06-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.0
 
-2006-06-05  Carlos Garnacho  <carlosg@mate.org>
+2006-06-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-auth.[ch]: deleted, no longer used
 
-2006-05-27  Carlos Garnacho  <carlosg@mate.org>
+2006-05-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-tool.[ch]: add possibility to set a default icon name. define it
 	as an abstract type, tools will have their own implementation of this
 	class. (gst_tool_new): removed as a consequence.
 
-2006-05-24  Carlos Garnacho  <carlosg@mate.org>
+2006-05-24  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.c: small optimization, remove an unnecessarily translated
 	string
 	* gst-filter.c: do not use deprecated functions
 
-2006-05-22  Carlos Garnacho  <carlosg@mate.org>
+2006-05-22  Carlos Garnacho  <carlosg@gnome.org>
 
 	* gst-dialog.h, gst-tool.c: remove unnecessary #includes
 	* gst-tool.c: fix a potential critical warning
 
-2006-05-19  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-05-19  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-dialog.c: remove a debug g_printf()
 
-2006-05-18  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-05-18  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-conf.[ch] (gst_conf_add_notify): added
 	* gst-platform-dialog.[ch]: deprecates gst-platform.[ch], does the
@@ -425,41 +425,41 @@
 	* gst-types.h: GstTool and GstToolClass are now defined in gst-tool.h
 	* gst-widget.c: use gst_tool_is_authenticated()
 
-2006-03-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-03-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.14.0
 
-2006-01-31  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-31  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.2
 
-2006-01-30  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-30  Carlos Garnacho Parro  <carlosg@gnome.org>
 
         * gst-auth.c: Apply string improvement suggestions from Benoît 
 	Dejean  <benoit@placenet.org>, closes #328944.
 			
-2006-01-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.1
 
-2006-01-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.0
 
-2005-11-28  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-11-28  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.1
 
-2005-11-27  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-11-27  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-auth.c: added missing include, fixes #317222, patch from Dann
 	Frazier <dannf@hp.com>
 
-2005-09-04  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-09-04  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.0
 
-2005-08-23  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.92
 
@@ -468,199 +468,199 @@
 	* src/common/gst-tool.c (read_everything): use int instead of char
 	for characters, for 64bit.
 
-2005-08-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.2
 
-2005-07-26  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-26  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.1
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0.1
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-auth.c: center password dialog on main dialog
 
-2005-06-23  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-06-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-filter.c: handle too the cases where the user deletes something
 	in the filtered entry
 
-2005-06-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-06-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-platform.c, gst-tool.c: Added Vida Linux OS icon
 
-2005-06-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-06-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-auth.c: fixed a typo. Fixes #304032
 
-2005-06-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-06-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-dialog.c: connect the key-press-event with connect_after, so it
 	doesn't get annoying behavior in i.e. the network tool, when
 	cancelling the edition of an editable GtkCellRendererText
 
-2005-03-07  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-07  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.2.0
 
-2005-03-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-dialog.c (dialog_delete_event_cb): really add a return value.
 	Fixes #168941
 
-2005-03-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.92
 
-2005-02-24  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-24  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Makefile.am: ship CommonMakefile in the package. Fixes #167215
 
-2005-02-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.91
 
-2005-01-30  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-30  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-auth.c: exit cleanly if the tool can't fork the backend. Closes
 	#158810
 
-2005-01-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.90
 
-2005-01-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-filter.[ch]: added GST_FILTER_PHONE, to know whether a string
 	contains only chars that could be part of a phone number
 
-2005-01-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-dialog.c: Added GDK_Escape keybinding to the main dialog, so
 	it may cancel as in other dialogs
 
-2005-01-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-hig-dialog.[ch]: removed
 	* Makefile.am: ditto
 	* gst-auth.c, gst-dialog.c, gst-tool.c: use new GtkMessageDialog API
 	for HIG dialogs
 
-2005-01-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4.1
 
-2005-01-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4
 
-2004-12-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.3
 
-2004-12-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
         * gst-tool.c: put error = NULL in some mateconf calls, we're not caring
 	about the error here.
 
-2004-11-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* CommonMakefile: start-here seems to be definitely deprecated,
 	stop installing .desktop files in $(sysconfdir)/X11/sysconfig/
 
-2004-12-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.c: made it not to block when su fails
 
-2004-12-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-auth.c, gst-tool.[ch]: improved IO with backends, now updates
 	the GUI while waiting for data to read.
 	* gst-tool.[ch]: readded reports window, with a more modern look, use
 	it if the directive has report text and lasts for >2 secs.
 
-2004-12-15  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-15  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.[ch], gst-auth.c: made comunication a lot more sane, now 
 	there are two fds instead of one.
 
-2004-12-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.c: removed a gst_xml_doc_dump()
 
-2004-12-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-xml.c (gst_xml_set_child_content): do not output any warning if
 	val == NULL
 
-2004-12-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.c: put error = NULL in some mateconf calls, we're not caring
 	about the error here.
 
-2004-12-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-filter.c (gst_filter_check_ip_address): handled NULL strings
 
-2004-12-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-filter.[ch]: added for making generic GtkEntry filters
 	* gst.h, Makefile.am: added gst-filter.h
 
-2004-10-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-10-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
         * gst-tool.[ch] (gst_init): use GOption instead of popt
 
-2004-11-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.c (gst_tool_run_set_directive_va): made it really able
 	to get some XML from the backend. 
 	(gst_tool_write_xml_to_backend) send the end of request. 
 	(gst_tool_read_junk_from_backend) removed.
 
-2004-11-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-platform.c, gst-tool.c: Added archlinux pixmap
 
-2004-11-03  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-03  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1
 
-2004-10-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-10-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.c (gst_tool_directive_free): do not free data, it can be
 	reused
 
-2004-10-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-10-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
         * gst-auth.h: fixed build with -fno-common, patch by Heikki Tauriainen
         <heikki.tauriainen@hut.fi>. Fixes #153062
 
-2004-10-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-10-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-tool.c: do not use the tool if the refcount is 0
 
-2004-09-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.0
 
-2004-09-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 0.92
 
-2004-08-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-auth.c, gst-tool.c: fixed some memleaks
 
-2004-08-24  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-24  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-platform.c, gst-tool.c: various leaks fixed
 
@@ -673,7 +673,7 @@
 
 	* Release 0.91.0
 
-2004-08-20  Carlos Garnacho Parro  <carlos@mate.org>
+2004-08-20  Carlos Garnacho Parro  <carlos@gnome.org>
 
 	* gst-platform.c, gst-tool.c: Added support for Specifix Linux pixmaps
 
@@ -681,7 +681,7 @@
 
 	* gst-platform.c, gst-tool.c: Added support for Vine Linux 3.0 and 3.1
 
-2004-08-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-auth.[ch]: made it to search first to the su/ssh output for
 	guessing whether it needs password or not. Fixes #147362
@@ -1172,7 +1172,7 @@
 
 	* xst-dialog.c: Ditto.
 
-2002-02-22  Kjartan Maraas  <kmaraas@mate.org>
+2002-02-22  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* xst-tool.c: Remove unsupported #ifdef ENABLE_NLS stuff.
 	
@@ -1763,7 +1763,7 @@ Thu Jul 12 12:22:56 2001  Arturo Espinosa Aldama  <arturo@ximian.com>
 	  might not fix the problem where you get the root user's theme instead
 	  of what you were expecting.
 
-2001-05-29  Kjartan Maraas  <kmaraas@mate.org>
+2001-05-29  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* System.directory.in: Added Norwegian translation.
 	
@@ -2400,7 +2400,7 @@ Thu Jul 12 12:22:56 2001  Arturo Espinosa Aldama  <arturo@ximian.com>
 	Setup Tools" to the title of the windows here instead of in each
 	tool
 
-2001-02-03  Christian Meyer  <chrisime@mate.org>
+2001-02-03  Christian Meyer  <chrisime@gnome.org>
 
 	* System.directory.in: Added German strings.
 

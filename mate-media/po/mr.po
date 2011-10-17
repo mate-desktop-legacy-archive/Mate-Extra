@@ -503,10 +503,10 @@ msgstr "बिट दर:"
 #: ../grecord/src/gsr-window.c:1241
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "MATE करीता आवाज रेकॉर्डर\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1512
 msgid "Playing..."

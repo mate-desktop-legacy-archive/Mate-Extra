@@ -408,10 +408,10 @@ msgstr "Bitikiirus:"
 
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "MATE helisalvestaja\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 msgid "Playing…"
 msgstr "Esitamine…"

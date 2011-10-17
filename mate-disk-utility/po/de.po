@@ -17,7 +17,7 @@
 # VG = Volume group = Datenträgergruppe
 #
 #
-# Mario Blättermann <mariobl@mate.org>, 2009, 2010.
+# Mario Blättermann <mariobl@gnome.org>, 2009, 2010.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2010.
 msgid ""
 msgstr ""
@@ -26,7 +26,7 @@ msgstr ""
 "POT-Creation-Date: 2010-04-11 22:54+0200\n"
 "PO-Revision-Date: 2010-03-17 17:51+0100\n"
 "Last-Translator: Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
-"Language-Team: Deutsch <mate-de@mate.org>\n"
+"Language-Team: Deutsch <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5491,7 +5491,7 @@ msgstr "Fehler beim Verbinden mit »%s«"
 #: ../src/palimpsest/gdu-shell.c:808
 msgid "translator-credits"
 msgstr ""
-"Mario Blättermann <mariobl@mate.org>\n"
+"Mario Blättermann <mariobl@gnome.org>\n"
 "Christian Kirbach <Christian.Kirbach@googlemail.com>"
 
 #: ../src/palimpsest/gdu-shell.c:837

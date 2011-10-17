@@ -6,10 +6,10 @@
 # Ronald Hummelink <ronald@hummelink.xs4all.nl>, 2002.
 # Reinout van Schouwen <reinout@cs.vu.nl>, 2002, 2005.
 # Daniel van Eeden <daniel_e@dds.nl>, 2003.
-# Vincent van Adrighem <adrighem@mate.org> 2003.
+# Vincent van Adrighem <adrighem@gnome.org> 2003.
 # Tino Meinen <a.t.meinen@chello.nl>, 2003, 2005, 2006.
 # Jeroen Hooyberghs <jeroen@hooyberghs.org>, 2009.
-# Wouter Bolsterlee <wbolster@mate.org>, 2006–2010.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2010.
 #
 # Voeg jezelf ook toe aan de string translator-credits als je mee hebt geholpen
 # aan de vertaling van dit pakket.
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-19 21:11+0200\n"
 "PO-Revision-Date: 2010-05-23 14:31+0200\n"
-"Last-Translator: Wouter Bolsterlee <wbolster@mate.org>\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"

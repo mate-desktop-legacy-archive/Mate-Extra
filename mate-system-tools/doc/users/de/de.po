@@ -1,13 +1,13 @@
 # German translation of mate-system-tools (users)
-# Mario Blättermann <mariobl@mate.org>, 2008, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gst-users\n"
 "POT-Creation-Date: 2009-02-24 23:03+0000\n"
 "PO-Revision-Date: 2009-02-25 21:37+0200\n"
-"Last-Translator: Mario Blättermann <mariobl@mate.org>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -165,8 +165,8 @@ msgstr "August 2006"
 
 #: C/users-admin.xml:68(para) C/users-admin.xml:69(para)
 #: C/users-admin.xml:76(para) C/users-admin.xml:77(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/users-admin.xml:73(revnumber)
 msgid "Users Administration Tool Manual V0.35"
@@ -450,4 +450,4 @@ msgstr ""
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
 #: C/users-admin.xml:0(None)
 msgid "translator-credits"
-msgstr "Mario Blättermann <mariobl@mate.org>, 2008, 2009"
+msgstr "Mario Blättermann <mariobl@gnome.org>, 2008, 2009"

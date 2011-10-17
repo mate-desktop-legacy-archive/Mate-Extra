@@ -1,5 +1,5 @@
 commit 61f3fb387047022b2f1e7f54765a9c06bfbdb126
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Sep 26 20:54:33 2010 +0200
 
     Distcheck with gtk 2
@@ -8,7 +8,7 @@ Date:   Sun Sep 26 20:54:33 2010 +0200
  1 files changed, 2 insertions(+), 1 deletions(-)
 
 commit aa93d3418e1649b6623fc4b8910b69e810c50df4
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Sep 26 20:53:43 2010 +0200
 
     Version 2.32.0
@@ -26,7 +26,7 @@ Date:   Sat Sep 25 02:25:54 2010 +0200
  1 files changed, 19 insertions(+), 26 deletions(-)
 
 commit 162c9db7309d465d886dfe10955a1606ac6d258f
-Author: Wouter Bolsterlee <wbolster@mate.org>
+Author: Wouter Bolsterlee <wbolster@gnome.org>
 Date:   Fri Sep 24 18:32:50 2010 +0200
 
     Updated Dutch translation by Wouter Bolsterlee
@@ -107,7 +107,7 @@ Date:   Thu Sep 16 23:50:29 2010 +0200
  1 files changed, 80 insertions(+), 80 deletions(-)
 
 commit 48a63f85e69676d298a99720282bf4f5b1b04135
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:   Tue Sep 14 15:47:35 2010 +0800
 
     Update Simplified Chinese translation.
@@ -116,7 +116,7 @@ Date:   Tue Sep 14 15:47:35 2010 +0800
  1 files changed, 9 insertions(+), 9 deletions(-)
 
 commit 453bbea2c10d66fba3d179505f77bbead406f980
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sat Sep 11 11:42:20 2010 +0200
 
     Updated Norwegian bokmål translation
@@ -206,7 +206,7 @@ Date:   Mon Aug 30 15:20:48 2010 +0700
  1 files changed, 619 insertions(+), 456 deletions(-)
 
 commit 8d96468e57b64a7e0658c91c6a19a556907cc61b
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Aug 29 14:06:28 2010 +0200
 
     Version 2.31.91
@@ -271,7 +271,7 @@ Date:   Sat Aug 21 20:10:12 2010 +0200
  2 files changed, 726 insertions(+), 520 deletions(-)
 
 commit 1542be747c84a9f43f5531b5f8273ace065252f1
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Wed Aug 18 11:23:07 2010 +0200
 
     Fix parsing of non-BMP 'x' references in NamesList.txt
@@ -283,7 +283,7 @@ Date:   Wed Aug 18 11:23:07 2010 +0200
  2 files changed, 41 insertions(+), 41 deletions(-)
 
 commit 3c6ad4c09d53224ea3863b490ba1c1444c6feadc
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Wed Aug 18 10:52:51 2010 +0200
 
     Skip multiline comments when processing NamesList.txt
@@ -295,7 +295,7 @@ Date:   Wed Aug 18 10:52:51 2010 +0200
  2 files changed, 4657 insertions(+), 4752 deletions(-)
 
 commit 1cfdcf4c3435c390c1a2d1d1f5cd9cb5666e9ba6
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Aug 16 21:44:31 2010 +0200
 
     Fix the build
@@ -304,7 +304,7 @@ Date:   Mon Aug 16 21:44:31 2010 +0200
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 887908a9a420a9bd477025120da71e366b91fe02
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Aug 16 21:42:18 2010 +0200
 
     Distcheck without introspection
@@ -313,7 +313,7 @@ Date:   Mon Aug 16 21:42:18 2010 +0200
  1 files changed, 2 insertions(+), 1 deletions(-)
 
 commit 59e6c405f0b6795e568c0be3a783c5744ffb7f85
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Aug 16 15:01:10 2010 +0200
 
     NEWS update
@@ -385,7 +385,7 @@ Date:   Tue Aug 10 15:22:18 2010 +0200
  1 files changed, 80 insertions(+), 80 deletions(-)
 
 commit cc190b2e0a9595f51826e462bd6af8b0e806ddb4
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Aug 10 13:17:10 2010 +0200
 
     Version 2.31.90
@@ -394,7 +394,7 @@ Date:   Tue Aug 10 13:17:10 2010 +0200
  1 files changed, 2 insertions(+), 2 deletions(-)
 
 commit 3f524fa51af97179eedccfc820fccf6b29fd0827
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Aug 10 13:14:42 2010 +0200
 
     Go GPL3+
@@ -449,7 +449,7 @@ Date:   Tue Jul 27 14:33:38 2010 +0200
  1 files changed, 1410 insertions(+), 1413 deletions(-)
 
 commit 78ed023936b8ae5b338d1e385da7b9a2003dc4b3
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Thu Jul 22 00:35:57 2010 +0200
 
     Fix build
@@ -467,7 +467,7 @@ Date:   Tue Jul 20 13:55:50 2010 +0200
  1 files changed, 16 insertions(+), 56 deletions(-)
 
 commit 143f471d785395b84f2e0c779990cbd6158dd536
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Jul 18 21:34:05 2010 +0200
 
     Fix building the GIR
@@ -476,7 +476,7 @@ Date:   Sun Jul 18 21:34:05 2010 +0200
  1 files changed, 2 insertions(+), 6 deletions(-)
 
 commit 19f1d050ce6ef3fc555da8ef27f9f139ce6b2d68
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Jul 18 21:31:05 2010 +0200
 
     Fix the gtk 3 build
@@ -485,7 +485,7 @@ Date:   Sun Jul 18 21:31:05 2010 +0200
  1 files changed, 5 insertions(+), 1 deletions(-)
 
 commit 088f044238ad4ad98dc0b7c2c5cf05467219176a
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:   Mon Jul 12 17:06:09 2010 +0800
 
     Complete Simplified Chinese UI translation.
@@ -494,7 +494,7 @@ Date:   Mon Jul 12 17:06:09 2010 +0800
  1 files changed, 90 insertions(+), 88 deletions(-)
 
 commit 7badec9ec010e58622bd207d6d033268ee14e4d8
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:   Mon Jul 12 16:55:48 2010 +0800
 
     Add zh_CN to DOC_LINGUAS
@@ -503,7 +503,7 @@ Date:   Mon Jul 12 16:55:48 2010 +0800
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit deecb360cc6951091d8a2c58507386b58d31d3f9
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:   Mon Jul 12 16:53:31 2010 +0800
 
     Update Simplfied Chinese help translation and a screenshot.
@@ -556,7 +556,7 @@ Date:   Thu Jul 1 15:15:28 2010 -0400
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit d3fd461f9b7e68d66d07cba8144a7e66e600ee59
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Jun 28 15:11:38 2010 +0200
 
     Use gtk_adjustment_configure
@@ -583,7 +583,7 @@ Date:   Sun Jun 20 00:54:22 2010 +0200
  1 files changed, 81 insertions(+), 81 deletions(-)
 
 commit 1d25ad62262aae62d15e7a3b5468fe941842e69c
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sat Jun 12 20:44:29 2010 +0200
 
     Enable charmap by default
@@ -595,7 +595,7 @@ Date:   Sat Jun 12 20:44:29 2010 +0200
  1 files changed, 1 insertions(+), 6 deletions(-)
 
 commit 19e5bb7416ed73caf75967f9c4d9bf63f9fc09fc
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sat Jun 12 17:50:16 2010 +0200
 
     Add --enable-charmap
@@ -613,7 +613,7 @@ Date:   Sat Jun 12 17:50:16 2010 +0200
  3 files changed, 33 insertions(+), 17 deletions(-)
 
 commit e18646c86bafd712a50f81916247616f4aef216f
-Author: Luca Ferretti <lferrett@mate.org>
+Author: Luca Ferretti <lferrett@gnome.org>
 Date:   Sat Jun 12 17:44:30 2010 +0200
 
     Fix a typo s/2.0/3.0 for gtk+ version check
@@ -622,7 +622,7 @@ Date:   Sat Jun 12 17:44:30 2010 +0200
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 32756cbf8a7de2e5ab82d9692dc9b0bf00cfec88
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sat Jun 12 16:23:40 2010 +0200
 
     Use 2.90 as API version for gucharmap/gtk3
@@ -633,7 +633,7 @@ Date:   Sat Jun 12 16:23:40 2010 +0200
  1 files changed, 4 insertions(+), 4 deletions(-)
 
 commit 538160490c8c599c8a0472a384e986aec4f1ff44
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sat Jun 12 15:49:28 2010 +0200
 
     Add dual gtk build
@@ -668,7 +668,7 @@ Date:   Fri Jun 11 17:43:55 2010 +0300
  1 files changed, 509 insertions(+), 393 deletions(-)
 
 commit 449ccdf10b308c8235bad0685936c21a8ed81fa4
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Thu Jun 10 18:33:33 2010 +0200
 
     Set the search column after setting the model
@@ -682,7 +682,7 @@ Date:   Thu Jun 10 18:33:33 2010 +0200
  1 files changed, 3 insertions(+), 1 deletions(-)
 
 commit 8daa603590cd403920cbb9b98595975ef0ba8d24
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon May 31 23:03:10 2010 +0200
 
     Sort the tree view column, not the model directly
@@ -711,7 +711,7 @@ Date:   Sun May 30 12:19:28 2010 +0300
  1 files changed, 7 insertions(+), 5 deletions(-)
 
 commit 9e0f944083a3821606349e0e2759cbee81759cc2
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Tue May 18 23:52:57 2010 -0400
 
     Updated Shavian translation
@@ -720,7 +720,7 @@ Date:   Tue May 18 23:52:57 2010 -0400
  1 files changed, 4 insertions(+), 10 deletions(-)
 
 commit b70cca95c26da498f78c86dead92406e21034f9d
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Wed May 12 18:41:13 2010 -0400
 
     Updated Shavian transliteration
@@ -756,7 +756,7 @@ Date:   Wed Apr 21 23:10:10 2010 +0200
  1 files changed, 330 insertions(+), 225 deletions(-)
 
 commit b315642bfbc00331d627063e92337d45c2e8c2f6
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Apr 18 11:42:11 2010 +0200
 
     Set the adjustment value last
@@ -768,7 +768,7 @@ Date:   Sun Apr 18 11:42:11 2010 +0200
  1 files changed, 4 insertions(+), 14 deletions(-)
 
 commit 458295be438aba4869899023d3b12bccbaa6643f
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Apr 18 11:40:19 2010 +0200
 
     Simplify GSEAL work
@@ -808,7 +808,7 @@ Date:   Thu Apr 15 12:53:07 2010 +0530
  1 files changed, 6 insertions(+), 6 deletions(-)
 
 commit ced80ebdc85f56ab676f93bb220aa3f9af8b3741
-Author: Wouter Bolsterlee <wbolster@mate.org>
+Author: Wouter Bolsterlee <wbolster@gnome.org>
 Date:   Tue Mar 30 23:32:52 2010 +0200
 
     Dutch translation updated by Wouter Bolsterlee
@@ -817,7 +817,7 @@ Date:   Tue Mar 30 23:32:52 2010 +0200
  1 files changed, 344 insertions(+), 233 deletions(-)
 
 commit 99b29d28a39269af9367f81c9337598d88b40e6c
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Mar 29 15:41:16 2010 +0200
 
     Post branch version bump
@@ -826,7 +826,7 @@ Date:   Mon Mar 29 15:41:16 2010 +0200
  1 files changed, 2 insertions(+), 2 deletions(-)
 
 commit 6d12528bf9e16b0e21002bffaed1eade5719b7d4
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Mar 29 15:39:55 2010 +0200
 
     Docs fuzz
@@ -854,7 +854,7 @@ Date:   Mon Mar 29 15:09:00 2010 +0530
  1 files changed, 372 insertions(+), 234 deletions(-)
 
 commit fa8026a52c5ef1a94c4c711d0985c9c71515f368
-Author: Žygimantas Beručka <zygis@mate.org>
+Author: Žygimantas Beručka <zygis@gnome.org>
 Date:   Sun Mar 28 18:20:32 2010 +0300
 
     Updated Lithuanian translation
@@ -971,7 +971,7 @@ Date:   Thu Mar 11 23:08:16 2010 +0000
  1 files changed, 331 insertions(+), 227 deletions(-)
 
 commit abdfee2ce7772ab9daba78bc8ee043da3c605af7
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Thu Mar 11 21:02:59 2010 +0100
 
     Docs update
@@ -986,7 +986,7 @@ Date:   Thu Mar 11 21:02:59 2010 +0100
  7 files changed, 10 insertions(+), 0 deletions(-)
 
 commit c9fcbf4f02a3b24c7920265175a3fe74f8b8102c
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Thu Mar 11 20:57:49 2010 +0100
 
     Fuck this fucking macro fucking with the fucking deprecations
@@ -995,7 +995,7 @@ Date:   Thu Mar 11 20:57:49 2010 +0100
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 4180f15f0e2d29c7f15f3b2b2d189022b7861fb3
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Thu Mar 11 20:57:29 2010 +0100
 
     Version 2.29.92
@@ -1013,7 +1013,7 @@ Date:   Thu Mar 11 12:21:05 2010 +0200
  1 files changed, 355 insertions(+), 251 deletions(-)
 
 commit d258ff745350fc73a9e0daf79df45e4f2feb1f26
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Mar 8 18:55:09 2010 +0100
 
     It's 2010 already!
@@ -1022,7 +1022,7 @@ Date:   Mon Mar 8 18:55:09 2010 +0100
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 68a4234d71a9a48493f91140e52a976e2447baec
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Mar 8 15:37:29 2010 +0100
 
     Add FIXME about possible further improvement
@@ -1031,7 +1031,7 @@ Date:   Mon Mar 8 15:37:29 2010 +0100
  1 files changed, 4 insertions(+), 0 deletions(-)
 
 commit cd67156db8d62aed02b41246f23a5a7e6b392cfa
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Mar 8 15:12:22 2010 +0100
 
     Update gucharmap_get_unicode_name()
@@ -1045,7 +1045,7 @@ Date:   Mon Mar 8 15:12:22 2010 +0100
  1 files changed, 2 insertions(+), 1 deletions(-)
 
 commit ac625175a494a80bc6187cd622d19b2e6779adb8
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Mar 8 15:00:09 2010 +0100
 
     Update gucharmap_get_unicode_name()
@@ -1060,7 +1060,7 @@ Date:   Mon Mar 8 15:00:09 2010 +0100
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 9f55d32de5489aab0989404d80199c854f039e3f
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Mar 8 15:04:01 2010 +0100
 
     Fix -lintl linking
@@ -1071,7 +1071,7 @@ Date:   Mon Mar 8 15:04:01 2010 +0100
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 73b7bdc8397e0e5b3bf95d8b9a826ad90408a5de
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Mar 7 21:49:58 2010 +0100
 
     Prepare 2.30.0
@@ -1080,7 +1080,7 @@ Date:   Sun Mar 7 21:49:58 2010 +0100
  1 files changed, 4 insertions(+), 4 deletions(-)
 
 commit a39d5034bcb253d203a014f2debc662918c7586f
-Author: Kostas Papadimas <pkst@mate.org>
+Author: Kostas Papadimas <pkst@gnome.org>
 Date:   Sun Mar 7 17:55:30 2010 +0200
 
     Updated Greek translation.
@@ -1173,7 +1173,7 @@ Date:   Mon Feb 22 01:13:58 2010 +0700
  1 files changed, 301 insertions(+), 196 deletions(-)
 
 commit a4931e3a6326338e3ea33ec5900ddb058ee61dbb
-Author: Og B. Maciel <ogmaciel@mate.org>
+Author: Og B. Maciel <ogmaciel@gnome.org>
 Date:   Sat Feb 20 10:00:43 2010 -0500
 
     Updated Brazilian Portuguese translation.
@@ -1182,7 +1182,7 @@ Date:   Sat Feb 20 10:00:43 2010 -0500
  1 files changed, 283 insertions(+), 179 deletions(-)
 
 commit b1d091562947e8da757e9ff9f9935c639c1d8738
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Wed Feb 17 09:08:30 2010 +0100
 
     Updated German translation
@@ -1266,7 +1266,7 @@ Date:   Wed Jan 13 20:07:56 2010 +0100
  1 files changed, 299 insertions(+), 189 deletions(-)
 
 commit d3607d59adc92abe4c756fe755a59d69e4ece22c
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Wed Jan 6 22:13:20 2010 +0100
 
     Also sort the block chapters list
@@ -1302,7 +1302,7 @@ Date:   Wed Dec 2 20:52:09 2009 +0200
  1 files changed, 8 insertions(+), 8 deletions(-)
 
 commit 3fc3ddc410b1f02edcf84da457a9ae1862bad96b
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Mon Nov 23 13:40:32 2009 -0500
 
     Shavian translation
@@ -1312,7 +1312,7 @@ Date:   Mon Nov 23 13:40:32 2009 -0500
  2 files changed, 904 insertions(+), 0 deletions(-)
 
 commit 09462dfbee926eb466e4bb6abeba4db3396cb73c
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sun Nov 15 13:43:18 2009 +0100
 
     Updated Norwegian bokmål translation.
@@ -1348,7 +1348,7 @@ Date:   Thu Oct 29 19:09:36 2009 +0100
  1 files changed, 311 insertions(+), 181 deletions(-)
 
 commit 4ff87dac4711eba042a8ce0dc21ce33b11d76883
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Oct 26 20:34:43 2009 +0100
 
     Post release version update
@@ -1357,7 +1357,7 @@ Date:   Mon Oct 26 20:34:43 2009 +0100
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit d495bdeaa79b3d4fc1554633b2f6bca6bb3077ad
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Oct 26 20:32:32 2009 +0100
 
     Version 2.29.1
@@ -1393,7 +1393,7 @@ Date:   Mon Oct 5 06:21:27 2009 +0200
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit c39fdbad59e40b81b4007bb7891cb5e37e858ada
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Fri Oct 2 17:24:09 2009 +0200
 
     Use the translated name column for treeview typeahead search
@@ -1402,7 +1402,7 @@ Date:   Fri Oct 2 17:24:09 2009 +0200
  1 files changed, 3 insertions(+), 0 deletions(-)
 
 commit eca5d0bf01f4502246225e6d08cc4f160a147e2c
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Fri Oct 2 13:27:07 2009 +0200
 
     Update
@@ -1411,7 +1411,7 @@ Date:   Fri Oct 2 13:27:07 2009 +0200
  1 files changed, 6 insertions(+), 0 deletions(-)
 
 commit cb82a810590a6abdf05665039619e48e49083ce4
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Fri Oct 2 12:37:06 2009 +0200
 
     Update to Unicode 5.2.0
@@ -1445,7 +1445,7 @@ Date:   Fri Oct 2 03:48:10 2009 +0000
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 6ad491b4eebcf99f2490799b57b85f20e22f3d12
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Sep 21 13:42:50 2009 +0200
 
     Post branch version update
@@ -1454,7 +1454,7 @@ Date:   Mon Sep 21 13:42:50 2009 +0200
  1 files changed, 2 insertions(+), 2 deletions(-)
 
 commit 9f5b8549d15891e3a1df31ae53a5d9cb2f4f9e1d
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Sep 21 13:31:47 2009 +0200
 
     Fix file permissions
@@ -1519,7 +1519,7 @@ Date:   Tue Sep 8 12:55:13 2009 +0000
  2 files changed, 456 insertions(+), 462 deletions(-)
 
 commit 24c318e03c3115722504a50cc8a9cc5c6a95118e
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Sep 6 14:20:52 2009 +0200
 
     Skip 2.27.92
@@ -1538,7 +1538,7 @@ Date:   Fri Aug 28 12:34:18 2009 +0200
  2 files changed, 1292 insertions(+), 0 deletions(-)
 
 commit 771f7aa15aeb5aa15fe5cad083f49a673c0e3c5b
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Aug 25 13:19:23 2009 +0200
 
     s/SVN/git/g
@@ -1548,7 +1548,7 @@ Date:   Tue Aug 25 13:19:23 2009 +0200
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 commit 2352c8b23fbc43a23a4df3fdb39ee4d2f9c69853
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Aug 25 13:17:53 2009 +0200
 
     Remove outdated info
@@ -1566,7 +1566,7 @@ Date:   Mon Aug 24 11:24:28 2009 +0200
  1 files changed, 20 insertions(+), 19 deletions(-)
 
 commit 87fc5b3c604ae1a8f3078582d1e4d6f0eab90882
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Aug 23 20:52:24 2009 +0200
 
     Version bump
@@ -1575,7 +1575,7 @@ Date:   Sun Aug 23 20:52:24 2009 +0200
  1 files changed, 2 insertions(+), 2 deletions(-)
 
 commit b1e499cbe7b75918116f2acbc3896369afc3f7f2
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Wed Aug 19 21:10:36 2009 +0200
 
     Update
@@ -1584,7 +1584,7 @@ Date:   Wed Aug 19 21:10:36 2009 +0200
  1 files changed, 6 insertions(+), 1 deletions(-)
 
 commit 9f50bb08bf13ab5d57fe5fac665fa070ba8eb03a
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Sun Aug 16 20:42:43 2009 +0200
 
     Support silent build with automake 1.11
@@ -1618,7 +1618,7 @@ Date:   Tue Aug 4 06:10:06 2009 +0200
  2 files changed, 1292 insertions(+), 0 deletions(-)
 
 commit 005e1263f0d9db3b9c777a78e523cb7b3f628d6d
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:   Sun Jul 26 13:35:32 2009 +0800
 
     Updated Simplified Chinese translation.
@@ -1639,7 +1639,7 @@ Date:   Sat Jul 18 01:30:18 2009 -0400
  1 files changed, 4 insertions(+), 14 deletions(-)
 
 commit 1f6a4053196f9d541c1cd0a9bec76688c44d1fae
-Author: Hendrik Richter <hendrikr@mate.org>
+Author: Hendrik Richter <hendrikr@gnome.org>
 Date:   Thu Jul 16 21:29:30 2009 +0200
 
     Fix #583746.
@@ -1668,7 +1668,7 @@ Date:   Sun Jun 28 19:06:21 2009 +0200
  1 files changed, 478 insertions(+), 131 deletions(-)
 
 commit a5814ad00551d82205c05cec8ecf651a679a5e8f
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Jun 22 15:03:26 2009 +0200
 
     Don't dist built sources, again
@@ -1677,7 +1677,7 @@ Date:   Mon Jun 22 15:03:26 2009 +0200
  1 files changed, 4 insertions(+), 1 deletions(-)
 
 commit 4f635cfe8783331f6ac3ff9c2807c611b1d63866
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Jun 22 15:01:06 2009 +0200
 
     Fix make dist
@@ -1686,7 +1686,7 @@ Date:   Mon Jun 22 15:01:06 2009 +0200
  1 files changed, 0 insertions(+), 2 deletions(-)
 
 commit ed1a0ca20750ef206b26d0402f3bb1c8967fdee6
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Jun 22 15:00:53 2009 +0200
 
     Don't dist built sources
@@ -1695,7 +1695,7 @@ Date:   Mon Jun 22 15:00:53 2009 +0200
  1 files changed, 10 insertions(+), 12 deletions(-)
 
 commit 48743621910f01ce412749269b36d30c1575536d
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Jun 16 18:59:39 2009 +0200
 
     Add version 5.2 to enum
@@ -1727,7 +1727,7 @@ Date:   Sat May 30 19:40:18 2009 +0200
  1 files changed, 10 insertions(+), 19 deletions(-)
 
 commit a0e3fba3fbc38f9ebf4bdedec6751a6b6bb85d30
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon May 18 20:32:09 2009 +0200
 
     Add mising file
@@ -1736,7 +1736,7 @@ Date:   Mon May 18 20:32:09 2009 +0200
  1 files changed, 32 insertions(+), 0 deletions(-)
 
 commit a106c308bcba87324cc70e8cae3ef95951f19e98
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Thu Apr 23 01:55:22 2009 +0200
 
     Clean schema and desktop file on "make clean"
@@ -1745,7 +1745,7 @@ Date:   Thu Apr 23 01:55:22 2009 +0200
  1 files changed, 5 insertions(+), 5 deletions(-)
 
 commit 7916d6f849bbd36570483b284df4e321296f3ac6
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Thu Apr 23 01:55:02 2009 +0200
 
     Remove old po/ChangeLog file
@@ -2646,12 +2646,12 @@ Date:   Fri Feb 13 13:55:38 2009 +0000
  2 files changed, 71 insertions(+), 67 deletions(-)
 
 commit 2fe4ef1c4f7b606ca3e2f8e7bf05b4590778cea0
-Author: Jonh Wendell <jwendell@mate.org>
+Author: Jonh Wendell <jwendell@gnome.org>
 Date:   Wed Feb 11 15:35:55 2009 +0000
 
     Updated Brazilian Portuguese translation.
     
-    2009-02-11  Jonh Wendell  <jwendell@mate.org>
+    2009-02-11  Jonh Wendell  <jwendell@gnome.org>
     
     	* pt_BR.po: Updated Brazilian Portuguese translation.
     
@@ -3117,7 +3117,7 @@ commit bdc36e7287c4a7b60abb11c410a4ba3292004313
 Author: Leonardo Ferreira Fontenelle <leonardof@src.mate.org>
 Date:   Sun Oct 26 00:47:29 2008 +0000
 
-    2008-10-25  Leonardo Ferreira Fontenelle  leonardof@mate.org
+    2008-10-25  Leonardo Ferreira Fontenelle  leonardof@gnome.org
     
     	* pt_BR.po: Merged from branch mate-2-24.
     
@@ -3949,12 +3949,12 @@ Date:   Sat Aug 23 09:10:45 2008 +0000
  1 files changed, 364 insertions(+), 313 deletions(-)
 
 commit 61ea41936bda6d674206296870133d7b2c98693f
-Author: Leonardo Ferreira Fontenelle <leonardof@mate.org>
+Author: Leonardo Ferreira Fontenelle <leonardof@gnome.org>
 Date:   Wed Aug 20 02:27:50 2008 +0000
 
     Brazilian Portuguese translation updated by Fábio Nogueira and Leonardo
     
-    2008-08-19  Leonardo Ferreira Fontenelle  <leonardof@mate.org>
+    2008-08-19  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
     
     	* pt_BR.po: Brazilian Portuguese translation updated by Fábio Nogueira
     	and Leonardo Ferreira Fontenelle.
@@ -4726,12 +4726,12 @@ Date:   Sat May 17 18:01:21 2008 +0000
  2 files changed, 386 insertions(+), 315 deletions(-)
 
 commit c226dfb0b88582ebe4db2feab5aee60bbb9b3709
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Thu May 8 15:13:41 2008 +0000
 
     Translation updated by Tino Meinen.
     
-    2008-05-08  Vincent van Adrighem  <adrighem@mate.org>
+    2008-05-08  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Tino Meinen.
     
@@ -4742,12 +4742,12 @@ Date:   Thu May 8 15:13:41 2008 +0000
  2 files changed, 390 insertions(+), 324 deletions(-)
 
 commit 404f1b0f91706863db65a4053132c0bba78e6b70
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Tue May 6 17:37:43 2008 +0000
 
     Updated Norwegian bokmål translation.
     
-    2008-05-06  Kjartan Maraas  <kmaraas@mate.org>
+    2008-05-06  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
     
@@ -7465,12 +7465,12 @@ Date:   Thu Jan 31 08:21:30 2008 +0000
  1 files changed, 4 insertions(+), 0 deletions(-)
 
 commit 2b4bcd72f6911abfa1a763270fb85408b3a786d8
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Jan 29 21:53:51 2008 +0000
 
     Merge from 2-22 branch.
     
-    2008-01-29  Christian Persch  <chpe@mate.org>
+    2008-01-29  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap.pc.in:
     	* gucharmap/gucharmap-chapters.c: (gucharmap_chapters_constructor):
@@ -7509,12 +7509,12 @@ Date:   Wed Jan 16 14:38:21 2008 +0000
  2 files changed, 96 insertions(+), 109 deletions(-)
 
 commit 78b489945018d2a434104c07653bfde3100dba7f
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Jan 15 18:34:27 2008 +0000
 
     Use icon name without png extension.
     
-    2008-01-15  Christian Persch  <chpe@mate.org>
+    2008-01-15  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap.desktop.in: Use icon name without png extension.
     
@@ -7669,12 +7669,12 @@ Date:   Wed Dec 26 13:25:17 2007 +0000
  5 files changed, 36 insertions(+), 23 deletions(-)
 
 commit 0664b5c84f92238c1f3381d52c924f963259300b
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Dec 25 08:53:35 2007 +0000
 
     Check for NULL before unref'ing.
     
-    2007-12-25  Christian Persch  <chpe@mate.org>
+    2007-12-25  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap/gucharmap-table.c:
     	(gucharmap_table_set_codepoint_list): Check for NULL before unref'ing.
@@ -7764,12 +7764,12 @@ Date:   Mon Dec 17 18:42:03 2007 +0000
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit fc0aca8e84930a736bd019700652f51b7c69b9cf
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Dec 17 18:41:28 2007 +0000
 
     === Release 2.21.4 ===
     
-    2007-12-17  Christian Persch  <chpe@mate.org>
+    2007-12-17  Christian Persch  <chpe@gnome.org>
     
     	=== Release 2.21.4 ===
     
@@ -7804,12 +7804,12 @@ Date:   Sat Dec 15 20:58:31 2007 +0000
  2 files changed, 26 insertions(+), 9 deletions(-)
 
 commit 930332c0a51c59ada5a441be4f78a8c007542b34
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sat Dec 15 11:34:40 2007 +0000
 
     Add missing files. Updated Norwegian bokmål translation.
     
-    2007-12-15  Kjartan Maraas  <kmaraas@mate.org>
+    2007-12-15  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* POTFILES.in: Add missing files.
     	* nb.po: Updated Norwegian bokmål translation.
@@ -7845,12 +7845,12 @@ Date:   Thu Dec 13 14:03:04 2007 +0000
  2 files changed, 77 insertions(+), 86 deletions(-)
 
 commit 8b6b17a65d8720eafc49365f1ed2620dc3db6e82
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Thu Dec 13 07:37:58 2007 +0000
 
     Remove Noah, add chpe.
     
-    2007-12-13  Behdad Esfahbod  <behdad@mate.org>
+    2007-12-13  Behdad Esfahbod  <behdad@gnome.org>
     
             * MAINTAINERS: Remove Noah, add chpe.
     
@@ -7862,12 +7862,12 @@ Date:   Thu Dec 13 07:37:58 2007 +0000
  2 files changed, 8 insertions(+), 4 deletions(-)
 
 commit f89972a12410d503dc31f99f9f6ad1a914418d6b
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Wed Dec 12 19:33:26 2007 +0000
 
     Update FSF address. Bug #407323.
     
-    2007-12-12  Christian Persch  <chpe@mate.org>
+    2007-12-12  Christian Persch  <chpe@gnome.org>
     
     	* *: Update FSF address. Bug #407323.
     
@@ -9062,12 +9062,12 @@ Date:   Sun Dec 9 20:03:04 2007 +0000
  2 files changed, 23 insertions(+), 7 deletions(-)
 
 commit 0d03c8f9ad46566b9ed650bd4efac029c15f90b1
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Fri Dec 7 08:33:10 2007 +0000
 
     Add two missing files. Update.
     
-    2007-12-07  Kjartan Maraas  <kmaraas@mate.org>
+    2007-12-07  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* POTFILES.in: Add two missing files.
     	* nb.po: Update.
@@ -9080,12 +9080,12 @@ Date:   Fri Dec 7 08:33:10 2007 +0000
  3 files changed, 22 insertions(+), 3 deletions(-)
 
 commit 7ccc94d9d673a3725bb99a6d9baba3870e7079ec
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Thu Dec 6 18:35:58 2007 +0000
 
     Updated Norwegian bokmål translation.
     
-    2007-12-06  Kjartan Maraas  <kmaraas@mate.org>
+    2007-12-06  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
     
@@ -9124,12 +9124,12 @@ Date:   Thu Dec 6 04:42:22 2007 +0000
  2 files changed, 18 insertions(+), 14 deletions(-)
 
 commit e71c6760698668ee61b9aa61d366757631aa3926
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Wed Dec 5 23:40:40 2007 +0000
 
     Simplify character popup code. Should fix popup sizing bug #501915.
     
-    2007-12-06  Christian Persch  <chpe@mate.org>
+    2007-12-06  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap/gucharmap-table.c: (create_glyph_pixmap),
     	(place_zoom_window), (update_zoom_window), (make_zoom_window),
@@ -9146,12 +9146,12 @@ Date:   Wed Dec 5 23:40:40 2007 +0000
  3 files changed, 36 insertions(+), 68 deletions(-)
 
 commit 18b30951276ed73231e31f599a21da46758e14fc
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Wed Dec 5 22:05:29 2007 +0000
 
     Remove unimplemented functions. Bug #331103.
     
-    2007-12-05  Christian Persch  <chpe@mate.org>
+    2007-12-05  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap/gucharmap-charmap.h:
     	* gucharmap/gucharmap-table.h:
@@ -9167,12 +9167,12 @@ Date:   Wed Dec 5 22:05:29 2007 +0000
  4 files changed, 8 insertions(+), 6 deletions(-)
 
 commit 226fa2cd6420c466204eca506fab8127ed521b03
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Wed Dec 5 13:48:25 2007 +0000
 
     Fix the build with --disable-mateconf. Bug #501710.
     
-    2007-12-05  Christian Persch  <chpe@mate.org>
+    2007-12-05  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap/gucharmap-settings.c: (window_state_timeout_cb),
     	(window_state_event_cb), (gucharmap_settings_add_window): Fix the
@@ -9185,12 +9185,12 @@ Date:   Wed Dec 5 13:48:25 2007 +0000
  2 files changed, 12 insertions(+), 6 deletions(-)
 
 commit 8d282b741a7b049adbb87a2ce9c4dbc74613bec5
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Dec 4 22:47:26 2007 +0000
 
     Remove mate option. Bug #469131, patch by Jani Monoses.
     
-    2007-12-04  Christian Persch  <chpe@mate.org>
+    2007-12-04  Christian Persch  <chpe@gnome.org>
     
     	* configure.ac:
     	* gucharmap/Makefile.am:
@@ -9210,12 +9210,12 @@ Date:   Tue Dec 4 22:47:26 2007 +0000
  7 files changed, 113 insertions(+), 534 deletions(-)
 
 commit 1098f2a18d8643616e7d66ee4d993faf497ebcd0
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Dec 4 22:11:59 2007 +0000
 
     Refactoring: move common code from gucharmap-{script,block}-chapters to
     
-    2007-12-04  Christian Persch  <chpe@mate.org>
+    2007-12-04  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap.schemas.in:
     	* gucharmap/Makefile.am:
@@ -9294,12 +9294,12 @@ Date:   Tue Dec 4 22:11:59 2007 +0000
  1 files changed, 73 insertions(+), 0 deletions(-)
 
 commit 2b928dad6c5b1346ba8cfa6bb18fb13fa4c4e341
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Dec 4 22:11:19 2007 +0000
 
     Refactoring: move common code from gucharmap-{script,block}-chapters to
     
-    2007-12-04  Christian Persch  <chpe@mate.org>
+    2007-12-04  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap.schemas.in:
     	* gucharmap/Makefile.am:
@@ -9409,12 +9409,12 @@ Date:   Tue Dec 4 00:31:46 2007 +0000
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 9d94952f2ac10cc50d53aabf1ba17f3a2f52ecba
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Dec 4 00:31:10 2007 +0000
 
     === Release 2.21.3 ===
     
-    2007-12-04  Christian Persch  <chpe@mate.org>
+    2007-12-04  Christian Persch  <chpe@gnome.org>
     
     	=== Release 2.21.3 ===
     
@@ -9429,12 +9429,12 @@ Date:   Tue Dec 4 00:31:10 2007 +0000
  3 files changed, 10 insertions(+), 1 deletions(-)
 
 commit d4c83a2fd595a678d081e9534654ee7891c84675
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Dec 3 22:40:55 2007 +0000
 
     Cleanup settings code, and make window state persistence not hammer mateconf
     
-    2007-12-03  Christian Persch  <chpe@mate.org>
+    2007-12-03  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap.schemas.in:
     	* gucharmap/gucharmap-settings.c: (gucharmap_settings_initialize),
@@ -9498,12 +9498,12 @@ Date:   Mon Dec 3 22:07:53 2007 +0000
  1 files changed, 99 insertions(+), 0 deletions(-)
 
 commit 377d651b187be7d45f4c4234b14efc8eafbc9bc3
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Dec 3 22:05:42 2007 +0000
 
     Port to GtkComboBox. Bug #454250.
     
-    2007-12-03  Christian Persch  <chpe@mate.org>
+    2007-12-03  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap/gucharmap-mini-fontsel.c: (fill_font_families_combo),
     	(update_font_familiy_combo), (family_changed),
@@ -9521,12 +9521,12 @@ Date:   Mon Dec 3 22:05:42 2007 +0000
  3 files changed, 88 insertions(+), 52 deletions(-)
 
 commit c52e94c2263758a233dff4f650323303037be412
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Dec 3 22:02:56 2007 +0000
 
     Add mnemonic. Bug #466678, patch by Patrick Wade.
     
-    2007-12-03  Christian Persch  <chpe@mate.org>
+    2007-12-03  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap/gucharmap-window.c: (make_menu): Add mnemonic. Bug
     	#466678, patch by Patrick Wade.
@@ -9538,12 +9538,12 @@ Date:   Mon Dec 3 22:02:56 2007 +0000
  2 files changed, 6 insertions(+), 1 deletions(-)
 
 commit 9413d2ae26620ea5b95b00f62bee77d9c959c548
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Dec 3 22:00:42 2007 +0000
 
     Bump gtk+ dependency to 2.12.0. Port to new tooltips API. Bug #459279.
     
-    2007-12-03  Christian Persch  <chpe@mate.org>
+    2007-12-03  Christian Persch  <chpe@gnome.org>
     
     	* configure.ac: Bump gtk+ dependency to 2.12.0.
     	* gucharmap/gucharmap-window.c: (make_text_to_copy): Port to new
@@ -9557,12 +9557,12 @@ Date:   Mon Dec 3 22:00:42 2007 +0000
  3 files changed, 13 insertions(+), 5 deletions(-)
 
 commit 66a332139ac7e04202e144eeaad75089f3f08962
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Dec 3 21:56:16 2007 +0000
 
     Bump version after branching.
     
-    2007-12-03  Christian Persch  <chpe@mate.org>
+    2007-12-03  Christian Persch  <chpe@gnome.org>
     
     	* configure.ac: Bump version after branching.
     
@@ -9594,12 +9594,12 @@ Date:   Mon Dec 3 21:56:16 2007 +0000
  2 files changed, 507 insertions(+), 0 deletions(-)
 
 commit 8d99efac5897adc9b188d16ff7fa252ebba5dded
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Mon Dec 3 21:42:48 2007 +0000
 
     Bump version after branching.
     
-    2007-12-03  Christian Persch  <chpe@mate.org>
+    2007-12-03  Christian Persch  <chpe@gnome.org>
     
     	* configure.ac: Bump version after branching.
     
@@ -9794,12 +9794,12 @@ Date:   Fri Sep 21 14:21:57 2007 +0000
  1 files changed, 2 insertions(+), 0 deletions(-)
 
 commit c83202b20e287a44b386604988afd224299dfa1d
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Sep 17 23:01:22 2007 +0000
 
     Released 1.10.1.
     
-    2007-09-17  Behdad Esfahbod  <behdad@mate.org>
+    2007-09-17  Behdad Esfahbod  <behdad@gnome.org>
     
             Released 1.10.1.
     
@@ -9841,12 +9841,12 @@ Date:   Wed Sep 12 10:31:44 2007 +0000
  3 files changed, 544 insertions(+), 440 deletions(-)
 
 commit a6e1ce8ed3f2d78d3a5841c4ecfc7dc1bab484f7
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Wed Sep 5 06:58:05 2007 +0000
 
     Bug 311912 – Should come up showing the unicode block for the default
     
-    2007-09-05  Behdad Esfahbod  <behdad@mate.org>
+    2007-09-05  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 311912 – Should come up showing the unicode block for the default
             language
@@ -9869,12 +9869,12 @@ Date:   Wed Sep 5 06:58:05 2007 +0000
  2 files changed, 79 insertions(+), 0 deletions(-)
 
 commit 452f9ec1834ab7c6b69911ee61ba5d89dce66eac
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Wed Sep 5 06:03:32 2007 +0000
 
     Bug 466213 – No branch for mate-2-18 Revert Bug 459279 – port to new
     
-    2007-09-05  Behdad Esfahbod  <behdad@mate.org>
+    2007-09-05  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 466213 – No branch for mate-2-18
             Revert Bug 459279 – port to new tooltips API
@@ -9892,12 +9892,12 @@ Date:   Wed Sep 5 06:03:32 2007 +0000
  3 files changed, 14 insertions(+), 2 deletions(-)
 
 commit b192434e18358aadd7a2f771bd923de0e416f8fd
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Wed Sep 5 05:53:42 2007 +0000
 
     Bug 357471 – chartable::finalize() Patch from paolo borelli
     
-    2007-09-05  Behdad Esfahbod  <behdad@mate.org>
+    2007-09-05  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 357471 – chartable::finalize()
             Patch from paolo borelli
@@ -9997,12 +9997,12 @@ Date:   Fri Aug 17 17:34:41 2007 +0000
  1 files changed, 6 insertions(+), 6 deletions(-)
 
 commit dc070e441187a941095ed6e0328d06a832bcdb23
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Tue Aug 7 22:49:05 2007 +0000
 
     Add Userid field.
     
-    2007-08-07  Behdad Esfahbod  <behdad@mate.org>
+    2007-08-07  Behdad Esfahbod  <behdad@gnome.org>
     
             * MAINTAINERS: Add Userid field.
     
@@ -10101,12 +10101,12 @@ Date:   Sat Jul 28 17:43:26 2007 +0000
  10 files changed, 920 insertions(+), 773 deletions(-)
 
 commit 26bd01cd0cee75c4261a26b72fd4a9bfaeb2edae
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Tue Jul 24 16:39:52 2007 +0000
 
     Update gtk req to 2.11.6. Port to new tooltips API. Bug #459279.
     
-    2007-07-24  Christian Persch  <chpe@mate.org>
+    2007-07-24  Christian Persch  <chpe@gnome.org>
     
     	* configure.ac: Update gtk req to 2.11.6.
     	* gucharmap/gucharmap-window.c: (make_text_to_copy): Port to new
@@ -10160,12 +10160,12 @@ Date:   Thu Jun 28 08:04:22 2007 +0000
  2 files changed, 18 insertions(+), 14 deletions(-)
 
 commit 3f52fcf30ac0a856fb6089f5f039b38070beca1e
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Thu Jun 21 17:18:22 2007 +0000
 
     Bug 396265 – don't export internal symbols
     
-    2007-06-21  Behdad Esfahbod  <behdad@mate.org>
+    2007-06-21  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 396265 – don't export internal symbols
     
@@ -10240,12 +10240,12 @@ Date:   Sun May 6 01:21:45 2007 +0000
  2 files changed, 23 insertions(+), 16 deletions(-)
 
 commit 6ea0dbafe76178f106b64b301896e1cc47457262
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Apr 30 18:55:55 2007 +0000
 
     Bug 434276 – G_UNICODE_BREAK_SURROGATE Patch from huzheng
     
-    2007-04-30  Behdad Esfahbod  <behdad@mate.org>
+    2007-04-30  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 434276 – G_UNICODE_BREAK_SURROGATE
             Patch from huzheng
@@ -10279,12 +10279,12 @@ Date:   Thu Apr 26 21:36:04 2007 +0000
  1 files changed, 5 insertions(+), 3 deletions(-)
 
 commit 2fb6ab088663caafef23fe19dac039a840495850
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Thu Apr 26 12:56:08 2007 +0000
 
     Chain up to parent's finalise handler. Bug #433134.
     
-    2007-04-26  Christian Persch  <chpe@mate.org>
+    2007-04-26  Christian Persch  <chpe@gnome.org>
     
     	* gucharmap/gucharmap-search-dialog.c:(gucharmap_search_dialog_finalize):
      	Chain up to parent's finalise handler. Bug #433134.
@@ -10415,12 +10415,12 @@ Date:   Sat Mar 17 22:56:45 2007 +0000
  2 files changed, 13 insertions(+), 9 deletions(-)
 
 commit a18a4d1c47f626aeaec2820629879b74cbc76ce5
-Author: Vincent Untz <vuntz@mate.org>
+Author: Vincent Untz <vuntz@gnome.org>
 Date:   Mon Mar 12 21:02:48 2007 +0000
 
     post-release bump to 1.10.1.
     
-    2007-03-12  Vincent Untz  <vuntz@mate.org>
+    2007-03-12  Vincent Untz  <vuntz@gnome.org>
     
     	* configure.in: post-release bump to 1.10.1.
     
@@ -10433,12 +10433,12 @@ Date:   Mon Mar 12 21:02:48 2007 +0000
  4 files changed, 11 insertions(+), 1 deletions(-)
 
 commit a8c0a9605531e63508394c770b32014716fa754f
-Author: Vincent Untz <vuntz@mate.org>
+Author: Vincent Untz <vuntz@gnome.org>
 Date:   Mon Mar 12 21:00:17 2007 +0000
 
     Bump libtool version to 6:1:0. version 1.10.0
     
-    2007-03-12  Vincent Untz  <vuntz@mate.org>
+    2007-03-12  Vincent Untz  <vuntz@gnome.org>
     
     	* NEWS:
     	* gucharmap/Makefile.am: Bump libtool version to 6:1:0.
@@ -10578,12 +10578,12 @@ Date:   Sat Feb 17 12:24:26 2007 +0000
  3 files changed, 554 insertions(+), 1 deletions(-)
 
 commit 114c6e42718b2399b2abea2e6d634ca192c3f55c
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Wed Feb 14 20:36:56 2007 +0000
 
     Released 1.9.0.
     
-    2007-02-14  Behdad Esfahbod  <behdad@mate.org>
+    2007-02-14  Behdad Esfahbod  <behdad@gnome.org>
     
             Released 1.9.0.
     
@@ -10713,12 +10713,12 @@ Date:   Fri Jan 19 18:32:05 2007 +0000
  10 files changed, 148 insertions(+), 100 deletions(-)
 
 commit 00c93bacfeb121a936f942cc7874191dfd15ddfa
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Wed Jan 10 20:15:27 2007 +0000
 
     Bug 386554 – compilation from CVS HEAD failed due to cclosure marshal
     
-    2007-01-10  Behdad Esfahbod  <behdad@mate.org>
+    2007-01-10  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 386554 – compilation from CVS HEAD failed due to cclosure marshal
             updates?
@@ -10785,12 +10785,12 @@ Date:   Sun Dec 31 19:16:23 2006 +0000
  0 files changed, 0 insertions(+), 0 deletions(-)
 
 commit 156f1cee25fb8cae980b45906958078003f46459
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Fri Dec 15 07:48:26 2006 +0000
 
     Update to work with automake 1.10.
     
-    2006-12-15  Kjartan Maraas  <kmaraas@mate.org>
+    2006-12-15  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* autogen.sh: Update to work with automake 1.10.
 
@@ -10808,12 +10808,12 @@ Date:   Thu Dec 7 14:56:14 2006 +0000
  1 files changed, 3 insertions(+), 3 deletions(-)
 
 commit 97b70a988845e48ba2bee514910549a84cd7d203
-Author: Lucas Rocha <lucasr@mate.org>
+Author: Lucas Rocha <lucasr@gnome.org>
 Date:   Tue Dec 5 22:30:43 2006 +0000
 
     Updated Brazilian Portuguese translation by Leonardo Ferreira Fontenelle
     
-    2006-12-06  Lucas Rocha  <lucasr@mate.org>
+    2006-12-06  Lucas Rocha  <lucasr@gnome.org>
     
     	* pt_BR.po: Updated Brazilian Portuguese translation
     	by Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>
@@ -10916,12 +10916,12 @@ Date:   Tue Oct 24 19:33:20 2006 +0000
  2 files changed, 6 insertions(+), 2 deletions(-)
 
 commit 912f17c6c570ca918e4ba5dfa62a309c0b875964
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Tue Oct 17 14:03:18 2006 +0000
 
     Updated Norwegian bokmål translation.
     
-    2006-10-17  Kjartan Maraas  <kmaraas@mate.org>
+    2006-10-17  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
 
@@ -11063,12 +11063,12 @@ Date:   Fri Sep 8 01:17:58 2006 +0000
  2 files changed, 5 insertions(+), 1 deletions(-)
 
 commit a5e0739fde1e54f8b18680df1aa5c651d65b452d
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Sep 4 22:41:10 2006 +0000
 
     Released 1.8.0.
     
-    2006-09-04  Behdad Esfahbod  <behdad@mate.org>
+    2006-09-04  Behdad Esfahbod  <behdad@gnome.org>
     
             Released 1.8.0.
     
@@ -11106,12 +11106,12 @@ Date:   Sun Sep 3 21:36:53 2006 +0000
  3 files changed, 1175 insertions(+), 0 deletions(-)
 
 commit 2b1fec83ed61bef547e7bd5a1a5a31e88ba9c4f5
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Sep 3 20:46:00 2006 +0000
 
     Bug 354101 – must not conditionally use MATE_DOC_INIT
     
-    2006-09-03  Behdad Esfahbod  <behdad@mate.org>
+    2006-09-03  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 354101 – must not conditionally use MATE_DOC_INIT
     
@@ -11122,12 +11122,12 @@ Date:   Sun Sep 3 20:46:00 2006 +0000
  2 files changed, 8 insertions(+), 1 deletions(-)
 
 commit 4855f66d93812385e1a1f51c45cd486ef38b0888
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Sep 3 00:00:35 2006 +0000
 
     Bug 332880 – parameter --disable-mate doesn't has effect
     
-    2006-09-02  Behdad Esfahbod  <behdad@mate.org>
+    2006-09-02  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 332880 – parameter --disable-mate doesn't has effect
     
@@ -11771,12 +11771,12 @@ Date:   Fri Aug 11 20:21:45 2006 +0000
  3 files changed, 1203 insertions(+), 0 deletions(-)
 
 commit 50daa275ccc442bce72c5624e145e809b35f00d8
-Author: Hendrik Richter <hendrikr@mate.org>
+Author: Hendrik Richter <hendrikr@gnome.org>
 Date:   Fri Aug 11 09:35:03 2006 +0000
 
     Updated German translation.
     
-    2006-08-11  Hendrik Richter  <hendrikr@mate.org>
+    2006-08-11  Hendrik Richter  <hendrikr@gnome.org>
     
     	* de.po: Updated German translation.
 
@@ -11895,12 +11895,12 @@ Date:   Fri Aug 4 18:41:40 2006 +0000
  2 files changed, 233 insertions(+), 181 deletions(-)
 
 commit 309d473bb3d7b5e6755797c9960f90256adcf8a1
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Fri Aug 4 10:55:36 2006 +0000
 
     Translation updated by Tino Meinen.
     
-    2006-08-04  Vincent van Adrighem  <adrighem@mate.org>
+    2006-08-04  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Tino Meinen.
 
@@ -11921,12 +11921,12 @@ Date:   Thu Aug 3 15:03:03 2006 +0000
  4 files changed, 1217 insertions(+), 0 deletions(-)
 
 commit 15cde0a0bdb128785e3e1e20f5475514beec4d38
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Thu Aug 3 12:14:47 2006 +0000
 
     Updated Norwegian bokmål translation.
     
-    2006-08-03  Kjartan Maraas  <kmaraas@mate.org>
+    2006-08-03  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
 
@@ -11998,12 +11998,12 @@ Date:   Mon Jul 31 21:49:37 2006 +0000
  2 files changed, 24 insertions(+), 13 deletions(-)
 
 commit cad28639631b31454d08592922963e3bea4e09b6
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Jul 30 19:23:16 2006 +0000
 
     Remove help/sv/Makefile as sv moved to mate-doc-utils.
     
-    2006-07-30  Behdad Esfahbod  <behdad@mate.org>
+    2006-07-30  Behdad Esfahbod  <behdad@gnome.org>
     
             * configure.ac: Remove help/sv/Makefile as sv moved to
             mate-doc-utils.
@@ -12064,12 +12064,12 @@ Date:   Thu Jul 27 17:52:44 2006 +0000
  2 files changed, 10 insertions(+), 3 deletions(-)
 
 commit 6d94e1821d3d450de8076e4d0eb6796f1cc5242c
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Wed Jul 26 20:31:10 2006 +0000
 
     Make a dummy change to force recreation of marshallers since we changed
     
-    2006-07-26  Behdad Esfahbod  <behdad@mate.org>
+    2006-07-26  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-marshal.list: Make a dummy change to force
             recreation of marshallers since we changed their prefix in
@@ -12100,12 +12100,12 @@ Date:   Tue Jul 25 05:27:50 2006 +0000
  2 files changed, 11 insertions(+), 2 deletions(-)
 
 commit 69cc42bb73b848817ad98772d5e74f954b673788
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Jul 24 23:44:12 2006 +0000
 
     Add Behnam Esfahbod.
     
-    2006-07-24  Behdad Esfahbod  <behdad@mate.org>
+    2006-07-24  Behdad Esfahbod  <behdad@gnome.org>
     
             * MAINTAINERS: Add Behnam Esfahbod.
 
@@ -12114,12 +12114,12 @@ Date:   Mon Jul 24 23:44:12 2006 +0000
  2 files changed, 6 insertions(+), 0 deletions(-)
 
 commit c22c61d9e6f88aaed2ca449e529c7a82512dff3d
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Jul 24 23:36:45 2006 +0000
 
     Released 1.7.0.
     
-    2006-07-24  Behdad Esfahbod  <behdad@mate.org>
+    2006-07-24  Behdad Esfahbod  <behdad@gnome.org>
     
             Released 1.7.0.
     
@@ -12141,12 +12141,12 @@ Date:   Mon Jul 24 23:36:45 2006 +0000
  4 files changed, 33 insertions(+), 3 deletions(-)
 
 commit 69cd12208c9bf28d945e4941646064598cfe01c8
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Jul 24 23:23:05 2006 +0000
 
     Bug 341260 – String "Snap Columns to Power of Two" not marked for
     
-    2006-07-24  Behdad Esfahbod  <behdad@mate.org>
+    2006-07-24  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 341260 – String "Snap Columns to Power of Two" not marked for
             translation
@@ -12168,12 +12168,12 @@ Date:   Mon Jul 24 23:11:21 2006 +0000
  1 files changed, 2 insertions(+), 0 deletions(-)
 
 commit 8af2382b60456d8c7bffd80399d7218ffef0ebed
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Jul 24 23:06:31 2006 +0000
 
     Set prefix for marshallers to _gucharmap_marshal, to make the marshallers
     
-    2006-07-24  Behdad Esfahbod  <behdad@mate.org>
+    2006-07-24  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/Makefile.am:
             * gucharmap/gucharmap-block-chapters.c
@@ -12414,12 +12414,12 @@ Date:   Thu Jun 22 20:29:01 2006 +0000
  2 files changed, 430 insertions(+), 375 deletions(-)
 
 commit 4f76a4b6d78de46727f8bed5677e6cb28c812461
-Author: Hendrik Richter <hendrikr@mate.org>
+Author: Hendrik Richter <hendrikr@gnome.org>
 Date:   Thu Jun 15 15:19:39 2006 +0000
 
     Updated German translation.
     
-    2006-06-15  Hendrik Richter  <hendrikr@mate.org>
+    2006-06-15  Hendrik Richter  <hendrikr@gnome.org>
     
     	* de.po: Updated German translation.
 
@@ -12508,12 +12508,12 @@ Date:   Wed Apr 19 06:18:18 2006 +0000
  2 files changed, 16 insertions(+), 12 deletions(-)
 
 commit 05e38a742b2207b4fd88f4094bc121d3690642b9
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Tue Apr 18 17:06:08 2006 +0000
 
     Bug 337943 – [Patch] Use po/LINGUAS Updated patch from Przemysław
     
-    2006-04-18  Behdad Esfahbod  <behdad@mate.org>
+    2006-04-18  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 337943 – [Patch] Use po/LINGUAS
             Updated patch from Przemysław Grzegorczyk.
@@ -12526,12 +12526,12 @@ Date:   Tue Apr 18 17:06:08 2006 +0000
  3 files changed, 73 insertions(+), 7 deletions(-)
 
 commit 946386a0c0587d720f2216c85d8d8812d6869f0f
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Tue Apr 18 06:03:32 2006 +0000
 
     Remove obsolete entry for no_NO And the translation.
     
-    2006-04-18  Kjartan Maraas  <kmaraas@mate.org>
+    2006-04-18  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* LINGUAS: Remove obsolete entry for no_NO
     	* no.po: And the translation.
@@ -12566,12 +12566,12 @@ Date:   Fri Apr 14 16:31:07 2006 +0000
  2 files changed, 60 insertions(+), 51 deletions(-)
 
 commit 37a78710c1801aa4bd44307677d16f37f921a13e
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Apr 10 18:55:02 2006 +0000
 
     Bug 337943 – [Patch] Use po/LINGUAS Patch from Przemysław Grzegorczyk.
     
-    2006-04-10  Behdad Esfahbod  <behdad@mate.org>
+    2006-04-10  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 337943 – [Patch] Use po/LINGUAS
             Patch from Przemysław Grzegorczyk.
@@ -12584,12 +12584,12 @@ Date:   Mon Apr 10 18:55:02 2006 +0000
  3 files changed, 15 insertions(+), 4 deletions(-)
 
 commit 6811e03aca7dcf686e24f76ce9455371b0994059
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sun Apr 2 13:07:46 2006 +0000
 
     Updated Norwegian bokmål translation. Same.
     
-    2006-04-02  Kjartan Maraas  <kmaraas@mate.org>
+    2006-04-02  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
     	* no.po: Same.
@@ -12619,12 +12619,12 @@ Date:   Mon Mar 27 18:11:28 2006 +0000
  2 files changed, 5 insertions(+), 0 deletions(-)
 
 commit d3fb3c0788b3d25774fd0c5b9f611dc6e26ca0f5
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Mar 27 18:10:12 2006 +0000
 
     Don't check _("translator-credits"), the about dialog code does this
     
-    2006-03-27  Behdad Esfahbod  <behdad@mate.org>
+    2006-03-27  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c: Don't check _("translator-credits"),
             the about dialog code does this automatically.
@@ -12634,12 +12634,12 @@ Date:   Mon Mar 27 18:10:12 2006 +0000
  2 files changed, 6 insertions(+), 6 deletions(-)
 
 commit 16ef1e41c4bff777393663100795bdc970b44a92
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Mar 26 20:39:44 2006 +0000
 
     Respect DESTDIR.
     
-    2006-03-26  Behdad Esfahbod  <behdad@mate.org>
+    2006-03-26  Behdad Esfahbod  <behdad@gnome.org>
     
             * pixmaps/Makefile.am: Respect DESTDIR.
 
@@ -12648,12 +12648,12 @@ Date:   Sun Mar 26 20:39:44 2006 +0000
  2 files changed, 13 insertions(+), 1 deletions(-)
 
 commit db8b4b389432a620fc62fa9211d10b3bd1350f7b
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Mar 25 16:14:31 2006 +0000
 
     Bug 335952 – refcount leak in main Patch from Christian Persch.
     
-    2006-03-25  Behdad Esfahbod  <behdad@mate.org>
+    2006-03-25  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 335952 – refcount leak in main
             Patch from Christian Persch.
@@ -12685,12 +12685,12 @@ Date:   Thu Mar 23 20:09:02 2006 +0000
  4 files changed, 572 insertions(+), 5 deletions(-)
 
 commit ea89319b6e0593c1562b45c0ddb1b70799a5cb59
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Mar 19 13:41:07 2006 +0000
 
     Bug 334865 – tiny string leak Patch from Paolo Borelli.
     
-    2006-03-19  Behdad Esfahbod  <behdad@mate.org>
+    2006-03-19  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 334865 – tiny string leak
             Patch from Paolo Borelli.
@@ -12713,12 +12713,12 @@ Date:   Mon Mar 13 09:14:54 2006 +0000
  2 files changed, 22 insertions(+), 22 deletions(-)
 
 commit 8ac464452ff084b1bb2b2499b5c7c748a9f5158f
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Mar 13 05:38:10 2006 +0000
 
     Released 1.6.0.
     
-    2006-03-13  Behdad Esfahbod  <behdad@mate.org>
+    2006-03-13  Behdad Esfahbod  <behdad@gnome.org>
     
             Released 1.6.0.
     
@@ -12828,12 +12828,12 @@ Date:   Wed Mar 8 00:41:59 2006 +0000
  2 files changed, 61 insertions(+), 56 deletions(-)
 
 commit 6369a29cda735ce2f82bad85a80d62a877798288
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Tue Mar 7 11:36:57 2006 +0000
 
     Translation updated by Tino Meinen.
     
-    2006-03-07  Vincent van Adrighem  <adrighem@mate.org>
+    2006-03-07  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Tino Meinen.
 
@@ -12852,12 +12852,12 @@ Date:   Tue Mar 7 05:01:23 2006 +0000
  2 files changed, 311 insertions(+), 264 deletions(-)
 
 commit 016dec2506c77199d511ab30ab0c851e6f592756
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Mon Mar 6 20:25:03 2006 +0000
 
     Translation added by Sebastien Bruggeman.
     
-    2006-03-06  Vincent van Adrighem  <adrighem@mate.org>
+    2006-03-06  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl-1.po: Translation added by Sebastien Bruggeman.
 
@@ -12866,12 +12866,12 @@ Date:   Mon Mar 6 20:25:03 2006 +0000
  2 files changed, 1199 insertions(+), 0 deletions(-)
 
 commit 479ce7febe060479a5f0ce49faf69253718806f1
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Mon Mar 6 19:37:47 2006 +0000
 
     Translation updated by Tino Meinen.
     
-    2006-03-06  Vincent van Adrighem  <adrighem@mate.org>
+    2006-03-06  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Tino Meinen.
 
@@ -12908,12 +12908,12 @@ Date:   Mon Mar 6 11:07:27 2006 +0000
  2 files changed, 447 insertions(+), 274 deletions(-)
 
 commit 022ea01d26d58e0614325a1efd69c1d2a52e48f9
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sun Mar 5 14:28:06 2006 +0000
 
     Updated Norwegian bokmål translation. Same.
     
-    2006-03-05  Kjartan Maraas  <kmaraas@mate.org>
+    2006-03-05  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
     	* no.po: Same.
@@ -13012,12 +13012,12 @@ Date:   Thu Mar 2 22:52:27 2006 +0000
  2 files changed, 313 insertions(+), 264 deletions(-)
 
 commit 95a2a0390b689608f6ddd42305dd41b1cf52e9ed
-Author: Hendrik Richter <hendrikr@mate.org>
+Author: Hendrik Richter <hendrikr@gnome.org>
 Date:   Thu Mar 2 21:10:33 2006 +0000
 
     Updated German translation.
     
-    2006-03-02  Hendrik Richter  <hendrikr@mate.org>
+    2006-03-02  Hendrik Richter  <hendrikr@gnome.org>
     
     	* de.po: Updated German translation.
 
@@ -13066,12 +13066,12 @@ Date:   Thu Mar 2 03:13:21 2006 +0000
  2 files changed, 313 insertions(+), 265 deletions(-)
 
 commit 00c469ee2becd467b4ea88e42be1abf1bb983f94
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Wed Mar 1 19:28:50 2006 +0000
 
     Translation updated by Sebastien Bruggeman.
     
-    2006-03-01  Vincent van Adrighem  <adrighem@mate.org>
+    2006-03-01  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Sebastien Bruggeman.
 
@@ -13150,12 +13150,12 @@ Date:   Sat Feb 25 14:23:50 2006 +0000
  2 files changed, 473 insertions(+), 298 deletions(-)
 
 commit 4572d18fd630dc3a38a00a019bec96aeca01f8d1
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Feb 25 08:49:16 2006 +0000
 
     Released 1.5.3.
     
-    2006-02-25  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-25  Behdad Esfahbod  <behdad@gnome.org>
     
             Released 1.5.3.
     
@@ -13233,12 +13233,12 @@ Date:   Tue Feb 21 02:07:36 2006 +0000
  3 files changed, 666 insertions(+), 530 deletions(-)
 
 commit 0ba320ef7d06c87f5cb5fbe9af55af5afe4140e4
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Tue Feb 21 00:07:17 2006 +0000
 
     Change "based on Unicode Character Databse" to "based on the Unicode
     
-    2006-02-20  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-20  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-windoc.c, po/*.po: Change "based on Unicode
             Character Databse" to "based on the Unicode Character Database".
@@ -13323,12 +13323,12 @@ Date:   Sun Feb 19 23:33:05 2006 +0000
  2 files changed, 327 insertions(+), 266 deletions(-)
 
 commit 7a1d6165f6463e4b68c7d50b72ca3b82266aeea1
-Author: Žygimantas Beručka <zygis@mate.org>
+Author: Žygimantas Beručka <zygis@gnome.org>
 Date:   Sun Feb 19 22:20:51 2006 +0000
 
     Updated Lithuanian translation.
     
-    2006-02-20  Žygimantas Beručka  <zygis@mate.org>
+    2006-02-20  Žygimantas Beručka  <zygis@gnome.org>
     
             * lt.po: Updated Lithuanian translation.
 
@@ -13396,12 +13396,12 @@ Date:   Sun Feb 19 13:08:14 2006 +0000
  2 files changed, 511 insertions(+), 446 deletions(-)
 
 commit 84e0f3b34cd627e25594edeb6c17629fd0f44469
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Feb 18 19:32:17 2006 +0000
 
     Pass -f to gtk-update-icon-cache, as it's rather crazy.
     
-    2006-02-18  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-18  Behdad Esfahbod  <behdad@gnome.org>
     
             * pixmaps/Makefile.am: Pass -f to gtk-update-icon-cache, as it's
             rather crazy.
@@ -13425,12 +13425,12 @@ Date:   Sat Feb 18 13:46:04 2006 +0000
  2 files changed, 47 insertions(+), 39 deletions(-)
 
 commit f158c69bfcbd7c7f6fbe0060ac04ab6c1d4ca302
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sat Feb 18 13:04:07 2006 +0000
 
     Updated Norwegian bokmål translation. Same.
     
-    2006-02-18  Kjartan Maraas  <kmaraas@mate.org>
+    2006-02-18  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
     	* no.po: Same.
@@ -13441,12 +13441,12 @@ Date:   Sat Feb 18 13:04:07 2006 +0000
  3 files changed, 609 insertions(+), 514 deletions(-)
 
 commit 1604ead35674ffa0051d1eaa1b6f854107b92e3a
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Feb 18 10:55:10 2006 +0000
 
     Pass -t and the target directory to gtk-update-icon-cache.
     
-    2006-02-18  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-18  Behdad Esfahbod  <behdad@gnome.org>
     
             * pixmaps/Makefile.am: Pass -t and the target directory to
             gtk-update-icon-cache.
@@ -13456,12 +13456,12 @@ Date:   Sat Feb 18 10:55:10 2006 +0000
  2 files changed, 8 insertions(+), 3 deletions(-)
 
 commit 4f75019291be260d8a87c7c66968c2b27f8d900a
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Feb 18 10:43:12 2006 +0000
 
     Call g_set_application_name.
     
-    2006-02-18  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-18  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/main.c (main): Call g_set_application_name.
     
@@ -13477,12 +13477,12 @@ Date:   Sat Feb 18 10:43:12 2006 +0000
  4 files changed, 16 insertions(+), 3 deletions(-)
 
 commit 808bf57af52c1970f4c8de43d7209e020e010d0e
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Feb 17 17:59:41 2006 +0000
 
     Bug 331565 – cvs fails to build -- gucharmap/Makefile.am:27: blank line
     
-    2006-02-17  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-17  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 331565 – cvs fails to build -- gucharmap/Makefile.am:27: blank
             line following trailing backslash
@@ -13494,12 +13494,12 @@ Date:   Fri Feb 17 17:59:41 2006 +0000
  2 files changed, 8 insertions(+), 1 deletions(-)
 
 commit 9f942636ee7d86a6989841303223c11ad5aa3b93
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Feb 17 05:52:41 2006 +0000
 
     Use gtk_window_set_icon_name to set the icon. Makes it themable.
     
-    2006-02-17  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-17  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c: Use gtk_window_set_icon_name to set
             the icon.  Makes it themable.
@@ -13575,12 +13575,12 @@ Date:   Tue Feb 14 01:07:43 2006 +0000
  2 files changed, 321 insertions(+), 257 deletions(-)
 
 commit a6feb39a529c81a81b56bfb07e5db6f95b95cc53
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Feb 13 21:59:44 2006 +0000
 
     Released 1.5.2.
     
-    2006-02-13  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-13  Behdad Esfahbod  <behdad@gnome.org>
     
             Released 1.5.2.
     
@@ -13612,12 +13612,12 @@ Date:   Mon Feb 13 21:43:45 2006 +0000
  1 files changed, 3 insertions(+), 0 deletions(-)
 
 commit f093d8b0506d3a551e0db3ce682bd914956b142c
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Feb 13 21:42:39 2006 +0000
 
     Bug 326272 – Help/About dialog isn't HIG compliant Patch from Behnam
     
-    2006-02-13  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-13  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 326272 – Help/About dialog isn't HIG compliant
             Patch from Behnam "ZWNJ" Esfahbod
@@ -13637,12 +13637,12 @@ Date:   Mon Feb 13 21:42:39 2006 +0000
  1 files changed, 3 insertions(+), 0 deletions(-)
 
 commit daa3e148e956fb5874f6e409b4d748cdc3ff5879
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Feb 13 21:41:25 2006 +0000
 
     Use "MATE Character Map" instead of "gucharmap". Add license information.
     
-    2006-02-13  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-13  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c (help_about): Use "MATE Character Map"
             instead of "gucharmap".  Add license information.
@@ -13695,12 +13695,12 @@ Date:   Sun Feb 12 04:54:44 2006 +0000
  2 files changed, 280 insertions(+), 268 deletions(-)
 
 commit a4f28b304e3b4ae13c1fd0343fc9a0c9bf5cf911
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Feb 12 01:40:48 2006 +0000
 
     Move icon to DATADIR/icons/hicolor/48x48/apps.
     
-    2006-02-11  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-11  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/Makefile.am, gucharmap/gucharmap-window.c (load_icon),
             pixmaps/Makefile.am: Move icon to DATADIR/icons/hicolor/48x48/apps.
@@ -13721,12 +13721,12 @@ Date:   Sun Feb 12 00:18:59 2006 +0000
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 9e7265ad513cd325654a913fbfd3b9c6a2da652a
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Feb 12 00:07:14 2006 +0000
 
     Bug 328912 – misc fixes Patch from Christian Persch
     
-    2006-02-11  Behdad Esfahbod  <behdad@mate.org>
+    2006-02-11  Behdad Esfahbod  <behdad@gnome.org>
     
             Bug 328912 – misc fixes
             Patch from Christian Persch
@@ -13790,12 +13790,12 @@ Date:   Tue Feb 7 02:11:06 2006 +0000
  2 files changed, 393 insertions(+), 281 deletions(-)
 
 commit 8111f8e17aa7a603788af2899bfff16b56307679
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Fri Feb 3 16:24:28 2006 +0000
 
     Translation updated by Sebastien Bruggeman.
     
-    2006-02-03  Vincent van Adrighem  <adrighem@mate.org>
+    2006-02-03  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Sebastien Bruggeman.
 
@@ -13865,12 +13865,12 @@ Date:   Sat Jan 28 06:04:47 2006 +0000
  2 files changed, 71 insertions(+), 59 deletions(-)
 
 commit 9dd54686d7bf4c087b34c3ef6d5a46d3121e0c6a
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Jan 27 22:54:43 2006 +0000
 
     Released 1.5.1.
     
-    2006-01-27  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-27  Behdad Esfahbod  <behdad@gnome.org>
     
             Released 1.5.1.
     
@@ -13905,12 +13905,12 @@ Date:   Fri Jan 27 22:52:42 2006 +0000
  2 files changed, 40 insertions(+), 39 deletions(-)
 
 commit be322cc623e395a83d48758e594f17975fc42cba
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Jan 27 22:33:43 2006 +0000
 
     Set translation domain on the action group. (bug #326328)
     
-    2006-01-27  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-27  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c (make_menu): Set translation domain on
             the action group. (bug #326328)
@@ -13921,12 +13921,12 @@ Date:   Fri Jan 27 22:33:43 2006 +0000
  3 files changed, 15 insertions(+), 3 deletions(-)
 
 commit 67e31f12cde7a160e3af1dc7d80203e0bdaa64ce
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Jan 27 20:34:01 2006 +0000
 
     Migrate 'es' help files to mate-doc-utils.
     
-    2006-01-22  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-22  Behdad Esfahbod  <behdad@gnome.org>
     
             Migrate 'es' help files to mate-doc-utils.
     
@@ -13937,12 +13937,12 @@ Date:   Fri Jan 27 20:34:01 2006 +0000
  2 files changed, 2 insertions(+), 683 deletions(-)
 
 commit 45de12f015e72580a4f8a35c4d21caa0d4ce2291
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Jan 27 20:16:31 2006 +0000
 
     Migrate 'es' help files to mate-doc-utils.
     
-    2006-01-22  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-22  Behdad Esfahbod  <behdad@gnome.org>
     
             Migrate 'es' help files to mate-doc-utils.
     
@@ -13959,12 +13959,12 @@ Date:   Fri Jan 27 20:16:31 2006 +0000
  4 files changed, 22 insertions(+), 11 deletions(-)
 
 commit d264d3046188170eac97a36ce9442253557d4d1b
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Jan 27 20:13:59 2006 +0000
 
     Fixes bug #328775.
     
-    2006-01-27  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-27  Behdad Esfahbod  <behdad@gnome.org>
     
             Fixes bug #328775.
     
@@ -13980,13 +13980,13 @@ Date:   Fri Jan 27 20:13:59 2006 +0000
  3 files changed, 36 insertions(+), 5 deletions(-)
 
 commit e4824c2882d67f1ebf39fb360f38b2fedf35de9a
-Author: Adam Weinberger <adamw@mate.org>
+Author: Adam Weinberger <adamw@gnome.org>
 Date:   Thu Jan 26 18:08:30 2006 +0000
 
     Updated Canadian English translation.
     
     
-    2006-01-26  Adam Weinberger  <adamw@mate.org>
+    2006-01-26  Adam Weinberger  <adamw@gnome.org>
     
     	* en_CA.po: Updated Canadian English translation.
 
@@ -14053,12 +14053,12 @@ Date:   Mon Jan 23 07:23:22 2006 +0000
  2 files changed, 74 insertions(+), 59 deletions(-)
 
 commit a73faab2ba5ecc0109aa49a70faaf26b0b3f4fdd
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sun Jan 22 19:24:14 2006 +0000
 
     Updated Norwegian bokmål translation. Same.
     
-    2006-01-22  Kjartan Maraas  <kmaraas@mate.org>
+    2006-01-22  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
     	* no.po: Same.
@@ -14108,12 +14108,12 @@ Date:   Sun Jan 22 07:34:36 2006 +0000
  1 files changed, 4 insertions(+), 0 deletions(-)
 
 commit 2a9a0dfe983baea6064283eb0ed6ea438b0f9a78
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Jan 22 07:11:46 2006 +0000
 
     Weird, Francisco Javier F. Serrador removed the file while updating the es
     
-    2006-01-22  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-22  Behdad Esfahbod  <behdad@gnome.org>
     
             * help/es/Makefile.am:  Weird, Francisco Javier F. Serrador removed
             the file while updating the es translations!  Readded. (bug #328135,
@@ -14150,12 +14150,12 @@ Date:   Sun Jan 22 01:52:50 2006 +0000
  4 files changed, 72 insertions(+), 68 deletions(-)
 
 commit 49bfbb34d8866fd27bcb53de1dc0014113cb3a63
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Jan 21 23:38:14 2006 +0000
 
     Categorize as MATE;GTK;Utility; instead of MATE:Application:Utility;.
     
-    2006-01-21  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-21  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap.desktop.in: Categorize as MATE;GTK;Utility;
             instead of MATE:Application:Utility;. (bug #319078)
@@ -14191,12 +14191,12 @@ Date:   Sat Jan 21 20:44:27 2006 +0000
  2 files changed, 43 insertions(+), 36 deletions(-)
 
 commit d258e0b8a8933a311d74d19c34086a08fa19422f
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Jan 21 19:03:25 2006 +0000
 
     Fix infinite loop on Next Character in empty chapters like Low Surrogates.
     
-    2006-01-21  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-21  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c: Fix infinite loop on Next Character
             in empty chapters like Low Surrogates. (bug #323934, Behnam Esfahbod)
@@ -14206,12 +14206,12 @@ Date:   Sat Jan 21 19:03:25 2006 +0000
  2 files changed, 10 insertions(+), 3 deletions(-)
 
 commit cfaa4a29b27c139bd91d631865206ea3be09905a
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Jan 21 18:56:54 2006 +0000
 
     Add PANGO_CFLAGS and PANGO_LIBS explicitly. (bug #309281)
     
-    2006-01-21  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-21  Behdad Esfahbod  <behdad@gnome.org>
     
             * configure.ac, gucharmap/Makefile.am: Add PANGO_CFLAGS and PANGO_LIBS
             explicitly. (bug #309281)
@@ -14231,12 +14231,12 @@ Date:   Sat Jan 21 18:38:50 2006 +0000
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 9ccb2866d54724404bb9f4a1700c46de21335b87
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Jan 21 18:38:19 2006 +0000
 
     Add a "Search in character details" option.
     
-    2006-01-21  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-21  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-search-dialog.c: Add a "Search in character
             details" option.
@@ -14246,12 +14246,12 @@ Date:   Sat Jan 21 18:38:19 2006 +0000
  2 files changed, 45 insertions(+), 20 deletions(-)
 
 commit 510b0f32ac802afdf354037f82b7fcb2f97128d3
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Jan 21 18:26:53 2006 +0000
 
     Replace "translator_credits" with "translator-credits". (bug #300965)
     
-    2006-01-21  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-21  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c, po/*.po: Replace "translator_credits"
             with "translator-credits". (bug #300965)
@@ -14326,12 +14326,12 @@ Date:   Sat Jan 21 18:26:53 2006 +0000
  67 files changed, 74 insertions(+), 69 deletions(-)
 
 commit e9473413d6948fbcf48ac8a05d258e0ffc132580
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Jan 21 17:30:16 2006 +0000
 
     Categorize as MATE;Application;Utility; instead of
     
-    2006-01-21  Behdad Esfahbod  <behdad@mate.org>
+    2006-01-21  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap.desktop.in: Categorize as MATE;Application;Utility;
             instead of Utility;Accessibility;. (bug #319078 again)
@@ -14356,12 +14356,12 @@ Date:   Mon Jan 9 06:38:22 2006 +0000
  2 files changed, 316 insertions(+), 227 deletions(-)
 
 commit a10e30bb96193b9065a5c93ad25b5834e29ffbc0
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Mon Jan 2 09:00:44 2006 +0000
 
     Oops, forgot to commit :-(.
     
-    2005-12-12  Behdad Esfahbod  <behdad@mate.org>
+    2005-12-12  Behdad Esfahbod  <behdad@gnome.org>
     
             * configure.in: Bump version to 1.5.0.
     
@@ -14393,12 +14393,12 @@ Date:   Fri Dec 30 06:56:12 2005 +0000
  2 files changed, 401 insertions(+), 345 deletions(-)
 
 commit 85df124912e671b785e7a569d1c9c4bdf9f2143c
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Mon Dec 26 23:57:20 2005 +0000
 
     Translation updated by Sebastien Bruggeman.
     
-    2005-12-27  Vincent van Adrighem  <adrighem@mate.org>
+    2005-12-27  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Sebastien Bruggeman.
 
@@ -14407,12 +14407,12 @@ Date:   Mon Dec 26 23:57:20 2005 +0000
  2 files changed, 322 insertions(+), 225 deletions(-)
 
 commit 7ce48667869831f22d9be2bf7bd0952716c7b52e
-Author: Žygimantas Beručka <zygis@mate.org>
+Author: Žygimantas Beručka <zygis@gnome.org>
 Date:   Mon Dec 26 16:04:34 2005 +0000
 
     Updated Lithuanian translation.
     
-    2005-12-26  Žygimantas Beručka  <zygis@mate.org>
+    2005-12-26  Žygimantas Beručka  <zygis@gnome.org>
     
             * lt.po: Updated Lithuanian translation.
 
@@ -14543,13 +14543,13 @@ Date:   Tue Dec 6 00:39:40 2005 +0000
  2 files changed, 40 insertions(+), 32 deletions(-)
 
 commit bfe48ae2e171a728166f55338f3270e032e44ee4
-Author: Adam Weinberger <adamw@mate.org>
+Author: Adam Weinberger <adamw@gnome.org>
 Date:   Sat Dec 3 21:01:37 2005 +0000
 
     Updated Canadian English translation.
     
     
-    2005-12-03  Adam Weinberger  <adamw@mate.org>
+    2005-12-03  Adam Weinberger  <adamw@gnome.org>
     
     	* en_CA.po: Updated Canadian English translation.
 
@@ -14558,12 +14558,12 @@ Date:   Sat Dec 3 21:01:37 2005 +0000
  2 files changed, 311 insertions(+), 223 deletions(-)
 
 commit 5d0f15b1bda6f5b53032495b139bf3aa704c6a44
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sat Dec 3 12:13:02 2005 +0000
 
     Updated Norwegian bokmål translation. Same
     
-    2005-12-03  Kjartan Maraas  <kmaraas@mate.org>
+    2005-12-03  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
     	* no.po: Same
@@ -14602,12 +14602,12 @@ Date:   Wed Nov 30 19:49:12 2005 +0000
  2 files changed, 39 insertions(+), 40 deletions(-)
 
 commit a5c7e1472ef0d6a9d67844d72da0469a717a83eb
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Tue Nov 29 13:19:37 2005 +0000
 
     Warnings clean up. (Part of #301628, Behnam Esfahbod)
     
-    2005-11-27  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-27  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-search-dialog.c: Warnings clean up. (Part of
             #301628, Behnam Esfahbod)
@@ -14617,12 +14617,12 @@ Date:   Tue Nov 29 13:19:37 2005 +0000
  2 files changed, 11 insertions(+), 4 deletions(-)
 
 commit 6c6e8539c7f99a2fe4773e5a9d2a3c176fe531cf
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Tue Nov 29 12:06:30 2005 +0000
 
     Decrease the amount of non-shared data. #169491, Benoît Dejean, Behnam
     
-    2005-11-27  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-27  Behdad Esfahbod  <behdad@gnome.org>
     
             Decrease the amount of non-shared data.
             #169491, Benoît Dejean, Behnam Esfahbod.
@@ -14676,12 +14676,12 @@ Date:   Sun Nov 27 21:26:39 2005 +0000
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 79f3d55b2993f451caa8c2a3d01e9bbeacff3086
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Nov 27 07:42:04 2005 +0000
 
     Make autolinking more strict to not convert 3.1415 to 3.U+1415! (#303596,
     
-    2005-11-27  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-27  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-charmap.c: Make autolinking more strict to not
             convert 3.1415 to 3.U+1415! (#303596, Behnam Esfahbod)
@@ -14691,12 +14691,12 @@ Date:   Sun Nov 27 07:42:04 2005 +0000
  2 files changed, 32 insertions(+), 11 deletions(-)
 
 commit 66ff27c991fac10c36c8169b67cd34837ca0db90
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sun Nov 27 07:25:58 2005 +0000
 
     Add "whole word" search and also search in the annotations. (#128700,
     
-    2005-11-27  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-27  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-search-dialog.c: Add "whole word" search and
             also search in the annotations. (#128700, Behnam Esfahbod)
@@ -14757,12 +14757,12 @@ Date:   Fri Nov 25 16:17:52 2005 +0000
  2 files changed, 69 insertions(+), 56 deletions(-)
 
 commit 43b03d107c17a92e2614514a83e0db9ba8f7c74e
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Nov 25 10:59:06 2005 +0000
 
     Remove selection before inserting new characters. (#319973, Behnam
     
-    2005-11-25  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-25  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c: Remove selection before inserting new
             characters. (#319973, Behnam Esfahbod)
@@ -14772,12 +14772,12 @@ Date:   Fri Nov 25 10:59:06 2005 +0000
  2 files changed, 6 insertions(+), 0 deletions(-)
 
 commit b5ec19a70d42a51425a1c307190889014aa6ddcc
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Nov 25 10:05:08 2005 +0000
 
     Follow up on several fixes to scrollbar and cell activation. (#312001,
     
-    2005-11-25  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-25  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-table.c: Follow up on several fixes to scrollbar
             and cell activation. (#312001, Behnam Esfahbod)
@@ -14787,12 +14787,12 @@ Date:   Fri Nov 25 10:05:08 2005 +0000
  2 files changed, 7 insertions(+), 2 deletions(-)
 
 commit eb9bebddfd3d99d9c6e289ca9385a4edd1f7179d
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Nov 25 08:55:50 2005 +0000
 
     Use GtkUIManager. (#51532, thetroublemaker)
     
-    2005-11-25  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-25  Behdad Esfahbod  <behdad@gnome.org>
     
             Use GtkUIManager. (#51532, thetroublemaker)
     
@@ -14823,12 +14823,12 @@ Date:   Fri Nov 25 08:54:30 2005 +0000
  2 files changed, 336 insertions(+), 248 deletions(-)
 
 commit 1cc6abdec28b298626d103be13884b017187374c
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Nov 25 08:33:31 2005 +0000
 
     Categorize as Utility;Accessibility instead of Graphics;Viewer. (#319078,
     
-    2005-11-25  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-25  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap.desktop: Categorize as Utility;Accessibility instead of
             Graphics;Viewer. (#319078, Stanislav Brabec)
@@ -14838,12 +14838,12 @@ Date:   Fri Nov 25 08:33:31 2005 +0000
  2 files changed, 6 insertions(+), 1 deletions(-)
 
 commit e2a68e9ccfd12328276c353fec5453651defbdec
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Nov 25 08:24:49 2005 +0000
 
     Several fixes to scrollbar and cell activation. (#312001, Behnam Esfahbod)
     
-    2005-11-25  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-25  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-table.c: Several fixes to scrollbar and cell
             activation. (#312001, Behnam Esfahbod)
@@ -14853,12 +14853,12 @@ Date:   Fri Nov 25 08:24:49 2005 +0000
  2 files changed, 36 insertions(+), 24 deletions(-)
 
 commit 6cb1089e45659b3620a962bd6a3ff6e3aeadfe0b
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Nov 25 08:14:13 2005 +0000
 
     Fix Next/Prev function behavior over one-to-last/second characters.
     
-    2005-11-25  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-25  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c: Fix Next/Prev function behavior over
             one-to-last/second characters. (#304952, Luca Cavalli, Behnam Esfahbod)
@@ -14878,12 +14878,12 @@ Date:   Thu Nov 24 14:41:44 2005 +0000
  2 files changed, 336 insertions(+), 247 deletions(-)
 
 commit c95bd6ad8e8850d2c520e0a5f26388392c1c4074
-Author: Žygimantas Beručka <zygis@mate.org>
+Author: Žygimantas Beručka <zygis@gnome.org>
 Date:   Thu Nov 24 13:43:22 2005 +0000
 
     Updated Lithuanian translation.
     
-    2005-11-24  Žygimantas Beručka  <zygis@mate.org>
+    2005-11-24  Žygimantas Beručka  <zygis@gnome.org>
     
             * lt.po: Updated Lithuanian translation.
 
@@ -14944,12 +14944,12 @@ Date:   Tue Nov 22 15:34:01 2005 +0000
  2 files changed, 225 insertions(+), 141 deletions(-)
 
 commit 44a5ce9e7047866f35da27c90da5db2c6eb7a05c
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Tue Nov 22 07:46:06 2005 +0000
 
     Update to Unicode 4.1 Character Database. (#313411, Behnam Esfahbod)
     
-    2005-11-22  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-22  Behdad Esfahbod  <behdad@gnome.org>
     
             Update to Unicode 4.1 Character Database. (#313411, Behnam Esfahbod)
     
@@ -14999,12 +14999,12 @@ Date:   Sun Nov 13 12:22:02 2005 +0000
  2 files changed, 67 insertions(+), 61 deletions(-)
 
 commit 032f1cf05a793d009eb9b631f87c511937fc9cf7
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Nov 11 22:20:02 2005 +0000
 
     Update page on up-arrow if necessary. (#316210, patch from Ferran Puig)
     
-    2005-11-11  Behdad Esfahbod  <behdad@mate.org>
+    2005-11-11  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-table.c (set_active_cell): Update page on
             up-arrow if necessary. (#316210, patch from Ferran Puig)
@@ -15014,12 +15014,12 @@ Date:   Fri Nov 11 22:20:02 2005 +0000
  2 files changed, 6 insertions(+), 1 deletions(-)
 
 commit 838faac26e881b3a32de417eb9c603433e292cff
-Author: Žygimantas Beručka <zygis@mate.org>
+Author: Žygimantas Beručka <zygis@gnome.org>
 Date:   Sun Nov 6 18:31:22 2005 +0000
 
     Updated Lithuanian translation.
     
-    2005-11-06  Žygimantas Beručka  <zygis@mate.org>
+    2005-11-06  Žygimantas Beručka  <zygis@gnome.org>
     
             * lt.po: Updated Lithuanian translation.
 
@@ -15070,12 +15070,12 @@ Date:   Sat Oct 29 12:38:22 2005 +0000
  2 files changed, 67 insertions(+), 65 deletions(-)
 
 commit e0b10b7049b20a5a930543e6161179dc389b0a19
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Thu Oct 27 19:09:13 2005 +0000
 
     Translation updated by Tino Meinen.
     
-    2005-10-27  Vincent van Adrighem  <adrighem@mate.org>
+    2005-10-27  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Tino Meinen.
 
@@ -15127,13 +15127,13 @@ Date:   Sun Oct 23 21:21:39 2005 +0000
  2 files changed, 50 insertions(+), 42 deletions(-)
 
 commit c6fb9b1a2ec84f32c61a90efc8a82e0b7336ed7f
-Author: Adam Weinberger <adamw@mate.org>
+Author: Adam Weinberger <adamw@gnome.org>
 Date:   Sun Oct 23 06:28:33 2005 +0000
 
     Updated Canadian English translation.
     
     
-    2005-10-23  Adam Weinberger  <adamw@mate.org>
+    2005-10-23  Adam Weinberger  <adamw@gnome.org>
     
     	* en_CA.po: Updated Canadian English translation.
 
@@ -15152,12 +15152,12 @@ Date:   Sun Oct 23 06:03:53 2005 +0000
  2 files changed, 268 insertions(+), 257 deletions(-)
 
 commit dde7c470213e048c788df227fb375e73a32da774
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Oct 21 04:03:06 2005 +0000
 
     Enable Cantonese pronunciation (#319342, patch from Benoît Dejean)
     
-    2005-10-21  Behdad Esfahbod  <behdad@mate.org>
+    2005-10-21  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-charmap.c (set_details): Enable Cantonese
             pronunciation (#319342, patch from Benoît Dejean)
@@ -15167,12 +15167,12 @@ Date:   Fri Oct 21 04:03:06 2005 +0000
  2 files changed, 11 insertions(+), 0 deletions(-)
 
 commit ae840da607de112a5ce9eb7966f91aeffa7e194e
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Sat Oct 15 06:19:51 2005 +0000
 
     Change #ifdef G_PLATFORM_WIN32 to #ifdef G_OS_WIN32. Fixes Cygwin builds.
     
-    2005-10-15  Behdad Esfahbod  <behdad@mate.org>
+    2005-10-15  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-table.c, gucharmap/gucharmap-window.c: Change
             #ifdef G_PLATFORM_WIN32 to #ifdef G_OS_WIN32.
@@ -15240,12 +15240,12 @@ Date:   Tue Sep 27 13:00:05 2005 +0000
  2 files changed, 6 insertions(+), 2 deletions(-)
 
 commit 5135404ce193fd065f76daa1f7da014c95a5fc1b
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Sep 16 20:40:16 2005 +0000
 
     call finalize from the parent GtkWindow class. (#316514, patch from
     
-    2005-09-16  Behdad Esfahbod  <behdad@mate.org>
+    2005-09-16  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c (gucharmap_window_class_init): call
             finalize from the parent GtkWindow class. (#316514, patch from
@@ -15256,12 +15256,12 @@ Date:   Fri Sep 16 20:40:16 2005 +0000
  2 files changed, 10 insertions(+), 0 deletions(-)
 
 commit 813728e993148c1ebf6b3649e4779e98f3323309
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Fri Sep 16 20:33:29 2005 +0000
 
     s/;;/;/, gcc 2.95.x compatibility. (#316515)
     
-    2005-09-16  Behdad Esfahbod  <behdad@mate.org>
+    2005-09-16  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/gucharmap-window.c: s/;;/;/, gcc 2.95.x compatibility. (#316515)
 
@@ -15270,12 +15270,12 @@ Date:   Fri Sep 16 20:33:29 2005 +0000
  2 files changed, 10 insertions(+), 6 deletions(-)
 
 commit e3255718c731ffd9efc6176cfe2f8b8b49eeeb5a
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Wed Sep 14 22:13:59 2005 +0000
 
     Reverted Roozbeh's commit, inserted back copyright line that has been left
     
-    2005-09-14  Behdad Esfahbod  <behdad@mate.org>
+    2005-09-14  Behdad Esfahbod  <behdad@gnome.org>
     
             * fa.po: Reverted Roozbeh's commit, inserted back copyright line
             that has been left out accidentally on 2005-09-06 commit of mine.
@@ -15310,12 +15310,12 @@ Date:   Sun Sep 11 11:15:16 2005 +0000
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit a63a6400d385d4ee8b6e8b070c941f904075fd92
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Thu Sep 8 13:35:59 2005 +0000
 
     Various gcc warning shut-ups. Mostly adding void to function definitions
     
-    2005-09-08  Behdad Esfahbod  <behdad@mate.org>
+    2005-09-08  Behdad Esfahbod  <behdad@gnome.org>
     
             * gucharmap/*.[ch]: Various gcc warning shut-ups.  Mostly adding void
             to function definitions with no parameter.
@@ -15346,12 +15346,12 @@ Date:   Thu Sep 8 13:35:59 2005 +0000
  23 files changed, 63 insertions(+), 54 deletions(-)
 
 commit 18c83aaa07be3bc6cc86d80226f3cf11e0d6fc3c
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Thu Sep 8 11:10:07 2005 +0000
 
     Bumped version /up/ to 1.4.4-cvs.
     
-    2005-09-08  Behdad Esfahbod  <behdad@mate.org>
+    2005-09-08  Behdad Esfahbod  <behdad@gnome.org>
     
             * configure.ac: Bumped version /up/ to 1.4.4-cvs.
     
@@ -15394,12 +15394,12 @@ Date:   Wed Sep 7 18:42:21 2005 +0000
  2 files changed, 990 insertions(+), 0 deletions(-)
 
 commit 8e2c46600ca278e4ff73bf1522ab2a2eee3c3ed0
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Tue Sep 6 18:42:22 2005 +0000
 
     1.4.4 released.
     
-    2005-09-06  Behdad Esfahbod  <behdad@mate.org>
+    2005-09-06  Behdad Esfahbod  <behdad@gnome.org>
     
             1.4.4 released.
     
@@ -15416,12 +15416,12 @@ Date:   Tue Sep 6 18:42:22 2005 +0000
  5 files changed, 18 insertions(+), 9 deletions(-)
 
 commit aa159a02a2a81a7f756baefa40a7853ca5cd5355
-Author: Behdad Esfahbod <behdad@mate.org>
+Author: Behdad Esfahbod <behdad@gnome.org>
 Date:   Tue Sep 6 18:41:50 2005 +0000
 
     Translation updated.
     
-    2005-09-06  Behdad Esfahbod  <behdad@mate.org>
+    2005-09-06  Behdad Esfahbod  <behdad@gnome.org>
     
             * fa.po: Translation updated.
 
@@ -15503,12 +15503,12 @@ Date:   Wed Aug 31 19:25:46 2005 +0000
  2 files changed, 350 insertions(+), 388 deletions(-)
 
 commit d0eef6f25a7482d4ddfd99c3b58cbc210151561f
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Wed Aug 31 09:37:11 2005 +0000
 
     Updated Norwegian bokmål translation. Same
     
-    2005-08-31  Kjartan Maraas  <kmaraas@mate.org>
+    2005-08-31  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Updated Norwegian bokmål translation.
     	* no.po: Same
@@ -15886,12 +15886,12 @@ Date:   Thu Apr 21 17:14:21 2005 +0000
  2 files changed, 389 insertions(+), 380 deletions(-)
 
 commit 1cb02f1dee49fca2ded91e57eb7473d438cec23c
-Author: Cai Qian <caiqian@mate.org>
+Author: Cai Qian <caiqian@gnome.org>
 Date:   Thu Apr 7 17:39:56 2005 +0000
 
     Updated Simplified Chinese.
     
-    2005-04-08  Cai Qian  <caiqian@mate.org>
+    2005-04-08  Cai Qian  <caiqian@gnome.org>
     
             * zh_CN.po: Updated Simplified Chinese.
 
@@ -16172,12 +16172,12 @@ Date:   Tue Nov 23 11:19:08 2004 +0000
  2 files changed, 51 insertions(+), 40 deletions(-)
 
 commit 2203e570e465c7c5cff1e8dc07e8695c836935a2
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Tue Nov 16 17:12:26 2004 +0000
 
     Distcheck fixes. Bump versions.
     
-    2004-11-16  Kjartan Maraas  <kmaraas@mate.org>
+    2004-11-16  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* Makefile.am: Distcheck fixes.
     	* configure.ac: Bump versions.
@@ -16371,12 +16371,12 @@ Date:   Sun Aug 29 14:30:45 2004 +0000
  2 files changed, 5 insertions(+), 1 deletions(-)
 
 commit 2f70946a36e728e4955732a7b3a57acfbb88a8ed
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Tue Aug 24 09:06:46 2004 +0000
 
     Add «nb» to ALL_LINGUAS.
     
-    2004-08-24  Kjartan Maraas  <kmaraas@mate.org>
+    2004-08-24  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* configure.ac: Add «nb» to ALL_LINGUAS.
 
@@ -16385,12 +16385,12 @@ Date:   Tue Aug 24 09:06:46 2004 +0000
  2 files changed, 5 insertions(+), 1 deletions(-)
 
 commit 9224e922474bbc5391cc67868fdeed2f5543f69a
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Tue Aug 24 09:06:03 2004 +0000
 
     Add. Update.
     
-    2004-08-24  Kjartan Maraas  <kmaraas@mate.org>
+    2004-08-24  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* nb.po: Add.
     	* no.po: Update.
@@ -16729,7 +16729,7 @@ commit 9337035c3bdfcfc164c61051b0fa016196d334d3
 Author: Dmitry Mastrukov <dmitrym@src.mate.org>
 Date:   Tue Mar 23 09:22:55 2004 +0000
 
-    ru.po: Updated Russian translation from Russian team <mate-cyr@mate.org>.
+    ru.po: Updated Russian translation from Russian team <mate-cyr@gnome.org>.
 
  po/ChangeLog |    5 +
  po/ru.po     |  820 ++++++++++++++++++++++++++++++++--------------------------
@@ -17019,12 +17019,12 @@ Date:   Wed Mar 10 15:01:57 2004 +0000
  2 files changed, 25 insertions(+), 29 deletions(-)
 
 commit 67f19235af575145120507c4d3b1cbe869cc571a
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Tue Mar 9 14:41:52 2004 +0000
 
     Updated Norwegian translation.
     
-    2004-03-09  Kjartan Maraas  <kmaraas@mate.org>
+    2004-03-09  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* no.po: Updated Norwegian translation.
 
@@ -17249,12 +17249,12 @@ Date:   Thu Feb 26 23:01:41 2004 +0000
  2 files changed, 329 insertions(+), 368 deletions(-)
 
 commit eb3b57d63ab951787343b47064e4f41c5cf072a4
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Thu Feb 26 14:36:20 2004 +0000
 
     Translation updated by Kees van den Broek.
     
-    2004-02-26  Vincent van Adrighem  <adrighem@mate.org>
+    2004-02-26  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Kees van den Broek.
 
@@ -17484,12 +17484,12 @@ Date:   Wed Feb 18 00:13:31 2004 +0000
  2 files changed, 317 insertions(+), 268 deletions(-)
 
 commit eb733a56e9a1ba035c5dabe1d3e167cbd558aeaa
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Tue Feb 17 21:44:50 2004 +0000
 
     Translation updated by Sebastien Bruggeman.
     
-    2004-02-17  Vincent van Adrighem  <adrighem@mate.org>
+    2004-02-17  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Sebastien Bruggeman.
 
@@ -18141,12 +18141,12 @@ Date:   Sat Jan 31 19:11:33 2004 +0000
  2 files changed, 293 insertions(+), 277 deletions(-)
 
 commit 2a2c47578ef6ac35235a20d24db44d57cf192d16
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sat Jan 31 13:44:18 2004 +0000
 
     Updated Norwegian translation.
     
-    2004-01-31  Kjartan Maraas  <kmaraas@mate.org>
+    2004-01-31  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* no.po: Updated Norwegian translation.
 
@@ -18348,12 +18348,12 @@ Date:   Thu Jan 29 10:19:38 2004 +0000
  1 files changed, 4 insertions(+), 4 deletions(-)
 
 commit dd7433f66f7a07a9eede74a375fd6c101e5a2296
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Thu Jan 29 10:18:43 2004 +0000
 
     Updated Norwegian translation
     
-    2004-01-29  Kjartan Maraas  <kmaraas@mate.org>
+    2004-01-29  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* no.po: Updated Norwegian translation
 
@@ -18504,12 +18504,12 @@ Date:   Thu Jan 22 12:13:25 2004 +0000
  2 files changed, 296 insertions(+), 243 deletions(-)
 
 commit 2286a973263ba9e9f65aa4098a14a5d5ed9f2e39
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Wed Jan 21 22:28:32 2004 +0000
 
     Translation updated by Kees van den Broek.
     
-    2004-01-21  Vincent van Adrighem  <adrighem@mate.org>
+    2004-01-21  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Kees van den Broek.
 
@@ -18528,12 +18528,12 @@ Date:   Mon Jan 19 17:28:10 2004 +0000
  2 files changed, 211 insertions(+), 204 deletions(-)
 
 commit 31052c88fc39a1124d4b47592f6db5c23027df75
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Mon Jan 19 13:26:32 2004 +0000
 
     Translation updated by Sebastien Bruggeman.
     
-    2004-01-19  Vincent van Adrighem  <adrighem@mate.org>
+    2004-01-19  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Sebastien Bruggeman.
 
@@ -18583,12 +18583,12 @@ Date:   Mon Jan 19 01:16:01 2004 +0000
  16 files changed, 627 insertions(+), 378 deletions(-)
 
 commit 1378cf740390943a37d4cd09102d215ef8eccd12
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Fri Jan 16 20:37:37 2004 +0000
 
     Updated Norwegian translation.
     
-    2004-01-16  Kjartan Maraas  <kmaraas@mate.org>
+    2004-01-16  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* no.po: Updated Norwegian translation.
 
@@ -18922,12 +18922,12 @@ Date:   Fri Jan 9 23:54:04 2004 +0000
  4 files changed, 970 insertions(+), 1 deletions(-)
 
 commit 3fcd09a111fb8ca6453a6e56ac6db1f620ec13b9
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Fri Jan 9 17:57:48 2004 +0000
 
     Translation updated by Sebastien Bruggeman.
     
-    2004-01-09  Vincent van Adrighem  <adrighem@mate.org>
+    2004-01-09  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Sebastien Bruggeman.
 
@@ -19120,12 +19120,12 @@ Date:   Sat Jan 3 11:37:24 2004 +0000
  2 files changed, 305 insertions(+), 226 deletions(-)
 
 commit 164f2f9ed6cb1617e59799a2a11709838d08a0f1
-Author: Vincent van Adrighem <adrighem@mate.org>
+Author: Vincent van Adrighem <adrighem@gnome.org>
 Date:   Fri Jan 2 22:30:58 2004 +0000
 
     Translation updated by Sebastien Bruggeman.
     
-    2004-01-02  Vincent van Adrighem  <adrighem@mate.org>
+    2004-01-02  Vincent van Adrighem  <adrighem@gnome.org>
     
     	* nl.po: Translation updated by Sebastien Bruggeman.
 
@@ -20055,12 +20055,12 @@ Date:   Fri Sep 5 21:45:48 2003 +0000
  2 files changed, 1039 insertions(+), 0 deletions(-)
 
 commit 02d440b45d2932543d3450da9032078f50193c33
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Fri Sep 5 12:56:40 2003 +0000
 
     Updated Norwegian translation.
     
-    2003-09-05  Kjartan Maraas  <kmaraas@mate.org>
+    2003-09-05  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* no.po: Updated Norwegian translation.
 
@@ -20233,12 +20233,12 @@ Date:   Mon Aug 25 06:03:13 2003 +0000
  2 files changed, 52 insertions(+), 47 deletions(-)
 
 commit eb18897cc0d0372d6fcba018c828d1dcf46d65bc
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sun Aug 24 17:24:11 2003 +0000
 
     Update Norwegian translation.
     
-    2003-08-24  Kjartan Maraas  <kmaraas@mate.org>
+    2003-08-24  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* no.po: Update Norwegian translation.
 
@@ -20624,12 +20624,12 @@ Date:   Fri Jul 11 16:34:09 2003 +0000
  2 files changed, 104 insertions(+), 125 deletions(-)
 
 commit a79d3784a54b7149c4c6c2bade1896958fcac5bd
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Fri Jul 11 14:24:40 2003 +0000
 
     Add Norwegian Same. Same.
     
-    2003-07-11  Kjartan Maraas  <kmaraas@mate.org>
+    2003-07-11  Kjartan Maraas  <kmaraas@gnome.org>
     
     	* configure.ac: Add Norwegian
     	* po/ChangeLog: Same.
@@ -20886,7 +20886,7 @@ commit 61257ac14ac0d2279018f39b1955903ac3e47ece
 Author: Dmitry Mastrukov <dmitrym@src.mate.org>
 Date:   Tue Jun 10 04:06:26 2003 +0000
 
-    ru.po: Added Russian translation from Russian team <mate-cyr@mate.org>.
+    ru.po: Added Russian translation from Russian team <mate-cyr@gnome.org>.
 
  po/ChangeLog |    5 +
  po/ru.po     | 1023 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

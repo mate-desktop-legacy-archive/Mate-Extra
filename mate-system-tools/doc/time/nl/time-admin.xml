@@ -51,7 +51,7 @@
 	      <surname>Translator 1</surname> 
 	      <affiliation> 
 	      	<orgname>Latin Translation Team</orgname> 
-	       	<address> <email>translator@mate.org</email> </address> 
+	       	<address> <email>translator@gnome.org</email> </address> 
 	      </affiliation>
 	      <contrib>Latin translation</contrib>
         </othercredit>
@@ -63,8 +63,8 @@
 	   <revnumber>&tool; Handleiding V&manrevision;</revnumber>
 	   <date>&date;</date>
 	   <revdescription>
-          <para role="author">carlosg@mate.org (Carlos Garnacho Parro)</para>
-          <para role="publisher">carlosg@mate.org (Carlos Garnacho Parro)</para>
+          <para role="author">carlosg@gnome.org (Carlos Garnacho Parro)</para>
+          <para role="publisher">carlosg@gnome.org (Carlos Garnacho Parro)</para>
 	   </revdescription>
 	 </revision>
     </revhistory>

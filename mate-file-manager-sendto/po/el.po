@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the caja-sendto package.
 #
 #
-# Kostas Papadimas <pkst@mate.org>, 2004.
+# Kostas Papadimas <pkst@gnome.org>, 2004.
 # Athanasios Lefteris <alefteris@gmail.com>, 2007, 2008.
 msgid ""
 msgstr ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-28 11:37+0300\n"
 "PO-Revision-Date: 2010-03-28 11:40+0200\n"
-"Last-Translator: Kostas Papadimas <pkst@mate.org>\n"
+"Last-Translator: Kostas Papadimas <pkst@gnome.org>\n"
 "Language-Team: Greek <team@mate.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

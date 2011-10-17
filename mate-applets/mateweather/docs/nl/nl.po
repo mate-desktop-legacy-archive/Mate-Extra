@@ -1128,8 +1128,8 @@ msgid "Garcia Campos"
 msgstr "Garcia Campos"
 
 #: /tmp/doc-l10n/cvs/applets-cpufreq.HEAD/C/cpufreq-applet.xml:53(email)
-msgid "carlosgc@mate.org"
-msgstr "carlosgc@mate.org"
+msgid "carlosgc@gnome.org"
+msgstr "carlosgc@gnome.org"
 
 #: /tmp/doc-l10n/cvs/applets-cpufreq.HEAD/C/cpufreq-applet.xml:80(revnumber)
 msgid "MATE 2.12"
@@ -1485,8 +1485,8 @@ msgstr ""
 #~ msgid "McCance"
 #~ msgstr "McCance"
 
-#~ msgid "shaunm@mate.org"
-#~ msgstr "shaunm@mate.org"
+#~ msgid "shaunm@gnome.org"
+#~ msgstr "shaunm@gnome.org"
 
 #~ msgid "Unknown"
 #~ msgstr "Onbekend"

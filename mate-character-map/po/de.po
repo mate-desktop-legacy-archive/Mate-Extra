@@ -2,9 +2,9 @@
 # Copyright (C) 2003, 2004 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gucharmap package.
 # Christian Neumair <chris@mate-de.org>, 2003, 2004.
-# Hendrik Richter <hendrikr@mate.org>, 2005, 2006.
+# Hendrik Richter <hendrikr@gnome.org>, 2005, 2006.
 # Andre Klapper <ak-47@gmx.net>, 2008, 2009.
-# Mario Blättermann <mariobl@mate.org>, 2010.
+# Mario Blättermann <mariobl@gnome.org>, 2010.
 #
 # #Fachbegriffe (Unicode terminology):
 # Skript - Schriftsystem
@@ -28,7 +28,7 @@ msgstr ""
 "POT-Creation-Date: 2010-09-04 17:02+0200\n"
 "PO-Revision-Date: 2010-09-04 17:03+0200\n"
 "Last-Translator: Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
-"Language-Team: Deutsch <mate-de@mate.org>\n"
+"Language-Team: Deutsch <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -412,7 +412,7 @@ msgstr "Basierend auf der Unicode-Zeichendatenbank 5.2"
 msgid "translator-credits"
 msgstr ""
 "Christian Neumair <chris@mate-de.org>\n"
-"Hendrik Richter <hendrikr@mate.org>\n"
+"Hendrik Richter <hendrikr@gnome.org>\n"
 "Andre Klapper <ak-47@gmx.net>"
 
 #: ../gucharmap/gucharmap-window.c:607 ../gucharmap/gucharmap-window.c:884

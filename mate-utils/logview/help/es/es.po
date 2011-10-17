@@ -10,7 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2009-12-14 21:53+0000\n"
 "PO-Revision-Date: 2009-12-29 20:22+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.mate.org>\n"
-"Language-Team: Español <mate-es-list@mate.org>\n"
+"Language-Team: Español <mate-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -200,8 +200,8 @@ msgid "Cutler"
 msgstr "Cutler"
 
 #: C/mate-system-log.xml:76(email)
-msgid "pcutler@mate.org"
-msgstr "pcutler@mate.org"
+msgid "pcutler@gnome.org"
+msgstr "pcutler@gnome.org"
 
 #: C/mate-system-log.xml:81(firstname)
 msgid "Vincent"
@@ -226,8 +226,8 @@ msgid "October 2009"
 msgstr "Octubre de 2009"
 
 #: C/mate-system-log.xml:107(para)
-msgid "Paul Cutler <email>pcutler@mate.org</email>"
-msgstr "Paul Cutler <email>pcutler@mate.org</email>"
+msgid "Paul Cutler <email>pcutler@gnome.org</email>"
+msgstr "Paul Cutler <email>pcutler@gnome.org</email>"
 
 #: C/mate-system-log.xml:114(revnumber)
 msgid "System Log Viewer Manual V2.4"

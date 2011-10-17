@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the mate-system-tools package.
 # Justina Klingaitė <justina.klingaite@gmail.com>, 2005.
 # Gintautas Miliauskas <gintas@akl.lt>, 2007, 2008.
-# Žygimantas Beručka <zygis@mate.org>, 2004-2008, 2010.
+# Žygimantas Beručka <zygis@gnome.org>, 2004-2008, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-system-tools mate-2-32\n"
@@ -11,7 +11,7 @@ msgstr ""
 "system-tools&component=general\n"
 "POT-Creation-Date: 2010-08-27 16:01+0000\n"
 "PO-Revision-Date: 2010-09-19 01:26+0300\n"
-"Last-Translator: Žygimantas Beručka <zygis@mate.org>\n"
+"Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <mate-lt@lists.akl.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"

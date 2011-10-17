@@ -532,10 +532,10 @@ msgstr "बिट रेटः"
 #: ../grecord/src/gsr-window.c:1239
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "MATE के लिये साउंड रिकार्डर\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1510
 msgid "Playing..."

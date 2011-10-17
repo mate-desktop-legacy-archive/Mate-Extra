@@ -3,7 +3,7 @@
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER.
 # Vital Khilko <dojlid@mova.org>,2002, 2003.
 # Ales Nyakhaychyk <nab@mail.by>, 2003, 2006, 2008.
-# Ihar Hrachyshka <iharh@mate.org>, 2006, 2007.
+# Ihar Hrachyshka <iharh@gnome.org>, 2006, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: totem.HEAD\n"

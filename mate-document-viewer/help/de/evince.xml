@@ -30,7 +30,7 @@
     <copyright>
       <year>2004</year>
       <holder>Sun Microsystems</holder>
-    </copyright><copyright><year>2008, 2009</year><holder>Mario Blättermann (mariobl@mate.org)</holder></copyright>
+    </copyright><copyright><year>2008, 2009</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright>
 
 <!-- translators: uncomment this:
     <copyright>
@@ -86,7 +86,7 @@
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-  	  <address> <email>translator@mate.org</email> </address> 
+  	  <address> <email>translator@gnome.org</email> </address> 
         </affiliation>
         <contrib>Latin translation</contrib>
       </othercredit>

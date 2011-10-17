@@ -3,10 +3,10 @@
 # This file is distributed under the same license as the gnote package.
 #
 # Funda Wang <fundawang@gmail.com>, 2004, 2008.
-# Ray Wang <raywang@mate.org>, 2009.
+# Ray Wang <raywang@gnome.org>, 2009.
 # Aron Xu <aronmalache@163.com>, 2009.
 # YunQiang Su <wzssyqa@gmail.com>, 2010.
-# Aron Xu <aronxu@mate.org>, 2010.
+# Aron Xu <aronxu@gnome.org>, 2010.
 #
 msgid ""
 msgstr ""

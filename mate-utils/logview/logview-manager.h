@@ -1,6 +1,6 @@
 /* logview-manager.h - manager for the opened log objects
  *
- * Copyright (C) 2008 Cosimo Cecchi <cosimoc@mate.org>
+ * Copyright (C) 2008 Cosimo Cecchi <cosimoc@gnome.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as

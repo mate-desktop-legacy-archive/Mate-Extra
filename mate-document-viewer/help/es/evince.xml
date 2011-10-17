@@ -30,7 +30,7 @@
     <copyright>
       <year>2004</year>
       <holder>Sun Microsystems</holder>
-    </copyright><copyright><year>2006-2008.</year><holder>Jorge González (jorge.gonzalez.gonzalez@hispalinux.es)</holder></copyright><copyright><year>2005.</year><holder>Francisco Javier F. Serrador (serrador@mate.org)</holder></copyright>
+    </copyright><copyright><year>2006-2008.</year><holder>Jorge González (jorge.gonzalez.gonzalez@hispalinux.es)</holder></copyright><copyright><year>2005.</year><holder>Francisco Javier F. Serrador (serrador@gnome.org)</holder></copyright>
 
 <!-- translators: uncomment this:
     <copyright>
@@ -86,7 +86,7 @@
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-  	  <address> <email>translator@mate.org</email> </address> 
+  	  <address> <email>translator@gnome.org</email> </address> 
         </affiliation>
         <contrib>Latin translation</contrib>
       </othercredit>

@@ -569,10 +569,10 @@ msgstr "Квалитет:"
 #: ../grecord/src/gsr-window.c:1241
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "Снимање звука за Гном\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1512
 #| msgid "Playing..."

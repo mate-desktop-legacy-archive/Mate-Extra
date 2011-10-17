@@ -3,8 +3,8 @@ see the MAINTAINERS file for who they are.
 
 ===============================================================================
 
-Discussion about mate-terminal should happen on desktop-devel-list@mate.org,
-mate-list@mate.org, or usability@mate.org, depending on what sort of
+Discussion about mate-terminal should happen on desktop-devel-list@gnome.org,
+mate-list@gnome.org, or usability@gnome.org, depending on what sort of
 discussion it is. Reporting a bug on http://bugzilla.mate.org is equally fine.
 
 Remember that the terminal emulation is provided by the VTE widget, maintained

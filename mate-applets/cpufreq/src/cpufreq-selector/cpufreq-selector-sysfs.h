@@ -1,6 +1,6 @@
 /*
  * MATE CPUFreq Applet
- * Copyright (C) 2004 Carlos Garcia Campos <carlosgc@mate.org>
+ * Copyright (C) 2004 Carlos Garcia Campos <carlosgc@gnome.org>
  *
  *  This library is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU General Public
@@ -16,7 +16,7 @@
  *  License along with this library; if not, write to the Free
  *  Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * Authors : Carlos García Campos <carlosgc@mate.org>
+ * Authors : Carlos García Campos <carlosgc@gnome.org>
  */
 
 #ifndef __CPUFREQ_SELECTOR_SYSFS_H__

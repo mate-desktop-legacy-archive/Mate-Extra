@@ -27,7 +27,7 @@
 # kostas: 256 messages,25Jan2004.
 # Simos Xenitellis <simos@hellug.gr>, 2001.
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2003, 2004, 2005.
-# Kostas Papadimas <pkst@mate.org>, 2002,2003, 2004, 2006, 2007, 2008.
+# Kostas Papadimas <pkst@gnome.org>, 2002,2003, 2004, 2006, 2007, 2008.
 # Konstantinos Kouratoras <kouratoras@gmail.com>, 2008.
 # Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
 msgid ""
@@ -361,7 +361,7 @@ msgstr "Ένας διαχειριστής συμπιεσμένων αρχείω�
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα MATE\n"
-" Κώστας Παπαδήμας <pkst@mate.org>\n"
+" Κώστας Παπαδήμας <pkst@gnome.org>\n"
 " Κωνσταντίνος Κουράτορας <kouratoras@gmail.com>\n"
 "\n"
 "Για περισσότερες πληροφορίες, επισκεφθείτε την σελίδα http://www.mate.gr/"

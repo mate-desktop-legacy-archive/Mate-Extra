@@ -131,7 +131,7 @@
 	* configure.in:
 	* obex/Makefile.am:
 	* obex/mate-obex-server.c:
-	Patch from Christian Persch <chpe@mate.org> to kill libegg
+	Patch from Christian Persch <chpe@gnome.org> to kill libegg
 	usage in the Obex server (Closes: #349303)
 
 2006-12-15  Christian Persch  <chpe@cvs.mate.org>
@@ -179,7 +179,7 @@
 
 	* configure.in: Added dz to ALL_LINGUAS
 
-2006-07-10  Kostas Papadimas  <pkst@mate.org>
+2006-07-10  Kostas Papadimas  <pkst@gnome.org>
 
 	* configure.in: Added el to ALL_LINGUAS.
 
@@ -229,7 +229,7 @@
 	Remove direct bluez and obex dependencies, and unneeded mate-vfs
 	module pkg-config check (Closes: #339073)
 
-2006-04-18  Kjartan Maraas  <kmaraas@mate.org>
+2006-04-18  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: More cruft removal
 	* po/no.po:
@@ -547,7 +547,7 @@
 
 	* configure.in: Added "es" to ALL_LINGUAS.
 
-2004-08-21  Kjartan Maraas  <kmaraas@mate.org>
+2004-08-21  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Add «nb» and «no» to ALL_LINGUAS.
 
@@ -567,7 +567,7 @@
 
 	* configure.in: Added Portuguese (pt) to ALL_LINGUAS.
 
-2004-08-06  Adam Weinberger  <adamw@mate.org>
+2004-08-06  Adam Weinberger  <adamw@gnome.org>
 
 	* configure.in: Added en_CA to ALL_LINGUAS
 

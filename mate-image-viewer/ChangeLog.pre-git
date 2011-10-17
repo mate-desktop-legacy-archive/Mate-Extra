@@ -1,4 +1,4 @@
-2009-08-09  Felix Riemann  <friemann@mate.org>
+2009-08-09  Felix Riemann  <friemann@gnome.org>
 
 	* bindings/python/Makefile.am:
 	* configure.ac:
@@ -6,12 +6,12 @@
 	* src/Makefile.am:
 	Add support for Automake 1.11's silent build rules.
 
-2009-08-05  Felix Riemann  <friemann@mate.org>
+2009-08-05  Felix Riemann  <friemann@gnome.org>
 
 	* data/eog.schemas.in: Enable smaller image properties dialog, aka
 	netbook mode, by default.
 
-2009-08-05  Felix Riemann  <friemann@mate.org>
+2009-08-05  Felix Riemann  <friemann@gnome.org>
 
 	* data/eog-preferences-dialog.glade:
 	* data/eog-preferences-dialog.ui:
@@ -21,7 +21,7 @@
 	Remove the UI controls for xdg fallback and netbook mode again.
 	It makes practically no sense to disable them.
 
-2009-08-04  Felix Riemann  <friemann@mate.org>
+2009-08-04  Felix Riemann  <friemann@gnome.org>
 
 	* src/eog-image.c (do_emit_size_prepared_signal),
 	(eog_image_emit_size_prepared), (eog_image_size_prepared),
@@ -29,27 +29,27 @@
 	* src/eog-window.c (eog_window_obtain_desired_size):
 	Improve compatibility with plugins using Clutter-1.0.
 
-2009-07-29  Felix Riemann  <friemann@mate.org>
+2009-07-29  Felix Riemann  <friemann@gnome.org>
 
 	* src/eog-properties-dialog.c (eog_properties_dialog_init):
 	Fix empty Details page in Image Properties Dialog when building
 	whithout Exif and XMP support.
 
-2009-07-29  Felix Riemann  <friemann@mate.org>
+2009-07-29  Felix Riemann  <friemann@gnome.org>
 
 	* src/eog-properties-dialog.c
 	(eog_properties_dialog_set_netbook_mode):
 	Fix build whithout any Exif and XMP support. Fixes bug #590124.
 
-2009-07-28  Felix Riemann  <friemann@mate.org>
+2009-07-28  Felix Riemann  <friemann@gnome.org>
 
 	* configure.ac: Post-release version bump.
 
-2009-07-28  Felix Riemann  <friemann@mate.org>
+2009-07-28  Felix Riemann  <friemann@gnome.org>
 
 	* NEWS: Update for 2.27.5.
 
-2009-07-25  Felix Riemann  <friemann@mate.org>
+2009-07-25  Felix Riemann  <friemann@gnome.org>
 
 	* data/eog-preferences-dialog.glade:
 	* data/eog-preferences-dialog.ui:
@@ -57,7 +57,7 @@
 	(eog_preferences_dialog_constructor):
 	Add UI controls for the netbook mode and the xdg fallback.
 
-2009-07-25  Felix Riemann  <friemann@mate.org>
+2009-07-25  Felix Riemann  <friemann@gnome.org>
 
 	* data/eog-image-properties-dialog.glade:
 	* data/eog-image-properties-dialog.ui:
@@ -75,20 +75,20 @@
 	should make the dialog behave better on devices with smaller displays,
 	e.g. netbooks. Fixes bug #566810.
 
-2009-07-25  Felix Riemann  <friemann@mate.org>
+2009-07-25  Felix Riemann  <friemann@gnome.org>
 
 	* configure.ac:
 	* plugins/*/Makefile.am:
 	Merge per-plugin Makefiles into a single one. This makes it possible
 	to build the plugins in parallel.
 
-2009-07-24  Felix Riemann  <friemann@mate.org>
+2009-07-24  Felix Riemann  <friemann@gnome.org>
 
 	* configure.ac:
 	* data/icons/*/*/Makefile.am:
 	Merge per-context Makefiles for the icons into per-size Makefiles.
 
-2009-07-24  Felix Riemann  <friemann@mate.org>
+2009-07-24  Felix Riemann  <friemann@gnome.org>
 
 	* data/eog.schemas.in:
 	* src/eog-config-keys.h:
@@ -102,19 +102,19 @@
 	GTK+ version to be at least 2.15.0, since we already depend on
 	2.15.1.
 
-2009-07-14  Felix Riemann  <friemann@mate.org>
+2009-07-14  Felix Riemann  <friemann@gnome.org>
 
 	* configure.ac: Post-release version bump.
 
-2009-07-14  Felix Riemann  <friemann@mate.org>
+2009-07-14  Felix Riemann  <friemann@gnome.org>
 
 	* NEWS: Update for 2.27.4.
 
-2009-07-14  Felix Riemann  <friemann@mate.org>
+2009-07-14  Felix Riemann  <friemann@gnome.org>
 
 	* data/eog-toolbar.xml: Allow saving from the toolbar.
 
-2009-07-01  Felix Riemann  <friemann@mate.org>
+2009-07-01  Felix Riemann  <friemann@gnome.org>
 
 	* src/eog-application.c (eog_application_show_window):
 	* src/eog-window.c (emit_window_prepared_signal),
@@ -591,11 +591,11 @@
 	* doc/reference/Makefile.am:
 	Fix build error with -Wl,--as-needed. Fixes bug #568410.
 
-2009-01-19  Lucas Rocha  <lucasr@mate.org>
+2009-01-19  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: Post release version bump.
 
-2009-01-19  Lucas Rocha  <lucasr@mate.org>
+2009-01-19  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.25.5.
 
@@ -666,11 +666,11 @@
 	Handle accelerator storage on our own without using libmateui.
 	Let the EogApplication class handle it. Part of bug #559500.
 
-2009-01-06  Lucas Rocha  <lucasr@mate.org>
+2009-01-06  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: Post release version bump.
 
-2009-01-06  Lucas Rocha  <lucasr@mate.org>
+2009-01-06  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.25.4.
 
@@ -887,12 +887,12 @@
 	Remove unneeded files, which are broken with latest GTK+ and were
 	never used by eog before anyway. Fixes bug #560336.
 
-2008-11-09  Kjartan Maraas  <kmaraas@mate.org>
+2008-11-09  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-toolbar-editor.c:
 	Add back removed include.
 
-2008-11-09  Kjartan Maraas  <kmaraas@mate.org>
+2008-11-09  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.ac: Add libxml2 to CFLAGS
 	* cut-n-paste/toolbar-editor/egg-toolbar-editor.c:
@@ -1364,7 +1364,7 @@
 
 	* autogen.sh: Reflect the raised intltool dep in autogen.sh.
 
-2008-06-18  Claudio Saavedra  <csaavedra@mate.org>
+2008-06-18  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-scroll-view.c: (+eog_scroll_view_set_bg_color):
 	New method to set the background color of the scrollview.
@@ -1373,20 +1373,20 @@
 	(eog_window_stop_fullscreen): Use eog_scroll_view_set_bg_color
 	instead of setting the color of the widget by hand.
 
-2008-06-16  Lucas Rocha  <lucasr@mate.org>
+2008-06-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-06-16  Lucas Rocha  <lucasr@mate.org>
+2008-06-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.23.4.1
 	* configure.in: depend on intltool 0.40.0.
 
-2008-06-16  Lucas Rocha  <lucasr@mate.org>
+2008-06-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-06-16  Lucas Rocha  <lucasr@mate.org>
+2008-06-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.23.4
 
@@ -1419,7 +1419,7 @@
 
 	* configure.ac: Disable building plugins as static archives by default.
 
-2008-06-10  Cosimo Cecchi  <cosimoc@mate.org>
+2008-06-10  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/eog-image.c: (eog_image_copy_file):
 	* src/eog-metadata-reader-jpg.c: (eog_metadata_reader_jpg_consume):
@@ -1441,11 +1441,11 @@
 
 	* src/eog-properties-dialog.c: Remove unused widget pointer.
 
-2008-06-03  Lucas Rocha  <lucasr@mate.org>
+2008-06-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-06-03  Lucas Rocha  <lucasr@mate.org>
+2008-06-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.23.3
 
@@ -1455,12 +1455,12 @@
 	scroll the image if zoomed in. Navigation is still possible using the
 	standard Alt+ArrowKey then. Fixes bug #532925 (Gernot Klimscha).
 
-2008-06-03  Lucas Rocha  <lucasr@mate.org>
+2008-06-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-thumbnail.c (eog_thumbnail_load): never generate any
 	thumbnail when viewing thumbnails. Fixes bug #533041.
 
-2008-05-31  Lucas Rocha  <lucasr@mate.org>
+2008-05-31  Lucas Rocha  <lucasr@gnome.org>
 
 	* data/eog-image-properties-dialog.glade: define ellipsize mode for
 	all metadata labels to avoid the dialog to expand too much.
@@ -1482,7 +1482,7 @@
 	* src/eog-thumb-view.c: (thumbview_on_query_tooltip_cb):
 	Fix leaking GFileInfo.
 
-2008-05-20  Claudio Saavedra  <csaavedra@mate.org>
+2008-05-20  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-image.c: (eog_image_class_init):
 	* src/eog-scroll-view.c: (eog_scroll_view_class_init):
@@ -1493,14 +1493,14 @@
 	also fix introspection (making gtk-doc actually document these
 	signals).
 
-2008-05-20  Claudio Saavedra  <csaavedra@mate.org>
+2008-05-20  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-message-area.c: (eog_message_area_class_init):
 	* src/eog-thumb-nav.c:
 
 	Add documentation for EogMessageArea and EogThumbNav.
 
-2008-05-19  Claudio Saavedra  <csaavedra@mate.org>
+2008-05-19  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-print-preview.c: (eog_print_preview_class_init): Fixed
 	a typo in a comment. Made the "image-moved" signal documentation
@@ -1509,19 +1509,19 @@
 	* src/eog-window.h: Make function prototypes match function
 	declarations.
 
-2008-05-19  Claudio Saavedra  <csaavedra@mate.org>
+2008-05-19  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-list-store.c:
 	* src/eog-thumb-view.c:
 
 	Add documentation for EogListStore and EogThumbView.
 
-2008-05-19  Claudio Saavedra  <csaavedra@mate.org>
+2008-05-19  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-thumb-view.h: Make all the function prototypes
 	match function declarations.
 
-2008-05-14  Claudio Saavedra  <csaavedra@mate.org>
+2008-05-14  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-thumb-view.c: Rename all EogThumbView objects
 	from 'tb' to 'thumbview' and clean indentation.
@@ -1538,7 +1538,7 @@
 
 	* doc/reference/Makefile.am: Make the API docs pass distcheck.
 
-2008-05-10  Claudio Saavedra  <csaavedra@mate.org>
+2008-05-10  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* doc/reference/eog-sections.txt: Remove unneeded private elements
 	from documentation.
@@ -1573,7 +1573,7 @@
 	Don't let lcms abort EOG if it encounters an error while trying to
 	load the display profile. Fixes bug #531300.
 
-2008-04-29  Claudio Saavedra  <csaavedra@mate.org>
+2008-04-29  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* Makefile.am: Add doc to SUBDIRS and --enable-gtk-doc to
 	DISTCHECK_CONFIGURE_FLAGS.
@@ -1598,11 +1598,11 @@
 	* data/eog.desktop.in.in: Add "image/svg+xml-compressed" to the list
 	of supported file types. Fixes bug #530102 (Franklin Piat).
 
-2008-04-21  Lucas Rocha  <lucasr@mate.org>
+2008-04-21  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-04-21  Lucas Rocha  <lucasr@mate.org>
+2008-04-21  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.23.1
 
@@ -1612,12 +1612,12 @@
 	Check if the passed object is actually a JPEG reader not just a
 	metadata reader.
 
-2008-04-12  Claudio Saavedra  <csaavedra@mate.org>
+2008-04-12  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-thumb-view.c: (tb_on_query_tooltip_cb): Do not show
 	image dimensions if this is not available.
 
-2008-04-12  Claudio Saavedra  <csaavedra@mate.org>
+2008-04-12  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-image.c: (eog_image_get_dimension_from_thumbnail):
 	* src/eog-jobs.c: (eog_job_thumbnail_run):
@@ -1647,17 +1647,17 @@
 	Don't skip the XMP xpacket tag. Exempi seems to handle it just fine.
 	Increases compatibility with non-standard xpackets. Fixes bug #526331.
 
-2008-04-05  Claudio Saavedra  <csaavedra@mate.org>
+2008-04-05  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-print-preview.c: (eog_print_preview_new),
 	(motion_notify_event_cb): Use the fleur cursor while
 	hovering the image in the preview for better feedback.
 
-2008-04-05  Claudio Saavedra  <csaavedra@mate.org>
+2008-04-05  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-print.c: Remove unused macro.
 
-2008-04-05  Claudio Saavedra  <csaavedra@mate.org>
+2008-04-05  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-print.c: (eog_print_get_key_file),
 	(eog_print_get_page_setup), (eog_print_save_key_file),
@@ -1692,11 +1692,11 @@
 	Better use was made of the GFileInfo thumbnail data. The
 	thumbnail debugging code was modernized. Fixes bug #525618.
 
-2008-04-03  Claudio Saavedra  <csaavedra@mate.org>
+2008-04-03  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-window.c: Remove unused gtkprintunixdialog.h include.
 
-2008-04-03  Claudio Saavedra  <csaavedra@mate.org>
+2008-04-03  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/Makefile.am: Add eog-print.[ch]
 	* src/eog-print-image-setup.h: Remove declaration of EogPrintData.
@@ -1708,7 +1708,7 @@
 
 	Move all printing related code out from eog-window.c to eog-print.c
 
-2008-04-02  Claudio Saavedra  <csaavedra@mate.org>
+2008-04-02  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-window.c: (eog_window_key_press): Give the scrollview
 	a chance to handle the key press event, to allow zooming in/out
@@ -1751,16 +1751,16 @@
 	data. This also moves the ICC profile generation using chromacity
 	and gamma values from EogImage into the readers. Fixes bug #523856.
 
-2008-03-23  Lucas Rocha  <lucasr@mate.org>
+2008-03-23  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window (eog_window_key_press): bring back 'q' as a shortcut
 	for closing windows. Fixes bug #492017.
 
-2008-03-22  Lucas Rocha  <lucasr@mate.org>
+2008-03-22  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/main.c: improve new --new-instance option description.
 
-2008-03-21  Claudio Saavedra  <csaavedra@mate.org>
+2008-03-21  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/main.c: (main): Add a --new-instance command line parameter.
 	Fixes bug #523173.
@@ -1770,13 +1770,13 @@
 	* src/eog-thumbnail.c: (eog_thumb_data_free), (eog_thumb_data_new):
 	Use GSlice to alloc/free the internal EogThumbData structure.
 
-2008-03-20  Claudio Saavedra  <csaavedra@mate.org>
+2008-03-20  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-exif-util.c: (eog_exif_util_format_date_with_strptime),
 	(eog_exif_util_format_date_by_hand): Use a more readable format for
 	the date. Also, mark it for localization.
 
-2008-03-20  Claudio Saavedra  <csaavedra@mate.org>
+2008-03-20  Claudio Saavedra  <csaavedra@gnome.org>
 
 	* src/eog-image.c: (eog_image_real_load): Do not crash if the
 	error parameter is NULL.
@@ -1835,7 +1835,7 @@
 	* src/eog-metadata-reader.h: Make it easier to include metadata	readers
 	besides the already present JPEG reader. Fixes bug #522077.
 
-2008-03-17  Lucas Rocha  <lucasr@mate.org>
+2008-03-17  Lucas Rocha  <lucasr@gnome.org>
 
 	Added two basic default plugins. More to come.
 
@@ -1844,7 +1844,7 @@
 	* configure.ac, Makefile.am, plugins/Makefile.am, po/POTFILES.in:
 	added new default plugins to the build.
 
-2008-03-15  Lucas Rocha  <lucasr@mate.org>
+2008-03-15  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image.[ch] (eog_image_init, eog_image_save_by_info,
 	-eog_image_restore_status, -eog_image_set_is_monitored): remove
@@ -1942,34 +1942,34 @@
 	* src/eog-scroll-view.c:
 	Remove two long obsoleted defines.
 
-2008-03-10  Lucas Rocha  <lucasr@mate.org>
+2008-03-10  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-03-10  Lucas Rocha  <lucasr@mate.org>
+2008-03-10  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.22.0
 
-2008-03-03  Lucas Rocha  <lucasr@mate.org>
+2008-03-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* bindings/python/eog.override, src/eog-python-plugin.c: avoid multiply
 	defined symbols when linking Python bindings by using
 	NO_IMPORT_PYGOBJECT and NO_IMPORT before inclusing pygtk and pygobject
 	headers. Fixes bug #506421 (Paul).
 
-2008-03-03  Lucas Rocha  <lucasr@mate.org>
+2008-03-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_update_recent_files_menu): introduce an
 	RLM character when default direction is RTL in order to have recent
 	files shown with the correct direction. Fixes bug #509079 (Djihed Afifi)
 
-2008-03-03  Lucas Rocha  <lucasr@mate.org>
+2008-03-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/main.c (main): wrap gtk_main() between gdk_threads_enter()
 	and gdk_threads_leave() in order to avoid locking usage problems.
 	Fixes bug #498989 (Matt Keenan).
 
-2008-03-03  Lucas Rocha  <lucasr@mate.org>
+2008-03-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: update glib dependency to 2.15.3 version.
 	* src/eog-window.c (move_to_trash_real): use gio to move file to trash
@@ -2026,11 +2026,11 @@
 	* src/eog-window.c: (eog_window_class_init):
 	Remove an obsoleted code comment.
 
-2008-02-25  Lucas Rocha  <lucasr@mate.org>
+2008-02-25  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-02-25  Lucas Rocha  <lucasr@mate.org>
+2008-02-25  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.21.92
 
@@ -2323,7 +2323,7 @@
 
 	* NEWS: Update for 2.21.3
 
-2007-12-09  Lucas Rocha  <lucasr@mate.org>
+2007-12-09  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (update_action_groups_state): do not run update_ui
 	for plugins when updating actions groups because this should only be
@@ -2335,15 +2335,15 @@
 	tooltip	markup string. This unbreaks the tooltips for images whose
 	filename contains characters needing to be escaped in markup.
 
-2007-12-04  Lucas Rocha  <lucasr@mate.org>
+2007-12-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.in: post release version bump.
 
-2007-12-04  Lucas Rocha  <lucasr@mate.org>
+2007-12-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.21.2
 
-2007-11-27  Lucas Rocha  <lucasr@mate.org>
+2007-11-27  Lucas Rocha  <lucasr@gnome.org>
 
 	Correctly handle Up/Down keys in image collection so that it works as
 	expected on multiple lines layouts. Fixes bug #458661 (Claudio
@@ -2359,7 +2359,7 @@
 	forward the key press event to the collection pane in all cases other
 	cases.
 
-2007-11-27  Lucas Rocha  <lucasr@mate.org>
+2007-11-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* bindings/python/eog.defs: wrap eog_image_load in Python bindings.
 	Fixes bug #499156 (Ross Burton).
@@ -2410,7 +2410,7 @@
 	* src/eog-window.c: (eog_window_collection_mode_changed_cb):
 	Fix leaking MateConf data.
 
-2007-11-13  Lucas Rocha  <lucasr@mate.org>
+2007-11-13  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.[ch] (eog_window_get_mode, eog_window_set_mode):
 	exposed EogWindow's modes and added new APIs for getting and setting
@@ -2418,7 +2418,7 @@
 	* bindings/python/eog.defs: added eog_window_get_mode and
 	eog_window_set_mode to the Python bindings accordingly.
 
-2007-11-13  Lucas Rocha  <lucasr@mate.org>
+2007-11-13  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.[ch] (eog_window_get_view): added an API for getting
 	the scroll view for EogWindow.
@@ -2471,21 +2471,21 @@
 	Use "user-trash" i.s.o. GTK_STOCK_DELETE icon for "Move To Trash"
 	Fixes bug #491528
 
-2007-10-30  Lucas Rocha  <lucasr@mate.org>
+2007-10-30  Lucas Rocha  <lucasr@gnome.org>
 
 	* data/eog.schemas.in: restored the default mousewheel-for-zooming
 	behavior by setting /apps/eog/view/scroll_wheel_zoom key to true by
 	default. Fixes bug #491826.
 
-2007-10-29  Lucas Rocha  <lucasr@mate.org>
+2007-10-29  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.in: post release version bump.
 
-2007-10-29  Lucas Rocha  <lucasr@mate.org>
+2007-10-29  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS, configure.ac: Update for 2.21.1
 
-2007-10-29  Lucas Rocha  <lucasr@mate.org>
+2007-10-29  Lucas Rocha  <lucasr@gnome.org>
 
 	Add a context menu in image view widget.
 	Fixes bug #481301 (Cosimo Cecchi)
@@ -2500,13 +2500,13 @@
 	applications for "Open with..." action.
 	(eog_window_construct_ui): add popup menu on image view widget.
 
-2007-10-29  Lucas Rocha  <lucasr@mate.org>
+2007-10-29  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-util.c (eog_util_make_valid_utf8): add " (invalid Unicode)"
 	suffix to image captions with invalid utf8 characters.
 	Fixes bug #475124.
 
-2007-10-29  Lucas Rocha  <lucasr@mate.org>
+2007-10-29  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_can_save_changed_cb,
 	update_action_groups_state, eog_job_load_cb,
@@ -2550,14 +2550,14 @@
 	* src/eog-thumb-nav.c: (eog_thumb_nav_scroll_step): Do not use
 	static in the GtkAdjustment. Fixes bug #488344.
 
-2007-10-16  Lucas Rocha  <lucasr@mate.org>
+2007-10-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-scroll-view.c (eog_scroll_view_button_press_event): enable
 	dragging with button1 when scroll_wheel_zoom is enabled in order to
 	make it possible to fully restore old wheel zooming and dragging
 	behavior. Fixes bug #479884.
 
-2007-10-16  Lucas Rocha  <lucasr@mate.org>
+2007-10-16  Lucas Rocha  <lucasr@gnome.org>
 
 	Port a hack from gedit to make the style be correctly set to the
 	message area.
@@ -2568,7 +2568,7 @@
 	(eog_message_area_class_init), (eog_message_area_init): do not handle
 	style_set directly on message area anymore.
 
-2007-10-15  Lucas Rocha  <lucasr@mate.org>
+2007-10-15  Lucas Rocha  <lucasr@gnome.org>
 
 	Because of a bug in mate-vfs file monitoring, we need to avoid
 	an image that is being saved to be removed and re-added by the monitor
@@ -2689,11 +2689,11 @@
 	* src/eog-plugin-manager.c: (about_button_cb): Adapt the plugin about
 	dialog to a changed property name in gtk+-2.11. Fixes bug #476313.
 
-2007-09-17  Lucas Rocha  <lucasr@mate.org>
+2007-09-17  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.in: post release version bump.
 
-2007-09-17  Lucas Rocha  <lucasr@mate.org>
+2007-09-17  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.20.0
 
@@ -2712,7 +2712,7 @@
 
 	* src/eog-window.c: (eog_window_cmd_about): Updated the authors array.
 
-2007-09-10  Lucas Rocha  <lucasr@mate.org>
+2007-09-10  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: better pygtk detection error reporting.
 	Fixes bug #471530 (Paolo Borelli).
@@ -2722,7 +2722,7 @@
 	* configure.in: remove help/it from AC_OUTPUT (moved to
 	mate-doc-utils)
 
-2007-09-10  Lucas Rocha  <lucasr@mate.org>
+2007-09-10  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-util.c (eog_util_make_valid_utf8): correctly commented out
 	code chunk that adds new string for translation.
@@ -2740,13 +2740,13 @@
 	the remaining bytes of EXIF/XMP data if these are smaller than the
 	buffer that's being consumed. Fixes bug #474710.
 
-2007-09-09  Lucas Rocha  <lucasr@mate.org>
+2007-09-09  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-util.c (eog_util_make_valid_utf8): import implementation of
 	this function from 2.18 in order to fix problems on handling non-utf8
 	image captions correctly. Fixes bug #440254.
 
-2007-09-09  Lucas Rocha  <lucasr@mate.org>
+2007-09-09  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image-jpeg.c (init_transform_info): take the
 	auto-orientation into account before saving image.
@@ -2793,25 +2793,25 @@
 	* src/eog-application.c: (eog_application_get_uri_window):
 	Avoid a critcal warning when loading an image into an empty window.
 
-2007-09-05  Lucas Rocha  <lucasr@mate.org>
+2007-09-05  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image (eog_image_update_exif_data): reset EXIF orientation
 	when the image modified in order to behave as expected by the user
 	when the image is loaded again. Fixes bug #470521.
 
-2007-09-05  Lucas Rocha  <lucasr@mate.org>
+2007-09-05  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image.c (eog_image_real_load): do not set error if the image
 	was partially loaded when closing pixbuf loader. Fixes bug #354352.
 
-2007-09-05  Lucas Rocha  <lucasr@mate.org>
+2007-09-05  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image.c (+eog_image_get_file_info,
 	eog_image_real_load): force mime type on pixbuf loader in order to
 	to recognize less usual image format like compressed SVG images.
 	Fixes bug #394803 (Matthias Clasen, Felix Riemann).
 
-2007-09-04  Lucas Rocha  <lucasr@mate.org>
+2007-09-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image-private.h: added threadsafe_format private attribute.
 	* src/eog-image.c (+eog_image_pre_size_prepared,
@@ -2820,7 +2820,7 @@
 	deadlocks to image loading process.
 	Fixes bug #449409 and bug #447063 (Felix Riemann).
 
-2007-09-04  Lucas Rocha  <lucasr@mate.org>
+2007-09-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-jobs.c (eog_job_thumbnail_run): added safety checks in case
 	thumbnail loading fails.
@@ -2829,39 +2829,39 @@
 	eog_job_thumbnail_cb): use "image-missing" icon in case thumbnail
 	loading fails.
 
-2007-09-04  Lucas Rocha  <lucasr@mate.org>
+2007-09-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.in: post release version bump.
 
-2007-09-04  Lucas Rocha  <lucasr@mate.org>
+2007-09-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.19.92
 
-2007-09-04  Lucas Rocha  <lucasr@mate.org>
+2007-09-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_key_press): fix checks for masks in the
 	key press event that were avoiding properties dialog to be activated.
 
-2007-09-04  Lucas Rocha  <lucasr@mate.org>
+2007-09-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-thumb-nav.c (eog_thumb_nav_scroll_event,
 	eog_thumb_nav_init): use the mouse wheel to scroll through the image
 	list only in case it's in one row mode. Fixes bug #427046.
 
-2007-09-03  Lucas Rocha  <lucasr@mate.org>
+2007-09-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-statusbar.c (eog_statusbar_init): revert part of the changed
 	in statusbar layout to avoid consistency problem when showing/hidding
 	progress bar.
 
-2007-09-03  Lucas Rocha  <lucasr@mate.org>
+2007-09-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-thumb-view.[ch] (eog_thumb_view_select_single): new mode for
 	select single method for current image.
 	* src/eog-window.c (eog_window_error_message_area_response): retry
 	image loading in case the "Retry" button in presses in message area.
 
-2007-09-03  Lucas Rocha  <lucasr@mate.org>
+2007-09-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-statusbar.[ch] (eog_statusbar_init),
 	(eog_statusbar_set_has_resize_grip): correctly set resize grip on
@@ -2869,7 +2869,7 @@
 	* src/eog-window.c (eog_window_window_state_event): use new API for
 	setting resize grip on EogStatusbar.
 
-2007-09-03  Lucas Rocha  <lucasr@mate.org>
+2007-09-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* data/Makefile.am, data/gtkrc: new style definition for image
 	collection horizontal scrollbars.
@@ -2895,7 +2895,7 @@
 	in the result buffer to 0 before buffering the exif value in it.
 	This should prevent empty values from displaying garbage.
 
-2007-08-31  Lucas Rocha  <lucasr@mate.org>
+2007-08-31  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_construct_ui): correctly size the side
 	bar with default width.
@@ -2923,20 +2923,20 @@
 	* src/eog-application.c: (eog_application_real_open_uri_list):
 	Fix segfault when starting without any images.
 
-2007-08-28  Lucas Rocha  <lucasr@mate.org>
+2007-08-28  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.in: post release version bump.
 
-2007-08-28  Lucas Rocha  <lucasr@mate.org>
+2007-08-28  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.19.91
 
-2007-08-27  Lucas Rocha  <lucasr@mate.org>
+2007-08-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-thumb-view.c (eog_thumb_view_init): set item width to avoid
 	inconsistent looks with thin images.
 
-2007-08-27  Lucas Rocha  <lucasr@mate.org>
+2007-08-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-application.c (eog_application_get_uri_window,
 	eog_application_real_open_uri_list): reuse window for the same image
@@ -2944,17 +2944,17 @@
 	* src/eog-window.c (eog_window_get_uri), bindings/python/eog.defs:
 	removed useless method.
 
-2007-08-27  Lucas Rocha  <lucasr@mate.org>
+2007-08-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-plugin-manager.c (eog_plugin_manager_init): make plugin list
 	HIG compliant. Fixes bug #467835 (Martin Ejdestig).
 
-2007-08-27  Lucas Rocha  <lucasr@mate.org>
+2007-08-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* help/C/eog.xml: update new use of Ctrl+scroll wheel for zooming
 	in the manual. Fixes bug #470686.
 
-2007-08-27  Lucas Rocha  <lucasr@mate.org>
+2007-08-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-thumbnail.c (eog_thumbnail_init): use thumbnail-frame.png
 	from the new location.
@@ -2969,7 +2969,7 @@
 	gtk_widget_hide instead of _hide_all to allow loading images into an
 	empty window. Fixes bug #470297.
 
-2007-08-26  Lucas Rocha  <lucasr@mate.org>
+2007-08-26  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-thumb-view.c (eog_thumb_view_init): do not colorize
 	thumbnails on selection.
@@ -2978,33 +2978,33 @@
 
 	* src/eog-statusbar.c: Remove unused private structure member.
 
-2007-08-16  Lucas Rocha  <lucasr@mate.org>
+2007-08-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c: make Page Setup/Properties/Trash menu items
 	not accessible. Fixes bug #466681 (Patrick Wade).
 
-2007-08-16  Lucas Rocha  <lucasr@mate.org>
+2007-08-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* bindings/python/eog.defs, bindings/python/eog.override: Wrap the
 	sidebar for the python bindings. Patch from John Stowers
 	<john.stowers@gmail.com>..
 
-2007-08-14  Lucas Rocha  <lucasr@mate.org>
+2007-08-14  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.in: post release version bump.
 
-2007-08-14  Lucas Rocha  <lucasr@mate.org>
+2007-08-14  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.19.5
 
-2007-08-14  Lucas Rocha  <lucasr@mate.org>
+2007-08-14  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/Makefile.am, src/eog-pixbuf-cell-renderer.[ch]: new cell renderer
 	that draws selection more clearly in the image collection pane.
 	* src/eog-thumb-nav.c: small fixes in the sizing of thumb view widget.
 	* src/eog-thumb-view.c: use new custom pixbuf cell renderer.
 
-2007-08-13  Lucas Rocha  <lucasr@mate.org>
+2007-08-13  Lucas Rocha  <lucasr@gnome.org>
 
 	Inhibit screensaver when running slideshow. Fixes bug #459819.
 
@@ -3025,11 +3025,11 @@
 	* data/eog.desktop.in.in: Add WBMP to supported filetypes.
 	Fixes bug #408591 (Sven Arvidsson).
 
-2007-08-12  Lucas Rocha  <lucasr@mate.org>
+2007-08-12  Lucas Rocha  <lucasr@gnome.org>
 
 	* MAINTAINERS: changed file to new format.
 
-2007-08-12  Lucas Rocha  <lucasr@mate.org>
+2007-08-12  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_cmd_about): simplified program
 	description.
@@ -3081,13 +3081,13 @@
 	* src/eog-list-store.c: (eog_list_store_remove_thumbnail_job):
 	Remove unused variable and mark function as static (Cosimo Cecchi).
 
-2007-08-06  Lucas Rocha  <lucasr@mate.org>
+2007-08-06  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-preferences-dialog.c, data/eog.glade: removed
 	"Image Collection" tab from preferences dialog. The image
 	collection positioting is a hidden feature from now on.
 
-2007-08-06  Lucas Rocha  <lucasr@mate.org>
+2007-08-06  Lucas Rocha  <lucasr@gnome.org>
 
 	* data/eog-ui.xml: added "Side Pane" menu item to main menubar.
 	* src/Makefile.am: added eog-sidebar.[ch] to the build.
@@ -3227,7 +3227,7 @@
 	a g_idle, in order to avoid slowing down the dialog creation.
 	Fixes bug #453151 (Stefan Röllin, Claudio Saavedra).
 
-2007-07-19  Lucas Rocha  <lucasr@mate.org>
+2007-07-19  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-exif-details.[c,h], src/main.c,
 	src/eog-properties-dialog.[c.h], src/eog-metadata-reader.[c,h],
@@ -3251,11 +3251,11 @@
 
 	* data/eog.glade: Remove some unnecessary translations.
 
-2007-07-09  Lucas Rocha  <lucasr@mate.org>
+2007-07-09  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.in: post release version bump.
 
-2007-07-09  Lucas Rocha  <lucasr@mate.org>
+2007-07-09  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.19.4
 
@@ -3264,7 +3264,7 @@
 	* src/eog-jobs.c: (eog_job_save_as_real_run):
 	Make file overwriting actually work in single-SaveAs mode.
 
-2007-07-07  Lucas Rocha  <lucasr@mate.org>
+2007-07-07  Lucas Rocha  <lucasr@gnome.org>
 
 	Add ability to enable collection pane when in fullscreen.
 	Fixes bug #449741.
@@ -3285,7 +3285,7 @@
 	* src/eog-window.c: (eog_window_trans_color_changed_cb):
 	Use correct operator in fix for bug #453503.
 
-2007-07-05  Lucas Rocha  <lucasr@mate.org>
+2007-07-05  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-list-store.c (vfs_monitor_dir_cb,
 	eog_list_store_append_directory, get_uri_info): small code cleanups.
@@ -3295,23 +3295,23 @@
 	action groups states when a new image is added or removed from the
 	list store. Fixes bug #435408.
 
-2007-07-05  Lucas Rocha  <lucasr@mate.org>
+2007-07-05  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_key_press): don't handle Alt+Return to
 	be able to use it for image properties dialog.
 
-2007-07-05  Lucas Rocha  <lucasr@mate.org>
+2007-07-05  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (set_action_properties, eog_window_construct_ui):
 	set the short name for the image collection toolbar item to simplify
 	the label. Fixes bug #453064.
 
-2007-07-05  Lucas Rocha  <lucasr@mate.org>
+2007-07-05  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_trans_color_changed_cb): check value
 	returned from mateconf before using it. Fixes bug #453503.
 
-2007-07-04  Lucas Rocha  <lucasr@mate.org>
+2007-07-04  Lucas Rocha  <lucasr@gnome.org>
 
 	Added Python support in the plugin system.
 
@@ -3375,7 +3375,7 @@
 	(eog_window_class_init): enabled drop of URI list on main window for
 	opening images.
 
-2007-06-26  Lucas Rocha  <lucasr@mate.org>
+2007-06-26  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-properties-dialog.c (eog_properties_dialog_init,
 	pd_exif_details_activated_cb, pd_resize_dialog): resize dialog when
@@ -3394,13 +3394,13 @@
 	Even more cleanup to my last commit.
 	Fixes bug #450590 (Felix Riemann, Jaap Haitsma)
 
-2007-06-24  Lucas Rocha  <lucasr@mate.org>
+2007-06-24  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image.c (eog_image_apply_transformations,
 	eog_image_real_load): improved error handling on image loading so that
 	it catches all failure cases. Fixes bug #413211 (Chris Wilson).
 
-2007-06-24  Lucas Rocha  <lucasr@mate.org>
+2007-06-24  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_key_press): don't use GDK_Q and GDK_q
 	to close window in order to keep HIG compliance.
@@ -3428,7 +3428,7 @@
 	Fixes bug #350809 (Jef Driesen).
 	* configure.ac: Bump libexif requirement to 0.6.14.
 
-2007-06-22  Lucas Rocha  <lucasr@mate.org>
+2007-06-22  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-thumb-view.[ch] (eog_thumb_view_init,
 	eog_thumb_view_set_item_height): added a method for setting the items
@@ -3437,19 +3437,19 @@
 	* src/eog-thumb-nav.c (eog_thumb_nav_set_mode): set item's height
 	accodingly depending on the mode.
 
-2007-06-22  Lucas Rocha  <lucasr@mate.org>
+2007-06-22  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_run_fullscreen,
 	eog_window_stop_fullscreen): removed grey border when in fullscreen
 	mode. Fixes bug #425613 (Felix Riemann).
 
-2007-06-22  Lucas Rocha  <lucasr@mate.org>
+2007-06-22  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-scroll-view.c (eog_scroll_view_button_press_event,
 	eog_scroll_view_button_release_event): enable dragging with
 	Ctrl+Button1. Fixes bug #438242.
 
-2007-06-22  Lucas Rocha  <lucasr@mate.org>
+2007-06-22  Lucas Rocha  <lucasr@gnome.org>
 
 	Use the same thumbnail frame than caja. Fixes bug #441138.
 
@@ -3468,7 +3468,7 @@
 	for thumbnail frame.
 	* src/eog-thumb-shadow.[ch]: removed.
 
-2007-06-19  Lucas Rocha  <lucasr@mate.org>
+2007-06-19  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-properties-dialog.[ch] (eog_properties_dialog_init,
 	eog_properties_dialog_update, eog_properties_dialog_page_switch):
@@ -3487,7 +3487,7 @@
 	* src/eog-plugin-manager.c: (eog_plugin_manager_init): Capitalize
 	"Active Plugins" consistently.
 
-2007-06-12  Lucas Rocha  <lucasr@mate.org>
+2007-06-12  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-plugin-manager.c (create_tree_popup_menu,
 	show_tree_popup_menu): don't show contextual menu when there are no
@@ -3528,7 +3528,7 @@
 
 	* src/eog-thumb-view.c: (tb_on_button_press_event_cb): Fix leak.
 
-2007-05-27  Lucas Rocha  <lucasr@mate.org>
+2007-05-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (): don't use duplicated action ids when updating
 	the "Open with" submenu. Fixes bug #440207 (Christian Persch).
@@ -3556,15 +3556,15 @@
 	* src/eog-util.c: Include <sys/time.h> to fix build in Solaris.
 	Fixes bug #440716 (Damien Carbery).
 
-2007-05-15  Lucas Rocha  <lucasr@mate.org>
+2007-05-15  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.in: post release version bump.
 
-2007-05-15  Lucas Rocha  <lucasr@mate.org>
+2007-05-15  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.19.2
 
-2007-05-15  Lucas Rocha  <lucasr@mate.org>
+2007-05-15  Lucas Rocha  <lucasr@gnome.org>
 
 	Plugin system in place and activated now. Here we go!
 
@@ -3606,7 +3606,7 @@
 	Remove some unneeded guards around g_free calls as it checks for NULL
 	itself.
 
-2007-05-07  Lucas Rocha  <lucasr@mate.org>
+2007-05-07  Lucas Rocha  <lucasr@gnome.org>
 
 	Initial code for the plugin system. Still deactivated while some
 	subversion surgery is not done.
@@ -3651,21 +3651,21 @@
 	Correctly set slideshow delay when being entered with the keyboard.
 	Patch by Ryan Cumming <etaoins@gmail.com>.
 
-2007-05-01  Lucas Rocha  <lucasr@mate.org>
+2007-05-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* data/eog.schemas.in: removed unused MateConf keys related to image
 	info pane.
 
-2007-05-01  Lucas Rocha  <lucasr@mate.org>
+2007-05-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (update_ui_visibility): hide editable application
 	toolbar when in fullscreen/slideshow mode.
 
-2007-04-30  Lucas Rocha  <lucasr@mate.org>
+2007-04-30  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.in: post release version bump.
 
-2007-04-30  Lucas Rocha  <lucasr@mate.org>
+2007-04-30  Lucas Rocha  <lucasr@gnome.org>
 
 	* NEWS: Update for 2.19.1
 	* configure.ac: added bug reporting info.
@@ -3674,12 +3674,12 @@
 
 	* data/eog-toolbar.xml: Add missing file.
 
-2007-04-29  Lucas Rocha  <lucasr@mate.org>
+2007-04-29  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_job_load_cb): disable image related actions
 	in case of a image loading error.
 
-2007-04-29  Lucas Rocha  <lucasr@mate.org>
+2007-04-29  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_cmd_properties),
 	src/eog-properties-dialog.[ch] (-pd_previous_button_clicked_cb,
@@ -3687,11 +3687,11 @@
 	eog_properties_dialog_init): correctly use action proxies for
 	the next and previous image buttons in image properties dialog.
 
-2007-04-29  Lucas Rocha  <lucasr@mate.org>
+2007-04-29  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c (eog_window_set_message_area): fixed build warning.
 
-2007-04-29  Lucas Rocha  <lucasr@mate.org>
+2007-04-29  Lucas Rocha  <lucasr@gnome.org>
 
 	Multiple save as dialog UI cleanup. Patch from Claudio Saavedra.
 	Fixes bug #429156.
@@ -3701,7 +3701,7 @@
 	get_selected_format, prepare_token_options, destroy_data_cb),
 	data/eog.glade: multiple save as dialog cleanup.
 
-2007-04-29  Lucas Rocha  <lucasr@mate.org>
+2007-04-29  Lucas Rocha  <lucasr@gnome.org>
 
 	Editable toolbar support. Patch from Claudio Saavedra. Fixes
 	bug #393586.
@@ -3722,7 +3722,7 @@
 	* configure.ac, Makefile.am, src/Makefile.am: added editable
 	toolbar bits to the build.
 
-2007-04-26  Lucas Rocha  <lucasr@mate.org>
+2007-04-26  Lucas Rocha  <lucasr@gnome.org>
 
 	Show tooltips with image's general information on thumbnails
 	pane. Patch from Claudio Saavedra. Fixes bug #416321.
@@ -3806,7 +3806,7 @@
 
 	* src/eog-marshal.list: Remove unused marshallers from list.
 
-2007-03-25  Lucas Rocha  <lucasr@mate.org>
+2007-03-25  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-statusbar.[ch] (eog_statusbar_set_progress, eog_statusbar_init,
 	eog_statusbar_set_has_resize_grip): removed hack for handling resize
@@ -3870,7 +3870,7 @@
 
 	* Makefile.am: Add ChangeLog-2.6 and ChangeLog-2.16 to EXTRA_DIST.
 
-2007-03-18  Lucas Rocha  <lucasr@mate.org>
+2007-03-18  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/Makefile.am: Fix the linker library include order so that the
 	linker searches the right path for pango (Fixes bug #398250). Patch
@@ -3880,7 +3880,7 @@
 ===== eog-ng branch merged back to trunk =====
 ==============================================
 
-2007-03-18  Lucas Rocha  <lucasr@mate.org>
+2007-03-18  Lucas Rocha  <lucasr@gnome.org>
 
 	Restabilished ICC profiling functionality with full code refactoring.
 
@@ -3898,7 +3898,7 @@
 	eog_window_get_display_profile): load and cache display profile
 	to be applied on images just after they are successfully loaded.
 
-2007-03-17  Lucas Rocha  <lucasr@mate.org>
+2007-03-17  Lucas Rocha  <lucasr@gnome.org>
 
 	Restabilished move to trash functionality. Patch from Javier Sánchez
 	<jsanchez@deskblue.com>.
@@ -3907,7 +3907,7 @@
 	show_move_to_trash_confirm_dialog, eog_window_error_quark): moved
 	adapted code from trunk.
 
-2007-03-14  Lucas Rocha  <lucasr@mate.org>
+2007-03-14  Lucas Rocha  <lucasr@gnome.org>
 
 	Restabilished set as wallpaper functionality.
 
@@ -3916,11 +3916,11 @@
 	the wallpaper when respective action is activated.
 	* src/eog-config-keys.h: added EOG_CONF_DESKTOP_WALLPAPER entry.
 
-2007-03-10  Lucas Rocha  <lucasr@mate.org>
+2007-03-10  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-save-dialog-helper.[ch]: removed obsolete files.
 
-2007-03-10  Lucas Rocha  <lucasr@mate.org>
+2007-03-10  Lucas Rocha  <lucasr@gnome.org>
 
 	Restabilished the image saving functionalities. Based on patch from
 	Felix Riemann <friemann@svn.mate.org>. Fixes bug #377123. A lot
@@ -3989,12 +3989,12 @@
 	Add a 'Open file with' functionality (Fixes bug #319859). Patch from
 	Rodrigo Aguilar <raguilar@iee.ufro.cl> and me.
 
-2007-02-27  Lucas Rocha  <lucasr@mate.org>
+2007-02-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-statusbar.c: increase image position info width in
 	statusbar to avoid ellipsizing with big numbers. Fixes bug #357427.
 
-2007-02-27  Lucas Rocha  <lucasr@mate.org>
+2007-02-27  Lucas Rocha  <lucasr@gnome.org>
 
 	Added support for placing the collection on top/bottom/right/left
 	sides of the window. Also, the collection pane can be resizable or
@@ -4010,7 +4010,7 @@
 	define collection pane position and whether it's resizable.
 	* src/Makefile.am: removed unused constants.
 
-2007-02-26  Lucas Rocha  <lucasr@mate.org>
+2007-02-26  Lucas Rocha  <lucasr@gnome.org>
 
 	Messages for the most of common error: open a set of locations with no
 	images, open a directory with no images, open a non-image file and
@@ -4029,14 +4029,14 @@
 	(eog_no_images_error_message_area_new): new message area for errors
 	when no images are found in given locations.
 
-2007-02-24  Lucas Rocha  <lucasr@mate.org>
+2007-02-24  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-thumb-nav.c: make hscrollbar always visible on one row mode.
 	* data/eog.schema.in: make scroll buttons hidden by default.
 	* src/eog-window.c: disable image collection if there's only one image
 	in the image list.
 
-2007-02-24  Lucas Rocha  <lucasr@mate.org>
+2007-02-24  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-scroll-view.[ch] (eog_scroll_view_set_zoom_multiplier,
 	display_key_press_event, eog_scroll_view_init), src/eog-window.c
@@ -4046,13 +4046,13 @@
 	* src/eog-config-keys.h, data/eog.schema.in: added new MateConf for
 	zoom multiplier.
 
-2007-02-23  Lucas Rocha  <lucasr@mate.org>
+2007-02-23  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image.c (eog_image_set_exif_data, eog_image_size_prepared,
 	eog_image_real_load): fix loading for images with no metadata and
 	automatic orientation.
 
-2007-02-21  Lucas Rocha  <lucasr@mate.org>
+2007-02-21  Lucas Rocha  <lucasr@gnome.org>
 
 	Added a MateConf key to define the mouse scroll wheel behavior. Defaults
 	to FALSE to be HIG compliant. By the default,
@@ -4066,7 +4066,7 @@
 	* src/eog-config-keys.h, data/eog.schema.in: added MateConf key to define
 	the mouse scroll wheel behavior. If true, use the wheel for zooming.
 
-2007-02-20  Lucas Rocha  <lucasr@mate.org>
+2007-02-20  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-list-store.c (eog_list_store_add_uris): take other images in
 	same location into account even for remote URIs (if the image's parent
@@ -4088,23 +4088,23 @@
 	taking care of broken EXIF headers (Fixes bug #404907). Patch
 	from Felix Riemann <friemann@svn.mate.org> and me.
 
-2007-02-13  Lucas Rocha  <lucasr@mate.org>
+2007-02-13  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-transform.[ch], src/eog-image-private.h, src/eog-image.[ch],
 	src/eog-window.c, data/eog.glade, src/eog-config-keys.h: ported preferences
 	dialog and auto orientation from trunk to eog-ng branch.
 
-2007-02-13  Lucas Rocha  <lucasr@mate.org>
+2007-02-13  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image.c, src/eog-scroll-view.c, src/eog-metadata-reader.c:
 	replace all deprecated debug messages with new debug facilities (Fixes
 	bug #404126). Patch from Claudio André <claudio.andre@correios.net.br>.
 
-2007-02-12  Lucas Rocha  <lucasr@mate.org>
+2007-02-12  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/main.c: remove uneeded mate.config.h include.
 
-2007-02-12  Lucas Rocha  <lucasr@mate.org>
+2007-02-12  Lucas Rocha  <lucasr@gnome.org>
 
 	* eog.desktop.in.in: Change launcher description to match UI
 	review (Fixes bug #383436).
@@ -4126,7 +4126,7 @@
 	datatype. Respect that. This fixes warnings in Valgrind and wrong
 	values in images using the short type.
 
-2007-02-05  Lucas Rocha  <lucasr@mate.org>
+2007-02-05  Lucas Rocha  <lucasr@gnome.org>
 
 	Preliminary implementation of error/warning UI for EOG (Mostly based
 	on Gedit). Code still needs to be written for the different kinds of
@@ -4147,7 +4147,7 @@
 
 	* src/eog-properties-dialog.c: (pd_update_general_tab): Fix leaks.
 
-2007-02-03  Lucas Rocha  <lucasr@mate.org>
+2007-02-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-thumb-nav.[ch]: support for different modes for image
 	collection pane: one row (horizontal), one column (vertical) and
@@ -4157,7 +4157,7 @@
 	* data/eog.schemas.in, src/eog-config-keys.h: added entry for image
 	collection mode key.
 
-2007-02-03  Lucas Rocha  <lucasr@mate.org>
+2007-02-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* data/eog.schemas.in: added new key for image collection scroll
 	buttons.
@@ -4166,7 +4166,7 @@
 	* src/eog-window.c: use MateConf key to decide whether the image collection
 	scroll buttons should be shown or not.
 
-2007-02-03  Lucas Rocha  <lucasr@mate.org>
+2007-02-03  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image.c: several coding style fixes.
 	* data/eog.glade, src/eog-properties-dialog.c: replaced shutter speed
@@ -4213,18 +4213,18 @@
 	leaftag has not seen the expected momentum, so it's preferable to leave
 	it out of the core. Fixes bug #401939.
 
-2007-01-27  Lucas Rocha  <lucasr@mate.org>
+2007-01-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/Makefile.am, src/eog-debug.[ch]: debugging and profiling for EOG.
 	* src/eog-window.c: added debugging code on several places of
 	EogWindow as a initial effort to make EOG more easily debuggable.
 
-2007-01-27  Lucas Rocha  <lucasr@mate.org>
+2007-01-27  Lucas Rocha  <lucasr@gnome.org>
 
 	* data/eog.glade: some fixes on the dialog container packing and
 	ellipsing for some too long labels.
 
-2007-01-24  Lucas Rocha  <lucasr@mate.org>
+2007-01-24  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-info-view*: removed.
 	* src/eog-exif-details.[ch]: dump of EXIF data in a tree view. Used in
@@ -4239,29 +4239,29 @@
 	EOG_TYPE_IMAGE instead of G_TYPE_OBJECT to avoid duplicating
 	signals in other GObject derived types. Fixes #399333.
 
-2007-01-22  Lucas Rocha  <lucasr@mate.org>
+2007-01-22  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c: set status EOG_WINDOW_STATUS_INIT when opening uri
 	list to avoid unexpected bevaviors when opening images on an empty
 	window.
 
-2007-01-22  Lucas Rocha  <lucasr@mate.org>
+2007-01-22  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c: small fix on using EogListSore API.
 	* src/acessible-*: remove obsolete files.
 	* src/Makefile.am: small cleanups.
 
-2007-01-21  Lucas Rocha  <lucasr@mate.org>
+2007-01-21  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-application.c, src/eog-window.[ch], src/main.c: windows open
 	with dimensions according to image size. GTK+ thread safety garanteed
 	with the use of GDK thread control.
 
-2007-01-18  Lucas Rocha  <lucasr@mate.org>
+2007-01-18  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c: updated EOG's webpage in about dialog.
 
-2007-01-15  Lucas Rocha  <lucasr@mate.org>
+2007-01-15  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-image-private.h, src/eog-image.[ch]: complete
 	code cleanup (small refactorings, removal of obsolete methods,
@@ -4309,12 +4309,12 @@
 
 	Fixes bugs #356947, #321815.
 
-2007-01-04  Lucas Rocha  <lucasr@mate.org>
+2007-01-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-window.c, src/main.c, data/icons/*, configure.ac,
 	data/eog.desktop.in.in: install and use new EOG icons.
 
-2007-01-04  Lucas Rocha  <lucasr@mate.org>
+2007-01-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* src/eog-application.c, src/eog-file-chooser.c: small code cleanups.
 
@@ -4325,25 +4325,25 @@
 	* po/.svnignore: Add missing ignore.
 	Update the corresponding svn:ignore tags.
 
-2006-12-28  Bruno Boaventura <brunobol@mate.org>
+2006-12-28  Bruno Boaventura <brunobol@gnome.org>
 
 	* eog.glade: Change "Slide Show" to "Slideshow". Fix #383090
 
-2007-01-01  Lucas Rocha  <lucasr@mate.org>
+2007-01-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/*, src/*: all source files moved to "src" directory.
 	* autogen.sh, configure.ac, Makefile.am: update for new "src" directory.
 
-2007-01-01  Lucas Rocha  <lucasr@mate.org>
+2007-01-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* *.cvsignore, *.svnignore: renamed all ignore files to subversion.
 
-2007-01-01  Lucas Rocha  <lucasr@mate.org>
+2007-01-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/*, shell/Makefile.am, configure.ac: moved all files from
 	libeog to shell.
 
-2007-01-01  Lucas Rocha  <lucasr@mate.org>
+2007-01-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/Makefile.am, shell/eog-window.c, shell/eog-preferences-dialog.[ch]:
 	rename eog-preferences.* to eog-preferences-dialog.*
@@ -4359,7 +4359,7 @@
 	* shell/eog-window.c: Use "print-setup" icon from g-i-t. Patch from
 	Thomas Andersen <phomes@gmail.com>. Fixes bug #389314.
 
-2006-12-26  Lucas Rocha  <lucasr@mate.org>
+2006-12-26  Lucas Rocha  <lucasr@gnome.org>
 
 	New command-line options for EOG: -s to start in slideshow mode, -f
 	to start in fullscreen mode, and -c to disable collection pane on
@@ -4373,7 +4373,7 @@
 	* shell/main.c: initialize startup flags based on passed command-line
 	options.
 
-2006-12-21  Lucas Rocha  <lucasr@mate.org>
+2006-12-21  Lucas Rocha  <lucasr@gnome.org>
 
 	EOG dialogs common infrastructure. Preferences and image properties
 	dialogs share the same base code now.
@@ -4389,7 +4389,7 @@
 	* shell/eog-window.c: (eog_window_print_draw_page): Clip the pattern
 	to workaround a bug in cairo's PDF backend.
 
-2006-12-16  Lucas Rocha  <lucasr@mate.org>
+2006-12-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* data/eog-ui.xml: new "Properties" menu items in thumbview context
 	menu and File menu.
@@ -4421,7 +4421,7 @@
 	* configure.ac: Put MATE_DOC_INIT down further and call
 	PKG_PROG_PKG_CONFIG before it. Fixes bug #372820.
 
-2006-11-25  Lucas Rocha  <lucasr@mate.org>
+2006-11-25  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/Makefile.am, shell/eog-thumb-nav.[ch],
 	libeog/eog-list-store.[ch], libeog/eog-thumb.view.c,
@@ -4674,28 +4674,28 @@
 	to mateconf_client_get_string ().
 	(handle_image_selection_changed_cb): Fixed memory leak.
 
-2006-09-06  Lucas Rocha  <lucasr@mate.org>
+2006-09-06  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/main.c: save customized keybindings on application
 	shutdown (Fixes bug #324757).
 
-2006-09-06  Lucas Rocha  <lucasr@mate.org>
+2006-09-06  Lucas Rocha  <lucasr@gnome.org>
 
 	* eog.glade: fix i18n bugs by removing empty messages (Fixes bug
 	#335577). Patch from Felix Riemann <felix@hsgheli.de>.
 
-2006-09-06  Lucas Rocha  <lucasr@mate.org>
+2006-09-06  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-window.c (add_uri_to_recent_files,
 	eog_window_update_recent_files_menu): small fix for remote URIs on recently
 	used resources file (Fixes bug #351040). Patch from Felix
 	Riemann <felix@hsgheli.de>.
 
-2006-09-01  Lucas Rocha  <lucasr@mate.org>
+2006-09-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/recent-files/*: removed.
 
-2006-09-01  Lucas Rocha  <lucasr@mate.org>
+2006-09-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac
 	* data/eog-ui.xml
@@ -4707,29 +4707,29 @@
 	Migration to GtkRecent (Fixes bug #351040). Patch from Felix
 	Riemann (felix@hsgheli.de) based on Gedit's patch from Paolo Borelli.
 
-2006-08-10  Lucas Rocha  <lucasr@mate.org>
+2006-08-10  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-image-list.c (eog_image_list_add_uris): fix critical
 	warning when opening remote images (Fixes bug #350557).
 
-2006-08-10  Lucas Rocha  <lucasr@mate.org>
+2006-08-10  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/main.c (make_canonical_uri): fix error when loading images
 	with ':' in their filenames from command line (Fixes bug #305129).
 	Patch from Felix Riemann <felix@hsgheli.de>.
 
-2006-08-04  Lucas Rocha  <lucasr@mate.org>
+2006-08-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-window.c: fix string "Counter Clockwise" with
 	"Counterclockwise" (Fixes bug #349361).
 
-2006-08-01  Lucas Rocha  <lucasr@mate.org>
+2006-08-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-scroll-view.c (image_changed_cb): fix memory leak on
 	image transformation (Fixes bug #349434). Patch from Felix
 	Riemann <felix@hsgheli.de>.
 
-2006-07-25  Lucas Rocha  <lucasr@mate.org>
+2006-07-25  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/cursor.[ch], libeog/cursors/*, eog-image-cache.[ch],
 	eog-full-screen.[ch]: removed obsolete files.
@@ -4740,7 +4740,7 @@
 	shell/eog-window.c (fullscreen_set_timeout, fullscreen_clear_timeout):
 	new cursor handling code.
 
-2006-07-25  Lucas Rocha  <lucasr@mate.org>
+2006-07-25  Lucas Rocha  <lucasr@gnome.org>
 
 	Initial support for opening images by tags with the --tags command-line
 	option based on leaftag. No UI defined for this yet.
@@ -4756,12 +4756,12 @@
 	* libeog/eog-list-store.c (vfs_monitor_dir_cb): removed local mime type
 	support functions.
 
-2006-07-24  Lucas Rocha  <lucasr@mate.org>
+2006-07-24  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-window.c (eog_window_class_init, eog_window_button_press):
 	mouse sidebuttons (6 and 7) for image navigation (Fixes bug #321400).
 
-2006-07-24  Lucas Rocha  <lucasr@mate.org>
+2006-07-24  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-image.c (extract_profile): removed debug messages.
 	* libeog/eog-list-store.[ch] (+eog_list_store_length): new wrapper
@@ -4781,14 +4781,14 @@
 	to retrieve color string (Fixes bug #347600). Patch from Felix
 	Riemann <felix@hsgheli.de>.
 
-2006-07-13  Lucas Rocha  <lucasr@mate.org>
+2006-07-13  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-scroll-view.c (eog_scroll_view_button_press_event,
 	eog_scroll_view_button_release_event, check_scrollbar_visibility):
 	use middle mouse drag to scroll image (Fixes bug #335689). Based
 	on patch from Wouter Bolsterlee <uws+mate@xs4all.nl>.
 
-2006-07-13  Lucas Rocha  <lucasr@mate.org>
+2006-07-13  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-image-jpeg.c (_save_jpeg_as_jpeg): avoid losing
 	EXIF data when saving changed jpeg images (Fixes bug #309219).
@@ -4831,7 +4831,7 @@
 	(eog_thumb_view_init): Enable drag source and connect
 	"drag-data-get" signal.
 
-2006-06-16  Lucas Rocha  <lucasr@mate.org>
+2006-06-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* data/eog-ui.xml: add separators between menu entries.
 
@@ -4846,7 +4846,7 @@
 	* shell/eog-window.c: (eog_window_construct_ui): Create popup
 	for thumbnails and set it.
 
-2006-06-07  Lucas Rocha  <lucasr@mate.org>
+2006-06-07  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-image.[ch] (eog_image_real_load,
 	eog_image_load_exif_data_only, eog_image_load), eog-jobs.[ch]
@@ -4891,26 +4891,26 @@
 	* libeog/test-eog-tb.c: (do_something_with_test_1), (main): Added test
 	code for the popup.
 
-2006-06-01  Lucas Rocha  <lucasr@mate.org>
+2006-06-01  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-image.c (eog_image_print): fix printing for images with
 	alpha channel (Fixes bug #322057). Patch from Jan Kümmel
 	<mate-bugz@snorc.org>.
 
-2006-05-31  Lucas Rocha  <lucasr@mate.org>
+2006-05-31  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-collection-item.c (set_pixbuf): making sure thumbnail
 	is at least 1px large (Fixes bug #342817). Patch from
 	Felix Riemann <felix@hsgheli.de>.
 
-2006-05-31  Lucas Rocha  <lucasr@mate.org>
+2006-05-31  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-list-store.c (eog_list_store_compare_func),
 	libeog/eog-image.c (eog_image_get_collate_key): properly sort
 	filenames containing numbers (Fixes bug #340957). Based on patch
 	from Felix Riemann <felix@hsgheli.de>.
 
-2006-05-29  Lucas Rocha  <lucasr@mate.org>
+2006-05-29  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-window.c (eog_job_load_cb, eog_job_transform_cb,
 	eog_window_clear_load_job): fix memory leaks (Fixes bug #341831).
@@ -4944,7 +4944,7 @@
 	icon without introducing the need for mate_program_*. Patch
 	from Felix Riemann <felix@hsgheli.de>.
 
-2006-05-19  Lucas Rocha  <lucasr@mate.org>
+2006-05-19  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: Require intltool 0.35.0.
 
@@ -4953,7 +4953,7 @@
 	* libeog/eog-list-store.c: (eog_list_store_thumbnail_unset):
 	Actually unsetting the thumbnail and some cleanups.
 
-2006-05-19  Lucas Rocha  <lucasr@mate.org>
+2006-05-19  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-statusbar.c (eog_statusbar_init): set the height of
 	progressbar to avoid re-zooming image after loading (Fixes bug #327424).
@@ -4969,7 +4969,7 @@
 	* libeog/eog-list-store.h: Adding a EOG_LIST_STORE_THUMB_SET column
 	to the model. Patch by Felix Riemann <felix@hsgheli.de>.
 
-2006-05-19  Lucas Rocha  <lucasr@mate.org>
+2006-05-19  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-job-queue.c (eog_render_thread,
 	no_jobs_available_unlocked, -add_job_to_queue,
@@ -4977,19 +4977,19 @@
 	there are no jobs on the queues (Fixed bug #341600). Patch from
 	Paolo Borelli <pborelli@katamail.com>.
 
-2006-05-19  Lucas Rocha  <lucasr@mate.org>
+2006-05-19  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-window.c (eog_window_cmd_about): about dialog
 	update (Fixes bug #342103). Patch from Claudio Saavedra
 	<csaavedra@alumnos.utalca.cl>.
 
-2006-05-18  Lucas Rocha  <lucasr@mate.org>
+2006-05-18  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-window.c (update_action_groups_state),
 	shell/eog-config-keys.h: respect the disable_save_to_disk
 	mateconf lockdown key (Fixed bug #341862).
 
-2006-05-18  Lucas Rocha  <lucasr@mate.org>
+2006-05-18  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/Makefile.am: removed reference to removed files.
 	* libeog/access.[ch]: obsolete files removed.
@@ -5045,7 +5045,7 @@
 	* shell/eog-window.c: (eog_window_construct_ui): Define some default
 	values for the icon view, so it is usable and looks nice.
 
-2006-05-08  Lucas Rocha  <lucasr@mate.org>
+2006-05-08  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-window.c
 
@@ -5070,7 +5070,7 @@
 
 	* data/eog-ui.xml: new fullscreen toolbar definition.
 
-2006-04-29  Lucas Rocha  <lucasr@mate.org>
+2006-04-29  Lucas Rocha  <lucasr@gnome.org>
 
 	* libeog/eog-thumb-view.[ch]: coding style fixes and several
 	GObject related code cleanups.
@@ -5100,12 +5100,12 @@
 	* libeog/eog-thumb-shadow.h: New files to add eyecandy to the
 	thumbnails.
 
-2006-04-16  Lucas Rocha  <lucasr@mate.org>
+2006-04-16  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/eog-statusbar.c, shell/eog-statusbar.h: code cleanup.
 	* shell/eog-window.c: coding style and a few cleanups.
 
-2006-04-14  Lucas Rocha  <lucasr@mate.org>
+2006-04-14  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: update intltool dependency version for correct
 	po/LINGUAS implementation.
@@ -5190,12 +5190,12 @@
 	(string_array_to_list), (main): Set the model for the view after
 	filling it. Using eog_thumb_view_set_model (). Coding style changes.
 
-2006-04-04  Lucas Rocha  <lucasr@mate.org>
+2006-04-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* shell/Makefile.am, shell/eog-gtk-ui.xml, data/eog-gtk-ui.xml,
 	data/Makefile.am: ui file moved to data dir.
 
-2006-04-04  Lucas Rocha  <lucasr@mate.org>
+2006-04-04  Lucas Rocha  <lucasr@gnome.org>
 
 	* configure.ac: no need for X/pango checks.
 	* help/bg/.cvsignore, help/eu/.cvsignore,
@@ -5289,19 +5289,19 @@
 	Porting to the new EogThumbView and EogListStore widgets. Removing
 	dependence on EogWrapList and EogImageList (#336973).
 
-2006-04-02  Lucas Rocha  <lucasr@mate.org>
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
 
 	* Makefile.am: fix typo.
 
-2006-04-02  Lucas Rocha  <lucasr@mate.org>
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
 
 	* TODO: link to task list at l.g.o
 
-2006-04-02  Lucas Rocha  <lucasr@mate.org>
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
 
 	* Makefile.am, configure.ac, eog.spec.in: spec file removed.
 
-2006-04-02  Lucas Rocha  <lucasr@mate.org>
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
 
 	* INSTALL, po/POTFILES.in: Update.
 	* acconfig.h, eog.gladep: removed useless files.
@@ -5316,23 +5316,23 @@
 	shell/eog-save-dialog-helper.c: look for glade files on
 	$datadir.
 
-2006-04-02  Lucas Rocha  <lucasr@mate.org>
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
 
 	* omf-install/*: old scrollkeeper dir removed.
 
-2006-04-02  Lucas Rocha  <lucasr@mate.org>
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
 
 	* .cvsignore, po/.cvsignore: cvsignore love.
 
-2006-04-02  Lucas Rocha  <lucasr@mate.org>
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
 
 	* macros/*: local copy of mate-common macros removed.
 
-2006-04-02  Lucas Rocha  <lucasr@mate.org>
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
 
 	* doc/*: obsolete doc files remove.
 
-2006-04-02  Lucas Rocha  <lucasr@mate.org>
+2006-04-02  Lucas Rocha  <lucasr@gnome.org>
 
 	* mate-eog.png: old logo removed.
 

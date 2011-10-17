@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the mate-system-monitor package.
 # Copyright (C) Free Software Foundation, Inc.
 # Åsmund Skjæveland <aasmunds@fys.uio.no>, 2006.
-# Eskild Hustvedt <eskildh@mate.org>, 2008
+# Eskild Hustvedt <eskildh@gnome.org>, 2008
 msgid ""
 msgstr ""
 "Project-Id-Version: nn\n"
@@ -30,7 +30,7 @@ msgstr "Vis aktive prosessar og overvak systemtilstanden"
 msgid "translator-credits"
 msgstr ""
 "Åsmund Skjæveland <aasmunds@fys.uio.no>\n"
-"Eskild Hustvedt <eskildh@mate.org>\n"
+"Eskild Hustvedt <eskildh@gnome.org>\n"
 "\n"
 "Send feilmeldingar og kommentarar til <i18n-nn@lister.ping.uio.no>"
 

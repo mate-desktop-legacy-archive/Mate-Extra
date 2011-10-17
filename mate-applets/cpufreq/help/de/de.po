@@ -1,5 +1,5 @@
 # German translation of the cpufreq-applet manual.
-# Mario Blättermann <mariobl@mate.org>, 2008, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2010.
 #
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "POT-Creation-Date: 2010-02-21 20:55+0000\n"
 "PO-Revision-Date: 2010-02-22 00:34+0100\n"
 "Last-Translator: Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
-"Language-Team: Deutsch <mate-de@mate.org>\n"
+"Language-Team: Deutsch <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -236,8 +236,8 @@ msgid "MATE Project"
 msgstr "MATE-Projekt"
 
 #: C/cpufreq-applet.xml:56(email)
-msgid "carlosgc@mate.org"
-msgstr "carlosgc@mate.org"
+msgid "carlosgc@gnome.org"
+msgstr "carlosgc@gnome.org"
 
 #: C/cpufreq-applet.xml:60(firstname)
 msgid "Davyd"
@@ -615,5 +615,5 @@ msgstr ""
 #: C/cpufreq-applet.xml:0(None)
 msgid "translator-credits"
 msgstr ""
-"Mario Blättermann <mariobl@mate.org>, 2008, 2009\n"
+"Mario Blättermann <mariobl@gnome.org>, 2008, 2009\n"
 "Christian Kirbach <Christian.Kirbach@googlemail.com>, 2010"

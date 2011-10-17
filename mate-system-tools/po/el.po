@@ -8,7 +8,7 @@
 # kostas, 13Jul2004, 502 messages.
 # Nikos, 08Sep2004, review.
 # Simos Xenitellis <simos@hellug.gr>, 2001.
-# Kostas Papadimas <pkst@mate.org>, 2003, 2004, 2006.
+# Kostas Papadimas <pkst@gnome.org>, 2003, 2004, 2006.
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2004, 2005.
 # Athanasios Lefteris <alefteris@gmail.com>, 2007.
 # Simos Xenitellis <simos.lists@googlemail.com>, 2010.

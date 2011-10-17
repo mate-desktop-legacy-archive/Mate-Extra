@@ -2,7 +2,7 @@
 # Copyright (C) 2004-2006 Adam Weinberger and the MATE Foundation
 # This file is distributed under the same licence as the mate-media package.
 # Alexander Winston <alexander.winston@comcast.net>, 2004.
-# Adam Weinberger <adamw@mate.org>, 2004, 2005, 2006.
+# Adam Weinberger <adamw@gnome.org>, 2004, 2005, 2006.
 #
 msgid ""
 msgstr ""
@@ -10,8 +10,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-01-31 20:44-0500\n"
 "PO-Revision-Date: 2005-07-18 14:42-0500\n"
-"Last-Translator: Adam Weinberger <adamw@mate.org>\n"
-"Language-Team: Canadian English <adamw@mate.org>\n"
+"Last-Translator: Adam Weinberger <adamw@gnome.org>\n"
+"Language-Team: Canadian English <adamw@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1550,10 +1550,10 @@ msgstr "Bit rate:"
 #: ../grecord/src/gsr-window.c:1209
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1467
 msgid "Playing..."
@@ -1907,7 +1907,7 @@ msgstr "Volume Control: %s"
 #. * about dialog.
 #: ../gst-mixer/src/window.c:387
 msgid "translator-credits"
-msgstr "Adam Weinberger <adamw@mate.org>"
+msgstr "Adam Weinberger <adamw@gnome.org>"
 
 #: ../gst-mixer/src/window.c:396
 msgid "A MATE/GStreamer-based volume control application"

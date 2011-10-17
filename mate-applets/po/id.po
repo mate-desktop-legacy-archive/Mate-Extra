@@ -42,7 +42,7 @@ msgstr "Tunjukkan bagian dari fasilitas AksesX seperti pemodifikasi latched"
 #: ../trashapplet/src/trashapplet.c:432
 msgid "translator-credits"
 msgstr ""
-"Ahmad Riza H Nst <rizahnst@mate.org>, 2004.\n"
+"Ahmad Riza H Nst <rizahnst@gnome.org>, 2004.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2010."
 
 #: ../accessx-status/applet.c:167

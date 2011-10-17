@@ -1208,7 +1208,7 @@ msgstr "Hak Cipta © 2002-2009 Bastien Nocera"
 msgid "translator-credits"
 msgstr ""
 "Dicky Wahyu Purnomo <dicky.wahyu@massaint.or.id>, 2004.\n"
-"Ahmad Riza H Nst  <rizahnst@mate.org>, 2005.\n"
+"Ahmad Riza H Nst  <rizahnst@gnome.org>, 2005.\n"
 "Andy Apdhani <imtheface@ubuntu.com>, 2007.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2010."
 

@@ -246,8 +246,8 @@ msgid "McCance"
 msgstr "McCance"
 
 #: C/char-palette.xml:83(email)
-msgid "shaunm@mate.org"
-msgstr "shaunm@mate.org"
+msgid "shaunm@gnome.org"
+msgstr "shaunm@gnome.org"
 
 #: C/char-palette.xml:86(firstname)
 msgid "Davyd"

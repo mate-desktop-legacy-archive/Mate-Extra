@@ -91,8 +91,8 @@ msgstr "Augusti 2006"
 #: C/time-admin.xml:69(para)
 #: C/time-admin.xml:76(para)
 #: C/time-admin.xml:77(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/time-admin.xml:73(revnumber)
 msgid "Time Administration Tool Manual V0.35"

@@ -3,7 +3,7 @@
 #
 # This file is distributed under the same license as the mate-applets package.
 #
-# Maintainer: Данило Шеган <danilo@mate.org>
+# Maintainer: Данило Шеган <danilo@gnome.org>
 # Reviewed on 2005-09-03 by: Игор Несторовић <igor@prevod.org>
 # Милош Поповић <gpopac@gmail.com>, 2010.
 #

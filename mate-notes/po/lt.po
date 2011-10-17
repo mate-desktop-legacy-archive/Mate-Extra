@@ -1,7 +1,7 @@
 # Lithuanian translation of gedit.
 # Copyright (C) 2004-2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnote package.
-# Žygimantas Beručka <zygis@mate.org>, 2005-2007, 2009, 2010.
+# Žygimantas Beručka <zygis@gnome.org>, 2005-2007, 2009, 2010.
 # Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007, 2008.
 # Vytautas Rėkus <v.rekus@gmail.com>, 2009.
 # Giedrius Slavinskas <giedrius25@gmail.com>, 2009, 2010.
@@ -657,7 +657,7 @@ msgstr "ir Tomboy kūrėjai."
 msgid "translator-credits"
 msgstr ""
 "Giedrius Slavinskas <giedrius25@gmail.com>\n"
-"Žygimantas Beručka <zygis@mate.org>"
+"Žygimantas Beručka <zygis@gnome.org>"
 
 #: ../src/gnote.cpp:344
 msgid ""

@@ -11,7 +11,7 @@
 # kostas:16 messages, 03Dec2002, updated translation for Mate 2.1x.
 # kostas:75 messages, 25May2003, updated translation for Mate 2.4x.
 # Simos Xenitellis <simos74@gmx.net>, 2002.
-# Kostas Papadimas <pkst@mate.org>, 2003, 2004, 2006.
+# Kostas Papadimas <pkst@gnome.org>, 2003, 2004, 2006.
 # Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
 msgid ""
 msgstr ""
@@ -64,7 +64,7 @@ msgstr "Ένας επεξεργαστής για το σύστημα ρυθμί�
 
 #: ../src/mateconf-editor-window.c:401
 msgid "translator-credits"
-msgstr "Κώστας Παπαδήμας <pkst@mate.org>"
+msgstr "Κώστας Παπαδήμας <pkst@gnome.org>"
 
 #: ../src/mateconf-editor-window.c:428
 #, c-format

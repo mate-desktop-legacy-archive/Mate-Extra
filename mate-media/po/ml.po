@@ -504,10 +504,10 @@ msgstr "ബിറ്റ് റേറ്റ്:"
 #: ../grecord/src/gsr-window.c:1241
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "MATE-ന് വേണ്ടിയുള്ള ഒരു സൌണ്ട് റിക്കോര്‍ഡര്‍\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1512
 msgid "Playing..."

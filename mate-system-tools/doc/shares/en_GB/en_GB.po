@@ -152,8 +152,8 @@ msgid "August 2006"
 msgstr "August 2006"
 
 #: C/shares-admin.xml:68(para) C/shares-admin.xml:69(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/shares-admin.xml:74(releaseinfo)
 msgid ""

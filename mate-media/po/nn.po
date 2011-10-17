@@ -3,7 +3,7 @@
 # Norwegian (nynorsk) translation of mate-media.
 # Copyright (C) 2000-2002 Free Software Foundation
 #
-# Kjartan Maraas <kmaraas@mate.org>, 2001.
+# Kjartan Maraas <kmaraas@gnome.org>, 2001.
 # Roy-Magne Mo <rmo@sunnmore.net>, 2001-2002.
 # Åsmund Skjæveland <aasmunds@fys.uio.no>, 2003, 2004, 2005, 2006.
 # Torstein Adolf Winterseth <kvikende@yahoo.no>, 2009.
@@ -514,10 +514,10 @@ msgstr "Bitrate:"
 #: ../grecord/src/gsr-window.c:1241
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "Ein lydopptakar for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1512
 msgid "Playing..."

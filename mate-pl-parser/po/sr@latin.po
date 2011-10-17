@@ -4,7 +4,7 @@
 # This file is distributed under the same license as the totem package.
 #
 # Maintainer: Veljko M. Stanojević <veljko@vms.homelinux.net>
-# Reviewed on 2005-07-11 by Danilo Šegan <danilo@mate.org>
+# Reviewed on 2005-07-11 by Danilo Šegan <danilo@gnome.org>
 # Reviewed on 2005-09-03 by Andrija Zarić <andrija@gmail.com>
 #
 msgid ""

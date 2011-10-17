@@ -1,7 +1,7 @@
 # Italian translation for caja-open-terminal
 # Copyright (C) 2005 Daniele Medri and the MATE Foundation
 # This file is distributed under the same licence as the caja-open-terminal package.
-# Adam Weinberger <adamw@mate.org>, 2005.
+# Adam Weinberger <adamw@gnome.org>, 2005.
 # 
 # 
 msgid ""

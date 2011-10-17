@@ -332,9 +332,9 @@ msgstr "Manajer arsip untuk MATE."
 #: ../src/actions.c:866
 msgid "translator-credits"
 msgstr ""
-"Ahmad Riza H Nst  <rizahnst@mate.org>.\n"
+"Ahmad Riza H Nst  <rizahnst@gnome.org>.\n"
 "Yuhanes Tjandra  <yuhanes@cbn.net.id>, 2004.\n"
-"Mohammad DAMT <mdamt@mate.org>, 2004.\n"
+"Mohammad DAMT <mdamt@gnome.org>, 2004.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2010."
 
 #: ../src/dlg-add-files.c:94 ../src/dlg-add-folder.c:129

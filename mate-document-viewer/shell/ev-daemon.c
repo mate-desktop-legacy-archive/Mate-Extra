@@ -1,7 +1,7 @@
 /* ev-metadata.c
  *  this file is part of evince, a mate document viewer
  *
- * Copyright (C) 2009 Carlos Garcia Campos  <carlosgc@mate.org>
+ * Copyright (C) 2009 Carlos Garcia Campos  <carlosgc@gnome.org>
  * Copyright © 2010 Christian Persch
  *
  * Evince is free software; you can redistribute it and/or modify it

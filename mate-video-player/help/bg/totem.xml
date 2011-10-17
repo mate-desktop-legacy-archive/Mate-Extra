@@ -59,7 +59,7 @@
 	<surname>HOH</surname> 
 	<affiliation> 
   	  <orgname>Проект за документация на MATE</orgname> 
-	  <address> <email>cbhoh@mate.org</email> </address> 
+	  <address> <email>cbhoh@gnome.org</email> </address> 
 	</affiliation> 
       </author> 
 
@@ -70,7 +70,7 @@
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-  	  <address> <email>translator@mate.org</email> </address> 
+  	  <address> <email>translator@gnome.org</email> </address> 
         </affiliation>
         <contrib>Latin translation</contrib>
       </othercredit>
@@ -94,7 +94,7 @@
         <revnumber>Ръководство за програмата за гледане на филми Totem, версия 2.0</revnumber> 
 	<date>&date;</date> 
 	<revdescription> 
-	  <para role="author">Chee Bin HOH <email>cbhoh@mate.org</email></para>
+	  <para role="author">Chee Bin HOH <email>cbhoh@gnome.org</email></para>
 	  <para role="publisher">Проект за документация на MATE</para>
         </revdescription> 
       </revision> 

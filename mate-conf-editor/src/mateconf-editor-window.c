@@ -378,13 +378,13 @@ static void
 mateconf_editor_window_about_window (GtkAction *action, GtkWidget *callback_data)
 {
 	const gchar *authors[] = {
-		"Anders Carlsson <andersca@mate.org>",
+		"Anders Carlsson <andersca@gnome.org>",
 		"Fernando Herrera <fherrera@onirica.com>",
 		NULL
 	};
 	const gchar *documenters[] = {
 		"Sun Microsystems",
-		"Shaun McCance <shaunm@mate.org>",
+		"Shaun McCance <shaunm@gnome.org>",
 		NULL
 	};
 

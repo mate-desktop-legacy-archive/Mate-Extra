@@ -2,7 +2,7 @@
 /* logview-main.c - logview main
  *
  * Copyright (C) 2005 Vincent Noel <vnoel@cox.net>
- * Copyright (C) 2008 Cosimo Cecchi <cosimoc@mate.org>
+ * Copyright (C) 2008 Cosimo Cecchi <cosimoc@gnome.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as

@@ -32,7 +32,7 @@
 
 	* sl.po: Updated Slovenian translation.
 
-2007-10-06  Vladimer Sichinava  <vsichi@mate.org>
+2007-10-06  Vladimer Sichinava  <vsichi@gnome.org>
 
         * ka.po: Updated Georgian translation.
 
@@ -40,7 +40,7 @@
 
 	* ca.po: Updated Catalan translation by Francesc Vilches.
 
-2007-09-07  Jonh Wendell  <jwendell@mate.org>
+2007-09-07  Jonh Wendell  <jwendell@gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation by Vladimir Melo.
 
@@ -118,7 +118,7 @@
 	* ar.po: Added Arabic Translation.
 	* LINGUAS: Added ar.
 
-2006-11-5  Vladimer Sichinava  <vsichi@mate.org>
+2006-11-5  Vladimer Sichinava  <vsichi@gnome.org>
 
         * ka.po: Updated Georgian translation.
 
@@ -176,12 +176,12 @@
 
 	* zh_CN.po: Updated Simplified Chinese translation.
 
-2005-10-02  Kjartan Maraas  <kmaraas@mate.org>
+2005-10-02  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Added Norwegian bokmål translation
 	* no.po: Same
 
-2005-09-24  Žygimantas Beručka  <zygis@mate.org>
+2005-09-24  Žygimantas Beručka  <zygis@gnome.org>
 
 	* lt.po: Added Lithuanian translation.
 
@@ -240,7 +240,7 @@
 	* fr.po: Added French translation by Guillaume Desmottes
 	<cass@skynet.be>.
 
-2005-05-15  Vincent van Adrighem  <adrighem@mate.org>
+2005-05-15  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Tino Meinen.
 
@@ -249,7 +249,7 @@
 	* bg.po: Updated Bulgarian translation by
 	Vladimir Petkov <vpetkov@i-space.org>
 
-2005-05-04  Adam Weinberger  <adamw@mate.org>
+2005-05-04  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -272,7 +272,7 @@
 
 	* de.po: Updated German translation.
 
-2005-04-21  Gareth Owen <gowen@mate.org>
+2005-04-21  Gareth Owen <gowen@gnome.org>
 
 	* en_GB.po: Added British English translation
 
@@ -292,7 +292,7 @@
 
 	* ca.po: Added Catalan translation by Gil Forcada
 
-2005-03-13  Vincent van Adrighem  <adrighem@mate.org>
+2005-03-13  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation added by Reinout van Schouwen.
 
@@ -333,7 +333,7 @@
 
 	* sk.po: Added Slovak translation.
 
-2005-02-23  Adam Weinberger  <adamw@mate.org>
+2005-02-23  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -351,7 +351,7 @@
 
 	* de.po: Updated German translation.
 
-2005-02-22  Adam Weinberger  <adamw@mate.org>
+2005-02-22  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Added Canadian English translation.
 

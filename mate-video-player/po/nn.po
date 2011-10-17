@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the totem package.
 # Copyright (C) 2008, The Free Software Foundation, Inc.
 # Åsmund Skjæveland <aasmunds@fys.uio.no>, 2006.
-# Eskild Hustvedt <eskildh@mate.org>, 2008.
+# Eskild Hustvedt <eskildh@gnome.org>, 2008.
 # Torstein Adolf Winterseth <kvikende@yahoo.no>, 2009.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2009.
 # Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.

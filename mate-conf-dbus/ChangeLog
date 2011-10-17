@@ -222,11 +222,11 @@
 
 ============================= 2.16.0 ======================
 
-2006-08-15  Kjartan Maraas  <kmaraas@mate.org>
+2006-08-15  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Fix intltool req.
 
-2006-08-08  Kjartan Maraas  <kmaraas@mate.org>
+2006-08-08  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* doc/mateconftool-2.1: Add missing newline (Loïc Minier,
 	Jan Kratochvil) Closes bug #304143.
@@ -256,19 +256,19 @@
 	this is the canonical way to access *dir variables.  Addresses
 	problems introduced by #336019.
 
-2006-05-07  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-07  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* Makefile.am: Add intltool files to EXTRA_DIST and
 	DISTCLEANFILES.
 	* autogen.sh: Run intltoolize.
 	* configure.in: Fix the po/LINGUAS stuff.
 
-2006-05-06  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-06  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* backends/xml-dir.c: (dir_sync): Fix a potential use after free
 	reported by the coverity checker - #1239. Closes bug #338196.
 
-2006-05-05  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in:
 	* mateconf/Makefile.am:
@@ -277,23 +277,23 @@
 	Migrate to GOption. Patch by Vincent Vuntz. Closes
 	bug #336307.
 
-2006-05-05  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Reinstate the previous patch.
 	* po/LINGUAS: Same.
 
-2006-05-05  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Revert the LINGUAS patch until we have branched.
 	* po/LINGUAS: Remove temporarily.
 
-2006-05-05  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* mateconf/mateconf-internals.c: (read_current_server): Fix a
 	NULL pointer deref reported by Coverity. Patch from Pascal
 	Terjan. Closes bug #338617.
 
-2006-05-05  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Move to the new LINGUAS handling.
 	* po/LINGUAS: Patch from Luis Menina. Closes bug #338036.
@@ -303,13 +303,13 @@
 	* configure.in: Fix staged installation if sysconfdir is overriden
 	from the command line. Closes bug #336019.
 
-2006-05-05  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* doc/mateconf/mateconf-sections.txt: Add MateConfSchema functions.
 	* doc/mateconf/tmpl/mateconf-schema.sgml: Add docs for MateConfSchema.
 	Patch from <kaiw at itee.uq.edu.au>. Closes bug #147758.
 
-2006-05-05  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* mateconf/mateconf-changeset.h:
 	* mateconf/mateconf-client.h:
@@ -325,30 +325,30 @@
 	of a lot of #ifdef __cplusplus stuff. Closes bug 306313.
 	Patch from Fabrício Barros Cebral.
 
-2006-05-05  Kjartan Maraas  <kmaraas@mate.org>
+2006-05-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* backends/markup-tree.c: (parse_value_element):
 	Use the right variable in test. Closes coverity #1238
 	and MATE bug #338195.
 
-2006-04-17  Kjartan Maraas  <kmaraas@mate.org>
+2006-04-17  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Remove obsolete entry for no_NO.
 	* po/no.po: And the translation.
 
-2006-03-18  Guilherme de S. Pastore  <gpastore@mate.org>
+2006-03-18  Guilherme de S. Pastore  <gpastore@gnome.org>
 
 	* NEWS: updated.
 
 	* configure.in: version 2.14.0.
 
-2006-03-10  Kjartan Maraas  <kmaraas@mate.org>
+2006-03-10  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* backends/markup-tree.c: (parse_tree): Patch from
 	Matthias Clasen to fix my leak fix to not crash.
 	Closes bug #334047.
 
-2006-03-06  Kjartan Maraas  <kmaraas@mate.org>
+2006-03-06  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* backends/markup-tree.c: (parse_tree): Free the parse context in
 	some more cases. Fixes bug #332528.
@@ -403,7 +403,7 @@
 	  don't use top_builddir to link in library from current directory;
 	  fixes parallel make
 
-2006-01-05  Vincent Untz  <vuntz@mate.org>
+2006-01-05  Vincent Untz  <vuntz@gnome.org>
 
 	* mateconf/mateconf-client.c: (clear_dir_cache_foreach): new, clears a cache
 	entry if it matches the directory
@@ -493,7 +493,7 @@
 
 	* configure.in: post-branch bump to 2.13.1
 
-2005-12-08  Kjartan Maraas  <kmaraas@mate.org>
+2005-12-08  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* mateconf/mateconf-internals.c: (mateconf_value_decode): Make
 	this function work for schemas too. Patch from Nicolas Peninguy
@@ -539,7 +539,7 @@
 	* NEWS:
 	Update for release
 
-2005-11-01  Kjartan Maraas  <kmaraas@mate.org>
+2005-11-01  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* mateconf/mateconf-backend.c: (mateconf_get_backend): Use
 	G_MODULE_BIND_LAZY in g_module_open().
@@ -625,7 +625,7 @@
 
 	* configure.in: Version 2.11.92.
 
-2005-08-10  Adam Weinberger  <adamw@mate.org>
+2005-08-10  Adam Weinberger  <adamw@gnome.org>
 
 	* backends/evoldap-backend.c: Minor spelling fix
 	  and capitalization tweak (fixes bug #301133)
@@ -1018,13 +1018,13 @@ Tue Nov 16 12:24:26 2004  Jonathan Blandford  <jrb@redhat.com>
 	toplevel directory isn't writable, mark the whole source
 	as non-writable.
 
-2004-09-30  Kjartan Maraas  <kmaraas@mate.org>
+2004-09-30  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* mateconf/mateconf-internals.c: (mateconf_activate_server):
 	Fix pipe misuse reported by valgrind. Suggested fix
 	by Mark McLoughlin. Closes bug #153929.
 
-2004-09-28  Kjartan Maraas  <kmaraas@mate.org>
+2004-09-28  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* mateconf/mateconf-sanity-check.c: (main): Plug a leak.
 	* mateconf/mateconfd.c: (main): Plug a couple of leaks.
@@ -1172,7 +1172,7 @@ Tue Nov 16 12:24:26 2004  Jonathan Blandford  <jrb@redhat.com>
 
 	* configure.in: Version 2.7.91.
 
-2004-08-11  Kjartan Maraas  <kmaraas@mate.org>
+2004-08-11  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* backends/xml-cache.c: (cache_clean): Use NULL in place of 0.
 	* configure.in: Added nb to ALL_LINGUAS.
@@ -1435,7 +1435,7 @@ Tue Nov 16 12:24:26 2004  Jonathan Blandford  <jrb@redhat.com>
 	returned from g_file_get_contents() is a gsize
 	not an int.
 
-2004-06-09  Kjartan Maraas  <kmaraas@mate.org>
+2004-06-09  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* mateconf/mateconf-internals.c: (mateconf_activate_server):
 	Plug a small leak. Fixes bug #143941.
@@ -1450,7 +1450,7 @@ Tue Nov 16 12:24:26 2004  Jonathan Blandford  <jrb@redhat.com>
 
 	* configure.in: Version 2.7.1.
 
-2004-05-04  Morten Welinder  <terra@mate.org>
+2004-05-04  Morten Welinder  <terra@gnome.org>
 
 	* mateconf/mateconf-internals.c (mateconf_activate_server): Delete stray
 	";" aka null statement.  (Valid only in C99 where it had no
@@ -1525,7 +1525,7 @@ Tue Nov 16 12:24:26 2004  Jonathan Blandford  <jrb@redhat.com>
 
         * configure.in: Added "gu" (Gujarati) to ALL_LINGUAS.
 
-2004-04-08  Adam Weinberger  <adamw@mate.org>
+2004-04-08  Adam Weinberger  <adamw@gnome.org>
 
 	* configure.in: Added en_CA to ALL_LINGUAS.
 
@@ -1976,7 +1976,7 @@ Wed Sep 10 15:23:17 2003  Jonathan Blandford  <jrb@redhat.com>
 	* mateconf/mateconftool.c (main) : Print usage message when no options are
 	passed to mateconftool-2. Fixes #70316.
 
-2003-08-11  Christophe Fergeau  <teuf@mate.org>
+2003-08-11  Christophe Fergeau  <teuf@gnome.org>
 
 	* doc/mateconf/tmpl/mateconf-client.sgml:
 	* doc/mateconf/tmpl/mateconf.sgml: Update API documentation (in particular
@@ -2786,7 +2786,7 @@ Sat Feb 16 01:27:29 2002  Jonathan Blandford  <jrb@redhat.com>
 
 	* configure.in: version 1.1.8
 
-2002-02-10  Jody Goldberg <jody@mate.org>
+2002-02-10  Jody Goldberg <jody@gnome.org>
 
 	* mateconf/mateconftool.c : Include libxml/globals to get xmlFree
 	  Without it we call a NULL function pointer.
@@ -3685,11 +3685,11 @@ Tue Nov 20 15:37:58 2001  Owen Taylor  <otaylor@redhat.com>
 	But my lame-ass hack above should keep this from happening so
 	much.
 	
-2001-07-18  Anders Carlsson  <andersca@mate.org>
+2001-07-18  Anders Carlsson  <andersca@gnome.org>
 
 	* configure.in: Remove mateconf-config and mateconf.m4 from AC_OUTPUT
 
-2001-07-17  Anders Carlsson  <andersca@mate.org>
+2001-07-17  Anders Carlsson  <andersca@gnome.org>
 
 	* Makefile.am: Remove mateconf-config and mateconf.m4 from EXTRA_DIST
 	and do not try to install them.
@@ -3707,7 +3707,7 @@ Tue Nov 20 15:37:58 2001  Owen Taylor  <otaylor@redhat.com>
 
 	* mateconf/Makefile.am: remove the -Wno-unused flag; not portable.
 
-2001-07-14  Kjartan Maraas  <kmaraas@mate.org>
+2001-07-14  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Added "nn" to ALL_LINGUAS.
 	
@@ -3893,7 +3893,7 @@ Wed Apr 11 08:07:11 2001  George Lebl <jirka@5z.com>
 
 	* mateconf-2.0.pc.in: New file.
 
-2001-03-13  Kjartan Maraas  <kmaraas@mate.org>
+2001-03-13  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* backends/xml-entry.c: Merge from branch. Use xmlFree().
 	* mateconf/mateconftool.c: Merge from branch. Use xmlFree() and
@@ -4905,7 +4905,7 @@ Mon Jul 24 16:39:01 2000  George Lebl <jirka@5z.com>
 	swapping optimization were working against each other.
 	Removed the g_strdup that is not needed.
 
-2000-06-04	Mathieu Lacage	<mathieu@mate.org>
+2000-06-04	Mathieu Lacage	<mathieu@gnome.org>
 
 	* mateconf-config.in: add gtk-config --cflags and --libs
 	output to the mateconf-gtk --cflags and --libs output.

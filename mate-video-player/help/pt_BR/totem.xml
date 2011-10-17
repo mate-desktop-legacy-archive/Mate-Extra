@@ -31,7 +31,7 @@
     <copyright>
       <year>2009</year>
       <holder>Philip Withnall</holder>
-    </copyright><copyright><year>2007.</year><holder>Raphael Higino (In memoriam)</holder></copyright><copyright><year>2007.</year><holder>Irapuan Pascoal (irapuan.menezes@gmail.com)</holder></copyright><copyright><year>2008.</year><holder>Leonardo Ferreira Fontenelle (leonardof@mate.org)</holder></copyright><copyright><year>2009.</year><holder>Fabrício Godoy (skarllot@gmail.com)</holder></copyright>
+    </copyright><copyright><year>2007.</year><holder>Raphael Higino (In memoriam)</holder></copyright><copyright><year>2007.</year><holder>Irapuan Pascoal (irapuan.menezes@gmail.com)</holder></copyright><copyright><year>2008.</year><holder>Leonardo Ferreira Fontenelle (leonardof@gnome.org)</holder></copyright><copyright><year>2009.</year><holder>Fabrício Godoy (skarllot@gmail.com)</holder></copyright>
     <releaseinfo revision="2.26" role="final">
     	<ulink type="peerreview" url="http://bugzilla.mate.org/show_bug.cgi?id=574524"/>
     </releaseinfo>
@@ -72,7 +72,7 @@
 	<affiliation> 
   	  <orgname>Projeto de documentação do MATE</orgname> 
 	</affiliation>
-	<email>cbhoh@mate.org</email>
+	<email>cbhoh@gnome.org</email>
       </author>
       <author>
 	<firstname>Baptiste</firstname> 
@@ -97,7 +97,7 @@
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-  	  <address> <email>translator@mate.org</email> </address> 
+  	  <address> <email>translator@gnome.org</email> </address> 
         </affiliation>
         <contrib>Latin translation</contrib>
       </othercredit>
@@ -120,7 +120,7 @@
         <revnumber>Totem Movie Player Manual V2.0</revnumber> 
 	<date>Agosto de 2006</date> 
 	<revdescription> 
-	  <para role="author">Chee Bin HOH <email>cbhoh@mate.org</email></para>
+	  <para role="author">Chee Bin HOH <email>cbhoh@gnome.org</email></para>
 	  <para role="publisher">Projeto de documentação do MATE</para>
         </revdescription> 
       </revision>

@@ -2,11 +2,11 @@
 # Copyright (C) 1990-2005 Rich Burridge
 # This file is distributed under the same license as the gcalctool package.
 # Christian Neumair chrisatmate-de.org, 2003, 2004.
-# Hendrik Richter <hendrikr@mate.org>, 2005, 2006, 2007.
+# Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007.
 # Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
 # Jochen Skulj <jochen@jochenskulj.de>
 # Andre Klapper <ak-47@gmx.net>, 2008.
-# Mario Blättermann <mariobl@mate.org>, 2010.
+# Mario Blättermann <mariobl@gnome.org>, 2010.
 #
 # #Vereinbarungen / Conventions:
 # Basic = Standard
@@ -29,7 +29,7 @@ msgstr ""
 "POT-Creation-Date: 2010-08-05 14:53+0200\n"
 "PO-Revision-Date: 2010-08-05 14:54+0200\n"
 "Last-Translator: Christian Kirbach  <Christian.Kirbach@googlemail.com>\n"
-"Language-Team: Deutsch <mate-de@mate.org>\n"
+"Language-Team: Deutsch <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1248,7 +1248,7 @@ msgstr ""
 "Frank Arnold <frank@scirocco-5v-turbo.de>\n"
 "Andre Klapper <ak-47@gmx.net>\n"
 "Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
-"Mario Blättermann <mariobl@mate.org>"
+"Mario Blättermann <mariobl@gnome.org>"
 
 #. The license this software is under (GPL2+)
 #: ../src/math-window.c:204

@@ -3,7 +3,7 @@
 #
 # This file is distributed under the same license as the caja package.
 #
-# Maintainer: Данило Шеган <danilo@mate.org>
+# Maintainer: Данило Шеган <danilo@gnome.org>
 #
 msgid ""
 msgstr ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2005-08-24 21:37-0400\n"
 "PO-Revision-Date: 2005-07-24 06:42+0200\n"
-"Last-Translator: Данило Шеган <danilo@mate.org>\n"
+"Last-Translator: Данило Шеган <danilo@gnome.org>\n"
 "Language-Team: Serbian (sr) <gnom@prevod.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -883,7 +883,7 @@ msgstr ""
 #: ../C/evince.xml:0(None)
 msgid "translator-credits"
 msgstr ""
-"Данило Шеган <danilo@mate.org>\n"
+"Данило Шеган <danilo@gnome.org>\n"
 "\n"
 "Prevod.org — превод на српски језик."
 

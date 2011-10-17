@@ -1,6 +1,6 @@
 # Norwegian (nynorsk) translation of gcalctool.
 # Copyright (C) 2003-2008 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@mate.org>, 2003-2007.
+# Kjartan Maraas <kmaraas@gnome.org>, 2003-2007.
 # Sigurd Gartman <sigurd-translate@brogar.org>, 2003, 2005.
 # Eskild Hustvedt <i18n@zerodogg.org>, 2007, 2008.
 # Torstein Adolf Winterseth <kvikende@yahoo.no>, 2009.
@@ -1249,7 +1249,7 @@ msgstr ""
 #: ../src/gtk.c:556
 msgid "translator-credits"
 msgstr ""
-"Kjartan Maraas <kmaraas@mate.org>\n"
+"Kjartan Maraas <kmaraas@gnome.org>\n"
 "Espen Stefansen <libbe AT stefansen DOT net>\n"
 "Eskild Hustvedt <i18n@zerodogg.org>\n"
 "Torstein A. Winterseth <kvikende@yahoo.no>\n"

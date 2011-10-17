@@ -64,7 +64,7 @@ Template last modified Mar 12, 2002
             <surname>McCance</surname>
             <affiliation>
               <orgname>MATE Documentation Project</orgname>
-	      <address><email>shaunm@mate.org</email></address>
+	      <address><email>shaunm@gnome.org</email></address>
             </affiliation>
           </author>
           <author>
@@ -95,7 +95,7 @@ Template last modified Mar 12, 2002
 		<surname>Translator 1</surname> 
 		<affiliation> 
 		    <orgname>Latin Translation Team</orgname> 
-		    <address> <email>translator@mate.org</email> </address> 
+		    <address> <email>translator@gnome.org</email> </address> 
 		</affiliation>
 		<contrib>Latin translation</contrib>
 	    </othercredit>

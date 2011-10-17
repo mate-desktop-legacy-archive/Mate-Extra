@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Evolution package.
 # Copyright (C) 2008 Free Software Foundation, Inc.
 # Fabrício Godoy <skarllot@gmail.com>, 2008.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2009.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mateconf-editor help HEAD\n"
 "POT-Creation-Date: 2008-11-12 09:31+0000\n"
 "PO-Revision-Date: 2008-08-01 00:16-0300\n"
-"Last-Translator: Leonardo Ferreira Fontenelle <leonardof@mate.org>\n"
+"Last-Translator: Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <mate-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1145,4 +1145,4 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Fabrício Godoy <skarllot@gmail.com>, 2008\n"
-"Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2009"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2009"

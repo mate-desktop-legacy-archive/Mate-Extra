@@ -3,7 +3,7 @@
  * Copyright (C) 2004 Red Hat, Inc.
  * Copyright (C) 2007 The Free Software Foundation
  *
- * Author: Lucas Rocha <lucasr@mate.org>
+ * Author: Lucas Rocha <lucasr@gnome.org>
  *
  * Based on evince code (shell/ev-sidebar.c) by:
  * 	- Jonathan Blandford <jrb@alum.mit.edu>

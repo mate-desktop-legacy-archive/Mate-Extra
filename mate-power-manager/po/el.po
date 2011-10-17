@@ -4,8 +4,8 @@
 # This file is distributed under the same license as the mate-power-manager package.
 #
 # Nikos Charonitakis <nikosx@gmail.com>, 2006.
-# Kostas Papadimas <pkst@mate.org>, 2006.
-# Simos Xenitellis <simos@mate.org>, 2008, 2009.
+# Kostas Papadimas <pkst@gnome.org>, 2006.
+# Simos Xenitellis <simos@gnome.org>, 2008, 2009.
 # Jennie Petoumenou <epetoumenou@gmail.com>, 2010.
 msgid ""
 msgstr ""

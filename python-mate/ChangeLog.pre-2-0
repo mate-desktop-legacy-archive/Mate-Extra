@@ -505,7 +505,7 @@
 	* mate/ui.override (_wrap_mate_about_new): get rid of the
 	gtk_object_sink() call.  This is now handled automatically.
 
-Sat Aug 17 19:59:02 2002  Jonathan Blandford  <jrb@mate.org>
+Sat Aug 17 19:59:02 2002  Jonathan Blandford  <jrb@gnome.org>
 
 	* mate/ui.defs: s/MateDataEdit/MateDateEdit
 

@@ -1,7 +1,7 @@
 # Lithuanian translation of mate-power-manager.
 # Copyright © 2005-2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mate-power-manager package.
-# Žygimantas Beručka <zygis@mate.org>, 2005-2007, 2009, 2010.
+# Žygimantas Beručka <zygis@gnome.org>, 2005-2007, 2009, 2010.
 # Gintautas Miliauskas <gintautas@miliauskas.lt>, 2006-2009.
 # Aurimas Černius <aurisc4@gmail.com>, 2010.
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "power-manager&component=general\n"
 "POT-Creation-Date: 2010-09-16 16:17+0000\n"
 "PO-Revision-Date: 2010-09-18 14:13+0300\n"
-"Last-Translator: Žygimantas Beručka <zygis@mate.org>\n"
+"Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <mate-lt@lists.akl.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -2617,7 +2617,7 @@ msgstr "_Žinynas"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
-#~ "Žygimantas Beručka <zygis@mate.org>\n"
+#~ "Žygimantas Beručka <zygis@gnome.org>\n"
 #~ "Gintautas Miliauskas <gintas@akl.lt>"
 
 #~ msgid "Power _History"

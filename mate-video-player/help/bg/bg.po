@@ -100,7 +100,7 @@ msgid "HOH"
 msgstr ""
 
 #: /home/hadess/Projects/Cvs/totem/help/C/totem.xml:66(email)
-msgid "cbhoh@mate.org"
+msgid "cbhoh@gnome.org"
 msgstr ""
 
 #: /home/hadess/Projects/Cvs/totem/help/C/totem.xml:69(firstname)
@@ -144,7 +144,7 @@ msgid "August 2006"
 msgstr ""
 
 #: /home/hadess/Projects/Cvs/totem/help/C/totem.xml:114(para)
-msgid "Chee Bin HOH <email>cbhoh@mate.org</email>"
+msgid "Chee Bin HOH <email>cbhoh@gnome.org</email>"
 msgstr ""
 
 #: /home/hadess/Projects/Cvs/totem/help/C/totem.xml:121(revnumber)

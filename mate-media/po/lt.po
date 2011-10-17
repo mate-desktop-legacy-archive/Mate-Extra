@@ -1,7 +1,7 @@
 # Lithuanian translation of mate-media
 # Copyright © 2000-2010 Free Software Foundation, Inc.
 # Gediminas Paulauskas <menesis@chatsubo.lt>, 2000-2003.
-# Žygimantas Beručka <zygis@mate.org>, 2003-2006, 2009, 2010.
+# Žygimantas Beručka <zygis@gnome.org>, 2003-2006, 2009, 2010.
 # Justina Klingaitė <justina.klingaite@gmail.com>, 2005.
 # Gintautas Miliauskas <gintas@akl.lt>, 2007.
 # Rimas Kudelis <rq@akl.lt>, 2009.
@@ -13,7 +13,7 @@ msgstr ""
 "media&component=general\n"
 "POT-Creation-Date: 2010-09-17 21:25+0000\n"
 "PO-Revision-Date: 2010-09-18 22:40+0300\n"
-"Last-Translator: Žygimantas Beručka <zygis@mate.org>\n"
+"Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <mate-lt@lists.akl.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -543,10 +543,10 @@ msgstr "Bitų dažnis:"
 #: ../grecord/src/gsr-window.c:1241
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "MATE garso įrašymo programa\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1512
 msgid "Playing…"
@@ -893,7 +893,7 @@ msgid "translator-credits"
 msgstr ""
 "Paskutinieji vertėjai:\n"
 "Justina Klingaitė <justina.klingaite@gmail.com>,\n"
-"Žygimantas Beručka <zygis@mate.org>\n"
+"Žygimantas Beručka <zygis@gnome.org>\n"
 "Gediminas Paulauskas <menesis@chatsubo.lt>"
 
 #. change window title

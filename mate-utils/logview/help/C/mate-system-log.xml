@@ -73,7 +73,7 @@
 		<surname>Cutler</surname> 
 		<affiliation> 
 	  	<orgname>MATE Documentation Team</orgname> 
-	  	<address> <email>pcutler@mate.org</email> </address> 
+	  	<address> <email>pcutler@gnome.org</email> </address> 
 		</affiliation> 
    </author> 
 
@@ -92,7 +92,7 @@
 		<surname>Translator 1</surname> 
 		<affiliation> 
 	  	<orgname>Latin Translation Team</orgname> 
-	  	<address> <email>translator@mate.org</email> </address> 
+	  	<address> <email>translator@gnome.org</email> </address> 
 		</affiliation>
 		<contrib>Latin translation</contrib>
    </othercredit>
@@ -105,7 +105,7 @@
 		<date>October 2009</date> 
 		<revdescription> 
 	  		<para role="author">Paul Cutler
-	    		<email>pcutler@mate.org</email>
+	    		<email>pcutler@gnome.org</email>
 	  		</para>
 	  		<para role="publisher">MATE Documentation Project</para>
 		</revdescription> 

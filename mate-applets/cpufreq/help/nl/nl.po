@@ -222,8 +222,8 @@ msgid "MATE Project"
 msgstr "MATE Project"
 
 #: ../C/cpufreq-applet.xml:56(email)
-msgid "carlosgc@mate.org"
-msgstr "carlosgc@mate.org"
+msgid "carlosgc@gnome.org"
+msgstr "carlosgc@gnome.org"
 
 #: ../C/cpufreq-applet.xml:60(firstname)
 msgid "Davyd"
@@ -661,8 +661,8 @@ msgstr "Myckel Habets, 2005"
 #~ msgid "McCance"
 #~ msgstr "McCance"
 
-#~ msgid "shaunm@mate.org"
-#~ msgstr "shaunm@mate.org"
+#~ msgid "shaunm@gnome.org"
+#~ msgstr "shaunm@gnome.org"
 
 #~ msgid "Version 2.10"
 #~ msgstr "Versie 2.10"

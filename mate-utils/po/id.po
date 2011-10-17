@@ -561,7 +561,7 @@ msgstr "Alat grafis untuk menganalisa penggunaan disk."
 #: ../logview/logview-about.h:63
 msgid "translator-credits"
 msgstr ""
-"Ahmad Riza H Nst  <rizahnst@mate.org>\n"
+"Ahmad Riza H Nst  <rizahnst@gnome.org>\n"
 "Mohammad DAMT <mdamt@bisnisweb.com>\n"
 "http://id.mate.org/"
 

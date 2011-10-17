@@ -6,92 +6,92 @@
 
 ==================== 2.22.1 ====================
 
-2008-03-09  Carlos Garnacho  <carlosg@mate.org>
+2008-03-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.22.0
 
-2008-02-25  Carlos Garnacho  <carlosg@mate.org>
+2008-02-25  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.92
 
-2008-02-23  Carlos Garnacho  <carlosg@mate.org>
+2008-02-23  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.ui, network.glade: Add comment for translators for the 
 	"Volume" label. Fixes #518206.
 
-2008-02-12  Carlos Garnacho  <carlosg@mate.org>
+2008-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.91
 
-2008-01-28  Carlos Garnacho  <carlosg@mate.org>
+2008-01-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.90
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5.1
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5
 
-2008-01-02  Carlos Garnacho  <carlosg@mate.org>
+2008-01-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.glade, network.ui: Do not have conflicting accelerator in
 	the interface properties dialog. Fixes #429629.
 
-2008-01-02  Carlos Garnacho  <carlosg@mate.org>
+2008-01-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* shares.glade, shares.ui: Follow HIG and label the Ok button as
 	"Share" in the share edition dialog. Fixes #504845, patch by Andreas
 	Nilsson <nisses.mail@home.se>
 
-2008-01-02  Carlos Garnacho  <carlosg@mate.org>
+2008-01-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* shares.glade, shares.ui: Do not impose a width on the "Edit share"
 	dialog. Fixes #478654.
 
-2007-12-26  Carlos Garnacho  <carlosg@mate.org>
+2007-12-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* time.glade, time.ui: Put the "synchronize now" button besides the
 	time spin buttons, looks intuitive enough, and avoids having far too
 	many buttons in the dialog button area.
 
-2007-12-18  Carlos Garnacho  <carlosg@mate.org>
+2007-12-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.3
 
-2007-12-18  Carlos Garnacho  <carlosg@mate.org>
+2007-12-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.glade, network.ui: Add new necessary fields for PPPoE and
 	GPRS/UMTS interfaces.
 
-2007-12-14  Carlos Garnacho  <carlosg@mate.org>
+2007-12-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.glade, network.ui: Set GtkEntry::activates-default on all
 	entries in the connection dialog.
 
-2007-12-12  Carlos Garnacho  <carlosg@mate.org>
+2007-12-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* shares.glade, shares.ui: Add UI for managing SMB passwords.
 
-2007-11-14  Carlos Garnacho  <carlosg@mate.org>
+2007-11-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2.1
 
-2007-11-13  Carlos Garnacho  <carlosg@mate.org>
+2007-11-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2
 
-2007-10-30  Carlos Garnacho  <carlosg@mate.org>
+2007-10-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.1
 
-2007-10-29  Carlos Garnacho  <carlosg@mate.org>
+2007-10-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* *.glade.in, *.glade.inp: removed a bunch of no longer needed files.
 
-2007-09-13  Carlos Garnacho  <carlosg@mate.org>
+2007-09-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	Use GtkBuilder.
 
@@ -101,24 +101,24 @@
 	* Makefile.am: install UI files
 	* fix.pl: remove, it hasn't been needed for quite some time.
 
-2007-09-13  Carlos Garnacho  <carlosg@mate.org>
+2007-09-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* common.glade.in: remove obsolete "icon" property, the image no
 	longer exists.
 
-2007-09-03  Carlos Garnacho  <carlosg@mate.org>
+2007-09-03  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.92
 
-2007-08-28  Carlos Garnacho  <carlosg@mate.org>
+2007-08-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.91
 
-2007-07-28  Carlos Garnacho  <carlosg@mate.org>
+2007-07-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.1
 
-2007-07-28  Carlos Garnacho  <carlosg@mate.org>
+2007-07-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* *.glade.in: unset invisible char, so it works out of the box with
 	distros that just patch GTK+ to change the default one. (#393173,
@@ -130,35 +130,35 @@
 	Some string HIG-ification and spacing more similair to the
 	mate-control-center capplets. (Closes #428671)
 
-2007-07-10  Carlos Garnacho  <carlosg@mate.org>
+2007-07-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.0
 
-2007-04-09  Carlos Garnacho  <carlosg@mate.org>
+2007-04-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.1
 
-2007-03-12  Carlos Garnacho  <carlosg@mate.org>
+2007-03-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.0
 
-2007-02-27  Carlos Garnacho  <carlosg@mate.org>
+2007-02-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.92
 
-2007-02-12  Carlos Garnacho  <carlosg@mate.org>
+2007-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.91
 
-2007-01-09  Carlos Garnacho  <carlosg@mate.org>
+2007-01-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.5
 
-2007-01-08  Carlos Garnacho  <carlosg@mate.org>
+2007-01-08  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.4
 
-2007-01-01  Carlos Garnacho  <carlosg@mate.org>
+2007-01-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.glade.in: added NM integration UI bits.
 
@@ -166,80 +166,80 @@
 
 	* time.glade.in: fixed typo
 
-2006-12-04  Carlos Garnacho  <carlosg@mate.org>
+2006-12-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* time.glade.in: redesign GUI.
 
-2006-12-01  Carlos Garnacho  <carlosg@mate.org>
+2006-12-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.3
 
-2006-11-30  Carlos Garnacho  <carlosg@mate.org>
+2006-11-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* users.glade.in: set a name for the help button in groups dialog.
 
-2006-11-05  Carlos Garnacho  <carlosg@mate.org>
+2006-11-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.2
 
-2006-11-04  Carlos Garnacho  <carlosg@mate.org>
+2006-11-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.glade.in: remove unused widgets.
 
-2006-09-30  Carlos Garnacho  <carlosg@mate.org>
+2006-09-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.5
 
-2006-09-07  Carlos Garnacho  <carlosg@mate.org>
+2006-09-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.4
 
-2006-09-07  Carlos Garnacho  <carlosg@mate.org>
+2006-09-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.glade.in: use GTK_STOCK_SAVE and GTK_STOCK_DELETE in the
 	save/delete profile buttons. Delete old locations dialog.
 
-2006-09-04  Carlos Garnacho  <carlosg@mate.org>
+2006-09-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.3
 
-2006-08-29  Carlos Garnacho  <carlosg@mate.org>
+2006-08-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* time.glade.in: add "synchronize now" button
 
-2006-08-28  Carlos Garnacho  <carlosg@mate.org>
+2006-08-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* users.glade.in: move profiles combo to "Account" tab
 
-2006-08-11  Carlos Garnacho  <carlosg@mate.org>
+2006-08-11  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.2
 
-2006-08-06  Carlos Garnacho  <carlosg@mate.org>
+2006-08-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* common.glade.in, network.glade.in, time.glade.in, disks.glade.in,
 	users.glade.in, services.glade.in, shares.glade.in: do not load the
 	mate module, it isn't used.
 
-2006-08-02  Carlos Garnacho  <carlosg@mate.org>
+2006-08-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.1
 
-2006-08-02  Carlos Garnacho  <carlosg@mate.org>
+2006-08-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* common.glade.in, network.glade.in, users.glade.in: removed 
 	unnecessary widgets, change password char to U+25CF
 
-2006-07-30  Carlos Garnacho  <carlosg@mate.org>
+2006-07-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.glade.in, time.glade.in: mark a couple of strings as
 	non-translatable. Issue raised by Benoît Dejean <benoit@placenet.org>
 
-2006-07-05  Carlos Garnacho  <carlosg@mate.org>
+2006-07-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.glade.in: make locations stuff visible again
 
-2006-06-06  Carlos Garnacho  <carlosg@mate.org>
+2006-06-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.0
 
@@ -247,19 +247,19 @@
 
 	* shares.glade.in: Froperties --> Properties.
 
-2006-05-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-05-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* shares.glade.in: strings improvements
 	* network.glade.in: switch DHCP/static IP positions, improve DHCP
 	string
 
-2006-05-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-05-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* common.glade.in: removed a couple of unnecessary widgets
 	* network.glade.in, shares.glade.in, time.glade.in, users.glade.in:
 	make some strings more HIGgy
 
-2006-05-19  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-05-19  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* shares.glade.in: put general SMB settings in a tab in the main
 	dialog, other slight UI improvements
@@ -270,7 +270,7 @@
 	* network.glade.in: reorganize slightly the UI, hide profiles, default
 	gateway and modem autodetection at the moment.
 
-2006-05-18  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-05-18  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* common.glade.in: make report_window modal
 	* time.glade.in: remove redundant help buttons from already quite
@@ -280,31 +280,31 @@
 	s/advanced_properties_treeview/service_settings_table/, minor cosmetic
 	issues
 
-2006-03-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-03-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.14.0
 
-2006-01-31  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-31  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.2
 
-2006-01-30  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-30  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* boot.glade.in, common.glade.in, network.glade.in, time.glade.in:
 	Apply string improvement suggestions from Benoît Dejean
 	<benoit@placenet.org>, closes #328944.
 
-2006-01-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.1
 
-2006-01-11  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-11  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* users.glade.in: committed slightly modified patch from Guillaume
 	Desmottes <cass@skynet.be>, improves the user privileges tab. Closes
 	bug #308685
 
-2006-01-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.0
 
@@ -313,61 +313,61 @@
 	* disks.glade.in: Use yes-no stock icons instead of check boxes for
 	cdrom capabilites
 
-2005-11-28  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-11-28  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.1
 
-2005-09-04  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-09-04  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.0
 
-2005-08-23  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.92
 
-2005-08-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.2
 
-2005-08-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* services.glade.in: small string change
 
-2005-07-26  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-26  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.1
 
-2005-07-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: fix separation of buttons in the DNS tab
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0.1
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* common.glade.in: remove GTK_WIN_POS_CENTER from the password dialog
 	* services.glade.in: changed GUI
 
-2005-06-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-06-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: added an option for wireless key type
 
-2005-04-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-04-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* boot.glade.in, common.glade.in: Applied string suggestions from 
 	Kjartan. Fixes #301301 and #301302
 
-2005-04-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-04-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: remove duplicate accelerators. Fixes #171088
 
-2005-04-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-04-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* time.glade.in: set focus target for "time" label
 
@@ -376,128 +376,128 @@
 	* network.glade.in: Added option for using the peer DNS in dialup
 	connections
 
-2005-03-07  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-07  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.2.0
 
-2005-03-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.92
 
-2005-02-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* users.glade.in: add hidden text field for the "other data" field in
 	GECOS fields, it's hidden and doesn't add new strings, so it wouldn't
 	break any freeze
 
-2005-02-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.91
 
-2005-01-31  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-31  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: add a name to a glade widget, this fixes a crash,
 	but nobody complained, though...
 
-2005-01-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.90
 
-2005-01-22  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* boot.glade.in, disks.glade.in, network.glade.in, services.glade.in,
 	shares.glade.in, time.glade.in, users.glade.in: Remove tools
 	descriptions at the top of main windows, other minor UI fixes
 
-2005-01-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* boot.glade.in: replaced MateFileEntries with 
 	GtkFileChooserButton
 
-2005-01-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4.1
 
-2005-01-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* users.glade.in: fix spacing in profiles edition dialog
 
-2005-01-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* shares.glade.in: replaced MateFileEntry with a 
 	GtkFileChooserButton
 
-2005-01-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4
 
-2005-01-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* users.glade.in: patch by Sivan Greenberg <sivan@workaround.org>
 	to add default groups/permissions to profiles
 
-2005-01-11  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-11  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* shares.glade.in: Added SMB general settings dialog
 
-2005-01-10  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-10  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* common.glade.in: higgify password dialog. fixes #162045
 
-2005-01-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: Modify UI for ISDN interfaces
 
-2004-12-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.3
 
-2004-12-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* common.glade.in: improved the report dialog, it's being used again
 
-2004-12-14  Carlos Garnacho parro  <carlosg@mate.org>
+2004-12-14  Carlos Garnacho parro  <carlosg@gnome.org>
 
 	* network.glade.in: made locations widgets visible
 
-2004-11-24  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-24  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: added names to some widgets
 
-2004-11-23  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: prettified a bit
 
-2004-11-22  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: added the aliases editing window
 
-2004-11-15  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-15  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: changed the essid entry for an essid combobox
 
-2004-11-09  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-09  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: turned off visibility in still unsupported
 	features
 
-2004-11-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.inp, network.glade.in: modified network UI for 1.2
 
-2004-11-05  Carlos Garcia Campos  <carlosgc@mate.org>
+2004-11-05  Carlos Garcia Campos  <carlosgc@gnome.org>
 
 	* disks.glade.in: added DVD support
 
-2004-11-03  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-03  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1
 
-2004-11-01  Carlos Garcia Campos  <carlosgc@mate.org>
+2004-11-01  Carlos Garcia Campos  <carlosgc@gnome.org>
 
 	* disks.glade.in: change the main dialog header
 
-2004-10-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-10-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: Patch by Sebastien Bacher <seb128@debian.org>
 	to hint that "network name" is ESSID, fixes #153852.
@@ -505,33 +505,33 @@
 	Patch by Vincent Untz <vincent@vuntz.net> to add WEP keys management
 	to the UI. Fixes #147260
 
-2004-09-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* shares.glade.in: added some widget names
 
-2004-09-14  Carlos García Campos <carlosgc@mate.org>
+2004-09-14  Carlos García Campos <carlosgc@gnome.org>
 
 	* disks.glade.in: added format partition dialog
 
-2004-09-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* shares.glade.in: added some dialogs
 
-2004-09-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* shares.glade.in, shares.glade.inp: added shares
 	* Makefile.am: ditto
 	* users.glade.in: reworked the user privileges stuff, now it's nice
 
-2004-09-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.0
 
-2004-09-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 0.92
 
-2004-08-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* time.glade.in: minor fix, the "select timezone" button was not
 	aligned with the "select timeservers" button
@@ -540,17 +540,17 @@
 
 	* Release 0.91.0
 
-2004-08-07  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-07  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* boot.glade.in, network.glade.in, users.glade.in: wrapped the title
 	text in the main dialogs
 
-2004-08-03  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-03  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* boot.glade.in, network.glade.in, services.glade.in, time.glade.in:
 	random a11y improvements
 
-2004-08-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network.glade.in: hide by default the default gateway stuff
 
@@ -1102,7 +1102,7 @@
 
 	* time.glade.in: Set GtkScrolledWindow's HV policy to Automatic.
 
-2002-09-15  Christian Meyer  <chrisime@mate.org>
+2002-09-15  Christian Meyer  <chrisime@gnome.org>
 
 	* common.glade.h: s/Mate/MATE for consistency reasons.
 

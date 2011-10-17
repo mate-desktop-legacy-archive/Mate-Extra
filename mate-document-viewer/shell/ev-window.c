@@ -9,7 +9,7 @@
  *  Copyright © 2003, 2004, 2005, 2009 Christian Persch
  *
  *  Author:
- *    Martin Kretzschmar <martink@mate.org>
+ *    Martin Kretzschmar <martink@gnome.org>
  *
  * Evince is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by
@@ -4562,12 +4562,12 @@ ev_window_cmd_help_about (GtkAction *action, EvWindow *ev_window)
 {
 	const char *authors[] = {
 		"Martin Kretzschmar <m_kretzschmar@gmx.net>",
-		"Jonathan Blandford <jrb@mate.org>",
-		"Marco Pesenti Gritti <marco@mate.org>",
+		"Jonathan Blandford <jrb@gnome.org>",
+		"Marco Pesenti Gritti <marco@gnome.org>",
 		"Nickolay V. Shmyrev <nshmyrev@yandex.ru>",
-		"Bryan Clark <clarkbw@mate.org>",
-		"Carlos Garcia Campos <carlosgc@mate.org>",
-		"Wouter Bolsterlee <wbolster@mate.org>",
+		"Bryan Clark <clarkbw@gnome.org>",
+		"Carlos Garcia Campos <carlosgc@gnome.org>",
+		"Wouter Bolsterlee <wbolster@gnome.org>",
                 "Christian Persch <chpe" "\100" "mate.org>",
 		NULL
 	};

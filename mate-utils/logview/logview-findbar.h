@@ -1,7 +1,7 @@
 /* logview-findbar.h - find toolbar for logview
  *
  * Copyright (C) 2004 Vincent Noel <vnoel@cox.net>
- * Copyright (C) 2008 Cosimo Cecchi <cosimoc@mate.org>
+ * Copyright (C) 2008 Cosimo Cecchi <cosimoc@gnome.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as

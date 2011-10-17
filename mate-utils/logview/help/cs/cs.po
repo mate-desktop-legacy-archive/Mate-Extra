@@ -9,7 +9,7 @@ msgstr ""
 "POT-Creation-Date: 2010-02-16 02:20+0000\n"
 "PO-Revision-Date: 2010-02-16 17:30+0100\n"
 "Last-Translator: Adrian Guniš <andygun696@gmail.com>\n"
-"Language-Team: Czech <mate-cs-list@mate.org>\n"
+"Language-Team: Czech <mate-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -192,8 +192,8 @@ msgid "Cutler"
 msgstr "Cutler"
 
 #: C/mate-system-log.xml:76(email)
-msgid "pcutler@mate.org"
-msgstr "pcutler@mate.org"
+msgid "pcutler@gnome.org"
+msgstr "pcutler@gnome.org"
 
 #: C/mate-system-log.xml:81(firstname)
 msgid "Vincent"
@@ -216,8 +216,8 @@ msgid "October 2009"
 msgstr "Říjen 2009"
 
 #: C/mate-system-log.xml:107(para)
-msgid "Paul Cutler <email>pcutler@mate.org</email>"
-msgstr "Paul Cutler <email>pcutler@mate.org</email>"
+msgid "Paul Cutler <email>pcutler@gnome.org</email>"
+msgstr "Paul Cutler <email>pcutler@gnome.org</email>"
 
 #: C/mate-system-log.xml:114(revnumber)
 msgid "System Log Viewer Manual V2.4"

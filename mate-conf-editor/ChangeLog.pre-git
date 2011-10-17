@@ -1,39 +1,39 @@
-2009-04-21  Cosimo Cecchi  <cosimoc@mate.org>
+2009-04-21  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mateconf-editor.doap: add the DOAP file for this project.
 
-2009-04-21  Cosimo Cecchi  <cosimoc@mate.org>
+2009-04-21  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-editor-window.c (mateconf_editor_window_finalize):
 	We can always unref the MateConfClient object now that bug #579751 has
 	been fixed.
 
-2009-04-21  Cosimo Cecchi  <cosimoc@mate.org>
+2009-04-21  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-list-model.c (mateconf_list_model_finalize),
 	(mateconf_list_model_set_client):
 	* src/mateconf-tree-model.c (mateconf_tree_model_set_client):
 	Ref the MateConfClient object when setting it to a model (#579751).
 
-2009-03-17  Vincent Untz  <vuntz@mate.org>
+2009-03-17  Vincent Untz  <vuntz@gnome.org>
 
 	* configure.in: post-release bump to 2.26.1
 
 ==================== 2.26.0 ====================
 
-2009-03-17  Vincent Untz  <vuntz@mate.org>
+2009-03-17  Vincent Untz  <vuntz@gnome.org>
 
 	* NEWS:
 	* configure.in: version 2.26.0
 
 ==================== 2.25.91 ====================
 
-2009-02-16  Cosimo Cecchi  <cosimoc@mate.org>
+2009-02-16  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* NEWS:
 	* configure.in: update for 2.25.91 release.
 
-2008-11-18  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-18  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-bookmarks-dialog.c:
 	(mateconf_bookmarks_dialog_populate_model):
@@ -47,25 +47,25 @@
 	* src/mateconf-util.c: (mateconf_client_get_schema_for_key):
 	Fix a bunch of memory leaks.
 
-2008-10-31  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-31  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-util.c: (can_edit_source):
 	Use a MateConfClient to decide whether we can edit a source instead
 	of using the MateConfEngine directly.
 
-2008-10-31  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-31  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-editor-window.c: (help_cb),
 	(mateconf_editor_popup_window_set_as_default),
 	(mateconf_editor_popup_window_set_as_mandatory):
 	Fix some double-frees of GErrors.
 
-2008-10-31  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-31  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-editor-window.c: (mateconf_editor_window_finalize):
 	Don't unref the MateConfClient if the window type is not the normal one.
 
-2008-10-30  Vincent Untz  <vuntz@mate.org>
+2008-10-30  Vincent Untz  <vuntz@gnome.org>
 
 	Add some preliminary PolicyKit support for setting default/mandatory
 	values. This only works with the popup context menu because of
@@ -85,7 +85,7 @@
 	(mateconf_editor_window_list_view_popup_menu): update to have the right
 	sensitivity of popup menu items with the new PolicyKit stuff.
 
-2008-10-30  Vincent Untz  <vuntz@mate.org>
+2008-10-30  Vincent Untz  <vuntz@gnome.org>
 
 	* src/mateconf-editor-application.c:
 	(mateconf_editor_application_create_editor_window):
@@ -96,7 +96,7 @@
 	sensitive.
 	Fix bug #558483
 
-2008-10-19  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-19  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* configure.in:
 	Bump to 2.25.1, enforce GLib/GTK+ deprecation CFLAGS under
@@ -112,12 +112,12 @@
 	(gedit_output_window_finalize):
 	Port to GtkTooltip and avoid using deprecated functions.	
 
-2008-10-19  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-19  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* data/mateconf-editor.desktop.in.in:
 	Drop deprecated "Encoding" field.
 
-2008-10-02  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-02  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-editor-window.c: (mateconf_editor_window_go_to):
 	Remove the checks for existence of the key, as mateconf_client_get () is
@@ -125,11 +125,11 @@
 	value. The code should anyway be smart enough to stop at the right
 	level when we supply a key that doesn't exist (#554629).
 
-2008-10-01  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-01  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* COPYING: Add this.
 
-2008-10-01  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-01  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-bookmarks-dialog.c: (mateconf_bookmarks_dialog_destroy),
 	(mateconf_bookmarks_dialog_populate_model),
@@ -144,29 +144,29 @@
 	Always unref the MateConfClient objects retrieved with
 	mateconf_client_get_default ().
 
-2008-09-27  Kjartan Maraas  <kmaraas@mate.org>
+2008-09-27  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/main.c: Remove <mate.h> and include <stdlib.h> for
 	exit().
 
-2008-09-25  Cosimo Cecchi  <cosimoc@mate.org>
+2008-09-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-tree-model.c:
 	Add the GPLv2 license header (part of #551943).
 
-2008-09-25  Cosimo Cecchi  <cosimoc@mate.org>
+2008-09-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-key-editor.c: (mateconf_key_editor_create_combo_box):
 	Add a comment for translators (#521592).
 
-2008-09-25  Cosimo Cecchi  <cosimoc@mate.org>
+2008-09-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-search-dialog.c: (mateconf_search_not_found_dialog),
 	(mateconf_search_dialog_search), (mateconf_search_dialog_init):
 	Set the right parent on the "Pattern not found" dialog, so that
 	focus will return to the right dialog after closing (#349844).
 
-2008-09-25  Cosimo Cecchi  <cosimoc@mate.org>
+2008-09-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* configure.in:
 	* src/mateconf-bookmarks-dialog.c: (mateconf_bookmarks_dialog_init):
@@ -176,33 +176,33 @@
 	Drop dependency on libmate and libmate-ui.
 	Thanks to Kristof Vansant (#342635).
 
-2008-09-25  Cosimo Cecchi  <cosimoc@mate.org>
+2008-09-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/*: Use single GTK+ includes.
 
-2008-09-24  Vincent Untz  <vuntz@mate.org>
+2008-09-24  Vincent Untz  <vuntz@gnome.org>
 
 	* configure.in: post-release bump to 2.24.1.
 
 ==================== 2.24.0.1 ====================
 
-2008-09-24  Vincent Untz  <vuntz@mate.org>
+2008-09-24  Vincent Untz  <vuntz@gnome.org>
 
 	* NEWS:
 	* configure.in: version 2.24.0.1
 
-2008-09-23  Vincent Untz  <vuntz@mate.org>
+2008-09-23  Vincent Untz  <vuntz@gnome.org>
 
 	* configure.in: post-release bump to 2.24.1.
 
 ==================== 2.24.0 ====================
 
-2008-09-23  Vincent Untz  <vuntz@mate.org>
+2008-09-23  Vincent Untz  <vuntz@gnome.org>
 
 	* NEWS:
 	* configure.in: version 2.24.0
 
-2008-08-18  Christian Persch  <chpe@mate.org>
+2008-08-18  Christian Persch  <chpe@gnome.org>
 
 	Bug 341288 – move to G_DEFINE_TYPE reduces code
 
@@ -230,7 +230,7 @@
 	* src/gedit-output-window.h: Use G_DEFINE_TYPE. Patch by Kristof
 	Vansant.
 
-2008-08-18  Christian Persch  <chpe@mate.org>
+2008-08-18  Christian Persch  <chpe@gnome.org>
 
 	* src/mateconf-bookmarks-dialog.h:
 	* src/mateconf-cell-renderer.h:
@@ -242,7 +242,7 @@
 	* src/gedit-output-window.h: Don't use deprecated gtk type macros. Bug
 	#341252, patch by Kristof Vansant.
 
-2008-08-18  Christian Persch  <chpe@mate.org>
+2008-08-18  Christian Persch  <chpe@gnome.org>
 
         * data/icons/Makefile.am:
         * data/icons/*.png:
@@ -253,13 +253,13 @@
         * src/mateconf-editor-window.c: Use themed icons. Bug #348822; partially
         based on patches by Christopher Bratusek.
 
-2008-08-18  Christian Persch  <chpe@mate.org>
+2008-08-18  Christian Persch  <chpe@gnome.org>
 
 	* Makefile.am:
 	* autogen.sh:
 	* configure.in: Fix distcheck with intltool 0.40.0.
 
-2008-08-04  Jonathon Jongsma  <jjongsma@mate.org>
+2008-08-04  Jonathon Jongsma  <jjongsma@gnome.org>
 
 	* src/gedit-output-window.c: Modify the buttons for the search results pane
 	so that the icons aren't clipped and difficult to determine what they are
@@ -280,7 +280,7 @@
 	a memory address on the stack as a weak pointer. Fixes segfault when
 	closing the search dialog with Esc (bug #483382).
 
-2007-05-02  Jonathon Jongsma  <jjongsma@mate.org>
+2007-05-02  Jonathon Jongsma  <jjongsma@gnome.org>
 
 	* src/mateconf-editor-window.c: (mateconf_editor_window_style_set): Set the text
 	color to the 'fg' color so that it matches the other text regardless of GTK+
@@ -295,7 +295,7 @@
 	* NEWS:
 	* configure.in: Release 2.19.92
 
-2007-08-27  Kjartan Maraas  <kmaraas@mate.org>
+2007-08-27  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* NEWS: Update. 
 	* src/main.c: (main): Translate program description correctly.
@@ -307,21 +307,21 @@
 	gtk-update-icon-cache for install-hook and uninstall-hook.
 	Closes bug #422860.
 
-2007-08-27  Kjartan Maraas  <kmaraas@mate.org>
+2007-08-27  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* NEWS: Update
 	* configure.in: Bump again.
 	* src/mateconf-search-dialog.c: (mateconf_search_dialog_search):
 	Revert accidental commit that broke search.
 
-2007-08-27  Kjartan Maraas  <kmaraas@mate.org>
+2007-08-27  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Bump version.
 	* src/mateconf-editor-window.c: (mateconf_editor_window_get_client):
 	Clean up some unused code. Patch from Kristof Vansant. Closes
 	bug #341469.
 
-2007-08-27  Kjartan Maraas  <kmaraas@mate.org>
+2007-08-27  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/mateconf-bookmarks.c: Mark a function static.
 	* src/mateconf-cell-renderer.c: (mateconf_cell_renderer_activate):
@@ -354,7 +354,7 @@
         "Application" is not a valid category in the freedesktop.org
         specification.
 
-2007-02-20  Kjartan Maraas  <kmaraas@mate.org>
+2007-02-20  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* Makefile.am: Dist MAINTAINERS.
 
@@ -372,29 +372,29 @@
 	* src/mateconf-search.c: (mateconf_tree_model_search_iter_foreach):
 	Fix a double-free crashing in searchs. Fix bug #361137
 
-2006-11-16  Kjartan Maraas  <kmaraas@mate.org>
+2006-11-16  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/mateconf-editor-window.c: Re-commit the fix for
 	bug #355310.
 
-2006-11-16  Kjartan Maraas  <kmaraas@mate.org>
+2006-11-16  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/mateconf-editor-window.c: Revert string change until
 	we've branched.
 
-2006-11-16  Kjartan Maraas  <kmaraas@mate.org>
+2006-11-16  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/mateconf-editor-window.c: (mateconf_editor_window_go_to):
 	Use strrchr() instead of rindex() for portability.
 	Reported by Andreas Köhler. Closes bug #355472.
 
-2006-11-16  Kjartan Maraas  <kmaraas@mate.org>
+2006-11-16  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/mateconf-editor-window.c: Remove ellipsis
 	from the Unset Key menuitem as per HIG. Reported by
 	Ken Harris. Closes bug #355310.
 
-2006-08-14  Kjartan Maraas  <kmaraas@mate.org>
+2006-08-14  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* Makefile.am: Fix distcheck.
 	* configure.in: Require intltool 0.35.0.
@@ -410,7 +410,7 @@
 	* configure.in: Release 2.15.91
 	* Makefile.am: added missing m4 subdir
 
-2006-08-07  Kjartan Maraas  <kmaraas@mate.org>
+2006-08-07  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* .cvsignore:
 	* Makefile.am:
@@ -420,7 +420,7 @@
 	* docs/Makefile.am: Port to mate-doc-utils. Patch from
 	Don Scorgie. Closes bug #346919.
 
-2006-08-07  Kjartan Maraas  <kmaraas@mate.org>
+2006-08-07  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/gedit-output-window.c: (my_popup_handler),
 	(gedit_output_window_init): Port to gtk+ from deprecated
@@ -430,7 +430,7 @@
 
 	* autogen.sh: add "USE_COMMON_DOC_BUILD=yes", fix bug # 348238 
 
-2006-07-11  Kjartan Maraas  <kmaraas@mate.org>
+2006-07-11  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* autogen.sh: Convert to use mate-autogen.sh. Fixes
 	bug #341344. Patch from Frederic Peters.
@@ -492,7 +492,7 @@
 	
 	Added French translation.
 
-2006-04-17  Kjartan Maraas  <kmaraas@mate.org>
+2006-04-17  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Remove obsolete entry for no_NO.
 	* po/no.po: And the translation.
@@ -573,7 +573,7 @@
 
 	* src/mateconf-editor-window.c: (mateconf_editor_window_about_window):
 	use "translator-credits" instead of "translator_credits",
-	patch by Vincent van Adrighem <adrighem@mate.org> (Closes: #300958)
+	patch by Vincent van Adrighem <adrighem@gnome.org> (Closes: #300958)
 
 2006-01-03  Mark McLoughlin  <mark@skynet.ie>
 
@@ -606,7 +606,7 @@
 
 	* NEWS: Release 2.12.0 "I only care when I miss it"
 
-2005-08-31  Shaun McCance  <shaunm@mate.org>
+2005-08-31  Shaun McCance  <shaunm@gnome.org>
 
 	* docs/uk/Makefile.am:
 	* docs/uk/mateconf-editor-uk.omf:
@@ -919,12 +919,12 @@
 
 	* NEWS: Release 2.8.0 "Joshua Bell"
 
-2004-09-12  Shaun McCance  <shaunm@mate.org>
+2004-09-12  Shaun McCance  <shaunm@gnome.org>
 
 	* docs/C/mateconf-editor.xml:
 	- Minor fixes
 
-2004-09-12  Shaun McCance  <shaunm@mate.org>
+2004-09-12  Shaun McCance  <shaunm@gnome.org>
 
 	* docs/C/mateconf-editor.xml:
 	- Typo fixes from Keywan Najafi Tonekaboni
@@ -946,19 +946,19 @@
                                                                                 
         * configure.in: Added 'or' to ALL_LINGUAS.
  
-2004-09-06  Shaun McCance  <shaunm@mate.org>
+2004-09-06  Shaun McCance  <shaunm@gnome.org>
 
 	* docs/C/mateconf-editor.xml:
 	- Adding revision status information
 
-2004-09-02  Shaun McCance  <shaunm@mate.org>
+2004-09-02  Shaun McCance  <shaunm@gnome.org>
 
 	* docs/C/Makefile.am:
 	* docs/C/mateconf-editor-C.omf:
 	* docs/C/mateconf-editor.xml:
 	- Full revisions for 2.8
 
-2004-09-02  Shaun McCance  <shaunm@mate.org>
+2004-09-02  Shaun McCance  <shaunm@gnome.org>
 
 	* docs/C/mateconf-editor.xml:
 	* docs/C/figures/mateconf_editor_anno_window.png:
@@ -987,11 +987,11 @@
 
 	* configure.in: Added "bs" to ALL_LINGUAS.
 
-2004-08-16  Kjartan Maraas  <kmaraas@mate.org>
+2004-08-16  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Added nb to ALL_LINGUAS.
 
-2004-08-02  Anders Carlsson  <andersca@mate.org>
+2004-08-02  Anders Carlsson  <andersca@gnome.org>
 
 	* configure.in: Release 2.7.90
 
@@ -1074,7 +1074,7 @@
 	* configure.in:
 	* NEWS: Release 2.7.3
 
-2004-07-09  Anders Carlsson  <andersca@mate.org>
+2004-07-09  Anders Carlsson  <andersca@gnome.org>
 
 	* src/mateconf-search-dialog.c: 
 	(mateconf_search_not_found_dialog):
@@ -1230,7 +1230,7 @@
 	* data/mateconf-editor.schemas.in:
 	* po/POTFILES.in: Add an schema file.
 
-2004-05-28  Anders Carlsson  <andersca@mate.org>
+2004-05-28  Anders Carlsson  <andersca@gnome.org>
 
 	* src/mateconf-editor-window.c (mateconf_editor_window_about_window): 
 	Add Fernando.
@@ -1425,7 +1425,7 @@
 
 	* configure.in: Added Thai (th) to ALL_LINGUAS.
 
-2004-02-03  Anders Carlsson  <andersca@mate.org>
+2004-02-03  Anders Carlsson  <andersca@gnome.org>
 
 	* configure.in: Release 2.5.4
 
@@ -1462,7 +1462,7 @@
 	Unify copyright strings. Patch from Christian Neumair Fixes bug
 	#101728
 
-2004-01-21  Anders Carlsson  <andersca@mate.org>
+2004-01-21  Anders Carlsson  <andersca@gnome.org>
 
 	* src/mateconf-editor-window.c:
 	(mateconf_editor_window_selection_changed):
@@ -1486,7 +1486,7 @@
 	* configure.in:
 	* docs/mateconf-editor.1: added man page from Sebastien Bacher
 
-2003-11-12  Anders Carlsson  <andersca@mate.org>
+2003-11-12  Anders Carlsson  <andersca@gnome.org>
 
 	* configure.in: Release 2.5.1
 
@@ -1511,7 +1511,7 @@
 
 	* src/mateconf-editor-window.c:
 
-	Commiting Patch by Christophe Fergeau <teuf@mate.org> 
+	Commiting Patch by Christophe Fergeau <teuf@gnome.org> 
 	to make the tree items expand when double clicked.
 
 2003-10-14  Ross Burton  <ross@burtonini.com>
@@ -1529,7 +1529,7 @@
 	Remove the GTK_DISABLE_DEPRECATED flag. Thanks to Anders for
 	the right fix. Fix #123932
 
-2003-09-06  Anders Carlsson  <andersca@mate.org>
+2003-09-06  Anders Carlsson  <andersca@gnome.org>
 
 	* configure.in: Release 2.4.0
 
@@ -2051,7 +2051,7 @@ Sat Apr 13 13:54:49 2002  Kristian Rietveld  <kris@gtk.org>
 
         * configure.in: Added pt (Portuguese) to ALL_LINGUAS
 
-2002-02-13  Kjartan Maraas  <kmaraas@mate.org>
+2002-02-13  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/mateconf-message-dialog.c: #include <config.h>
 	* src/mateconf-key-editor.c: Same here.
@@ -2254,7 +2254,7 @@ Sun Jan 13 23:57:06 2002  Kristian Rietveld  <kris@gtk.org>
 	* data/mateconf-editor.desktop.in:
 	Add .desktop file and intltool support.
 	
-2002-01-12  Kjartan Maraas  <kmaraas@mate.org>
+2002-01-12  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Added "no" to ALL_LINGUAS.
 	

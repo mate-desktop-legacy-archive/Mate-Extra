@@ -158,8 +158,8 @@ msgstr "Agosto de 2006"
 
 #: C/services-admin.xml:68(para) C/services-admin.xml:69(para)
 #: C/services-admin.xml:76(para) C/services-admin.xml:77(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/services-admin.xml:73(revnumber)
 msgid "Services Administration Tool Manual V0.35"

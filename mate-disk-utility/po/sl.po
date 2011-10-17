@@ -5425,7 +5425,7 @@ msgstr "Napaka med povezovanjem s “%s”"
 
 #: ../src/palimpsest/gdu-shell.c:808
 msgid "translator-credits"
-msgstr "Matej Urbančič <mateju@svn@mate.org>"
+msgstr "Matej Urbančič <mateju@svn@gnome.org>"
 
 #: ../src/palimpsest/gdu-shell.c:837
 msgid "_File"

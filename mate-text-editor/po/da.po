@@ -10,7 +10,7 @@
 #   snippet -> tekststump
 #
 # Birger Langkjer <birger.langkjer@image.dk>, 1999.
-# Kenneth Christiansen <kenneth@mate.org>, 1999, 2000.
+# Kenneth Christiansen <kenneth@gnome.org>, 1999, 2000.
 # Keld Simonsen <keld@dkuug.dk>, 2000, 01.
 # Ole Laursen <olau@hardworking.dk>, 2002, 03, 04, 05, 06.
 # Marie Lund <marielund@post.cybercity.dk>, 2004.

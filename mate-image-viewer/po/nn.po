@@ -1,5 +1,5 @@
 # translation of nn.po to Norwegian Nynorsk
-# Kjartan Maraas  <kmaraas@mate.org>, 2001.
+# Kjartan Maraas  <kmaraas@gnome.org>, 2001.
 # Roy-Magne Mo <rmo@sunnmore.net>, 2002.
 # Åsmund Skjæveland <aasmunds@ulrik.uio.no>, 2003-2008.
 # Norwegian (Nynorsk) translation of eog
@@ -765,7 +765,7 @@ msgid "translator-credits"
 msgstr ""
 "Åsmund Skjæveland <aasmunds@ulrik.uio.no>\n"
 "Gaute Hvoslef Kvalnes <gaute@verdsveven.com>\n"
-"Kjartan Maraas <kmaraas@mate.org>\n"
+"Kjartan Maraas <kmaraas@gnome.org>\n"
 "\n"
 "Send feilmeldingar og kommentarar til <i18n-nn@lister.ping.uio.no>"
 

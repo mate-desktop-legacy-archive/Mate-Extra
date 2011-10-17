@@ -65,13 +65,13 @@
 
 	* configure.in: bump to 2.27.1.
 
-2009-03-16  Vincent Untz  <vuntz@mate.org>
+2009-03-16  Vincent Untz  <vuntz@gnome.org>
 
 	* configure.in: post-release bump to 2.22.3.
 
 ==================== 2.22.2 ====================
 
-2009-03-16  Vincent Untz  <vuntz@mate.org>
+2009-03-16  Vincent Untz  <vuntz@gnome.org>
 
 	* NEWS: version 2.22.2
 
@@ -118,22 +118,22 @@
 	Clean up GTK Includes. Patch by Maxim Ermilov.
 	Fixes bug #561245.
 
-2008-09-23  Vincent Untz  <vuntz@mate.org>
+2008-09-23  Vincent Untz  <vuntz@gnome.org>
 
 	* configure.in: post-release bump to 2.22.2.
 
 ==================== 2.22.1 ====================
 
-2008-09-23  Vincent Untz  <vuntz@mate.org>
+2008-09-23  Vincent Untz  <vuntz@gnome.org>
 
 	* NEWS:
 	* configure.in: version 2.22.1
 
-2008-03-09  Carlos Garnacho  <carlosg@mate.org>
+2008-03-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.22.0
 
-2008-02-25  Carlos Garnacho  <carlosg@mate.org>
+2008-02-25  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.92
 
@@ -160,77 +160,77 @@
 	* icons/scalable/apps/time-admin.svg:
 	Add new time-admin icon. Fixes bug #506778
 
-2008-02-12  Carlos Garnacho  <carlosg@mate.org>
+2008-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.91
 
-2008-01-28  Carlos Garnacho  <carlosg@mate.org>
+2008-01-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.90
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5.1
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: Do not depend on unreleased glib.
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5
 
-2008-01-14  Carlos Garnacho  <carlosg@mate.org>
+2008-01-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: Depend on glib 2.15.x for gio.
 
-2008-01-13  Carlos Garnacho  <carlosg@mate.org>
+2008-01-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in, src/shares/caja/Makefile.am: get the caja
 	extensions directory from the .pc file. Fixes #508804, Patch by 
 	Damien Carbery  <damien.carbery@sun.com>
 
-2007-12-26  Carlos Garnacho  <carlosg@mate.org>
+2007-12-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: switch CFLAGS order to be able to compile with other
 	gst.h files around. Fixes #505158, patch by Jeremy Messenger
 	<mezz@FreeBSD.org>
 
-2007-12-18  Carlos Garnacho  <carlosg@mate.org>
+2007-12-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.3
 
-2007-12-18  Carlos Garnacho  <carlosg@mate.org>
+2007-12-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: bump liboobs requirement.
 
-2007-11-14  Carlos Garnacho  <carlosg@mate.org>
+2007-11-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2.1
 
-2007-11-13  Carlos Garnacho  <carlosg@mate.org>
+2007-11-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2
 
-2007-10-30  Carlos Garnacho  <carlosg@mate.org>
+2007-10-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.1
 
-2007-10-10  Carlos Garnacho  <carlosg@mate.org>
+2007-10-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: look for PolicyKit 0.5 instead of 0.5.0 to avoid
 	possible brokenness.
 
-2007-10-10  Carlos Garnacho  <carlosg@mate.org>
+2007-10-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: add optional PolicyKit dependency.
 
-2007-09-13  Carlos Garnacho  <carlosg@mate.org>
+2007-09-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: bumped GTK+ and liboobs requirements, remove libglade
 	dependency.
 
-2007-09-03  Carlos Garnacho  <carlosg@mate.org>
+2007-09-03  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.92
 
@@ -240,24 +240,24 @@
 	remove last libmateui bits, with the latest changes in bug-buddy
 	SEGV handler it isn't needed anymore. Fixes #463239.
 
-2007-08-28  Carlos Garnacho  <carlosg@mate.org>
+2007-08-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.91
 
-2007-07-28  Carlos Garnacho  <carlosg@mate.org>
+2007-07-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.1
 
-2007-07-10  Carlos Garnacho  <carlosg@mate.org>
+2007-07-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.0
 
-2007-07-06  Carlos Garnacho  <carlosg@mate.org>
+2007-07-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: remove libart dependency, we don't need it any longer
 	(at least directly)
 
-2007-04-09  Carlos Garnacho  <carlosg@mate.org>
+2007-04-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.1
 
@@ -271,11 +271,11 @@
 	"Application" and "X-MATE-NetworkSettings" are not valid categories in
 	the freedesktop.org specification. See MateGoal #3.
 
-2007-03-12  Carlos Garnacho  <carlosg@mate.org>
+2007-03-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.0
 
-2007-02-27  Carlos Garnacho  <carlosg@mate.org>
+2007-02-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.92
 
@@ -285,50 +285,50 @@
 	* src/shares/Makefile.am: add --disable-caja option to disable
 	shares-admin caja extension compilation.
 
-2007-02-19  Carlos Garnacho  <carlosg@mate.org>
+2007-02-19  Carlos Garnacho  <carlosg@gnome.org>
 
 	* mate-doc-utils.make: remove from svn, it's generated. Fixes
 	#408732.
 
-2007-02-12  Carlos Garnacho  <carlosg@mate.org>
+2007-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.91
 
-2007-01-09  Carlos Garnacho  <carlosg@mate.org>
+2007-01-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.5
 
-2007-01-08  Carlos Garnacho  <carlosg@mate.org>
+2007-01-08  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.4
 
-2006-12-04  Carlos Garnacho  <carlosg@mate.org>
+2006-12-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: require liboobs-2.17.4
 
-2006-12-01  Carlos Garnacho  <carlosg@mate.org>
+2006-12-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.3
 
-2006-11-30  Carlos Garnacho  <carlosg@mate.org>
+2006-11-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: do not include -liw in LIBS
 
-2006-11-26  Carlos Garnacho  <carlosg@mate.org>
+2006-11-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: distcheck fixes.
 
-2006-11-19  Carlos Garnacho  <carlosg@mate.org>
+2006-11-19  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: removed unused conditions. detect libiw library and
 	headers.
 	* src/Makefile.am: do not use unnecessary conditions
 
-2006-11-15  Carlos Garnacho  <carlosg@mate.org>
+2006-11-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* mate-system-tools.schemas.in: removed unused keys.
 
-2006-11-10  Carlos Garnacho  <carlosg@mate.org>
+2006-11-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* doc/Makefile.am: do not build boot-admin docs
 	* doc/network/C/network-admin.xml, doc/services/C/services-admin.xml,
@@ -336,15 +336,15 @@
 	doc/users/C/users-admin.xml: make it build against latest
 	mate-doc-utils.
 
-2006-11-05  Carlos Garnacho  <carlosg@mate.org>
+2006-11-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.2
 
-2006-09-30  Carlos Garnacho  <carlosg@mate.org>
+2006-09-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: depend on latest liboobs.
 
-2006-09-30  Carlos Garnacho  <carlosg@mate.org>
+2006-09-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.5
 
@@ -353,39 +353,39 @@
 	* configure.in: add --enable-mate to compile against libmate(ui),
 	default it to TRUE.
 
-2006-09-07  Carlos Garnacho  <carlosg@mate.org>
+2006-09-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.4
 
-2006-09-04  Carlos Garnacho  <carlosg@mate.org>
+2006-09-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.3
 
-2006-08-11  Carlos Garnacho  <carlosg@mate.org>
+2006-08-11  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.2
 
-2006-08-06  Carlos Garnacho  <carlosg@mate.org>
+2006-08-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in, doc/Makefile.am: link shares-admin docs compilation
 
-2006-08-04  Carlos Garnacho  <carlosg@mate.org>
+2006-08-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: add DBus checks
 
-2006-08-02  Carlos Garnacho  <carlosg@mate.org>
+2006-08-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.1
 
-2006-08-02  Carlos Garnacho  <carlosg@mate.org>
+2006-08-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: depend on liboobs for the caja extension
 
-2006-06-06  Carlos Garnacho  <carlosg@mate.org>
+2006-06-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.0
 
-2006-06-05  Carlos Garnacho  <carlosg@mate.org>
+2006-06-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Makefile.am, configure.in: distcheck fixes
 
@@ -398,22 +398,22 @@
 	* configure.in: use intltool 0.35, move ALL_LINGUAS to po/LINGUAS
 	* po/LINGUAS: added
 
-2006-05-26  Carlos Garnacho  <carlosg@mate.org>
+2006-05-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: removed unnecessary and old stuff
 
-2006-05-19  Carlos Garnacho  <carlosg@mate.org>
+2006-05-19  Carlos Garnacho  <carlosg@gnome.org>
 
 	* src/Makefile.am: allow shares, network and users tools compilation
 	again
 
-2006-05-18  Carlos Garnacho  <carlosg@mate.org>
+2006-05-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: raise Gtk+ minimum version to 2.9.0, we're going to
 	use some new features here
 	* src/Makefile.am: allow time and services tool compilation again.
 
-2006-05-18  Carlos Garnacho  <carlosg@mate.org>
+2006-05-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* configure.in: bump version number, remove direct dep on
 	system-tool-backends, depend on liboobs instead
@@ -421,11 +421,11 @@
 	* src/Makefile.am: don't compile any tool ATM, they'll be added back
 	when they're ported to liboobs
 
-2006-04-21  Kjartan Maraas  <kmaraas@mate.org>
+2006-04-21  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Unbreak the build.
 
-2006-04-17  Kjartan Maraas <kmaraas@mate.org>
+2006-04-17  Kjartan Maraas <kmaraas@gnome.org>
 
 	* configure.in: Remove obsolete entry for no_NO
 	* po/no.po: And the translation.
@@ -438,7 +438,7 @@
 
         * configure.in: Added "ka" (Georgian) to ALL_LINGUAS
 
-2006-03-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-03-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.14.0
 
@@ -450,33 +450,33 @@
 
 	* configure.in: Added "cy" (Welsh) to ALL_LINGUAS
 
-2006-01-31  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-31  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.2
 
-2006-01-30  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-30  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* src/*/*.desktop.in.in: Add MATE and GTK to Categories, make these
 	files validate against desktop-file-validate. (#328453, patch by 
 	Stephane Loeuillet)
 
-2006-01-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.1
 
-2006-01-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.0
 
-2005-12-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-12-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* configure.in, Makefile.am, doc/*: use mate-doc-utils
 
-2005-11-28  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-11-28  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.1
 
-2005-11-28  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-11-28  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Makefile.am, autogen.sh, omf.make, xmldocs.make: build fixes, now
 	passes distcheck again
@@ -485,7 +485,7 @@
 
 	* configure.in: Added "ku" (Kurdish) to ALL_LINGUAS
 
-2005-09-04  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-09-04  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.0
 
@@ -493,11 +493,11 @@
 
 	* configure.in: Added "he" to ALL_LINGUAS
 
-2005-08-23  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.92
 
-2005-08-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.2
 
@@ -505,19 +505,19 @@
 
 	* General headers and clode cleanup
 
-2005-07-26  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-26  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.1
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0.1
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* configure.in: depend on system-tools-backends >= 1.3.0
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0
 
@@ -536,15 +536,15 @@
 
 	* configure.in: Added "nb" to ALL_LINGUAS.
 
-2005-03-07  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-07  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.2.0
 
-2005-03-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.92
 
-2005-02-16  Carlos Garnacho  <carlosg@mate.org>
+2005-02-16  Carlos Garnacho  <carlosg@gnome.org>
 
 	* src/*/Makefile.am: remove empty CPPFLAGS. Fixes #166983
 
@@ -552,51 +552,51 @@
 
 	* configure.in: Added "th" (Thai) to ALL_LINGUAS.
 
-2005-02-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.91
 
-2005-02-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Makefile.am, configure.in: Made it to compile requiring the new
 	system-tools-backends module, other cosmetic fixes
 
-2005-01-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.90
 
-2005-01-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* configure.in: Added caja-extensions dependency for the
 	shares-admin caja plugin, removed a couple of unneeded
 	dependencies
 
-2005-01-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4.1
 
-2005-01-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* configure.in: ooops, fixed supported/unsupported tools compilation
 
-2005-01-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4
 
-2005-01-10  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-10  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* src/*/*.desktop.in.in: added "Settings" category for putting the
 	tools in the correct place for the new menu layout. Fixes #163100
 
-2004-12-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.3
 
-2004-11-30  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-30  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* configure.in: gst now requires gtk 2.5.x
 
-2004-11-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* configure.in, src/*/*desktop.in.in: patch by Christoffer Olsen
 	<co@deworks.net> to add X-MATE-Bugzilla-Version to .desktop files
@@ -604,12 +604,12 @@
 	* src/common/CommonMakefile, src/*/*desktop.in.in: added some sanity
 	to icon finding and .desktop translation
 
-2004-11-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Makefile.am: moved the intltool-* files to DISTCLEANFILES. 
 	Fixes #158213
 
-2004-11-03  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-03  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1
 
@@ -623,19 +623,19 @@
 	* configure.in: only call AC_PROG_INTLTOOL once.  Fixes a build
 	failure with recent intltool versions.
 
-2004-09-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* configure.in: added all the tools by default, this is the
 	development branch. Added dependencies for the shares tool caja
 	component
 
-2004-09-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
         * configure.in: build by default disks and shares too, this is
         a development branch
         * src/Makefile.am: added shares tool
 
-2004-09-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.0
 
@@ -647,7 +647,7 @@
 
 	* configure.in: Added Arabic locale "ar" to ALL_LINGUAS.
 
-2004-09-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 0.92
 
@@ -667,13 +667,13 @@
 
 	* configure.in: Added Bengali (bn) in ALL_LINGUAS.
 
-2004-08-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* configure.in: build by default disks and shares too, this is
 	a development branch
 	* src/Makefile.am: added shares tool
 
-2004-08-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* mate-system-tools.schemas.in: removed some unused keys. defaulted
 	"users/showall" to false
@@ -718,7 +718,7 @@
 	options to choose the gst modules to compile. Disks tool is disabled
 	by default.
 
-2004-03-30  Adam Weinberger  <adamw@mate.org>
+2004-03-30  Adam Weinberger  <adamw@gnome.org>
 
 	* configure.in: Added en_CA to ALL_LINGUAS.
 

@@ -87,8 +87,8 @@ msgid "Udaltsov"
 msgstr "Udaltsov"
 
 #: C/gswitchit.xml:72(email)
-msgid "svu@mate.org"
-msgstr "svu@mate.org"
+msgid "svu@gnome.org"
+msgstr "svu@gnome.org"
 
 #: C/gswitchit.xml:89(releaseinfo)
 msgid "This manual describes version 2.8 of the Keyboard Indicator applet."

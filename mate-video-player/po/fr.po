@@ -1235,7 +1235,7 @@ msgstr "Copyright © 2002-2009 Bastien Nocera"
 #: ../src/totem-menu.c:1181 ../browser-plugin/totem-plugin-viewer.c:1166
 msgid "translator-credits"
 msgstr ""
-"Christophe Fergeau <teuf@mate.org>\n"
+"Christophe Fergeau <teuf@gnome.org>\n"
 "Sébastien Oustric <sebastien.oustric@laposte.net>\n"
 "Baptiste Mille-Mathias <bmm80@ifrance.com>\n"
 "Christophe Merlet <redfox@redfoxcenter.org>\n"

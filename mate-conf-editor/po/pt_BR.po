@@ -4,7 +4,7 @@
 # David Barzilay <barzilay@redhat.com>, 2003.
 # Goedson Teixeira Paixao <goedson@debian.org>, 2004.
 # Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2006, 2009.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2009.
 # Og Maciel <ogmaciel@ubuntu.com>, 2007.
 # Washington Lins <washington-lins@uol.com.br>, 2007.
 # Fabrício Godoy <skarllot@gmail.com>, 2008.
@@ -19,7 +19,7 @@ msgstr ""
 "POT-Creation-Date: 2009-09-07 22:32-0300\n"
 "PO-Revision-Date: 2009-09-04 13:29-0300\n"
 "Last-Translator: André Gondim <andregondim@ubuntu.com>\n"
-"Language-Team: Brazilian Portuguese <mate-pt_br-list@mate.org>\n"
+"Language-Team: Brazilian Portuguese <mate-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -65,8 +65,8 @@ msgstr ""
 "Evandro Fernandes Giovanini <evandrofg@ig.com.br>\n"
 "Goedson Teixeira Paixao <goedson@debian.org>\n"
 "Welther José O. Esteves <weltherjoe@yahoo.com.br>\n"
-"Leonardo Ferreira Fontenelle <leonardof@mate.org>\n"
-"Og Maciel <ogmaciel@mate.org>\n"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
+"Og Maciel <ogmaciel@gnome.org>\n"
 "Fabrício Godoy <skarllot@gmail.com>\n"
 "André Gondim <andregondim@ubuntu.com>"
 

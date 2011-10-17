@@ -17,11 +17,11 @@
 	Fixed bug #575419 – Minor spelling mistake in file-roller
 	Patch by Paul Cutler.
 	
-2009-03-28  Simos Xenitellis  <simos@mate.org>
+2009-03-28  Simos Xenitellis  <simos@gnome.org>
 
 	* el/figures/*.png: Updated figure by Fotis Tsamis.
 
-2009-03-18  Kostas Papadimas  <pkst@mate.org>
+2009-03-18  Kostas Papadimas  <pkst@gnome.org>
 
 	* Makefile.am:
 	* el/el.po: Added Greek translation by Marios Zindilis.
@@ -48,7 +48,7 @@
 	
 	Fixes bug #566683 – remove redundant figures
 
-2008-12-05  Gil Forcada  <gforcada@mate.org>
+2008-12-05  Gil Forcada  <gforcada@gnome.org>
 
 	* ca/ca.po: Updated Catalan translation by Joan Duran.
 
@@ -135,7 +135,7 @@
 	* sv/sv.po: Updated Swedish translation.
 	* sv/figures/*png: Updated screenshots.
 
-2008-06-29  Gil Forcada  <gforcada@mate.org>
+2008-06-29  Gil Forcada  <gforcada@gnome.org>
 
 	* ca/ca.po: Added Catalan translation by Joan Duran.
 	* ca/figures/*.png: Added screenshots for Catalan documentation.
@@ -219,7 +219,7 @@
 	* it/it.po: Added Italian translation by
 	Milo Casagrande <milo_casagrande@yahoo.it>.
 
-2006-11-15  Kjartan Maraas  <kmaraas@mate.org>
+2006-11-15  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* C/file-roller.xml: Added maintainer role.
 
@@ -245,7 +245,7 @@
   * C/file-roller.xml: patch from Nelson Benitez, adds mention of 7zip.
     Fixes #350186
 
-2006-08-21  Vincent van Adrighem  <adrighem@mate.org>
+2006-08-21  Vincent van Adrighem  <adrighem@gnome.org>
 
         * nl/nl.po: Updated Dutch translation.
 
@@ -254,7 +254,7 @@
 	* fr/fr.po:
 	* fr/figures/*.png: Added French translation.
 
-2006-08-14  Vincent van Adrighem  <adrighem@mate.org>
+2006-08-14  Vincent van Adrighem  <adrighem@gnome.org>
 
         * nl/nl.po: Added Dutch translation.
 

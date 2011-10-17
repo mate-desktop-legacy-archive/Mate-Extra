@@ -4,7 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2008-07-01 04:06+0000\n"
 "PO-Revision-Date: 2008-10-18 15:51+0100\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@t-online.de>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -157,8 +157,8 @@ msgstr "August 2006"
 
 #: C/network-admin.xml:68(para) C/network-admin.xml:69(para)
 #: C/network-admin.xml:76(para) C/network-admin.xml:77(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/network-admin.xml:73(revnumber)
 msgid "Network Administration Tool Manual V0.35"

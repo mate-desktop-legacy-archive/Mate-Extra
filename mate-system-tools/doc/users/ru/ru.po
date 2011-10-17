@@ -9,7 +9,7 @@ msgstr ""
 "POT-Creation-Date: 2006-05-29 12:05+0000\n"
 "PO-Revision-Date: 2006-05-19 11:34+0000\n"
 "Last-Translator: Pavel Shylenok <uriel@tut.by>\n"
-"Language-Team: Russian <mate-cyr@mate.org>\n"
+"Language-Team: Russian <mate-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -146,8 +146,8 @@ msgid "June 2004"
 msgstr "Июнь 2004"
 
 #: C/users-admin.xml:68(para) C/users-admin.xml:69(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/users-admin.xml:74(releaseinfo)
 msgid "This manual describes version 0.35 of Users Administration Tool."

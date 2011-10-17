@@ -1,7 +1,7 @@
 # Biełaruski pierakład Mate.
 # Copyright (C) 2007 mate.org
 # This file is distributed under the same license as the mate-terminal package.
-# Ihar Hrachyshka <iharh@mate.org>, 2007.
+# Ihar Hrachyshka <iharh@gnome.org>, 2007.
 #
 msgid ""
 msgstr ""
@@ -2337,7 +2337,7 @@ msgstr "Emulatar terminału dla asiarodździa MATE"
 
 #: ../src/terminal-window.c:3481
 msgid "translator-credits"
-msgstr "Ihar Hračyška <iharh@mate.org>"
+msgstr "Ihar Hračyška <iharh@gnome.org>"
 
 #~ msgid ""
 #~ "There was an error subscribing to notification of terminal encoding list "

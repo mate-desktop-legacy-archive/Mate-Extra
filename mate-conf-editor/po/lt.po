@@ -5,7 +5,7 @@
 #
 #
 # Tomas Kuliavas <tokul@users.sourceforge.net>, 2003-2004.
-# Žygimantas Beručka <zygis@mate.org>, 2004-2006.
+# Žygimantas Beručka <zygis@gnome.org>, 2004-2006.
 # Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007.
 msgid ""
 msgstr ""
@@ -61,7 +61,7 @@ msgstr "MateConf konfigūracijos sistemos redaktorius."
 msgid "translator-credits"
 msgstr ""
 "Paskutinysis vertėjas:\n"
-"Žygimantas Beručka <zygis@mate.org>\n"
+"Žygimantas Beručka <zygis@gnome.org>\n"
 "\n"
 "Ankstesnysis vertėjas:\n"
 "Tomas Kuliavas <tokul@users.sf.net>"

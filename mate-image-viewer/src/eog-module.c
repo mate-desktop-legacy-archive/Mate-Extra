@@ -2,12 +2,12 @@
  *
  * Copyright (C) 2007 The Free Software Foundation
  *
- * Author: Lucas Rocha <lucasr@mate.org>
+ * Author: Lucas Rocha <lucasr@gnome.org>
  *
  * Based on gedit code (gedit/gedit-module.c) by:
- * 	- Paolo Maggi <paolo@mate.org>
- *      - Marco Pesenti Gritti <marco@mate.org>
- *      - Christian Persch <chpe@mate.org>
+ * 	- Paolo Maggi <paolo@gnome.org>
+ *      - Marco Pesenti Gritti <marco@gnome.org>
+ *      - Christian Persch <chpe@gnome.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

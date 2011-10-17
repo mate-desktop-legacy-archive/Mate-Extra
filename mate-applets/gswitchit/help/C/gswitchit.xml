@@ -69,7 +69,7 @@ Template last modified Feb 12, 2002
       <firstname>Sergey</firstname>
       <surname>Udaltsov</surname>
       <affiliation>
-       <address><email>svu@mate.org</email></address>
+       <address><email>svu@gnome.org</email></address>
       </affiliation>
     </author>
     <!-- This is appropriate place for other contributors: translators,
@@ -79,7 +79,7 @@ Template last modified Feb 12, 2002
          <surname>Translator 1</surname> 
          <affiliation> 
          <orgname>Latin Translation Team</orgname> 
-         <address> <email>translator@mate.org</email> </address> 
+         <address> <email>translator@gnome.org</email> </address> 
          </affiliation>
          <contrib>Latin translation</contrib>
          </othercredit>

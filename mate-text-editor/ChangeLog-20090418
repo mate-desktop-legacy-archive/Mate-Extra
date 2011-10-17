@@ -321,7 +321,7 @@
 	* gedit-plugins-engine:
 	Do not look for plugin loaders in the home dir.
 
-2009-01-12  Kjartan Maraas  <kmaraas@mate.org>
+2009-01-12  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* plugins/pythonconsole/pythonconsole/config.ui: Don't translate
 	widget labels.
@@ -337,7 +337,7 @@
 	* gedit/gedit-message-type.c: fixed correctly setting optional argument
 	types
 	
-2009-01-11  Gian Mario Tagliaretti  <gianmt@mate.org>
+2009-01-11  Gian Mario Tagliaretti  <gianmt@gnome.org>
 
 	* gedit/gedit-view.c: (gedit_view_set_font) small doc fix.
 
@@ -868,7 +868,7 @@
 	with fill_model where the tree path might have been altered and
 	is thus then invalid. Fixes bug #556410.
 
-2008-12-26  Leonardo Ferreira Fontenelle  <leonardof@mate.org>
+2008-12-26  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
 	reviewed by: Paolo Borelli.
 
@@ -1621,7 +1621,7 @@
 
 	gedit 2.23.91 released
 
-2008-08-31  Carlos Garcia Campos  <carlosgc@mate.org>
+2008-08-31  Carlos Garcia Campos  <carlosgc@gnome.org>
 
 	* gedit/smclient/eggsmclient-xsmp.c
 	(sm_client_xsmp_set_initial_properties): Fix memory leak.
@@ -1656,7 +1656,7 @@
 	* gedit/gedit-document.c (_gedit_document_check_externally_modified):
 	make sure the mtime attribute is set before using it.
 
-2008-08-20  Götz Waschk  <gwaschk@mate.org>
+2008-08-20  Götz Waschk  <gwaschk@gnome.org>
 
 	* data/gedit-bugreport.sh.in:
 	* data/gedit.pc.in:
@@ -1762,19 +1762,19 @@
 	* gedit/gedit-mmap-document-loader.c:
 	Fix more warnings
 
-2008-08-13  Johan Dahlin  <johan@mate.org>
+2008-08-13  Johan Dahlin  <johan@gnome.org>
 
 	* gedit/gedit-session.c (save_window_session):
 	Fix two warnings and merge problems.
 
-2008-08-13  Johan Dahlin  <johan@mate.org>
+2008-08-13  Johan Dahlin  <johan@gnome.org>
 
 	* gedit/gedit-app.c:
 	* gedit/gedit-document-saver.c:
 	* gedit/gedit-mmap-document-loader.c:
 	Include unistd.h
 
-2008-08-13  Johan Dahlin  <johan@mate.org>
+2008-08-13  Johan Dahlin  <johan@gnome.org>
 
 	* configure.ac:
 	Remove libmate/libmateui dependencies.
@@ -2269,12 +2269,12 @@
 
 	gedit 2.22.1 released
 
-2008-04-08  Paolo Maggi  <paolo@mate.org>
+2008-04-08  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-view.c (delete_line): if there is a selection, delete
 	the selected lines.
 
-2008-04-08  Paolo Maggi  <paolo@mate.org>
+2008-04-08  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-view.c (gedit_view_class_init), (reset_im_context),
 	(delete_line), (gedit_view_delete_from_cursor): now you can delete
@@ -2384,7 +2384,7 @@
 
 	Fix refcounting of PageSetup and PrintSettings.
 
-2008-01-25  Christian Persch  <chpe@mate.org>
+2008-01-25  Christian Persch  <chpe@gnome.org>
 	
 	* gedit/gedit-print-preferences.glade: Use GtkAlignments, and add
 	mnemonics. Bug #512078.
@@ -2838,7 +2838,7 @@
 	* gedit/gedit-message-area.c: make sure the widget style listens to
 	gtk theme changes. Patch by Ignacio Casal Quinteiro.
 
-2007-09-05  Jonh Wendell  <jwendell@mate.org>
+2007-09-05  Jonh Wendell  <jwendell@gnome.org>
 
 	* plugins/spell/gedit-spell-plugin.c:
 	  Changed keybind from F7 to <Shift>F7, avoiding a conflict with
@@ -2865,7 +2865,7 @@
 
 	gedit 2.19.91 released
 
-2007-08-27  Paolo Maggi  <paolo@mate.org>
+2007-08-27  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-file-chooser-dialog.c (all_text_files_filter):
 	* gedit/gedit-language-manager.c
@@ -2889,7 +2889,7 @@
 
 	* plugins/modelines/modeline-parser.c: support indent-width.
 
-2007-08-27  Paolo Maggi  <paolo@mate.org>
+2007-08-27  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-prefs-manager-app.c
 	(gedit_prefs_manager_right_margin_changed):
@@ -2946,19 +2946,19 @@
 
 	* gedit/gedit-window.c: Use gdk_atom_intern_static_string.
 
-2007-08-16  Paolo Maggi  <paolo@mate.org>
+2007-08-16  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-ui.h: Use new document-page-setup icon. Fixes bug #450946.
 	Patch by Michael Monreal <infernux@web.de>
 	
-2007-08-16  Paolo Maggi  <paolo@mate.org>
+2007-08-16  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-window.c (language_toggled),
 	(create_language_menu_item), (create_languages_menu),
 	(update_languages_menu): use language id instead of language name
 	as action name in the languages menu. Fixes bug #462597.
 
-2007-08-16  Paolo Maggi  <paolo@mate.org>
+2007-08-16  Paolo Maggi  <paolo@gnome.org>
 
 	* MAINTAINERS: Follow new format regulations.
 	
@@ -3003,7 +3003,7 @@
 
 	* gedit/gedit-document-loader.c: fix bugus assertion.
 
-2007-08-15  Paolo Maggi  <paolo@mate.org>
+2007-08-15  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/dialogs/gedit-preferences-dialog.c: allow to add/remove style
 	schemes
@@ -3020,7 +3020,7 @@
 
 	* gedit/gedit-source-style-manager.[ch]: mostly rewritten
 
-2007-08-15  Paolo Maggi  <paolo@mate.org>
+2007-08-15  Paolo Maggi  <paolo@gnome.org>
 
 	* docs/reference/Makefile.am: fix building
 	* docs/reference/gedit.types: ditto
@@ -3038,20 +3038,20 @@
 	* gedit/gedit-documents-panel.c: add tooltips on the list
 	now that gtk makes it easy.
 
-2007-08-15  Paolo Maggi  <paolo@mate.org>
+2007-08-15  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/dialogs/gedit-style-scheme-dialog.c:
 	* gedit/dialogs/gedit-style-scheme-dialog.glade: small improvements, but
 	the style schemed editor is still not working. Note that the style
 	scheme editor will not be included in gedit 2.20.
 
-2007-08-15  Paolo Maggi  <paolo@mate.org>
+2007-08-15  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-utils.c (gedit_warning): do not call 
 	gtk_dialog_set_has_separator
 	(gedit_utils_get_glade_widgets): layout fixes in case of error
 
-2007-08-15  Paolo Maggi  <paolo@mate.org>
+2007-08-15  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-metadata-manager.c: the debug output of the metadata 
 	manager was too verbose. Now verbose debug output is enabled only when
@@ -3082,7 +3082,7 @@
 	* gedit/gedit-io-error-message-area.c: avoid conflicting
 	accelerators. Patch by Patrick Wade, bug #444909.
 
-2007-08-12  Vincent Geddes  <vgeddes@mate.org>
+2007-08-12  Vincent Geddes  <vgeddes@gnome.org>
 
 	* plugins/spell/languages-dialog.glade2,
 	plugins/docinfo/docinfo.glade2,
@@ -3299,7 +3299,7 @@
 	Split GeditDocumentLoader into an abstract type and implementations of
 	it (Bug 453048).
 
-2007-07-20  Paolo Maggi  <paolo@mate.org>
+2007-07-20  Paolo Maggi  <paolo@gnome.org>
 
 	First step toward the new preference dialog
 	
@@ -3722,7 +3722,7 @@
 	key press event, so that ctrl+p also works in print preview.
 	Fixes bug #444611.
 
-2007-06-17  Paolo Maggi  <paolo@mate.org>
+2007-06-17  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes weird focus behavior in the search/replace dialog
 	
@@ -3799,7 +3799,7 @@
 	* gedit/dialogs/gedit-close-confirmation-dialog.c: escape
 	gmarkup in document name. Bug #422228.
 
-2007-03-24  Paolo Maggi  <paolo@mate.org>
+2007-03-24  Paolo Maggi  <paolo@gnome.org>
 
 	* plugins/taglist/Makefile.am: call gzip with "--best -f" args
 	* plugins/taglist/gedit-taglist-plugin-parser.c
@@ -3886,7 +3886,7 @@
 	* gedit/gedit-python-module.c: (gedit_python_module_load):
 	make plugins work with python2.5 on 64 bits architecture. Bug #413030
 
-2007-02-27  Paolo Maggi  <paolo@mate.org>
+2007-02-27  Paolo Maggi  <paolo@gnome.org>
 
 	* plugins/filebrowser/gedit-file-bookmarks-store.c (add_uri):
 	added a comment for translators. Bug #412627.
@@ -4027,7 +4027,7 @@
 	correct wrt how the different editors define them. This was already the
 	case previously.
 
-2007-01-20  Paolo Maggi  <paolo@mate.org>
+2007-01-20  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #398343 – Text Editor: gedit is not accpecting sett...
 	
@@ -4053,7 +4053,7 @@
 	Set tab icon when notifying external modification.
 	Patch by  Emmanuel Touzery.
 
-2007-01-10  Paolo Maggi  <paolo@mate.org>
+2007-01-10  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #352959 – External Tools: "output pane" should be 
 	                    "bottom pane"
@@ -4061,7 +4061,7 @@
 	* plugins/externaltools/tools/manager.py: replace 
 	'Insert in output panel' with 'Display in bottom pane'
 
-2007-01-10  Paolo Maggi  <paolo@mate.org>
+2007-01-10  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #357529 – Open dialog doesn't retain text settings filter
 	
@@ -4258,7 +4258,7 @@
 	* data/gedit.schemas.in: use the default system font by default, and
 	update the description to reflect that we use the monospaced font.
 
-2007-01-02  Paolo Maggi  <paolo@mate.org>
+2007-01-02  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #351954 – gedit should not crash on a bad Python plugin
 	
@@ -4304,7 +4304,7 @@
 	* plugins/snippets/data/docbook.xml:
 	* plugins/snippets/data/Makefile.am: add snippets for DocBook. #357089.
 
-2007-01-02  Paolo Maggi  <paolo@mate.org> 
+2007-01-02  Paolo Maggi  <paolo@gnome.org> 
 
 	* gedit/gedit-python-plugin.c: cosmetic changes
 
@@ -4316,7 +4316,7 @@
 
 	farewell CVS, welcome subversion.
 
-2006-12-31  Paolo Maggi  <paolo@mate.org>
+2006-12-31  Paolo Maggi  <paolo@gnome.org>
 	
 	Fixes bug #356178 – Encodings not listed correctly in .po files
 	      bug #321067 – gedit does not automatically detect utf-16
@@ -4421,7 +4421,7 @@
 	* gedit/gedit-window.c: set the sensitivity of "paste"
 	according to the clipboard contents. Fixes #74051.
 
-2006-12-10  Paolo Maggi  <paolo@mate.org>
+2006-12-10  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-documents-panel.c (refresh_list) (window_tab_added)
 	(window_tabs_reordered) (treeview_row_inserted)
@@ -4446,12 +4446,12 @@
 
 	* gedit/gedit-spinner.c: sync with epiphany.
 
-2006-12-09  Paolo Maggi  <paolo@mate.org>
+2006-12-09  Paolo Maggi  <paolo@gnome.org>
 
 	* plugins/taglist/gedit-taglist-plugin-panel.c: adds a preview area,
 	makes the tooltips working with combox box
 
-2006-12-09  Paolo Maggi  <paolo@mate.org>
+2006-12-09  Paolo Maggi  <paolo@gnome.org>
 
 	* plugins/taglist/HTML.tags.xml.in: added "sort" attribute to TagGroups,
 	added a couple of missing elements.
@@ -4469,7 +4469,7 @@
 	(parse_tag_group) (get_tag_group) (groups_cmp) (lookup_best_lang):
 	sort the tags if needed, sort the tag groups.
 
-2006-12-08  Paolo Maggi  <paolo@mate.org>
+2006-12-08  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #155487 – make html tag list xhtml compliant
 	Patch by Luis Menina <liberforce@fr.st>
@@ -4479,7 +4479,7 @@
 	HTML nonstandard tags (ie. browser specific - we're not in stoneage
 	anymore)
 
-2006-12-08  Paolo Maggi  <paolo@mate.org>
+2006-12-08  Paolo Maggi  <paolo@gnome.org>
 
   	Fixes bug #344050 – XUL.tags file
 	Patch by Pete Morgan <pm@daffodil.uk.com>
@@ -4488,13 +4488,13 @@
 
 	* plugins/taglist/XUL.tags.xml.in: new file
 
-2006-12-08  Paolo Maggi  <paolo@mate.org>
+2006-12-08  Paolo Maggi  <paolo@gnome.org>
 
 	* plugins/savecopy/*: bye bye savecopy plugin, you had a very short
 	life (note that savecopy plugin was never ported to the new plugin
 	architecture introduced with gedit 2.14)
 
-2006-12-08  Paolo Maggi  <paolo@mate.org>
+2006-12-08  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #353235 – Overloaded plural strings
 	
@@ -4506,7 +4506,7 @@
 
 	* gedit/gedit-commands-file.c (revert_dialog): ditto
 
-2006-12-07  Paolo Maggi  <paolo@mate.org>
+2006-12-07  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-history-entry.[ch] (gedit_history_entry_destroy)
 	(gedit_history_entry_finalize) (gedit_history_entry_class_init)
@@ -4528,7 +4528,7 @@
 	* gedit/gedit-window.c: Fix Bug 349198 – Unable to define accelerators 
 	on language highlighting menus.
 
-2006-12-07  Paolo Maggi  <paolo@mate.org>
+2006-12-07  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-view.c (ensure_search_window): use inline completion
 	instead of the popup menu for the incremental search entry
@@ -4574,12 +4574,12 @@
 	* gedit/plugins/filebrowser/gedit-file-browser-widget.c: use
 	"folder" instead of "directory" in the UI.
 
-2006-12-04  Paolo Maggi  <paolo@mate.org>
+2006-12-04  Paolo Maggi  <paolo@gnome.org>
 
 	* plugins/spell/*: cleaned up previous patch. Unused GErrors have been
 	removed.
 
-2006-12-04  Paolo Maggi  <paolo@mate.org>
+2006-12-04  Paolo Maggi  <paolo@gnome.org>
 
 	* HACKING:
 	* README: fixed a couple of typos
@@ -4588,7 +4588,7 @@
 
 	* message-of-doom: updated
 
-2006-12-04  Paolo Maggi  <paolo@mate.org>
+2006-12-04  Paolo Maggi  <paolo@gnome.org>
 
 	* configure.ac:
 	* plugins/spell/*:
@@ -4773,7 +4773,7 @@
 	* gedit/gedit-io-error-message-area.c: fix incorrect grammar in
 	error messages (Bug #355965). Patch by Mark Drago.
 
-2006-11-05  Paolo Maggi  <paolo@mate.org>
+2006-11-05  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #367610 – Python console doesn't allow different code blocks
 	
@@ -4782,7 +4782,7 @@
 	* plugins/pythonconsole/pythonconsole/console.py: allow the python 
 	console to handle blocks
 
-2006-11-05  Paolo Maggi  <paolo@mate.org>
+2006-11-05  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #354428 - gedit should use accessories-text-editor icon in 
 	places of the text-editor one.
@@ -4836,7 +4836,7 @@
 	* plugins/filebrowser/gedit-file-browser-store.c:
 	properly collate filenames.
 
-2006-10-01  Paolo Maggi  <paolo@mate.org>
+2006-10-01  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-document-saver.c (copy_file_data)
 	(async_xfer_progress): fix some C99-style variable initializations, 
@@ -4882,7 +4882,7 @@
 	* plugins/filebrowser/.cvsignore: changed filebrowser.schemas to
 	gedit-file-browser.schemas (it got renamed)
 
-2006-09-09  Paolo Maggi  <paolo@mate.org>
+2006-09-09  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/sexy-icon-entry.c: updated from libsexy SVN repository
 
@@ -4902,7 +4902,7 @@
 
 === gedit 2.16.0 ===
 
-2006-09-04  Paolo Maggi  <paolo@mate.org>
+2006-09-04  Paolo Maggi  <paolo@gnome.org>
 
 	* configure.ac:
 	* README:
@@ -4987,7 +4987,7 @@
 	browser at first opened document when it is a remote file (to avoid
 	problems with bug #352824)
 	
-2006-08-25  Paolo Maggi  <paolo@mate.org>
+2006-08-25  Paolo Maggi  <paolo@gnome.org>
 
 	Really fixes bug #352717 – gedit silently ignores saving errors when
 	saving remote files
@@ -5013,7 +5013,7 @@
 	
 	* gedit/gedit-document-saver.c: properly handle xfer errors.
 
-2006-08-24  Paolo Maggi  <paolo@mate.org>
+2006-08-24  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #352680 – Save on close for readonly files does not work as
 	expected
@@ -5032,7 +5032,7 @@
 	* gedit/gedit-document-loader.c: handle remote zero lenght files
 	correctly.
 
-2006-08-24  Paolo Maggi  <paolo@mate.org>
+2006-08-24  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #352658 – print preview state machine issue.
 	
@@ -5042,7 +5042,7 @@
 	showing the print preview, close the print preview when done or 
 	cancelled
 
-2006-08-24  Paolo Maggi  <paolo@mate.org>
+2006-08-24  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #352662 – Opening non-existing remote file from command line
 	should report an error
@@ -5057,13 +5057,13 @@
 
 	* plugins/filetree/gedit-file-browser-plugin.c: plug a leak.
 
-2006-08-23  Paolo Maggi  <paolo@mate.org>
+2006-08-23  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-languages-manager.c
 	(gedit_languages_manager_get_language_from_mime_type): gives
 	priority to exact matches.
 
-2006-08-23  Paolo Maggi  <paolo@mate.org>
+2006-08-23  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #324191 – the xml.lang syntax file should include 
 	application/vnd.mozilla.xul+xml
@@ -5093,7 +5093,7 @@
 	plugins (since the file browser plugin might need it). Fixes Bug 
 	352339 – Remote root location for filebrowser makes gedit crash on load
 
-2006-08-23  Paolo Maggi  <paolo@mate.org>
+2006-08-23  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/dialogs/gedit-close-confirmation-dialog.c
 	(gedit_close_confirmation_dialog_init): Skips taskbar hint as for
@@ -5109,17 +5109,17 @@
 
 	gedit 2.15.8 released.
 
-2006-08-21  Paolo Maggi  <paolo@mate.org>
+2006-08-21  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-document-saver.c: drop executable permissions from
 	backup files. Bug #327031.
 
-2006-08-21  Paolo Maggi  <paolo@mate.org>
+2006-08-21  Paolo Maggi  <paolo@gnome.org>
 
 	* tools/plugin_template/gedit-plugin-helper.py (__del__): added a 
 	missing ":"
 
-2006-08-21  Paolo Maggi  <paolo@mate.org>
+2006-08-21  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-encodings.c: added support for UTF-16LE, UTF-16BE 
 	and UTF-32
@@ -5461,7 +5461,7 @@
 	* gedit/gedit-python-module.c: added initialising gedit.commands
 	python module
 	
-2006-06-19  Paolo Maggi  <paolo@mate.org>
+2006-06-19  Paolo Maggi  <paolo@gnome.org>
 
 	* plugins/docinfo/gedit-docinfo-plugin.c
 	(docinfo_dialog_response_cb) (update_ui_real): Disable the "Update"
@@ -5472,7 +5472,7 @@
 	* gedit/dialogs/Makefile.am: add $(builddir) to INCLUDES (fix out of
 	tree build)
 
-2006-06-18  Paolo Maggi  <paolo@mate.org>
+2006-06-18  Paolo Maggi  <paolo@gnome.org>
 
 	Reorganization of the Search menu
 	
@@ -5491,7 +5491,7 @@
 	* gedit/gedit-window.c (set_sensitivity_according_to_tab): set
 	the sensitivity of the "SearchInteractiveSearch" action
 
-2006-06-18  Paolo Maggi  <paolo@mate.org>
+2006-06-18  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #344026 – Find - Replace
 
@@ -5501,12 +5501,12 @@
 
 	* gedit/dialogs/gedit-search-dialog.h: new signal "show_replace"
 
-2006-06-18  Paolo Maggi  <paolo@mate.org>
+2006-06-18  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-commands-help.c (_gedit_cmd_help_about): added
 	Steve Frécinaux and Jesse van den Kieboom to authors. Welcome guys :)
 
-2006-06-18  Paolo Maggi  <paolo@mate.org>
+2006-06-18  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-utils.c (gedit_warning): set the window group and 
 	removed gtk_dialog_run
@@ -5620,7 +5620,7 @@
 	* gedit/gedit-python-module.c: call pygeditutils_register_classes (fix
 	crasher bug)
 
-2006-05-31  Paolo Maggi  <paolo@mate.org>
+2006-05-31  Paolo Maggi  <paolo@gnome.org>
 
 	Added a couple of helper functions for plugins.
 	
@@ -5649,7 +5649,7 @@
 	* gedit/gedit-commands-file.c (confirm_overwrite_callback): fix
 	use after free. Patch by Sylvain Defresne (bug #343480)
 
-2006-05-29  Paolo Maggi  <paolo@mate.org>
+2006-05-29  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-app.c (window_delete_event): s/gedit_cmd/_gedit_cmd/
 
@@ -5787,7 +5787,7 @@
 
 	* tools/.cvsignore: ignore *.pyc files.
 
-2006-05-21  Paolo Maggi  <paolo@mate.org>
+2006-05-21  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #342208 - show 'next tab' and 'previous tab' menu items
 	
@@ -5824,7 +5824,7 @@
 	
 	* docs/reference/tmpl/*: Add template files.
 
-2006-05-20  Paolo Maggi  <paolo@mate.org>
+2006-05-20  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-window.c (create_language_menu_item)
 	(create_languages_menu) (update_languages_menu): use "None" instead of
@@ -5974,7 +5974,7 @@
 	* gedit/gedit-languages-manager.c: (string_to_tag_style): Cleanup.
 	Closes #172352.
 
-2006-04-26  Paolo Maggi  <paolo@mate.org>
+2006-04-26  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #336954 – Does not work with arabic dictionary
 	
@@ -5996,7 +5996,7 @@
 
 	gedit 2.15.1 released
 
-2006-04-24  Paolo Maggi  <paolo@mate.org>
+2006-04-24  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #339597 - gedit Manual Page Bugs
 	
@@ -6090,7 +6090,7 @@
 	class
 	* plugins/snippets/snippets/SnippetsLibrary.py: use custom xml writer
 
-2006-04-20  Paolo Maggi  <paolo@mate.org>
+2006-04-20  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #338912 – Find Next/Previous wrap around even when 
 	wrapping is off
@@ -6109,7 +6109,7 @@
 
 	Fix includes to make it compile on DragonFly BSD.
 
-2006-04-20  Paolo Maggi  <paolo@mate.org>
+2006-04-20  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes bug #338173 - Gedit show keyring store password on the window 
 	title bar
@@ -6170,12 +6170,12 @@
 	* po/LINGUAS: Format following guidelines from
 	http://live.mate.org/MateGoals/PoLinguas.
 
-2006-04-16  Vincent Untz  <vuntz@mate.org>
+2006-04-16  Vincent Untz  <vuntz@gnome.org>
 
 	* gedit/gedit.c: (main): enhance help output
 	Fix bug #335015
 
-2006-04-12  Paolo Maggi  <paolo@mate.org>
+2006-04-12  Paolo Maggi  <paolo@gnome.org>
 
 	* configure.ac: require intltool 0.34.90 and fix the way we manage
 	ALL_LINGUAS
@@ -6381,7 +6381,7 @@
 	* plugins/snippets/snippets/SnippetsLibrary.py:
 	fixed loading of duplicate system snippets (see bug #332384)
 	
-2006-03-04  Paolo Maggi  <paolo@mate.org>
+2006-03-04  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-languages-manager.c (string_to_tag_style):
 	fixed a mem leak (see bug #172352)
@@ -6391,7 +6391,7 @@
 	* gedit/gedit-spinner.c: sync the code to latest epiphany code. Should
 	fix multihead issues.
 
-2006-03-03  Paolo Maggi  <paolo@mate.org>
+2006-03-03  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #333129 – [Multihead] cannot launch multiple instances of 
 	                    gedit on different heads
@@ -6525,7 +6525,7 @@
 	* plugins/snippets/snippets/__init__.py: remove old error message code,
 	call SnippetsLibrary().set_dirs instead of SnippetsLibrary().set_data
 
-2006-02-18  Paolo Maggi  <paolo@mate.org>
+2006-02-18  Paolo Maggi  <paolo@gnome.org>
 
 	Lazy loading of taglists (improve gedit startup time when taglist plugin
 	is active)
@@ -6542,7 +6542,7 @@
 	* plugins/taglist/gedit-taglist-plugin.c
 	(gedit_taglist_plugin_init): does not load taglists
 
-2006-02-18  Paolo Maggi  <paolo@mate.org>
+2006-02-18  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-message-area.c (style_set): removed a debug message
 
@@ -6625,7 +6625,7 @@
 	before the idle-scroll-to-line hack runs.
 	* gedit/gedit-tab.c: check for NULLness before destroying a GTimer.
 
-2006-02-12  Paolo Maggi  <paolo@mate.org>
+2006-02-12  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-utils.c (gedit_utils_make_valid_utf8): replace
 	unknown characters by the Unicode replacement character
@@ -6647,7 +6647,7 @@
 	adapt for above changes (use directly gtk_widget_show/hide instead of a
 	custom function)
 
-2006-02-12  Paolo Maggi  <paolo@mate.org>
+2006-02-12  Paolo Maggi  <paolo@gnome.org>
 
 	* plugins/externaltools/tools/tools.glade: use GTK_SHADOW_IN for
 	the scrolled window in the output panel
@@ -6778,7 +6778,7 @@
 	* gedit/gedit-window.c: fix warning introduced by my last patch.
 	Do some cleanup while we are at it.
 
-2006-01-19  Paolo Maggi  <paolo@mate.org>
+2006-01-19  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-io-error-message-area.c
 	(gedit_unrecoverable_loading_error_message_area_new)
@@ -6800,7 +6800,7 @@
 	* gedit/gedit-window.c: properly restore the bottom panel size
 	on startup.
 
-2006-01-19  Paolo Maggi  <paolo@mate.org>
+2006-01-19  Paolo Maggi  <paolo@gnome.org>
 
 	Re-added autosave feature. 
 	Based on a patch by Sergio Villar Senin <svillar@igalia.com>
@@ -6884,7 +6884,7 @@
 	* gedit/gedit.c (main): call mate_accelerators_sync before
 	exit to save the custom accels.
 
-2006-01-17  Adam Weinberger  <adamw@mate.org>
+2006-01-17  Adam Weinberger  <adamw@gnome.org>
 
 	* plugins/snippets/snippets/__init__.py: Spelling
 	  and grammar tweak. Fixes bug #57553.
@@ -6919,7 +6919,7 @@
 
 	plugins/externaltools/*: new plugin to execute shell commands.
 
-2006-01-15  Paolo Maggi  <paolo@mate.org>
+2006-01-15  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-document-loader.c (load_local_file_real): removed
 	a debug message
@@ -6976,7 +6976,7 @@
 	use long int when working with time_t. Fix for the bug
 	#326248.
 
-2006-01-09  Paolo Maggi  <paolo@mate.org>
+2006-01-09  Paolo Maggi  <paolo@gnome.org>
 
 	Patch by Steve Frécinaux  <nud@apinc.org>
 
@@ -6986,12 +6986,12 @@
 	* plugins/pythonconsole/pythonconsole.py: use GTK_ICON_SIZE_MENU size
 	for the icon
 
-2006-01-08  Paolo Maggi  <paolo@mate.org>
+2006-01-08  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/sexy-icon-entry.c:
 	* gedit/sexy-icon-entry.h: updated from libsexy SVN repository
 
-2006-01-08  Paolo Maggi  <paolo@mate.org>
+2006-01-08  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-python-module.c (gedit_python_module_init_python):
 	does not allow python to manage SIGINT signal: this is needed to avoid
@@ -7027,7 +7027,7 @@
 	plugin doesn't override a method.
 	Patch from Jesse Van Den Kieboom and Raphael Slinckx.
 
-2006-01-05  Paolo Maggi  <paolo@mate.org>
+2006-01-05  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-view.c (gedit_view_class_init): added reset_searched_text
 	signal and keybinding
@@ -7045,7 +7045,7 @@
  	only on <escape> (cf. Bug #105196) ; hide the search box when the window
  	looses focus.
  
-2006-01-05  Paolo Maggi  <paolo@mate.org>
+2006-01-05  Paolo Maggi  <paolo@gnome.org>
 
 	Implemented search highligthing: all the occurences of the searched
 	text are highlighted
@@ -7094,7 +7094,7 @@
 	(gedit_view_new): connect to "search_highlight_updated" signal
 	(gedit_view_expose)(search_highlight_updated_cb): new functions
 
-2006-01-03  Paolo Maggi  <paolo@mate.org>
+2006-01-03  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes drag&drop of files from file-roller
 	
@@ -7116,7 +7116,7 @@
 	* gedit/gedit-app.c: fix startup race condition on active_window.
 	* gedit/gedit-utils.c: sanity check arguments.
 
-2006-01-03  Paolo Maggi  <paolo@mate.org>
+2006-01-03  Paolo Maggi  <paolo@gnome.org>
 
 	* data/gedit.schemas.in: added restore_cursor_position key
 
@@ -7130,12 +7130,12 @@
 	cursor position if gedit_prefs_manager_get_restore_cursor_position 
 	return TRUE
 
-2006-01-03  Paolo Maggi  <paolo@mate.org>
+2006-01-03  Paolo Maggi  <paolo@gnome.org>
 
 	* gedit/gedit-commands-search.c (phrase_found): modified the string
 	shown in the statusbar for the case occurrences == 1
 
-2006-01-03  Paolo Maggi  <paolo@mate.org>
+2006-01-03  Paolo Maggi  <paolo@gnome.org>
 
 	Fixes Replace All button sensitivity in the Find/Replace dialog.
 	
@@ -7162,7 +7162,7 @@
 
 	* plugins/spell/gedit-spell-plugin.c: remove bogus assertion.
 
-2006-01-02  Paolo Maggi  <paolo@mate.org>
+2006-01-02  Paolo Maggi  <paolo@gnome.org>
 
 	New Modelines plugin by Steve Frécinaux  <nud@apinc.org>
 

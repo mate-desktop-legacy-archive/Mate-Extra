@@ -4,7 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2008-02-25 03:54+0000\n"
 "PO-Revision-Date: 2008-02-26 23:34+0300\n"
 "Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
-"Language-Team: Russian <mate-cyr@mate.org>\n"
+"Language-Team: Russian <mate-cyr@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -221,8 +221,8 @@ msgid "McCance"
 msgstr "McCance"
 
 #: C/stickynotes_applet.xml:67(email)
-msgid "shaunm@mate.org"
-msgstr "shaunm@mate.org"
+msgid "shaunm@gnome.org"
+msgstr "shaunm@gnome.org"
 
 #: C/stickynotes_applet.xml:71(firstname)
 msgid "Angela"

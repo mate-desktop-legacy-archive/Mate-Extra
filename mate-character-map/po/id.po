@@ -1,7 +1,7 @@
 # Indonesian translation of gucharmap.
 # Copyright (C) 2003 THE gucharmap'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gucharmap package.
-# Ahmad Riza H Nst  <rizahnst@mate.org> 02082006
+# Ahmad Riza H Nst  <rizahnst@gnome.org> 02082006
 #
 msgid ""
 msgstr ""
@@ -406,7 +406,7 @@ msgstr "Berdasar pada Basis Data Karakter Unicode 5.2"
 #: ../gucharmap/gucharmap-window.c:532
 msgid "translator-credits"
 msgstr ""
-"Ahmad Riza H Nst <rizahnst@mate.org>\n"
+"Ahmad Riza H Nst <rizahnst@gnome.org>\n"
 "Andika Triwidada <andika@gmail.com>, 2010."
 
 #: ../gucharmap/gucharmap-window.c:607 ../gucharmap/gucharmap-window.c:884

@@ -1,15 +1,15 @@
 # German translation of the mateconf-editor manual.
 # Keywan Najafi Tonekaboni <keywan@uni-duisburg.de>, 2004, 2005.
-# Jan Arne Petersen <jap@mate.org>, 2007.
-# Mario Blättermann <mariobl@mate.org>, 2008, 2009.
+# Jan Arne Petersen <jap@gnome.org>, 2007.
+# Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mateconf-editor HEAD\n"
 "POT-Creation-Date: 2008-11-12 09:31+0000\n"
 "PO-Revision-Date: 2009-02-06 23:32+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@mate.org>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1158,8 +1158,8 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Keywan Najafi Tonekaboni <keywan@uni-duisburg.de>, 2004, 2005\n"
-"Jan Arne Petersen <jap@mate.org>, 2007\n"
-"Mario Blättermann <mariobl@mate.org>, 2008, 2009"
+"Jan Arne Petersen <jap@gnome.org>, 2007\n"
+"Mario Blättermann <mariobl@gnome.org>, 2008, 2009"
 
 #~ msgid "@@image: 'figures/entry-bool.png'; md5=THIS FILE DOESN'T EXIST"
 #~ msgstr "unused"

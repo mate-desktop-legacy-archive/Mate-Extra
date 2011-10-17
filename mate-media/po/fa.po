@@ -1545,10 +1545,10 @@ msgstr "نرخ بیتی:"
 #: ../grecord/src/gsr-window.c:1209
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr ""
 "یک ضبط صوت برای MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1467
 msgid "Playing..."

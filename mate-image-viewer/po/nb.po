@@ -1,6 +1,6 @@
 # Norwegian translation of eog (bokmål dialect).
 # Copyright (C) 1999-2004, 2005 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@mate.org>, 1999-2010.
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2010.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 #
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-25 13:02+0200\n"
 "PO-Revision-Date: 2010-09-25 13:03+0200\n"
-"Last-Translator: Kjartan Maraas <kmaraas@mate.org>\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmal <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
@@ -970,7 +970,7 @@ msgstr "_Sett til forvalg"
 
 #: ../src/eog-window.c:2840
 msgid "translator-credits"
-msgstr "Kjartan Maraas <kmaraas@mate.org>"
+msgstr "Kjartan Maraas <kmaraas@gnome.org>"
 
 #: ../src/eog-window.c:2843
 msgid ""

@@ -1,4 +1,4 @@
-2010-01-13  Vincent Untz  <vuntz@mate.org>
+2010-01-13  Vincent Untz  <vuntz@gnome.org>
 
 	* Makefile.am: fix distcheck after the previous change.
 
@@ -169,21 +169,21 @@
 	Bug 522396: Search fails if apostrophe in folder name
 	Bug 531193: Opening files of certain types fails
 		    
-2009-02-25  Cosimo Cecchi  <cosimoc@mate.org>
+2009-02-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* gsearchtool.h: get rid of deprecated GTK_CHECK_* macros.
 	Patch by Thomas Andersen (#573053).
 
-2009-02-15  Cosimo Cecchi  <cosimoc@mate.org>
+2009-02-15  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* gsearchtool-support.c: remove the libart include.
 
-2009-02-15  Cosimo Cecchi  <cosimoc@mate.org>
+2009-02-15  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* gsearchtool-support.c (gsearchtool_stretch_frame_image):
 	Replace a call to libart with a GDK equivalent (#571735).
 
-2008-12-03  Cosimo Cecchi  <cosimoc@mate.org>
+2008-12-03  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* gsearchtool-spinner.c:
 	* gsearchtool-spinner.h:
@@ -191,7 +191,7 @@
 	* gsearchtool.c:
 	Use single GTK+ includes. Patch by Maxim Ermilov (#561257).
 
-2008-11-05  Kjartan Maraas  <kmaraas@mate.org>
+2008-11-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* Makefile.am: Add back libmate includes and libs to make
 	this build.
@@ -1302,7 +1302,7 @@
 	
 	Ronald Wilson Reagan (February 6, 1911 - June 5, 2004)
 
-2004-05-13  Jorn Baayen  <jbaayen@mate.org>
+2004-05-13  Jorn Baayen  <jbaayen@gnome.org>
 
 	* gsearchtool.c: (create_search_results_section):
 
@@ -2756,7 +2756,7 @@ Thu Aug 21 17:03:22 2003  George Lebl <jirka@5z.com>
 	disclosure widget.  
 	
 	Implement changes suggested from discussions on 
-	usability@mate.org.  (1) various string changes, (2) remove 
+	usability@gnome.org.  (1) various string changes, (2) remove 
 	the menu bar, (3) add help and close buttons, and (4) add 
 	right click menu for search results.
 	
@@ -3167,7 +3167,7 @@ Thu Jun 07 14:40:22 2001  George Lebl <jirka@5z.com>
 	* gsearchtool.c: fix locate interface since that uses '\n' not '\0'
 	  for separating entries and make it start the search on enter
 
-2001-06-07  Kjartan Maraas  <kmaraas@mate.org>
+2001-06-07  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* outdlg.c: Mark a string for translation.
 	

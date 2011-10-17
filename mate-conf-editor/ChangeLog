@@ -1,5 +1,5 @@
 commit 1bb442200ae21069a8c1e776f6ccbfe47364ffde
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:   2010-09-27
 
     Release 2.32.0
@@ -33,7 +33,7 @@ Date:	2010-09-01
 M	po/id.po
 
 commit 091f9b663900218ca6f0c32749ff7439a97e8706
-Author: Vincent Untz <vuntz@mate.org>
+Author: Vincent Untz <vuntz@gnome.org>
 Date:	2010-08-05
 
     [release] post-release bump to 2.31.90
@@ -41,7 +41,7 @@ Date:	2010-08-05
 M	configure.in
 
 commit 1934323cd5269c708ef11648dfa40ba25b6c4a5a
-Author: Vincent Untz <vuntz@mate.org>
+Author: Vincent Untz <vuntz@gnome.org>
 Date:	2010-08-05
 
     [release] 2.31.6
@@ -91,7 +91,7 @@ Date:	2010-06-10
 M	po/sl.po
 
 commit 37bcfa1743bd43d2122e88eb6eb066afbe376b26
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:	2010-05-19
 
     Updated Shavian translation
@@ -99,7 +99,7 @@ Date:	2010-05-19
 M	po/en@shaw.po
 
 commit 8f5a8fe4546139425a506ff8c8bef0617f148d74
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:	2010-05-12
 
     Updated Shavian transliteration
@@ -139,7 +139,7 @@ Date:	2010-04-14
 M	po/bn_IN.po
 
 commit 47855f68ae43d5089ffff8b477f290ade7785f5e
-Author: Javier Jardón <jjardon@mate.org>
+Author: Javier Jardón <jjardon@gnome.org>
 Date:	2010-04-06
 
     Use accessor functions instead direct access
@@ -163,7 +163,7 @@ Date:	2010-04-02
 M	po/ca.po
 
 commit 0409e1cf6f5651716f945705d7323ebfed377971
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2010-03-30
 
     Prepare for 2.30.0 release.
@@ -212,7 +212,7 @@ Date:	2010-03-13
 M	po/ko.po
 
 commit eb054341a1443f334c8f0435d5167a8ff705a9db
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2010-03-11
 
     Prepare for release.
@@ -221,7 +221,7 @@ M	NEWS
 M	configure.in
 
 commit 2bf7b045a5085844cce40c5f7481f2509147f18f
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2010-03-11
 
     Check if the dialog has not been destroyed.
@@ -232,7 +232,7 @@ Date:	2010-03-11
 M	src/mateconf-search-dialog.c
 
 commit 7435119e107f164fa83751c9f593da593e74c331
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2010-03-10
 
     Don't use deprecated MateConf synbols.
@@ -241,7 +241,7 @@ M	src/mateconf-list-model.c
 M	src/mateconf-search.c
 
 commit 574aa245d210a4bb75aca172712998b50f0f6572
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2010-03-10
 
     Don't use deprecated GTK+ symbols.
@@ -249,7 +249,7 @@ Date:	2010-03-10
 M	src/mateconf-editor-window.c
 
 commit d81a517c49f3ccd5a29ee5bb7f6c13fe6afe41e9
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2010-03-10
 
     Use the standard MATE macro to define deprecations.
@@ -290,7 +290,7 @@ Date:	2010-01-22
 M	po/bn.po
 
 commit 0d0eb9fc194a586c3f4fcc16638cfcab49868a41
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:	2009-11-25
 
     Fixed bug #602880 in German translation
@@ -315,7 +315,7 @@ Date:	2009-11-08
 M	po/ro.po
 
 commit cabf8653999dbcc0c367f6777ed80e303e95e75a
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-09-21
 
     Start development of 2.29 series
@@ -323,7 +323,7 @@ Date:	2009-09-21
 M	configure.in
 
 commit 56e12619f963157bcb1b1bb39f44f1a6dbe8aaee
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-09-21
 
     Prepare for 2.28.0 release.
@@ -391,7 +391,7 @@ M	po/sr.po
 M	po/sr@latin.po
 
 commit e76974fa25a41838dbdf5ed8fb4e7b7517c87026
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-08-24
 
     Post-release version bump
@@ -399,7 +399,7 @@ Date:	2009-08-24
 M	configure.in
 
 commit f5ea6ecb9083de386927cd210a351661edd9f4b1
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-08-24
 
     Pre-release version bump
@@ -407,7 +407,7 @@ Date:	2009-08-24
 M	configure.in
 
 commit ae355547de2ed6fdf5ee1dc6caa8ce2b3db17867
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-08-24
 
     Remove ChangeLog on distclean
@@ -415,7 +415,7 @@ Date:	2009-08-24
 M	Makefile.am
 
 commit b3db7dffdfce1c441077964371d6f6dc8abcd267
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-08-24
 
     Update news.
@@ -423,7 +423,7 @@ Date:	2009-08-24
 M	NEWS
 
 commit fe983da8ca6491dd0e138b61f99f466e830572bb
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-08-24
 
     Add myself to the maintainers of this module
@@ -432,7 +432,7 @@ M	MAINTAINERS
 M	mateconf-editor.doap
 
 commit 8fbaf480bc2a47dfb1d2698d82cb2c6547b3e811
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-08-24
 
     Don't overwrite window->list_model in popup-menu callback
@@ -445,7 +445,7 @@ Date:	2009-08-24
 M	src/mateconf-editor-window.c
 
 commit 6d5c0ac4041eaac3bb76391523f167870e03164e
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-08-24
 
     port to PolicyKit 1.0
@@ -529,14 +529,14 @@ Date:	2009-05-06
 
     Make PolictKiy an optional dependency, turned on by default (#579096).
 
-    Signed-off-by: Cosimo Cecchi <cosimoc@mate.org>
+    Signed-off-by: Cosimo Cecchi <cosimoc@gnome.org>
 
 M	configure.in
 M	src/Makefile.am
 M	src/mateconf-editor-window.c
 
 commit dd126519f52155008b1483aa98217f8f1b77732c
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-04-30
 
     Generate ChangeLog file from git log
@@ -555,10 +555,10 @@ Date:	2009-04-23
 M	mateconf-editor.doap
 
 commit 8eb8f4e387167d981644057842538afa32ebb2e4
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-04-21
 
-    2009-04-21	Cosimo Cecchi  <cosimoc@mate.org>
+    2009-04-21	Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mateconf-editor.doap: add the DOAP file for this project.
 
@@ -566,10 +566,10 @@ M	ChangeLog
 A	mateconf-editor.doap
 
 commit a699cc47e1936008f9df1837849c3cfcba089e1e
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-04-21
 
-    2009-04-21	Cosimo Cecchi  <cosimoc@mate.org>
+    2009-04-21	Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-editor-window.c (mateconf_editor_window_finalize):
 	We can always unref the MateConfClient object now that bug #579751
@@ -580,10 +580,10 @@ M	ChangeLog
 M	src/mateconf-editor-window.c
 
 commit 4d95403a96a98eb4d8b3b85359febc8e7ef9f78e
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-04-21
 
-    2009-04-21	Cosimo Cecchi  <cosimoc@mate.org>
+    2009-04-21	Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* uk/mateconf-editor.xml: remove this, as it's autogenerated.
 
@@ -591,10 +591,10 @@ M	docs/ChangeLog
 D	docs/uk/mateconf-editor.xml
 
 commit 42dccca2de10735a2a68532fdf91ee2c5707acb6
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:	2009-04-21
 
-    2009-04-21	Cosimo Cecchi  <cosimoc@mate.org>
+    2009-04-21	Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/mateconf-list-model.c (mateconf_list_model_finalize),
 	(mateconf_list_model_set_client):
@@ -689,12 +689,12 @@ M	po/ChangeLog
 M	po/ar.po
 
 commit 8ad73c4db14b7b027f66069d08e19cfb9d53e93d
-Author: Vincent Untz <vuntz@mate.org>
+Author: Vincent Untz <vuntz@gnome.org>
 Date:	2009-03-17
 
     post-release bump to 2.26.1
 
-    2009-03-17	Vincent Untz  <vuntz@mate.org>
+    2009-03-17	Vincent Untz  <vuntz@gnome.org>
 
 	* configure.in: post-release bump to 2.26.1
 

@@ -78,7 +78,7 @@
       <affiliation>
         <orgname>MATE Documentation Project</orgname>
         <address>
-              <email>uraeus@mate.org</email>
+              <email>uraeus@gnome.org</email>
         </address>
       </affiliation>
     </author>
@@ -112,7 +112,7 @@
         <surname>Translator 1</surname>
         <affiliation>
           <orgname>Latin Translation Team</orgname>
-          <address> <email>translator@mate.org</email> </address>
+          <address> <email>translator@gnome.org</email> </address>
         </affiliation>
         <contrib>Latin translation</contrib>
       </othercredit>
@@ -137,7 +137,7 @@
       <date>25 October 2003</date> 
       <revdescription>
                    <para role="author">Christian Schaller
-                     <email>uraeus@mate.org</email></para>
+                     <email>uraeus@gnome.org</email></para>
                    <para role="publisher">MATE Documentation Project</para>
       </revdescription>
     </revision>

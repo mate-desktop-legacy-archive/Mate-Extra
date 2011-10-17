@@ -1,8 +1,8 @@
 /* mate-screenshot.c - Take a screenshot of the desktop
  *
  * Copyright (C) 2001 Jonathan Blandford <jrb@alum.mit.edu>
- * Copyright (C) 2006 Emmanuele Bassi <ebassi@mate.org>
- * Copyright (C) 2008 Cosimo Cecchi <cosimoc@mate.org>
+ * Copyright (C) 2006 Emmanuele Bassi <ebassi@gnome.org>
+ * Copyright (C) 2008 Cosimo Cecchi <cosimoc@gnome.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as

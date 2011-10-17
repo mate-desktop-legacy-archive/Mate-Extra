@@ -6,23 +6,23 @@
 
 ==================== 2.22.1 ====================
 
-2008-04-14  Carlos Garnacho  <carlosg@mate.org>
+2008-04-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.c (connection_save): Apply modified patch from Ubuntu
 	launchpad #185854. Mark interface as active if it wasn't previously
 	configured, and as auto if it's been (or already was) activated. Fixes
 	#526137.
 
-2008-03-09  Carlos Garnacho  <carlosg@mate.org>
+2008-03-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.22.0
 
-2008-02-29  Carlos Garnacho  <carlosg@mate.org>
+2008-02-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c (compare_interface) (save_interface): Take into
 	account the case where OobsIfacePPP::ethernet is NULL. Fixes #519268.
 
-2008-02-29  Carlos Garnacho  <carlosg@mate.org>
+2008-02-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c (replace_string) (get_location_key_file)
 	(gst_network_locations_save_current)
@@ -30,71 +30,71 @@
 	used in a location name, replace it with char 0x2044, so the location
 	file can be saved. Fixes #519270.
 
-2008-02-25  Carlos Garnacho  <carlosg@mate.org>
+2008-02-25  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.92
 
-2008-02-12  Carlos Garnacho  <carlosg@mate.org>
+2008-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.91
 
-2008-02-06  Carlos Garnacho  <carlosg@mate.org>
+2008-02-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.c: Check the dialog fields when the essid changes, do not
 	take a wifi interface without essid as configured.
 
-2008-01-28  Carlos Garnacho  <carlosg@mate.org>
+2008-01-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.90
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5.1
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5
 
-2008-01-14  Carlos Garnacho  <carlosg@mate.org>
+2008-01-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Makefile.am: Use Gio.
 	* network-locations.c: Use Gio file monitoring.
 
-2008-01-12  Carlos Garnacho  <carlosg@mate.org>
+2008-01-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c (get_ethernet_iface_by_name) (set_interface):
 	prevent a crash if the property didn't exist previously in the config
 	file.
 
-2008-01-12  Carlos Garnacho  <carlosg@mate.org>
+2008-01-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* ifaces-list.c (get_iface_secondary_text): Improve descriptive text 
 	for PPP interfaces.
 
-2008-01-12  Carlos Garnacho  <carlosg@mate.org>
+2008-01-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c: get the properties list from the object, instead
 	of using a closed list of property names and types. Made code a bit
 	more generic in general.
 
-2008-01-02  Carlos Garnacho  <carlosg@mate.org>
+2008-01-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* ifaces-list.c, network-tool.c, network.desktop.in.in: Use
 	preferences-system-network icon instead of the obsolete
 	mate-fs-network. Fixes #506777, patch by Jaap A. Haitsma
 	<jaap@haitsma.org>
 
-2007-12-26  Carlos Garnacho  <carlosg@mate.org>
+2007-12-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.c (connection_dialog_prepare): Do not put a \n in the
 	dialog title. Fixes #500259, patch by Alex "week" Jones
 	<alex@weej.com>
 
-2007-12-18  Carlos Garnacho  <carlosg@mate.org>
+2007-12-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.3
 
-2007-12-18  Carlos Garnacho  <carlosg@mate.org>
+2007-12-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	Adapt to latest liboobs changes. Replace OobsIfaceModem and
 	OobsIfaceISDN with OobsIfacePPP.
@@ -108,7 +108,7 @@
 	* network-location.c: switch to OobsIfacePPP.
 	* main.c: connect new dialog fields signals.
 
-2007-12-12  Carlos Garnacho  <carlosg@mate.org>
+2007-12-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-tool.[ch]: keep a pointer to the hosts edition dialog.
 	* hosts.[ch] (host_aliases_run_dialog): pass a GstNetworkTool. Set
@@ -118,22 +118,22 @@
 	(on_table_popup_menu) (on_host_aliases_properties_clicked): update
 	host_aliases_run_dialog() callers.
 
-2007-11-25  Carlos Garnacho  <carlosg@mate.org>
+2007-11-25  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.[ch] (connection_dialog_update): Added, updates combo
 	boxes.
 	* network-tool.c (network_tool_update_gui): call
 	connection_dialog_update() when the configuration has changed.
 
-2007-11-14  Carlos Garnacho  <carlosg@mate.org>
+2007-11-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2.1
 
-2007-11-13  Carlos Garnacho  <carlosg@mate.org>
+2007-11-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2
 
-2007-10-30  Carlos Garnacho  <carlosg@mate.org>
+2007-10-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.1
 
@@ -142,28 +142,28 @@
 	* main.c: Use gst_dialog_require_authentication_for_widgets() to
 	mark those widgets which need authentication to be used.
 
-2007-09-30  Carlos Garnacho  <carlosg@mate.org>
+2007-09-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-tool.c (gst_network_tool_init): update config/gui when the
 	interfaces configuration changes.
 
-2007-09-29  Carlos Garnacho  <carlosg@mate.org>
+2007-09-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c, network-tool.c: adapt to liboobs 2.21.x API
 	change.
 
-2007-09-15  Carlos Garnacho  <carlosg@mate.org>
+2007-09-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.desktop.in.in: Add back X-MATE-NetworkSettings. It's
 	necessary to appear in the Networking section in g-c-c
 
-2007-09-13  Carlos Garnacho  <carlosg@mate.org>
+2007-09-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.c (connection_dialog_init): set text column for the
 	serial port combobox properly. It was relying on libglade before.
 	* main.c: remove glade include.
 
-2007-09-13  Carlos Garnacho  <carlosg@mate.org>
+2007-09-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* locations-combo.c: Do not create circular references with the
 	GstNetworkTool object.
@@ -172,15 +172,15 @@
 	* ifaces-list.c: listen to OobsIface::state-changed to update the ui
 	properly.
 
-2007-09-03  Carlos Garnacho  <carlosg@mate.org>
+2007-09-03  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.92
 
-2007-08-28  Carlos Garnacho  <carlosg@mate.org>
+2007-08-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.91
 
-2007-07-28  Carlos Garnacho  <carlosg@mate.org>
+2007-07-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.1
 
@@ -190,55 +190,55 @@
 	Change connection properties window title from "Settings for interface
 	eth[N]" to simply "eth[N] Properties". (Closes #428671)
 
-2007-07-10  Carlos Garnacho  <carlosg@mate.org>
+2007-07-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.0
 
-2007-07-06  Carlos Garnacho  <carlosg@mate.org>
+2007-07-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.c (method_descriptions) (key_type_descriptions):
 	constify. Add WPA-PSK and WPA2-PSK descriptions.
 	(populate_combo): update parameter.
 
-2007-06-18  Carlos Garnacho  <carlosg@mate.org>
+2007-06-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.h: export connection_get_config_method()
 	* callbacks.c: include connection.h to use that function. Fixes
 	#441647 (Dann Frazier, Sven Arvidsson)
 
-2007-04-09  Carlos Garnacho  <carlosg@mate.org>
+2007-04-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.1
 
-2007-04-09  Carlos Garnacho  <carlosg@mate.org>
+2007-04-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c (migrate_old_parameters): Do a sanity check on
 	the integer value and bail out if it doesn't match what we expect.
 	Avoids #422969.
 
-2007-03-12  Carlos Garnacho  <carlosg@mate.org>
+2007-03-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.0
 
-2007-02-27  Carlos Garnacho  <carlosg@mate.org>
+2007-02-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.92
 
-2007-02-12  Carlos Garnacho  <carlosg@mate.org>
+2007-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.91
 
-2007-02-12  Carlos Garnacho  <carlosg@mate.org>
+2007-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c (migrate_old_parameters): new function to
 	migrate old config-method and key-type data types to the new ones.
 	(compare_interface) (set_interface): migrate old data to new format.
 
-2007-02-12  Carlos Garnacho  <carlosg@mate.org>
+2007-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
         * main.c (main): call g_thread_init() to avoid GSlice warning.
 
-2007-02-11  Carlos Garnacho  <carlosg@mate.org>
+2007-02-11  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.c (connection_essids_combo_init): reuse GtkComboBoxEntry
 	cell renderer instead of setting our own.
@@ -249,38 +249,38 @@
 	(compare_static_host): Fix possible invalid memory free(), bug #354536
 	and many others.
 
-2007-01-22  Carlos Garnacho  <carlosg@mate.org>
+2007-01-22  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.desktop.in.in: patch by Denis Washington <dwashington at gmx
 	dot net> to rename NetworkSettings category to
 	X-MATE-NetworkSettings.
 
-2007-01-11  Carlos Garnacho  <carlosg@mate.org>
+2007-01-11  Carlos Garnacho  <carlosg@gnome.org>
 
 	* essid-list.c (get_scan_info): return something if there's no iwreq
 	data.
 	(query_essids): remove unused variables.
 
-2007-01-09  Carlos Garnacho  <carlosg@mate.org>
+2007-01-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.desktop.in.in: patch by Denis Washington <dwashington at gmx
 	dot net> to make network-admin appear in the Internet & Networking
 	category in g-c-c.
 
-2007-01-09  Carlos Garnacho  <carlosg@mate.org>
+2007-01-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.5
 
-2007-01-09  Carlos Garnacho  <carlosg@mate.org>
+2007-01-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.[ch], ifaces-list.c, callbacks.c: use new liboobs API to
 	get/set interface configuration method and key type.
 
-2007-01-08  Carlos Garnacho  <carlosg@mate.org>
+2007-01-08  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.4
 
-2007-01-01  Carlos Garnacho  <carlosg@mate.org>
+2007-01-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* nm-integration.[ch]: new files, contains functions to communicate
 	with NetworkManager daemon.
@@ -297,41 +297,41 @@
 	an interface has changed it's configuration.
 	* locations-combo.c: use new gst_tool_commit_async() API.
 
-2006-12-21  Carlos Garnacho  <carlosg@mate.org>
+2006-12-21  Carlos Garnacho  <carlosg@gnome.org>
 
 	* essid-list.c (gst_essid_list_finalize): do not close the socket used
 	for ioctl with iw_sockets_close(), seems not to be available in all
 	libiw, instead use close() directly (iw_sockets_close() seem to be a
 	wrapper for it). Closes #387618.
 
-2006-12-05  Carlos Garnacho  <carlosg@mate.org>
+2006-12-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c: save config-method for wireless interfaces.
 
-2006-12-04  Carlos Garnacho  <carlosg@mate.org>
+2006-12-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c (on_host_aliases_delete_clicked):
 	* hosts.c (host_aliases_dialog_save): plug a couple of leaks.
 
-2006-12-01  Carlos Garnacho  <carlosg@mate.org>
+2006-12-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.3
 
-2006-11-29  Carlos Garnacho  <carlosg@mate.org>
+2006-11-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* ifaces-list.c: now the interfaces with missing theme icon install
 	it's own one in hicolor, use them.
 
-2006-11-28  Carlos Garnacho  <carlosg@mate.org>
+2006-11-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* ifaces-list.[ch]: use icon theme for interfaces known to have one,
 	other slight UI improvements.
 
-2006-11-20  Carlos Garnacho  <carlosg@mate.org>
+2006-11-20  Carlos Garnacho  <carlosg@gnome.org>
 
 	* main.c: do not destroy the connection dialog on ::delete-event.
 
-2006-11-19  Carlos Garnacho  <carlosg@mate.org>
+2006-11-19  Carlos Garnacho  <carlosg@gnome.org>
 
 	* essid-list.[ch]: Added, retrieves a list of available ESSIDs (with
 	their characteristics)
@@ -344,7 +344,7 @@
 	use connection_dialog_hide().
 	* Makefile.am: optionally build essid-list.[ch] if libiw is available
 
-2006-11-17  Carlos Garnacho  <carlosg@mate.org>
+2006-11-17  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.[ch] (on_connection_cancel_clicked)
 	(on_connection_ok_clicked) (on_connection_dialog_close): rename and
@@ -353,12 +353,12 @@
 	dialog response.
 	* main.c: use on_connection_response.
 
-2006-11-15  Carlos Garnacho  <carlosg@mate.org>
+2006-11-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network.desktop.in.in: rename name to "Network" to be more 
 	consistent with the other g-s-t desktop entries.
 
-2006-11-10  Kjartan Maraas  <kmaraas@mate.org>
+2006-11-10  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* callbacks.c: (on_hostname_focus_out), (on_domain_focus_out):
 	* ifaces-list.c: (get_iface_secondary_text):
@@ -368,20 +368,20 @@
 	(gst_network_tool_update_gui), (gst_network_tool_update_config):
 	Fix more compiler warnings.
 
-2006-11-05  Carlos Garnacho  <carlosg@mate.org>
+2006-11-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.2
 
-2006-11-05  Carlos Garnacho  <carlosg@mate.org>
+2006-11-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* address-list.c (popup_menu_create): fix crash. #370686
 
-2006-11-04  Carlos Garnacho  <carlosg@mate.org>
+2006-11-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* ifaces-list.c, locations-combo.c, network-locations.c: plug a bunch
 	of leaks.
 
-2006-11-03  Carlos Garnacho  <carlosg@mate.org>
+2006-11-03  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.[ch]:
 	* connection.c:
@@ -391,7 +391,7 @@
 	* hosts.c (host_aliases_modify_at_iter):
 	* network-locations (get_location_key_file): plug a leak.
 
-2006-09-30  Carlos Garnacho  <carlosg@mate.org>
+2006-09-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.5
 
@@ -400,41 +400,41 @@
 	* network-locations.c: do not include libmateui headers, define
 	MATE_DOT_MATE.
 
-2006-09-08  Carlos Garnacho  <carlosg@mate.org>
+2006-09-08  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c: do not throw a critical warning if hostname or
 	domainname are NULL (although if hostname is NULL, something is very
 	broken...)
 
-2006-09-07  Carlos Garnacho  <carlosg@mate.org>
+2006-09-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.4
 
-2006-09-07  Carlos Garnacho  <carlosg@mate.org>
+2006-09-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-tool.c, ifaces-list.[ch]: show the interface name in the GUI
 	when there are more than 1 interface of the same type.
 
-2006-09-07  Carlos Garnacho  <carlosg@mate.org>
+2006-09-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* locations-combo.c: set the last selected profile as the default name
 	in the "save location" dialog, plus some wording improvements and
 	other miscellaneous fixes.
 
-2006-09-04  Carlos Garnacho  <carlosg@mate.org>
+2006-09-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.3
 
-2006-09-04  Carlos Garnacho  <carlosg@mate.org>
+2006-09-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* main.c (init_standalone_dialog) (main): fix -c and -t command line
 	parameters.
 
-2006-09-04  Carlos Garnacho  <carlosg@mate.org>
+2006-09-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.c: end the plip properties array with NULL.
 
-2006-08-29  Carlos Garnacho  <carlosg@mate.org>
+2006-08-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* locations-combo.c (on_combo_changed): do not unref the model, leads
 	to early finalization.
@@ -447,27 +447,27 @@
 	* network-tool.c (set_entry_text) (gst_network_tool_update_gui): avoid
 	a possible critical warning.
 
-2006-08-23  Carlos Garnacho  <carlosg@mate.org>
+2006-08-23  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-tool.c (gst_network_tool_update_config): added.
 
-2006-08-11  Carlos Garnacho  <carlosg@mate.org>
+2006-08-11  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.2
 
-2006-08-04  Carlos Garnacho  <carlosg@mate.org>
+2006-08-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* main.c: do not use nonexistent widgets
 
-2006-08-02  Carlos Garnacho  <carlosg@mate.org>
+2006-08-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.1
 
-2006-07-27  Carlos Garnacho  <carlosg@mate.org>
+2006-07-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* main.c: avoid a possible crasher
 
-2006-07-05  Carlos Garnacho  <carlosg@mate.org>
+2006-07-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-locations.[ch]: added. Generic object to deal with network
 	locations, it's easily embeddable in other applications
@@ -477,49 +477,49 @@
 	* network-tool.[ch]: added locations management.
 	* connection.c: set/get correctly the wireless key
 
-2006-06-06  Carlos Garnacho  <carlosg@mate.org>
+2006-06-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.0
 
-2006-06-05  Carlos Garnacho  <carlosg@mate.org>
+2006-06-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* address-list.c: save data on DnD reorder.
 	* callbacks.c (on_domain_focus_out): allow empty domains.
 
-2006-05-30  Carlos Garnacho  <carlosg@mate.org>
+2006-05-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c (on_domain_focus_out): avoid saving configuration on
 	every focus_out
 
-2006-05-30  Carlos Garnacho  <carlosg@mate.org>
+2006-05-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c, connection.c: work nicely with switched positions
 
-2006-05-29  Carlos Garnacho  <carlosg@mate.org>
+2006-05-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* connection.c: switch DHCP/static IP positions in combo
 
-2006-05-27  Carlos Garnacho  <carlosg@mate.org>
+2006-05-27  Carlos Garnacho  <carlosg@gnome.org>
 
         * address-list.c, hosts.c, ifaces-list.c: set translation domain for
 	action_groups. Closes #342497 (patch by Sebastien Bacher)
 
-2006-05-27  Carlos Garnacho  <carlosg@mate.org>
+2006-05-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-tool.c: HIGify window title. Closes #343053
 
-2006-05-27  Carlos Garnacho  <carlosg@mate.org>
+2006-05-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* network-tool.c: set an icon name
 	* network.desktop.in.in: ditto, patch by Sebastien Bacher
 	<seb128@debian.org>
 
-2006-05-26  Carlos Garnacho  <carlosg@mate.org>
+2006-05-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* ifaces-list.c: let GstNetworkTool keep a reference to the interfaces
 	model. closes bug #167953.
 
-2006-05-24  Carlos Garnacho  <carlosg@mate.org>
+2006-05-24  Carlos Garnacho  <carlosg@gnome.org>
 
 	* address-list.[ch] (gst_address_list_set_save_func): added. also use
 	it to save data.
@@ -533,13 +533,13 @@
 	* network-tool.c (save_dns) (save_search_domains): added. block
 	some signals for not prematurely saving the configuration
 
-2006-05-19  Carlos Garnacho  <carlosg@mate.org>
+2006-05-19  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c, connection.c, hosts.c, ifaces-list.c, main.c,
 	network-tool.c: correct the network-tool.h #include. Yay for last time
 	fixes
 
-2006-05-19  Carlos Garnacho  <carlosg@mate.org>
+2006-05-19  Carlos Garnacho  <carlosg@gnome.org>
 
 	* transfer.[ch]: deleted, XML interface is now obsolete.
 	* network-iface.[ch], network-iface-ethernet.[ch],
@@ -562,31 +562,31 @@
 	interfaces configuration.
 	* main.c: minor changes to adapt to new GstTool API
 
-2006-03-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-03-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.14.0
 
-2006-01-31  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-31  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.2
 
-2006-01-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.1
 
-2006-01-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.0
 
-2005-11-28  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-11-28  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.1
 
-2005-11-27  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-11-27  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.c: fix crash reported in bug #317650
 
-2005-09-19  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-09-19  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* location.c: added some missing tags when creating and restoring
 	profiles
@@ -595,29 +595,29 @@
 
 	* location.c (compare_general_data): return expected value.
 
-2005-09-04  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-09-04  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.0
 
-2005-08-23  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.92
 
-2005-08-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.2
 
-2005-07-26  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-26  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.1
 
-2005-07-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.c: handle cases where users don't cancel the edition
 	operation with ESC, and instead click on another place in the table.
 	Should close #310720
 
-2005-07-15  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-15  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-*.c: don't use a const GdkPixbuf, it now will be
 	modified for adding emblem.
@@ -627,26 +627,26 @@
 	order the interfaces from most to least used/usual. Don't put the
 	unconfigured interfaces as insensitive
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0.1
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0
 
-2005-06-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-06-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c: added full stop at the end of secondary text in
 	GtkMessageDialogs. Fixes #152396
 
-2005-06-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-06-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-wireless.[ch]: added wep key type support (ASCII and
 	Hexa)
 	* connection.[ch], main.c: added some GUI glue for this
 
-2005-04-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-04-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callback.c: applied string suggestion from Kjartan. Fixes #301300
 
@@ -654,7 +654,7 @@
 
 	* location.c: compile fix for gcc 2.x. Fixes #170162
 
-2005-04-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-04-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* main.c, callbacks.[ch]: forgot to handle "delete-event" for the
 	interface configuration dialog. Very possibly fixes #300226
@@ -668,102 +668,102 @@
 	* connection.[ch], network-iface-isdn.c: Added option for the
 	"update_dns" tag in dialup interfaces
 
-2005-04-07  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-04-07  Carlos Garnacho Parro  <carlosg@gnome.org>
 
         * address-list.c: allow IPV6 DNSs too. Fixes #171826
 
-2005-03-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-isdn.c: fixed bug where "noauth" was only applied to
 	already configured interfaces
 
-2005-03-07  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-07  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.2.0
 
-2005-03-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c: make the "enabled" and "auto" interface values match
 	as they should
 
-2005-03-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.92
 
-2005-03-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.[ch], ifaces-list.c, main.c: finally committed this
 	remaining patch to change gateways on the fly when there was none
 	selected and user activates an interface with default gateway
 
-2005-02-24  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-24  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* gst-network-tool.c: plug a leak
 
-2005-02-23  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface.c: show a string really translated
 
-2005-02-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-isdn.c: handle noauth stuff, default it to TRUE (quite
 	sane IMHO) until I can add some UI for this...
 
-2005-02-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* connection.c: only add cellrenderers once to the essids
 	GtkComboBoxEntry.
 
-2005-02-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.91
 
-2005-01-27  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-27  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.[ch], hosts.[ch], main.c: added some extra checks to ensure 
 	that any IP address in the hosts file has alias(es)
 
-2005-01-27  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-27  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* hosts.c: prevent it to crash with wrong hosts file (i.e.: IP address
 	without aliases)
 
-2005-01-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* hosts.c: added ellipsizing to the table in the case that there are
 	too many hostnames for a single IP address
 
-2005-01-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.90
 
-2005-01-24  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-24  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* location.c: fuck me... really save essid and WEP key in locations
 
-2005-01-24  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-24  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* location.c: really delete the profile from the XML when removing it
 	from the combo
 
-2005-01-22  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* connection.c: remove ESSID checkings, ESSID may be empty for cards
 	that can do autodetection. Fixes #160227
 
-2005-01-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* main.c: added GST_FILTER_PHONE to phone and dial prefix entries
 
-2005-01-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4.1
 
-2005-01-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4
 
-2005-01-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-isdn.[ch]: added
 	* Makefile.am: ditto
@@ -771,11 +771,11 @@
 	* callbacks.c, connection.[ch], gst-network-tool.h, ifaces-list.c:
 	minor changes for supporting ISDN interfaces
 
-2004-12-27  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-27  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-ethernet.c: fixed gateway loading/saving
 
-2004-12-27  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-27  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* ifaces-list.[ch] (ifaces_model_get_iface_by_name): replaced with
 	(ifaces_model_search_iface), which is a more general searching
@@ -783,16 +783,16 @@
 	* main.c: use this
 	* network-iface.[ch] (gst_iface_get_iface_type): made public
 
-2004-12-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.3
 
-2004-12-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* location.c: use the "save_profiles" and "set_profile" directives
 	for changing profiles
 
-2004-12-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c (enable_iface): added, common function that shows a
 	dialog if there was any error. (on_connection_ok_clicked),
@@ -800,7 +800,7 @@
 	* network-iface.c (gst_iface_enable): added report text to the
 	directive
 
-2004-12-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.[ch] (gst_address_list_clear): added
 	* callbacks.c: update button status when clicking ok in the interface
@@ -821,15 +821,15 @@
 	* Makefile.am: ditto
 	* gst-network-tool.[ch]: added locations widget
 
-2004-12-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-modem.c: silly me, s/dial_type/dial_command/
 
-2004-12-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-modem.c: fixed dial_prefix getting/setting in XML
 
-2004-12-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.[ch], connection.[ch], main.c: added some more IP addresses
 	checking
@@ -837,45 +837,45 @@
 	* network-iface-modem.c: handled wvdial sections and provider names,
 	this might be an internal detail in the backend, though.
 
-2004-12-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.c, main.c: handled IP address parsing/filtering
 
-2004-11-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.c, connection.c: fixed some compile warnings
 	* main.c, ifaces-list.[ch], connection.[ch], callbacks.c: readded
 	command line option
 	* network-iface-modem.c: added _get_xml implementation
 
-2004-11-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.c: added DnD
 
-2004-11-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.c, hosts.c: added popup menus
 	* callbacks.[ch], ifaces-list.[ch]: generalized a bit the popup menu
 	stuff.
 
-2004-11-27  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-27  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* ifaces-list.c: fixed context menu for ifaces, now it
 	enables/disables correctly
 
-2004-11-27  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-27  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.[ch], connection.[ch], main.c: handled dialog changing and
 	fields checking.
 	* callbacks.c: fixed a compile warning
 	* connection.c: fixed a function indent
 
-2004-11-26  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-26  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.[ch] (callbacks_check_hostname_hook): added
 	* main.c: added apply hook for checking when the hostname is changed
 
-2004-11-26  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-26  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.[ch] (on_detect_modem_clicked): added
 	(enable_disable_iface): warn when the iface could not be enabled
@@ -883,13 +883,13 @@
 	* connection.[ch], main.c: added some modem detection stuff
 	* hosts.c (host_aliases_run_dialog): added a gst_dialog_modify()
 
-2004-11-24  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-24  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* connection.[ch] (modem_dialog_prepare), (modem_dialog_save): added.
 	Handled modem GUI.
 	* network-iface-modem.[ch]: added missing properties
 
-2004-11-23  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-modem.[ch]: added files to handle PPP devices
 	* Makefile.am: ditto
@@ -897,28 +897,28 @@
 	PPP devices
 	* callbacks.c: somewhat prettify code
 
-2004-11-22  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* ifaces-list.[ch] (gateways_combo_get_selected): added
 	* transfer.c: save gateway settings
 
-2004-11-22  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* hosts.[ch]: abstracted a bit more, made it able to save the config
 	* transfer.[ch]: somewhat improved
 
-2004-11-22  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* hosts.[ch]: added for handling /etc/hosts editing
 	* Makefile.am: ditto
 	* callbacks.[ch], gst-network-tool.[ch], main.c, transfer.c: handled
 	hosts aliases editing
 
-2004-11-20  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-20  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c, network-iface.[ch]: made it able to enable ifaces
 
-2004-11-18  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-18  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.[ch], main.c, network-iface.c: it now disables interfaces
 	* transfer.c: do not delete loopback based on interface type, not dev
@@ -926,28 +926,28 @@
 	* connection.c, callbacks.c: moved a g_object_ref/unref to make the
 	code easier to read
 
-2004-11-17  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-17  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-ethernet.c: fixed silly bug that got me annoyed, woo!
 	* network-iface-plip.c: added "bootproto" tag
 
-2004-11-17  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-17  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-ethernet.c, network-iface-plip.c,
 	network-iface-wireless.c, network-iface.c, transfer.c: more iface
 	saving, fixed some issues generating the XML
 
-2004-11-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-ethernet.c: improved config saving
 	* network-iface.c: handled "file" tag
 	* transfer.c: delete all ifaces but loopback
 
-2004-11-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface.c network-iface-ethernet.c: implemented (get_xml)
 
-2004-11-15  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-15  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* connection.c (wireless_essid_get_model),
 	(wireless_dialog_prepare_essid_entry): added networks scanning
@@ -955,22 +955,22 @@
 
 	* gst-network-tool.[ch]: added icon theme
 
-2004-11-10  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-10  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.[ch], main.c, transfer.[ch]: made it begin to save
 	information
 
-2004-11-09  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-09  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* ifaces-list.[ch], transfer.c: update the gatewaydev from the XML
 
-2004-11-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* network-iface-wireless.[ch] (gst_iface_wireless_new_from_xml):
 	get the parent class configuration before checking that it's
 	configured
 
-2004-11-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* address-list.[ch], gst-network-tool.[ch], ifaces-list.[ch],
 	network-iface.[ch], network-iface-ethernet.[ch],
@@ -984,26 +984,26 @@
 	profiles-table.[ch]: deleted files, any missing functionality will be
 	reimplemented
 
-2004-11-03  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-03  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1
 
-2004-10-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-10-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* connection.[ch], main.c, network-druid.c, profile.c: Patch by
 	Vincent Untz <vincent@vuntz.net> to add WEP keys management
         to the UI. Fixes #147260
 
-2004-10-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-10-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c: changed the string to delete an interface, fixes
 	#154830
 
-2004-09-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.0
 
-2004-09-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 0.92
 
@@ -1011,12 +1011,12 @@
 
 	* Release 0.91.0
 
-2004-08-04  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-04  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c: fixed a serious and quite silly bug when storing the
 	default gatewaydev. I'm dumb
 
-2004-08-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* transfer.c: little UI improvement, made the default gateway stuff
 	appear if it's necessary, and not dissappear if it's not necessary,
@@ -1606,7 +1606,7 @@
 
 	* Release 0.20.0
 
-2002-04-22  Kjartan Maraas  <kmaraas@mate.org>
+2002-04-22  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* callbacks.c: Fix a missing space in a string.
 	
@@ -2533,7 +2533,7 @@ Fri Jul 13 19:10:59 2001  Arturo Espinosa Aldama  <arturo@ximian.com>
 
 	* main.c: add signals list
 
-2001-02-03  Christian Meyer  <chrisime@mate.org>
+2001-02-03  Christian Meyer  <chrisime@gnome.org>
 
 	* network.desktop.in: Added German strings.
 	 

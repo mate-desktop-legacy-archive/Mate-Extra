@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the mate-system-tools package.
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # Krix Apolinário <krixapolinario@gmail.com>, 2009.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2009.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2009.
 #
 #
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2009-05-25 20:17+0000\n"
 "PO-Revision-Date: 2009-06-03 14:25-0300\n"
 "Last-Translator: Krix Apolinário <krixapolinario@gmail.com>\n"
-"Language-Team: Portuguese/Brazil <mate-pt_br-list@mate.org>\n"
+"Language-Team: Portuguese/Brazil <mate-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -184,8 +184,8 @@ msgstr "Agosto 2006"
 
 #: C/time-admin.xml:68(para) C/time-admin.xml:69(para)
 #: C/time-admin.xml:76(para) C/time-admin.xml:77(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/time-admin.xml:73(revnumber)
 msgid "Time Administration Tool Manual V0.35"
@@ -447,4 +447,4 @@ msgstr "Mostra a janela dos servidores da Ferramenta de Administração da Hora"
 msgid "translator-credits"
 msgstr
 "Krix Apolinário <krixapolinario@gmail.com>, 2009\n"
-"Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2009"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2009"

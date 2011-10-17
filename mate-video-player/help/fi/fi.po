@@ -105,8 +105,8 @@ msgid "HOH"
 msgstr "HOH"
 
 #: C/totem.xml:66(email) 
-msgid "cbhoh@mate.org"
-msgstr "cbhoh@mate.org"
+msgid "cbhoh@gnome.org"
+msgstr "cbhoh@gnome.org"
 
 #: C/totem.xml:69(firstname) 
 msgid "Baptiste"
@@ -149,8 +149,8 @@ msgid "August 2006"
 msgstr "Elokuu 2006"
 
 #: C/totem.xml:114(para) 
-msgid "Chee Bin HOH <email>cbhoh@mate.org</email>"
-msgstr "Chee Bin HOH <email>cbhoh@mate.org</email>"
+msgid "Chee Bin HOH <email>cbhoh@gnome.org</email>"
+msgstr "Chee Bin HOH <email>cbhoh@gnome.org</email>"
 
 #: C/totem.xml:121(revnumber) 
 msgid "Totem Movie Player Manual V3.0"

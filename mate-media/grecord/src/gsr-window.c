@@ -1,7 +1,7 @@
 /* -*- Mode: C; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*- */
 /*
  *  Authors: Iain Holmes <iain@prettypeople.org>
- *           Johan Dahlin <johan@mate.org>
+ *           Johan Dahlin <johan@gnome.org>
  *           Tim-Philipp Müller <tim centricular net>
  *
  *  Copyright 2002 Iain Holmes
@@ -1230,7 +1230,7 @@ about_cb (GtkAction *action,
 {
 	const char * const authors[] = {"Iain Holmes <iain@prettypeople.org>", 
 		"Ronald Bultje <rbultje@ronald.bitfreak.net>", 
-		"Johan Dahlin  <johan@mate.org>", 
+		"Johan Dahlin  <johan@gnome.org>", 
 		"Tim-Philipp M\303\274ller <tim centricular net>",
 		NULL};
 	const char * const documenters[] = {"Sun Microsystems", NULL};
@@ -1239,7 +1239,7 @@ about_cb (GtkAction *action,
 			       "name", _("Sound Recorder"),
 			       "version", VERSION,
 			       "copyright", "Copyright \xc2\xa9 2002 Iain Holmes",
-			       "comments", _("A sound recorder for MATE\n mate-multimedia@mate.org"),
+			       "comments", _("A sound recorder for MATE\n mate-multimedia@gnome.org"),
 			       "authors", authors,
 			       "documenters", documenters,
 			       "logo-icon-name", "mate-sound-recorder",

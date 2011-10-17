@@ -4,7 +4,7 @@
 # documentation.
 #
 # Christophe Bliard <christophe.bliard@trux.info>, 2005, 2006.
-# Vincent Untz <vuntz@mate.org>, 2005.
+# Vincent Untz <vuntz@gnome.org>, 2005.
 # Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
 #
 msgid ""
@@ -182,8 +182,8 @@ msgid "Udaltsov"
 msgstr "Udaltsov"
 
 #: ../C/gswitchit.xml:72(email)
-msgid "svu@mate.org"
-msgstr "svu@mate.org"
+msgid "svu@gnome.org"
+msgstr "svu@gnome.org"
 
 #: ../C/gswitchit.xml:89(releaseinfo)
 msgid "This manual describes version 2.8 of the Keyboard Indicator applet."
@@ -487,5 +487,5 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Christophe Bliard <christophe.bliard@trux.info>, 2005, 2006.\n"
-"Vincent Untz <vuntz@mate.org>, 2005.\n"
+"Vincent Untz <vuntz@gnome.org>, 2005.\n"
 "Jonathan Ernst <jonathan@ernstfamily.ch>, 2006."

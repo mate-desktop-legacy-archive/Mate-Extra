@@ -18,7 +18,7 @@
 
 	* ru.po: Updated Russian translation.
 
-2009-03-16  Ignacio Casal Quinteiro  <icq@mate.org>
+2009-03-16  Ignacio Casal Quinteiro  <icq@gnome.org>
 
 	 * gl.po: Updated Galician translation by Suso Baleato.
 
@@ -36,7 +36,7 @@
 
 	* da.po: Updated Danish translation by Ask H. Larsen
 
-2009-03-13  Kostas Papadimas <pkst@mate.org>
+2009-03-13  Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated Greek Translation by Jennie Petoumenou.
 
@@ -72,7 +72,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2009-02-28 Og Maciel <ogmaciel@mate.org>
+2009-02-28 Og Maciel <ogmaciel@gnome.org>
 
 	* it.po: Updated Italian translation by Milo Casagrande.
 
@@ -124,7 +124,7 @@
 
 	* th.po: Updated Thai translation.
 
-2009-02-10  Gil Forcada  <gforcada@mate.org>
+2009-02-10  Gil Forcada  <gforcada@gnome.org>
 
 	* ast.po: Added Asturian translation on behalf of Mikel González.
 	* LINGUAS: Added ast.
@@ -151,7 +151,7 @@
 
 	* lt.po: Updated Lithuanian translation.
 
-2009-01-29  Gil Forcada  <gforcada@mate.org>
+2009-01-29  Gil Forcada  <gforcada@gnome.org>
 
 	* ca.po: Updated Catalan translation.
 
@@ -167,11 +167,11 @@
 
 	* lv.po: Updated Latvian translation.
 
-2009-01-16 Og Maciel <ogmaciel@mate.org>
+2009-01-16 Og Maciel <ogmaciel@gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
-2009-01-05  Kjartan Maraas  <kmaraas@mate.org>
+2009-01-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -229,7 +229,7 @@
 
 	* ta.po:  Tamil Translation updated
 
-2008-09-18  Hendrik Richter  <hendrikr@mate.org>
+2008-09-18  Hendrik Richter  <hendrikr@gnome.org>
 
 	* de.po: Updated German translation.
 
@@ -237,7 +237,7 @@
 
 	* ar.po: Updated Arabic Translation by Khaled Hosny.
 
-2008-09-18  Gil Forcada  <gforcada@mate.org>
+2008-09-18  Gil Forcada  <gforcada@gnome.org>
 
 	* ca.po: Updated Catalan translation.
 
@@ -265,7 +265,7 @@
 
 	* mr.po: Updated Marathi Translations.
 
-2008-09-11  Hendrik Richter  <hendrikr@mate.org>
+2008-09-11  Hendrik Richter  <hendrikr@gnome.org>
 
 	* de.po: Updated German translation.
 
@@ -326,7 +326,7 @@
 
 	* pt.po: Updated Portuguese translation.
 
-2008-08-11  Leonardo Ferreira Fontenelle  <leonardof@mate.org>
+2008-08-11  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
 	* pt_BR.po: Brazilian Portuguese translation updated by Djavan
 	Fagundes.
@@ -360,7 +360,7 @@
 	* bg.po: Updated Bulgarian translation by
 	Alexander Shopov <ash@contact.bg>
 
-2008-08-02  Leonardo Ferreira Fontenelle  <leonardof@mate.org>
+2008-08-02  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
 	* pt_BR.po: Terminology fixes by Vladimir Melo.
 
@@ -384,7 +384,7 @@
 
 	* oc.po: Updated Occitan translation.
 
-2008-07-01  Simos Xenitellis  <simos@mate.org>
+2008-07-01  Simos Xenitellis  <simos@gnome.org>
 
 	* ps.po: Added Pashto translation by Zabeeh Khan.
 	* LINGUAS: Added ps to language list.
@@ -401,7 +401,7 @@
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2008-06-07  Kjartan Maraas  <kmaraas@mate.org>
+2008-06-07  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -459,7 +459,7 @@
 	* pt_BR.po: Minor fixes in Brazilian Portuguese translation, by Thiago
 	Demétrio and me, brought from branch mate-2-22.
 
-2008-04-30  Kjartan Maraas  <kmaraas@mate.org>
+2008-04-30  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -476,7 +476,7 @@
 	* bg.po: Updated Bulgarian translation by
 	Yavor Doganov <yavor@gnu.org>
 
-2008-04-21  Kjartan Maraas  <kmaraas@mate.org>
+2008-04-21  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -496,7 +496,7 @@
 
 	* et.po: Translation updated by Ivar Smolin
 
-2008-03-31  Eskild Hustvedt  <eskildh@mate.org>
+2008-03-31  Eskild Hustvedt  <eskildh@gnome.org>
 
 	* nn.po: Updated Norwegian Nynorsk translation
 
@@ -521,7 +521,7 @@
 	* be@latin.po: Added Belarusian Latin translation.
 	* LINGUAS: Added be@latin.
 
-2008-03-09  Kostas Papadimas <pkst@mate.org>
+2008-03-09  Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated Greek translation
 
@@ -595,7 +595,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2008-02-25  Gil Forcada  <gforcada@mate.org>
+2008-02-25  Gil Forcada  <gforcada@gnome.org>
 
 	* ca.po: Updated Catalan translation.
 
@@ -607,11 +607,11 @@
 
 	* it.po: Updated Italian translation.
 
-2008-02-22  Jonh Wendell  <jwendell@mate.org>
+2008-02-22  Jonh Wendell  <jwendell@gnome.org>
 
 	* pt_BR: Updated Brazilian Portuguese translation by Hugo Doria.
 
-2008-02-17  Vincent van Adrighem  <adrighem@mate.org>
+2008-02-17  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Daniel van Eeden.
 
@@ -673,7 +673,7 @@
 
 	* oc.po: Updated Occitan translation.
 
-2008-01-29  Jonh Wendell  <jwendell@mate.org>
+2008-01-29  Jonh Wendell  <jwendell@gnome.org>
 
 	* pt_BR.po: Brazilian Portuguese translation updated by Hugo Doria.
 
@@ -682,7 +682,7 @@
 	* ga.po: Updated Irish translation.
 
 >>>>>>> .r2285
-2008-01-18  Gil Forcada  <gforcada@mate.org>
+2008-01-18  Gil Forcada  <gforcada@gnome.org>
 
 	* tr.po: Updated Turkish translation to pass msgfmt -cv.
 
@@ -690,7 +690,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2008-01-14  Kjartan Maraas  <kmaraas@mate.org>
+2008-01-14  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -718,7 +718,7 @@
 
 	* ku.po: Updated Kurdish translation
 
-2008-01-03  Kjartan Maraas  <kmaraas@mate.org>
+2008-01-03  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* POTFILES.in: Add missing file.
 	* nb.po: Updated Norwegian bokmål translation.
@@ -751,7 +751,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-12-06  Kjartan Maraas  <kmaraas@mate.org>
+2007-12-06  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -796,7 +796,7 @@
 
 	* he.po: Updated Hebrew translation.
 
-2007-10-06  Vladimer Sichinava  <vsichi@mate.org>
+2007-10-06  Vladimer Sichinava  <vsichi@gnome.org>
 
 	* ka.po: Updated Georgian translation.
 
@@ -829,7 +829,7 @@
 
 	* ar.po: Updated Arabic Translation by Anas Husseini.
 
-2007-09-13 Kostas Papadimas <pkst@mate.org>
+2007-09-13 Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated Greek Translation
 
@@ -886,16 +886,16 @@
 
 	* fr.po: Updated French translation by Claude Paroz.
 
-2007-08-14  Hendrik Richter  <hendrikr@mate.org>
+2007-08-14  Hendrik Richter  <hendrikr@gnome.org>
 
 	* de.po: Updated German translation.
 
-2007-08-14  Hendrik Richter  <hendrikr@mate.org>
+2007-08-14  Hendrik Richter  <hendrikr@gnome.org>
 
 	* de.po: Updated German translation, by
 	Andre Klapper <ak-47@gmx.net>
 
-2007-08-12  Žygimantas Beručka  <zygis@mate.org>
+2007-08-12  Žygimantas Beručka  <zygis@gnome.org>
 
 	* lt.po: Updated Lithuanian translation.
 
@@ -941,7 +941,7 @@
 	* si.po: Added Sinhala translation by Danishka Navin
 	* LINGUAS: Added "si".
 
-2007-08-02  Kjartan Maraas  <kmaraas@mate.org>
+2007-08-02  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -965,7 +965,7 @@
 
 	* th.po: Updated Thai translation.
 
-2007-07-20  Vincent van Adrighem  <adrighem@mate.org>
+2007-07-20  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Reinout van Schouwen.
 
@@ -1033,7 +1033,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-05-08  Kjartan Maraas  <kmaraas@mate.org>
+2007-05-08  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -1117,7 +1117,7 @@
 
 	* ar.po: Updated Arabic Translation by Khaled Hosny.
 
-2007-03-19  Kjartan Maraas  <kmaraas@mate.org>
+2007-03-19  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation from Espen
 	Stefansen.
@@ -1175,11 +1175,11 @@
 
 	* lt.po: Updated Lithuanian translation.
 
-2007-02-27  Hendrik Richter  <hendrikr@mate.org>
+2007-02-27  Hendrik Richter  <hendrikr@gnome.org>
 
 	* de.po: Updated German translation.
 
-2007-02-27  Hendrik Richter  <hendrikr@mate.org>
+2007-02-27  Hendrik Richter  <hendrikr@gnome.org>
 
 	* de.po: Updated German translation, by
 	Christian Kintner <mail@christian-kintner.de>
@@ -1192,7 +1192,7 @@
 
 	* ko.po: Updated Korean translation.
 
-2007-02-24  Kjartan Maraas  <kmaraas@mate.org>
+2007-02-24  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -1214,7 +1214,7 @@
 	* bg.po: Updated Bulgarian translation by
 	Alexander Shopov <ash@contact.bg>
 
-2007-02-18  Žygimantas Beručka  <zygis@mate.org>
+2007-02-18  Žygimantas Beručka  <zygis@gnome.org>
 
 	* lt.po: Updated Lithuanian translation.
 
@@ -1275,7 +1275,7 @@
 
 	* th.po: Updated Thai translation.
 
-2007-01-24  Kjartan Maraas  <kmaraas@mate.org>
+2007-01-24  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* POTFILES.in: Remove a non-existing file.
 	* nb.po: Updated Norwegian bokmål translation.
@@ -1284,7 +1284,7 @@
 
 	* ar.po: Updated Arabic Translation by Khaled Hosny.
 
-2007-01-14  Žygimantas Beručka  <zygis@mate.org>
+2007-01-14  Žygimantas Beručka  <zygis@gnome.org>
 
 	* lt.po: Updated Lithuanian translation.
 
@@ -1384,7 +1384,7 @@
 
 	* gl.po: Updated Galician Translation.
 
-2006-10-26  Vincent van Adrighem  <adrighem@mate.org>
+2006-10-26  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Tino Meinen.
 
@@ -1420,7 +1420,7 @@
 
 	* gu.po: Updated Gujarati Translation.
 
-2006-10-17  Kjartan Maraas  <kmaraas@mate.org>
+2006-10-17  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -1477,7 +1477,7 @@
 
 	* mk.po: Updated Macedonian translation.
 
-2006-09-05  Lucas Rocha  <lucasr@mate.org>
+2006-09-05  Lucas Rocha  <lucasr@gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation
 	by Vinicius Pinheiro <vinnie.gp@gmail.com>
@@ -1600,7 +1600,7 @@
 
 	* hu.po: Translation updated by Mate ORY.
 
-2006-08-15  Hendrik Richter  <hendrikr@mate.org>
+2006-08-15  Hendrik Richter  <hendrikr@gnome.org>
 
 	* de.po: Updated German translation.
 
@@ -1621,7 +1621,7 @@
 	* dz.po: Updated Dzongkha translation by
 	Dzongkhalinux team, DIT
 
-2006-08-09  Kjartan Maraas  <kmaraas@mate.org>
+2006-08-09  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -1650,7 +1650,7 @@
 	* mg: Added Malagasy translation.
 	* LINGUAS: Added Malagasy 'mg'.
 
-2006-08-03  Kjartan Maraas  <kmaraas@mate.org>
+2006-08-03  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -1690,11 +1690,11 @@
 
 	* zh_CN.po: Updated Simplified Chinese translation.
 
-2006-07-21  Kostas Papadimas  <pkst@mate.org>
+2006-07-21  Kostas Papadimas  <pkst@gnome.org>
 
 	* el.po: Updated Greek translation
 
-2006-07-20  Vincent van Adrighem  <adrighem@mate.org>
+2006-07-20  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Tino Meinen.
 
@@ -1784,7 +1784,7 @@
 
 	* es.po: Updated Spanish translation.
 
-2006-06-15  Hendrik Richter  <hendrikr@mate.org>
+2006-06-15  Hendrik Richter  <hendrikr@gnome.org>
 
 	* de.po: Updated German translation.
 
@@ -1916,7 +1916,7 @@
 
 	* pt.po: Updated Portuguese translation.
 
-2006-02-23  Žygimantas Beručka  <zygis@mate.org>
+2006-02-23  Žygimantas Beručka  <zygis@gnome.org>
 
 	* lt.po: Updated Lithuanian translation.
 
@@ -1928,7 +1928,7 @@
 
 	* hu.po: Hungarian translation updated by Mate ORY.
 
-2006-02-17 Kostas Papadimas <pkst@mate.org>
+2006-02-17 Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated Greek Translation.
 
@@ -1961,11 +1961,11 @@
 
 	* et.po: Translation updated by Ivar Smolin.
 
-2006-01-24  Vincent van Adrighem  <adrighem@mate.org>
+2006-01-24  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Tino Meinen.
 
-2006-01-22  Kjartan Maraas  <kmaraas@mate.org>
+2006-01-22  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 	* no.po: Same.
@@ -1994,7 +1994,7 @@
 
 	* sr.po, sr@Latn.po: Updated Serbian translation
 
-2006-01-17  Adam Weinberger  <adamw@mate.org>
+2006-01-17  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2014,7 +2014,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2006-01-15  Adam Weinberger  <adamw@mate.org>
+2006-01-15  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2047,7 +2047,7 @@
 
 	* ja.po: Updated Japanese translation.
 
-2006-01-08  Kjartan Maraas  <kmaraas@mate.org>
+2006-01-08  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 	* no.po: Same.
@@ -2057,7 +2057,7 @@
 	* zh_TW.po: Updated Traditional Chinese Translation.(Taiwan)
 	* zh_HK.po: Added Traditional Chinese Translation.(Hong Kong)
 
-2006-01-06  Vincent van Adrighem  <adrighem@mate.org>
+2006-01-06  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Tino Meinen.
 
@@ -2073,12 +2073,12 @@
 
 	* fr.po: Updated French translation.
 
-2006-01-02  Kjartan Maraas  <kmaraas@mate.org>
+2006-01-02  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 	* no.po: Same.
 
-2005-12-30  Adam Weinberger  <adamw@mate.org>
+2005-12-30  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2102,7 +2102,7 @@
 
 	* gu.po: Updated Gujarati Translation.
 
-2005-12-29  Žygimantas Beručka  <zygis@mate.org>
+2005-12-29  Žygimantas Beručka  <zygis@gnome.org>
 
 	* lt.po: Updated Lithuanian translation.
 
@@ -2118,7 +2118,7 @@
 
 	* sk.po: Updated Slovak translation.
 
-2005-12-28  Adam Weinberger  <adamw@mate.org>
+2005-12-28  Adam Weinberger  <adamw@gnome.org>
 
 	* POTFILES.in: Added missing file.
 	* en_CA.po: Updated Canadian English translation.
@@ -2139,11 +2139,11 @@
 
 	* gu.po: Updated Gujarati Translation.
 
-2005-12-07  Žygimantas Beručka  <zygis@mate.org>
+2005-12-07  Žygimantas Beručka  <zygis@gnome.org>
 
 	* lt.po: Updated Lithuanian translation.
 
-2005-12-02  Kjartan Maraas  <kmaraas@mate.org>
+2005-12-02  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 	* no.po: Same
@@ -2161,12 +2161,12 @@
 
 	* ja.po: Updated Japanese translation.
 
-2005-11-18  Kjartan Maraas  <kmaraas@mate.org>
+2005-11-18  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 	* no.po: Same
 
-2005-11-17  Vincent van Adrighem  <adrighem@mate.org>
+2005-11-17  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated.
 
@@ -2194,7 +2194,7 @@
 
 	* es.po: Updated Spanish translation.
 
-2005-11-08  Adam Weinberger  <adamw@mate.org>
+2005-11-08  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2210,7 +2210,7 @@
 
 	* th.po: Updated Thai translation.
 
-2005-11-05  Adam Weinberger  <adamw@mate.org>
+2005-11-05  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2247,11 +2247,11 @@
 
 	* sk.po: Updated Slovak translation.
 
-2005-10-15  Vincent van Adrighem  <adrighem@mate.org>
+2005-10-15  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated.
 
-2005-10-12  Adam Weinberger  <adamw@mate.org>
+2005-10-12  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2263,7 +2263,7 @@
 
 	* et.po: Translation updated.
 
-2005-09-30  Adam Weinberger  <adamw@mate.org>
+2005-09-30  Adam Weinberger  <adamw@gnome.org>
 
 	* POTFILES.in: Removed missing file.
 
@@ -2341,15 +2341,15 @@
 
 	* ko.po: Updated Korean translation by Young-Ho Cha.
 
-2005-08-21  Žygimantas Beručka  <zygis@mate.org>
+2005-08-21  Žygimantas Beručka  <zygis@gnome.org>
 
 	* lt.po: Updated Lithuanian translation by Justina Klingaitė.
 
-2005-08-19  Vincent van Adrighem  <adrighem@mate.org>
+2005-08-19  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Tino Meinen.
 
-2005-05-13 Kostas Papadimas <pkst@mate.org>
+2005-05-13 Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated Greek Translation
 
@@ -2403,7 +2403,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2005-07-24  Kjartan Maraas  <kmaraas@mate.org>
+2005-07-24  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 	* no.po: Same
@@ -2424,7 +2424,7 @@
 
 	* ja.po: Updated Japanese translation.
 
-2005-07-18  Adam Weinberger  <adamw@mate.org>
+2005-07-18  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2480,7 +2480,7 @@
 
 	* es.po: Updated Spanish translation.
 
-2005-07-07  Adam Weinberger  <adamw@mate.org>
+2005-07-07  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2501,7 +2501,7 @@
 	* bg.po: Updated Bulgarian translation by
 	Rostislav Raykov <zbrox@i-space.org>
 
-2005-07-03  Adam Weinberger  <adamw@mate.org>
+2005-07-03  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2554,7 +2554,7 @@
 
 	* da.po: Updated Danish translation.
 
-2005-06-17  Adam Weinberger  <adamw@mate.org>
+2005-06-17  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2612,7 +2612,7 @@
 
 	* et.po: Translation updated.
 
-2005-06-01  Adam Weinberger  <adamw@mate.org>
+2005-06-01  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2633,7 +2633,7 @@
 
 	* zh_CN.po: Updated Simplified Chinese translation.
 
-2005-05-25  Kjartan Maraas  <kmaraas@mate.org>
+2005-05-25  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Update
 	* no.po: Update
@@ -2646,7 +2646,7 @@
 
 	* et.po: Translation updated.
 
-2005-05-19  Adam Weinberger  <adamw@mate.org>
+2005-05-19  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2654,7 +2654,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2005-05-11 Kostas Papadimas <pkst@mate.org>
+2005-05-11 Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated Greek Translation
 
@@ -2666,7 +2666,7 @@
 
 	* et.po: Translation updated.
 
-2005-05-04  Adam Weinberger  <adamw@mate.org>
+2005-05-04  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2731,7 +2731,7 @@
 
 	* rw.po: Added Kinyarwanda translation.
 
-2005-03-31  Adam Weinberger  <adamw@mate.org>
+2005-03-31  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2747,11 +2747,11 @@
 
 	* zh_TW.po: Updated traditional Chinese translation from MATE HK Team
 
-2005-03-26  Adam Weinberger  <adamw@mate.org>
+2005-03-26  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
-2005-03-15  Adam Weinberger  <adamw@mate.org>
+2005-03-15  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2768,7 +2768,7 @@
 
 	* it.po: Updated Italian translation.
 
-2005-03-03  Vincent van Adrighem  <adrighem@mate.org>
+2005-03-03  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Jeroen van der Vegt.
 
@@ -2781,11 +2781,11 @@
 
 	* ja.po: Updated Japanese translation.
 
-2005-03-01  Vincent van Adrighem  <adrighem@mate.org>
+2005-03-01  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Tino Meinen.
 
-2005-02-28  Kostas Papadimas <pkst@mate.org>
+2005-02-28  Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated  Greek translation.
 
@@ -2825,7 +2825,7 @@
 
 	* ko.po: Updated Korean translation.
 
-2005-02-18  Kostas Papadimas <pkst@mate.org>
+2005-02-18  Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated Greek translation.
 
@@ -2890,7 +2890,7 @@
 
 	* es.po: Updated Spanish translation.
 
-2005-02-08  Adam Weinberger  <adamw@mate.org>
+2005-02-08  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2898,7 +2898,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2005-02-08  Kjartan Maraas  <kmaraas@mate.org>
+2005-02-08  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Update
 	* no.po: Update
@@ -2923,7 +2923,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2005-02-05  Kostas Papadimas <pkst@mate.org>
+2005-02-05  Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated  Greek translation.
 
@@ -2947,7 +2947,7 @@
 
 	* de.po: Updated German translation.
 
-2005-02-01  Adam Weinberger  <adamw@mate.org>
+2005-02-01  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -2992,7 +2992,7 @@
 
 	* sk.po: Updated Slovak translation.
 
-2005-01-25  Adam Weinberger  <adamw@mate.org>
+2005-01-25  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3041,7 +3041,7 @@
 
 	* es.po: Updated Spanish translation.
 
-2005-01-19  Kjartan Maraas  <kmaraas@mate.org>
+2005-01-19  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Update
 	* no.po: Update
@@ -3051,7 +3051,7 @@
 	* bg.po: Updated Bulgarian translation by
 	Vladimir Petkov <vpetkov@i-space.org>
 
-2005-01-17  Adam Weinberger  <adamw@mate.org>
+2005-01-17  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3075,7 +3075,7 @@
 
 	* es.po: Updated Spanish translation.
 
-2005-01-14  Kjartan Maraas  <kmaraas@mate.org>
+2005-01-14  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Update
 	* no.po: Update
@@ -3084,7 +3084,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2005-01-13  Adam Weinberger  <adamw@mate.org>
+2005-01-13  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3096,11 +3096,11 @@
 
 	* sv.po: Updated Swedish translation.
 
-2005-01-12  Adam Weinberger  <adamw@mate.org>
+2005-01-12  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
-2005-01-10  Adam Weinberger  <adamw@mate.org>
+2005-01-10  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3116,7 +3116,7 @@
 
 	* es.po: Updated Spanish translation.
 
-2005-01-09  Adam Weinberger  <adamw@mate.org>
+2005-01-09  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3136,7 +3136,7 @@
 
 	* es.po: Updated Spanish translation.
 
-2005-01-07  Adam Weinberger  <adamw@mate.org>
+2005-01-07  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3160,11 +3160,11 @@
 
 	* ru.po: Updated Russian translation
 
-2004-12-28  Kjartan Maraas  <kmaraas@mate.org>
+2004-12-28  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Update
 
-2004-12-26  Adam Weinberger  <adamw@mate.org>
+2004-12-26  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3180,7 +3180,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2004-12-18  Vincent van Adrighem  <adrighem@mate.org>
+2004-12-18  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by A.J. van der Vegt.
 
@@ -3224,11 +3224,11 @@
 
 	* es.po: Updated Spanish translation.
 
-2004-11-27  Adam Weinberger  <adamw@mate.org>
+2004-11-27  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
-2004-11-25  Kjartan Maraas  <kmaraas@mate.org>
+2004-11-25  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Update
 
@@ -3244,7 +3244,7 @@
 
 	* sq.po: Updated Albanian translation.
 
-2004-11-18  Adam Weinberger  <adamw@mate.org>
+2004-11-18  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3272,7 +3272,7 @@
 
 	* de.po: Updated German translation.
 
-2004-11-05  Vincent van Adrighem  <adrighem@mate.org>
+2004-11-05  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated.
 
@@ -3292,7 +3292,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2004-10-24  Adam Weinberger  <adamw@mate.org>
+2004-10-24  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3328,11 +3328,11 @@
 
 	* da.po: Updated Danish translation.
 
-2004-10-23  Adam Weinberger  <adamw@mate.org>
+2004-10-23  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
-2004-09-26  Adam Weinberger  <adamw@mate.org>
+2004-09-26  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3340,7 +3340,7 @@
 
 	* ar.po: Updated Arabic translation
 
-2004-09-08  Adam Weinberger  <adamw@mate.org>
+2004-09-08  Adam Weinberger  <adamw@gnome.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -3364,7 +3364,7 @@
 
 	* uk.po: Updated Ukrainian translation.
 
-2004-08-21  Kjartan Maraas  <kmaraas@mate.org>
+2004-08-21  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Add.
 
@@ -3411,7 +3411,7 @@
 	* bg.po: Updated Bulgarian translation by
 	Vladimir "Kaladan" Petkov <vpetkov@i-space.org>
 
-2004-05-03  Vincent van Adrighem  <adrighem@mate.org>
+2004-05-03  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated.
 
@@ -3454,7 +3454,7 @@
 2004-03-19  Dmitry G. Mastrukov  <dmitry@taurussoft.org>
 
 	* ru.po: Updated Russian translation
-	from Russian team <mate-cyr@mate.org>.
+	from Russian team <mate-cyr@gnome.org>.
 
 2004-03-19  Arafat Medini  <lumina@silverpen.de>
 
@@ -3558,7 +3558,7 @@
 
 	* ms.po: Updated Malay translation.
 
-2004-02-03  Kostas Papadimas <pkst@mate.org>
+2004-02-03  Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated  Greek translation.
 
@@ -3578,7 +3578,7 @@
 
 	* az.po: Translation updated.
 
-2004-01-31  Kjartan Maraas  <kmaraas@mate.org>
+2004-01-31  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* no.po: Updated Norwegian translation.
 
@@ -3586,7 +3586,7 @@
 
 	* cs.po: Fixed Czech translation.
 
-2004-01-23  Vincent van Adrighem  <adrighem@mate.org>
+2004-01-23  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Jeroen van der Vegt.
 
@@ -3602,7 +3602,7 @@
 
 	* sq.po: Updated Albanian translation.
 
-2004-01-13  Kjartan Maraas  <kmaraas@mate.org>
+2004-01-13  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* no.po: Updated Norwegian translation.
 
@@ -3670,7 +3670,7 @@
 
 	* es.po: Updated Spanish translation
 
-2003-12-03  Vincent van Adrighem  <adrighem@mate.org>
+2003-12-03  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Dutch translation updated by Jeroen van der Vegt.
 
@@ -3706,7 +3706,7 @@
 
 	* ms.po: Updated Malay translation.
 
-2003-11-02  Vincent van Adrighem  <adrighem@mate.org>
+2003-11-02  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Dutch translation updated by Jeroen van der Vegt.
 
@@ -3714,7 +3714,7 @@
 
 	* ja.po: Updated Japanese translation.
 
-2003-10-30  Kostas Papadimas <pkst@mate.org>
+2003-10-30  Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated Greek translation.
 
@@ -3771,7 +3771,7 @@
 
 	* pt.po: Fixed typos in Portuguese translation.
 
-2003-08-22  Kjartan Maraas  <kmaraas@mate.org>
+2003-08-22  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* no.po: Update Norwegian translation.
 
@@ -3938,7 +3938,7 @@
 2003-04-25  Dmitry G. Mastrukov  <dmitry@taurussoft.org>
 
 	* ru.po: updated Russian translation
-	from Russian team <mate-cyr@mate.org>.
+	from Russian team <mate-cyr@gnome.org>.
 
 2003-03-26  Takeshi AIHANA <aihana@mate.gr.jp>
 
@@ -4104,7 +4104,7 @@
 
 	* el.po: Added initial Greek translation.
 
-2002-08-14  Christian Meyer  <chrisime@mate.org>
+2002-08-14  Christian Meyer  <chrisime@gnome.org>
 
 	* de.po: Fixed some mnemonics.
 
@@ -4193,7 +4193,7 @@
 	* ru.po: updated russian translation from Dmitry G. Mastrukov
 	<dmitry@taurussoft.org>.
 
-2002-05-18  Kjartan Maraas  <kmaraas@mate.org>
+2002-05-18  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* mk.po: Added Macedonian translation from Ivan Stojmirov
 	<stojmir@linux.net.mk>.
@@ -4221,7 +4221,7 @@
 	* pl.po: Updated Polish translation by
 	MATE PL Team <translators@mate.pl>.
 
-2002-05-07  Kjartan Maraas  <kmaraas@mate.org>
+2002-05-07  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* no.po: Updated Norwegian (bokm?¯??) translation.
 
@@ -4301,7 +4301,7 @@
 	* es.po: Updated spanish translation from
 		Pablo del Campo <pablodc@mapfre.com.ar>
 
-2002-03-06  Kjartan Maraas  <kmaraas@mate.org>
+2002-03-06  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* no.po: Updated Norwegian (bokm?¯??) translation.
 
@@ -4323,7 +4323,7 @@
 	* pl.po: Updated Polish translation by
 	MATE PL Team <translators@mate.pl>.
 
-2002-02-27  Christian Meyer  <chrisime@mate.org>
+2002-02-27  Christian Meyer  <chrisime@gnome.org>
 
 	* de.po: Updated German translation.
 
@@ -4336,7 +4336,7 @@
 
 	* ja.po: Japenese translation from Takeshi Aihana
 
-2002-02-12  Kjartan Maraas  <kmaraas@mate.org>
+2002-02-12  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* no.po: Updated Norwegian (bokm?¯??) translation.
 
@@ -4345,7 +4345,7 @@
 	* fr.po: Added French translation from work of
 	Mathieu Gauthier-Pilote <mathieu.g.p@videotron.ca>.
 
-2002-02-10  Kjartan Maraas  <kmaraas@mate.org>
+2002-02-10  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* no.po: Updated Norwegian (bokm?¯??) translation.
 
@@ -4361,7 +4361,7 @@
 
 	* ms.po: Updated Malay Translation.
 
-2001-09-25  Kjartan Maraas  <kmaraas@mate.org>
+2001-09-25  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* no.po: Updated Norwegian (bokm?¯??) translation.
 
@@ -4455,7 +4455,7 @@
 
 	* zh_TW.po: Updated traditional Chinese translation.
 
-2001-11-24  Christian Meyer  <chrisime@mate.org>
+2001-11-24  Christian Meyer  <chrisime@gnome.org>
 
 	* de.po: Updated German translation.
 
@@ -4515,12 +4515,12 @@
 
 	* es.po: Updated Spanish translation.
 
-2001-09-25  Kjartan Maraas  <kmaraas@mate.org>
+2001-09-25  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* POTFILES.in: Updated with missing files.
 	* no.po: Updated Norwegian (bokm?¯??) translation.
 
-2001-09-24  Christian Meyer  <chrisime@mate.org>
+2001-09-24  Christian Meyer  <chrisime@gnome.org>
 
 	* de.po: Updated German translation for release.
 
@@ -4616,7 +4616,7 @@
 
 	* tr.po: Updated Turkish translation by Nilgn.
 
-2001-08-02  Christian Meyer  <chrisime@mate.org>
+2001-08-02  Christian Meyer  <chrisime@gnome.org>
 
 	* de.po: Added German translation.
 
@@ -4659,7 +4659,7 @@
 
 	* es.po: Added Spanish translation.
 
-2001-07-08  Kjartan Maraas  <kmaraas@mate.org>
+2001-07-08  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* no.po: Added Norwegian translation.
 

@@ -5,19 +5,19 @@
 #
 #
 # Dimitris Glezos <dimitris@glezos.com>, 2006, 2007.
-# Kostas Papadimas <pkst@mate.org>, 2006.
+# Kostas Papadimas <pkst@gnome.org>, 2006.
 # Athanasios Lefteris <alefteris@gmail.com>, 2007.
 # Giannis Katsampiris <giannis1_86@hotmail.com>, 2008.
 # Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
 # Fotis Tsamis <ftsamis@gmail.com>, 2009.
-# Simos Xenitellis <simos@mate.org>, 2009.
+# Simos Xenitellis <simos@gnome.org>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnote.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-19 13:50+0100\n"
 "PO-Revision-Date: 2009-04-19 13:50+0100\n"
-"Last-Translator: Simos Xenitellis <simos@mate.org>\n"
+"Last-Translator: Simos Xenitellis <simos@gnome.org>\n"
 "Language-Team: Greek <team@mate.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

@@ -1,7 +1,7 @@
 # Norwegian Bokmål translation for bluez-mate
 # Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
 # This file is distributed under the same license as the bluez-mate package.
-# Kjartan Maraas <kmaraas@mate.org>, 2007-2010.
+# Kjartan Maraas <kmaraas@gnome.org>, 2007-2010.
 #
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-08-07 18:46+0200\n"
 "PO-Revision-Date: 2010-08-07 18:47+0200\n"
-"Last-Translator: Kjartan Maraas <kmaraas@mate.org>\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"

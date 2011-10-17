@@ -4,7 +4,7 @@
  * Copyright (C) 2007 Carlos Garcia Campos
  *
  * Author:
- *   Carlos Garcia Campos <carlosgc@mate.org>
+ *   Carlos Garcia Campos <carlosgc@gnome.org>
  *
  * Evince is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by

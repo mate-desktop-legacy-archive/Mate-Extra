@@ -5,7 +5,7 @@ msgstr ""
 "POT-Creation-Date: 2008-09-21 11:30+0000\n"
 "PO-Revision-Date: 2008-09-21 14:41+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@t-online.de>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -197,8 +197,8 @@ msgid "Kalager Schaller"
 msgstr "Kalager Schaller"
 
 #: C/mate-volume-control.xml:81(email)
-msgid "uraeus@mate.org"
-msgstr "uraeus@mate.org"
+msgid "uraeus@gnome.org"
+msgstr "uraeus@gnome.org"
 
 #: C/mate-volume-control.xml:87(firstname)
 msgid "Michael"
@@ -241,8 +241,8 @@ msgid "25 October 2003"
 msgstr "25. Oktober 2003"
 
 #: C/mate-volume-control.xml:139(para)
-msgid "Christian Schaller <email>uraeus@mate.org</email>"
-msgstr "Christian Schaller <email>uraeus@mate.org</email>"
+msgid "Christian Schaller <email>uraeus@gnome.org</email>"
+msgstr "Christian Schaller <email>uraeus@gnome.org</email>"
 
 #: C/mate-volume-control.xml:146(revnumber)
 msgid "1.0"

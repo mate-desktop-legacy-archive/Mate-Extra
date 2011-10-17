@@ -5,10 +5,10 @@
 # Karl Eichwalder <ke@suse.de>, 2000.
 # Benedikt Roth <Benedikt.Roth@gmx.net>, 2000.
 # Christian Neumair <chris@mate-de.org>, 2002-2004.
-# Hendrik Richter <hendrikr@mate.org>, 2004-2009.
+# Hendrik Richter <hendrikr@gnome.org>, 2004-2009.
 # Hendrik Brandt <heb@mate-de.org>, 2004-2005.
 # Jochen Skulj <jochen@jochenskulj.de>, 2006.
-# Mario Blättermann <mariobl@mate.org>, 2009, 2010.
+# Mario Blättermann <mariobl@gnome.org>, 2009, 2010.
 # Mario Klug <klug_mario@inode.at>, 2009, 2010.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2010.
 #
@@ -19,8 +19,8 @@ msgstr ""
 "applets&component=general\n"
 "POT-Creation-Date: 2010-07-25 12:10+0000\n"
 "PO-Revision-Date: 2010-07-27 23:07+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@mate.org>\n"
-"Language-Team: Deutsch <mate-de@mate.org>\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: Deutsch <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -96,14 +96,14 @@ msgstr "Zeigt den Status von AccessX-Funktionen wie gesperrten Umschaltern an"
 msgid "translator-credits"
 msgstr ""
 "Karl Eichwalder <ke@suse.de>\n"
-"Christian Meyer <chrisime@mate.org>\n"
+"Christian Meyer <chrisime@gnome.org>\n"
 "Christian Neumair <chris@mate-de.org>\n"
 "Benedikt Roth <Benedikt.Roth@gmx.net>\n"
 "Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>\n"
 "Jörgen Scheibengruber <mfcn@gmx.de>\n"
 "Matthias Warkus <mawa@iname.com>\n"
 "Hendrik Brandt <heb@mate-de.org>\n"
-"Mario Blättermann <mariobl@mate.org>\n"
+"Mario Blättermann <mariobl@gnome.org>\n"
 "Mario Klug <klug_mario@inode.at>\n"
 "Christian Kirbach <Christian.Kirbach@googlemail.com>"
 
@@ -4706,7 +4706,7 @@ msgstr "Von:"
 #~ msgid "translator_credits"
 #~ msgstr ""
 #~ "Karl Eichwalder <ke@suse.de>\n"
-#~ "Christian Meyer <chrisime@mate.org>\n"
+#~ "Christian Meyer <chrisime@gnome.org>\n"
 #~ "Christian Neumair <chris@mate-de.org>\n"
 #~ "Benedikt Roth <Benedikt.Roth@gmx.net>\n"
 #~ "Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>\n"

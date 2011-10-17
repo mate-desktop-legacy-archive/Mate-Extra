@@ -2,14 +2,14 @@
 # This file is ditributed under the same licence as the mate-applets package.
 # Copyright (c) the Character Palette developers.
 # Pedro de Medeiros <pedro.medeiros@gmail.com>, 2005.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2008.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: charpick\n"
 "POT-Creation-Date: 2008-09-23 19:18+0000\n"
 "PO-Revision-Date: 2008-03-01 00:30-0300\n"
-"Last-Translator: Leonardo Ferreira Fontenelle <leonardof@mate.org>\n"
+"Last-Translator: Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <mate-l10n-br@listas.cipsga.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -246,8 +246,8 @@ msgid "McCance"
 msgstr "McCance"
 
 #: C/char-palette.xml:83(email)
-msgid "shaunm@mate.org"
-msgstr "shaunm@mate.org"
+msgid "shaunm@gnome.org"
+msgstr "shaunm@gnome.org"
 
 #: C/char-palette.xml:86(firstname)
 msgid "Davyd"
@@ -665,7 +665,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Pedro de Medeiros <pedro.medeiros@gmail.com>, 2005.\n"
-"Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2008."
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008."
 
 #~ msgid "User manual for the Character Palette applet."
 #~ msgstr "Manual do Usuário para o miniaplicativo Seletor de Caracteres."

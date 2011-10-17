@@ -1,5 +1,5 @@
 == PyMateCORBA 2.24.0 ==
-2008-09-23  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2008-09-23  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* NEWS: Update.
 
@@ -35,13 +35,13 @@
 	  (Closes #448178)
 
 == PyMateCORBA 2.14.3 ==
-2007-05-26  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2007-05-26  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* NEWS: Update.
 
 	* configure.in: Bump version to 2.14.3.
 
-2007-05-06  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2007-05-06  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* src/pycorba-object.c (pycorba_object_repr): Get the type_id from
 	__typecode__ instead of using an MateCORBA API that only works for
@@ -61,13 +61,13 @@
 	Closes #Bug 435825: Non-MateCORBA object typecodes ignored when
 	instantiating stubs.
 
-2007-03-28  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2007-03-28  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* m4/python-module.m4: Don't link python modules with libpython on
 	Darwin.  Fixes #422624.
 
 == PyMateCORBA 2.14.2 ==
-2007-02-25  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2007-02-25  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* configure.in: Version 2.14.2.
 
@@ -79,11 +79,11 @@
 	the one in mate-python in order to fix build problems in Gentoo.
 	Fixes #404943.
 
-2006-12-14  Kjartan Maraas  <kmaraas@mate.org>
+2006-12-14  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* autogen.sh: Make it work with automake 1.10
 
-2006-07-05  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2006-07-05  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* src/pycorba-method.c (pycorba_bound_method_async_call): Fix
 	coverity error.
@@ -92,13 +92,13 @@
 	Thanks paolo borelli; Fixes #343597.
 
 == PyMateCORBA 2.14.1 ==
-2006-06-11  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2006-06-11  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* configure.in: Bump version to 2.14.1.
 
 	* NEWS: Update.
 
-2006-06-04  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2006-06-04  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* src/pymatecorba-servant.c (pymatecorba_servant_dealloc): Call
 	PortableServer_POA_deactivate_object, if self->activator_poa is
@@ -112,7 +112,7 @@
 	(pymatecorba_servant__this): Refactor logic to get the POA into a
 	separate function.
 
-2006-05-20  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2006-05-20  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* src/pycorba-fixed.c: Py_ssize_t work (#338497).
 
@@ -144,7 +144,7 @@
 
 	* src/pymatecorba-poa.c: Py_ssize_t work (#338497).
 
-2006-05-01  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2006-05-01  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* src/Makefile.am: Use PYTHON_LIBS and PYTHON_LDFLAGS.  Should fix
 	Bug 338946 "pymatecorba Cygwin build fixes".
@@ -156,12 +156,12 @@
 	
 
 == PyMateCORBA 2.14.0 ==
-2006-03-12  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2006-03-12  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* configure.in: Bump to version 2.14.0.
 
 == PyMateCORBA 2.13.1 ==
-2005-12-11  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2005-12-11  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* configure.in: Bump version to 2.13.1.
 
@@ -181,7 +181,7 @@
 	* examples/echo/echo-client-async.py: Like echo-client.py, but async.
 
 == PyMateCORBA 2.13.0 ==
-2005-12-04  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2005-12-04  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* NEWS: Update.
 
@@ -205,7 +205,7 @@
 	* src/pycorba-method.c (pycorba_method_call): Add missing
 	begin/end_allow_threads.  Now threading completely works as expected.
 
-2005-12-03  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2005-12-03  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* examples/threaded/thread-hints-server.py: Create custom POA with
 	thread hints and thread policy.  Now concurrent threading works,
@@ -257,7 +257,7 @@
 	pymatecorba_begin_allow_threads, and pymatecorba_end_allow_threads, like
 	the ones in pygtk.
 
-2005-12-02  Gustavo J. A. M. Carneiro  <gjc@mate.org>
+2005-12-02  Gustavo J. A. M. Carneiro  <gjc@gnome.org>
 
 	* m4/python-module.m4: Fix "underquoted definition of
 	AM_CHECK_PYMOD" warning.
@@ -278,7 +278,7 @@
 	* autogen.sh: allow use of automake-1.9 or 1.8, include -I m4.
 
 == PyMateCORBA 2.0.1 ==
-2004-10-04  Johan Dahlin  <johan@mate.org>
+2004-10-04  Johan Dahlin  <johan@gnome.org>
 
 	* NEWS: Update
 
@@ -286,7 +286,7 @@
 	
 	* src/Makefile.am: Install python files in pyexecdir.
 
-	Reviewed by Johan Dahlin <johan@mate.org>
+	Reviewed by Johan Dahlin <johan@gnome.org>
 
 2004-08-15  Gustavo J. A. M. Carneiro  <gustavo@users.sourceforge.net>
 

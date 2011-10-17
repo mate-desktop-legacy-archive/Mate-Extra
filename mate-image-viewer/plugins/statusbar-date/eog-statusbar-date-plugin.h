@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2008 The Free Software Foundation
  *
- * Author: Claudio Saavedra  <csaavedra@mate.org>
+ * Author: Claudio Saavedra  <csaavedra@gnome.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

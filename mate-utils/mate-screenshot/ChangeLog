@@ -1,17 +1,17 @@
-2009-04-04  Cosimo Cecchi  <cosimoc@mate.org>
+2009-04-04  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c (target_toggled_cb), (create_effects_frame),
 	(create_screenshot_frame): disable the effects section altogether
 	when taking a screenshot of an user selected area. Use better
 	wording for the user selection feature (#577861).
 
-2009-03-04  Cosimo Cecchi  <cosimoc@mate.org>
+2009-03-04  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c (target_toggled_cb),
 	(create_screenshot_frame), (main): disable the delay option
 	when taking a screenshot of an user selected area (#573939).
 
-2009-02-27  Cosimo Cecchi  <cosimoc@mate.org>
+2009-02-27  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c (target_toggled_cb),
 	(create_screenshot_frame), (finish_prepare_screenshot),
@@ -41,54 +41,54 @@
 	* screenshot-utils.c (screenshot_get_pixbuf): Don't try to shape
 	the root window.  Patch by Hal Ashburner <hal@ashburner.info>
 
-2009-02-24  Cosimo Cecchi  <cosimoc@mate.org>
+2009-02-24  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* Makefile.am: add gthread CFLAGS and LIBS.
 	* mate-screenshot.c (main): initialize threads at startup,
 	so that we can be sure to use them and not the idle fallback when
 	doing async transfers.
 
-2009-01-10  Cosimo Cecchi  <cosimoc@mate.org>
+2009-01-10  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c (set_recent_entry), (save_callback):
 	Add newly saved files to GtkRecentManager (#567205).
 
-2008-11-24  Emmanuele Bassi  <ebassi@mate.org>
+2008-11-24  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-screenshot.c: (save_options): Save the include-pointer
 	setting to MateConf.
 
-2008-11-18  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-18  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (try_check_file):
 	Plug some other memory leaks.
 
-2008-11-18  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-18  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (save_folder_to_mateconf):
 	Plug a memory leak.
 
-2008-11-10  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-10  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (create_interactive_dialog): set a meaningful
 	title for the interactive dialog (#434581).
 
-2008-11-10  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-10  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* screenshot-utils.c: (screenshot_get_pixbuf): fix the mouse
 	cursor overlay position when not in fullscreen mode (#559594).
 
-2008-11-09  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-09  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (main): always use the delay command line
 	argument if present (follow-up to #554114).
 
-2008-11-09  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-09  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.ui: move the "Copy to Clipboard" button on
 	the left of the "Cancel" one, as for HIG (#554805).
 
-2008-11-09  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-09  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (check_file_done), (try_check_file),
 	(prepare_screenshot), (get_desktop_dir):
@@ -96,45 +96,45 @@
 	Don't show an error message when the file-chooser can't find the
 	parent directory of the last saved position. (#321944).
 
-2008-11-08  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-08  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (main):
 	Only delay the screenshot when in interactive mode (#554114).
 
-2008-11-08  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-08  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (save_callback):
 	Fixed a typo in a string (#551440).
 
-2008-11-08  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-08  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (try_check_file):
 	Don't free NULL errors, as it makes a warning.
 
-2008-11-08  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-08  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (finish_prepare_screenshot):
 	Simplify the code a bit. Thanks to Paolo Borelli.
 
-2008-11-08  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-08  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (finish_prepare_screenshot):
 	Don't try to include the window border when doing fullscreen
 	captures (#559532).
 
-2008-11-04  Cosimo Cecchi  <cosimoc@mate.org>
+2008-11-04  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* Makefile.am: update to the new configure pkg-config checks
 	(part of #557262).
 
-2008-10-21  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-21  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* Makefile.am:
 	* mate-screenshot.c: (display_help), (create_screenshot_frame),
 	(load_options), (main):
 	Drop libmateui dependency (#557169).
 
-2008-10-20  Emmanuele Bassi  <ebassi@mate.org>
+2008-10-20  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-screenshot.c:
 	(load_options), (save_options): Remove the code that loads/saves
@@ -144,7 +144,7 @@
 
 	* mate-screenshot.schemas.in: Deprecate the take_window_shot key.
 
-2008-10-20  Emmanuele Bassi  <ebassi@mate.org>
+2008-10-20  Emmanuele Bassi  <ebassi@gnome.org>
 
 	Bug 553085 – After doing mate-screenshot -w (grab a window), "grab the entire
 	screen" works to grab a window.
@@ -156,14 +156,14 @@
 	(main): Include a -B|--remove-border command line switch to disable the
 	window border.
 
-2008-09-14  Emmanuele Bassi  <ebassi@mate.org>
+2008-09-14  Emmanuele Bassi  <ebassi@gnome.org>
 
 	Bug 552175 – invalid schemas file
 
 	* mate-screenshot.schemas.in: Provide default values for
 	the take_window_show and delay keys. (Christian Persch)
 
-2008-09-08  Emmanuele Bassi  <ebassi@mate.org>
+2008-09-08  Emmanuele Bassi  <ebassi@gnome.org>
 
 	Bug 99897 – Screen Shot to clip board
 
@@ -176,7 +176,7 @@
 	* screenshot-dialog.[ch]: Allow retrieving the GdkPixbuf
 	of the screenshot from the dialog.
 
-2008-08-28  Cosimo Cecchi  <cosimoc@mate.org>
+2008-08-28  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-screenshot.c: (finish_prepare_screenshot),
 	(check_file_done), (try_check_file), (find_current_window),
@@ -185,7 +185,7 @@
 	Make guessing screenshot filename from window title work again
 	(#549736).
 
-2008-08-28  Cosimo Cecchi  <cosimoc@mate.org>
+2008-08-28  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* Makefile.am:
 	* mate-screenshot.c: (main):
@@ -196,25 +196,25 @@
 	* screenshot-dialog.h:
 	Drop libglade dependency. Use GtkBuilder instead (#549700).
 
-2008-08-28  Emmanuele Bassi  <ebassi@mate.org>
+2008-08-28  Emmanuele Bassi  <ebassi@gnome.org>
 
 	Bug 549667 – crash in shape code
 
 	* screenshot-utils.c (screenshot_get_pixbuf): Check the returned
 	value for XShapeGetRectangles(). (Matthias Clasen)
 
-2008-08-25  Cosimo Cecchi  <cosimoc@mate.org>
+2008-08-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* Makefile.am: Leftover from the Gdk port: remove $(XFIXES_LIBS)
 	from LDADD.
 
-2008-08-25  Cosimo Cecchi  <cosimoc@mate.org>
+2008-08-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* screenshot-save.c: (clean_up_temporary_dir),
 	(read_pipe_from_child):	Fix some warnings due to missing string
 	format placeholders. 
 
-2008-08-10  Emmanuele Bassi  <ebassi@mate.org>
+2008-08-10  Emmanuele Bassi  <ebassi@gnome.org>
 
 	Bug 434580 – mate-screenshot does not remember user settings
 
@@ -222,7 +222,7 @@
 	* mate-screenshot.schemas.in: Save the user settings after
 	the screenshot has been taken. (Elliott Hughes)
 
-2008-08-10  Emmanuele Bassi  <ebassi@mate.org>
+2008-08-10  Emmanuele Bassi  <ebassi@gnome.org>
 
 	Bug 454689 – Messages in the mate-screenshot --help output
 	are not all translated
@@ -231,7 +231,7 @@
 	and allow the translation of the application options. (Gabor
 	Kelemen)
 
-2008-08-10  Emmanuele Bassi  <ebassi@mate.org>
+2008-08-10  Emmanuele Bassi  <ebassi@gnome.org>
 
 	Bug 521799 – Use PNG standard keyword
 
@@ -239,7 +239,7 @@
 	"Software" keyword and update the name of the program. (Felix
 	Riemann)
 
-2008-08-10  Emmanuele Bassi  <ebassi@mate.org>
+2008-08-10  Emmanuele Bassi  <ebassi@gnome.org>
 
 	Bug 515179 – F1 does not display help in interactive dialogue
 
@@ -247,21 +247,21 @@
 	(key_press_cb), (create_interactive_dialog): Show help in the
 	interactive dialog when pressing F1. (Alexander Gnodtke)
 
-2008-07-27  Vincent Untz  <vuntz@mate.org>
+2008-07-27  Vincent Untz  <vuntz@gnome.org>
 
 	* mate-screenshot.c: (target_toggled_cb), (create_effects_frame):
 	Use HIG frame spacing and toggle label sensitivity too.
 	Patch by Dennis Cranston <dennis_cranston@yahoo.com>
 	Fix bug #403462.
 
-2008-07-25  Cosimo Cecchi  <cosimoc@mate.org>
+2008-07-25  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* mate-egg-xfer-dialog-icons.h:
 	* mate-egg-xfer-dialog.c:
 	* mate-egg-xfer-dialog.h:
 	Remove these files, which aren't used anymore after the port to GIO.
 
-2008-07-22  Cosimo Cecchi  <cosimoc@mate.org>
+2008-07-22  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* Makefile.am:
 	* mate-screenshot.c: (error_dialog_response_cb), (save_callback),
@@ -286,7 +286,7 @@
 	Port mate-screenshot to GIO, clean up some code and add licence
 	headers (#526834).
 
-2008-06-04  Christian Persch  <chpe@mate.org>
+2008-06-04  Christian Persch  <chpe@gnome.org>
 
 	* mate-screenshot.c: (create_interactive_dialog): Don't skip the
 	screenshot window in the taskbar. Bug #400203.
@@ -315,19 +315,19 @@
 	to conform to latest fd.o .desktop specs.
 	Spoted by desktop-file-validate. Fixes #481721
 
-2007-08-23  Emmanuele Bassi  <ebassi@mate.org>
+2007-08-23  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-screenshot.c: Use g_get_user_special_dir() to find
 	out the Desktop directory. Use the temp directory as a final
 	fallback, instead of / (which won't be writable in most cases
 	and will utterly fail). (#455204, Luca Ferretti, Frederic Crozat)
 
-2007-08-04  Emmanuele Bassi  <ebassi@mate.org>
+2007-08-04  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* screenshot-save.c: Make the temporary directory work on
 	multi-user setups by using a unique name. (#427870)
 
-2007-03-10  Emmanuele Bassi  <ebassi@mate.org>
+2007-03-10  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* screenshot-dialog.c: Warn (in console) if g_filename_from_utf8()
 	fails to convert the screenshot file name in case we are not in
@@ -335,31 +335,31 @@
 	to avoid eating the user's folders. (#411050, thanks to
 	Pascal Terjan for his detective work)
 
-2007-03-04  Emmanuele Bassi  <ebassi@mate.org>
+2007-03-04  Emmanuele Bassi  <ebassi@gnome.org>
 	
 	* mate-screenshot.c: Add call to gettext() in order to
 	translate the user visible name of the effect. (#413019,
 	reported by Funda Wang, based on a patch by Gabor Kelemen).
 
-2007-02-11  Emmanuele Bassi  <ebassi@mate.org>
+2007-02-11  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* screenshot-shadow.c: Clean up some of the indentation;
 	use BILINEAR instead of NEAREST as the interpolation
 	algorithm, for better results.
 
-2007-01-25  Emmanuele Bassi  <ebassi@mate.org>
+2007-01-25  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-screenshot.c: Another set of HIG fixes for the
 	interactive dialog: make the dialog not resizable; add more
 	spacing; add/update the mnemonics. (#400203, Christian Persch)
 
-2007-01-25  Emmanuele Bassi  <ebassi@mate.org>
+2007-01-25  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-screenshot.c: Use an array of structures to hold the
 	border effects informations (id, nick, label) and iterate on
 	the array to fill up the model fed to the effects combo.
 
-2007-01-25  Emmanuele Bassi  <ebassi@mate.org>
+2007-01-25  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-screenshot.c: Unref the MateProgram instance if you
 	cancel the screenshot in interactive mode; hide the dialog
@@ -371,13 +371,13 @@
 	* screenshot-utils.[ch]: Add license and copyright notice on
 	these files.
 
-2007-01-24  Emmanuele Bassi  <ebassi@mate.org>
+2007-01-24  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-screenshot.c: Do not leak MateProgram instance
 	and don't free the GOptionContext we pass to
 	mate_program_init(). (#400200, Christian Persch)
 
-2007-01-23  Emmanuele Bassi  <ebassi@mate.org>
+2007-01-23  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-screenshot.c: Add a value for the "no effect" value
 	of the border_effect MateConf key; add it to the effects combo
@@ -386,7 +386,7 @@
 	* mate-screenshot.schemas.in: Fix the description of the
 	border-effect key.
 
-2007-01-22  Emmanuele Bassi  <ebassi@mate.org>
+2007-01-22  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-screenshot.c: Use symbolic names for the MateConf keys;
 	move the frame creation of the interactive dialog into its
@@ -400,7 +400,7 @@
 	the icon factory so gtk_image_new_from_stock() works.  HIG
 	fixes for interactive dialog. (#394941)
 
-2007-01-07  Emmanuele Bassi  <ebassi@mate.org>
+2007-01-07  Emmanuele Bassi  <ebassi@gnome.org>
 
 	A mate-screenshot.c
 	D mate-panel-screenshot.c
@@ -423,7 +423,7 @@
 	* mate-screenshot.desktop.in: Use the interactive mode when
 	launching mate-screenshot from the menu.
 
-2007-01-04  Emmanuele Bassi  <ebassi@mate.org>
+2007-01-04  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* mate-panel-screenshot.c: Add a call to initialise the
 	auth manager. (#362903)
@@ -614,7 +614,7 @@ Sun Jul 17 15:04:13 2005  Jonathan Blandford  <jrb@redhat.com>
 	instead of mate-screenshot). Fixes bug #303891. Patch by Trent
 	"Lathiat" Lloyd.
 
-2005-01-22  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-22  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* screenshot-dialog.c: mark a string for translation, remove an
 	unnecessary function call

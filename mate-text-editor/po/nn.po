@@ -2,7 +2,7 @@
 # Norwegian (nynorsk) translation of gedit
 # Copyright (C) 2000 Gaute Hvoslef Kvalnes.
 # Gaute Hvoslef Kvalnes <ai98ghk@stud.hib.no>, 2000.
-# Kjartan Maraas  <kmaraas@mate.org>, 2001.
+# Kjartan Maraas  <kmaraas@gnome.org>, 2001.
 # Åsmund Skjæveland <aasmunds@fys.uio.no>, 2004, 2005, 2006.
 # Torstein Adolf Winterseth <kvikende@fsfe>, 2010.
 msgid ""

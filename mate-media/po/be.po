@@ -1544,10 +1544,10 @@ msgstr "Бітрэйт:"
 #: ../grecord/src/gsr-window.c:1203
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr ""
 "Праграма гуказапісу для MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1458
 msgid "Playing..."

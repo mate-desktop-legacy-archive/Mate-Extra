@@ -97,8 +97,8 @@ msgid "HOH"
 msgstr "HOH"
 
 #: C/totem.xml:58(email) 
-msgid "cbhoh@mate.org"
-msgstr "cbhoh@mate.org"
+msgid "cbhoh@gnome.org"
+msgstr "cbhoh@gnome.org"
 
 #: C/totem.xml:62(firstname) 
 msgid "Baptiste"
@@ -129,8 +129,8 @@ msgid "August 2006"
 msgstr "2006年8月"
 
 #: C/totem.xml:101(para) 
-msgid "Chee Bin HOH <email>cbhoh@mate.org</email>"
-msgstr "Chee Bin HOH <email>cbhoh@mate.org</email>"
+msgid "Chee Bin HOH <email>cbhoh@gnome.org</email>"
+msgstr "Chee Bin HOH <email>cbhoh@gnome.org</email>"
 
 #: C/totem.xml:109(releaseinfo) 
 msgid "This manual describes version 1.6.0 of Totem Movie Player."

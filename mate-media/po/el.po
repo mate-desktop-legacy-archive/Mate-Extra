@@ -16,13 +16,13 @@
 # kostas: 475 messages, 26Oct2002, completed translation.
 # kostas: fixed 3 typos, 21Nov2002 (thanks to Nikos Charonitakis).
 # kostas: 583 messages, 06Jan2003, updated translation for Mate 2.1x.
-# Kostas Papadimas <pkst@mate.org> 2002, 2003.
+# Kostas Papadimas <pkst@gnome.org> 2002, 2003.
 # Simos Xenitellis <simos@hellug.gr>, 1999, 2000, 2001, 2002.
 # Nikos Charonitakis <frolix68@yahoo.gr>, 2002, 2003, 2004.
 # AARG! Anonymous <remailer@aarg.net>, 2002.
-# Kostas Papadimas <pkst@mate.org>, 2003, 2004, 2005, 2006.
+# Kostas Papadimas <pkst@gnome.org>, 2003, 2004, 2005, 2006.
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2005.
-# Simos Xenitellis <simos@mate.org>, 2008.
+# Simos Xenitellis <simos@gnome.org>, 2008.
 # Fotis Tsamis <ftsamis@gmail.com>, 2009.
 msgid ""
 msgstr ""
@@ -576,10 +576,10 @@ msgstr "Ρυθμός Bit:"
 #: ../grecord/src/gsr-window.c:1241
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "Εγγραφή ήχου για το MATE\n"
-" <br>mate-media@mate.org</br>"
+" <br>mate-media@gnome.org</br>"
 
 #: ../grecord/src/gsr-window.c:1512
 #| msgid "Playing..."
@@ -930,9 +930,9 @@ msgstr "Μια εφαρμογή ελέγχου έντασης ήχου βασι�
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα MATE\n"
-" Σίμος Ξενιτέλλης <simos@mate.org>\n"
+" Σίμος Ξενιτέλλης <simos@gnome.org>\n"
 " Νίκος Χαρωνιτάκης <nikosx@gmail.com>\n"
-" Κώστας Παπαδήμας <pkst@mate.org>\n"
+" Κώστας Παπαδήμας <pkst@gnome.org>\n"
 " Φώτης Τσάμης <ftsamis@gmail.com>\n"
 " Μιχάλης Κοτσαρίνης <mk73628@gmail.com>\n"
 "\n"

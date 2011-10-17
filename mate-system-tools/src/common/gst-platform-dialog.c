@@ -17,7 +17,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
  *
  * Authors: Hans Petter Jansson <hpj@ximian.com>
- *          Carlos Garnacho Parro <carlosg@mate.org>
+ *          Carlos Garnacho Parro <carlosg@gnome.org>
  */
 
 #include <glib/gi18n.h>

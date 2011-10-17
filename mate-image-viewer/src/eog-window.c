@@ -2,13 +2,13 @@
  *
  * Copyright (C) 2000-2008 The Free Software Foundation
  *
- * Author: Lucas Rocha <lucasr@mate.org>
+ * Author: Lucas Rocha <lucasr@gnome.org>
  *
  * Based on code by:
  * 	- Federico Mena-Quintero <federico@gnu.org>
- *	- Jens Finke <jens@mate.org>
+ *	- Jens Finke <jens@gnome.org>
  * Based on evince code (shell/ev-window.c) by:
- * 	- Martin Kretzschmar <martink@mate.org>
+ * 	- Martin Kretzschmar <martink@gnome.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -2813,15 +2813,15 @@ eog_window_cmd_about (GtkAction *action, gpointer user_data)
 
 	static const char *authors[] = {
 		"Claudio Saavedra <csaavedra@igalia.com> (maintainer)",
-		"Felix Riemann <friemann@mate.org> (maintainer)",
+		"Felix Riemann <friemann@gnome.org> (maintainer)",
 		"",
-		"Lucas Rocha <lucasr@mate.org>",
+		"Lucas Rocha <lucasr@gnome.org>",
 		"Tim Gerla <tim+matebugs@gerla.net>",
-		"Philip Van Hoof <pvanhoof@mate.org>",
+		"Philip Van Hoof <pvanhoof@gnome.org>",
                 "Paolo Borelli <pborelli@katamail.com>",
 		"Jens Finke <jens@triq.net>",
 		"Martin Baulig <martin@home-of-linux.org>",
-		"Arik Devens <arik@mate.org>",
+		"Arik Devens <arik@gnome.org>",
 		"Michael Meeks <mmeeks@gnu.org>",
 		"Federico Mena-Quintero <federico@gnu.org>",
 		"Lutz M\xc3\xbcller <urc8@rz.uni-karlsruhe.de>",

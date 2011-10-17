@@ -56,12 +56,12 @@ _gedit_cmd_help_about (GtkAction   *action,
 		       GeditWindow *window)
 {
 	static const gchar * const authors[] = {
-		"Paolo Maggi <paolo@mate.org>",
+		"Paolo Maggi <paolo@gnome.org>",
 		"Paolo Borelli <pborelli@katamail.com>",
 		"Steve Fr\303\251cinaux  <steve@istique.net>",
-		"Jesse van den Kieboom  <jessevdk@mate.org>",
-		"Ignacio Casal Quinteiro <icq@mate.org>",
-		"James Willcox <jwillcox@mate.org>",
+		"Jesse van den Kieboom  <jessevdk@gnome.org>",
+		"Ignacio Casal Quinteiro <icq@gnome.org>",
+		"James Willcox <jwillcox@gnome.org>",
 		"Chema Celorio",
 		"Federico Mena Quintero <federico@novell.com>",
 		NULL

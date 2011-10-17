@@ -10,7 +10,7 @@
 # simos: 119 messages, 06Nov2002, completed translation.
 # kostas: 141 messagew, 17Jul2003, updated translation fot 2.4.
 # Simos Xenitellis ,<simos74@gmx.net>, 2002.
-# Kostas Papadimas <pkst@mate.org>, 2003, 2004, 2005, 2008.
+# Kostas Papadimas <pkst@gnome.org>, 2003, 2004, 2005, 2008.
 # Nikos Charonitakis <frolix68@yahoo.gr>, 2004.
 msgid ""
 msgstr ""
@@ -43,8 +43,8 @@ msgstr "Εμφάνιση της καρτέλας συστήματος"
 #: ../src/callbacks.cpp:167
 msgid "translator-credits"
 msgstr ""
-"Σίμος Ξενιτέλλης <simos@mate.org>, 2009\n"
-"Κώστας Παπαδήμας <pkst@mate.org>, 2009\n"
+"Σίμος Ξενιτέλλης <simos@gnome.org>, 2009\n"
+"Κώστας Παπαδήμας <pkst@gnome.org>, 2009\n"
 "Νίκος Χαρωνιτάκης <nikosx@gmail.com>, 2009\n"
 "Τζένη Πετούμενου <epetoumenou@gmail.com>, 2009"
 

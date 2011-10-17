@@ -1018,7 +1018,7 @@ msgstr "_Kembali ke Awal"
 #: ../src/eog-window.c:2840
 msgid "translator-credits"
 msgstr ""
-"Ahmad Riza H Nst  <rizahnst@mate.org>, 2004.\n"
+"Ahmad Riza H Nst  <rizahnst@gnome.org>, 2004.\n"
 "Mohammad DAMT <mdamt@bisnisweb.com>, 2004.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2010.\n"
 "Andika Triwidada <andika@gmail.com>, 2010."

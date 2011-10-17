@@ -9,17 +9,17 @@
 # Goedson Teixeira Paixão <goedson@debian.org>, 2004.
 # Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
 # Afonso Celso Medina <medina@maua.br>, 2005.
-# Guilherme de S. Pastore <gpastore@mate.org>, 2005.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2006-2009.
-# Og Maciel <ogmaciel@mate.org>, 2007.
+# Guilherme de S. Pastore <gpastore@gnome.org>, 2005.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006-2009.
+# Og Maciel <ogmaciel@gnome.org>, 2007.
 # Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
 # Hugo Doria <hugodoria@gmail.com>, 2008.
-# Vladimir Melo <vmelo@mate.org>, 2008, 2009.
+# Vladimir Melo <vmelo@gnome.org>, 2008, 2009.
 # César Veiga <tombs@linuxmail.org>, 2009.
 # Krix Apolinário <krixapolinario@gmail.com>, 2009.
 # Wancharle Sebastião Quirino <wancharle@gmail.com>, 2009.
 # Michel Recondo <michel@recondo.com.br>, 2010.
-# Henrique P. Machado <hpmachado@mate.org>, 2010.
+# Henrique P. Machado <hpmachado@gnome.org>, 2010.
 #
 msgid ""
 msgstr ""
@@ -29,7 +29,7 @@ msgstr ""
 "POT-Creation-Date: 2010-09-19 17:08+0000\n"
 "PO-Revision-Date: 2010-09-19 19:32-0300\n"
 "Last-Translator: Daniel S. Koda <danielskoda@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <mate-pt_br-list@mate.org>\n"
+"Language-Team: Brazilian Portuguese <mate-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1019,15 +1019,15 @@ msgstr ""
 "Goedson Teixeira Paixão <goedson@debian.org>\n"
 "Welther José O. Esteves <weltherjoe@yahoo.com.br>\n"
 "Afonso Celso Medina <medina@maua.br>\n"
-"Guilherme de S. Pastore <gpastore@mate.org>\n"
+"Guilherme de S. Pastore <gpastore@gnome.org>\n"
 "Licio Fernando <licio@ubuntu.com>\n"
-"Leonardo Ferreira Fontenelle <leonardof@mate.org>\n"
-"Og Maciel <ogmaciel@mate.org>\n"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
+"Og Maciel <ogmaciel@gnome.org>\n"
 "Hugo Doria <hugodoria@gmail.com>\n"
-"Vladimir Melo <vmelo@mate.org>\n"
+"Vladimir Melo <vmelo@gnome.org>\n"
 "César Veiga <tombs@linuxmail.org>\n"
 "Krix Apolinário <krixapolinario@gmail.com>\n"
-"Henrique P. Machado <hpmachado@mate.org>"
+"Henrique P. Machado <hpmachado@gnome.org>"
 
 #: ../src/eog-window.c:2843
 msgid ""

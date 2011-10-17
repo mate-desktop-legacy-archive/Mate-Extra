@@ -16,7 +16,7 @@
 	* src/gsr-window.c (gsr_window_init): Fixes critical warning when
 	starting g-s-r. Closes: #561726
 
-2008-09-18  Kjartan Maraas  <kmaraas@mate.org>
+2008-09-18  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/mate-recorder.c:
 	* src/gsr-window.c: (seconds_to_full_string), (fill_record_input),
@@ -226,7 +226,7 @@
 	* Makefile.am: Put the intltool rules next to what they modify,
 	otherwise they don't work
 
-2007-05-14  Michael Terry  <mterry@mate.org>
+2007-05-14  Michael Terry  <mterry@gnome.org>
 
 	* Makefile.am: Don't install unused icon mate_mixer.xpm and
 	install the app icon into hicolor theme, not .../pixmaps
@@ -244,7 +244,7 @@
 	* doc/sv/figures/grecord_window.png: Updated screenshot.
 	* doc/sv/grecord-sv.omf: Updated translation.
 
-2006-12-19  Kjartan Maraas  <kmaraas@mate.org>
+2006-12-19  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/gsr-window.c: (pipeline_deep_notify_caps_cb): Fix
 	a crash reported by matebugs.20.naru at spamgourmet.com.
@@ -283,7 +283,7 @@
 	asking if the user wants to save the file before exiting.
 	Fixes bug #306755
 
-2005-06-09  Kjartan Maraas  <kmaraas@mate.org>
+2005-06-09  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/gsr-window.c: (about_cb): Previous commit broke
 	the build. Fix it. Also include <string.h>
@@ -355,7 +355,7 @@
 
 	* src/mate-recorder.c: (main): use gtk_icon_theme. Fix #137464
 
-2004-03-08  Johan Dahlin  <johan@mate.org>
+2004-03-08  Johan Dahlin  <johan@gnome.org>
 
 	* src/gsr-window.c (media_record): If we already have a record
 	pipeline, destroy it before trying to record again.
@@ -371,7 +371,7 @@
 	* doc/C/l10n.txt: Updated for MATE 2.6
 	* doc/C/figures/grecord_window.png: Updated for MATE 2.6
 
-2004-02-25  Johan Dahlin  <johan@mate.org>
+2004-02-25  Johan Dahlin  <johan@gnome.org>
 
 	* src/gsr-window.c: Major cleanups. Add support for audio
 	profiles. More error checking and better gstreamer integration.
@@ -428,7 +428,7 @@
 	* doc/C/l10n.txt: updated instuctions for L10N teams
 	* doc/C/figures/grecord_window.png: new screenshot of application
 
-2003-07-11  Kjartan Maraas  <kmaraas@mate.org>
+2003-07-11  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/mate-recorder.c: Pull up fix from stable to make
 	recording work again. Should fix bug #110738.
@@ -437,7 +437,7 @@
 
 	* mate-sound-recorder.desktop.in: Add X-MATE-Bugzilla entries.
 
-2003-06-09  Kjartan Maraas  <kmaraas@mate.org>
+2003-06-09  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/grec.c: (save_dialog):
 	* src/gsr-window.c: (fill_in_information), (file_properties):
@@ -514,7 +514,7 @@
 
 	* src/mate-recorder.c (main): Set the default icon.
 
-2002-10-16  Kjartan Maraas  <kmaraas@mate.org>
+2002-10-16  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/sound.c (get_play_time): Fix a leak.
 	* src/sound.c (store_filename): Fix a leak.
@@ -701,7 +701,7 @@
 	* mate-sound-recorder.desktop.in: use X-MATE-DocPath
 	instead of DocPath.
 
-2002-05-31  Kjartan Maraas  <kmaraas@mate.org>
+2002-05-31  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/prog.c: Don't include <config.h> in a header file that doesn't
 	need it.
@@ -1038,7 +1038,7 @@
 	working
 	* src/preferences.c: make default mixer mate-volume-control
 
-2002-02-22  Kjartan Maraas  <kmaraas@mate.org>
+2002-02-22  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* src/gui.c: Remove unsupported #ifdef ENABLE_NLS.
 	

@@ -1,5 +1,5 @@
 # translation of evince.help.HEAD.po to Español
-# Francisco Javier F. Serrador <serrador@mate.org>, 2005.
+# Francisco Javier F. Serrador <serrador@gnome.org>, 2005.
 # Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>, 2006, 2007.
 # traducción al español del manual de evince
 # spanish transtation for evince
@@ -10,7 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2009-04-30 12:12+0000\n"
 "PO-Revision-Date: 2009-05-02 18:47+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.mate.org>\n"
-"Language-Team: Español <mate-es-list@mate.org>\n"
+"Language-Team: Español <mate-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1278,4 +1278,4 @@ msgstr "Conmutar el modo a pantalla completa"
 msgid "translator-credits"
 msgstr ""
 "Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>, 2006-2008.\n"
-"Francisco Javier F. Serrador <serrador@mate.org>, 2005."
+"Francisco Javier F. Serrador <serrador@gnome.org>, 2005."

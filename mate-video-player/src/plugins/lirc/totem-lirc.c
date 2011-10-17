@@ -1,5 +1,5 @@
 /* 
- *  Copyright (C) 2002 James Willcox  <jwillcox@mate.org>
+ *  Copyright (C) 2002 James Willcox  <jwillcox@gnome.org>
  *            (C) 2007 Jan Arne Petersen <jpetersen@jpetersen.org>
  *
  *  This program is free software; you can redistribute it and/or modify

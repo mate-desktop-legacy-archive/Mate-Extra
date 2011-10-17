@@ -401,7 +401,7 @@ Date:   Thu May 13 10:32:22 2010 +0200
  2 files changed, 0 insertions(+), 2 deletions(-)
 
 commit e4fbb2b8e49215ba9c06cc1d2e952c2eac8ca7ae
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Wed May 12 18:41:06 2010 -0400
 
     Updated Shavian transliteration
@@ -489,7 +489,7 @@ Date:   Wed May 5 11:54:30 2010 +0100
  1 files changed, 1 insertions(+), 2 deletions(-)
 
 commit 71ab73dd80816243958f997460b68c81192f6341
-Author: Christian Persch <chpe@mate.org>
+Author: Christian Persch <chpe@gnome.org>
 Date:   Wed May 5 01:40:37 2010 +0200
 
     Use GZlibDecompressor
@@ -1371,7 +1371,7 @@ Date:   Wed Nov 18 13:33:49 2009 +0200
  1 files changed, 1061 insertions(+), 1550 deletions(-)
 
 commit 0562803bbe9c1aa08f761d86bcd206f13507befd
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Sun Nov 1 14:42:42 2009 -0500
 
     Shavian translation
@@ -1658,7 +1658,7 @@ Date:   Wed Sep 2 18:18:26 2009 +0100
  1 files changed, 4 insertions(+), 1 deletions(-)
 
 commit c181d77bf5bbdacb987324a5aa8a7debf27eb897
-Author: Og B. Maciel <ogmaciel@mate.org>
+Author: Og B. Maciel <ogmaciel@gnome.org>
 Date:   Sun Aug 30 12:11:44 2009 -0400
 
     Updated mailing list address.

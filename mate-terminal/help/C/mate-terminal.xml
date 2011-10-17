@@ -94,7 +94,7 @@ text-based commands through a shell such as Bash.
           <date>January 2010</date> 
           <revdescription> 
              <para role="author">Paul Cutler
-		<email>pcutler@mate.org</email> </para>
+		<email>pcutler@gnome.org</email> </para>
              <para role="publisher">MATE Documentation Project</para>
           </revdescription> 
         </revision> 
@@ -200,7 +200,7 @@ text-based commands through a shell such as Bash.
           <revdescription> 
              <para role="author">
                 Miguel de Icaza, Michael Zucchi, Alexander Kirollov
-                <email>docs@mate.org</email> 
+                <email>docs@gnome.org</email> 
              </para>
              <para role="publisher">
                 MATE Documentation Project 

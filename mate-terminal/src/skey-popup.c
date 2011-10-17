@@ -1,5 +1,5 @@
 /*
- * Copyright © 2002 Jonathan Blandford <jrb@mate.org>
+ * Copyright © 2002 Jonathan Blandford <jrb@gnome.org>
  * Copyright © 2008 Christian Persch
  *
  * Mate-terminal is free software; you can redistribute it and/or modify

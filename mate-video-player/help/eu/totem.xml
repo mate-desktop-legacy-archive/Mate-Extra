@@ -75,7 +75,7 @@ subtitles, and more.</para>
 	<affiliation> 
   	  <orgname>MATEren dokumentazio-proiektua</orgname> 
 	</affiliation>
-	<email>cbhoh@mate.org</email>
+	<email>cbhoh@gnome.org</email>
       </author>
       <author>
 	<firstname>Baptiste</firstname> 
@@ -100,7 +100,7 @@ subtitles, and more.</para>
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-  	  <address> <email>translator@mate.org</email> </address> 
+  	  <address> <email>translator@gnome.org</email> </address> 
         </affiliation>
         <contrib>Latin translation</contrib>
       </othercredit>

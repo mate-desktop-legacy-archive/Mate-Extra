@@ -75,7 +75,7 @@ subtitles, and more.</para>
 	<affiliation> 
   	  <orgname>ਗਨੋਮ ਦਸਤਾਵੇਜ਼ ਪ੍ਰੋਜੈਕਟ</orgname> 
 	</affiliation>
-	<email>cbhoh@mate.org</email>
+	<email>cbhoh@gnome.org</email>
       </author>
       <author>
 	<firstname>Baptiste</firstname> 
@@ -100,7 +100,7 @@ subtitles, and more.</para>
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-  	  <address> <email>translator@mate.org</email> </address> 
+  	  <address> <email>translator@gnome.org</email> </address> 
         </affiliation>
         <contrib>Latin translation</contrib>
       </othercredit>
@@ -123,7 +123,7 @@ subtitles, and more.</para>
         <revnumber>ਟੋਟੇਮ ਮੂਵੀ ਪਲੇਅਰ ਦਸਤਾਵੇਜ਼ V2.0</revnumber> 
 	<date>August 2006</date> 
 	<revdescription> 
-	  <para role="author">Chee Bin HOH <email>cbhoh@mate.org</email></para>
+	  <para role="author">Chee Bin HOH <email>cbhoh@gnome.org</email></para>
 	  <para role="publisher">ਗਨੋਮ ਦਸਤਾਵੇਜ਼ ਪ੍ਰੋਜੈਕਟ</para>
         </revdescription> 
       </revision>

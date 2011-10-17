@@ -5,9 +5,9 @@
 #
 #
 # Terance Edward Sola <terance@lyse.net>, 2005.
-# Kjartan Maraas  <kmaraas@mate.org>, 2005-2007.
+# Kjartan Maraas  <kmaraas@gnome.org>, 2005-2007.
 # Øivind Hoel <oivind.hoel@gmail.com>, 2006.
-# Eskild Hustvedt <eskild@mate.org>, 2008.
+# Eskild Hustvedt <eskild@gnome.org>, 2008.
 # Torstein Adolf Winterseth <kvikende@yahoo.no>, 2009.
 msgid ""
 msgstr ""
@@ -2259,9 +2259,9 @@ msgstr ""
 #: ../src/gpm-tray-icon.c:329
 msgid "translator-credits"
 msgstr ""
-"Kjartan Maraas <kmaraas@mate.org>\n"
+"Kjartan Maraas <kmaraas@gnome.org>\n"
 "Øivind Hoel <ohoel@cvs.mate.org>\n"
-"Eskild Hustvedt <eskildh@mate.org>"
+"Eskild Hustvedt <eskildh@gnome.org>"
 
 #: ../src/gpm-tray-icon.c:344
 msgid "MATE Power Manager Website"

@@ -2,12 +2,12 @@
 # Copyright (C) 2005 THE mate-power'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the mate-power package.
 # Hendrik Brandt <heb@mate-de.org>, 2005, 2006.
-# Hendrik Richter <hendrikr@mate.org>, 2006, 2007, 2008.
-# Johannes Schmid <jhs@mate.org>, 2006.
+# Hendrik Richter <hendrikr@gnome.org>, 2006, 2007, 2008.
+# Johannes Schmid <jhs@gnome.org>, 2006.
 # Tobias Wolf <towolf@gmx.net>, 2006.
 # Thomas Gier <mail@thomasgier.de>, 2007.
 # Nathan-J. Hirschauer <nathanhirschauer@verfriemelt.org>, 2009.
-# Mario Blättermann <mariobl@mate.org>, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2009.
 # Wolfgang Stöggl <c72578@yahoo.de>, 2009, 2010.
 # Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2010.
 #
@@ -18,7 +18,7 @@ msgstr ""
 "POT-Creation-Date: 2010-08-15 22:19+0200\n"
 "PO-Revision-Date: 2010-08-14 10:32+0200\n"
 "Last-Translator: Christian Kirbach <Christian.Kirbach@googlemail.com>\n"
-"Language-Team: Deutsch <mate-de@mate.org>\n"
+"Language-Team: Deutsch <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2670,12 +2670,12 @@ msgstr "_Hilfe"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
-#~ "Hendrik Richter <hendrikr@mate.org>\n"
+#~ "Hendrik Richter <hendrikr@gnome.org>\n"
 #~ "Sebastian Heinlein <sebi@glatzor.de>\n"
 #~ "Thomas Gier <mail@thomasgier.de>\n"
 #~ "Wolfgang Stöggl <c72578@yahoo.de>\n"
 #~ "Nathan-J. Hirschauer <nathanhirschauer@verfriemelt.org>\n"
-#~ "Mario Blättermann <mariobl@mate.org>\n"
+#~ "Mario Blättermann <mariobl@gnome.org>\n"
 #~ "Christian Kirbach <Christian.Kirbach@googlemail.com>"
 
 #~ msgid "Power _History"

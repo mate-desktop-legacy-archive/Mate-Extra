@@ -1,7 +1,7 @@
 /* ev-keyring.c
  *  this file is part of evince, a mate document viewer
  *
- * Copyright (C) 2008 Carlos Garcia Campos <carlosgc@mate.org>
+ * Copyright (C) 2008 Carlos Garcia Campos <carlosgc@gnome.org>
  *
  * Evince is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by

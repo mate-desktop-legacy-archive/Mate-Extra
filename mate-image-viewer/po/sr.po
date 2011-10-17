@@ -2,7 +2,7 @@
 # Courtesy of Prevod.org team (http://prevod.org/) -- 2003, 2004, 2005, 2006, 2007, 2008, 2009.
 # This file is distributed under the same license as the eog package.
 # Maintainer: Горан Ракић <grakic@devbase.net>
-# Данило Шеган <danilo@mate.org>, 2005.
+# Данило Шеган <danilo@gnome.org>, 2005.
 # Reviewed on 2005-07-19 by: Игор Несторовић <igor@prevod.org>
 # Милош Поповић <gpopac@gmail.com>, 2010.
 #
@@ -1005,7 +1005,7 @@ msgstr "_Врати на подразумевано"
 msgid "translator-credits"
 msgstr ""
 "Горан Ракић <grakic@devbase.net>\n"
-"Данило Шеган <danilo@mate.org>\n"
+"Данило Шеган <danilo@gnome.org>\n"
 "Слободан Д. Средојевић <slobo@akrep.be>\n"
 "\n"
 "http://prevod.org — превод на српски језик."

@@ -128,8 +128,8 @@ msgid "McCance"
 msgstr "McCance"
 
 #: /tmp/doc-l10n/cvs/applets-stickynotes.HEAD/C/stickynotes_applet.xml:67(email)
-msgid "shaunm@mate.org"
-msgstr "shaunm@mate.org"
+msgid "shaunm@gnome.org"
+msgstr "shaunm@gnome.org"
 
 #: /tmp/doc-l10n/cvs/applets-stickynotes.HEAD/C/stickynotes_applet.xml:71(firstname)
 msgid "Angela"

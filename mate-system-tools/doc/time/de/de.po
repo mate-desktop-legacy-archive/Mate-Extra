@@ -4,7 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2008-08-29 05:29+0000\n"
 "PO-Revision-Date: 2008-09-14 11:50+0200\n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@t-online.de>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -179,8 +179,8 @@ msgstr "August 2006"
 
 #: C/time-admin.xml:68(para) C/time-admin.xml:69(para)
 #: C/time-admin.xml:76(para) C/time-admin.xml:77(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/time-admin.xml:73(revnumber)
 msgid "Time Administration Tool Manual V0.35"

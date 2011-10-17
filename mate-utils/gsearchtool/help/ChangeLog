@@ -1,4 +1,4 @@
-2009-03-27  Simos Xenitellis  <simos@mate.org>
+2009-03-27  Simos Xenitellis  <simos@gnome.org>
 
 	* Makefile.am: Added Greek (el) to DOC_LINGUAS.
 	* el/el.po: Added Greek translation by Sterios Prosiniklis.

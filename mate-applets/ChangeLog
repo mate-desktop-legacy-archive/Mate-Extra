@@ -80,7 +80,7 @@ Date:   Mon Sep 20 17:41:37 2010 +0900
  1 files changed, 557 insertions(+), 515 deletions(-)
 
 commit 3ceb573caaf7c6d42625571818c5566d93a515c1
-Author: Wouter Bolsterlee <wbolster@mate.org>
+Author: Wouter Bolsterlee <wbolster@gnome.org>
 Date:   Sun Sep 19 18:59:47 2010 +0200
 
     Updated Dutch translation by Wouter Bolsterlee
@@ -322,7 +322,7 @@ Date:   Tue Aug 24 05:13:00 2010 +0200
  2 files changed, 402 insertions(+), 306 deletions(-)
 
 commit eb187f06a2ad4660e9e6d7f08a4332707eb4de75
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Mon Aug 23 23:57:29 2010 +0200
 
     Add dbus-glib to CFLAGS and LDADD to make this compile
@@ -423,7 +423,7 @@ Date:   Fri Jun 18 14:08:58 2010 +0200
  2 files changed, 6 insertions(+), 0 deletions(-)
 
 commit 07253b902e9591ca661651081ae8d637e8a76fd3
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Thu Feb 25 15:06:10 2010 +0100
 
     [trashapplet] Port to new libmate-panel-applet API
@@ -439,7 +439,7 @@ Date:   Thu Feb 25 15:06:10 2010 +0100
  8 files changed, 103 insertions(+), 106 deletions(-)
 
 commit be46000adf50329e93e7d04866024894730cb097
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Thu Feb 25 14:02:45 2010 +0100
 
     [stickynotes] Port to new libmate-panel-applet API
@@ -457,7 +457,7 @@ Date:   Thu Feb 25 14:02:45 2010 +0100
  10 files changed, 139 insertions(+), 101 deletions(-)
 
 commit 2851f906e52ab9ee3618bd2f544988ca0c68a60c
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Thu Feb 25 11:32:40 2010 +0100
 
     [mixer] Port to new libmate-panel-applet API
@@ -474,7 +474,7 @@ Date:   Thu Feb 25 11:32:40 2010 +0100
  9 files changed, 139 insertions(+), 129 deletions(-)
 
 commit d667202cdb8429ff6abf80f86e95ba8e6cf2a2c0
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Tue Feb 23 13:23:42 2010 +0100
 
     [battstat] Port to new libmate-panel-applet API
@@ -491,7 +491,7 @@ Date:   Tue Feb 23 13:23:42 2010 +0100
  9 files changed, 100 insertions(+), 102 deletions(-)
 
 commit 149a3570f0228503ce3ed01a79db1b6f25855e8e
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Thu May 27 13:57:10 2010 +0200
 
     [geyes] Port to new libmate-panel-applet API
@@ -507,7 +507,7 @@ Date:   Thu May 27 13:57:10 2010 +0200
  8 files changed, 92 insertions(+), 105 deletions(-)
 
 commit a7c53c1b700a3ea3c18f44ad069d746c8b3351a8
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Tue Feb 23 12:32:15 2010 +0100
 
     [charpick] Port to new libmate-panel-applet API
@@ -524,7 +524,7 @@ Date:   Tue Feb 23 12:32:15 2010 +0100
  9 files changed, 94 insertions(+), 103 deletions(-)
 
 commit 62ab2e7d968e2186a309fa06d04b8442daf4bafd
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Tue Feb 23 11:24:21 2010 +0100
 
     [multiload] Port to new libmate-panel-applet API
@@ -541,7 +541,7 @@ Date:   Tue Feb 23 11:24:21 2010 +0100
  9 files changed, 104 insertions(+), 112 deletions(-)
 
 commit 57bc3f79ee5610ff4251854be35b030ece77f7d8
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Tue Feb 23 10:35:57 2010 +0100
 
     [modemlights] Port to new libmate-panel-applet API
@@ -556,7 +556,7 @@ Date:   Tue Feb 23 10:35:57 2010 +0100
  7 files changed, 122 insertions(+), 133 deletions(-)
 
 commit 96691bc4a604688d419f64bbf3e119c438d6c9f7
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Tue Feb 23 09:49:31 2010 +0100
 
     [drivemount] Port to new libmate-panel-applet API
@@ -571,7 +571,7 @@ Date:   Tue Feb 23 09:49:31 2010 +0100
  7 files changed, 83 insertions(+), 77 deletions(-)
 
 commit 9512923e49ff77b664a89ebbfe723c6e4afcdbad
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Mon Feb 22 16:10:48 2010 +0100
 
     [mini-commander] Port to new libmate-panel-applet API
@@ -593,7 +593,7 @@ Date:   Mon Feb 22 16:10:48 2010 +0100
  14 files changed, 100 insertions(+), 114 deletions(-)
 
 commit 45f4cd1bbdbaae19d1455fb9f87563624ee9eea5
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Mon Feb 22 15:44:33 2010 +0100
 
     [accessx-status] Port to new libmate-panel-applet API
@@ -608,7 +608,7 @@ Date:   Mon Feb 22 15:44:33 2010 +0100
  7 files changed, 90 insertions(+), 99 deletions(-)
 
 commit 445b1ebba673fbc8d4943829c4607c41613cde5e
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Mon Feb 22 15:19:51 2010 +0100
 
     [mateweather] Port to new libmate-panel-applet API
@@ -625,7 +625,7 @@ Date:   Mon Feb 22 15:19:51 2010 +0100
  9 files changed, 109 insertions(+), 116 deletions(-)
 
 commit d160a23971c50ef890b7ed308174bb2556d0222c
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Thu May 27 12:45:10 2010 +0200
 
     [cpufreq] Port to new libmate-panel-applet API
@@ -640,7 +640,7 @@ Date:   Thu May 27 12:45:10 2010 +0200
  7 files changed, 94 insertions(+), 111 deletions(-)
 
 commit 8183f9ff313b9dfac983a86130398b713fab84d5
-Author: Carlos Garcia Campos <carlosgc@mate.org>
+Author: Carlos Garcia Campos <carlosgc@gnome.org>
 Date:   Thu May 27 12:44:01 2010 +0200
 
     [configure] Add libmate-panel-applet3 dependency
@@ -694,7 +694,7 @@ Date:   Sun Aug 8 20:13:37 2010 +0200
  1 files changed, 365 insertions(+), 378 deletions(-)
 
 commit c7ae85a524496e34059e7fdd90396db776fa2a06
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Sun Aug 8 16:07:01 2010 +0200
 
     [i18n] Updated German doc translation
@@ -721,7 +721,7 @@ Date:   Thu Aug 5 11:54:03 2010 +0200
  1 files changed, 24 insertions(+), 27 deletions(-)
 
 commit e9aff04645eb4fabaa29c8f62b926613478273eb
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Wed Aug 4 14:25:11 2010 +0200
 
     Updated Norwegian bokmål translation
@@ -864,7 +864,7 @@ Date:   Wed Jul 28 12:11:06 2010 +0300
  1 files changed, 79 insertions(+), 56 deletions(-)
 
 commit c0bc1c380f7fc66580b05344f7d10d3bdb40dd77
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Tue Jul 27 23:08:53 2010 +0200
 
     [i18n] Updated German translation
@@ -925,7 +925,7 @@ Date:   Sun Jul 25 13:06:35 2010 +0100
  5 files changed, 87 insertions(+), 3 deletions(-)
 
 commit 1bfffca3416580e4a11b023a3fc61d7d457b3cc0
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:   Sat Jul 24 14:10:20 2010 +0800
 
     Update Simplified Chinese translation.
@@ -980,7 +980,7 @@ Date:   Tue Jul 20 13:40:55 2010 +0800
  1 files changed, 91 insertions(+), 90 deletions(-)
 
 commit d8b070e49ee3e3391b606382904366d38402923e
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Mon Jul 19 23:03:22 2010 +0200
 
     Updated Norwegian bokmål translation
@@ -998,7 +998,7 @@ Date:   Sun Jul 18 12:19:50 2010 +0100
  1 files changed, 43 insertions(+), 3 deletions(-)
 
 commit 4cbd3f60135b4adb092948960c941ecc7858f20a
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Sun Jul 18 19:39:33 2010 +0200
 
     [i18n] Updated German translation
@@ -1007,7 +1007,7 @@ Date:   Sun Jul 18 19:39:33 2010 +0200
  1 files changed, 135 insertions(+), 130 deletions(-)
 
 commit fda9463bfb7d61c77a783b4e26d3465c04156857
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Tue Jul 13 14:45:10 2010 +0200
 
     Updated Norwegian bokmål translation
@@ -1301,7 +1301,7 @@ Date:   Wed May 26 14:03:25 2010 +0300
  1 files changed, 397 insertions(+), 176 deletions(-)
 
 commit 0e97da8ea220bc867c783e76142300a9c26170aa
-Author: Gil Forcada <gforcada@mate.org>
+Author: Gil Forcada <gforcada@gnome.org>
 Date:   Sat May 22 23:21:26 2010 +0200
 
     Minor fixes to Catalan translation
@@ -1310,7 +1310,7 @@ Date:   Sat May 22 23:21:26 2010 +0200
  1 files changed, 43 insertions(+), 43 deletions(-)
 
 commit b23b248025fd8a38c0876b569a8bd34d400acd98
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Mon May 17 13:56:56 2010 -0400
 
     Update Shavian translation
@@ -1319,7 +1319,7 @@ Date:   Mon May 17 13:56:56 2010 -0400
  1 files changed, 67 insertions(+), 97 deletions(-)
 
 commit a88fba97a81b093d5d652fb9cc83be7fdf73d134
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Wed May 12 18:41:11 2010 -0400
 
     Updated Shavian transliteration
@@ -1362,7 +1362,7 @@ Date:   Tue Apr 27 18:59:53 2010 +0200
     
     Fixes https://bugzilla.mate.org/show_bug.cgi?id=597842
     
-    Signed-off-by: Javier Jardón <jjardon@mate.org>
+    Signed-off-by: Javier Jardón <jjardon@gnome.org>
 
  invest-applet/invest/about.py         |    3 ---
  invest-applet/invest/invest-applet.py |    2 --
@@ -1593,7 +1593,7 @@ Date:   Fri Apr 2 17:29:26 2010 +0200
  1 files changed, 4 insertions(+), 4 deletions(-)
 
 commit 555479672e472b40941515ab91584f762a18f784
-Author: Wouter Bolsterlee <wbolster@mate.org>
+Author: Wouter Bolsterlee <wbolster@gnome.org>
 Date:   Tue Mar 30 18:20:52 2010 +0200
 
     Dutch translation updated by Wouter Bolsterlee
@@ -1638,7 +1638,7 @@ Date:   Sun Mar 28 11:12:48 2010 +0200
  1 files changed, 3509 insertions(+), 0 deletions(-)
 
 commit c68595189c4421ad336b6d08c0799cb39e9c5d6d
-Author: Kostas Papadimas <pkst@mate.org>
+Author: Kostas Papadimas <pkst@gnome.org>
 Date:   Sun Mar 28 10:27:35 2010 +0300
 
     Updated Greek translation
@@ -1707,7 +1707,7 @@ Date:   Sat Mar 27 16:58:03 2010 +0100
  1 files changed, 20 insertions(+), 8 deletions(-)
 
 commit 77e5ffabe18a13833106b3850a55e7dbb5770147
-Author: Kostas Papadimas <pkst@mate.org>
+Author: Kostas Papadimas <pkst@gnome.org>
 Date:   Sat Mar 27 17:27:16 2010 +0200
 
     Updated Greek translation
@@ -1759,7 +1759,7 @@ Date:   Sat Mar 27 20:06:24 2010 +0800
  8 files changed, 2105 insertions(+), 32 deletions(-)
 
 commit 9b5c6c19c1f7877d6fc0e5b5a53f78bf5f1c95be
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sat Mar 27 11:39:41 2010 +0100
 
     Updated Norwegian bokmål translation
@@ -1768,7 +1768,7 @@ Date:   Sat Mar 27 11:39:41 2010 +0100
  1 files changed, 35 insertions(+), 82 deletions(-)
 
 commit 2e1563f18a3b84c5405bc13f8cea3fee394a041a
-Author: Žygimantas Beručka <zygis@mate.org>
+Author: Žygimantas Beručka <zygis@gnome.org>
 Date:   Sat Mar 27 00:34:32 2010 +0200
 
     Updated Lithuanian translation.
@@ -2021,7 +2021,7 @@ Date:   Sat Mar 20 23:06:24 2010 +0200
  1 files changed, 38 insertions(+), 38 deletions(-)
 
 commit 836b29eb3ecbc4c8c37ca9d81fa316e3f5632131
-Author: Gil Forcada <gforcada@mate.org>
+Author: Gil Forcada <gforcada@gnome.org>
 Date:   Sat Mar 20 21:49:54 2010 +0100
 
     Updated Catalan translation
@@ -2030,7 +2030,7 @@ Date:   Sat Mar 20 21:49:54 2010 +0100
  1 files changed, 18 insertions(+), 15 deletions(-)
 
 commit a66a5967a1bac4960096a1c63294140e58d33a92
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Sat Mar 20 21:51:10 2010 +0100
 
     Updated German translation
@@ -2099,7 +2099,7 @@ Date:   Thu Mar 18 14:38:29 2010 +0200
  1 files changed, 107 insertions(+), 174 deletions(-)
 
 commit 7ffb09cc2922e99259e86ee01bbccf8e2a99b07e
-Author: Luca Ferretti <lferrett@mate.org>
+Author: Luca Ferretti <lferrett@gnome.org>
 Date:   Mon Mar 15 01:52:46 2010 +0100
 
     Fix mnemonics for Find Next button (closes bug #612701)
@@ -2184,7 +2184,7 @@ Date:   Sun Mar 7 23:13:34 2010 +0900
  1 files changed, 6 insertions(+), 6 deletions(-)
 
 commit f93a2b7f34f93389cf5df1ccdd51cfec23640869
-Author: Luca Ferretti <lferrett@mate.org>
+Author: Luca Ferretti <lferrett@gnome.org>
 Date:   Sat Mar 6 01:12:55 2010 +0100
 
     Updated Italian translation
@@ -2306,7 +2306,7 @@ Date:   Sun Feb 21 12:47:02 2010 +0100
  1 files changed, 419 insertions(+), 431 deletions(-)
 
 commit 44fdc2aae9623f2ca4eec723aca79d49f1d8d683
-Author: Vladimir Melo <vmelo@mate.org>
+Author: Vladimir Melo <vmelo@gnome.org>
 Date:   Wed Feb 17 23:11:46 2010 -0200
 
     Updated Brazilian Portuguese translation
@@ -2361,7 +2361,7 @@ Date:   Mon Jan 25 11:48:20 2010 +0200
  1 files changed, 124 insertions(+), 154 deletions(-)
 
 commit 2640c7a68f74bd12bb3f37ac5f1bb1139d3f5117
-Author: Paul Cutler <pcutler@mate.org>
+Author: Paul Cutler <pcutler@gnome.org>
 Date:   Fri Jan 22 09:34:27 2010 -0600
 
     Fix two spelling errors (tthe and candlestick chart) both in bgo #579607
@@ -2391,7 +2391,7 @@ Date:   Mon Jan 18 15:00:41 2010 +0100
  4 files changed, 93 insertions(+), 1 deletions(-)
 
 commit 6367ba9d78cc90a9e5b60feb805664f03e75ceb1
-Author: Vincent Untz <vuntz@mate.org>
+Author: Vincent Untz <vuntz@gnome.org>
 Date:   Wed Jan 13 00:10:09 2010 +0100
 
     [release] post-release bump to 2.29.6
@@ -2400,7 +2400,7 @@ Date:   Wed Jan 13 00:10:09 2010 +0100
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 9146ccf7786b320cdc025fe169ae9797307ce3c6
-Author: Vincent Untz <vuntz@mate.org>
+Author: Vincent Untz <vuntz@gnome.org>
 Date:   Wed Jan 13 00:09:59 2010 +0100
 
     [release] 2.29.5
@@ -2441,7 +2441,7 @@ Date:   Wed Jan 6 03:06:06 2010 +0100
  18 files changed, 0 insertions(+), 121 deletions(-)
 
 commit 921aa942fd26c505c767b3eb896b971ce59ada4d
-Author: Javier Jardón <jjardon@mate.org>
+Author: Javier Jardón <jjardon@gnome.org>
 Date:   Mon Dec 21 01:19:14 2009 +0100
 
     Remove deprecated GLIB symbols
@@ -2500,7 +2500,7 @@ Date:   Mon Dec 28 00:14:00 2009 +0200
  1 files changed, 148 insertions(+), 140 deletions(-)
 
 commit d197e1041f6e52e7734e7094ef9c6bd12a1ae9ac
-Author: Sergey V. Udaltsov <svu@mate.org>
+Author: Sergey V. Udaltsov <svu@gnome.org>
 Date:   Sun Dec 27 17:45:53 2009 +0000
 
     No more gswitchit applet
@@ -2534,7 +2534,7 @@ Date:   Sat Dec 19 11:37:09 2009 +0200
  1 files changed, 328 insertions(+), 405 deletions(-)
 
 commit 21d8872cce7396f799d859fb19ef6d124c4022e1
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sat Dec 5 12:37:42 2009 +0100
 
     Updated Norwegian bokmål translation.
@@ -2552,7 +2552,7 @@ Date:   Fri Dec 4 18:53:19 2009 +0200
  1 files changed, 374 insertions(+), 271 deletions(-)
 
 commit 45fbc26df010eee6c01ee9ab8ae5ed361ab5cd40
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:   Mon Nov 30 00:24:01 2009 +0800
 
     Update Simplified Chinese translation.
@@ -2606,7 +2606,7 @@ Date:   Sun Nov 22 12:16:32 2009 +0200
  1 files changed, 14 insertions(+), 14 deletions(-)
 
 commit 68130e2a10eb86f75af1c0caeecbfa7f075ffb6e
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Sun Nov 15 06:52:54 2009 -0500
 
     Shavian translation
@@ -2634,7 +2634,7 @@ Date:   Thu Nov 5 07:16:52 2009 +0100
  1 files changed, 147 insertions(+), 120 deletions(-)
 
 commit 659add57a706735e4389dc4859fdc616beef70aa
-Author: Kostas Papadimas <pkst@mate.org>
+Author: Kostas Papadimas <pkst@gnome.org>
 Date:   Sat Oct 31 09:58:33 2009 +0200
 
     Updated Greek translation
@@ -2684,7 +2684,7 @@ Date:   Wed Oct 21 02:33:03 2009 -0500
  1 files changed, 273 insertions(+), 267 deletions(-)
 
 commit 847454453d2d5c9ed8ac85f9381e7f37f76c888f
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sat Oct 17 11:16:19 2009 +0200
 
     Update this a bit.
@@ -2775,7 +2775,7 @@ Date:   Thu Aug 27 22:53:53 2009 +1200
  2 files changed, 13 insertions(+), 7 deletions(-)
 
 commit c9f69665139ea89fe4385a54bb98410ba35141a3
-Author: Vincent Untz <vuntz@mate.org>
+Author: Vincent Untz <vuntz@gnome.org>
 Date:   Fri Oct 2 20:29:02 2009 +0200
 
     Fix help of the keyboard applet to open the right file
@@ -2943,7 +2943,7 @@ Date:   Thu Sep 17 19:06:38 2009 +0530
  1 files changed, 26 insertions(+), 44 deletions(-)
 
 commit f9664c976b1a0b256aa65ce8d0cc5771e9fed291
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Wed Sep 16 23:14:58 2009 +0200
 
     Updated German doc translation
@@ -3024,7 +3024,7 @@ Date:   Sat Sep 12 22:16:45 2009 +0100
  1 files changed, 331 insertions(+), 303 deletions(-)
 
 commit 14a734e6f5d766ec311e8825e6e190cd337d7ddf
-Author: Kostas Papadimas <pkst@mate.org>
+Author: Kostas Papadimas <pkst@gnome.org>
 Date:   Sat Sep 12 19:42:15 2009 +0300
 
     Updated Greek help translation.
@@ -3079,7 +3079,7 @@ Date:   Sat Sep 12 14:48:27 2009 +1200
  2 files changed, 30 insertions(+), 31 deletions(-)
 
 commit cd17796cea15715425d7a5f6a89c564015670d66
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Thu Sep 10 20:50:39 2009 +0200
 
     Updated German translation
@@ -3364,7 +3364,7 @@ Date:   Wed Aug 26 15:06:53 2009 +0530
  1 files changed, 334 insertions(+), 331 deletions(-)
 
 commit 418bacd2b71800c7dc2ee143be5a0e4e318bc023
-Author: Jonh Wendell <jwendell@mate.org>
+Author: Jonh Wendell <jwendell@gnome.org>
 Date:   Tue Aug 25 11:10:28 2009 -0300
 
     Updated Brazilian Portuguese translation
@@ -3420,7 +3420,7 @@ Date:   Sun Aug 23 07:05:40 2009 +0900
  1 files changed, 265 insertions(+), 301 deletions(-)
 
 commit af7478ac915379268dac1aa2e9539e719003dfca
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Sat Aug 22 18:43:32 2009 +0200
 
     Fixed bug #591916
@@ -3429,7 +3429,7 @@ Date:   Sat Aug 22 18:43:32 2009 +0200
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 819cab74aca8eb0cb70241bec60636870ce8d5a8
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sat Aug 22 11:23:59 2009 +0200
 
     Updated Norwegian bokmål translation.
@@ -3677,7 +3677,7 @@ Date:   Thu Aug 6 19:35:54 2009 -0600
  2 files changed, 0 insertions(+), 2 deletions(-)
 
 commit ac47d2bd54726732ad4553c30172cd897163d490
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Thu Aug 6 18:50:30 2009 +0200
 
     Added screenshot to German translation
@@ -3687,7 +3687,7 @@ Date:   Thu Aug 6 18:50:30 2009 +0200
  2 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 0182ce305e9a0268543ed2ba4d00e50528bd68b8
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Tue Aug 4 21:55:47 2009 +0200
 
     Updated German translation
@@ -3696,7 +3696,7 @@ Date:   Tue Aug 4 21:55:47 2009 +0200
  1 files changed, 353 insertions(+), 103 deletions(-)
 
 commit 30354c5143212a70197668e74bc9a345eff86b8a
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Tue Aug 4 21:44:46 2009 +0200
 
     Removed unneeded image
@@ -3705,7 +3705,7 @@ Date:   Tue Aug 4 21:44:46 2009 +0200
  1 files changed, 0 insertions(+), 0 deletions(-)
 
 commit 341babc0895e10524dee69e4ae3be225a2996a07
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:   Tue Aug 4 21:43:11 2009 +0200
 
     Updated German translation
@@ -3716,7 +3716,7 @@ Date:   Tue Aug 4 21:43:11 2009 +0200
  3 files changed, 96 insertions(+), 99 deletions(-)
 
 commit 03b89322781176843234bd4984565f8f40c8122c
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Mon Aug 3 20:27:37 2009 +0200
 
     Updated Norwegian bokmål translation.
@@ -4053,7 +4053,7 @@ Date:   Tue Jul 7 17:02:55 2009 +0200
  1 files changed, 290 insertions(+), 276 deletions(-)
 
 commit a6b4d8e2e23418b5389ce2d46b4cfc278a967119
-Author: Sergey V. Udaltsov <svu@mate.org>
+Author: Sergey V. Udaltsov <svu@gnome.org>
 Date:   Wed Jul 1 15:59:51 2009 +0100
 
     Bumped libxklavier version to 4.0
@@ -4214,7 +4214,7 @@ Date:   Wed Jun 17 23:53:18 2009 +1200
  6 files changed, 78 insertions(+), 64 deletions(-)
 
 commit 48aa903f8edeccf6dab32d96cfc478c1145f2a9f
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:   Tue Jun 16 12:24:41 2009 +0800
 
     Added zh_CN to DOC_LINGUAS, remove superfluous figures.
@@ -4261,7 +4261,7 @@ Date:   Wed Jun 10 18:50:18 2009 +0530
  1 files changed, 948 insertions(+), 1845 deletions(-)
 
 commit d3fd1eefb8b3838f75a9e73b75ff088602242ae5
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Wed Jun 10 10:33:32 2009 +0200
 
     Updated Norwegian bokmål translation.

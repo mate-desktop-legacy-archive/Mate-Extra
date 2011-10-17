@@ -1,8 +1,8 @@
-2009-04-10  Simos Xenitellis  <simos@mate.org>
+2009-04-10  Simos Xenitellis  <simos@gnome.org>
 
 	* el/el.po: Updated Greek translation (Fotis Tsamis).
 
-2009-03-27  Simos Xenitellis  <simos@mate.org>
+2009-03-27  Simos Xenitellis  <simos@gnome.org>
 
 	* el/figures/mate-dictionary-applet.png: Deleted duplicated 
 	screenshot
@@ -50,7 +50,7 @@
 
 	* it.po: Updated Italian translation by Andrea Zagli.
 
-2008-01-09  Kjartan Maraas  <kmaraas@mate.org>
+2008-01-09  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* uk/uk.po: Remove a redundant tag that caused problems
 	with make check. Reported by Gilles Dartiguelongue.

@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the mate-terminal package.
 # Luciana Bastos de Freitas Menezes <lu@via-rs.net>, 2007.
 # Pedro Vaz de Mello de Medeiros <pedrovmm@gmail.com>, 2007.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2008.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008.
 # Andrius da Costa Ribas <andriusmao@gmail.com>, 2008.
 # Enrico Nicoletto <liverig@gmail.com>, 2009.
 #
@@ -253,8 +253,8 @@ msgid "May 2000"
 msgstr "Maio de 2000"
 
 #: C/mate-terminal.xml:192(para)
-msgid "Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@mate.org</email>"
-msgstr "Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@mate.org</email>"
+msgid "Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</email>"
+msgstr "Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</email>"
 
 #: C/mate-terminal.xml:202(releaseinfo)
 #| msgid "This manual describes version 2.5.90 of MATE Terminal."
@@ -1159,9 +1159,9 @@ msgstr "Clique neste botão para restaurar as opções de seção da aba <guilab
 #: C/mate-terminal.xml:0(None)
 msgid "translator-credits"
 msgstr ""
-"Luciana Bastos de Freitas Menezes <lubfm@mate.org>, 2007.\n"
+"Luciana Bastos de Freitas Menezes <lubfm@gnome.org>, 2007.\n"
 "Pedro Vaz de Mello de Medeiros <pedrovmm@gmail.com>, 2007.\n"
-"Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2008.\n"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008.\n"
 "Andrius da Costa Ribas <andriusmao@gmail.com>, 2008.\n"
 "Enrico Nicoletto <liverig@gmail.com>, 2009."
 

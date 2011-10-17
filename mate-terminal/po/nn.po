@@ -3,7 +3,7 @@
 # Copyright (C) 2008, The Free Software Foundation inc.
 #
 # Åsmund Skjæveland <aasmunds@fys.uio.no>, 2003, 2004, 2005, 2006.
-# Eskild Hustvedt <eskildh@mate.org>, 2008.
+# Eskild Hustvedt <eskildh@gnome.org>, 2008.
 # Åsmund Skjæveland <aasmunds@ulrik.uio.no>, 2009.
 msgid ""
 msgstr ""
@@ -2348,8 +2348,8 @@ msgstr "Ein terminalemulator for MATE-skrivebordet"
 msgid "translator-credits"
 msgstr ""
 "Åsmund Skjæveland <aasmunds@ulrik.uio.no>\n"
-"Kjartan Maraas <kmaraas@mate.org>\n"
-"Eskild Hustvedt <eskildh@mate.org>\n"
+"Kjartan Maraas <kmaraas@gnome.org>\n"
+"Eskild Hustvedt <eskildh@gnome.org>\n"
 "Send feilmeldingar og kommentarar til i18n-nn@lister.ping.uio.no"
 
 #.

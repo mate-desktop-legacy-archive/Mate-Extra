@@ -29,18 +29,18 @@ caja-open-terminal 0.9
 	Updated trannslations
 		be	  Ihar Hrachyshka			<ihar.hrachyshka@gmail.com>
 		ca	  Francesc Vilches			<francesc.vilches@gmail.com>
-		de	  Christian Neumair			<cneumair@mate.org>
+		de	  Christian Neumair			<cneumair@gnome.org>
 		es	  Jorge González			<jorgegonz@svn.mate.org>
 		eu	  Iñaki Larrañaga Murgoitio		<dooteo@euskalgnu.org>
 		fr	  Stéphane Raimbault			<stephane.raimbault@gmail.com>
 		fi	  Ilkka Tuohela				<hile@iki.fi>
 		ga	  Ignacio Casal Quinteiro		<icq@cvs.mate.org>
 		hu	  Gabor Kelemen				<kelemeng@mate.hu>
-		ka	  Vladimer Sichinava ვლადიმერ სიჭინავა  <vsichi@mate.org>
+		ka	  Vladimer Sichinava ვლადიმერ სიჭინავა  <vsichi@gnome.org>
 		ko	  Namhyung Kim				<namhyung@gmail.com>
-		nb	  Kjartan Maraas			<kmaraas@mate.org>
+		nb	  Kjartan Maraas			<kmaraas@gnome.org>
 		ne	  Shyam Krishna Bal			<shyamkrishna_bal@yahoo.com>
-		no	  Kjartan Maraas			<kmaraas@mate.org>
+		no	  Kjartan Maraas			<kmaraas@gnome.org>
 		pt_BR	  Vladimir Melo				<vladimirmelo@foresightlinux.org>
 		sl	  Matej Urbančič			<matej.urban@gmail.com>
 		sv	  Daniel Nylander			<po@danielnylander.se>
@@ -64,7 +64,7 @@ caja-open-terminal 0.8
 		dz	sonam pelden
 		et	Ivar Smolin			<okul@linux.ee>
 		gu	Ankit Patel			<ankit@redhat.com>
-		ka	Vladimer Sichinava		<vsichi@mate.org>
+		ka	Vladimer Sichinava		<vsichi@gnome.org>
 		ml	Ani Peter			<apeter@redhat.com>
 		sl	Matej Urbančič			<matej.urban@gmail.com>
 
@@ -103,8 +103,8 @@ caja-open-terminal 0.6
 
 	* Actually add Polish (pl) to ALL_LINGUAS.
 	* Added translations
-		nb	Kjartan Maraas			<kmaraas@mate.org>
-		no	Kjartan Maraas			<kmaraas@mate.org>
+		nb	Kjartan Maraas			<kmaraas@gnome.org>
+		no	Kjartan Maraas			<kmaraas@gnome.org>
 
 caja-open-terminal 0.5
 ==========================
@@ -117,7 +117,7 @@ caja-open-terminal 0.5
 	* Added translations
 		he	Yuval Tanai
 		ko	Young-Ho Cha			<ganadist@gmail.com>
-		lt	Žygimantas Beručka		<zygis@mate.org>
+		lt	Žygimantas Beručka		<zygis@gnome.org>
 		ne	Pawan Chitrakar			<pchitrakar@gmail.com>
 		pl	Michał Kastelik			<m.kastelik@wp.pl>
 		tr	Baris Cicek			<baris@teamforce.name.tr>
@@ -145,8 +145,8 @@ caja-open-terminal 0.3
 	* Added translations
 		ca	Gil Forcada			<gilforcada@guifi.net>
 			Josep Puigdemont		<josep.puigdemont@gmail.com>
-		en_CA	Adam Weinberger			<adamw@mate.org>
-		en_GB	Gareth Owen			<gowen@mate.org>
+		en_CA	Adam Weinberger			<adamw@gnome.org>
+		en_GB	Gareth Owen			<gowen@gnome.org>
 		fr	Guillaume Desmottes		<cass@skynet.be>
 		gl	Ignacio Casal Quinteiro		<nacho.resa@gmail.com>
 		hu	Szabolcs Varga

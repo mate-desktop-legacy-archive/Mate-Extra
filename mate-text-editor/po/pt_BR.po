@@ -10,16 +10,16 @@
 # João Paulo Gomes Vanzuita <joaopaulo99@terra.com.br>, 2004.
 # Raphael Higino <In Memoriam>, 2004-2005.
 # Everson Santos Araujo <everson@por.com.br>, 2005-2006.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2006-2008.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006-2008.
 # Jonh Wendell <wendell@bani.com.br>, 2008.
 # Fabrício Godoy <skarllot@gmail.com>, 2008.
-# Og Maciel <ogmaciel@mate.org>, 2007, 2009.
+# Og Maciel <ogmaciel@gnome.org>, 2007, 2009.
 # César Veiga <tombs@linuxmail.org>, 2009.
 # André Gondim <andregondim@ubuntu.com>, 2009.
 # Jader Henrique da Silva <vovozito@gmail.com>, 2009.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008, 2009.
 # Carlos José Pereira <carlao2005@gmail.com>, 2009
-# Henrique P. Machado <hpmachado@mate.org>, 2010.
+# Henrique P. Machado <hpmachado@gnome.org>, 2010.
 #
 #
 msgid ""
@@ -28,8 +28,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-03-14 10:49-0400\n"
 "PO-Revision-Date: 2010-03-14 11:12-0500\n"
-"Last-Translator: Og Maciel <ogmaciel@mate.org>\n"
-"Language-Team: Brazilian Portuguese <mate-pt_BR-list@mate.org>\n"
+"Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <mate-pt_BR-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1135,13 +1135,13 @@ msgstr ""
 "João Paulo Gomes Vanzuita <joaopaulo99@terra.com.br>\n"
 "Raphael Higino <In Memoriam>\n"
 "Everson Santos Araujo <everson@por.com.br>\n"
-"Leonardo Ferreira Fontenelle <leonardof@mate.org>\n"
-"Og Maciel <ogmaciel@mate.org>\n"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>\n"
+"Og Maciel <ogmaciel@gnome.org>\n"
 "Jonh Wendell <wendell@bani.com.br>\n"
 "Fábio Nogueira <deb-user-ba@ubuntu.com>\n"
 "César Veiga <tombs@linuxmail.org>\n"
 "André Gondim <andregondim@ubuntu.com>\n"
-"Henrique P. Machado <hpmachado@mate.org>"
+"Henrique P. Machado <hpmachado@gnome.org>"
 
 #: ../gedit/gedit-commands-search.c:111
 #, c-format

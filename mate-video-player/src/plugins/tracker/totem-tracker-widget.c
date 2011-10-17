@@ -1,7 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*-
  *
  * The _get_result_count method taken from the tracker-client.h file from libtracker
- * Copyright (C) 2006, Jamie McCracken <jamiemcc@mate.org>
+ * Copyright (C) 2006, Jamie McCracken <jamiemcc@gnome.org>
  * Copyright (C) 2007, Javier Goday <jgoday@gmail.com>
  * Copyright (C) 2010, Martyn Russell <martyn@lanedo.com>
  *
@@ -20,7 +20,7 @@
  * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
  * Boston, MA  02110-1301, USA.
  *
- * Author: Jamie McCracken <jamiemcc@mate.org>
+ * Author: Jamie McCracken <jamiemcc@gnome.org>
  *         Javier Goday <jgoday@gmail.com>
  *         Martyn Russell <martyn@lanedo.com>
  */

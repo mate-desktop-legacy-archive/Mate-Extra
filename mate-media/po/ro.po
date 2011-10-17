@@ -556,10 +556,10 @@ msgstr "Rată biți:"
 #: ../grecord/src/gsr-window.c:1242
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "O aplicație de înregistrat sunete pentru MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1513
 #| msgid "Playing..."

@@ -330,7 +330,7 @@ msgstr "Archivaryjus dla MATE."
 
 #: ../src/actions.c:860
 msgid "translator-credits"
-msgstr "Ihar Hračyška <iharh@mate.org>"
+msgstr "Ihar Hračyška <iharh@gnome.org>"
 
 #: ../src/dlg-add-files.c:94 ../src/dlg-add-folder.c:128
 msgid "Could not add the files to the archive"

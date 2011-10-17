@@ -3,10 +3,10 @@
 # This file is distributed under the same license as the gucharmap package.
 # LIANG ChangTai <beos@turbolinux.com.cn>, 2003
 # Funda Wang <fundawang@linux.net.cn>, 2004
-# Cai Qian <caiqian@mate.org>, 2005
-# Ray Wang <raywang@mate.org>, 2009.
+# Cai Qian <caiqian@gnome.org>, 2005
+# Ray Wang <raywang@gnome.org>, 2009.
 # Tao Wei <weitao1979@gmail.com>, 2009.
-# Aron Xu <aronxu@mate.org>, 2009, 2010.
+# Aron Xu <aronxu@gnome.org>, 2009, 2010.
 #
 msgid ""
 msgstr ""
@@ -390,10 +390,10 @@ msgstr ""
 "梁昌泰 <beos@turbolinux.com.cn>, 2003\n"
 "苏哲 <suzhe@turbolinux.com.cn>, 2003\n"
 "Funda Wang <fundawang@linux.net.cn>, 2004\n"
-"蔡芊 <caiqian@mate.org>, 2005\n"
-"Ray Wang <raywang@mate.org>, 2009\n"
+"蔡芊 <caiqian@gnome.org>, 2005\n"
+"Ray Wang <raywang@gnome.org>, 2009\n"
 "Tao Wei <weitao1979@gmail.com>, 2009\n"
-"Aron Xu <aronxu@mate.org>, 2009, 2010"
+"Aron Xu <aronxu@gnome.org>, 2009, 2010"
 
 #: ../gucharmap/gucharmap-window.c:607 ../gucharmap/gucharmap-window.c:884
 msgid "Next Script"

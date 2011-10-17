@@ -1553,7 +1553,7 @@ msgstr "Protok bita:"
 #, fuzzy
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr "Snimač zvuka za MATE"
 
 #: ../grecord/src/gsr-window.c:1467

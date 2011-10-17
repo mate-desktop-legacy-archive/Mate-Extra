@@ -18,7 +18,7 @@
  *
  * Authors: Jacob Berkman         <jacob@ximian.com>
  *          Hans Petter Jansson   <hpj@ximian.com>
- *          Carlos Garnacho Parro <carlosg@mate.org>
+ *          Carlos Garnacho Parro <carlosg@gnome.org>
  */
 
 #include <config.h>

@@ -1,10 +1,10 @@
 # translation of nn.po to Norwegian Nynorsk
 # Norwegian (nynorsk) translation of mate-utils.
 # Copyright (C) 2001 Roy-Magne Mo
-# Kjartan Maraas  <kmaraas@mate.org>, 2001.
+# Kjartan Maraas  <kmaraas@gnome.org>, 2001.
 # Roy-Magne Mo <rmo@sunnmore.net>, 2001.
 # Åsmund Skjæveland <aasmunds@fys.uio.no>, 2004.
-# Eskild Hustvedt <eskildh@mate.org>, 2008
+# Eskild Hustvedt <eskildh@gnome.org>, 2008
 #
 msgid ""
 msgstr ""
@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-01 07:46+0200\n"
 "PO-Revision-Date: 2008-04-01 08:41+0200\n"
-"Last-Translator: Eskild Hustvedt <eskildh@mate.org>\n"
+"Last-Translator: Eskild Hustvedt <eskildh@gnome.org>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -676,8 +676,8 @@ msgid "translator-credits"
 msgstr ""
 "Åsmund Skjæveland <aasmunds@fys.uio.no>\n"
 "Gaute Hvoslef Kvalnes <gaute@verdsveven.com>\n"
-"Kjartan Maraas <kmaraas@mate.org>\n"
-"Eskild Hustvedt <eskildh@mate.org>"
+"Kjartan Maraas <kmaraas@gnome.org>\n"
+"Eskild Hustvedt <eskildh@gnome.org>"
 
 #: ../baobab/src/callbacks.c:214 ../gsearchtool/gsearchtool-callbacks.c:472
 #: ../gsearchtool/gsearchtool-callbacks.c:824

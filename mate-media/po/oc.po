@@ -1508,7 +1508,7 @@ msgstr ""
 #: ../grecord/src/gsr-window.c:1255
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr ""
 
 #: ../grecord/src/gsr-window.c:1518

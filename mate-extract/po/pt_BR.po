@@ -6,7 +6,7 @@
 # Goedson Teixeira Paixão <goedson@debian.org>, 2004.
 # Afonso Celso Medina <medina@maua.br>, 2005.
 # Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2007-2008.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007-2008.
 # Og Maciel <ogmaciel@ubuntu.com>, 2007-2008.
 # Fabrício Godoy <skarllot@gmail.com>, 2008.
 # Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
@@ -22,7 +22,7 @@ msgstr ""
 "POT-Creation-Date: 2010-08-24 16:27+0000\n"
 "PO-Revision-Date: 2010-08-24 16:09-0300\n"
 "Last-Translator: Antonio Fernandes C. Neto <fernandes@pelivre.org>\n"
-"Language-Team: Brazilian Portuguese <mate-pt_br-list@mate.org>\n"
+"Language-Team: Brazilian Portuguese <mate-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

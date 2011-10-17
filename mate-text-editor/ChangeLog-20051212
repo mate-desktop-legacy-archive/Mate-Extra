@@ -51,7 +51,7 @@
         * README:
         * configure.in 2.11.91 released.
 
-2005-08-05  Paolo Maggi  <paolo@mate.org>
+2005-08-05  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #101281: [ui-review] Undo preference dialog
 
@@ -59,7 +59,7 @@
 	/schemas/apps/gedit-2/preferences/editor/undo/undo_actions_limits and
 	added new key .../undo/max_undo_actions
 
-2005-08-04  Paolo Maggi  <paolo@mate.org>
+2005-08-04  Paolo Maggi  <paolo@gnome.org>
 
 	Fixed bug #168965: Grammatical error in message 
 
@@ -68,7 +68,7 @@
 
 ==== gedit 2.10.4 ====
 
-2005-08-04  Paolo Maggi  <paolo@mate.org>
+2005-08-04  Paolo Maggi  <paolo@gnome.org>
 
 	* NEWS:
 	* README:
@@ -116,16 +116,16 @@
 
 ==== gedit 2.9.7 ====
 
-2005-03-01  Paolo Maggi  <paolo@mate.org>
+2005-03-01  Paolo Maggi  <paolo@gnome.org>
 
 	* README:
 	* NEWS: 2.9.7 released.
 
-2005-02-20  Paolo Maggi  <paolo@mate.org>
+2005-02-20  Paolo Maggi  <paolo@gnome.org>
 
 	* data/gedit.1: updated
 	
-2005-02-13  Paolo Maggi  <paolo@mate.org>
+2005-02-13  Paolo Maggi  <paolo@gnome.org>
 
 	* data/gedit.schemas.in: fixed bug #167060 (gedit schema messages 
 	need translator comments)
@@ -137,7 +137,7 @@
 	* README:
 	* NEWS: 2.9.6 released.
 
-2005-02-04  Paolo Maggi  <paolo@mate.org>
+2005-02-04  Paolo Maggi  <paolo@gnome.org>
 
 	* data/gedit.schemas.in: added savecopy to the list of default
 	plugins.
@@ -146,36 +146,36 @@
 
 ==== gedit 2.9.4 ====
 
-2005-01-11  Paolo Maggi  <paolo@mate.org>
+2005-01-11  Paolo Maggi  <paolo@gnome.org>
 
 	* configure.in: version 2.9.4
 	
 	* README: updated
 	
-2005-01-10  Paolo Maggi  <paolo@mate.org>
+2005-01-10  Paolo Maggi  <paolo@gnome.org>
 
 	Based on a patch by Juerg Billeter <j@bitron.ch>
 
 	* data/gedit.schemas.in: added editor/bracket_matching/bracket_matching
 	
-2005-01-10  Paolo Maggi  <paolo@mate.org>
+2005-01-10  Paolo Maggi  <paolo@gnome.org>
 
 	* configure.in: set GEDIT_MAJOR to 2.10
 
-2005-01-08  Paolo Maggi  <paolo@mate.org>
+2005-01-08  Paolo Maggi  <paolo@gnome.org>
 
 	* configure.in: requires GtkSourceView >= 1.1.90
 
 	* data/gedit.schemas.in: added editor/current_line/highlight_current_line
 	key
 
-2004-12-07  Paolo Maggi  <paolo@mate.org>
+2004-12-07  Paolo Maggi  <paolo@gnome.org>
 
 	* configure.in: show message-of-doom, remove redundant check for 
 	ngettext, since AM_GLIB_GNU_GETTEXT already checks for it (in both 
 	libc and libintl).
 
-2004-12-05  Paolo Maggi  <paolo@mate.org>
+2004-12-05  Paolo Maggi  <paolo@gnome.org>
 
 	* data/gedit.schemas.in: fixed bug #147664 (Please add translator 
 	comments to gedit schema messages).
@@ -194,7 +194,7 @@
 
 	* configure.in: bump glib and gtk+ requirements.
 
-2004-11-09  Paolo Maggi  <paolo@mate.org>
+2004-11-09  Paolo Maggi  <paolo@gnome.org>
 
 	* data/gedit.schemas.in: added new keys 
 	/schemas/apps/gedit-2/preferences/print/fonts/print_font_body_pango,
@@ -202,7 +202,7 @@
 	/schemas/apps/gedit-2/preferences/print/fonts/print_font_numbers_pango. Patch
 	by Owen Taylor <otaylor@redhat.com>
 
-2004-11-01  Paolo Maggi  <paolo@mate.org> 
+2004-11-01  Paolo Maggi  <paolo@gnome.org> 
 
 	* configure.in: removed version number from GETTEXT_PACKAGE (fixes
 	bug #149988: Is gedit potfile versioning needed?)
@@ -213,14 +213,14 @@
 	* README:
 	* NEWS: release 2.9.1
 
-2004-10-31  Paolo Maggi  <paolo@mate.org> 
+2004-10-31  Paolo Maggi  <paolo@gnome.org> 
 
 	* configure.in: set version to 2.9.0
 	
 	* data/gedit.schemas.in: added 
 	/schemas/apps/gedit-2/plugins/active-plugins key
 
-2004-10-15  Marco Pesenti Gritti  <marco@mate.org>
+2004-10-15  Marco Pesenti Gritti  <marco@gnome.org>
 
 	reviewed by: Paolo Borelli  <pborelli@katamail.com>
 
@@ -278,7 +278,7 @@
 	* help/C/gedit-C.omf: Updated for MATE 2.8
 	* help/C/l10n.txt: Updated for MATE 2.8
 
-2004-08-16  Kjartan Maraas  <kmaraas@mate.org>
+2004-08-16  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Added nb to ALL_LINGUAS.
 
@@ -763,7 +763,7 @@
 	  ja ko zh_CN zh_TW
 	* help files for above languages
 
-2003-03-26  James Willcox  <jwillcox@mate.org>
+2003-03-26  James Willcox  <jwillcox@gnome.org>
 
 	* NEWS:  Updated
 
@@ -780,7 +780,7 @@
           of the latest application
         * help/C/figures/gedit_recent_files_menu_icon.png: new screenshot
 
-2003-02-24  James Willcox  <jwillcox@mate.org>
+2003-02-24  James Willcox  <jwillcox@gnome.org>
 
 	* Makefile.am:
 	* configure.in:  
@@ -794,7 +794,7 @@
 
 	* configure.in: Added "fa" to ALL_LINGUAS.
 
-2003-02-21  James Willcox  <jwillcox@mate.org>
+2003-02-21  James Willcox  <jwillcox@gnome.org>
 
 	* Makefile.am:
 	* configure.in:
@@ -802,7 +802,7 @@
 
 	Clean up the build and enable buildling the plugins again.
 
-2003-02-20  James Willcox  <jwillcox@mate.org>
+2003-02-20  James Willcox  <jwillcox@gnome.org>
 
 	* Makefile.am:
 	* configure.in:
@@ -815,7 +815,7 @@
 
 	Install headers and stuff so we can build plugins externally.
 
-2003-02-20  James Willcox  <jwillcox@mate.org>
+2003-02-20  James Willcox  <jwillcox@gnome.org>
 
 	* configure.in:
 	* gedit/dialogs/Makefile.am:
@@ -823,7 +823,7 @@
 
 	It actually builds now (sigh)
 
-2003-02-20  James Willcox  <jwillcox@mate.org>
+2003-02-20  James Willcox  <jwillcox@gnome.org>
 
 	* Makefile.am:
 	* configure.in:
@@ -836,7 +836,7 @@
 
 	* configure.in: Added "kn" to ALL_LINGUAS.
 
-2003-01-27  James Willcox  <jwillcox@mate.org>
+2003-01-27  James Willcox  <jwillcox@gnome.org>
 
 	* configure.in:
 	* message-of-doom:
@@ -896,11 +896,11 @@
 
 	* data/gedit.1:  Updated.
 
-2003-01-04  James Willcox  <jwillcox@mate.org>
+2003-01-04  James Willcox  <jwillcox@gnome.org>
 
 	* data/gedit.1:  Updated, fixed typos, etc.
 
-2003-01-03  James Willcox  <jwillcox@mate.org>
+2003-01-03  James Willcox  <jwillcox@gnome.org>
 
 	* data/gedit.desktop.in:
 
@@ -980,7 +980,7 @@
 	* configure.in:
 	* README: bump version to 2.1.2.1
 
-2002-11-01  Jody Goldberg <jody@mate.org>
+2002-11-01  Jody Goldberg <jody@gnome.org>
 
 	* configure.in: require libmateprintui >= 2.1.1
 	
@@ -1060,7 +1060,7 @@
 	* help/Makefile.am: added ro subdir
 	* help/ro: added romanian help translation
 
-2002-09-16  James Willcox  <jwillcox@mate.org>
+2002-09-16  James Willcox  <jwillcox@gnome.org>
 
 	* configure.in:  Add src/recent-files/Makefile.am to AC_OUTPUT
 
@@ -1114,7 +1114,7 @@
 
 	* TODO: Updated
 
-2002-08-24  James Willcox  <jwillcox@mate.org>
+2002-08-24  James Willcox  <jwillcox@gnome.org>
 
 	* configure.in:  added plugins/email/Makefile to AC_OUTPUT
 

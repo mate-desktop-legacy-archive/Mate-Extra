@@ -1,7 +1,7 @@
 # Norwegian/Bokmaal translation of file-roller.
 # Copyright (C) 2002-2004 Free Software Foundation, Inc.
 # Lars Alvik <lalvik@hotmail.com>, 2002.
-# Kjartan Maraas <kmaraas@mate.org>, 2002-2010.
+# Kjartan Maraas <kmaraas@gnome.org>, 2002-2010.
 #
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-13 14:35+0200\n"
 "PO-Revision-Date: 2010-07-13 14:36+0200\n"
-"Last-Translator: Kjartan Maraas <kmaraas@mate.org>\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -327,7 +327,7 @@ msgstr "En arkiverer for MATE."
 msgid "translator-credits"
 msgstr ""
 "Lars Alvik <lalvik@hotmail.com>\n"
-"Kjartan Maraas <kmaraas@mate.org>"
+"Kjartan Maraas <kmaraas@gnome.org>"
 
 #: ../src/dlg-add-files.c:97 ../src/dlg-add-folder.c:130
 msgid "Could not add the files to the archive"

@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2000-2008 The Free Software Foundation
  *
- * Author: Lucas Rocha <lucasr@mate.org>
+ * Author: Lucas Rocha <lucasr@gnome.org>
  *
  * Based on eel code (eel/eel-graphic-effects.c) by:
  * 	- Andy Hertzfeld <andy@eazel.com>

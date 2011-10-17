@@ -1,6 +1,6 @@
 # German translation of the file-roller manual.
 # Jan Arne Petersen <jpetersen@jpetersen.org>, 2006.
-# Mario Blättermann <mariobl@mate.org>, 2008, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
 #
 msgid ""
 msgstr ""
@@ -8,8 +8,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-15 17:22+0000\n"
 "PO-Revision-Date: 2009-07-26 15:59+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@mate.org>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3274,4 +3274,4 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Jan Arne Petersen <jpetersen@jpetersen.org>, 2006\n"
-"Mario Blättermann <mariobl@mate.org>, 2008, 2009"
+"Mario Blättermann <mariobl@gnome.org>, 2008, 2009"

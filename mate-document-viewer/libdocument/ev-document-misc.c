@@ -1,6 +1,6 @@
 /*
  *  Copyright (C) 2009 Juanjo Marín <juanj.marin@juntadeandalucia.es>
- *  Copyright (c) 2007 Carlos Garcia Campos <carlosgc@mate.org>
+ *  Copyright (c) 2007 Carlos Garcia Campos <carlosgc@gnome.org>
  *  Copyright (C) 2000-2003 Marco Pesenti Gritti
  *
  *  This program is free software; you can redistribute it and/or modify

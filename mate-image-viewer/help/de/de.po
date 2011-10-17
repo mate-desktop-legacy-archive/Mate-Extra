@@ -1,7 +1,7 @@
 # German translation of eog manual
 #
 # Jan Arne Petersen <jpetersen@jpetersen.org>, 2006.
-# Mario Blättermann <mariobl@mate.org>, 2008.
+# Mario Blättermann <mariobl@gnome.org>, 2008.
 # Andre Klapper <ak-47@gmx.net>, 2009.
 # Felix Riemann <friemann@svn.mate.org>, 2009
 #
@@ -11,7 +11,7 @@ msgstr ""
 "POT-Creation-Date: 2009-03-21 19:36+0000\n"
 "PO-Revision-Date: 2009-01-24 18:36+0100\n"
 "Last-Translator: Felix Riemann <friemann@svn.mate.org>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1735,7 +1735,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Jan Arne Petersen <jpetersen@jpetersen.org>, 2006\n"
-"Mario Blättermann <mariobl@mate.org>, 2008\n"
+"Mario Blättermann <mariobl@gnome.org>, 2008\n"
 "Felix Riemann <friemann@svn.mate.org>, 2009"
 
 #~ msgid "December 2006"

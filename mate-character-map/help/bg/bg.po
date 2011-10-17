@@ -175,8 +175,8 @@ msgid "HOH"
 msgstr "HOH"
 
 #: C/gucharmap.xml:67(email)
-msgid "cbhoh@mate.org"
-msgstr "cbhoh@mate.org"
+msgid "cbhoh@gnome.org"
+msgstr "cbhoh@gnome.org"
 
 #: C/gucharmap.xml:99(revnumber)
 msgid "Character Map Manual V2.1"
@@ -203,8 +203,8 @@ msgid "October 2003"
 msgstr "Октомври 2003"
 
 #: C/gucharmap.xml:111(para)
-msgid "Chee Bin HOH <email>cbhoh@mate.org</email>"
-msgstr "Chee Bin HOH <email>cbhoh@mate.org</email>"
+msgid "Chee Bin HOH <email>cbhoh@gnome.org</email>"
+msgstr "Chee Bin HOH <email>cbhoh@gnome.org</email>"
 
 #: C/gucharmap.xml:119(releaseinfo)
 msgid "This manual describes version 1.3.0 of Character Map."

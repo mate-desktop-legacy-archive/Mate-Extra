@@ -1,7 +1,7 @@
 # Chinese (China) translation for mate-bluetooth.
 # Copyright (c) 2007, 2009, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mate-bluetooth package.
-# Aron Xu <aronxu@mate.org>, 2007.
+# Aron Xu <aronxu@gnome.org>, 2007.
 # fujianwzh <fujianwzh@gmail.com>, 2009.
 # Richard Ma <richard.ma.19850509@gmail.com>, 2009.
 # Tao Wei <weitao1979@gmail.com>, 2010.
@@ -849,7 +849,7 @@ msgstr "蓝牙管理器控制面板"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
-#~ "Aron Xu <aronxu@mate.org>\n"
+#~ "Aron Xu <aronxu@gnome.org>\n"
 #~ "fujianwzh <fujianwzh@gmail.com>"
 
 #~ msgid "MATE Bluetooth home page"

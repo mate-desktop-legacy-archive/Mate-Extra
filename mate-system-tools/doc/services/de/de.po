@@ -4,7 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2008-10-24 04:24+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Mario Blättermann <mario.blaettermann@t-online.de>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -74,8 +74,8 @@ msgstr "August 2006"
 #: C/services-admin.xml:69(para)
 #: C/services-admin.xml:76(para)
 #: C/services-admin.xml:77(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/services-admin.xml:73(revnumber)
 msgid "Services Administration Tool Manual V0.35"

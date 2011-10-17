@@ -4,15 +4,15 @@
 # Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
 # Afonso Celso Medina <afmedina@uol.com.br>, 2005.
 # Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2005
-# Guilherme de S. Pastore <gpastore@mate.org>, 2006.
+# Guilherme de S. Pastore <gpastore@gnome.org>, 2006.
 # Alexandre Folle de Menezes <afmenez@terra.com.br>, 2002-2003, 2006.
 # Raphael Higino <In memoriam>, 2004-2005, 2007.
-# Og Maciel <ogmaciel@mate.org>, 2007-2008.
-# Vladimir Melo <vmelo@mate.org>, 2007, 2009.
-# Djavan Fagundes <djavanf@mate.org>, 2008, 2009.
+# Og Maciel <ogmaciel@gnome.org>, 2007-2008.
+# Vladimir Melo <vmelo@gnome.org>, 2007, 2009.
+# Djavan Fagundes <djavanf@gnome.org>, 2008, 2009.
 # Taylon Silmer <taylonsilva@gmail.com>, 2009.
 # André Gondim <andregondim@ubuntu.com>, 2009, 2010.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2009
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: totem\n"
@@ -20,8 +20,8 @@ msgstr ""
 "http://bugzilla.mate.org/enter_bug.cgi?product=totem&component=general\n"
 "POT-Creation-Date: 2010-08-31 20:03+0000\n"
 "PO-Revision-Date: 2010-09-03 14:22-0200\n"
-"Last-Translator: Djavan Fagundes <djavanf@mate.org>\n"
-"Language-Team: Brazilian Portuguese <mate-pt_br-list@mate.org>\n"
+"Last-Translator: Djavan Fagundes <djavanf@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <mate-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1233,13 +1233,13 @@ msgstr ""
 "Welther José O. Esteves <weltherjoe@yahoo.com.br>\n"
 "Raphael Higino <In memoriam>\n"
 "Afonso Celso Medina <afmedina@uol.com.br>\n"
-"Guilherme de S. Pastore <gpastore@mate.org>\n"
-"Og Maciel <ogmaciel@mate.org>\n"
-"Vladimir Melo <vmelo@mate.org>\n"
+"Guilherme de S. Pastore <gpastore@gnome.org>\n"
+"Og Maciel <ogmaciel@gnome.org>\n"
+"Vladimir Melo <vmelo@gnome.org>\n"
 "Djavan Fagundes <dnoway@gmail.com>\n"
 "Taylon Silmer <taylonsilva@gmail.com>\n"
 "André Gondim <andregondim@ubuntu.com>\n"
-"Leonardo Ferreira Fontenelle <leonardof@mate.org>"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>"
 
 #: ../src/totem-menu.c:1185
 msgid "Totem Website"

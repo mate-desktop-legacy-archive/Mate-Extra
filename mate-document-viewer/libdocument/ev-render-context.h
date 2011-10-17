@@ -1,6 +1,6 @@
 /* this file is part of evince, a mate document viewer
  *
- *  Copyright (C) 2005 Jonathan Blandford <jrb@mate.org>
+ *  Copyright (C) 2005 Jonathan Blandford <jrb@gnome.org>
  *
  * Evince is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by

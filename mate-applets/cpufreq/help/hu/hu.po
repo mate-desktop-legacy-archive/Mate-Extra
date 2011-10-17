@@ -233,8 +233,8 @@ msgid "MATE Project"
 msgstr "MATE projekt"
 
 #: C/cpufreq-applet.xml:56(email)
-msgid "carlosgc@mate.org"
-msgstr "carlosgc@mate.org"
+msgid "carlosgc@gnome.org"
+msgstr "carlosgc@gnome.org"
 
 #: C/cpufreq-applet.xml:60(firstname)
 msgid "Davyd"

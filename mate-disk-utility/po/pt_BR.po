@@ -2,9 +2,9 @@
 # Copyright (C) 2009-2010 the mate-disk-utility copyright holders.
 # This file is distributed under the same license as the mate-disk-utility package.
 # César Veiga <tombs@linuxmail.org>, 2009.
-# Og Maciel <ogmaciel@mate.org>, 2009.
+# Og Maciel <ogmaciel@gnome.org>, 2009.
 # Lucas Azevedo <lucasazevedo9@gmail.com>, 2009.
-# Fábio Nogueira <fnogueira@mate.org>, 2009.
+# Fábio Nogueira <fnogueira@gnome.org>, 2009.
 # Enrico Nicoletto <liverig@gmail.com>, 2009.
 # André Gondim <andregondim@ubuntu.com>, 2009, 2010.
 # Michel Recondo <michel@recondo.com.br>, 2010.
@@ -16,7 +16,7 @@ msgstr ""
 "POT-Creation-Date: 2010-04-17 18:18-0400\n"
 "PO-Revision-Date: 2010-04-17 18:08-0300\n"
 "Last-Translator: Fabrício Godoy <skarllot@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <mate-pt_br-list@mate.org>\n"
+"Language-Team: Brazilian Portuguese <mate-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5446,9 +5446,9 @@ msgstr "Erro ao conectar em \"%s\""
 #: ../src/palimpsest/gdu-shell.c:808
 msgid "translator-credits"
 msgstr ""
-"Og Maciel <ogmaciel@mate.org>\n"
+"Og Maciel <ogmaciel@gnome.org>\n"
 "Lucas Azevedo <lucasazevedo9@gmail.com>\n"
-"Fábio Nogueira <fnogueira@mate.org>\n"
+"Fábio Nogueira <fnogueira@gnome.org>\n"
 "Enrico Nicoletto <liverig@gmail.com>\n"
 "André Gondim <andregondim@ubuntu.com>\n"
 "Michel Recondo <michel@recondo.com.br>"

@@ -484,7 +484,7 @@ help_about (GtkAction       *action,
 
   const gchar *documenters[] =
     {
-      "Chee Bin HOH <cbhoh@mate.org>",
+      "Chee Bin HOH <cbhoh@gnome.org>",
       "Sun Microsystems",
       NULL
     };	  

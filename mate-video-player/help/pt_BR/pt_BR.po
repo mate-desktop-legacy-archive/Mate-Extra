@@ -3,7 +3,7 @@
 # Copyright (C) 2007-2009 Free Software Foundation, Inc.
 # Raphael Higino <In memoriam>, 2007.
 # Irapuan Pascoal <irapuan.menezes@gmail.com>, 2007.
-# Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2008.
+# Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008.
 # Fabrício Godoy <skarllot@gmail.com>, 2009.
 #
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2009-03-31 14:57+0000\n"
 "PO-Revision-Date: 2009-04-01 01:15-0300\n"
 "Last-Translator: Fabrício Godoy <skarllot@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <mate-pt_br-list@mate.org>\n"
+"Language-Team: Brazilian Portuguese <mate-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -220,8 +220,8 @@ msgid "HOH"
 msgstr "HOH"
 
 #: C/totem.xml:65(email)
-msgid "cbhoh@mate.org"
-msgstr "cbhoh@mate.org"
+msgid "cbhoh@gnome.org"
+msgstr "cbhoh@gnome.org"
 
 #: C/totem.xml:69(firstname)
 msgid "Baptiste"
@@ -265,8 +265,8 @@ msgid "August 2006"
 msgstr "Agosto de 2006"
 
 #: C/totem.xml:116(para)
-msgid "Chee Bin HOH <email>cbhoh@mate.org</email>"
-msgstr "Chee Bin HOH <email>cbhoh@mate.org</email>"
+msgid "Chee Bin HOH <email>cbhoh@gnome.org</email>"
+msgstr "Chee Bin HOH <email>cbhoh@gnome.org</email>"
 
 #: C/totem.xml:123(revnumber)
 msgid "<application>Totem Movie Player</application> Manual V3.0"
@@ -2196,5 +2196,5 @@ msgid "translator-credits"
 msgstr ""
 "Raphael Higino <In memoriam>, 2007.\n"
 "Irapuan Pascoal <irapuan.menezes@gmail.com>, 2007.\n"
-"Leonardo Ferreira Fontenelle <leonardof@mate.org>, 2008.\n"
+"Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008.\n"
 "Fabrício Godoy <skarllot@gmail.com>, 2009."

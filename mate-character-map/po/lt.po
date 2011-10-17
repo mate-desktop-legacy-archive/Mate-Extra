@@ -2,7 +2,7 @@
 # Lithuanian translation of gucharmap.
 # Copyright (C) 2003-2007 Free Software Foundation, Inc.
 # Tomas Kuliavas <tokul@users.sourceforge.net>, 2003-2004.
-# Žygimantas Beručka <zygis@mate.org>, 2004-2006, 2010.
+# Žygimantas Beručka <zygis@gnome.org>, 2004-2006, 2010.
 # Gintautas Miliauskas <gintas@akl.lt>, 2006.
 # Tomas Kuliavas <tokul@users.sourceforge.net>, 2007.
 # $Id:$
@@ -13,7 +13,7 @@ msgstr ""
 "http://bugzilla.mate.org/enter_bug.cgi?product=gucharmap&component=general\n"
 "POT-Creation-Date: 2010-03-27 20:02+0000\n"
 "PO-Revision-Date: 2010-03-28 18:15+0300\n"
-"Last-Translator: Žygimantas Beručka <zygis@mate.org>\n"
+"Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <mate-lt@lists.akl.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -395,7 +395,7 @@ msgstr "Paremta Unikodo simbolių duomenų baze 5.2"
 #: ../gucharmap/gucharmap-window.c:532
 msgid "translator-credits"
 msgstr ""
-"Žygimantas Beručka <zygis@mate.org>,\n"
+"Žygimantas Beručka <zygis@gnome.org>,\n"
 "Tomas Kuliavas <tokul@users.sourceforge.net>"
 
 #: ../gucharmap/gucharmap-window.c:607 ../gucharmap/gucharmap-window.c:874

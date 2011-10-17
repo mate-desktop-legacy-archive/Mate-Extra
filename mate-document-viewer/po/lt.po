@@ -4,7 +4,7 @@
 # This file is distributed under the same license as the Evince package.
 #
 #
-# Žygimantas Beručka <zygis@mate.org>, 2005-2006, 2009.
+# Žygimantas Beručka <zygis@gnome.org>, 2005-2006, 2009.
 # Justina Klingaitė <justina.klingaite@gmail.com>, 2005.
 # Gintautas Miliauskas <gintas@akl.lt>, 2007, 2008.
 # Aurimas Černius <aurisc4@gmail.com>, 2010.
@@ -1312,7 +1312,7 @@ msgstr "© 1996-2009 Evince autoriai"
 #: ../shell/ev-window.c:4605
 msgid "translator-credits"
 msgstr ""
-"Žygimantas Beručka  <zygis@mate.org>,\n"
+"Žygimantas Beručka  <zygis@gnome.org>,\n"
 "Justina Klingaitė <justina.klingaite@gmail.com>,\n"
 "Aurimas Černius <aurisc4@gmail.com>"
 

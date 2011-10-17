@@ -201,8 +201,8 @@ msgid "Kalager Schaller"
 msgstr "Kalager Schaller"
 
 #: ../C/mate-volume-control.xml:81(email)
-msgid "uraeus@mate.org"
-msgstr "uraeus@mate.org"
+msgid "uraeus@gnome.org"
+msgstr "uraeus@gnome.org"
 
 #: ../C/mate-volume-control.xml:87(firstname)
 msgid "Michael"
@@ -245,8 +245,8 @@ msgid "25 October 2003"
 msgstr "25. oktober 2003"
 
 #: ../C/mate-volume-control.xml:139(para)
-msgid "Christian Schaller <email>uraeus@mate.org</email>"
-msgstr "Christian Schaller <email>uraeus@mate.org</email>"
+msgid "Christian Schaller <email>uraeus@gnome.org</email>"
+msgstr "Christian Schaller <email>uraeus@gnome.org</email>"
 
 #: ../C/mate-volume-control.xml:146(revnumber)
 msgid "1.0"

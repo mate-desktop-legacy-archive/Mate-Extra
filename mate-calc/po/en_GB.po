@@ -1223,7 +1223,7 @@ msgid "translator-credits"
 msgstr ""
 "Abigail Brady <morwen@evilmagi_c.org>\n"
 "Bastien Nocera <hadess@hadess.net>\n"
-"Gareth Owen <gowen@mate.org>\n"
+"Gareth Owen <gowen@gnome.org>\n"
 "Philip Withnall <philip@tecnocode.co.uk>\n"
 "Bruce Cowan <bruce@bcowan.me.uk>"
 

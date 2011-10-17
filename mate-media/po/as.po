@@ -524,10 +524,10 @@ msgstr "বিট মাত্ৰা"
 #: ../grecord/src/gsr-window.c:1239
 msgid ""
 "A sound recorder for MATE\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 msgstr ""
 "MATE-ৰ সৈতে ব্যৱহাৰযোগ্য শব্দ ৰেকৰ্ড ব্যৱস্থা\n"
-" mate-multimedia@mate.org"
+" mate-multimedia@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1510
 msgid "Playing..."

@@ -305,10 +305,10 @@ msgstr "Maig de 2000"
 
 #: C/mate-terminal.xml:183(para)
 msgid ""
-"Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@mate.org</"
+"Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</"
 "email>"
 msgstr ""
-"Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@mate.org</"
+"Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</"
 "email>"
 
 #: C/mate-terminal.xml:193(releaseinfo)

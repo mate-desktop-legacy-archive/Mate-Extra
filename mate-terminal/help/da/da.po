@@ -256,8 +256,8 @@ msgid "January 2010"
 msgstr "Januar 2010"
 
 #: ../C/mate-terminal.xml:96(para)
-msgid "Paul Cutler <email>pcutler@mate.org</email>"
-msgstr "Paul Cutler <email>pcutler@mate.org</email>"
+msgid "Paul Cutler <email>pcutler@gnome.org</email>"
+msgstr "Paul Cutler <email>pcutler@gnome.org</email>"
 
 #: ../C/mate-terminal.xml:102(revnumber)
 msgid "MATE Terminal Manual V2.8"
@@ -341,10 +341,10 @@ msgstr "Maj 2000"
 
 #: ../C/mate-terminal.xml:201(para)
 msgid ""
-"Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@mate.org</"
+"Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</"
 "email>"
 msgstr ""
-"Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@mate.org</"
+"Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</"
 "email>"
 
 #: ../C/mate-terminal.xml:211(releaseinfo)

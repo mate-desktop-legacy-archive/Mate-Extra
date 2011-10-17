@@ -1552,10 +1552,10 @@ msgstr "Бит үнэлэмж:"
 #: ../grecord/src/gsr-window.c:1209
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr ""
 "MATE-д зориулсан дуу бичигч\n"
-"mate-media@mate.org"
+"mate-media@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1464
 msgid "Playing..."

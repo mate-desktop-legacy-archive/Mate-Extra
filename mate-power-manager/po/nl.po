@@ -5,8 +5,8 @@
 # Theetjuh <theetjuh@gmail.com>, 2005.
 # Tino Meinen <tino.meinen@gmail.com>, 2005, 2006, 2009.
 # Rinse de Vries <rinsedevries@kde.nl>, 2007.
-# Reinout van Schouwen <reinouts@mate.org>, 2008, 2009.
-# Wouter Bolsterlee <wbolster@mate.org>, 2006–2010.
+# Reinout van Schouwen <reinouts@gnome.org>, 2008, 2009.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2010.
 #
 # AC             - netstroom
 # battery        - accu/accustroom
@@ -22,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-26 14:43+0200\n"
 "PO-Revision-Date: 2010-09-26 15:20+0200\n"
-"Last-Translator: Wouter Bolsterlee <wbolster@mate.org>\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"

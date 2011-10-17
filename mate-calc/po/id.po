@@ -1196,7 +1196,7 @@ msgstr "Tidak dapat membuka berkas bantuan"
 #: ../src/math-window.c:201
 msgid "translator-credits"
 msgstr ""
-"Ahmad Riza H Nst <rizahnst@mate.org>, 2003, 2005.\n"
+"Ahmad Riza H Nst <rizahnst@gnome.org>, 2003, 2005.\n"
 "Mohammad DAMT <mdamt@bisnisweb.com>, 2005.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2010."
 

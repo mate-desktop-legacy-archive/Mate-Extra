@@ -6,45 +6,45 @@
 
 ==================== 2.22.1 ====================
 
-2008-03-09  Carlos Garnacho  <carlosg@mate.org>
+2008-03-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.22.0
 
-2008-02-26  Carlos Garnacho  <carlosg@mate.org>
+2008-02-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* privileges-table.c (privilege_search): Check that the group name is
 	not NULL. Fixes #518785.
 
-2008-02-25  Carlos Garnacho  <carlosg@mate.org>
+2008-02-25  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.92
 
-2008-02-18  Carlos Garnacho  <carlosg@mate.org>
+2008-02-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c (on_table_button_press): Check that we're receiving the
 	event on treeview's bin_window.
 
-2008-02-12  Carlos Garnacho  <carlosg@mate.org>
+2008-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.91
 
-2008-01-28  Carlos Garnacho  <carlosg@mate.org>
+2008-01-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.90
 
-2008-01-16  Carlos Garnacho  <carlosg@mate.org>
+2008-01-16  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c (on_user_settings_clicked): plug a potential leak.
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5.1
 
-2008-01-15  Carlos Garnacho  <carlosg@mate.org>
+2008-01-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.5
 
-2008-01-07  Carlos Garnacho  <carlosg@mate.org>
+2008-01-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* user-settings.c (user_settings_dialog_new) (check_login)
 	(check_comments) (check_home) (check_uid) (check_shell)
@@ -53,19 +53,19 @@
 	user_settings_dialog_get_data() too early, creating a NULL OobsUser in
 	consequence.
 
-2008-01-02  Carlos Garnacho  <carlosg@mate.org>
+2008-01-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* user-settings.c (check_home): Check whether the home directory
 	doesn't exist, Fixes #300016.
 
-2008-01-02  Carlos Garnacho  <carlosg@mate.org>
+2008-01-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* user-settings.c (user_settings_dialog_new): Do not set anything in
 	the password fields when editing an user, so it doesn't mislead users
 	believing that it contains the actual user password. Fixes #169574.
 	(check_password): Only check it if it has changed.
 
-2008-01-02  Carlos Garnacho  <carlosg@mate.org>
+2008-01-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c (on_user_new_clicked): Do not create an user with NULL
 	login name here.
@@ -78,16 +78,16 @@
 	having a NULL user.
 	(user_settings_dialog_is_new): Remove, no longer used.
 
-2007-12-26  Carlos Garnacho  <carlosg@mate.org>
+2007-12-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* users-tool.c: Use HIG compliant capitalization for window title.
 	Fixes #474645.
 
-2007-12-18  Carlos Garnacho  <carlosg@mate.org>
+2007-12-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.3
 
-2007-12-12  Carlos Garnacho  <carlosg@mate.org>
+2007-12-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	Use editing mode, which will ask whether to update the configuration
 	if a modifiation is in course and the underlying configuration changes
@@ -103,42 +103,42 @@
 	* users-table.[ch] (users_table_clear): Added.
 	* users-tool.c (update_users) (update_groups): Use these here.
 
-2007-11-14  Carlos Garnacho  <carlosg@mate.org>
+2007-11-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2.1
 
-2007-11-14  Carlos Garnacho  <carlosg@mate.org>
+2007-11-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c: cover all PolicyKit usage under HAVE_POLKIT.
 
-2007-11-13  Carlos Garnacho  <carlosg@mate.org>
+2007-11-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.21.2
 
-2007-11-13  Carlos Garnacho  <carlosg@mate.org>
+2007-11-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* user-settings.c (user_settings_dialog_new)
 	(user_settings_dialog_get_data): disallow changing login name.
 	* group-settings.c (group_settings_dialog_new)
 	(group_settings_dialog_get_data): ditto for group name.
 
-2007-11-12  Carlos Garnacho  <carlosg@mate.org>
+2007-11-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* privileges-table.c: use a GtkTreeModelFilter so groups with no
 	description are not shown, but taken into account anyway.
 
-2007-11-12  Carlos Garnacho  <carlosg@mate.org>
+2007-11-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* user-settings.c (set_main_group): make sure that the combobox
 	selection is resetted if the user has no main group.
 
-2007-11-12  Carlos Garnacho  <carlosg@mate.org>
+2007-11-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c (on_user_settings_clicked): use OobsSelfConfig if the
 	tool is not authenticated and the edited user is the requester one.
 	* users-tool.[ch]: add OobsSelfConfig.
 
-2007-10-30  Carlos Garnacho  <carlosg@mate.org>
+2007-10-30  Carlos Garnacho  <carlosg@gnome.org>
 
         * Release 2.21.1
 
@@ -156,104 +156,104 @@
 	* main.c: Use gst_dialog_require_authentication_for_widgets() to
 	mark those widgets which need authentication to be used.
 
-2007-09-29  Carlos Garnacho  <carlosg@mate.org>
+2007-09-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* users-tool.c: Adapt to liboobs 2.21.x API change.
 
-2007-09-13  Carlos Garnacho  <carlosg@mate.org>
+2007-09-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* table.c (setup_shells_combo): setup text column properly, it was
 	relying on libglade before.
 
-2007-09-13  Carlos Garnacho  <carlosg@mate.org>
+2007-09-13  Carlos Garnacho  <carlosg@gnome.org>
 
 	* user-settings.c (check_user_delete): check whether the user is
 	active and show a warning if he/she is in the delete dialog.
 
-2007-09-06  Carlos Garnacho  <carlosg@mate.org>
+2007-09-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* users-tool.c (gst_users_tool_constructor): Added, get mateconf values
 	there, after tool->name has been set. Fixes #466183
 	(on_showall_changed): actually get the MateConfValue.
 
-2007-09-03  Carlos Garnacho  <carlosg@mate.org>
+2007-09-03  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.92
 
-2007-08-28  Carlos Garnacho  <carlosg@mate.org>
+2007-08-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.91
 
-2007-07-28  Carlos Garnacho  <carlosg@mate.org>
+2007-07-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.1
 
-2007-07-10  Carlos Garnacho  <carlosg@mate.org>
+2007-07-10  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.19.0
 
-2007-06-18  Carlos Garnacho  <carlosg@mate.org>
+2007-06-18  Carlos Garnacho  <carlosg@gnome.org>
 
 	* privileges-table.c: constify privilege descriptions array
 	(privilege_search): use correct key for bsearch(), fix a compiler
 	warning.
 
-2007-04-09  Carlos Garnacho  <carlosg@mate.org>
+2007-04-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.1
 
-2007-04-08  Carlos Garnacho  <carlosg@mate.org>
+2007-04-08  Carlos Garnacho  <carlosg@gnome.org>
 
 	* group-members-table.c (user_name_cell_data_func): Added, cell data
 	func to ensure that at least the login name will be shown if there's
 	no full name. Fixes #425020.
 
-2007-03-12  Carlos Garnacho  <carlosg@mate.org>
+2007-03-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.18.0
 
-2007-02-27  Carlos Garnacho  <carlosg@mate.org>
+2007-02-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.92
 
-2007-02-12  Carlos Garnacho  <carlosg@mate.org>
+2007-02-12  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.91
 
-2007-02-11  Carlos Garnacho  <carlosg@mate.org>
+2007-02-11  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c: mark a few dialogs as transient for another ones. Fixes
 	#392720.
 
-2007-01-09  Carlos Garnacho  <carlosg@mate.org>
+2007-01-09  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.5
 
-2007-01-08  Carlos Garnacho  <carlosg@mate.org>
+2007-01-08  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.4
 
-2006-12-01  Carlos Garnacho  <carlosg@mate.org>
+2006-12-01  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.3
 
-2006-11-30  Carlos Garnacho  <carlosg@mate.org>
+2006-11-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* main.c:
 	* callbacks.c (on_manage_groups_clicked) (on_groups_dialog_show_help):
 	show help correctly in the groups dialog. Fixes bug #378425.
 
-2006-11-15  Carlos Garnacho  <carlosg@mate.org>
+2006-11-15  Carlos Garnacho  <carlosg@gnome.org>
 
 	* user-settings.c (check_user_delete) (check_password): string
 	improvements (hopefully!)
 
-2006-11-14  Carlos Garnacho  <carlosg@mate.org>
+2006-11-14  Carlos Garnacho  <carlosg@gnome.org>
 
 	* user-settings.c (check_password): patch by Sebastien Bacher 
 	<seb128@debian.org> to allow random passwords. Fixes #355432.
 
-2006-11-10  Kjartan Maraas  <kmaraas@mate.org>
+2006-11-10  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* callbacks.c: (on_user_settings_profile_changed):
 	* main.c:
@@ -262,29 +262,29 @@
 	* user-settings.c: (set_main_group):
 	Fix compiler warnings.
 
-2006-11-05  Carlos Garnacho  <carlosg@mate.org>
+2006-11-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.17.2
 
-2006-11-04  Carlos Garnacho  <carlosg@mate.org>
+2006-11-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c, group-settings.c, groups-table.c, user-settings.c,
 	users-table.c: better memory management for OobsUser, OobsGroup and
 	OobsListIter objects inside tree models. plug some leaks on the way.
 
-2006-09-30  Carlos Garnacho  <carlosg@mate.org>
+2006-09-30  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.5
 
-2006-09-07  Carlos Garnacho  <carlosg@mate.org>
+2006-09-07  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.4
 
-2006-09-04  Carlos Garnacho  <carlosg@mate.org>
+2006-09-04  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.3
 
-2006-08-28  Carlos Garnacho  <carlosg@mate.org>
+2006-08-28  Carlos Garnacho  <carlosg@gnome.org>
 
 	Add back profiles support to users-admin, now the profiles will be a
 	read-only key file located in /etc/mate-system-tools/users/profiles,
@@ -312,23 +312,23 @@
 	(user_settings_apply_profile): added, changes the UI given a profile.
 	* users-tool.[ch]: add profiles object.
 
-2006-08-23  Carlos Garnacho  <carlosg@mate.org>
+2006-08-23  Carlos Garnacho  <carlosg@gnome.org>
 
 	* users-tool.c (gst_users_tool_update_config): added.
 
-2006-08-11  Carlos Garnacho  <carlosg@mate.org>
+2006-08-11  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.2
 
-2006-08-02  Carlos Garnacho  <carlosg@mate.org>
+2006-08-02  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.1
 
-2006-06-06  Carlos Garnacho  <carlosg@mate.org>
+2006-06-06  Carlos Garnacho  <carlosg@gnome.org>
 
 	* Release 2.15.0
 
-2006-06-05  Carlos Garnacho  <carlosg@mate.org>
+2006-06-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* md5.[ch], md5_crypt.c: deleted. Functionality moved to Liboobs
 	* profile-settings.[ch]: deleted
@@ -336,39 +336,39 @@
 	* user-group-xml.[ch]: ditto
 	* user_group.[ch]: ditto
 
-2006-06-05  Carlos Garnacho  <carlosg@mate.org>
+2006-06-05  Carlos Garnacho  <carlosg@gnome.org>
 
 	* callbacks.c (on_user_new_clicked) (on_user_settings_clicked): commit
 	the groups too
 
-2006-05-29  Carlos Garnacho  <carlosg@mate.org>
+2006-05-29  Carlos Garnacho  <carlosg@gnome.org>
 
 	* group-settings.c, privileges-table.c, user-settings.c: apply some
 	string improvement suggestions. Closes #340689
 
-2006-05-27  Carlos Garnacho  <carlosg@mate.org>
+2006-05-27  Carlos Garnacho  <carlosg@gnome.org>
 
         * table.c: set translation domain for action_groups. Closes #342497
 	(patch by Sebastien Bacher)
 
-2006-05-27  Carlos Garnacho  <carlosg@mate.org>
+2006-05-27  Carlos Garnacho  <carlosg@gnome.org>
 
 	* users-tool.c: set an icon name
 	* users.desktop.in.in: ditto, patch by Sebastien Bacher
 	<seb128@debian.org>
 
-2006-05-26  Carlos Garnacho  <carlosg@mate.org>
+2006-05-26  Carlos Garnacho  <carlosg@gnome.org>
 
 	* group-settings.[ch] (group_settings_find_new_gid): export this
 	function
 	* user-settings.c: use default group for new users, if necessary,
 	create a new one
 
-2006-05-22  Carlos Garnacho  <carlosg@mate.org>
+2006-05-22  Carlos Garnacho  <carlosg@gnome.org>
 
 	* privileges-table.c: remove an unnecessary cast
 
-2006-05-19  Carlos Garnacho  <carlosg@mate.org>
+2006-05-19  Carlos Garnacho  <carlosg@gnome.org>
 
 	* users-tool.[ch]: new GObject, inherits from GstTool, and provides
 	access to the necessary OobsObjects.
@@ -389,70 +389,70 @@
 	* table.[ch]: cleanup and code improvements. Use the same model in
 	several places, filtering where necessary.
 
-2006-03-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-03-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.14.0
 
-2006-01-31  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-31  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.2
 
-2006-01-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.1
 
-2006-01-16  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-16  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* user-settings.c, group-settings.c: use ngettext for a couple of
 	strings, closes bug #327109, suggested by Slobodan D. Sredojevic
 	<slobo@akrep.be>
 
-2006-01-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2006-01-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 2.13.0
 
-2005-11-28  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-11-28  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.1
 
-2005-09-04  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-09-04  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.4.0
 
-2005-08-23  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-23  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.92
 
-2005-08-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-08-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.2
 
-2005-07-26  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-26  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.1
 
-2005-07-15  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-15  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* user-settings.c: Changed a string. Fixes #308028
 
-2005-07-15  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-15  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c: Really close the profiles dialog when pressing the "X"
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0.1
 
-2005-07-05  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-07-05  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.3.0
 
-2005-06-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-06-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* group-settings.c, profile-settings.c, user-settings.c: added full
 	stop at the end of secondary text in GtkMessageDialogs. Fixes #152396
 
-2005-04-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-04-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* user-settings.c: applied string improvement suggestion from Kjartan. 
 	Fixes #301305
@@ -466,71 +466,71 @@
 
         * user-group-xml.c: plugged some leaks. Fixes #172158
 
-2005-03-07  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-07  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.2.0
 
-2005-03-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-03-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.92
 
-2005-02-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* user-group-xml.c, user-settings.[ch]: manage somewhat elegantly the 
 	"other data" field in the GECOS fields. Fixes #161082
 
-2005-02-08  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-02-08  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.91
 
-2005-01-31  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-31  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* passwd.c: detect whether to use md5 from the backend. Closes
 	#161269. Fixed a couple of leaks
 
-2005-01-25  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-25  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.90
 
-2005-01-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* group-settings.c, profile-settings.c, user-settings.c, user_group.c:
 	use new GtkMessageDialog API for HIG dialogs
 
-2005-01-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4.1
 
-2005-01-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c, privileges-table.[ch], user-settings.c: removed
 	redundant or duplicated code, fixed groups in profiles stuff
 
-2005-01-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2005-01-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.4
 
-2004-01-12  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-01-12  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* callbacks.c, privileges-table.[ch], profile-settings.c, table.c,
 	user-settings.c: Patch from Sivan Greenberg <sivan@workaround.org>
 	to add privileges to profiles, so users can have default groups
 
-2004-12-21  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-21  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1.3
 
-2004-12-06  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-12-06  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* privileges-table.[ch], user-settings.c: made it to preserve 
 	"unknown" groups
 	* user-group-xml.[ch]: readded user_get_groups
 
-2004-11-03  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-11-03  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.1
 
-2004-09-14  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-14  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* privileges-table.[ch]: added, it's the table which contains the
 	user privileges
@@ -538,15 +538,15 @@
 	* table.c, user-settings.c: used this new table
 	* main.c, user-group-xml.[ch]: removed unused code
 
-2004-09-13  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-13  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 1.0
 
-2004-09-01  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-09-01  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* Release 0.92
 
-2004-08-29  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-29  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* user-group-xml.c, user_group.c: fixed some memleaks
 
@@ -554,7 +554,7 @@
 
 	* Release 0.91.0
 
-2004-08-02  Carlos Garnacho Parro  <carlosg@mate.org>
+2004-08-02  Carlos Garnacho Parro  <carlosg@gnome.org>
 
 	* user-group-xml.c: remove user visibility check. Fixes #145049
 
@@ -1674,7 +1674,7 @@ Thu Jul 12 12:22:14 2001  Arturo Espinosa Aldama  <arturo@ximian.com>
 	* user_group.c (get_node_by_data): New function.
 	(get_group_by_data): Discarded, made other stuff use more general (get_node_by_data).
 
-2001-02-03  Christian Meyer  <chrisime@mate.org>
+2001-02-03  Christian Meyer  <chrisime@gnome.org>
 
 	* users.desktop.in: Added German strings.
 

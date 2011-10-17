@@ -1,6 +1,6 @@
 # Norwegian (nynorsk) translation of mateconf-editor.
 # Copyright (C) 2002-2004 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@mate.org>, 2002-2006.
+# Kjartan Maraas <kmaraas@gnome.org>, 2002-2006.
 # Eskild Hustvedt <i18n@zerodogg.org>, 2007
 # 
 msgid ""
@@ -48,8 +48,8 @@ msgstr "Kunne ikkje visa hjelp: %s"
 #: ../src/mateconf-editor-window.c:402
 msgid "translator-credits"
 msgstr ""
-"Kjartan Maraas <kmaraas@mate.org>\n"
-"Eskild Hustvedt <i18n@mate.org>"
+"Kjartan Maraas <kmaraas@gnome.org>\n"
+"Eskild Hustvedt <i18n@gnome.org>"
 
 #: ../src/mateconf-editor-window.c:407
 msgid "An editor for the MateConf configuration system."

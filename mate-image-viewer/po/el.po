@@ -9,7 +9,7 @@
 # kostas: updated translation, 25May2003, for Mate 2.4x.
 # kostas: updated translation, 18Jul2003.
 # Simos Xenitellis <simos@hellug.gr>, 2000, 2001, 2002.2003.
-# Kostas Papadimas <pkst@mate.org>, 2002,2003, 2004, 2005, 2006, 2007, 2008.
+# Kostas Papadimas <pkst@gnome.org>, 2002,2003, 2004, 2005, 2006, 2007, 2008.
 # Nikos Charonitakis <charosn@her.forthnet.gr>, 2005.
 # Pierros Papadeas <ppapadeas@gmail.com>, 2008.
 msgid ""
@@ -930,8 +930,8 @@ msgstr "_Επαναφορά στις προεπιλογές"
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα MATE\n"
-" Σίμος Ξενιτέλλης <simos@mate.org>\n"
-" Κώστας Παπαδήμας <pkst@mate.org>\n"
+" Σίμος Ξενιτέλλης <simos@gnome.org>\n"
+" Κώστας Παπαδήμας <pkst@gnome.org>\n"
 " Πιερρός Παπαδέας <ppapadeas@gmail.com> Μιχάλης Κοτσαρίνης <mk73628@gmail.com>\n"
 "\n"
 "Για περισσότερα δείτε http://www.mate.gr/"

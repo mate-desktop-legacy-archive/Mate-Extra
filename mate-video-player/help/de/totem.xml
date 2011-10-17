@@ -31,7 +31,7 @@
     <copyright>
       <year>2009</year>
       <holder>Philip Withnall</holder>
-    </copyright><copyright><year>2006</year><holder>Jan-Arne Petersen (jap@mate.org)</holder></copyright><copyright><year>2008, 2009, 2010</year><holder>Mario Blättermann (mariobl@mate.org)</holder></copyright><copyright><year>2009</year><holder>Stefan Horning (stefan@hornings.de)</holder></copyright>
+    </copyright><copyright><year>2006</year><holder>Jan-Arne Petersen (jap@gnome.org)</holder></copyright><copyright><year>2008, 2009, 2010</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright><copyright><year>2009</year><holder>Stefan Horning (stefan@hornings.de)</holder></copyright>
     <releaseinfo revision="2.26" role="final">
     	<ulink type="peerreview" url="http://bugzilla.mate.org/show_bug.cgi?id=574524"/>
     </releaseinfo>
@@ -72,7 +72,7 @@
 	<affiliation> 
   	  <orgname>MATE-Dokumentationsprojekt</orgname> 
 	</affiliation>
-	<email>cbhoh@mate.org</email>
+	<email>cbhoh@gnome.org</email>
       </author>
       <author>
 	<firstname>Baptiste</firstname> 
@@ -97,7 +97,7 @@
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-  	  <address> <email>translator@mate.org</email> </address> 
+  	  <address> <email>translator@gnome.org</email> </address> 
         </affiliation>
         <contrib>Latin translation</contrib>
       </othercredit>
@@ -120,7 +120,7 @@
         <revnumber>Totem Video-Player-Handbuch V2.0</revnumber> 
 	<date>August 2006</date> 
 	<revdescription> 
-	  <para role="author">Chee Bin HOH <email>cbhoh@mate.org</email></para>
+	  <para role="author">Chee Bin HOH <email>cbhoh@gnome.org</email></para>
 	  <para role="publisher">MATE-Dokumentationsprojekt</para>
         </revdescription> 
       </revision>

@@ -4,7 +4,7 @@
 # Funda Wang <fundawang@gmail.com>, 2003-2006.
 # 甘露(Gan Lu) <rhythm.gan@gmail.com>, 2008, 2009.
 # Fan Qijiang <fqj1994@linux.com>, 2010.
-# Aron Xu <aronxu@mate.org>, 2010.
+# Aron Xu <aronxu@gnome.org>, 2010.
 #
 msgid ""
 msgstr ""
@@ -328,7 +328,7 @@ msgstr ""
 "Yang Zhang <zyang@gmail.com> 2007.\n"
 "甘露(Gan Lu) <rhythm.gan@gmail.com>，2008, 2009\n"
 "Fan Qijiang <fqj1994@linux.com>, 2010\n"
-"Aron Xu <aronxu@mate.org>, 2010"
+"Aron Xu <aronxu@gnome.org>, 2010"
 
 #: ../src/dlg-add-files.c:97 ../src/dlg-add-folder.c:130
 msgid "Could not add the files to the archive"

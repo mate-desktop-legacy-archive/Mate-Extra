@@ -790,14 +790,14 @@
 2005-05-10  Sidnei da Silva <sidnei@awkly.org>
 
   * ChangeLog, Makefile.am, configure.in: reviewed by: Johan Dahlin
-  <johan@mate.org>  2005-05-09  Sidnei da Silva  <sidnei@awkly.org>  reviewed
-  by: Johan Dahlin <johan@mate.org>  * configure.in: * Makefile.am: Make MateConf
+  <johan@gnome.org>  2005-05-09  Sidnei da Silva  <sidnei@awkly.org>  reviewed
+  by: Johan Dahlin <johan@gnome.org>  * configure.in: * Makefile.am: Make MateConf
   build conditional
 
-2005-05-09  Johan Dahlin <johan@mate.org>
+2005-05-09  Johan Dahlin <johan@gnome.org>
 
   * ChangeLog, configure.in, matevfs/vfsmodule.c: Add MATE_VFS_OPEN_TRUNCATE.
-   2005-05-02  Johan Dahlin  <johan@mate.org>  * matevfs/vfsmodule.c: Add
+   2005-05-02  Johan Dahlin  <johan@gnome.org>  * matevfs/vfsmodule.c: Add
   MATE_VFS_OPEN_TRUNCATE.  * configure.in: Bump required mate-vfs version to
   2.9.3
 
@@ -2233,12 +2233,12 @@
   (_wrap_mate_about_new): get rid of the gtk_object_sink() call.  This is now
   handled automatically.
 
-2002-08-18  Jonathan Blandford <jrb@mate.org>
+2002-08-18  Jonathan Blandford <jrb@gnome.org>
 
   * ChangeLog, mate/ui.defs: Add a time_t parameter type.  Sat Aug 17 20:02:43
-  2002  Jonathan Blandford  <jrb@mate.org>  * codegen/argtypes.py
+  2002  Jonathan Blandford  <jrb@gnome.org>  * codegen/argtypes.py
   (TimeTArg.write_param): Add a time_t parameter type.  Sat Aug 17 19:59:02
-  2002  Jonathan Blandford  <jrb@mate.org>  * mate/ui.defs:
+  2002  Jonathan Blandford  <jrb@gnome.org>  * mate/ui.defs:
   s/MateDataEdit/MateDateEdit
 
 2002-08-01  Jonathan Blandford <jrb@redhat.com>

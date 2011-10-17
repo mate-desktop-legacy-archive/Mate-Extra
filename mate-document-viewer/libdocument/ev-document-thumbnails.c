@@ -1,6 +1,6 @@
 /* -*- Mode: C; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8; c-indent-level: 8 -*- */
 /*
- *  Copyright (C) 2004 Anders Carlsson <andersca@mate.org>
+ *  Copyright (C) 2004 Anders Carlsson <andersca@gnome.org>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

@@ -1565,10 +1565,10 @@ msgstr "བིཊི་གི་གོང་ཚད"
 #: ../grecord/src/gsr-window.c:1203
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr ""
 "ཇི་ནོམ་གྱི་དོན་ལུ་ སྒྲ་སྐད་བཟུང་འཕྲུལ་ཅིག\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1458
 msgid "Playing..."

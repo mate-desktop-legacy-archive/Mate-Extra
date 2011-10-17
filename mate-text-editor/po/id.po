@@ -1082,8 +1082,8 @@ msgstr "gedit adalah penyunting teks kelas ringan untuk Desktop MATE"
 #: ../gedit/gedit-commands-help.c:108
 msgid "translator-credits"
 msgstr ""
-"Mohammad DAMT <mdamt@mate.org>\n"
-"Ahmad Riza H Nst <rizahnst@mate.org>\n"
+"Mohammad DAMT <mdamt@gnome.org>\n"
+"Ahmad Riza H Nst <rizahnst@gnome.org>\n"
 "http://id.mate.org/"
 
 #: ../gedit/gedit-commands-search.c:111

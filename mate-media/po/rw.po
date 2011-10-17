@@ -1756,7 +1756,7 @@ msgstr "Igipimo"
 #, fuzzy
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr "A Ijwi kugirango"
 
 #: ../grecord/src/gsr-window.c:1467

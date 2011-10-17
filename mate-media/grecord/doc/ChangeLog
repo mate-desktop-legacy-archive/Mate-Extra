@@ -2,7 +2,7 @@
 
 	* fr/fr.po: Updated French translation
 
-2009-03-18  Kostas Papadimas  <pkst@mate.org>
+2009-03-18  Kostas Papadimas  <pkst@gnome.org>
 
 	* Makefile.am:
 	* el/el.po: Added Greek translation by Fotis Tsamis
@@ -19,7 +19,7 @@
 
 ==================== 2.25.92 ====================
 
-2009-02-24  Gil Forcada  <gforcada@mate.org>
+2009-02-24  Gil Forcada  <gforcada@gnome.org>
 
 	* ca/ca.po: Updated Catalan translation by Joan Duran.
 

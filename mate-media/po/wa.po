@@ -1551,7 +1551,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr "Èn eredjistreu d' sons po Mate"
 
 #: ../grecord/src/gsr-window.c:1467

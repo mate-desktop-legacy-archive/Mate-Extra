@@ -1,14 +1,14 @@
 # Dutch translation for mate-bluetooth
 #
-# Reinout van Schouwen <reinouts@mate.org>, 2008
-# Wouter Bolsterlee <wbolster@mate.org>, 2010
+# Reinout van Schouwen <reinouts@gnome.org>, 2008
+# Wouter Bolsterlee <wbolster@gnome.org>, 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-bluetooth\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-19 18:37+0200\n"
 "PO-Revision-Date: 2010-09-19 18:38+0200\n"
-"Last-Translator: Wouter Bolsterlee <wbolster@mate.org>\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"

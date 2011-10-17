@@ -3,7 +3,7 @@
 # Copyright (C) 2003-2007, 2008 Free Software Foundation, Inc.
 #
 # Tomas Kuliavas <tokul@users.sourceforge.net>, 2003.
-# Žygimantas Beručka <zygis@mate.org>, 2003-2007.
+# Žygimantas Beručka <zygis@gnome.org>, 2003-2007.
 # Justina Klingaitė <justina.klingaite@gmail.com>, 2005.
 # Gintautas Miliauskas <gintas@akl.lt>, 2006, 2008.
 msgid ""
@@ -39,7 +39,7 @@ msgid "translator-credits"
 msgstr ""
 "Paskutinieji vertėjai:\n"
 "Justina Klingaitė  <justina.klinagite@gmail.com>,\n"
-"Žygimantas Beručka <zygis@mate.org>\n"
+"Žygimantas Beručka <zygis@gnome.org>\n"
 "Gintautas Miliauskas <gintas@akl.lt>\n"
 "\n"
 "Ankstesnysis vertėjas:\n"

@@ -143,7 +143,7 @@
           <revnumber>Ръководство на Терминал на MATE</revnumber> 
           <date>Май 2000</date> 
           <revdescription> 
-             <para role="author">Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@mate.org</email></para>
+             <para role="author">Miguel de Icaza, Michael Zucchi, Alexander Kirollov <email>docs@gnome.org</email></para>
              <para role="publisher">Проектът за превод на MATE</para>
           </revdescription> 
         </revision> 

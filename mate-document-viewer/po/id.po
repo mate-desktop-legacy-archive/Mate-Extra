@@ -2,8 +2,8 @@
 # Copyright (C) 2005 THE Evince'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the Evince package.
 #
-# Ahmad Riza H Nst <rizahnst@mate.org>, 2006.
-# Mdamt <mdamt@mate.org>, 2005.
+# Ahmad Riza H Nst <rizahnst@gnome.org>, 2006.
+# Mdamt <mdamt@gnome.org>, 2005.
 # Andika Triwidada <andika@gmail.com>, 2009, 2010.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2010.
 msgid ""
@@ -1309,8 +1309,8 @@ msgstr "© 1996-2009 Para penulis Evince"
 #: ../shell/ev-window.c:4619
 msgid "translator-credits"
 msgstr ""
-"Mohammad DAMT <mdamt@mate.org>.\n"
-"Ahmad Riza H Nst <rizahnst@mate.org>.\n"
+"Mohammad DAMT <mdamt@gnome.org>.\n"
+"Ahmad Riza H Nst <rizahnst@gnome.org>.\n"
 "Andika Triwidada <andika@gmail.com>, 2009, 2010.\n"
 "Dirgita <dirgitadevina@yahoo.co.id>, 2010."
 

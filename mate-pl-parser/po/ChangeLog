@@ -1,4 +1,4 @@
-2009-04-21  Ignacio Casal Quinteiro  <icq@mate.org>
+2009-04-21  Ignacio Casal Quinteiro  <icq@gnome.org>
 
 	* gl.po: Updated Galician Translation by Fran Dieguez.
 
@@ -28,7 +28,7 @@
 
 	* ru.po: Updated Russian translation.
 
-2009-03-12  Kostas Papadimas <pkst@mate.org>
+2009-03-12  Kostas Papadimas <pkst@gnome.org>
 
 	* el.po: Updated Greek translation by Jennie Petoumenou.
 
@@ -111,7 +111,7 @@
 
 	* ja.po: Updated Japanese translation.
 
-2009-02-09  Gil Forcada  <gforcada@mate.org>
+2009-02-09  Gil Forcada  <gforcada@gnome.org>
 
 	* ps.po: Added Pashto translation on behalf of Zabeeh Khan.
 	* LINGUAS: Added ps.
@@ -144,7 +144,7 @@
 
         * zh_CN.po: Updated Chinese Simplified translation
 
-2009-01-10  Gil Forcada  <gforcada@mate.org>
+2009-01-10  Gil Forcada  <gforcada@gnome.org>
 
 	* ca.po: Updated Catalan translation.
 
@@ -156,11 +156,11 @@
 
 	* sv.po: Updated Swedish translation.
 
-2009-01-05  Kjartan Maraas  <kmaraas@mate.org>
+2009-01-05  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
-2009-01-04  Leonardo Ferreira Fontenelle  <leonardof@mate.org>
+2009-01-04  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation. Contributed by
 	César Veiga.
@@ -273,7 +273,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2008-08-10  Gil Forcada  <gforcada@mate.org>
+2008-08-10  Gil Forcada  <gforcada@gnome.org>
 
 	* ca.po: Updated Catalan translation.
 
@@ -289,7 +289,7 @@
 
 	* gu.po: Committed Gujarati Translation.
 
-2008-08-06  Og Maciel <ogmaciel@mate.org>
+2008-08-06  Og Maciel <ogmaciel@gnome.org>
 
 	* pt_BR.po: Updated translation by Fábio Nogueira.
 
@@ -305,7 +305,7 @@
 
 	* fr.po: Updated French translation.
 
-2008-07-24  Leonardo Ferreira Fontenelle  <leonardof@mate.org>
+2008-07-24  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
 	* pt_BR.po: Terminology improvements by Vladimir Melo.
 
@@ -349,7 +349,7 @@
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2008-05-08  Vincent van Adrighem  <adrighem@mate.org>
+2008-05-08  Vincent van Adrighem  <adrighem@gnome.org>
 
 	* nl.po: Translation updated by Tino Meinen.
 
@@ -357,7 +357,7 @@
 
 	* gl.po: Updated Galician Translation.
 
-2008-04-21  Kjartan Maraas  <kmaraas@mate.org>
+2008-04-21  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -369,11 +369,11 @@
 
 	* es.po: Updated Spanish translation
 
-2008-03-31  Eskild Hustvedt  <eskildh@mate.org>
+2008-03-31  Eskild Hustvedt  <eskildh@gnome.org>
 
 	* nn.po: Updated the Norwegian Nynorsk translation
 
-2008-03-16  Simos Xenitellis  <simos@mate.org>
+2008-03-16  Simos Xenitellis  <simos@gnome.org>
 
 	* el.po: Updated Greek translation.
 

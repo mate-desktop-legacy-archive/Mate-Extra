@@ -1,7 +1,7 @@
 /* ev-annotation.c
  *  this file is part of evince, a mate document viewer
  *
- * Copyright (C) 2009 Carlos Garcia Campos <carlosgc@mate.org>
+ * Copyright (C) 2009 Carlos Garcia Campos <carlosgc@gnome.org>
  * Copyright (C) 2007 Iñigo Martinez <inigomartinez@gmail.com>
  *
  * Evince is free software; you can redistribute it and/or modify it

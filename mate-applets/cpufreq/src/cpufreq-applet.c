@@ -1,6 +1,6 @@
 /*
  * MATE CPUFreq Applet 
- * Copyright (C) 2004 Carlos Garcia Campos <carlosgc@mate.org>
+ * Copyright (C) 2004 Carlos Garcia Campos <carlosgc@gnome.org>
  *
  *  This library is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU General Public
@@ -16,7 +16,7 @@
  *  License along with this library; if not, write to the Free
  *  Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * Authors : Carlos García Campos <carlosgc@mate.org>
+ * Authors : Carlos García Campos <carlosgc@gnome.org>
  */
 
 #ifdef HAVE_CONFIG_H
@@ -589,11 +589,11 @@ cpufreq_applet_about_cb (GtkAction     *action,
                          CPUFreqApplet *applet)
 {
         static const gchar *const authors[] = {
-                "Carlos Garcia Campos <carlosgc@mate.org>",
+                "Carlos Garcia Campos <carlosgc@gnome.org>",
                 NULL
         };
         static const gchar *const documenters[] = {
-                "Carlos Garcia Campos <carlosgc@mate.org>",
+                "Carlos Garcia Campos <carlosgc@gnome.org>",
                 "Davyd Madeley <davyd@madeley.id.au>",
                 NULL
         };

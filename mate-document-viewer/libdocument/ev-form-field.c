@@ -1,7 +1,7 @@
 /* -*- Mode: C; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8; c-indent-level: 8 -*- */
 /* this file is part of evince, a mate document viewer
  *
- *  Copyright (C) 2007 Carlos Garcia Campos <carlosgc@mate.org>
+ *  Copyright (C) 2007 Carlos Garcia Campos <carlosgc@gnome.org>
  *  Copyright (C) 2006 Julien Rebetez
  *
  * Evince is free software; you can redistribute it and/or modify it

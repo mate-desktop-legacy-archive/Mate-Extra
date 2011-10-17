@@ -1,5 +1,5 @@
 # Biełaruski pierakład mateconf-editor
-# Ihar Hračyška <iharh@mate.org>
+# Ihar Hračyška <iharh@gnome.org>
 #
 msgid ""
 msgstr ""
@@ -47,7 +47,7 @@ msgstr "Niemahčyma adlustravać dapamohu: %s"
 
 #: ../src/mateconf-editor-window.c:402
 msgid "translator-credits"
-msgstr "Ihar Hračyška <iharh@mate.org>"
+msgstr "Ihar Hračyška <iharh@gnome.org>"
 
 #: ../src/mateconf-editor-window.c:407
 msgid "An editor for the MateConf configuration system."

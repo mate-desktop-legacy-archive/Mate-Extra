@@ -4,7 +4,7 @@
 # documentation package.
 #
 # Claude Paroz <claude@2xlibre.net>, 2006-2009.
-# Vincent Untz <vuntz@mate.org>, 2007.
+# Vincent Untz <vuntz@gnome.org>, 2007.
 #
 msgid ""
 msgstr ""
@@ -1744,4 +1744,4 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Claude Paroz <claude@2xlibre.net>, 2006-2009\n"
-"Vincent Untz <vuntz@mate.org>, 2007"
+"Vincent Untz <vuntz@gnome.org>, 2007"

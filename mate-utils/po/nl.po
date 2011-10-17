@@ -5,8 +5,8 @@
 #
 # Jan-Willem Harmanny <jwharmanny@hotmail.com>, 2003.
 # Tino Meinen <a.t.meinen@chello.nl>, 2004–2008.
-# Vincent van Adrighem <adrighem@mate.org>, 2006.
-# Wouter Bolsterlee <wbolster@mate.org>, 2006–2009
+# Vincent van Adrighem <adrighem@gnome.org>, 2006.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2009
 # Hannie Dumoleyn <lafeber-dumoleyn2@zonnet.nl>, 2010
 #
 # side bar = side pane = zijpaneel

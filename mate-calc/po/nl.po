@@ -5,7 +5,7 @@
 # Vincent van Adrighem <V.vanAdrighem@dirck.mine.nu>, 2003.
 # Tino Meinen <tino.meinen@gmail.com>, 2003–2006, 2008, 2009.
 # Jaap Woldringh <jjh.woldringh@planet.nl>, 2007.
-# Wouter Bolsterlee <wbolster@mate.org>, 2007, 2009.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2007, 2009.
 #
 msgid ""
 msgstr ""

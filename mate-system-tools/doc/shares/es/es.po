@@ -9,7 +9,7 @@ msgstr ""
 "POT-Creation-Date: 2010-05-24 10:07+0000\n"
 "PO-Revision-Date: 2010-05-25 08:46+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.mate.org>\n"
-"Language-Team: Español <mate-es-list@mate.org>\n"
+"Language-Team: Español <mate-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -159,8 +159,8 @@ msgid "August 2006"
 msgstr "Agosto de 2006"
 
 #: C/shares-admin.xml:68(para) C/shares-admin.xml:69(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/shares-admin.xml:74(releaseinfo)
 msgid ""

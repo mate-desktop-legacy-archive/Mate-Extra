@@ -1548,10 +1548,10 @@ msgstr "Počet bitov:"
 #: ../grecord/src/gsr-window.c:1202
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr ""
 "Záznam zvuku pre MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 
 #: ../grecord/src/gsr-window.c:1463
 msgid "Playing..."

@@ -5,7 +5,7 @@
 #
 # Maintainer: Miloš Popović <gpopac@gmail.com>
 # Prevous maintainer: Veljko M. Stanojević <veljko@vms.homelinux.net>
-# Reviewed on 2005-07-11 by Danilo Šegan <danilo@mate.org>
+# Reviewed on 2005-07-11 by Danilo Šegan <danilo@gnome.org>
 # Reviewed on 2005-09-03 by Andrija Zarić <andrija@gmail.com>
 # Miloš Popović <gpopac@gmail.com>, 2010.
 #
@@ -1227,7 +1227,7 @@ msgstr "Sva prava zadržana © 2002–2009 Bastijen Nosera (Bastien Nocera)"
 msgid "translator-credits"
 msgstr ""
 "Veljko Stanojević <veljko@vms.homelinux.net>\n"
-"Danilo Šegan <danilo@mate.org>\n"
+"Danilo Šegan <danilo@gnome.org>\n"
 "Andrija Zarić <andrija@gmail.com>\n"
 "Slobodan D. Sredojević <slobo@akrep.be>\n"
 "Miloš Popović <gpopac@gmail.com>\n"

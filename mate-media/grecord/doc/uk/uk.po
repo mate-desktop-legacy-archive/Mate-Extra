@@ -1216,8 +1216,8 @@ msgstr "Максим Дзюманенко <mvd@mylinux.ua>, 2004, 2005."
 #~ msgid "Erik Jarvi"
 #~ msgstr "Erik Jarvi"
 
-#~ msgid "uraeus@mate.org"
-#~ msgstr "uraeus@mate.org"
+#~ msgid "uraeus@gnome.org"
+#~ msgstr "uraeus@gnome.org"
 
 #~ msgid "Michael"
 #~ msgstr "Michael"
@@ -1243,8 +1243,8 @@ msgstr "Максим Дзюманенко <mvd@mylinux.ua>, 2004, 2005."
 #~ msgid "25 October 2003"
 #~ msgstr "20 Жовтня 2003"
 
-#~ msgid "Christian Schaller <email>uraeus@mate.org</email>"
-#~ msgstr "Christian Schaller <email>uraeus@mate.org</email>"
+#~ msgid "Christian Schaller <email>uraeus@gnome.org</email>"
+#~ msgstr "Christian Schaller <email>uraeus@gnome.org</email>"
 
 #~ msgid "1.0"
 #~ msgstr "1.0"

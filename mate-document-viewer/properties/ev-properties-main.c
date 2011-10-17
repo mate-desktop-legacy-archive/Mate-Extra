@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2000, 2001 Eazel Inc.
- * Copyright (C) 2003  Andrew Sobala <aes@mate.org>
+ * Copyright (C) 2003  Andrew Sobala <aes@gnome.org>
  * Copyright (C) 2005  Bastien Nocera <hadess@hadess.net>
  *
  * This library is free software; you can redistribute it and/or

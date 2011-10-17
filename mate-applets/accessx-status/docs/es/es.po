@@ -473,5 +473,5 @@ msgid "translator-credits"
 msgstr ""
 "Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>, 2007\n"
 "María Majadas <maria.majadas@hispalinux.es>, 2006\n"
-"Francisco Javier F. Serrador <serrador@mate.org>, 2005"
+"Francisco Javier F. Serrador <serrador@gnome.org>, 2005"
 

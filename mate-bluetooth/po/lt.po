@@ -2,7 +2,7 @@
 # Copyright (C) 2009 Bluetooth Applet 1.8
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # Tadas Masiulionis <tadzikaz@gmail.com>, 2009.
-# Žygimantas Beručka <zygis@mate.org>, 2009, 2010.
+# Žygimantas Beručka <zygis@gnome.org>, 2009, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: Bluetooth Applet 1.8\n"
@@ -10,7 +10,7 @@ msgstr ""
 "bluetooth&component=general\n"
 "POT-Creation-Date: 2010-03-23 17:11+0000\n"
 "PO-Revision-Date: 2010-03-28 17:49+0300\n"
-"Last-Translator: Žygimantas Beručka <zygis@mate.org>\n"
+"Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
 "Language-Team: Lithuanian <mate-lt@lists.akl.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -890,7 +890,7 @@ msgstr "Bluetooth valdymo skydelis"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
-#~ "Tadas Masiulionis <tadzikaz@gmail.com>Žygimantas Beručka <zygis@mate.org>"
+#~ "Tadas Masiulionis <tadzikaz@gmail.com>Žygimantas Beručka <zygis@gnome.org>"
 
 #~ msgid "MATE Bluetooth home page"
 #~ msgstr "MATE Bluetooth tinklalapis"

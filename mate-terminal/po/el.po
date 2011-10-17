@@ -21,7 +21,7 @@
 # Nikos Charonitakis  <charosn@her.forthnet.gr>, 2004, 2005.
 # Athanasios Lefteris <alefteris@gmail.com>, 2008.
 # Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
-# Kostas Papadimas <pkst@mate.org>, 2003, 2004, 2005, 2006, 2008, 2010.
+# Kostas Papadimas <pkst@gnome.org>, 2003, 2004, 2005, 2006, 2008, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-terminal.HEAD\n"
@@ -2822,8 +2822,8 @@ msgstr "Προσομοιωτής τερματικού για την επιφάν
 #: ../src/terminal-window.c:3938
 msgid "translator-credits"
 msgstr ""
-"Σίμος Ξενιτέλλης <simos@mate.org>\n"
-"Κώστας Παπαδήμας <pkst@mate.org>\n"
+"Σίμος Ξενιτέλλης <simos@gnome.org>\n"
+"Κώστας Παπαδήμας <pkst@gnome.org>\n"
 "Νίκος Χαρωνιτάκης <charosn@her.forthnet.gr>\n"
 "Τζένη Πετούμενου <epetoumenou@gmail.com>\n"
 "Μιχάλης Κοτσαρίνης <mk73628@gmail.com>"

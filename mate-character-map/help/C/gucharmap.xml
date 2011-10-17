@@ -64,7 +64,7 @@
         <surname>HOH</surname> 
         <affiliation> 
           <orgname>MATE Documentation Project</orgname> 
-          <address> <email>cbhoh@mate.org</email> </address> 
+          <address> <email>cbhoh@gnome.org</email> </address> 
         </affiliation> 
       </author> 
 
@@ -74,7 +74,7 @@
           <surname>Writer 1</surname> 
           <affiliation> 
             <orgname>MATE Documentation Project</orgname> 
-            <address> <email>doc-writer1@mate.org</email> </address> 
+            <address> <email>doc-writer1@gnome.org</email> </address> 
           </affiliation> 
       </author> 
 -->
@@ -86,7 +86,7 @@
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-          <address> <email>translator@mate.org</email> </address> 
+          <address> <email>translator@gnome.org</email> </address> 
 	</affiliation>
 	<contrib>Latin translation</contrib>
       </othercredit>
@@ -112,7 +112,7 @@
 	<date>October 2003</date> 
 	<revdescription> 
           <para role="author">Chee Bin HOH
-	    <email>cbhoh@mate.org</email>
+	    <email>cbhoh@gnome.org</email>
           </para>
           <para role="publisher">MATE Documentation Project</para>
         </revdescription> 

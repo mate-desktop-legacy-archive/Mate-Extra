@@ -1,6 +1,6 @@
 /*
  * MATE CPUFreq Applet
- * Copyright (C) 2008 Carlos Garcia Campos <carlosgc@mate.org>
+ * Copyright (C) 2008 Carlos Garcia Campos <carlosgc@gnome.org>
  *
  *  This library is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU General Public

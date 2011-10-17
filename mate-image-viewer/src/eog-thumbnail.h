@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2000-2007 The Free Software Foundation
  *
- * Author: Lucas Rocha <lucasr@mate.org>
+ * Author: Lucas Rocha <lucasr@gnome.org>
  *
  * Based on caja code (libcaja-private/caja-thumbnail.c) by:
  * 	- Andy Hertzfeld <andy@eazel.com>

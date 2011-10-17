@@ -1,11 +1,11 @@
 /* this file is part of evince, a mate document viewer
  *
  *  Copyright (C) 2004 Red Hat, Inc.
- *  Copyright (C) 2004, 2005 Anders Carlsson <andersca@mate.org>
+ *  Copyright (C) 2004, 2005 Anders Carlsson <andersca@gnome.org>
  *
  *  Authors:
  *    Jonathan Blandford <jrb@alum.mit.edu>
- *    Anders Carlsson <andersca@mate.org>
+ *    Anders Carlsson <andersca@gnome.org>
  *
  * Evince is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by

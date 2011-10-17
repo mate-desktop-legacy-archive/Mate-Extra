@@ -4,7 +4,7 @@
 # This file is distributed under the same license as the totem package.
 #
 # Artūras Šlajus <x11@h2o.pieva.net>, 2004.
-# Žygimantas Beručka <zygis@mate.org>, 2004-2007.
+# Žygimantas Beručka <zygis@gnome.org>, 2004-2007.
 # Justina Klingaitė <justina.klingaite@gmail.com>, 2005.
 # Gintautas Miliauskas <gintas@akl.lt>, 2007, 2008, 2009.
 # Marius Gedminas <marius@gedmin.as>, 2007.
@@ -1214,7 +1214,7 @@ msgstr "Autorinės teisės © 2002-2009 Bastien Nocera"
 msgid "translator-credits"
 msgstr ""
 "Paskutinysis vertėjas:\n"
-"Žygimantas Beručka <zygis@mate.org>,\n"
+"Žygimantas Beručka <zygis@gnome.org>,\n"
 "\n"
 "Vertėjai:\n"
 "Gintautas Miliauskas <gintas@akl.lt>\n"

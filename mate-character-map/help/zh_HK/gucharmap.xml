@@ -32,7 +32,7 @@
 	any of this. -->
 
     <authorgroup><author><firstname>Sun</firstname><surname>MATE 文件小組</surname><affiliation><orgname>Sun Microsystems</orgname></affiliation> </author><author><firstname>Chee Bin</firstname><surname>HOH</surname> <affiliation> <orgname>MATE 文件專案</orgname> 
-          <address><email>cbhoh@mate.org</email> </address>
+          <address><email>cbhoh@gnome.org</email> </address>
         </affiliation>
       </author>
 
@@ -42,7 +42,7 @@
           <surname>Writer 1</surname> 
           <affiliation> 
             <orgname>MATE Documentation Project</orgname> 
-            <address> <email>doc-writer1@mate.org</email> </address> 
+            <address> <email>doc-writer1@gnome.org</email> </address> 
           </affiliation> 
       </author> 
 -->
@@ -54,7 +54,7 @@
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-          <address> <email>translator@mate.org</email> </address> 
+          <address> <email>translator@gnome.org</email> </address> 
 	</affiliation>
 	<contrib>Latin translation</contrib>
       </othercredit>
@@ -69,7 +69,7 @@
         </revdescription>
       </revision>
       <revision><revnumber>統一碼字元對映手冊 V2.0</revnumber> <date>2003 年 10 月</date> <revdescription> 
-          <para role="author">Chee Bin HOH<email>cbhoh@mate.org</email>
+          <para role="author">Chee Bin HOH<email>cbhoh@gnome.org</email>
           </para>
           <para role="publisher">MATE 文件專案</para>
         </revdescription>

@@ -19,7 +19,7 @@
  * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
  * Boston, MA 02110-1301  USA.
  *
- * Author:  Zeeshan Ali (Khattak) <zeeshanak@mate.org>
+ * Author:  Zeeshan Ali (Khattak) <zeeshanak@gnome.org>
  *          Peter Enseleit <penseleit@gmail.com>
  *          Roberto Majadas <telemaco@openshine.com>
  *

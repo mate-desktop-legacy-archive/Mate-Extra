@@ -72,7 +72,7 @@
 	<affiliation> 
   	  <orgname>Dokumentační projekt MATE</orgname> 
 	</affiliation>
-	<email>cbhoh@mate.org</email>
+	<email>cbhoh@gnome.org</email>
       </author>
       <author>
 	<firstname>Baptiste</firstname> 
@@ -97,7 +97,7 @@
 	<surname>Translator 1</surname> 
 	<affiliation> 
           <orgname>Latin Translation Team</orgname> 
-  	  <address> <email>translator@mate.org</email> </address> 
+  	  <address> <email>translator@gnome.org</email> </address> 
         </affiliation>
         <contrib>Latin translation</contrib>
       </othercredit>
@@ -120,7 +120,7 @@
         <revnumber>Příručka V2.0 k Přehrávači filmů Totem</revnumber> 
 	<date>Srpen 2006</date> 
 	<revdescription> 
-	  <para role="author">Chee Bin HOH <email>cbhoh@mate.org</email></para>
+	  <para role="author">Chee Bin HOH <email>cbhoh@gnome.org</email></para>
 	  <para role="publisher">Dokumentační projekt MATE</para>
         </revdescription> 
       </revision>

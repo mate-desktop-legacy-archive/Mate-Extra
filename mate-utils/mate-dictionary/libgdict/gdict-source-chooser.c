@@ -1,6 +1,6 @@
 /* gdict-source-chooser.h - display widget for dictionary sources
  *
- * Copyright (C) 2007  Emmanuele Bassi <ebassi@mate.org>
+ * Copyright (C) 2007  Emmanuele Bassi <ebassi@gnome.org>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public

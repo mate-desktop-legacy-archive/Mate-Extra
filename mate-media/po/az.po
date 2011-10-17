@@ -1550,7 +1550,7 @@ msgstr "Yeniləmə sıxlığı:"
 #, fuzzy
 msgid ""
 "A sound recorder for MATE\n"
-" mate-media@mate.org"
+" mate-media@gnome.org"
 msgstr "MATE üçün səs qeyd edici proqram"
 
 #: ../grecord/src/gsr-window.c:1467

@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the Caja Sendto package.
 # Frank Arnold <frank@scirocco-5v-turbo.de>, 2004-2008.
 # Gerhard Stein <gerstrong@gmail.com>, 2008.
-# Mario Blättermann <mariobl@mate.org>, 2008, 2009.
+# Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
 #
 msgid ""
 msgstr ""
@@ -11,8 +11,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-13 21:37+0200\n"
 "PO-Revision-Date: 2009-04-13 21:41+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@mate.org>\n"
-"Language-Team: German <mate-de@mate.org>\n"
+"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

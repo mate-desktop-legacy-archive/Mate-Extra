@@ -15,7 +15,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
  *
- * Authors: Carlos Garnacho Parro  <carlosg@mate.org>
+ * Authors: Carlos Garnacho Parro  <carlosg@gnome.org>
  */
 
 #ifdef HAVE_CONFIG_H
@@ -1006,7 +1006,7 @@ on_modem_applet_about_clicked (GtkAction   *action,
 			       ModemApplet *applet)
 {
   const gchar *authors[] = {
-    "Carlos Garnacho Parro <carlosg@mate.org>",
+    "Carlos Garnacho Parro <carlosg@gnome.org>",
     NULL
   };
 /*

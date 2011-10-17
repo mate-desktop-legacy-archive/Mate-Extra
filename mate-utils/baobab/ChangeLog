@@ -5,7 +5,7 @@
 	* src/gedit-spinner.c: (#578631) Throbber rest icon not found
 
 
-2009-04-07  Cosimo Cecchi  <cosimoc@mate.org>
+2009-04-07  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* data/Makefile.am:
 	* data/baobab.glade:
@@ -35,7 +35,7 @@
 	* src/baobab-prefs.c: (fill_props_model):
 	Do not show gvfs fuse filesystem in pref dialog (#574105)
 
-2009-02-04  Vincent Untz  <vuntz@mate.org>
+2009-02-04  Vincent Untz  <vuntz@gnome.org>
 
 	* src/baobab-chart.c: (baobab_chart_get_pixbuf),
 	(baobab_chart_get_summary_mode), (baobab_chart_is_frozen),
@@ -55,7 +55,7 @@
 	on a partition which is NOT included in "folders to scan"
 	(#567834)
 	
-2008-12-03  Cosimo Cecchi  <cosimoc@mate.org>
+2008-12-03  Cosimo Cecchi  <cosimoc@gnome.org>
 
 	* src/baobab-cell-renderer-progress.h:
 	* src/baobab-chart.h:
@@ -81,13 +81,13 @@
 	* src/baobab.c: (baobab_is_excluded_location):
 	Fix logic bug that made it return always FALSE.
 
-2008-10-26  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-26  Cosimo Cecchi  <cosimoc@gnome.org>
 
         * src/baobab-utils.c:
         (baobab_help_display):
         Plug a mem leak.
 
-2008-10-26  Cosimo Cecchi  <cosimoc@mate.org>
+2008-10-26  Cosimo Cecchi  <cosimoc@gnome.org>
 
         * src/Makefile.am:
         * src/baobab-mount-operation.c: Removed.
@@ -589,7 +589,7 @@
 	* src/callbacks.c: (on_about_activate):
 	Updated copyright information
 
-2007-09-05  Emmanuele Bassi  <ebassi@mate.org>
+2007-09-05  Emmanuele Bassi  <ebassi@gnome.org>
 
 	* src/baobab-scan.c:
 	BUGZILLA #473833 - Infinite recursion in /sys
@@ -1710,7 +1710,7 @@
 
         Bumped post-release version
 
-2005-11-14  Guilherme de S. Pastore  <gpastore@mate.org>
+2005-11-14  Guilherme de S. Pastore  <gpastore@gnome.org>
 
 	* baobab.glade: replace "KB" with "kB" (K is Kelvin,
 	k is kilo), fixes bug #321402
@@ -1722,7 +1722,7 @@
         
         Released v.2.0.1
 
-2005-11-14  Guilherme de S. Pastore  <gpastore@mate.org>
+2005-11-14  Guilherme de S. Pastore  <gpastore@gnome.org>
 
 	* configure.in: added pt_BR to ALL_LINGUAS.
 
@@ -2254,7 +2254,7 @@
 
         Changed website url address.
 
-2005-10-19  Adam Weinberger  <adamw@mate.org>
+2005-10-19  Adam Weinberger  <adamw@gnome.org>
 
 	* configure.in: Added en_CA to ALL_LINGUAS.
 

@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2006-2008 The Free Software Foundation
  *
- * Author: Claudio Saavedra <csaavedra@mate.org>
+ * Author: Claudio Saavedra <csaavedra@gnome.org>
  *
  * Based on code by: Jens Finke <jens@triq.net>
  *

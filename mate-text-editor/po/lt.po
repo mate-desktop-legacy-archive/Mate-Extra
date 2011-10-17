@@ -5,7 +5,7 @@
 #
 # Gediminas Paulauskas <menesis@chatsubo.lt>, 2000-2003.
 # Vaidotas Zemlys <mpiktas@delfi.lt>, 2003.
-# Žygimantas Beručka <zygis@mate.org>, 2003-2006.
+# Žygimantas Beručka <zygis@gnome.org>, 2003-2006.
 # Vytautas Povilaitis <punktyras@nkm.lt>, 2007.
 # Gintautas Miliauskas <gintas@akl.lt>, 2007, 2008, 2010.
 msgid ""
@@ -1104,7 +1104,7 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 "Paskutinysis vertėjas:\n"
-"Žygimantas Beručka <zygis@mate.org>\n"
+"Žygimantas Beručka <zygis@gnome.org>\n"
 "\n"
 "Ankstesnieji vertėjai:\n"
 "Gediminas Paulauskas <menesis@chatsubo.lt>,\n"

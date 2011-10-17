@@ -175,8 +175,8 @@ msgid "Cutler"
 msgstr "Cutler"
 
 #: C/mate-system-log.xml:76(email)
-msgid "pcutler@mate.org"
-msgstr "pcutler@mate.org"
+msgid "pcutler@gnome.org"
+msgstr "pcutler@gnome.org"
 
 #: C/mate-system-log.xml:81(firstname)
 msgid "Vincent"
@@ -199,8 +199,8 @@ msgid "October 2009"
 msgstr "2009年10月"
 
 #: C/mate-system-log.xml:107(para)
-msgid "Paul Cutler <email>pcutler@mate.org</email>"
-msgstr "Paul Cutler <email>pcutler@mate.org</email>"
+msgid "Paul Cutler <email>pcutler@gnome.org</email>"
+msgstr "Paul Cutler <email>pcutler@gnome.org</email>"
 
 #: C/mate-system-log.xml:114(revnumber)
 msgid "System Log Viewer Manual V2.4"

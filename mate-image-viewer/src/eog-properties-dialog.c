@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2006 The Free Software Foundation
  *
- * Author: Lucas Rocha <lucasr@mate.org>
+ * Author: Lucas Rocha <lucasr@gnome.org>
  *         Hubert Figuiere <hub@figuiere.net> (XMP support)
  *
  * This program is free software; you can redistribute it and/or modify

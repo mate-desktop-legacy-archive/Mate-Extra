@@ -134,8 +134,8 @@ msgid "McCance"
 msgstr "McCance"
 
 #: C/stickynotes_applet.xml:67(email)
-msgid "shaunm@mate.org"
-msgstr "shaunm@mate.org"
+msgid "shaunm@gnome.org"
+msgstr "shaunm@gnome.org"
 
 #: C/stickynotes_applet.xml:71(firstname)
 msgid "Angela"

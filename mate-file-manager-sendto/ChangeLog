@@ -372,7 +372,7 @@ Date:   Wed May 26 23:06:22 2010 +0300
  1 files changed, 70 insertions(+), 91 deletions(-)
 
 commit c20884380f7627582f9bd4f954d51c81b2f94a84
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Thu May 13 18:12:50 2010 -0400
 
     Updated Shavian translation
@@ -381,7 +381,7 @@ Date:   Thu May 13 18:12:50 2010 -0400
  1 files changed, 1 insertions(+), 2 deletions(-)
 
 commit 8d83d4a35385095ec3d7650478ae1c9a4b604144
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Wed May 12 18:41:42 2010 -0400
 
     Updated Shavian transliteration
@@ -400,7 +400,7 @@ Date:   Sat May 1 08:52:36 2010 +0200
  2 files changed, 294 insertions(+), 0 deletions(-)
 
 commit 92ef2aa0f16bc56e30885e11e24cebd54e258131
-Author: Gil Forcada <gforcada@mate.org>
+Author: Gil Forcada <gforcada@gnome.org>
 Date:   Wed Apr 21 22:52:59 2010 +0200
 
     Added ca@valencia
@@ -467,7 +467,7 @@ Date:   Mon Mar 29 17:20:27 2010 +0100
  2 files changed, 10 insertions(+), 1 deletions(-)
 
 commit 9b6d0bccbe02d746b5483eb809c3ca162026203e
-Author: Kostas Papadimas <pkst@mate.org>
+Author: Kostas Papadimas <pkst@gnome.org>
 Date:   Sun Mar 28 11:40:35 2010 +0300
 
     Updated Greek translation
@@ -503,7 +503,7 @@ Date:   Wed Mar 24 14:43:39 2010 +0100
  1 files changed, 9 insertions(+), 9 deletions(-)
 
 commit f4768fce52e9e46b70060aabedbec9b544d3ccf6
-Author: Wouter Bolsterlee <wbolster@mate.org>
+Author: Wouter Bolsterlee <wbolster@gnome.org>
 Date:   Sat Mar 20 17:02:15 2010 +0100
 
     Dutch translation updated by Wouter Bolsterlee
@@ -756,7 +756,7 @@ Date:   Tue Jan 5 13:58:24 2010 +0200
  1 files changed, 250 insertions(+), 71 deletions(-)
 
 commit 5a2affe403664336b651fde9cba94b8341b41b2a
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:   Fri Nov 27 19:31:22 2009 -0500
 
     Shavian translation
@@ -863,7 +863,7 @@ Date:   Mon Nov 16 13:00:20 2009 +0000
  1 files changed, 3 insertions(+), 0 deletions(-)
 
 commit cbaabf29fc800f2a5c1999cce354173dbc7234fe
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:   Sun Nov 15 14:51:20 2009 +0100
 
     Updated Norwegian bokmål translation.
@@ -1188,7 +1188,7 @@ Date:   Mon Sep 21 13:04:10 2009 +0100
  2 files changed, 13 insertions(+), 1 deletions(-)
 
 commit f47bee08aeb34313554aa79c9aa19a1da2681b5c
-Author: Zeeshan Ali (Khattak) <zeeshanak@mate.org>
+Author: Zeeshan Ali (Khattak) <zeeshanak@gnome.org>
 Date:   Sat Aug 22 17:03:02 2009 +0300
 
     Require gupnp (>= 0.13) instead of gupnp-av
@@ -1198,7 +1198,7 @@ Date:   Sat Aug 22 17:03:02 2009 +0300
  2 files changed, 5 insertions(+), 5 deletions(-)
 
 commit 380cc5f472dfdeb77a93bfde22c6bee8c3f075b9
-Author: Zeeshan Ali (Khattak) <zeeshanak@mate.org>
+Author: Zeeshan Ali (Khattak) <zeeshanak@gnome.org>
 Date:   Sun Aug 23 14:57:00 2009 +0300
 
     Ability to deal with multiple/dynamic networks
@@ -1211,7 +1211,7 @@ Date:   Sun Aug 23 14:57:00 2009 +0300
  1 files changed, 31 insertions(+), 26 deletions(-)
 
 commit 99519ed25a8f00ad17dcbf5287edc27a415f91d5
-Author: Zeeshan Ali (Khattak) <zeeshanak@mate.org>
+Author: Zeeshan Ali (Khattak) <zeeshanak@gnome.org>
 Date:   Sat Aug 22 16:53:39 2009 +0300
 
     No need to look for all resources anymore
@@ -1225,7 +1225,7 @@ Date:   Sat Aug 22 16:53:39 2009 +0300
  1 files changed, 2 insertions(+), 8 deletions(-)
 
 commit f2eeadfd405df9ac38d575b453d6345566843314
-Author: Zeeshan Ali (Khattak) <zeeshanak@mate.org>
+Author: Zeeshan Ali (Khattak) <zeeshanak@gnome.org>
 Date:   Sat Aug 22 16:04:17 2009 +0300
 
     Specify the network interface to gupnp-upload
@@ -1356,7 +1356,7 @@ Date:   Wed Sep 2 16:03:21 2009 +0100
  1 files changed, 2 insertions(+), 2 deletions(-)
 
 commit bb014358c6a2d1da48e556fb979b85d6c03c5681
-Author: Cosimo Cecchi <cosimoc@mate.org>
+Author: Cosimo Cecchi <cosimoc@gnome.org>
 Date:   Tue Sep 1 12:39:29 2009 +0200
 
     Port to Mission Control 5 (bug #593124).
@@ -1365,7 +1365,7 @@ Date:   Tue Sep 1 12:39:29 2009 +0200
  1 files changed, 33 insertions(+), 21 deletions(-)
 
 commit a48a9c6ff8a9a41a5f983d7f0d8ef76d8c35b687
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:   Tue Sep 1 15:38:35 2009 +0800
 
     Update Simplified Chinese translation.
@@ -1765,7 +1765,7 @@ Date:   Sun Apr 26 12:43:32 2009 +0100
 
     Remove calls to textdomain() in the plugins
     
-    It's unnecessary. Spotted by Christian Persch <chpe@mate.org>
+    It's unnecessary. Spotted by Christian Persch <chpe@gnome.org>
 
  src/plugins/bluetooth/bluetooth.c                 |    3 +--
  src/plugins/empathy/empathy.c                     |    1 -

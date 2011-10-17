@@ -1,5 +1,5 @@
 commit 24d2fe1208a7f54a8e5869da9886ce202392b1a0
-Author: Paul Cutler <pcutler@mate.org>
+Author: Paul Cutler <pcutler@gnome.org>
 Date:   2010-09-26
 
     Fix typo in mallard snippets
@@ -72,7 +72,7 @@ Date:	2010-08-25
 M	help/fr/fr.po
 
 commit ff304daa8cdc291984f4e4c5718db23d53410281
-Author: Paul Cutler <pcutler@mate.org>
+Author: Paul Cutler <pcutler@gnome.org>
 Date:	2010-08-19
 
     Add mallard snippets to 2.30 branch
@@ -97,7 +97,7 @@ Date:	2010-08-10
 M	po/id.po
 
 commit 69e9647f6fd464a1c08095ce7564918fd3b9d407
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:	2010-08-08
 
     [i18n] Updated German doc translation
@@ -129,7 +129,7 @@ Date:	2010-06-28
 M	help/es/es.po
 
 commit 5a8cb3560addc06cb88a26507ba2b93b707aa2c1
-Author: Gil Forcada <gforcada@mate.org>
+Author: Gil Forcada <gforcada@gnome.org>
 Date:	2010-06-26
 
     Updated Catalan translation
@@ -137,7 +137,7 @@ Date:	2010-06-26
 M	help/ca/ca.po
 
 commit 8662d2a0fcaa552c4a0ca32d1361114abc1e1056
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-06-20
 
     Release 2.30.3
@@ -155,7 +155,7 @@ Date:	2010-06-16
 M	plugins/filebrowser/gedit-file-browser-widget.c
 
 commit e436fda28e8dce77eb826da790a967833e0c9f95
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-05-25
 
     Fix very small memory leak on OS X
@@ -250,7 +250,7 @@ Date:	2010-05-18
 M	po/or.po
 
 commit 5c6fffcd6b5ea6a56c5b4b07268be7c9825826f8
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-05-16
 
     Handle empty input gracefully
@@ -259,7 +259,7 @@ M	gedit/gedit-smart-charset-converter.c
 M	tests/smart-converter.c
 
 commit c2cd07a7205c36227f6b02b1e51ac19a41b604e5
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-05-01
 
     Typo in metadata backend detection
@@ -283,7 +283,7 @@ Date:	2010-04-27
 M	help/th/th.po
 
 commit 8559615fa1104692825e453096a9c90ff79a90a9
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-22
 
     Fix bug in quickopen checking gedit version for filebrowser support
@@ -299,7 +299,7 @@ Date:	2010-04-22
 M	po/kn.po
 
 commit 046ccb216b2af86138af58cc4d87ce782cb7f636
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-22
 
     Removed useless line.
@@ -323,7 +323,7 @@ Date:	2010-04-20
 M	po/th.po
 
 commit 7f26d69300ab38244bcd41c95a96a516763fff45
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-18
 
     Release 2.30.2
@@ -333,7 +333,7 @@ M	README
 M	configure.ac
 
 commit c07ad223caa8ade68d2111f31a58ac244a2f1436
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-18
 
     Use SPELL_LANGUAGE instead of LANGUAGE to save spell metadata
@@ -341,7 +341,7 @@ Date:	2010-04-18
 M	plugins/spell/gedit-spell-plugin.c
 
 commit 5aed3c90ebaf290591b3741de17acb1cdba2fc5d
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-18
 
     Release 2.30.1
@@ -351,7 +351,7 @@ M	README
 M	configure.ac
 
 commit 14814e64fb6dd62300a08f23d16d34b189cb7c58
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-18
 
     Disable external tools for win32.
@@ -361,7 +361,7 @@ Date:	2010-04-18
 M	plugins/Makefile.am
 
 commit 84fab13fa95837a748d3211dadf0b6c9c569def3
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-18
 
     Do not build some tests on win32
@@ -369,7 +369,7 @@ Date:	2010-04-18
 M	tests/document-saver.c
 
 commit f39ef7405c89696c7f2419b3bf8e571bc861b60a
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-18
 
     Do not use gtk 2.18 syntax
@@ -377,7 +377,7 @@ Date:	2010-04-18
 M	gedit/gedit-file-chooser-dialog.c
 
 commit 01e5c14065c9ea1338086f3c38565139061c9cc7
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-18
 
     Add a 'default' branch to case statement to make gcc happy
@@ -385,7 +385,7 @@ Date:	2010-04-18
 M	gedit/gedit-document-input-stream.c
 
 commit 9011f03572e24a3371fbce392128b7c472502908
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-18
 
     Better name for conditional metadata flag and use it in all the files
@@ -397,7 +397,7 @@ M	gedit/gedit-gio-document-loader.c
 M	gedit/gedit.c
 
 commit f01b005563a2762360c8ff13e59115e5644c6bbd
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-18
 
     Update git.mk from pango
@@ -405,7 +405,7 @@ Date:	2010-04-18
 M	git.mk
 
 commit 579279ea3e5ed593643744f76d9d39a9bd77d5f7
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-18
 
     Disconnect doc loaded/saved signals when spell plugin deactivated
@@ -413,7 +413,7 @@ Date:	2010-04-18
 M	plugins/spell/gedit-spell-plugin.c
 
 commit 211d11e6f45a643ae71d9b75b79595b901f2833d
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-18
 
     Save spell metadata also after saving the document
@@ -421,7 +421,7 @@ Date:	2010-04-18
 M	plugins/spell/gedit-spell-plugin.c
 
 commit 773b1498261b4ac8d8505a44f24cfc67910ccae7
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-18
 
     Don't save metadata for untitled documents with fallback manager
@@ -429,7 +429,7 @@ Date:	2010-04-18
 M	gedit/gedit-document.c
 
 commit 940d150d4ce8d9f35ba396c6229ce334cd7298b0
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-18
 
     Better conditionally compile old metadata manager
@@ -439,7 +439,7 @@ M	gedit/Makefile.am
 M	gedit/gedit-document.c
 
 commit 831a021ab00e81559fe2edf0ceb40b12d832dfcb
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-18
 
     Use document_get_location
@@ -447,7 +447,7 @@ Date:	2010-04-18
 M	gedit/gedit-commands-file.c
 
 commit cf336fa71642dd6457dc34f44d74e641632f8b47
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-18
 
     Also check if permission changed when checking if a local file was
@@ -456,7 +456,7 @@ Date:	2010-04-18
 M	gedit/gedit-document.c
 
 commit e6db7f86504fb887719348f4274162ae4837e672
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-18
 
     Update old message that still spoke about "CVS"
@@ -464,7 +464,7 @@ Date:	2010-04-18
 M	autogen.sh
 
 commit 7eafaef57d79216e19323f930bd91676f4b08d8c
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-17
 
     Reset the spell checker language from the metadata when the doc
@@ -473,7 +473,7 @@ Date:	2010-04-17
 M	plugins/spell/gedit-spell-plugin.c
 
 commit 55e24248c8d365d45b0f8d7fb1b405f0d7cac777
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-17
 
     Use get_location instead of get_uri.
@@ -481,7 +481,7 @@ Date:	2010-04-17
 M	plugins/snippets/snippets/Document.py
 
 commit 374dc304bbf17b04dd327f79679667318982b108
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-17
 
     Set correct text column for drop down mime type entry for snippets
@@ -489,7 +489,7 @@ Date:	2010-04-17
 M	plugins/snippets/snippets/Manager.py
 
 commit be3fbac0630f3453d20c1365edc563348001c4e7
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-17
 
     Fix warnings on tag not being a GtkTextTag when removing autospell
@@ -502,7 +502,7 @@ Date:	2010-04-17
 M	plugins/spell/gedit-automatic-spell-checker.c
 
 commit adf773fc4e18c61621cb236ec5677310351654bc
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-17
 
     Auto spell check on highlight-updated
@@ -549,7 +549,7 @@ Date:	2010-04-13
 M	po/ast.po
 
 commit 874b81bb320c66c2985ddd4b4b42d4b91445674c
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-12
 
     Use gtk_widget_is_toplevel when possible. Fixes #562052.
@@ -558,7 +558,7 @@ M	gedit/gedit-encodings-combo-box.c
 M	gedit/gedit-panel.c
 
 commit 893d0b2d2fb9f9d05e7b02a3fe2e095eb866fa5c
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-12
 
     Use gtk_activatable_get_related_action instead of deprecated func.
@@ -574,7 +574,7 @@ Date:	2010-04-11
 M	po/ro.po
 
 commit 26097434b58ae6e6c3a68d8c93f5e7683d8c44c5
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-09
 
     Fix ref loop.
@@ -582,7 +582,7 @@ Date:	2010-04-09
 M	gedit/gedit-tab-label.c
 
 commit 31728e836a8e0a77df8d75a729842630a6254be1
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-09
 
     Handle INVALID_DATA and PARTIAL_INPUT as conversion errors on save
@@ -595,7 +595,7 @@ M	gedit/gedit-io-error-message-area.c
 M	gedit/gedit-tab.c
 
 commit ceac487d4d02d157754a27916295b2e643f5fed7
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-09
 
     Explicitly close output stream with cancellable in cancelled state
@@ -615,7 +615,7 @@ Date:	2010-04-09
 M	gedit/gedit-gio-document-saver.c
 
 commit b66c58acd43dbc971947d5634a2e6203fa8d0210
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-09
 
     Manage the tab as a property.
@@ -623,7 +623,7 @@ Date:	2010-04-09
 M	gedit/gedit-tab-label.c
 
 commit 22da0bfd56e29e9cec5b38fa678481b6d2a9c279
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-09
 
     Remove useless file.
@@ -647,7 +647,7 @@ Date:	2010-04-09
 M	plugins/snippets/snippets/Document.py
 
 commit 008c118c9aaa0217d07c75ae6c76969b5475d2e5
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-07
 
     Clear the buffer when the output stream is constructed. Fixes bug
@@ -659,7 +659,7 @@ Date:	2010-04-07
 M	gedit/gedit-document-output-stream.c
 
 commit 96632ce7bfe35452f00efc9f67489c6d8c1fc357
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-07
 
     Catch case where start or end is not an iter for drawing snippet
@@ -668,7 +668,7 @@ Date:	2010-04-07
 M	plugins/snippets/snippets/Document.py
 
 commit 35121d9a4a0904904944e7ec821a327030c4d8b5
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-07
 
     Better handling of G_IO_IN | G_IO_HUP condition in external tools read
@@ -676,7 +676,7 @@ Date:	2010-04-07
 M	plugins/externaltools/tools/capture.py
 
 commit 719ca41f6c17e006f4a3709395e64d6b9b1b8543
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-04-07
 
     Updated logo with slightly better letter background and white 'g'
@@ -685,7 +685,7 @@ M	pixmaps/gedit-logo.png
 M	pixmaps/gedit-logo.svgz
 
 commit 26b510c9776f5a4935c5ee642275ffd9931b3207
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-06
 
     Added the new logo.
@@ -715,7 +715,7 @@ Date:	2010-04-04
 M	po/id.po
 
 commit f03c5b98b298308ccfaf6f0b65dc3b5370738e7a
-Author: Wouter Bolsterlee <wbolster@mate.org>
+Author: Wouter Bolsterlee <wbolster@gnome.org>
 Date:	2010-04-03
 
     Dutch translation updated by Wouter Bolsterlee
@@ -723,7 +723,7 @@ Date:	2010-04-03
 M	po/nl.po
 
 commit 2919c5b733c00cf5e349351b08a79e0619b14f68
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-04-03
 
     Use doc.get_location where possible.
@@ -732,7 +732,7 @@ M	plugins/quickopen/quickopen/virtualdirs.py
 M	plugins/quickopen/quickopen/windowhelper.py
 
 commit 57af19566182a98a5f6c3cdb593a7a5da54114be
-Author: Wouter Bolsterlee <wbolster@mate.org>
+Author: Wouter Bolsterlee <wbolster@gnome.org>
 Date:	2010-04-03
 
     Dutch translation updated by Hannie Dumoleyn
@@ -753,7 +753,7 @@ Date:	2010-04-02
 M	plugins/filebrowser/gedit-file-bookmarks-store.c
 
 commit fae59ae4563631ac98a137012eb6275cc8b807d4
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-04-01
 
     Actually install the xslt snippets
@@ -769,7 +769,7 @@ Date:	2010-04-01
 M	help/th/th.po
 
 commit 5c02208fa1b81822b7b965d787da347d5362f5c1
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-03-31
 
     Replace CRLF by LF endlines.
@@ -793,7 +793,7 @@ Date:	2010-03-30
 M	po/hu.po
 
 commit 4ab4b2460be6f6c69b17260275e3cd313b063935
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-22
 
     Respect MATE22_USER_DIR env variable.
@@ -804,7 +804,7 @@ M	plugins/snippets/snippets/__init__.py
 M	plugins/taglist/gedit-taglist-plugin-parser.c
 
 commit 3fdf01ec9e0ac5f48d22e7e5d369c81fa357ea49
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-29
 
     Release 2.30.0
@@ -814,7 +814,7 @@ M	README
 M	configure.ac
 
 commit bd6018993db15140139d592b1370a05238f95219
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-29
 
     Make sure to avoid buffer overflows when saving.
@@ -841,7 +841,7 @@ Date:	2010-03-29
 M	po/bn.po
 
 commit 1b8a29918ba08ceb87971e209a0e4a22d6803e51
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-03-28
 
     Make sure to propagate result of accelerator activation
@@ -855,7 +855,7 @@ M	plugins/snippets/snippets/Library.py
 M	plugins/snippets/snippets/__init__.py
 
 commit fb238f840c608d8b14be969d07f9f579e458749f
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-03-28
 
     Make sure to install document handler for first document
@@ -936,7 +936,7 @@ Date:	2010-03-26
 M	po/ml.po
 
 commit 1d70f5f6f31f6cd225ca11425ff6f0eabd04f8fe
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:	2010-03-24
 
     Updated Simplified Chinese translation.
@@ -968,7 +968,7 @@ Date:	2010-03-22
 M	po/fi.po
 
 commit 454d76d445ed71ee93225b5aff9b0e8c135f8eb9
-Author: Kostas Papadimas <pkst@mate.org>
+Author: Kostas Papadimas <pkst@gnome.org>
 Date:	2010-03-21
 
     Updated Greek translation.
@@ -976,7 +976,7 @@ Date:	2010-03-21
 M	po/el.po
 
 commit 0b68301f940a065470d795ad3be47f4db042c0b6
-Author: Gil Forcada <gforcada@mate.org>
+Author: Gil Forcada <gforcada@gnome.org>
 Date:	2010-03-20
 
     Updated Catalan translation
@@ -1064,7 +1064,7 @@ Date:	2010-03-15
 M	po/cs.po
 
 commit a6352a3eaa16b2637d67a18dc10eb86bdfbc1b40
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-14
 
     Release 2.29.9
@@ -1074,7 +1074,7 @@ M	README
 M	configure.ac
 
 commit 7e7516cdecd447078e1363438b15bc1b4229fe22
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-14
 
     configure.ac updates to satisfy more picky linkers
@@ -1082,7 +1082,7 @@ Date:	2010-03-14
 M	configure.ac
 
 commit 107c572e92c10a935f818ec5b42027464ef89a4f
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-14
 
     Properly handle selection in sort plugin
@@ -1100,7 +1100,7 @@ Date:	2010-03-14
 M	po/sv.po
 
 commit 1c86adcbf402daee3242edf7513e70fe56b74d44
-Author: Og B. Maciel <ogmaciel@mate.org>
+Author: Og B. Maciel <ogmaciel@gnome.org>
 Date:	2010-03-14
 
     Updated Brazilian Portuguese translation.
@@ -1108,7 +1108,7 @@ Date:	2010-03-14
 M	po/pt_BR.po
 
 commit 0abf06dc82140ed8b5a2a5b04a0cc4d12d7c70ee
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-14
 
     Code cleanup when creating a button
@@ -1118,7 +1118,7 @@ Date:	2010-03-14
 M	gedit/gedit-io-error-message-area.c
 
 commit fc6a3fee1b0d7431a752c7c813d9eeb0ea543445
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-13
 
     Add smart home/end in the python console.
@@ -1128,7 +1128,7 @@ Date:	2010-03-13
 M	plugins/pythonconsole/pythonconsole/console.py
 
 commit 5b281c435ee29df85ce12089186d676f34b93959
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-13
 
     Restore the ability to remember the dialog position
@@ -1148,7 +1148,7 @@ Date:	2010-03-13
 M	po/pa.po
 
 commit 3875227aa368f4b4de8d3e66a7ceb433acbbbd3f
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-13
 
     Rework the document input stream to use a mark
@@ -1173,7 +1173,7 @@ Date:	2010-03-12
 M	po/ru.po
 
 commit 0a2abc6450462539e0714f592e62b2d95e4a6ca4
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-12
 
     Plug tiny leak
@@ -1198,7 +1198,7 @@ Date:	2010-03-11
 M	po/uk.po
 
 commit 8a0a2c3d0692164256a514b855efe4453da9b3cc
-Author: Hendrik Richter <hendrikr@mate.org>
+Author: Hendrik Richter <hendrikr@gnome.org>
 Date:	2010-03-10
 
     Fixed German translation.
@@ -1222,7 +1222,7 @@ Date:	2010-03-10
 M	po/it.po
 
 commit f069ec47f34d6c16998e18c8227fa6e9ff95370f
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-03-09
 
     Factor out the notebook creation.
@@ -1230,7 +1230,7 @@ Date:	2010-03-09
 M	gedit/gedit-window.c
 
 commit 10ee3b01b476518630602e79c662584ead1c5ec7
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-08
 
     Plug some leaks in the unit tests.
@@ -1241,7 +1241,7 @@ M	tests/document-output-stream.c
 M	tests/document-saver.c
 
 commit 3c83973e9f4a6fa586b17dc4975e95fbba51e085
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-03-08
 
     Make sure error_message is always set. Spotted by Matthias Clasen.
@@ -1309,7 +1309,7 @@ Date:	2010-03-03
 M	po/ta.po
 
 commit 12629418313c580a133f9ba55080a967d9af90c9
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:	2010-03-03
 
     Updated Norwegian bokmål translation
@@ -1333,7 +1333,7 @@ Date:	2010-03-02
 M	po/fr.po
 
 commit 21fa0fd87c1d4280aa08506b905cd25cd651e212
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-03-01
 
     Release 2.29.8
@@ -1343,7 +1343,7 @@ M	README
 M	configure.ac
 
 commit 354b969cffa0da9daeeed2993a166041b0cd60d7
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-03-01
 
     Use octal escaping instead of unicode chars.
@@ -1359,7 +1359,7 @@ Date:	2010-03-01
 M	po/pl.po
 
 commit a63ea5df4f5d62a8351d4205850afe903e4bd116
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-03-01
 
     Fix the returning size by the output stream.
@@ -1396,7 +1396,7 @@ M	gedit/gedit-document.c
 M	gedit/gedit-tab.c
 
 commit 6e0d6d5a8d81dd02c3f8faa263197a40e2d3fed8
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-28
 
     Unref the doc input stream on dispose
@@ -1404,7 +1404,7 @@ Date:	2010-02-28
 M	gedit/gedit-gio-document-saver.c
 
 commit b9d697b74d9931a24840b04f56075a73d7d81bad
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-28
 
     Fix dangerous typo and remove empty finalize method
@@ -1413,7 +1413,7 @@ M	gedit/gedit-gio-document-loader.c
 M	gedit/gedit-gio-document-saver.c
 
 commit 1fddb8fd8c03eaa826c7732f9a9f8701b61c9d91
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-28
 
     Free the async data and some tidying up for the cancelled case
@@ -1431,7 +1431,7 @@ Date:	2010-02-28
 M	po/es.po
 
 commit e4856435a3d2e1c0e9118f8a42e46d9644494f85
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-02-28
 
     Fixed the correct offset calculation in the special case fixed
@@ -1440,7 +1440,7 @@ Date:	2010-02-28
 M	gedit/gedit-document-input-stream.c
 
 commit da94b577d4591473dd22af116b84f9b800f11603
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-02-28
 
     Fixed critical bug reading past buffer boundary
@@ -1451,7 +1451,7 @@ Date:	2010-02-28
 M	gedit/gedit-document-input-stream.c
 
 commit c16f4f34966337e638462b0eb23958c8eed3b933
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-02-28
 
     Improved heuristic for determining whether to show load/save progress
@@ -1459,7 +1459,7 @@ Date:	2010-02-28
 M	gedit/gedit-tab.c
 
 commit cb235cbe4b6e705a2489a395d3ecbf5d648c32ec
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-28
 
     Rework encoding validation
@@ -1477,7 +1477,7 @@ M	gedit/gedit-gio-document-loader.c
 M	po/POTFILES.skip
 
 commit 7819f6c73ef291acc2e265b370dd045ad08c0e70
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:	2010-02-27
 
     Updated German translation
@@ -1493,7 +1493,7 @@ Date:	2010-02-27
 M	gedit/gedit-document.c
 
 commit 8c7aec65cbbbc52a2249b20b3d3e320c1fdaf0c9
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-27
 
     Minor fix.
@@ -1518,7 +1518,7 @@ M	po/zh_HK.po
 M	po/zh_TW.po
 
 commit f4807d495922c9b67cd6a8bbc5c79e0592941d02
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-27
 
     Get the metadata sync since we need the information right after
@@ -1535,7 +1535,7 @@ Date:	2010-02-27
 M	po/sl.po
 
 commit c48023d8ff2035d9bcbab83d452bdbc7647968c1
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-27
 
     Notify content_type only when it actually changes
@@ -1543,7 +1543,7 @@ Date:	2010-02-27
 M	gedit/gedit-document.c
 
 commit a0aa52ae1b6bde8febe89539b70f1ef5b002af22
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-27
 
     Ref the doc while querying info so that is not finalized.
@@ -1611,7 +1611,7 @@ Date:	2010-02-17
 M	plugins/modelines/modeline-parser.c
 
 commit 3795b44555a353f6b28021f1a29e5758af966595
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:	2010-02-23
 
     Updated Norwegian bokmål translation
@@ -1619,7 +1619,7 @@ Date:	2010-02-23
 M	po/nb.po
 
 commit 0745bfa2cd3ad5a2648c85191d7ff00a902891e4
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-22
 
     Release 2.29.7
@@ -1652,7 +1652,7 @@ Date:	2010-02-21
 M	po/ta.po
 
 commit 946cf5c7eb535de3e30e0ccd1e231c89adffd01f
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:	2010-02-20
 
     Updated German translation
@@ -1720,7 +1720,7 @@ M	plugins/taglist/Latex.tags.xml.in
 M	plugins/taglist/taglist.gedit-plugin.desktop.in
 
 commit 8ec9bfad3660dc0e7ec61d32b386968b4ddf9acd
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:	2010-02-18
 
     Updated German translation
@@ -1728,7 +1728,7 @@ Date:	2010-02-18
 M	po/de.po
 
 commit cf57263e368489cf38aad092a02feca0bc336e1e
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-18
 
     Add gedit_status_combo_box_remove_item
@@ -1861,7 +1861,7 @@ M	po/zh_HK.po
 M	po/zh_TW.po
 
 commit 7de4013c74bfbcd42f9dcd2437418f586b960aca
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-02-14
 
     Added gedit_document_set_content_type
@@ -1870,7 +1870,7 @@ M	gedit/gedit-document.c
 M	gedit/gedit-document.h
 
 commit 8a43334a580e3f5f34dfca95e6793f42d9a5b886
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-02-14
 
     Added gedit_tab_set_info_bar
@@ -1879,7 +1879,7 @@ M	gedit/gedit-tab.c
 M	gedit/gedit-tab.h
 
 commit faefe07b7352026c1c450d9858d3f0bd7ac8714b
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-02-09
 
     Made document 'shortname' writable
@@ -1889,7 +1889,7 @@ M	gedit/gedit-document.h
 M	gedit/gedit-tab.c
 
 commit 94da772b83a2886bd0d411b1d7af60e0a44df40d
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-14
 
     Safely remove the tabs from the notebook when destroyed.
@@ -1897,7 +1897,7 @@ Date:	2010-02-14
 M	gedit/gedit-notebook.c
 
 commit 4d433960ba44157d3dcc012d4bf411897dd398fb
-Author: Vladimir Melo <vmelo@mate.org>
+Author: Vladimir Melo <vmelo@gnome.org>
 Date:	2010-02-13
 
     Updated Brazilian Portuguese translation
@@ -1905,7 +1905,7 @@ Date:	2010-02-13
 M	po/pt_BR.po
 
 commit 50ff395851e902129dc031f7a953acc206588371
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:	2010-02-13
 
     Updated German translation
@@ -1945,7 +1945,7 @@ Date:	2010-02-11
 M	po/cs.po
 
 commit c61e08d6af96b1ed45636c8528302566486e10af
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:	2010-02-10
 
     Updated Norwegian bokmål translation
@@ -1961,7 +1961,7 @@ Date:	2010-02-10
 M	po/es.po
 
 commit f3628a0b8b26c75ba9d667d3f331e894fb86cfc8
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-10
 
     Release 2.29.6
@@ -1972,7 +1972,7 @@ M	configure.ac
 M	po/POTFILES.in
 
 commit a1b97453d214ccf5019ab475b991d361c81a9c55
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-08
 
     Also close the input stream sync for the saver.
@@ -1980,7 +1980,7 @@ Date:	2010-02-08
 M	gedit/gedit-gio-document-saver.c
 
 commit 5d09f8acb8176b400e22212e54c927e601e04746
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-08
 
     Do not use async operations with the doc stream in the saver.
@@ -1988,7 +1988,7 @@ Date:	2010-02-08
 M	gedit/gedit-gio-document-saver.c
 
 commit 0c2543ffbac7e35ef8318c90a6e322d40aeea87b
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-08
 
     Do not use async operations with the doc stream in the loader.
@@ -1996,7 +1996,7 @@ Date:	2010-02-08
 M	gedit/gedit-gio-document-loader.c
 
 commit ef8336416023521a09112d5cb22432278cac3c19
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-08
 
     Warn against async methods in doc streams
@@ -2010,7 +2010,7 @@ M	gedit/gedit-document-input-stream.c
 M	gedit/gedit-document-output-stream.c
 
 commit 9fca7e057e12b7595487d52a1f6906f19a5fc58e
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-08
 
     Fix newline detection and add more unit tests.
@@ -2019,7 +2019,7 @@ M	gedit/gedit-document-output-stream.c
 M	tests/document-output-stream.c
 
 commit 981647dc1f27e6688564e8fbfbb86b7267cec549
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-08
 
     Add GeditDocumentOutputStream and unit tests.
@@ -2032,7 +2032,7 @@ M	tests/Makefile.am
 A	tests/document-output-stream.c
 
 commit 22c72c33142b17b5f9a250c59761d459725f395b
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-08
 
     Remove trailing spaces and use an enum for the columns.
@@ -2040,7 +2040,7 @@ Date:	2010-02-08
 M	gedit/gedit-documents-panel.c
 
 commit d022c7eb9bc4cf7025f34548c8acd47b07f92735
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-07
 
     Remove gedit-convert.[ch].
@@ -2060,7 +2060,7 @@ M	gedit/gedit-tab.c
 M	gedit/gedit-utils.c
 
 commit 1b81b1226ccbdb933cfa672e44d2ff1a1749fcde
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-07
 
     Add "Open" to the filebrowser context menu
@@ -2070,7 +2070,7 @@ M	plugins/filebrowser/gedit-file-browser-widget.c
 M	plugins/filebrowser/gedit-file-browser-widget.h
 
 commit 3f92dda428965c5e9f2aa999cce0dfce26b387e1
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-02-07
 
     plugin-loader.h should not be installed
@@ -2087,7 +2087,7 @@ M	po/zh_HK.po
 M	po/zh_TW.po
 
 commit a1e40a5e9466f716084896dbb5b103930a2bc0e0
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-06
 
     Create backups for local files.
@@ -2095,7 +2095,7 @@ Date:	2010-02-06
 M	gedit/gedit-gio-document-saver.c
 
 commit bf94719d3c00b7d07faf176d379e06693ac791cd
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-06
 
     Change the create backup copy default value to FALSE and removed
@@ -2111,7 +2111,7 @@ M	gedit/gedit-prefs-manager.c
 M	gedit/gedit-prefs-manager.h
 
 commit 8410a8a0d45d76425b4c662a8ba0c7db5a037de0
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-06
 
     Removed libattr dep
@@ -2119,7 +2119,7 @@ Date:	2010-02-06
 M	configure.ac
 
 commit 63c280134dcf3405700e0b4571249f275b2dc738
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-06
 
     Removed local saver.
@@ -2130,7 +2130,7 @@ D	gedit/gedit-local-document-saver.c
 D	gedit/gedit-local-document-saver.h
 
 commit ccdde1c46f3ca81c8e4d10bcd9b0b66ee3a2033f
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-04
 
     Do not read again if we are still writing. Fixes bug #608986.
@@ -2138,7 +2138,7 @@ Date:	2010-02-04
 M	gedit/gedit-gio-document-saver.c
 
 commit 1e50cbf2f2339bdf5f35345939db16a56a838c12
-Author: Henrique P. Machado <hpmachado@mate.org>
+Author: Henrique P. Machado <hpmachado@gnome.org>
 Date:	2010-02-04
 
     Updated Brazilian Portuguese Translation
@@ -2146,7 +2146,7 @@ Date:	2010-02-04
 M	po/pt_BR.po
 
 commit 60a24777a296d37eb183b05836b8226d220ebd44
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-02-01
 
     Fix content type guess when saving.
@@ -2162,7 +2162,7 @@ Date:	2010-02-01
 M	po/et.po
 
 commit 9f1ea7988c35e66c6bca796eebcba1367770cd03
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-31
 
     Fix bytes written calculation.
@@ -2178,7 +2178,7 @@ Date:	2010-01-31
 M	po/de.po
 
 commit b9b8cac44a746215cd84bbb4ca8a8c4ca31083e3
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-30
 
     Minor fix.
@@ -2202,7 +2202,7 @@ Date:	2010-01-27
 M	po/es.po
 
 commit 22607530aad9b355be3206a7f4af51cc60807a5f
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-27
 
     Remove useless define.
@@ -2210,7 +2210,7 @@ Date:	2010-01-27
 M	plugins/checkupdate/gedit-check-update-plugin.c
 
 commit de8a90cb45a05c59deff253d292b3c6239b219e9
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-27
 
     Remove useless .sgml files.
@@ -2248,7 +2248,7 @@ D	docs/reference/tmpl/gedit-view.sgml
 D	docs/reference/tmpl/gedit-window.sgml
 
 commit ea225533c493817c99107d00277f4b59104c22bf
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-27
 
     Add option to ignore a version until the next is released.
@@ -2266,7 +2266,7 @@ Date:	2010-01-27
 M	po/sl.po
 
 commit e77d04df2ce879ef2915069436d3f68d09959f63
-Author: Javier Jardón <jjardon@mate.org>
+Author: Javier Jardón <jjardon@gnome.org>
 Date:	2010-01-25
 
     Modernize autotools configuration
@@ -2298,7 +2298,7 @@ Date:	2010-01-26
 M	po/ar.po
 
 commit 9efe1adcd5e5b40ddf4c7b6623f77dc1c6fa0ef2
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-25
 
     Release 2.29.5
@@ -2330,7 +2330,7 @@ Date:	2010-01-25
 M	po/es.po
 
 commit ba643056047d2f8d2fc47e070495ae7dbaa98102
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-25
 
     Fix distcheck
@@ -2348,7 +2348,7 @@ Date:	2010-01-25
 M	po/bg.po
 
 commit df91511bb2b7ae51c338f8330f7d2172b9491bae
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-24
 
     Fix build of docs
@@ -2356,7 +2356,7 @@ Date:	2010-01-24
 M	docs/reference/gedit.types
 
 commit feed1357c61a85fa3797f46879548cff9371aea9
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-24
 
     Fix compiler warnings
@@ -2365,7 +2365,7 @@ M	gedit/gedit-gio-document-loader.c
 M	gedit/gedit-gio-document-saver.c
 
 commit b850859bb60a3ab79ae2f7f4f53b1bb273867bef
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-24
 
     Copy the python libs in bin instead of python folder.
@@ -2377,7 +2377,7 @@ Date:	2010-01-24
 M	win32/gedit.iss.in
 
 commit 6daccfafaa46145931d1793ae4f8b8c5cc9d952f
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-01-24
 
     Catch glib.GError instead of gio.Error
@@ -2391,7 +2391,7 @@ M	plugins/quickopen/quickopen/popup.py
 M	plugins/quickopen/quickopen/windowhelper.py
 
 commit 6512fbdd4ddad13594a9fb82ac62e4e79bf7b59f
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-01-24
 
     Make SIGALRM timeout for snippets optional
@@ -2404,7 +2404,7 @@ Date:	2010-01-24
 M	plugins/snippets/snippets/Placeholder.py
 
 commit 1aef2d54aa571287a49e843bf6d344d2cca1660e
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-01-24
 
     Made mateconf requirement for python console optional
@@ -2413,7 +2413,7 @@ M	plugins/pythonconsole/pythonconsole/__init__.py
 M	plugins/pythonconsole/pythonconsole/config.py
 
 commit 79a41ce16b749a98c6a9b2eb7f6257fadcb199f6
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-24
 
     Use gssize instead of gsize
@@ -2421,7 +2421,7 @@ Date:	2010-01-24
 M	gedit/gedit-gio-document-saver.c
 
 commit 71f8afe194c1a6366a20a05f4cc48faa1705449b
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-24
 
     Run tests on make check
@@ -2429,7 +2429,7 @@ Date:	2010-01-24
 M	tests/Makefile.am
 
 commit d883f94161d4557b8b5de667be9b9b8e0abbfdd5
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-24
 
     Properly handle the case of empty text buffer
@@ -2438,7 +2438,7 @@ M	gedit/gedit-document-input-stream.c
 M	tests/document-input-stream.c
 
 commit bf8a43bf341551bef753650bd8a43b529285120d
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-24
 
     Fix up POTFILES.in for renamed file
@@ -2446,7 +2446,7 @@ Date:	2010-01-24
 M	po/POTFILES.in
 
 commit 50238560b372c693605e94cb092b7d76160cba88
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-24
 
     Add support for python plugins
@@ -2522,7 +2522,7 @@ M	gedit/gedit-gio-document-loader.c
 M	gedit/gedit-gio-document-saver.c
 
 commit eb0bf10648bcfec7ebcca4453adc431991700d0c
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-23
 
     Do not use deprecated func gtk_action_connect_proxy.
@@ -2533,7 +2533,7 @@ Date:	2010-01-23
 M	gedit/gedit-window.c
 
 commit 820ce8820a8db40eca5ca0b63f2d6e3a07416373
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-22
 
     Port encoding option menu widget to use a combobox.
@@ -2573,7 +2573,7 @@ Date:	2010-01-20
 M	po/fr.po
 
 commit 4fb12f008f65609734b96da5f0840c8fb90994a1
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:	2010-01-19
 
     Updated Norwegian to the list
@@ -2581,7 +2581,7 @@ Date:	2010-01-19
 M	po/nb.po
 
 commit 09accded2065a8ea338a48f052e2c535bd8d1fe3
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-18
 
     Clear the buffer when loading
@@ -2597,7 +2597,7 @@ Date:	2010-01-18
 M	po/es.po
 
 commit f8825609e338d0cb8c0bbd54f95ca314726d9818
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-18
 
     Sync tip text on tab state change
@@ -2605,7 +2605,7 @@ Date:	2010-01-18
 M	gedit/gedit-tab-label.c
 
 commit 31b25d0682704ec25387e57b84b3ffd70e47a46f
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-17
 
     Remove useless message
@@ -2613,7 +2613,7 @@ Date:	2010-01-17
 M	gedit/gedit-io-error-message-area.c
 
 commit 24b5c7c6de53d55ace497b962118c59b36eca655
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-17
 
     Manage the error G_IO_ERROR_INVALID_DATA.
@@ -2626,7 +2626,7 @@ M	gedit/gedit-io-error-message-area.h
 M	gedit/gedit-tab.c
 
 commit 79b17f87c45dbaece78e9bf1e3b44a93c430eacb
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-17
 
     Do not use conversion fallback for now.
@@ -2639,7 +2639,7 @@ M	gedit/gedit-gio-document-loader.c
 M	gedit/gedit-smart-charset-converter.c
 
 commit 634f604d2850bea4dfeb009dcca2d2050fbbcb5d
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-14
 
     Set the document as readonly when with fallback char error.
@@ -2652,7 +2652,7 @@ M	gedit/gedit-tab.c
 M	gedit/gedit-window.c
 
 commit 61a8c6f50d09b12f76ad422c9d4f87c503cd190b
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2010-01-12
 
     Fix smart converter encoding guessing and add test case
@@ -2666,7 +2666,7 @@ M	gedit/gedit-tab.c
 M	tests/smart-converter.c
 
 commit b6a28db8047f32e2c33239f4b50bfe6e16b6b030
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-12
 
     Add test for checking all encodings
@@ -2676,7 +2676,7 @@ M	gedit/gedit-tab.c
 M	tests/smart-converter.c
 
 commit 3bba738720f3bf2c91ee256d42f982a0bf0f4691
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-12
 
     Remove encodings that doesn't seem to be recognized by iconv.
@@ -2684,7 +2684,7 @@ Date:	2010-01-12
 M	gedit/gedit-encodings.c
 
 commit 6a3e2a8ae25b5e2614b52d963690c050a29e744e
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-04
 
     Test all utf8 cases.
@@ -2696,7 +2696,7 @@ M	gedit/gedit-smart-charset-converter.h
 M	tests/smart-converter.c
 
 commit 6c22c6eb6cb2d3cb94dd4773fe868ecb63b8981c
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-04
 
     When converting from utf8 manage well the return values.
@@ -2704,7 +2704,7 @@ Date:	2010-01-04
 M	gedit/gedit-smart-charset-converter.c
 
 commit 181ff5b9f9793b08824fe9d181e9f6996719f286
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-12-29
 
     Add tests for smart converter
@@ -2715,7 +2715,7 @@ A	tests/Makefile.am
 A	tests/smart-converter.c
 
 commit 41eb183553a943fc7489ba70b25bd7a6caff331a
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-12-28
 
     Manage special cases for utf8 validation.
@@ -2728,7 +2728,7 @@ Date:	2009-12-28
 M	gedit/gedit-smart-charset-converter.c
 
 commit 4bc2c698f14a3a5420c35bc5edc842df2b481855
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-12-28
 
     Use new filter streams to load the document.
@@ -2745,7 +2745,7 @@ A	gedit/gedit-smart-charset-converter.c
 A	gedit/gedit-smart-charset-converter.h
 
 commit f3a5a26329c4d4078d39267a2265fffd78211152
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-12-06
 
     Bump gio version to 2.23.1
@@ -2761,7 +2761,7 @@ Date:	2010-01-12
 M	po/ar.po
 
 commit 96c8065d99e5f7290834c70ce489b341d20b7b3f
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-12
 
     Release 2.29.4
@@ -2771,7 +2771,7 @@ M	README
 M	configure.ac
 
 commit f74ea53943b728d88f41b00025725cdcb35cf660
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-12
 
     Fix distcheck
@@ -2780,7 +2780,7 @@ M	Makefile.am
 M	plugins/spell/Makefile.am
 
 commit c40fc7f67fd1fc1de7b84622ea07c52c53a0bd56
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-12
 
     Bump gtksourceview requirement
@@ -2788,7 +2788,7 @@ Date:	2010-01-12
 M	configure.ac
 
 commit a2459132e00e716fd14ca0268c97c8cbf48c31ff
-Author: Javier Jardón <jjardon@mate.org>
+Author: Javier Jardón <jjardon@gnome.org>
 Date:	2010-01-11
 
     Remove deprecated GTK+ symbol: gtk_box_pack_start_defaults()
@@ -2813,7 +2813,7 @@ Date:	2010-01-09
 M	po/sv.po
 
 commit f68e9acde5f2aca3b028b2771b117ff1c7478b0e
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-08
 
     Update POTFILES.in
@@ -2821,7 +2821,7 @@ Date:	2010-01-08
 M	po/POTFILES.in
 
 commit 7e8ddfc4d57794337f80bc982a7f0d0493b81910
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-07
 
     Include gedit-spinner.h if needed.
@@ -2829,7 +2829,7 @@ Date:	2010-01-07
 M	gedit/gedit-tab-label.c
 
 commit 19001b18ccdceff70529b7d5d2a0bf79f50e5212
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-07
 
     Include config.h
@@ -2837,7 +2837,7 @@ Date:	2010-01-07
 M	gedit/gedit-tab-label.c
 
 commit 49bb378a434d96255b83b097108a04d553f12c3e
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-07
 
     Refactor the tab label in a separate widget
@@ -2848,7 +2848,7 @@ A	gedit/gedit-tab-label.c
 A	gedit/gedit-tab-label.h
 
 commit 521286069c7a39c014803227db2851f46d841948
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-07
 
     Skip no-spell-check ranges at the start of the doc
@@ -2856,7 +2856,7 @@ Date:	2010-01-07
 M	plugins/spell/gedit-spell-plugin.c
 
 commit c03688db8744252e86c8a6fdd21216ef8cfb2d49
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-07
 
     Small refactoring to avoid roundtrip from iter to offset
@@ -2864,7 +2864,7 @@ Date:	2010-01-07
 M	plugins/spell/gedit-spell-plugin.c
 
 commit 28b7c6249710d9638adc49812af00d9990191aa1
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-07
 
     Remove two old dead files
@@ -2873,7 +2873,7 @@ D	plugins/spell/preload.c
 D	plugins/spell/preload.h
 
 commit 185b09b031869bb8e0f1d398ea378969dbc48c53
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-07
 
     Rename marshal file in something shorter
@@ -2885,7 +2885,7 @@ R100	plugins/spell/gedit-spell-checker-dialog-marshal.list
 plugins/spell/gedit-spell-marshal.list
 
 commit ea3a3bd357b70967e23a8ef2cc30247e2b57b511
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-07
 
     Refactor close button common code in a simple widget
@@ -2897,7 +2897,7 @@ M	gedit/gedit-notebook.c
 M	gedit/gedit-panel.c
 
 commit b2233b9b8aa342146e18195a97757ffa97a7e015
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-05
 
     Move util function in the new utils file
@@ -2907,7 +2907,7 @@ M	plugins/spell/gedit-spell-utils.c
 M	plugins/spell/gedit-spell-utils.h
 
 commit 8d47289952f89e57b8bbccf0a764cef023dfc244
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-05
 
     Cleanup: use gobject macros
@@ -2916,7 +2916,7 @@ M	plugins/spell/gedit-spell-checker-dialog.c
 M	plugins/spell/gedit-spell-checker.c
 
 commit 5e348935f97ac5f2bd1337f1113d5e6488eabbc3
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-05
 
     Remove deprecated gtk_rc_style_unref
@@ -2924,7 +2924,7 @@ Date:	2010-01-05
 M	gedit/gedit-panel.c
 
 commit cd429311a2e25b0c08a9c54f930f087a4dc9a281
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-05
 
     Remove deprecated gtk_widget_unref and code cleanup
@@ -2948,7 +2948,7 @@ Date:	2010-01-04
 M	osx/launcher.sh
 
 commit ebff58df226747e202680ce1ad5ba9fb2a62e57c
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2010-01-04
 
     Add externaltool linkparser for bash
@@ -3016,7 +3016,7 @@ M	plugins/spell/gedit-automatic-spell-checker.c
 M	plugins/spell/gedit-spell-plugin.c
 
 commit 096f053d90e42502985b436f98216f1e88afb6eb
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-01
 
     Use get_location instead of get_uri.
@@ -3024,7 +3024,7 @@ Date:	2010-01-01
 M	plugins/externaltools/tools/filelookup.py
 
 commit 52646452161693fd63ab304d7298d56b25ae4a28
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-02
 
     Register python bindings with gio-types.defs
@@ -3054,7 +3054,7 @@ A	plugins/externaltools/tools/linkparsing_test.py
 M	plugins/externaltools/tools/outputpanel.py
 
 commit 63d31f65c59b2cedbe71d23b90aa3ed514b73545
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-01
 
     Remove useless variables.
@@ -3062,7 +3062,7 @@ Date:	2010-01-01
 M	configure.ac
 
 commit 878df0798b3ed5a2ae400dd675e62e445a34c166
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2010-01-01
 
     Bind gedit_document_get_location on python
@@ -3070,7 +3070,7 @@ Date:	2010-01-01
 M	plugin-loaders/python/bindings/gedit.defs
 
 commit 097ce3be1e428bbfed3c3b426ae1e523bf40d2de
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-31
 
     Added support for platform specific tools
@@ -3080,7 +3080,7 @@ A	plugins/externaltools/data/open-terminal-here-osx.desktop.in
 A	plugins/externaltools/data/open-terminal-here-osx.tool.in
 
 commit 36c706b8ee782a3c077ec0cae2f74c1b05ad1b1c
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-31
 
     Added missing include for ige-mac-integration
@@ -3088,7 +3088,7 @@ Date:	2009-12-31
 M	gedit/gedit.c
 
 commit a37101056e1f8a5d19e3d03d3eebd1a083ba5914
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-31
 
     Process Info.plist with configure for version
@@ -3098,7 +3098,7 @@ R098	osx/Info.plist	osx/Info.plist.in
 A	osx/Makefile.am
 
 commit 561dee2cfc3e7946ebb9bc2b75acde52247847dd
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-30
 
     Install special gtkrc key theme for OSX bindings
@@ -3113,7 +3113,7 @@ M	osx/gtkrc
 A	osx/gtkrc.key.osx
 
 commit 645836151337c768abdc02ba43fe5d0ee20fe3e3
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-30
 
     Don't use the global key handler
@@ -3126,7 +3126,7 @@ M	gedit/gedit-window.c
 M	gedit/gedit.c
 
 commit 02c8ad9a0da2c0af15c49725006fecf8d0af29a7
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-30
 
     Added osx/geditdoc.icns icon
@@ -3134,7 +3134,7 @@ Date:	2009-12-30
 A	osx/geditdoc.icns
 
 commit 13c8241d4c9fdbc39a31e81a1c38ff7d5d06b62b
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-30
 
     Improved menu integration on OS X
@@ -3151,7 +3151,7 @@ M	gedit/gedit-window.c
 M	gedit/gedit-window.h
 
 commit 9c5ddd7f784b3a4687ffab9f9b20e6dcf6539699
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-30
 
     Copy over all of mateconf configuration
@@ -3161,7 +3161,7 @@ Date:	2009-12-30
 M	osx/gedit.bundle
 
 commit 571acaba8c30c2899ea0ae28b80e327ecc9d9d64
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-30
 
     Override OS X specific keybindings for GeditView
@@ -3169,7 +3169,7 @@ Date:	2009-12-30
 M	osx/gtkrc
 
 commit 85473dee7a90bb92720dc128190c4e62a768a64f
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-12-30
 
     Include gedit-commands.h fixes compile warning
@@ -3185,7 +3185,7 @@ Date:	2009-12-30
 M	po/cs.po
 
 commit 1c09f2ca98e26c55c3c74e8c9c7296171ee13d33
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-12-29
 
     Do not persist the number of printed copies, bug 546617
@@ -3193,7 +3193,7 @@ Date:	2009-12-29
 M	gedit/gedit-tab.c
 
 commit 6079c297173cbfff057da71fa51ec2a02b639cc9
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-12-29
 
     Fix packing options for the encodings combo and misc cleanups
@@ -3201,7 +3201,7 @@ Date:	2009-12-29
 M	gedit/gedit-io-error-message-area.c
 
 commit c0d7fb64b38f6cdf14fe8d12909e18e80e7bd366
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-12-28
 
     Scroll the file into view after a rename
@@ -3209,7 +3209,7 @@ Date:	2009-12-28
 M	plugins/filebrowser/gedit-file-browser-view.c
 
 commit c067e8b6fa59b203d3f7e9874c73433c25ff8fc2
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-12-26
 
     Add xslt snippets
@@ -3217,7 +3217,7 @@ Date:	2009-12-26
 A	plugins/snippets/data/xslt.xml
 
 commit 802fab7ff0e06156e994e1d9ceea260f01aabcac
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-12-26
 
     Fix style problems
@@ -3226,7 +3226,7 @@ M	plugins/snippets/data/c.xml
 M	plugins/snippets/data/chdr.xml
 
 commit b054d21d92f8d24d8cbbd6e1320ff3c3a56aceb4
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-12-25
 
     Use multiple selection for the html input type snippet
@@ -3234,7 +3234,7 @@ Date:	2009-12-25
 M	plugins/snippets/data/html.xml
 
 commit 4538f6709336ac92cace03b67a52719d4ffe859f
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-12-25
 
     Add some html snippets from bug 603663.
@@ -3274,7 +3274,7 @@ Date:	2009-12-19
 M	po/ro.po
 
 commit 6fe9a79db9c340a2140392b4442ce42682f6847a
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-12-18
 
     Do not ship the old libxml
@@ -3282,7 +3282,7 @@ Date:	2009-12-18
 M	win32/build-installer.sh
 
 commit 07c541d0500acd5a306f1742b1ef20558181808f
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:	2009-12-09
 
     Update Simplified Chinese translation.
@@ -3306,7 +3306,7 @@ Date:	2009-12-09
 M	po/hu.po
 
 commit 41fb213bfcd4ffe4b7c3adb7ffa8d286a65040e3
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-12-01
 
     Remember if the autospell was enabled per document. Fixes bug #451042.
@@ -3348,7 +3348,7 @@ Date:	2009-11-30
 M	gedit/Makefile.am
 
 commit e74cf81356f6ecb31a6b280c609a27fad9d36c44
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-30
 
     Do not use specific code for win32 with the new api.
@@ -3356,7 +3356,7 @@ Date:	2009-11-30
 M	plugins/spell/gedit-spell-plugin.c
 
 commit ce9b0167f956a73b0ebc3733ead52fa3d3a24ec9
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-30
 
     Change the metadata API from GFileInfo to gchar *.
@@ -3370,7 +3370,7 @@ M	gedit/gedit-document.h
 M	plugins/spell/gedit-spell-plugin.c
 
 commit 8b4e5afeed9ad2edbb005897965b5c4c3aaed28b
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-30
 
     Minor fix in the metadata api.
@@ -3381,7 +3381,7 @@ Date:	2009-11-30
 M	gedit/gedit-document.c
 
 commit a14fbfa10a400f3c69480265c1818e3199e8ce9d
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-30
 
     Do not apply attributes if the internal info doesn't exists
@@ -3389,7 +3389,7 @@ Date:	2009-11-30
 M	gedit/gedit-document.c
 
 commit 91cc070c0b46049badcd8db4fff304caba3b2994
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-29
 
     Use the gio metadata system.
@@ -3400,7 +3400,7 @@ Date:	2009-11-29
 M	plugins/spell/gedit-spell-plugin.c
 
 commit 0841034bea17313037367aabd25df9da06d0bb70
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-29
 
     Check for the language and the variant not just the language.
@@ -3408,7 +3408,7 @@ Date:	2009-11-29
 M	plugins/spell/gedit-spell-checker-language.c
 
 commit 3da295b5c2531b6f17ce0cdc7e733cd6fc7bcc67
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-29
 
     Return a copy of the info if not NULL.
@@ -3416,7 +3416,7 @@ Date:	2009-11-29
 M	gedit/gedit-document.c
 
 commit f6418bc80214999584d82ac1a493afbb8d7020e9
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-29
 
     Added gedit_document_(set_metadata|get_metadata) API.
@@ -3425,7 +3425,7 @@ M	gedit/gedit-document.c
 M	gedit/gedit-document.h
 
 commit 75c8fc566f0b7f7cd2af490261c596aa6bb20b94
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-28
 
     Use the gio metadata system.
@@ -3449,7 +3449,7 @@ Date:	2009-11-28
 M	osx/launcher.sh
 
 commit 1423dc0ba7d7d69bf9624798b7cf1f06c1effadd
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-11-28
 
     improve set_content_type
@@ -3457,7 +3457,7 @@ Date:	2009-11-28
 M	gedit/gedit-document.c
 
 commit 8966ff837feebf0e647293114c5876c358e861df
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-11-28
 
     cleanup: move fieldset at the end of the struct
@@ -3465,7 +3465,7 @@ Date:	2009-11-28
 M	gedit/gedit-document.c
 
 commit 6f9d6b6c1c1a4f274c2e9bba48695a0e9a8500f8
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-11-28
 
     small refactoring in guess_language
@@ -3474,7 +3474,7 @@ M	gedit/gedit-document-loader.c
 M	gedit/gedit-document.c
 
 commit aa31051492c1da7e591d166548c423c71ebab64d
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-27
 
     Minor fix.
@@ -3482,7 +3482,7 @@ Date:	2009-11-27
 M	gedit/gedit-document-loader.c
 
 commit c7426294df11ca7425dde38c69ecf4d446e8e77d
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-11-26
 
     Small refactoring about getting the encoding from metadata
@@ -3491,7 +3491,7 @@ M	gedit/gedit-document-loader.c
 M	gedit/gedit-document-loader.h
 
 commit c09638a5b73d4d7903cc9c38c773ccd0e5eb64ca
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-26
 
     Use GTimeVal instead of time_t.
@@ -3503,7 +3503,7 @@ M	gedit/gedit-gio-document-saver.c
 M	gedit/gedit-local-document-saver.c
 
 commit ac611f9a394fd7755e43b6bd0171f36aa62be1bd
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-25
 
     Use GFileInfo instead of several getters for the saver.
@@ -3517,7 +3517,7 @@ M	gedit/gedit-gio-document-saver.c
 M	gedit/gedit-local-document-saver.c
 
 commit 4bb0acc263872e63ed9f2f948df0999a573d8ce3
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-24
 
     Use GFileInfo instead of several getters for the loader.
@@ -3539,7 +3539,7 @@ Date:	2009-11-23
 M	po/el.po
 
 commit 61d704714da7d05bf65c43bc6ffcbd31b44afa9d
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-23
 
     Forze to guess again the content type when setting the uri.
@@ -3551,7 +3551,7 @@ Date:	2009-11-23
 M	gedit/gedit-document.c
 
 commit ac74d0e326887818ad0a4f3ad4835383c078c8c8
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-23
 
     Listen into content-type property.
@@ -3562,7 +3562,7 @@ Date:	2009-11-23
 M	gedit/gedit-document.c
 
 commit 2544cf20ded09aacea29975698d4c4413665f543
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-23
 
     Split set_uri into set_uri and set_content_type
@@ -3570,7 +3570,7 @@ Date:	2009-11-23
 M	gedit/gedit-document.c
 
 commit fbfc5d694be9c453a051c7218996f5af6d985551
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-22
 
     Use specific check for sigaction.
@@ -3579,7 +3579,7 @@ M	configure.ac
 M	plugin-loaders/python/gedit-plugin-loader-python.c
 
 commit 03def963fd345c4a16705ceb4eec774a12197c46
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-20
 
     Fix things to make work python plugins on win32.
@@ -3589,7 +3589,7 @@ M	plugin-loaders/python/gedit-plugin-loader-python.c
 M	plugins/quickopen/quickopen/windowhelper.py
 
 commit 6bab43e7424cfdda8ead9d1c6d0bff7d3a0722df
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-11-20
 
     Fix refcounting error in doc.get_search_text
@@ -3597,7 +3597,7 @@ Date:	2009-11-20
 M	plugin-loaders/python/bindings/gedit.override
 
 commit 5b118a9cbd778d9c5ca1bd61f0042f8ba2018906
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-18
 
     Add AC_SUBST TO toolbar style variable.
@@ -3605,7 +3605,7 @@ Date:	2009-11-18
 M	configure.ac
 
 commit 50da0b12d84a2d275003fc8a9c3b228c89013782
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-16
 
     Release 2.29.2
@@ -3726,7 +3726,7 @@ Date:	2009-11-14
 M	plugins/externaltools/tools/manager.py
 
 commit 00c32b60310ce76fbf6b01f31933627f89dfbe27
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-13
 
     Remove translatable strings from the snippets lang file. Fixes
@@ -3760,7 +3760,7 @@ Date:	2009-11-11
 M	po/ta.po
 
 commit b5dd402aef022a9bda29f0fee6819b8beda86377
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-12
 
     Build fixes for cygwin. Fixes bug #601630.
@@ -3813,7 +3813,7 @@ Date:	2009-11-09
 M	po/POTFILES.in
 
 commit 9cbdab750b2015e7be2919ed4ee920323bbb5a18
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-11-09
 
     AC_PROG_OBJC cannot be inside a condition
@@ -3849,7 +3849,7 @@ Date:	2009-11-09
 M	plugins/snippets/snippets/Document.py
 
 commit a72bbae65c8a2605c7336e3647e363350464a992
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-11-08
 
     Show new version number in update message
@@ -3857,7 +3857,7 @@ Date:	2009-11-08
 M	plugins/checkupdate/gedit-check-update-plugin.c
 
 commit 9b79f08b726fb9207b61ef12fa47bed01c9ed8d4
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-11-08
 
     Use gedit_osx_show_url on OS X for update plugin
@@ -3865,7 +3865,7 @@ Date:	2009-11-08
 M	plugins/checkupdate/gedit-check-update-plugin.c
 
 commit cb858c90295475a81c9f3f5919bb3e2d10ee313a
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-11-08
 
     Update urls switched for OS X and windows
@@ -3873,7 +3873,7 @@ Date:	2009-11-08
 M	plugins/checkupdate/gedit-check-update-plugin.c
 
 commit 6f113b5a97dcd19f1efa8d0b675200f063f84c66
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-11-08
 
     Implemented file open support on OS X
@@ -3900,7 +3900,7 @@ Date:	2009-11-08
 M	po/ro.po
 
 commit c912b552f05caf9c03c3019eedb56feeee8327dd
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-08
 
     Use elif and fix get_locale_dir func.
@@ -3908,7 +3908,7 @@ Date:	2009-11-08
 M	gedit/gedit-dirs.c
 
 commit be77564a70f8966ba7140e4a133e6512689912cc
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-11-08
 
     Fixed OS X native vs X11 built
@@ -3933,7 +3933,7 @@ M	gedit/osx/Makefile.am
 M	gedit/smclient/Makefile.am
 
 commit 5e764a41f4ddc174e29b0c7d1dfc8875b3cdedfa
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-06-11
 
     Basic mac OS X integration (menu, dock, bundle)
@@ -4009,7 +4009,7 @@ Date:	2009-11-06
 M	po/sl.po
 
 commit 93c31488f6f0662c3e789bfdc14ce843fe0a3ebd
-Author: Aron Xu <aronxu@mate.org>
+Author: Aron Xu <aronxu@gnome.org>
 Date:	2009-11-06
 
     Minor change on Simplified Chinese translation.
@@ -4033,7 +4033,7 @@ Date:	2009-11-04
 M	configure.ac
 
 commit 09bbcbcd7fb8983b80374f1dc808358b0d8145a2
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-04
 
     Do not use AC_DEFINE_UNQUOTED with the spinner.
@@ -4041,7 +4041,7 @@ Date:	2009-11-04
 M	configure.ac
 
 commit a6fdf69c62b92591ce7a7e0935cfd57abf4d566d
-Author: Thomas Thurman <tthurman@mate.org>
+Author: Thomas Thurman <tthurman@gnome.org>
 Date:	2009-11-04
 
     Added Shavian translation
@@ -4058,7 +4058,7 @@ Date:	2009-11-03
 M	po/ta.po
 
 commit 50f31e6467c7cd30b4c5025f1014c2b69a822544
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-11-02
 
     Use only icon in the toolbar in windows
@@ -4083,7 +4083,7 @@ Date:	2009-10-29
 M	po/es.po
 
 commit 3edb6ad18e6943c9fd22fdaa3675b77cc3fac30a
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-10-29
 
     Use GtkSpinner instead of GeditSpinner with gtk+ >= 2.19.0
@@ -4093,7 +4093,7 @@ M	gedit/Makefile.am
 M	gedit/gedit-notebook.c
 
 commit a71e729b9e6185e4023f918e9b847cf492051c8d
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-10-29
 
     Update git.mk from pango
@@ -4101,7 +4101,7 @@ Date:	2009-10-29
 M	git.mk
 
 commit d6a303382fcd7e4f7886e0c05a29113cf39b5ab7
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-10-28
 
     Remove markup from labels. (Fixes bug #99659)
@@ -4158,7 +4158,7 @@ Date:	2009-10-17
 M	po/th.po
 
 commit 25477f95fb64ef947e45f4ba9908441bbf513552
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-10-16
 
     Release 2.29.1
@@ -4169,7 +4169,7 @@ M	configure.ac
 M	po/POTFILES.in
 
 commit aafbce96c112e42cae461a225f8aa65cb41cbd40
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-10-15
 
     Scroll to cursor when the document is loaded.
@@ -4325,7 +4325,7 @@ M	plugins/snippets/snippets/Placeholder.py
 D	plugins/snippets/snippets/SnippetComplete.py
 
 commit e1934362cb99f0149654ed723a2297b98ad85e35
-Author: Gil Forcada <gforcada@mate.org>
+Author: Gil Forcada <gforcada@gnome.org>
 Date:	2009-09-24
 
     Minor fix to Catalan translation
@@ -4411,7 +4411,7 @@ Date:	2009-09-20
 M	po/mai.po
 
 commit 465af9ac9da7f3d1caca1e5b0ca9e4b6d7f3dfd7
-Author: Gil Forcada <gforcada@mate.org>
+Author: Gil Forcada <gforcada@gnome.org>
 Date:	2009-09-19
 
     Updated Catalan translation
@@ -4507,7 +4507,7 @@ Date:	2009-09-15
 M	po/ro.po
 
 commit 718dd01a23cdced0b622dc05a58f98e606857d21
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-09-14
 
     Remanme build-installer to build-installer.sh
@@ -4523,7 +4523,7 @@ Date:	2009-09-14
 M	data/gedit.desktop.in.in
 
 commit 5b869e23ca1f60a31acc8c06cfd943077cc46648
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:	2009-09-14
 
     Update Norwegian bokmål translation.
@@ -4531,7 +4531,7 @@ Date:	2009-09-14
 M	po/nb.po
 
 commit 0d1d5005aa7bf3d02b393509e2e4b048cc07f985
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-09-14
 
     Add aspell support and fix mateconf schemas
@@ -4539,7 +4539,7 @@ Date:	2009-09-14
 M	win32/build-installer
 
 commit ced1ce1bb3a23be190e2e19598506910e895c8c7
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-09-14
 
     Fix the locale instalation and downgrade libxml because of mateconf
@@ -4547,7 +4547,7 @@ Date:	2009-09-14
 M	win32/build-installer
 
 commit 94bb89d40d9d9ba72b801e3eb2a6b48e1d9a2f06
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-09-13
 
     Avoid warning on win32
@@ -4563,7 +4563,7 @@ Date:	2009-09-13
 M	po/da.po
 
 commit a63e44bdf646a07fa20ec23197464ef917a4b587
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-09-13
 
     Cleanup the installer scripts.
@@ -4583,7 +4583,7 @@ Date:	2009-09-12
 M	po/en_GB.po
 
 commit 4fe90116dc8407e91b1e37629b9f40a0e1cf7fe7
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-09-12
 
     Be more paranoid about a case that should never happen...
@@ -4682,7 +4682,7 @@ Date:	2009-09-08
 M	po/pt_BR.po
 
 commit b534d564dd989241c5f3d5b0a759758158780186
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-09-08
 
     Reserve memory to avoid memory corruptions
@@ -4714,7 +4714,7 @@ Date:	2009-09-08
 M	po/pa.po
 
 commit e6e802633bc0946a38dc8252d36b367e9f76def2
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-09-07
 
     Release 2.27.6
@@ -4724,7 +4724,7 @@ M	README
 M	configure.ac
 
 commit 4a28b9c7d3999dd9f47619897cb7cf4c2c438b78
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-09-07
 
     Change ifdef condition
@@ -4732,7 +4732,7 @@ Date:	2009-09-07
 M	gedit/gedit.c
 
 commit 2997ceca2c56b1eeca0ecb6269dfce979c66d779
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-09-07
 
     Misc cleanups pointed out by clang static analyzer
@@ -4801,7 +4801,7 @@ Date:	2009-09-06
 M	help/el/el.po
 
 commit 9d17ae749da313b7240a99902db7e192ca1dfa5f
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:	2009-09-05
 
     Updated German translation
@@ -4849,7 +4849,7 @@ Date:	2009-09-04
 M	po/sv.po
 
 commit f0fe78300afc2eacc35d84417cd01aef01ed8199
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-09-04
 
     Add missing string in desktop file.
@@ -4873,7 +4873,7 @@ Date:	2009-09-02
 
     Updated Brazilian Portuguese translation.
 
-    Reviewed by Fábio Nogueira <fnogueira@mate.org>.
+    Reviewed by Fábio Nogueira <fnogueira@gnome.org>.
 
 M	po/pt_BR.po
 
@@ -4886,7 +4886,7 @@ Date:	2009-09-01
 M	help/pt_BR/pt_BR.po
 
 commit 54530b498ad04e7482ab75fc68b329b146ae7f40
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:	2009-09-01
 
     Update Norwegian bokmål translation.
@@ -4987,7 +4987,7 @@ Date:	2009-08-31
 M	po/gu.po
 
 commit 89c6996f9ef8a892ef85584ebac1e5cd5965d195
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-08-31
 
     Fixed access keys for "Edit Anyway" and "Don't Edit"
@@ -5054,7 +5054,7 @@ Date:	2009-08-30
 M	po/tr.po
 
 commit 2372f3ad4d570fa2231636f915027cfe23c16a65
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:	2009-08-30
 
     Updated German translation
@@ -5138,7 +5138,7 @@ Date:	2009-08-25
 M	po/ta.po
 
 commit f426d798ef5494d35f1294d1cb26e9cb3a6e1ae7
-Author: Og B. Maciel <ogmaciel@mate.org>
+Author: Og B. Maciel <ogmaciel@gnome.org>
 Date:	2009-08-24
 
     Updated Brazilian Portuguese translation.
@@ -5146,7 +5146,7 @@ Date:	2009-08-24
 M	po/pt_BR.po
 
 commit 3aaa7833c6565b362c73b51fc85873184f3ab388
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-24
 
     Release 2.27.5
@@ -5182,7 +5182,7 @@ Date:	2009-08-24
 M	po/ro.po
 
 commit a3359fee31034e9ad95de3d793d155287aa4f2ae
-Author: Gil Forcada <gforcada@mate.org>
+Author: Gil Forcada <gforcada@gnome.org>
 Date:	2009-08-24
 
     Minor fix to Catalan translation
@@ -5199,7 +5199,7 @@ M	po/LINGUAS
 A	po/ca@valencia.po
 
 commit 978ae6499cd17154d8619343151a3f4c120c211a
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-08-24
 
     Remove sexy-icon-entry and bump gtk+ to 2.16.0
@@ -5211,7 +5211,7 @@ D	gedit/sexy-icon-entry.c
 D	gedit/sexy-icon-entry.h
 
 commit d537c157fd93cdbab3016cc2d5d3fcfe0346d923
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-24
 
     Fix print preview fit-to-page in landscape mode
@@ -5283,7 +5283,7 @@ Date:	2009-08-22
 M	data/gedit.desktop.in.in
 
 commit 9c95fbdb630b978d3fd503b19e60c6ca0bb202d5
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-22
 
     Update smclient from libegg
@@ -5291,7 +5291,7 @@ Date:	2009-08-22
 M	gedit/smclient/eggsmclient-osx.c
 
 commit b9b5264242b7e668f15e82e385fa356b15b6da71
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-08-22
 
     Print the invalid encoding error always in the client.
@@ -5299,7 +5299,7 @@ Date:	2009-08-22
 M	gedit/gedit.c
 
 commit 80a4a6e4b37b5b789e168a8f0a0d807eb8b62408
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-08-22
 
     Ignores the command line option --encoding when there is already an
@@ -5348,7 +5348,7 @@ Date:	2009-08-20
 M	po/pl.po
 
 commit f2c03e2f816acaf226d2548dae4fac94f5456f04
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-19
 
     Use the proper word_wrap setting when printing.
@@ -5360,7 +5360,7 @@ Date:	2009-08-19
 M	gedit/gedit-print-job.c
 
 commit e88d76c474edaebd344dec959e0bd7bc8b3164d6
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-19
 
     Fix some GCC warnings
@@ -5378,7 +5378,7 @@ M	gedit/gedit-view.c
 M	gedit/gedit-window.c
 
 commit dab36a10bf3a898cfa8097a2f17c9bcb0410f40b
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-19
 
     Avoid potentianl memory corruption in the g_return_if_fail case
@@ -5386,7 +5386,7 @@ Date:	2009-08-19
 M	gedit/gedit-utils.c
 
 commit e14adb68d3319192c0acc09222d313f7b826bda2
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-19
 
     Correctly check for the encoding command line message
@@ -5394,7 +5394,7 @@ Date:	2009-08-19
 M	gedit/gedit.c
 
 commit 1b883d0341373b17721af7b162f6ed50fdb1ea3d
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-19
 
     Fix some coding style issues
@@ -5405,7 +5405,7 @@ M	gedit/gedit-plugins-engine.c
 M	gedit/gedit-status-combo-box.c
 
 commit 7c4b0beb2d6ae4c893e9b6cda9597f349e3d2ad2
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-19
 
     Do not return a GtkTreeIter by value
@@ -5413,7 +5413,7 @@ Date:	2009-08-19
 M	gedit/gedit-documents-panel.c
 
 commit 4843c8206d70b1be855527f27e89cf872949f0b8
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-19
 
     Fix some compiler warnings in the filebrowser plugin
@@ -5424,7 +5424,7 @@ M	plugins/filebrowser/gedit-file-browser-utils.c
 M	plugins/filebrowser/gedit-file-browser-view.c
 
 commit ea09072f07601290415213e12861aebe876b655c
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-19
 
     Use void for functions without params
@@ -5432,7 +5432,7 @@ Date:	2009-08-19
 M	gedit/gedit-dirs.c
 
 commit 42c06b44a7de863c97556282464fac161ab2085c
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-19
 
     Error bell when entering text in the goto line
@@ -5448,7 +5448,7 @@ Date:	2009-08-19
 M	po/bg.po
 
 commit 2879565b06dbd68d65f7c0692f1888e957c72866
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-18
 
     Make sure to get the content type when loading
@@ -5468,7 +5468,7 @@ Date:	2009-08-17
 M	po/et.po
 
 commit 09a7a70fa2122343f5883b3d065494949f44f5cc
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-16
 
     Overwrite gzipped tag files
@@ -5492,7 +5492,7 @@ Date:	2009-08-15
 M	plugins/docinfo/docinfo.ui
 
 commit 3165df90e206f6cf4f7521087692419e59d6d7a8
-Author: Paolo Borelli <pborelli@mate.org>
+Author: Paolo Borelli <pborelli@gnome.org>
 Date:	2009-08-15
 
     No need to keep the uncompressed taglists around
@@ -5541,7 +5541,7 @@ M	po/LINGUAS
 A	po/eo.po
 
 commit e9d13c4307ebea8beeecc4e107edf77079710560
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-10
 
     Release 2.27.4
@@ -5563,7 +5563,7 @@ Date:	2009-08-09
 M	plugins/filebrowser/gedit-file-browser-messages.c
 
 commit b31143c7985a794f56739f2b6b83721eeccbe004
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-10
 
     With gtk > 2.17.4 use page setup embedded in print dialog
@@ -5580,7 +5580,7 @@ M	gedit/gedit-ui.xml
 M	gedit/gedit-window.c
 
 commit 1e18ae038b63dfb5889c15fb3108937dbf8aad9f
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-10
 
     Be quiet about marshallers and enums generation
@@ -5590,7 +5590,7 @@ M	plugins/filebrowser/Makefile.am
 M	plugins/spell/Makefile.am
 
 commit d834aaa73bc1e27020bc4198fb4ad6b8804ca5fc
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-10
 
     Better automation of message of doom
@@ -5600,7 +5600,7 @@ M	configure.ac
 D	message-of-doom
 
 commit 0654e6572e90ff2583f7fb4b528f0e748dd3e428
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-08-08
 
     Overwrite the change_current_page binding on gedit-notebook.
@@ -5613,7 +5613,7 @@ Date:	2009-08-08
 M	gedit/gedit-notebook.c
 
 commit e2a9aa4f4adfb287f03280bac54cb919bec85ef6
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-08
 
     Add a popup menu to the bookmarks list
@@ -5669,7 +5669,7 @@ Date:	2009-08-04
 M	po/es.po
 
 commit a56b1736c918348cb21eb09ae68c72b99cef994f
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:	2009-08-03
 
     Updated Norwegian bokmål translation.
@@ -5677,7 +5677,7 @@ Date:	2009-08-03
 M	po/nb.po
 
 commit 8746edf887e9a10d40768ef6b045df08dde029cc
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-02
 
     Respect button-image setting for add scheme button
@@ -5713,7 +5713,7 @@ Date:	2009-08-01
 M	plugins/snippets/snippets/Document.py
 
 commit e2c7c27bf1c88f4e6329f87c883f6d74adbc656c
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-01
 
     Properly set search color according to the theme
@@ -5724,7 +5724,7 @@ Date:	2009-08-01
 M	gedit/gedit-document.c
 
 commit 302d41a59537914c6a10b6f7626053d3e0f443dd
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-01
 
     Grab focus on the python console when showing it
@@ -5732,7 +5732,7 @@ Date:	2009-08-01
 M	plugins/pythonconsole/pythonconsole/console.py
 
 commit 190b8971a9ac061b5aec926c832d73425981fc71
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-01
 
     Do not use the reserved GZIP variable. Bug #583940
@@ -5749,7 +5749,7 @@ Date:	2009-08-01
 M	po/et.po
 
 commit 597b2b8ff323c61370620927234b327e8ca21595
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-01
 
     Backport EOG UI improvements to the plugin manager
@@ -5757,7 +5757,7 @@ Date:	2009-08-01
 M	gedit/gedit-plugin-manager.c
 
 commit 53760d0ae606ec02692287cfc55e39ab43f8e111
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-01
 
     Fix runtime warning in last patch
@@ -5765,7 +5765,7 @@ Date:	2009-08-01
 M	plugins/changecase/gedit-changecase-plugin.c
 
 commit 69f3c603f9cf27517619c503c44728ae7061b429
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-01
 
     Make Change Case sensitivity depend on selection
@@ -5773,7 +5773,7 @@ Date:	2009-08-01
 M	plugins/changecase/gedit-changecase-plugin.c
 
 commit 4585957f669559838d77ea59a3bf0277542440c5
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-08-01
 
     Update plugins ui when selection changes
@@ -5781,7 +5781,7 @@ Date:	2009-08-01
 M	gedit/gedit-window.c
 
 commit 607fb72cebd9430921159e8958e6cdaf104ffd18
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-29
 
     Automate the message of doom printing
@@ -5813,7 +5813,7 @@ Date:	2009-07-28
 M	po/ar.po
 
 commit 4b674a5536d4a1f448be796a4c2880302e207e32
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-27
 
     Release 2.27.3
@@ -5831,7 +5831,7 @@ Date:	2009-07-26
 M	po/gl.po
 
 commit af870493eb920359b450c75d4420b2bcfa05c49f
-Author: Mario Blättermann <mariobl@mate.org>
+Author: Mario Blättermann <mariobl@gnome.org>
 Date:	2009-07-26
 
     Updated German translation
@@ -5839,7 +5839,7 @@ Date:	2009-07-26
 M	help/de/de.po
 
 commit d42648f5da53c5e5afb61156222753f683236a15
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-25
 
     Split the time plugin ui files in two files
@@ -5854,7 +5854,7 @@ D	plugins/time/time.ui
 M	po/POTFILES.in
 
 commit a49305578550d22309a4a927476c18bc7c6894e3
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-24
 
     Update smclient from libegg
@@ -5864,7 +5864,7 @@ M	gedit/smclient/eggdesktopfile.h
 M	gedit/smclient/eggsmclient-xsmp.c
 
 commit 55719c2e76729131cf931ad71878259339e09cf8
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-25
 
     Plug small leak on error path
@@ -5888,7 +5888,7 @@ Date:	2009-07-20
 M	po/pt_BR.po
 
 commit 8cf5bac50c7976aa60d26076103646627f49313b
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-19
 
     Use consistent PEP-8 style in pythonconsole
@@ -5898,7 +5898,7 @@ M	plugins/pythonconsole/pythonconsole/config.py
 M	plugins/pythonconsole/pythonconsole/console.py
 
 commit 578301e7cd8a781f54cd0a07c80429b36d726bed
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-18
 
     "Save As" should be sensitive after a saving error
@@ -5909,7 +5909,7 @@ Date:	2009-07-18
 M	gedit/gedit-window.c
 
 commit 6dfb899adbc28caffcaa8aaf4c460796d3b64891
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-18
 
     Remove overzealous assertion
@@ -5919,7 +5919,7 @@ Date:	2009-07-18
 M	gedit/gedit-commands-file.c
 
 commit 7aa0d06f1649f45555c82525b68387c4d278a6d9
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-18
 
     Code cleanup
@@ -5936,7 +5936,7 @@ Date:	2009-07-18
 M	po/es.po
 
 commit a93d4c8cb8ebd57928eb427c3955fe8511d35679
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-18
 
     Add mnemoning to the External Tools submenu
@@ -6031,7 +6031,7 @@ Date:	2009-06-14
 M	po/sv.po
 
 commit 600bf89644607ff0b31f5d5a19c13b88ab44e1ad
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-04
 
     Add MAINTAINERCLEANFILES for the sake of git.mk
@@ -6043,7 +6043,7 @@ Date:	2009-07-04
 M	Makefile.am
 
 commit 4c6034d8700192cbd5a9b9beeb87dc172e422171
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-04
 
     Move panes actions to a separate action group
@@ -6058,7 +6058,7 @@ M	gedit/gedit-window-private.h
 M	gedit/gedit-window.c
 
 commit d6cf85fdaee59320e806598be562931694b89d4d
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-07-04
 
     Fix python runtime warning
@@ -6076,7 +6076,7 @@ Date:	2009-06-28
 M	help/cs/cs.po
 
 commit c42b6b8ce7a5bfbcfaa3d78f0c98660b2dea0610
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-06-27
 
     Enable silent mode when using a modern automake
@@ -6122,7 +6122,7 @@ A	help/cs/cs.po
 A	help/cs/figures/gedit_window.png
 
 commit b4662053efa6f0588c94674584dea5562d51fa95
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-21
 
     Fix detection for libsoup on win32 and add it to the build script.
@@ -6133,7 +6133,7 @@ M	win32/build-installer
 M	win32/gedit.iss.in
 
 commit 1f9ed3a1dd448e220f2e57e86d811318f8e08650
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-21
 
     release 2.27.2
@@ -6143,7 +6143,7 @@ M	README
 M	configure.ac
 
 commit fcae337dfd1292ef1f13f2f3db86740a5bcd676a
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-21
 
     Fix plugins distcheck.
@@ -6152,7 +6152,7 @@ M	configure.ac
 M	plugins/Makefile.am
 
 commit 650971fe2302a099d506c5d486fdb6a6e5e76ecf
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-21
 
     Remove gedit-message-area from docs.
@@ -6174,7 +6174,7 @@ Date:	2009-06-21
 M	po/es.po
 
 commit cda3fddaff08172b790f52fe34f7273f416116a2
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-20
 
     Update POTFILES
@@ -6183,7 +6183,7 @@ M	po/POTFILES.in
 M	po/POTFILES.skip
 
 commit b7e37fa32253324a6408e999c9a978a1c93f3496
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-20
 
     Add check update plugin.
@@ -6201,7 +6201,7 @@ A	plugins/checkupdate/gedit-check-update-plugin.c
 A	plugins/checkupdate/gedit-check-update-plugin.h
 
 commit 57cbc3cef035859e739703b32d4809c5652cf306
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-18
 
     Update the message of doom
@@ -6209,7 +6209,7 @@ Date:	2009-06-18
 M	message-of-doom
 
 commit e827e1c01de4d58017f40e4e7848a303e575a52c
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-18
 
     Show the message of doom
@@ -6217,7 +6217,7 @@ Date:	2009-06-18
 M	configure.ac
 
 commit d4ead5e444d38775157b9e49b0d58f6e1e7e9f3a
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-17
 
     When opeing gedit from console on win32 visualize the stdout.
@@ -6225,7 +6225,7 @@ Date:	2009-06-17
 M	gedit/gedit.c
 
 commit 0b738c5229fde62a5f52fae785e1c25a6e6c1a3d
-Author: Gil Forcada <gforcada@mate.org>
+Author: Gil Forcada <gforcada@gnome.org>
 Date:	2009-06-14
 
     Minor fix to Catalan translation
@@ -6233,7 +6233,7 @@ Date:	2009-06-14
 M	po/ca.po
 
 commit 5c2e391238fff919c8449ea139e675a4dbcd3b76
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-13
 
     Add gedit-message-area as public api.
@@ -6244,7 +6244,7 @@ Date:	2009-06-13
 M	gedit/Makefile.am
 
 commit b0b7a86205dfde2081e0b22de77a3811b9e33893
-Author: Jesse van den Kieboom <jessevdk@mate.org>
+Author: Jesse van den Kieboom <jessevdk@gnome.org>
 Date:	2009-06-13
 
     Set initial external tool text not undoable
@@ -6252,7 +6252,7 @@ Date:	2009-06-13
 M	plugins/externaltools/tools/manager.py
 
 commit 7a5c1c261a61009b6a4ab4940d912b30889ab141
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-06
 
     Use gtkinfobar in case we have gtk+ >= 2.17.1
@@ -6265,7 +6265,7 @@ M	gedit/gedit-progress-message-area.h
 M	gedit/gedit-tab.c
 
 commit d11b28ee6e977b0a5b57ccd8ad2541bc4fb4560c
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-10
 
     Remember the search dialog position.
@@ -6277,7 +6277,7 @@ M	gedit/dialogs/gedit-search-dialog.c
 M	gedit/gedit-commands-search.c
 
 commit 30f824352b3a9165f44f867973f4f6fa673cc5d7
-Author: Kjartan Maraas <kmaraas@mate.org>
+Author: Kjartan Maraas <kmaraas@gnome.org>
 Date:	2009-06-10
 
     Updated Norwegian bokmål translation.
@@ -6285,7 +6285,7 @@ Date:	2009-06-10
 M	po/nb.po
 
 commit 28052e18a60ec5c83a4c059d8f326dceb36b665a
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-06-08
 
     gedit-commands header is public
@@ -6293,7 +6293,7 @@ Date:	2009-06-08
 M	gedit/Makefile.am
 
 commit 92d642191efe674cc336f47f783eb9fc156a29f5
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-06-08
 
     Avoid sync stat for the icon of remote bookmarks
@@ -6314,7 +6314,7 @@ Date:	2009-06-07
 M	po/es.po
 
 commit d39551315985319b413dedd3e3336470cc98c6cc
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-06
 
     Add translator comments.
@@ -6322,7 +6322,7 @@ Date:	2009-06-06
 M	gedit/gedit-commands-search.c
 
 commit 8ef1dfdc39c152b6bdc106c533c8c2e4d297e775
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-06-06
 
     Remove the use of "Phrase" when searching.
@@ -6351,7 +6351,7 @@ Date:	2009-06-02
 M	po/ml.po
 
 commit 85d532cf11637d2e5dedaef353971315f951d0d4
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-06-02
 
     Do not append the final endline for empty files
@@ -6376,7 +6376,7 @@ Date:	2009-06-01
 M	po/ml.po
 
 commit c5aab1fda7cef9caaebc4279c3948dae38a26780
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-30
 
     Snippet insertion should be not undoable.
@@ -6386,7 +6386,7 @@ Date:	2009-05-30
 M	plugins/snippets/snippets/Manager.py
 
 commit 34093e0435f08f5727b472b2195fb1090ebe7928
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-30
 
     Do not use deprecated gtk.Tooltips.
@@ -6402,7 +6402,7 @@ Date:	2009-05-30
 M	po/da.po
 
 commit bba4279f7db04364a5bca64c4946a23a6913de78
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-29
 
     Show the help on windows.
@@ -6420,7 +6420,7 @@ Date:	2009-05-28
 M	po/eu.po
 
 commit 8f1324a9f72a0bbbf9fcdd1e6b8578dfb3c648e6
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-28
 
     Hide the fullscreen control when minimizing gedit.
@@ -6431,7 +6431,7 @@ Date:	2009-05-28
 M	gedit/gedit-window.c
 
 commit a1fde95ae9e687f8a3260e915e1ffe61a8a1379d
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-26
 
     release 2.27.1
@@ -6553,7 +6553,7 @@ Date:	2009-05-23
 M	plugins/externaltools/tools/functions.py
 
 commit 44c1759aa453f4eef556584221479524ba2f92a0
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-23
 
     Removed glade files.
@@ -6903,7 +6903,7 @@ Date:	2009-05-21
 M	po/ta.po
 
 commit 44cad26ff64cb3b224e032e147cbc3b0d7daf76b
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-19
 
     Remember filechooser location also for remote files
@@ -6938,7 +6938,7 @@ Date:	2009-05-18
 M	po/es.po
 
 commit 08f888b5c79f3a903350cff6db988efde2a5d7d5
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-18
 
     Set "Print" short label
@@ -6957,7 +6957,7 @@ Date:	2009-05-17
 M	help/C/gedit.xml
 
 commit 8a241c530f87999233041369332175078423e50e
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-17
 
     Revert "Remove the use of AsyncData"
@@ -6973,7 +6973,7 @@ Date:	2009-05-17
 M	gedit/gedit-gio-document-loader.c
 
 commit 26c2dfbd90b2f973f8540b15be4da38216e3a70b
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-17
 
     Remove open location dialog
@@ -6992,7 +6992,7 @@ M	gedit/gedit-ui.xml
 M	gedit/gedit-window.c
 
 commit 946c90386c9710863758185092eededb02dd45d1
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-17
 
     Remove sample plugin
@@ -7010,7 +7010,7 @@ D	plugins/sample/gedit-sample-plugin.h
 D	plugins/sample/sample.gedit-plugin.desktop.in
 
 commit 3b452f68100228eeee651cba81f3846b2bbf250d
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-17
 
     Getter to access the saver's document
@@ -7022,7 +7022,7 @@ M	gedit/gedit-document-saver.h
 M	gedit/gedit-gio-document-saver.c
 
 commit 65f2fe525e063936f4b8dfbf8e85f57ad6a0898b
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-17
 
     Remove the mmap document loader
@@ -7035,7 +7035,7 @@ D	gedit/gedit-mmap-document-loader.c
 D	gedit/gedit-mmap-document-loader.h
 
 commit 5eb923751bbae5f6dca7854d89ad423fbc1adc27
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-17
 
     Always use Gio Document Loader
@@ -7048,7 +7048,7 @@ Date:	2009-05-17
 M	gedit/gedit-document-loader.c
 
 commit 9e97ec942808a801941a36370762d8742d0dd53f
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-17
 
     Remove the use of AsyncData
@@ -7060,7 +7060,7 @@ Date:	2009-05-17
 M	gedit/gedit-gio-document-loader.c
 
 commit ca9fa911d0360e10aa4e77060353cc2bd05e2a63
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-17
 
     Getter to access the loader's document
@@ -7094,7 +7094,7 @@ A	plugins/quickopen/quickopen/windowhelper.py
 M	po/POTFILES.in
 
 commit ad243f6998b1cbd6196a0def45389bf7651829c1
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-17
 
     Change CRLF endings to LF.
@@ -7102,7 +7102,7 @@ Date:	2009-05-17
 M	win32/README
 
 commit 2100d5beccb9f6ddc2f0cdab2138d6491721bfbf
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-17
 
     Move to LINE:NUM in the popup goto line.
@@ -7115,7 +7115,7 @@ M	gedit/gedit-document.h
 M	gedit/gedit-view.c
 
 commit 0e342910137b7b393db893c994a3c0d262435ab0
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-16
 
     Command line option to list supported encodings
@@ -7127,7 +7127,7 @@ M	data/gedit.1
 M	gedit/gedit.c
 
 commit 24dfcf7d9645faec7a5265d52cccaabc2286d48b
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-16
 
     Fix id.po validation
@@ -7138,7 +7138,7 @@ Date:	2009-05-16
 M	po/id.po
 
 commit 20f88c81ebb18fcfc0fa249a535abd0bf221ca39
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-16
 
     Fix bn.po validation
@@ -7149,7 +7149,7 @@ Date:	2009-05-16
 M	po/bn.po
 
 commit 77d919927a62547651c0e18fa13230b38f40dc54
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-16
 
     Release 2.26.2
@@ -7159,7 +7159,7 @@ M	README
 M	configure.ac
 
 commit aefc0b9565b0f206fdc17ba5673f2b61fb8871cc
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-16
 
     Dist doap file
@@ -7167,7 +7167,7 @@ Date:	2009-05-16
 M	Makefile.am
 
 commit 0063061bc63227c70210ca8be2117296aa7cc994
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-16
 
     Improve ChangeLog generation
@@ -7244,7 +7244,7 @@ Date:	2009-05-10
 M	plugins/snippets/snippets/Helper.py
 
 commit 0d2e5a2b778ddb182beb66f2c5d9e5041cd1a971
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-07
 
     Add class diagram.
@@ -7253,7 +7253,7 @@ M	docs/Makefile.am
 A	docs/class-diagram.dia
 
 commit 9680df0ad9f4c818ee2fe0595a35c853c103d306
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-05
 
     Add git.mk to generate the .gitignore.
@@ -7311,7 +7311,7 @@ Date:	2009-05-04
 M	configure.ac
 
 commit 425ab556c1283c0f55e825d47cc3fe931f93a931
-Author: Ignacio Casal Quinteiro <icq@mate.org>
+Author: Ignacio Casal Quinteiro <icq@gnome.org>
 Date:	2009-05-04
 
     Add gedit.rc to EXTRA_DIST
@@ -7330,7 +7330,7 @@ Date:	2009-05-03
 M	po/es.po
 
 commit a8ec4e45bbeba07f4b8268b3eae79133d907f960
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-03
 
     Fix mbox elements in the doap file
@@ -7338,7 +7338,7 @@ Date:	2009-05-03
 M	gedit.doap
 
 commit 7d13146b335762d03d3585c3c33b71a424a422c2
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-05-03
 
     Make sure the config dir exists
@@ -7425,7 +7425,7 @@ Date:	2009-04-23
 M	gedit.doap
 
 commit 5e96ecc8c676df25b539c6d9431f6eb0562137ac
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-04-18
 
     configure.ac cleanups
@@ -7452,7 +7452,7 @@ M	help/Makefile.am
 A	help/ar/ar.po
 
 commit d0a70945f322a447ad92f6da66c42930e3347bb8
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-04-18
 
     Autogenerated ChangeLog
@@ -7462,7 +7462,7 @@ Date:	2009-04-18
 M	Makefile.am
 
 commit 2ed0a4a20670fb8507192e8a99a372c063f53298
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-04-18
 
     remove spurius file
@@ -7472,7 +7472,7 @@ Date:	2009-04-18
 D	.bzrignore
 
 commit f8800db5a019aa50c81cef83f8a0640b2d3c2f30
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-04-18
 
     Autogenerate ChangeLog file
@@ -7482,7 +7482,7 @@ Date:	2009-04-18
 A	ChangeLog
 
 commit fb7b847513758c47d6c7057b5258c03592fe90a1
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-04-18
 
     Rename old ChangeLog files
@@ -7495,7 +7495,7 @@ R100	help/ChangeLog	help/ChangeLog-20090418
 R100	po/ChangeLog	po/ChangeLog-20090418
 
 commit ff9854a77ef874753b109714597a3a690260fff5
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-04-18
 
     Update HACKING and README for git
@@ -7506,7 +7506,7 @@ M	HACKING
 M	README
 
 commit 30667e0d903006a3c3fc14bf24c47f082463bca8
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-04-18
 
     Improve doap file
@@ -7516,7 +7516,7 @@ Date:	2009-04-18
 M	gedit.doap
 
 commit d6ba56f69f90aa25d2228c40859d2f5e5909ad39
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-04-17
 
     Add gedit.doap file
@@ -7526,7 +7526,7 @@ Date:	2009-04-17
 A	gedit.doap
 
 commit f368949b99df36040a77ccce0fab6b7b13433863
-Author: Paolo Borelli <porelli@mate.org>
+Author: Paolo Borelli <porelli@gnome.org>
 Date:	2009-04-17
 
     Update MAINTAINERS

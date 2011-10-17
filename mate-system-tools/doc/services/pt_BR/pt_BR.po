@@ -11,7 +11,7 @@ msgstr ""
 "POT-Creation-Date: 2009-04-11 15:45+0000\n"
 "PO-Revision-Date: 2009-04-15 09:56-0300\n"
 "Last-Translator: Krix Apolinário <krixapolinario@gmail.com>\n"
-"Language-Team: Portuguese/Brazil <mate-pt_br-list@mate.org>\n"
+"Language-Team: Portuguese/Brazil <mate-pt_br-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -159,8 +159,8 @@ msgstr "Agosto 2006"
 
 #: C/services-admin.xml:68(para) C/services-admin.xml:69(para)
 #: C/services-admin.xml:76(para) C/services-admin.xml:77(para)
-msgid "carlosg@mate.org (Carlos Garnacho Parro)"
-msgstr "carlosg@mate.org (Carlos Garnacho Parro)"
+msgid "carlosg@gnome.org (Carlos Garnacho Parro)"
+msgstr "carlosg@gnome.org (Carlos Garnacho Parro)"
 
 #: C/services-admin.xml:73(revnumber)
 msgid "Services Administration Tool Manual V0.35"

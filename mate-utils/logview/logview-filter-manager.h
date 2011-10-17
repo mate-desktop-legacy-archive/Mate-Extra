@@ -1,7 +1,7 @@
 /* -*- Mode: C; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2; -*- */
 /*
  * mate-utils
- * Copyright (C) Johannes Schmid 2009 <jhs@mate.org>
+ * Copyright (C) Johannes Schmid 2009 <jhs@gnome.org>
  * 
  * mate-utils is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the

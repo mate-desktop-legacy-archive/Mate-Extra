@@ -1,12 +1,12 @@
 # translation of el.po to Greek
-# Simos Xenitellis <simos@mate.org>, 2008.
+# Simos Xenitellis <simos@gnome.org>, 2008.
 # translation of mixer_applet2.HEAD.po to
 msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "POT-Creation-Date: 2008-09-18 04:12+0000\n"
 "PO-Revision-Date: 2008-09-19 15:22+0100\n"
-"Last-Translator: Simos Xenitellis <simos@mate.org>\n"
+"Last-Translator: Simos Xenitellis <simos@gnome.org>\n"
 "Language-Team: Greek <team@lists.mate.gr>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -352,7 +352,7 @@ msgstr "Κλικ<guibutton> Κλείσιμο</guibutton> για κλείσιμο
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα MATE\n"
-" Κώστας Παπαδήμας <pkst@mate.org>\n"
+" Κώστας Παπαδήμας <pkst@gnome.org>\n"
 " Ηλίας Μακρής <ilmakris@sch.gr>\n"
 "\n"
 "Για περισσότερα δείτε http://www.mate.gr/"

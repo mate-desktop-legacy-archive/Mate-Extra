@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2006 The Free Software Foundation
  *
- * Author: Lucas Rocha <lucasr@mate.org>
+ * Author: Lucas Rocha <lucasr@gnome.org>
  *
  * Based on gedit code (gedit/gedit-session.h) by:
  * 	- Gedit Team

@@ -2,11 +2,11 @@
  *
  * Copyright (C) 2000-2006 The Free Software Foundation
  *
- * Author: Lucas Rocha <lucasr@mate.org>
+ * Author: Lucas Rocha <lucasr@gnome.org>
  *
  * Based on code by:
  * 	- Federico Mena-Quintero <federico@gnu.org>
- *	- Jens Finke <jens@mate.org>
+ *	- Jens Finke <jens@gnome.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

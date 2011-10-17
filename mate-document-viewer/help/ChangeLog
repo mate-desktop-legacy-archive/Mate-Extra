@@ -1,4 +1,4 @@
-2009-03-28  Simos Xenitellis  <simos@mate.org>
+2009-03-28  Simos Xenitellis  <simos@gnome.org>
 
 	* el/figures/*.png: Added figures by Fotis Tsamis.
 
@@ -25,17 +25,17 @@
 	* eu/eu.po: Added Basque translation.
 	* Makefile.am: Added 'eu' to DOC_LINGUAS.
 
-2008-12-07  Leonardo Ferreira Fontenelle  <leonardof@mate.org>
+2008-12-07  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
 	* pt_BR/pt_BR.po: Fixed terminology ("spin box") and credits in the
 	Brazilian Portuguese translation. Contributed by Vladimir Melo.
 
-2008-12-07  Leonardo Ferreira Fontenelle  <leonardof@mate.org>
+2008-12-07  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
 
 	* pt_BR/pt_BR.po: Updated Brazilian Portuguese translation. Contributed
 	by Daniel S. Koda and reviewed by Vladimir Melo.
 
-2008-09-23  Gil Forcada  <gforcada@mate.org>
+2008-09-23  Gil Forcada  <gforcada@gnome.org>
 
 	* ca/ca.po: Updated Catalan documentation.
 
@@ -94,7 +94,7 @@
 
 	* es/es.po: Updated Spanish translation.
 
-2007-10-05  Jonh Wendell <jwendell@mate.org>
+2007-10-05  Jonh Wendell <jwendell@gnome.org>
 
 	* pt_BR/pt_BR.po: Added Brazilian Portuguese translation,
 	  by Hugo Doria and Pedro de Medeiros
@@ -213,7 +213,7 @@
 	* sv/figures/*png: Added screenshot.
 	* Makefile.am: Added sv to DOC_LINGUAS.
 
-2006-10-01  Wouter Bolsterlee  <wbolster@mate.org>
+2006-10-01  Wouter Bolsterlee  <wbolster@gnome.org>
 
 	* fi/.cvsignore: Ignore generated files.
 	* fr/.cvsignore: Same here.
@@ -345,7 +345,7 @@ Thu Aug 25 02:32:54 2005  Jonathan Blandford  <jrb@redhat.com>
 
 	* es/es.po: Added partial Spanish translation.
 
-2005-07-24  Danilo Šegan  <danilo@mate.org>
+2005-07-24  Danilo Šegan  <danilo@gnome.org>
 
 	* Makefile.am (DOC_LINGUAS): Added "sr".
 	* sr/sr.po: Added partial Serbian translation.

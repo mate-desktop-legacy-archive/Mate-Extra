@@ -1,7 +1,7 @@
 # Translation of mate-disk-utility to Lithuanian
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the mate-disk-utility package.
-# Žygimantas Beručka <zygis@mate.org>, 2009.
+# Žygimantas Beručka <zygis@gnome.org>, 2009.
 # Rytis Umbrasas <rytumb@gmail.com>, 2009.
 # Gintautas Miliauskas <gintautas@miliauskas.lt>, 2009, 2010.
 msgid ""
@@ -5436,7 +5436,7 @@ msgstr "Klaida prisijungiant prie„%s“"
 
 #: ../src/palimpsest/gdu-shell.c:808
 msgid "translator-credits"
-msgstr "Rytis Umbrasas <rytumb@gmail.com>Žygimantas Beručka <zygis@mate.org>"
+msgstr "Rytis Umbrasas <rytumb@gmail.com>Žygimantas Beručka <zygis@gnome.org>"
 
 #: ../src/palimpsest/gdu-shell.c:837
 msgid "_File"
