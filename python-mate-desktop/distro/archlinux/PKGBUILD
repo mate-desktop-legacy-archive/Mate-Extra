@@ -10,7 +10,7 @@ makedepends=('pkgconfig')
 options=('!emptydirs')
 groups=('mate-extras')
 source=(http://sourceforge.net/projects/matede/files/${pkgver}/${pkgname}.tar.gz/download)
-sha256sums=('54aee0eb6dea1695762310073a9f64d683ffd211f2be0569e79cb982e000ef58')
+sha256sums=('6723014e13bb31ab314c385575940267144809d5db200d9ed92031ce41106360')
 
 build() {
 	export PYTHON=python2
