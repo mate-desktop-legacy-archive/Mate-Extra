@@ -1,8 +1,0 @@
-./waf-light
-./ChangeLog
-Makefile
-Makefile.in
-.deps
-RE:^docs/.*/html/.*
-RE:^docs/.*/html.stamp
-
