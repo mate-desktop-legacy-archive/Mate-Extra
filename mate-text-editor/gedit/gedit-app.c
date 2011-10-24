@@ -2,7 +2,7 @@
  * gedit-app.c
  * This file is part of gedit
  *
- * Copyright (C) 2005-2006 - Paolo Maggi 
+ * Copyright (C) 2005-2006 - Paolo Maggi
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,14 +16,14 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, 
+ * Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  */
- 
+
 /*
- * Modified by the gedit Team, 2005. See the AUTHORS file for a 
- * list of people on the gedit Team.  
- * See the ChangeLog files for a list of changes. 
+ * Modified by the gedit Team, 2005. See the AUTHORS file for a
+ * list of people on the gedit Team.
+ * See the ChangeLog files for a list of changes.
  *
  * $Id$
  */
@@ -78,7 +78,7 @@ G_DEFINE_TYPE(GeditApp, gedit_app, G_TYPE_OBJECT)
 static void
 gedit_app_finalize (GObject *object)
 {
-	GeditApp *app = GEDIT_APP (object); 
+	GeditApp *app = GEDIT_APP (object);
 
 	g_list_free (app->priv->windows);
 
@@ -109,14 +109,14 @@ gedit_app_get_property (GObject    *object,
 	}
 }
 
-static void 
+static void
 gedit_app_class_init (GeditAppClass *klass)
 {
 	GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
 	object_class->finalize = gedit_app_finalize;
 	object_class->get_property = gedit_app_get_property;
-	
+
 	g_object_class_install_property (object_class,
 					 PROP_LOCKDOWN,
 					 g_param_spec_flags ("lockdown",
@@ -164,7 +164,7 @@ load_accels (void)
 	filename = gedit_dirs_get_user_accels_file ();
 	if (filename != NULL)
 	{
-		gedit_debug_message (DEBUG_APP, "Loading keybindings from %s\n", filename);		
+		gedit_debug_message (DEBUG_APP, "Loading keybindings from %s\n", filename);
 		gtk_accel_map_load (filename);
 		g_free (filename);
 	}
@@ -178,7 +178,7 @@ save_accels (void)
 	filename = gedit_dirs_get_user_accels_file ();
 	if (filename != NULL)
 	{
-		gedit_debug_message (DEBUG_APP, "Saving keybindings in %s\n", filename);		
+		gedit_debug_message (DEBUG_APP, "Saving keybindings in %s\n", filename);
 		gtk_accel_map_save (filename);
 		g_free (filename);
 	}
@@ -191,7 +191,7 @@ get_page_setup_file (void)
 	gchar *setup = NULL;
 
 	config_dir = gedit_dirs_get_user_config_dir ();
-	
+
 	if (config_dir != NULL)
 	{
 		setup = g_build_filename (config_dir,
@@ -364,7 +364,7 @@ gedit_app_get_default (void)
 	if (app != NULL)
 		return app;
 
-	app = GEDIT_APP (g_object_new (GEDIT_TYPE_APP, NULL));	
+	app = GEDIT_APP (g_object_new (GEDIT_TYPE_APP, NULL));
 
 	g_object_add_weak_pointer (G_OBJECT (app),
 				   (gpointer) &app);
@@ -383,8 +383,8 @@ set_active_window (GeditApp    *app,
 }
 
 static gboolean
-window_focus_in_event (GeditWindow   *window, 
-		       GdkEventFocus *event, 
+window_focus_in_event (GeditWindow   *window,
+		       GdkEventFocus *event,
 		       GeditApp      *app)
 {
 	/* updates active_view and active_child when a new toplevel receives focus */
@@ -395,7 +395,7 @@ window_focus_in_event (GeditWindow   *window,
 	return FALSE;
 }
 
-static gboolean 
+static gboolean
 window_delete_event (GeditWindow *window,
                      GdkEvent    *event,
                      GeditApp    *app)
@@ -404,20 +404,20 @@ window_delete_event (GeditWindow *window,
 
 	ws = gedit_window_get_state (window);
 
-	if (ws & 
+	if (ws &
 	    (GEDIT_WINDOW_STATE_SAVING |
 	     GEDIT_WINDOW_STATE_PRINTING |
 	     GEDIT_WINDOW_STATE_SAVING_SESSION))
 	    	return TRUE;
-	
+
 	_gedit_cmd_file_quit (NULL, window);
-		
+
 	/* Do not destroy the window */
 	return TRUE;
 }
 
 static void
-window_destroy (GeditWindow *window, 
+window_destroy (GeditWindow *window,
 		GeditApp    *app)
 {
 	app->priv->windows = g_list_remove (app->priv->windows,
@@ -430,11 +430,11 @@ window_destroy (GeditWindow *window,
 
 /* CHECK: I don't think we have to disconnect this function, since windows
    is being destroyed */
-/*					     
-	g_signal_handlers_disconnect_by_func (window, 
+/*
+	g_signal_handlers_disconnect_by_func (window,
 					      G_CALLBACK (window_focus_in_event),
 					      app);
-	g_signal_handlers_disconnect_by_func (window, 
+	g_signal_handlers_disconnect_by_func (window,
 					      G_CALLBACK (window_destroy),
 					      app);
 */
@@ -465,7 +465,7 @@ gen_role (void)
 {
 	GTimeVal result;
 	static gint serial;
-	
+
 	g_get_current_time (&result);
 
 	return g_strdup_printf ("gedit-window-%ld-%ld-%d-%s",
@@ -544,15 +544,15 @@ gedit_app_create_window_real (GeditApp    *app,
 			gtk_window_unstick (GTK_WINDOW (window));
 	}
 
-	g_signal_connect (window, 
+	g_signal_connect (window,
 			  "focus_in_event",
-			  G_CALLBACK (window_focus_in_event), 
+			  G_CALLBACK (window_focus_in_event),
 			  app);
 	g_signal_connect (window,
 			  "delete_event",
 			  G_CALLBACK (window_delete_event),
-			  app);			  
-	g_signal_connect (window, 
+			  app);
+	g_signal_connect (window,
 			  "destroy",
 			  G_CALLBACK (window_destroy),
 			  app);
@@ -678,7 +678,14 @@ is_in_viewport (GeditWindow  *window,
 	/* Check for viewport match */
 	gdkwindow = gtk_widget_get_window (GTK_WIDGET (window));
 	gdk_window_get_position (gdkwindow, &x, &y);
-	gdk_drawable_get_size (gdkwindow, &width, &height);
+
+	#if GTK_CHECK_VERSION(3, 0, 0)
+		width = gdk_window_get_width(gdkwindow);
+		height = gdk_window_get_height(gdkwindow);
+	#else
+		gdk_drawable_get_size(gdkwindow, &width, &height);
+	#endif
+
 	gedit_utils_get_current_viewport (screen, &vp_x, &vp_y);
 	x += vp_x;
 	y += vp_y;

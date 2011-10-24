@@ -550,8 +550,8 @@ baobab_chart_get_items (GtkWidget *chart, GtkTreePath *root)
   do
     {
       item = (BaobabChartItem *) node->data;
-      item->has_any_child = gtk_tree_model_iter_children (priv->model, 
-                                                          &child_iter, 
+      item->has_any_child = gtk_tree_model_iter_children (priv->model,
+                                                          &child_iter,
                                                           &(item->iter));
 
       /* Calculate item geometry */
@@ -1171,7 +1171,13 @@ baobab_chart_get_pixbuf (GtkWidget *widget)
 
   g_return_val_if_fail (BAOBAB_IS_CHART (widget), NULL);
 
-  gdk_drawable_get_size (gtk_widget_get_window (widget), &w, &h);
+	#if GTK_CHECK_VERSION(3, 0, 0)
+		w = gdk_window_get_width(gtk_widget_get_window(widget));
+		h = gdk_window_get_height(gtk_widget_get_window(widget));
+	#else
+		gdk_drawable_get_size(gtk_widget_get_window(widget), &w, &h);
+	#endif
+
   pixbuf = gdk_pixbuf_get_from_drawable (NULL,
                                          gtk_widget_get_window (widget),
                                          gdk_colormap_get_system (),
@@ -1664,7 +1670,7 @@ baobab_chart_move_up_root (GtkWidget *chart)
  * baobab_chart_save_snapshot:
  * @chart: the #BaobabChart requested to be exported to image.
  *
- * Opens a dialog to allow saving the current chart's image as a PNG, JPEG or 
+ * Opens a dialog to allow saving the current chart's image as a PNG, JPEG or
  * BMP image.
  *
  * Fails if @chart is not a #BaobabChart.
@@ -1780,7 +1786,7 @@ baobab_chart_save_snapshot (GtkWidget *chart)
  * baobab_chart_is_frozen:
  * @chart: the #BaobabChart to ask if frozen.
  *
- * Returns a boolean telling whether the chart is in a frozen state, meanning 
+ * Returns a boolean telling whether the chart is in a frozen state, meanning
  * that no actions should be taken uppon it.
  *
  * Fails if @chart is not a #BaobabChart.
@@ -1800,7 +1806,7 @@ baobab_chart_is_frozen (GtkWidget *chart)
  * baobab_chart_is_frozen:
  * @chart: the #BaobabChart to obtain the highlighted it from.
  *
- * Returns a BaobabChartItem corresponding to the item that currently has mouse 
+ * Returns a BaobabChartItem corresponding to the item that currently has mouse
  * pointer over, or NULL if no item is highlighted.
  *
  * Fails if @chart is not a #BaobabChart.
@@ -1813,7 +1819,7 @@ baobab_chart_get_highlighted_item (GtkWidget *chart)
   g_return_val_if_fail (BAOBAB_IS_CHART (chart), NULL);
 
   priv = BAOBAB_CHART_GET_PRIVATE (chart);
-  return (priv->highlighted_item ? 
+  return (priv->highlighted_item ?
     (BaobabChartItem *) priv->highlighted_item->data : NULL);
 }
 

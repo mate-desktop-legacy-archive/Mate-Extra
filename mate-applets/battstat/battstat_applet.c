@@ -1,4 +1,4 @@
-/* battstat        A MATE battery meter for laptops. 
+/* battstat        A MATE battery meter for laptops.
  * Copyright (C) 2000 by Jörgen Pehrson <jp@spektr.eu.org>
  * Copyright (C) 2002 Free Software Foundation
  *
@@ -233,11 +233,11 @@ initialise_global_pixmaps( void )
   statusimage[STATUS_PIXMAP_AC] =
     gdk_pixmap_create_from_xpm_d( defaults, &statusmask[STATUS_PIXMAP_AC],
                                   NULL, ac_small_xpm );
-   
+
   statusimage[STATUS_PIXMAP_CHARGE] =
     gdk_pixmap_create_from_xpm_d( defaults, &statusmask[STATUS_PIXMAP_CHARGE],
                                   NULL, charge_small_xpm );
-   
+
   statusimage[STATUS_PIXMAP_WARNING] =
     gdk_pixmap_create_from_xpm_d( defaults, &statusmask[STATUS_PIXMAP_WARNING],
                                   NULL, warning_small_xpm );
@@ -424,7 +424,7 @@ battery_full_notify (GtkWidget *applet)
 	GError *error = NULL;
 	GdkPixbuf *icon;
 	gboolean result;
-	
+
 	if (!notify_is_initted () && !notify_init (_("Battery Monitor")))
 		return FALSE;
 
@@ -434,7 +434,7 @@ battery_full_notify (GtkWidget *applet)
 			48,
 			GTK_ICON_LOOKUP_USE_BUILTIN,
 			NULL);
-	
+
 	NotifyNotification *n = notify_notification_new (_("Your battery is now fully recharged"), "", /* "battery" */ NULL, applet);
 
 	/* XXX: it would be nice to pass this as a named icon */
@@ -442,7 +442,7 @@ battery_full_notify (GtkWidget *applet)
 	g_object_unref (icon);
 
 	result = notify_notification_show (n, &error);
-	
+
 	if (error)
 	{
 	   g_warning ("%s", error->message);
@@ -465,7 +465,7 @@ battery_full_dialog (GtkWidget *applet)
   /* first attempt to use libmatenotify */
   if (battery_full_notify (applet))
 	  return;
-  
+
   GtkWidget *dialog, *hbox, *image, *label;
   GdkPixbuf *pixbuf;
 
@@ -663,7 +663,7 @@ battery_low_dialog( ProgressData *battery, BatteryStatus *info )
   gtk_label_set_selectable( battery->battery_low_label, TRUE );
   gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 6);
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (battery->battery_low_dialog))), hbox);
-	 
+
   gtk_window_set_keep_above (GTK_WINDOW (battery->battery_low_dialog), TRUE);
   gtk_window_stick (GTK_WINDOW (battery->battery_low_dialog));
   gtk_window_set_focus_on_map (GTK_WINDOW (battery->battery_low_dialog),
@@ -777,7 +777,7 @@ update_battery_image (ProgressData *battstat, int batt_percent, int batt_time)
   */
   if (battstat->draintop) {
     progress_value = PROGLEN * batt_life / 100.0;
-	    
+
     for( i = 0; i < G_N_ELEMENTS( orange ); i++ )
     {
       gdk_gc_set_foreground (battstat->pixgc, &color[i]);
@@ -816,7 +816,7 @@ update_battery_image (ProgressData *battstat, int batt_percent, int batt_time)
       if (progress_value < 33)
       {
         gdk_gc_set_foreground (battstat->pixgc, &darkcolor[i]);
-		     
+
         if (battstat->horizont)
           gdk_draw_line (pixmap, battstat->pixgc,
                          pixel_offset_bottom[i] - progress_value - 1,
@@ -878,7 +878,12 @@ copy_gdk_pixmap( GdkPixmap *src, GdkGC *gc )
   gint height, width;
   GdkPixmap *dest;
 
-  gdk_drawable_get_size( GDK_DRAWABLE( src ), &width, &height );
+	#if GTK_CHECK_VERSION(3, 0, 0)
+		width = gdk_window_get_width(GDK_WINDOW(src));
+		height = gdk_window_get_height(GDK_WINDOW(src));
+	#else
+		gdk_drawable_get_size(GDK_DRAWABLE(src), &width, &height);
+	#endif
 
   dest = gdk_pixmap_new( GDK_DRAWABLE( src ), width, height, -1 );
 
@@ -921,7 +926,7 @@ possibly_update_status_icon( ProgressData *battstat, BatteryStatus *info )
      should display static icons.  If we are not showing the full meter
      then the status icon will show a smaller meter if we are on battery.
    */
-  if( !battstat->showbattery && 
+  if( !battstat->showbattery &&
       (pixmap_index == STATUS_PIXMAP_BATTERY ||
        pixmap_index == STATUS_PIXMAP_WARNING) )
     pixmap_index = STATUS_PIXMAP_METER;
@@ -972,7 +977,7 @@ possibly_update_status_icon( ProgressData *battstat, BatteryStatus *info )
     }
 
     progress_value = 12 * info->percent / 100.0;
-    
+
     for( i = 0; i < 10; i++ )
     {
       gdk_gc_set_foreground( battstat->pixgc, &colour[(i * 13 / 10)] );
@@ -1090,7 +1095,7 @@ check_for_updates( gpointer data )
     if(battstat->fullbattnot)
     {
       battery_full_dialog (battstat->applet);
- 
+
       if (battstat->beep)
         gdk_beep();
     }
@@ -1223,7 +1228,7 @@ static void
 about_cb( GtkAction *action, ProgressData *battstat )
 {
   const gchar *authors[] = {
-    "J\xC3\xB6rgen Pehrson <jp@spektr.eu.org>", 
+    "J\xC3\xB6rgen Pehrson <jp@spektr.eu.org>",
     "Lennart Poettering <lennart@poettering.de> (Linux ACPI support)",
     "Seth Nickell <snickell@stanford.edu> (MATE2 port)",
     "Davyd Madeley <davyd@madeley.id.au>",
@@ -1330,7 +1335,7 @@ load_preferences(ProgressData *battstat)
   MatePanelApplet *applet = MATE_PANEL_APPLET (battstat->applet);
 
   if (DEBUG) g_print("load_preferences()\n");
-  
+
   battstat->red_val = mate_panel_applet_mateconf_get_int (applet, MATECONF_PATH "red_value", NULL);
   battstat->red_val = CLAMP (battstat->red_val, 0, 100);
   battstat->red_value_is_time = mate_panel_applet_mateconf_get_bool (applet,
@@ -1340,7 +1345,7 @@ load_preferences(ProgressData *battstat)
   /* automatically calculate orangle and yellow values from the red value */
   battstat->orange_val = battstat->red_val * ORANGE_MULTIPLIER;
   battstat->orange_val = CLAMP (battstat->orange_val, 0, 100);
-  
+
   battstat->yellow_val = battstat->red_val * YELLOW_MULTIPLIER;
   battstat->yellow_val = CLAMP (battstat->yellow_val, 0, 100);
 
@@ -1348,14 +1353,14 @@ load_preferences(ProgressData *battstat)
   battstat->fullbattnot = mate_panel_applet_mateconf_get_bool (applet, MATECONF_PATH "full_battery_notification", NULL);
   battstat->beep = mate_panel_applet_mateconf_get_bool (applet, MATECONF_PATH "beep", NULL);
   battstat->draintop = mate_panel_applet_mateconf_get_bool (applet, MATECONF_PATH "drain_from_top", NULL);
-  
+
   battstat->showstatus = mate_panel_applet_mateconf_get_bool (applet, MATECONF_PATH "show_status", NULL);
   battstat->showbattery = mate_panel_applet_mateconf_get_bool (applet, MATECONF_PATH "show_battery", NULL);
 
   /* for miagration from older versions */
   if (battstat->showstatus && battstat->showbattery)
 	  battstat->showbattery = FALSE;
-  
+
   battstat->showtext = mate_panel_applet_mateconf_get_int (applet, MATECONF_PATH "show_text", NULL);
 }
 
@@ -1498,7 +1503,7 @@ reconfigure_layout( ProgressData *battstat )
         c.text = LAYOUT_BOTTOM;
     }
   }
-  
+
   if( memcmp( &c, &battstat->layout, sizeof (LayoutConfiguration) ) )
   {
     /* Something in the layout has changed.  Rebuild. */
@@ -1622,11 +1627,11 @@ battstat_applet_fill (MatePanelApplet *applet)
   g_set_application_name (_("Battery Charge Monitor"));
 
   gtk_window_set_default_icon_name ("battery");
-  
+
   mate_panel_applet_add_preferences (applet, "/schemas/apps/battstat-applet/prefs",
                                 NULL);
   mate_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
-  
+
   battstat = g_new0 (ProgressData, 1);
 
   /* Some starting values... */
@@ -1695,7 +1700,7 @@ battstat_applet_factory (MatePanelApplet *applet,
 
   if (!strcmp (iid, "BattstatApplet"))
     retval = battstat_applet_fill (applet);
-  
+
   return retval;
 }
 
@@ -1705,5 +1710,5 @@ MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("BattstatAppletFactory",
 				  "battstat",
 				  battstat_applet_factory,
 				  NULL)
-      
+
 

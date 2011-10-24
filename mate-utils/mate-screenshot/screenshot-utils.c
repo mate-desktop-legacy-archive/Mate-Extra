@@ -44,7 +44,7 @@ get_utf8_property (GdkWindow *window,
   int actual_format, actual_length;
   guchar *data;
   char *retval;
-  
+
   utf8_string = gdk_x11_xatom_to_atom (gdk_x11_get_xatom_by_name ("UTF8_STRING"));
   res = gdk_property_get (window, atom, utf8_string,
                           0, G_MAXLONG, FALSE,
@@ -75,11 +75,11 @@ get_utf8_property (GdkWindow *window,
 
       return NULL;
     }
-  
+
   retval = g_strndup ((gchar *) data, actual_length);
 
   g_free (data);
-  
+
   return retval;
 }
 
@@ -158,7 +158,7 @@ screenshot_window_is_desktop (GdkWindow *window)
     return TRUE;
 
   return FALSE;
-      
+
 }
 
 #define MAXIMUM_WM_REPARENTING_DEPTH 4
@@ -172,7 +172,7 @@ look_for_hint_helper (GdkWindow *window,
   GdkAtom actual_type;
   int actual_format, actual_length;
   guchar *data;
-  
+
   res = gdk_property_get (window, property, GDK_NONE,
                           0, 1, FALSE,
                           &actual_type,
@@ -230,7 +230,7 @@ screenshot_find_current_window ()
   GdkWindow *current_window;
 
   current_window = screenshot_find_active_window ();
-  
+
   /* If there's no active window, we fall back to returning the
    * window that the cursor is in.
    */
@@ -279,7 +279,7 @@ select_area_update_rect (GtkWidget    *window,
   gtk_window_move (GTK_WINDOW (window), rect->x, rect->y);
   gtk_window_resize (GTK_WINDOW (window), rect->width, rect->height);
   gtk_widget_show (window);
-  
+
   /* We (ab)use app-paintable to indicate if we have an RGBA window */
   if (!gtk_widget_get_app_paintable (window))
     {
@@ -374,7 +374,7 @@ expose (GtkWidget *window, GdkEventExpose *event, gpointer unused)
       gdk_cairo_set_source_color (cr, &style->base[GTK_STATE_SELECTED]);
       cairo_paint_with_alpha (cr, 0.25);
 
-      cairo_rectangle (cr, 
+      cairo_rectangle (cr,
                        allocation.x + 0.5, allocation.y + 0.5,
                        allocation.width - 1, allocation.height - 1);
       cairo_stroke (cr);
@@ -457,7 +457,7 @@ select_area_filter (GdkXEvent *gdk_xevent,
     default:
       break;
     }
- 
+
   return GDK_FILTER_CONTINUE;
 }
 
@@ -576,7 +576,7 @@ blank_rectangle_in_pixbuf (GdkPixbuf *pixbuf, GdkRectangle *rect)
   gboolean has_alpha;
 
   g_assert (gdk_pixbuf_get_colorspace (pixbuf) == GDK_COLORSPACE_RGB);
-  
+
   x2 = rect->x + rect->width;
   y2 = rect->y + rect->height;
 
@@ -694,7 +694,13 @@ screenshot_get_pixbuf (GdkWindow    *window,
 
   root = gdk_get_default_root_window ();
 
-  gdk_drawable_get_size (window, &real_width, &real_height);      
+	#if GTK_CHECK_VERSION(3, 0, 0)
+		real_width = gdk_window_get_width(window);
+		real_height = gdk_window_get_height(window);
+	#else
+		gdk_drawable_get_size(window, &real_width, &real_height);
+	#endif
+
   gdk_window_get_origin (window, &x_real_orig, &y_real_orig);
 
   x_orig = x_real_orig;
@@ -727,7 +733,7 @@ screenshot_get_pixbuf (GdkWindow    *window,
       width  = rectangle->width;
       height = rectangle->height;
     }
-  
+
   screenshot = gdk_pixbuf_get_from_drawable (NULL, root, NULL,
                                              x_orig, y_orig, 0, 0,
                                              width, height);
@@ -753,10 +759,10 @@ screenshot_get_pixbuf (GdkWindow    *window,
       if (rectangles && rectangle_count > 0 && window != root)
         {
           gboolean has_alpha = gdk_pixbuf_get_has_alpha (screenshot);
-          
+
           tmp = gdk_pixbuf_new (GDK_COLORSPACE_RGB, TRUE, 8, width, height);
           gdk_pixbuf_fill (tmp, 0);
-          
+
           for (i = 0; i < rectangle_count; i++)
             {
               gint rec_x, rec_y;
@@ -822,7 +828,7 @@ screenshot_get_pixbuf (GdkWindow    *window,
 
   /* if we have a selected area, there were by definition no cursor in the
    * screenshot */
-  if (include_pointer && !rectangle) 
+  if (include_pointer && !rectangle)
     {
       GdkCursor *cursor;
       GdkPixbuf *cursor_pixbuf;
@@ -830,7 +836,7 @@ screenshot_get_pixbuf (GdkWindow    *window,
       cursor = gdk_cursor_new_for_display (gdk_display_get_default (), GDK_LEFT_PTR);
       cursor_pixbuf = gdk_cursor_get_image (cursor);
 
-      if (cursor_pixbuf != NULL) 
+      if (cursor_pixbuf != NULL)
         {
           GdkRectangle r1, r2;
           gint cx, cy, xhot, yhot;
@@ -852,13 +858,13 @@ screenshot_get_pixbuf (GdkWindow    *window,
           r2.height = gdk_pixbuf_get_height (cursor_pixbuf);
 
           /* see if the pointer is inside the window */
-          if (gdk_rectangle_intersect (&r1, &r2, &r2)) 
+          if (gdk_rectangle_intersect (&r1, &r2, &r2))
             {
               gdk_pixbuf_composite (cursor_pixbuf, screenshot,
                                     cx - xhot, cy - yhot,
                                     r2.width, r2.height,
                                     cx - xhot, cy - yhot,
-                                    1.0, 1.0, 
+                                    1.0, 1.0,
                                     GDK_INTERP_BILINEAR,
                                     255);
             }
@@ -894,26 +900,26 @@ screenshot_show_error_dialog (GtkWindow   *parent,
                               const gchar *detail)
 {
   GtkWidget *dialog;
-  
+
   g_return_if_fail ((parent == NULL) || (GTK_IS_WINDOW (parent)));
   g_return_if_fail (message != NULL);
-  
+
   dialog = gtk_message_dialog_new (parent,
   				   GTK_DIALOG_DESTROY_WITH_PARENT,
   				   GTK_MESSAGE_ERROR,
   				   GTK_BUTTONS_OK,
   				   "%s", message);
   gtk_window_set_title (GTK_WINDOW (dialog), "");
-  
+
   if (detail)
     gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
   					      "%s", detail);
-  
+
   if (parent && parent->group)
     gtk_window_group_add_window (parent->group, GTK_WINDOW (dialog));
-  
+
   gtk_dialog_run (GTK_DIALOG (dialog));
-  
+
   gtk_widget_destroy (dialog);
 }
 

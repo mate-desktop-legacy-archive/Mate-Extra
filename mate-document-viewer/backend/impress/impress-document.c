@@ -101,7 +101,12 @@ imp_render_get_size(void *drw_data, int *w, int *h)
 {
   ImpressDocument *impress_document = IMPRESS_DOCUMENT (drw_data);
 
-  gdk_drawable_get_size(impress_document->pixmap, w, h);
+	#if GTK_CHECK_VERSION(3, 0, 0)
+		*w = gdk_window_get_width(impress_document->pixmap);
+		*h = gdk_window_get_height(impress_document->pixmap);
+	#else
+		gdk_drawable_get_size(impress_document->pixmap, w, h);
+	#endif
 }
 
 static void
@@ -213,7 +218,7 @@ imp_render_markup(const char *text, size_t len, int styles, int size)
 
   scr_mm = gdk_screen_get_height_mm(gdk_screen_get_default());
   scr_px = gdk_screen_get_height(gdk_screen_get_default());
-  dpi = (scr_px / scr_mm) * 25.4; 
+  dpi = (scr_px / scr_mm) * 25.4;
   sz = (int) ((double) size * 72.0 * PANGO_SCALE / dpi);
   esc = g_markup_escape_text(text, len);
   ret = g_strdup_printf("<span size ='%d'>%s</span>", sz, esc);
@@ -380,7 +385,7 @@ impress_document_render_pixbuf (EvDocument      *document,
 
   g_return_val_if_fail (IMPRESS_IS_DOCUMENT (document), NULL);
   g_return_val_if_fail (impress_document->imp != NULL, NULL);
-  
+
   impress_document->pagenum = rc->page->index;
 
   g_mutex_lock (impress_document->mutex);
@@ -393,7 +398,7 @@ impress_document_render_pixbuf (EvDocument      *document,
   g_cond_free (impress_document->cond);
   ev_document_doc_mutex_lock ();
   ev_document_fc_mutex_lock ();
-  
+
   g_mutex_unlock (impress_document->mutex);
 
   pixbuf = impress_document->pixbuf;
@@ -410,7 +415,7 @@ impress_document_render (EvDocument      *document,
   cairo_surface_t *surface, *scaled_surface;
 
   pixbuf = impress_document_render_pixbuf (document, rc);
-  
+
   /* FIXME: impress backend should be ported to cairo */
   surface = ev_document_misc_surface_from_pixbuf (pixbuf);
   g_object_unref (pixbuf);
@@ -467,7 +472,7 @@ impress_document_class_init (ImpressDocumentClass *klass)
 
 static GdkPixbuf *
 impress_document_thumbnails_get_thumbnail (EvDocumentThumbnails *document,
-					   EvRenderContext      *rc, 
+					   EvRenderContext      *rc,
 					   gboolean              border)
 {
   GdkPixbuf *pixbuf;
@@ -483,7 +488,7 @@ impress_document_thumbnails_get_thumbnail (EvDocumentThumbnails *document,
   if (border)
     {
       GdkPixbuf *tmp_pixbuf = scaled_pixbuf;
-      
+
       scaled_pixbuf = ev_document_misc_get_thumbnail_frame (-1, -1, tmp_pixbuf);
       g_object_unref (tmp_pixbuf);
     }
@@ -502,7 +507,7 @@ impress_document_thumbnails_get_dimensions (EvDocumentThumbnails *document,
   impress_document_get_page_size (EV_DOCUMENT (document),
 				  rc->page,
 				  &page_width, &page_height);
-  
+
   if (rc->rotation == 90 || rc->rotation == 270)
     {
       *width = (gint) (page_height * rc->scale);

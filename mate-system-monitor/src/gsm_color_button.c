@@ -287,7 +287,14 @@ render (GtkWidget * widget)
       color->green = color->green + highlight_factor;
   }
   gdk_cairo_set_source_color (cr, color);
-  gdk_drawable_get_size (gtk_widget_get_window (widget), &width, &height);
+
+	#if GTK_CHECK_VERSION(3, 0, 0)
+		width = gdk_window_get_width(gtk_widget_get_window(widget));
+		height = gdk_window_get_height(gtk_widget_get_window(widget));
+	#else
+		gdk_drawable_get_size(gtk_widget_get_window(widget), &width, &height);
+	#endif
+
 
   switch (color_button->priv->type)
     {

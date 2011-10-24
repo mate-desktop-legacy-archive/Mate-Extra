@@ -73,7 +73,7 @@ tree_changed_cb (MateConfClient *client, guint id, MateConfEntry *entry, gpointe
 {
 	ProcData *procdata = static_cast<ProcData*>(data);
 	MateConfValue *value = mateconf_entry_get_value (entry);
-	
+
 	procdata->config.show_tree = mateconf_value_get_bool (value);
 
 	g_object_set(G_OBJECT(procdata->tree),
@@ -114,12 +114,12 @@ view_as_changed_cb (MateConfClient *client, guint id, MateConfEntry *entry, gpoi
 {
 	ProcData *procdata = static_cast<ProcData*>(data);
 	MateConfValue *value = mateconf_entry_get_value (entry);
-	
+
 	procdata->config.whose_process = mateconf_value_get_int (value);
 	procdata->config.whose_process = CLAMP (procdata->config.whose_process, 0, 2);
 	proctable_clear_tree (procdata);
 	proctable_update_all (procdata);
-	
+
 }
 
 static void
@@ -128,7 +128,7 @@ warning_changed_cb (MateConfClient *client, guint id, MateConfEntry *entry, gpoi
 	ProcData *procdata = static_cast<ProcData*>(data);
 	const gchar *key = mateconf_entry_get_key (entry);
 	MateConfValue *value = mateconf_entry_get_value (entry);
-	
+
 	if (g_str_equal (key, "/apps/procman/kill_dialog")) {
 		procdata->config.show_kill_warning = mateconf_value_get_bool (value);
 	}
@@ -143,7 +143,7 @@ timeouts_changed_cb (MateConfClient *client, guint id, MateConfEntry *entry, gpo
 
 	if (g_str_equal (key, "/apps/procman/update_interval")) {
 		procdata->config.update_interval = mateconf_value_get_int (value);
-		procdata->config.update_interval = 
+		procdata->config.update_interval =
 			MAX (procdata->config.update_interval, 1000);
 
 		procdata->smooth_refresh->reset();
@@ -157,8 +157,8 @@ timeouts_changed_cb (MateConfClient *client, guint id, MateConfEntry *entry, gpo
 	}
 	else if (g_str_equal (key, "/apps/procman/graph_update_interval")){
 		procdata->config.graph_update_interval = mateconf_value_get_int (value);
-		procdata->config.graph_update_interval = 
-			MAX (procdata->config.graph_update_interval, 
+		procdata->config.graph_update_interval =
+			MAX (procdata->config.graph_update_interval,
 			     250);
 		load_graph_change_speed(procdata->cpu_graph,
 					procdata->config.graph_update_interval);
@@ -168,10 +168,10 @@ timeouts_changed_cb (MateConfClient *client, guint id, MateConfEntry *entry, gpo
 					procdata->config.graph_update_interval);
 	}
 	else if (g_str_equal(key, "/apps/procman/disks_interval")) {
-		
+
 		procdata->config.disks_update_interval = mateconf_value_get_int (value);
-		procdata->config.disks_update_interval = 
-			MAX (procdata->config.disks_update_interval, 1000);	
+		procdata->config.disks_update_interval =
+			MAX (procdata->config.disks_update_interval, 1000);
 
 		if(procdata->disk_timeout) {
 			g_source_remove (procdata->disk_timeout);
@@ -264,11 +264,11 @@ procman_data_new (MateConfClient *client)
 	mateconf_client_notify_add(client, procman::mateconf::network_in_bits.c_str(), network_in_bits_changed_cb, pd, NULL, NULL);
 
 
-	pd->config.show_kill_warning = mateconf_client_get_bool (client, "/apps/procman/kill_dialog", 
+	pd->config.show_kill_warning = mateconf_client_get_bool (client, "/apps/procman/kill_dialog",
 							      NULL);
 	mateconf_client_notify_add (client, "/apps/procman/kill_dialog", warning_changed_cb,
 				 pd, NULL, NULL);
-	pd->config.update_interval = mateconf_client_get_int (client, "/apps/procman/update_interval", 
+	pd->config.update_interval = mateconf_client_get_int (client, "/apps/procman/update_interval",
 							   NULL);
 	mateconf_client_notify_add (client, "/apps/procman/update_interval", timeouts_changed_cb,
 				 pd, NULL, NULL);
@@ -301,11 +301,11 @@ procman_data_new (MateConfClient *client)
 	for (int i = 0; i < GLIBTOP_NCPU; i++) {
 		gchar *key;
 		key = g_strdup_printf ("/apps/procman/cpu_color%d", i);
-		
+
 		color = mateconf_client_get_string (client, key, NULL);
 		if (!color)
 			color = g_strdup ("#f25915e815e8");
-		mateconf_client_notify_add (client, key, 
+		mateconf_client_notify_add (client, key,
 			  	 color_changed_cb, pd, NULL, NULL);
 		gdk_color_parse(color, &pd->config.cpu_color[i]);
 		g_free (color);
@@ -314,16 +314,16 @@ procman_data_new (MateConfClient *client)
 	color = mateconf_client_get_string (client, "/apps/procman/mem_color", NULL);
 	if (!color)
 		color = g_strdup ("#000000ff0082");
-	mateconf_client_notify_add (client, "/apps/procman/mem_color", 
+	mateconf_client_notify_add (client, "/apps/procman/mem_color",
 			  	 color_changed_cb, pd, NULL, NULL);
 	gdk_color_parse(color, &pd->config.mem_color);
-	
+
 	g_free (color);
-	
+
 	color = mateconf_client_get_string (client, "/apps/procman/swap_color", NULL);
 	if (!color)
 		color = g_strdup ("#00b6000000ff");
-	mateconf_client_notify_add (client, "/apps/procman/swap_color", 
+	mateconf_client_notify_add (client, "/apps/procman/swap_color",
 			  	 color_changed_cb, pd, NULL, NULL);
 	gdk_color_parse(color, &pd->config.swap_color);
 	g_free (color);
@@ -343,7 +343,7 @@ procman_data_new (MateConfClient *client)
 			  	 color_changed_cb, pd, NULL, NULL);
 	gdk_color_parse(color, &pd->config.net_out_color);
 	g_free (color);
-	
+
 	/* Sanity checks */
 	swidth = gdk_screen_width ();
 	sheight = gdk_screen_height ();
@@ -356,7 +356,7 @@ procman_data_new (MateConfClient *client)
 	pd->config.current_tab = CLAMP(pd->config.current_tab,
 				       PROCMAN_TAB_SYSINFO,
 				       PROCMAN_TAB_DISKS);
-	
+
 	/* Determinie number of cpus since libgtop doesn't really tell you*/
 	pd->config.num_cpus = 0;
 	glibtop_get_cpu (&cpu);
@@ -394,24 +394,24 @@ procman_get_tree_state (MateConfClient *client, GtkWidget *tree, const gchar *pr
 	gint sort_col;
 	GtkSortType order;
 	gchar *key;
-	
+
 
 	g_assert(tree);
 	g_assert(prefix);
-	
-	if (!mateconf_client_dir_exists (client, prefix, NULL)) 
+
+	if (!mateconf_client_dir_exists (client, prefix, NULL))
 		return FALSE;
-	
+
 	model = gtk_tree_view_get_model (GTK_TREE_VIEW (tree));
-	
+
 	key = g_strdup_printf ("%s/sort_col", prefix);
 	sort_col = mateconf_client_get_int (client, key, NULL);
 	g_free (key);
-	
+
 	key = g_strdup_printf ("%s/sort_order", prefix);
 	order = static_cast<GtkSortType>(mateconf_client_get_int (client, key, NULL));
 	g_free (key);
-	
+
 	if (sort_col != -1)
 		gtk_tree_sortable_set_sort_column_id (GTK_TREE_SORTABLE (model),
 					      	      sort_col,
@@ -467,7 +467,7 @@ procman_get_tree_state (MateConfClient *client, GtkWidget *tree, const gchar *pr
 	}
 
 	g_list_free(columns);
-	
+
 	return TRUE;
 }
 
@@ -478,24 +478,24 @@ procman_save_tree_state (MateConfClient *client, GtkWidget *tree, const gchar *p
 	GList *it, *columns;
 	gint sort_col;
 	GtkSortType order;
-	
+
 	g_assert(tree);
 	g_assert(prefix);
-	
+
 	model = gtk_tree_view_get_model (GTK_TREE_VIEW (tree));
 	if (gtk_tree_sortable_get_sort_column_id (GTK_TREE_SORTABLE (model), &sort_col,
 					          &order)) {
 		gchar *key;
-		
+
 		key = g_strdup_printf ("%s/sort_col", prefix);
 		mateconf_client_set_int (client, key, sort_col, NULL);
 		g_free (key);
-		
+
 		key = g_strdup_printf ("%s/sort_order", prefix);
 		mateconf_client_set_int (client, key, order, NULL);
 		g_free (key);
-	}			       
-	
+	}
+
 	columns = gtk_tree_view_get_columns (GTK_TREE_VIEW (tree));
 
 	for(it = columns; it; it = it->next)
@@ -548,25 +548,33 @@ void
 procman_save_config (ProcData *data)
 {
 	MateConfClient *client = data->client;
-	gint width, height;
+
 
 	g_assert(data);
-		
+
 	procman_save_tree_state (data->client, data->tree, "/apps/procman/proctree");
 	procman_save_tree_state (data->client, data->disk_list, "/apps/procman/disktreenew");
-		
-	gdk_drawable_get_size (gtk_widget_get_window (data->app), &width, &height);
-	data->config.width = width;
-	data->config.height = height;
-	
+
+	#if GTK_CHECK_VERSION(3, 0, 0)
+		data->config.width = gdk_window_get_width(gtk_widget_get_window(data->app));
+		data->config.height = gdk_window_get_height(gtk_widget_get_window(data->app));
+	#else
+		gint width, height;
+
+		gdk_drawable_get_size(gtk_widget_get_window(data->app), &width, &height);
+
+		data->config.width = width;
+		data->config.height = height;
+	#endif
+
 	mateconf_client_set_int (client, "/apps/procman/width", data->config.width, NULL);
-	mateconf_client_set_int (client, "/apps/procman/height", data->config.height, NULL);	
+	mateconf_client_set_int (client, "/apps/procman/height", data->config.height, NULL);
 	mateconf_client_set_int (client, "/apps/procman/current_tab", data->config.current_tab, NULL);
 
 	mateconf_client_suggest_sync (client, NULL);
-	
 
-	
+
+
 }
 
 static guint32
@@ -675,7 +683,7 @@ main (int argc, char *argv[])
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
 	setlocale (LC_ALL, "");
-	
+
 	startup_timestamp = get_startup_timestamp();
 
 	Glib::OptionContext context;
@@ -722,29 +730,29 @@ main (int argc, char *argv[])
 
 	gtk_window_set_default_icon_name ("utilities-system-monitor");
 	g_set_application_name(_("System Monitor"));
-		    
+
 	mateconf_init (argc, argv, NULL);
-			    
+
 	client = mateconf_client_get_default ();
 	mateconf_client_add_dir(client, "/apps/procman", MATECONF_CLIENT_PRELOAD_NONE, NULL);
 
 	glibtop_init ();
 
 	procman_debug("end init");
-	
+
 	procdata = procman_data_new (client);
 	procdata->client = client;
 
 	procman_debug("begin create_main_window");
 	create_main_window (procdata);
 	procman_debug("end create_main_window");
-	
+
 	// proctable_update_all (procdata);
 
 	init_volume_monitor (procdata);
 
 	g_assert(procdata->app);
-			
+
 	if (option_group.show_system_tab) {
 		procman_debug("Starting with PROCMAN_TAB_SYSINFO by commandline request");
 		gtk_notebook_set_current_page(GTK_NOTEBOOK(procdata->notebook), PROCMAN_TAB_SYSINFO);
@@ -752,10 +760,10 @@ main (int argc, char *argv[])
 	}
 
  	gtk_widget_show(procdata->app);
-       
+
 	procman_debug("begin gtk_main");
 	kit.run();
-	
+
 	procman_free_data (procdata);
 
 	glibtop_close ();

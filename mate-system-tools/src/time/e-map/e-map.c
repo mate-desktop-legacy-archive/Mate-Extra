@@ -1413,8 +1413,14 @@ blowup_window_area (GdkWindow *window, gint area_x, gint area_y, gint target_x, 
 	gdk_gc_set_exposures (gc, FALSE);
 
 	/* Get area constraints */
+	#if GTK_CHECK_VERSION(3, 0, 0)
+		area_width = gdk_window_get_width(window);
+		area_height = gdk_window_get_height(window);
+	#else
+		gdk_drawable_get_size(GDK_DRAWABLE(window), &area_width, &area_height);
+	#endif
 
-	gdk_drawable_get_size (GDK_DRAWABLE (window), &area_width, &area_height);
+
 
 	/* Initialize area division array indexes */
 
