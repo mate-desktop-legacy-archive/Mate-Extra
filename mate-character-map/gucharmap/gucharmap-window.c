@@ -141,8 +141,8 @@ gucharmap_window_print (GucharmapWindow *guw,
 #endif /* ENABLE_PRINTING */
 
 static void
-status_message (GtkWidget       *widget, 
-                const gchar     *message, 
+status_message (GtkWidget       *widget,
+                const gchar     *message,
                 GucharmapWindow *guw)
 {
   gtk_statusbar_pop (GTK_STATUSBAR (guw->status), 0);
@@ -172,13 +172,13 @@ update_progress_bar (GucharmapWindow *guw)
 }
 
 /* "progress" aka "busy-interactive" cursor (pointer + watch)
- * from mozilla 
+ * from mozilla
  * caller should gdk_cursor_unref */
 GdkCursor *
 _gucharmap_window_progress_cursor (void)
 {
   /* MOZ_CURSOR_SPINNING */
-  static const char moz_spinning_bits[] = 
+  static const char moz_spinning_bits[] =
     {
       0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x04, 0x00, 0x00,
       0x00, 0x0c, 0x00, 0x00, 0x00, 0x1c, 0x00, 0x00, 0x00, 0x3c, 0x00,
@@ -191,9 +191,9 @@ _gucharmap_window_progress_cursor (void)
       0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
       0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
       0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-      0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
+      0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
     };
-  static const char moz_spinning_mask_bits[] = 
+  static const char moz_spinning_mask_bits[] =
     {
       0x00, 0x00, 0x00, 0x00, 0x06, 0x00, 0x00, 0x00, 0x0e, 0x00, 0x00,
       0x00, 0x1e, 0x00, 0x00, 0x00, 0x3e, 0x00, 0x00, 0x00, 0x7e, 0x00,
@@ -206,7 +206,7 @@ _gucharmap_window_progress_cursor (void)
       0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
       0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
       0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-      0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
+      0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
     };
 
   GdkPixmap *cursor, *mask;
@@ -272,7 +272,7 @@ search_finish (GucharmapSearchDialog *search_dialog,
 }
 
 static void
-search_find (GtkAction       *action, 
+search_find (GtkAction       *action,
              GucharmapWindow *guw)
 {
   g_assert (GUCHARMAP_IS_WINDOW (guw));
@@ -288,7 +288,7 @@ search_find (GtkAction       *action,
 }
 
 static void
-search_find_next (GtkAction       *action, 
+search_find_next (GtkAction       *action,
                   GucharmapWindow *guw)
 {
   if (guw->search_dialog)
@@ -298,7 +298,7 @@ search_find_next (GtkAction       *action,
 }
 
 static void
-search_find_prev (GtkAction       *action, 
+search_find_prev (GtkAction       *action,
                   GucharmapWindow *guw)
 {
   if (guw->search_dialog)
@@ -358,7 +358,7 @@ close_window (GtkAction *action,
 }
 
 static void
-font_bigger (GtkAction       *action, 
+font_bigger (GtkAction       *action,
              GucharmapWindow *guw)
 {
   gucharmap_mini_font_selection_change_font_size (GUCHARMAP_MINI_FONT_SELECTION (guw->fontsel),
@@ -366,7 +366,7 @@ font_bigger (GtkAction       *action,
 }
 
 static void
-font_smaller (GtkAction       *action, 
+font_smaller (GtkAction       *action,
               GucharmapWindow *guw)
 {
   gucharmap_mini_font_selection_change_font_size (GUCHARMAP_MINI_FONT_SELECTION (guw->fontsel),
@@ -374,14 +374,14 @@ font_smaller (GtkAction       *action,
 }
 
 static void
-font_default (GtkAction       *action, 
+font_default (GtkAction       *action,
               GucharmapWindow *guw)
 {
   gucharmap_mini_font_selection_reset_font_size (GUCHARMAP_MINI_FONT_SELECTION (guw->fontsel));
 }
 
 static void
-snap_cols_pow2 (GtkAction        *action, 
+snap_cols_pow2 (GtkAction        *action,
                 GucharmapWindow  *guw)
 {
   gboolean is_active = gtk_toggle_action_get_active (GTK_TOGGLE_ACTION (action));
@@ -415,20 +415,20 @@ help_contents (GtkAction *action,
   const char *lang;
   char *uri = NULL, *url;
   guint i;
- 
+
   const char * const * langs = g_get_language_names ();
   for (i = 0; langs[i]; i++) {
     lang = langs[i];
     if (strchr (lang, '.')) {
       continue;
     }
- 
+
     uri = g_build_filename (HELPDIR,
                             "gucharmap", /* DOC_MODULE */
                             lang,
                             "gucharmap.xml",
                             NULL);
-					
+
     if (g_file_test (uri, G_FILE_TEST_EXISTS)) {
       break;
     }
@@ -446,40 +446,39 @@ help_contents (GtkAction *action,
   g_free (url);
 }
 
-static void
-about_open_url (GtkAboutDialog *about,
-                const char *link,
-                gpointer data)
-{
-  open_url (GTK_WINDOW (about), link, gtk_get_current_event_time ());
-}
+#if !GTK_CHECK_VERSION(3, 0, 0)
+
+	static void about_open_url(GtkAboutDialog* about, const char* link, gpointer data)
+	{
+		open_url(GTK_WINDOW(about), link, gtk_get_current_event_time());
+	}
+
+	static void about_email_hook(GtkAboutDialog* about, const char* email_address, gpointer user_data)
+	{
+		char* escaped;
+		char* uri;
+
+		escaped = g_uri_escape_string(email_address, NULL, FALSE);
+		uri = g_strdup_printf("mailto:%s", escaped);
+		g_free(escaped);
+
+		open_url(GTK_WINDOW(about), uri, gtk_get_current_event_time());
+		g_free(uri);
+	}
+
+#endif
 
 static void
-about_email_hook (GtkAboutDialog *about,
-		  const char *email_address,
-		  gpointer user_data)
-{
-  char *escaped, *uri;
-
-  escaped = g_uri_escape_string (email_address, NULL, FALSE);
-  uri = g_strdup_printf ("mailto:%s", escaped);
-  g_free (escaped);
-
-  open_url (GTK_WINDOW (about), uri, gtk_get_current_event_time ());
-  g_free (uri);
-}
-
-static void
-help_about (GtkAction       *action, 
+help_about (GtkAction       *action,
             GucharmapWindow *guw)
 {
   const gchar *authors[] =
-    { 
-      "Noah Levitt <nlevitt@columbia.edu>", 
-      "Daniel Elstner <daniel.elstner@gmx.net>", 
+    {
+      "Noah Levitt <nlevitt@columbia.edu>",
+      "Daniel Elstner <daniel.elstner@gmx.net>",
       "Padraig O'Briain <Padraig.Obriain@sun.com>",
       "Christian Persch <" "chpe" "\100" "mate" "." "org" ">",
-      NULL 
+      NULL
     };
 
   const gchar *documenters[] =
@@ -487,7 +486,7 @@ help_about (GtkAction       *action,
       "Chee Bin HOH <cbhoh@gnome.org>",
       "Sun Microsystems",
       NULL
-    };	  
+    };
 
   const gchar *license[] = {
     N_("Gucharmap is free software; you can redistribute it and/or modify "
@@ -514,8 +513,10 @@ help_about (GtkAction       *action,
 			       _(license[2]), "\n\n", _(license[3]), "\n\n",
 			       _(license[4]), "\n\n", NULL);
 
-  gtk_about_dialog_set_url_hook (about_open_url, NULL, NULL);
-  gtk_about_dialog_set_email_hook (about_email_hook, NULL, NULL);
+	#if !GTK_CHECK_VERSION(3, 0, 0)
+		gtk_about_dialog_set_url_hook(about_open_url, NULL, NULL);
+		gtk_about_dialog_set_email_hook(about_email_hook, NULL, NULL);
+	#endif
 
   gtk_show_about_dialog (GTK_WINDOW (guw),
 			 "program-name", _("MATE Character Map"),
@@ -606,12 +607,12 @@ gucharmap_window_set_chapters_model (GucharmapWindow *guw,
       	model = gucharmap_script_chapters_model_new ();
 	chapters_set_labels (_("Next Script"), _("Previous Script"), guw);
 	break;
-      
+
       case GUCHARMAP_CHAPTERS_BLOCK:
       	model = gucharmap_block_chapters_model_new ();
 	chapters_set_labels (_("Next Block"), _("Previous Block"), guw);
 	break;
-      
+
       default:
         g_assert_not_reached ();
     }
@@ -632,11 +633,11 @@ view_by (GtkAction        *action,
       case VIEW_BY_SCRIPT:
         mode = GUCHARMAP_CHAPTERS_SCRIPT;
 	break;
-      
+
       case VIEW_BY_BLOCK:
         mode = GUCHARMAP_CHAPTERS_BLOCK;
 	break;
-      
+
       default:
         g_assert_not_reached ();
     }
@@ -920,7 +921,7 @@ gucharmap_window_init (GucharmapWindow *guw)
 
   gtk_window_add_accel_group ( GTK_WINDOW (guw),
   			       gtk_ui_manager_get_accel_group (guw->uimanager) );
-  
+
   guw->action_group = gtk_action_group_new ("gucharmap_actions");
   gtk_action_group_set_translation_domain (guw->action_group, GETTEXT_PACKAGE);
 
@@ -941,9 +942,9 @@ gucharmap_window_init (GucharmapWindow *guw)
 
   gtk_ui_manager_insert_action_group (guw->uimanager, guw->action_group, 0);
   g_object_unref (guw->action_group);
-  
+
   gtk_ui_manager_add_ui_from_string (guw->uimanager, ui_info, strlen (ui_info), NULL);
-  
+
   /* Now the widgets */
   big_vbox = gtk_vbox_new (FALSE, 0);
   gtk_container_add (GTK_CONTAINER (guw), big_vbox);

@@ -1,5 +1,5 @@
 /* -*- Mode: C; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*- */
-/* 
+/*
  * Copyright (C) 2001-2007 Bastien Nocera <hadess@hadess.net>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -78,10 +78,9 @@ totem_message_received_cb (UniqueApp         *app,
 	return UNIQUE_RESPONSE_OK;
 }
 
-static void
-about_url_hook (GtkAboutDialog *about,
-	        const char *link,
-	        gpointer user_data)
+#if !GTK_CHECK_VERSION(3, 0, 0)
+static void about_url_hook(GtkAboutDialog* about,
+	        const char *link, gpointer user_data)
 {
 	GError *error = NULL;
 
@@ -98,20 +97,19 @@ about_url_hook (GtkAboutDialog *about,
 }
 
 
-static void
-about_email_hook (GtkAboutDialog *about,
-		  const char *email_address,
-		  gpointer user_data)
+static void about_email_hook(GtkAboutDialog* about, const char* email_address, gpointer user_data)
 {
-	char *escaped, *uri;
+	char* escaped;
+	char* uri;
 
-	escaped = g_uri_escape_string (email_address, NULL, FALSE);
-	uri = g_strdup_printf ("mailto:%s", escaped);
-	g_free (escaped);
+	escaped = g_uri_escape_string(email_address, NULL, FALSE);
+	uri = g_strdup_printf("mailto:%s", escaped);
+	g_free(escaped);
 
-	about_url_hook (about, uri, user_data);
-	g_free (uri);
+	about_url_hook(about, uri, user_data);
+	g_free(uri);
 }
+#endif
 
 /* Debug log message handler: discards debug messages unless Totem is run with TOTEM_DEBUG=1.
  * If we're building in the source tree, enable debug messages by default. */
@@ -177,8 +175,11 @@ main (int argc, char **argv)
 	g_set_application_name (_("Totem Movie Player"));
 	gtk_window_set_default_icon_name ("totem");
 	g_setenv("PULSE_PROP_media.role", "video", TRUE);
-	gtk_about_dialog_set_url_hook (about_url_hook, NULL, NULL);
-	gtk_about_dialog_set_email_hook (about_email_hook, NULL, NULL);
+
+	#if !GTK_CHECK_VERSION(3, 0, 0)
+		gtk_about_dialog_set_url_hook(about_url_hook, NULL, NULL);
+		gtk_about_dialog_set_email_hook(about_email_hook, NULL, NULL);
+	#endif
 
 	gc = mateconf_client_get_default ();
 	if (gc == NULL)

@@ -2,7 +2,7 @@
  * gedit.c
  * This file is part of gedit
  *
- * Copyright (C) 2005 - Paolo Maggi 
+ * Copyright (C) 2005 - Paolo Maggi
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,14 +16,14 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, 
+ * Foundation, Inc., 59 Temple Place, Suite 330,
  * Boston, MA 02111-1307, USA.
  */
 
 /*
- * Modified by the gedit Team, 2005. See the AUTHORS file for a 
- * list of people on the gedit Team.  
- * See the ChangeLog files for a list of changes. 
+ * Modified by the gedit Team, 2005. See the AUTHORS file for a
+ * list of people on the gedit Team.
+ * See the ChangeLog files for a list of changes.
  *
  * $Id$
  */
@@ -110,7 +110,7 @@ list_encodings_and_quit (void)
 	gint i = 0;
 	const GeditEncoding *enc;
 
-	while ((enc = gedit_encoding_get_from_index (i)) != NULL) 
+	while ((enc = gedit_encoding_get_from_index (i)) != NULL)
 	{
 		g_print ("%s\n", gedit_encoding_get_charset (enc));
 
@@ -155,7 +155,7 @@ free_command_line_data (void)
 
 	g_free (encoding_charset);
 	encoding_charset = NULL;
-	
+
 	new_window_option = FALSE;
 	new_document_option = FALSE;
 	line_position = 0;
@@ -168,7 +168,7 @@ gedit_get_command_line_data (void)
 	{
 		gint i;
 
-		for (i = 0; remaining_args[i]; i++) 
+		for (i = 0; remaining_args[i]; i++)
 		{
 			if (*remaining_args[i] == '+')
 			{
@@ -184,12 +184,12 @@ gedit_get_command_line_data (void)
 
 				file = g_file_new_for_commandline_arg (remaining_args[i]);
 				file_list = g_slist_prepend (file_list, file);
-			} 
+			}
 		}
 
 		file_list = g_slist_reverse (file_list);
 	}
-	
+
 	if (encoding_charset &&
 	    (gedit_encoding_get_from_charset (encoding_charset) == NULL))
 	{
@@ -412,7 +412,7 @@ on_message_received (const char *message,
 
  out:
 	g_strfreev (commands);
-	
+
 	free_command_line_data ();
 }
 
@@ -448,7 +448,7 @@ send_bacon_message (void)
 	screen_number = gdk_screen_get_number (screen);
 
 	gedit_debug_message (DEBUG_APP, "Display: %s", display_name);
-	gedit_debug_message (DEBUG_APP, "Screen: %d", screen_number);	
+	gedit_debug_message (DEBUG_APP, "Screen: %d", screen_number);
 
 	ws = gedit_utils_get_current_workspace (screen);
 	gedit_utils_get_current_viewport (screen, &viewport_x, &viewport_y);
@@ -507,7 +507,7 @@ send_bacon_message (void)
 	}
 
 	gedit_debug_message (DEBUG_APP, "Bacon Message: %s", command->str);
-	
+
 	bacon_message_connection_send (connection,
 				       command->str);
 
@@ -564,7 +564,7 @@ main (int argc, char *argv[])
 	/* Setup debugging */
 	gedit_debug_init ();
 	gedit_debug_message (DEBUG_APP, "Startup");
-	
+
 	setlocale (LC_ALL, "");
 
 	dir = gedit_dirs_get_gedit_locale_dir ();
@@ -627,16 +627,16 @@ main (int argc, char *argv[])
 
 	if (connection != NULL)
 	{
-		if (!bacon_message_connection_get_is_server (connection)) 
+		if (!bacon_message_connection_get_is_server (connection))
 		{
 			gedit_debug_message (DEBUG_APP, "I'm a client");
 
 			gedit_get_command_line_data ();
 
 			send_bacon_message ();
-			
+
 			free_command_line_data ();
-			
+
 			/* we never popup a window... tell startup-notification
 			 * that we are done.
 			 */
@@ -646,7 +646,7 @@ main (int argc, char *argv[])
 
 			exit (0);
 		}
-		else 
+		else
 		{
 		  	gedit_debug_message (DEBUG_APP, "I'm a server");
 
@@ -662,13 +662,13 @@ main (int argc, char *argv[])
 #endif
 
 	gedit_debug_message (DEBUG_APP, "Set icon");
-	
+
 	dir = gedit_dirs_get_gedit_data_dir ();
 	icon_dir = g_build_filename (dir,
 				     "icons",
 				     NULL);
 	g_free (dir);
-	
+
 	gtk_icon_theme_append_search_path (gtk_icon_theme_get_default (),
 					   icon_dir);
 	g_free (icon_dir);
@@ -690,10 +690,11 @@ main (int argc, char *argv[])
 	gedit_debug_message (DEBUG_APP, "Init plugins");
 	engine = gedit_plugins_engine_get_default ();
 
-	gtk_about_dialog_set_url_hook (gedit_utils_activate_url, NULL, NULL);
-	
+	#if !GTK_CHECK_VERSION(3, 0, 0)
+		gtk_about_dialog_set_url_hook(gedit_utils_activate_url, NULL, NULL);
+	#endif
 	/* Initialize session management */
-	gedit_debug_message (DEBUG_APP, "Init session manager");		
+	gedit_debug_message (DEBUG_APP, "Init session manager");
 	gedit_session_init ();
 
 #ifdef OS_OSX
@@ -707,7 +708,7 @@ main (int argc, char *argv[])
 	{
 		gedit_debug_message (DEBUG_APP, "Analyze command line data");
 		gedit_get_command_line_data ();
-		
+
 		gedit_debug_message (DEBUG_APP, "Get default app");
 		app = gedit_app_get_default ();
 
@@ -717,14 +718,14 @@ main (int argc, char *argv[])
 		if (file_list != NULL)
 		{
 			const GeditEncoding *encoding = NULL;
-		
+
 			if (encoding_charset)
 				encoding = gedit_encoding_get_from_charset (encoding_charset);
-		
+
 			gedit_debug_message (DEBUG_APP, "Load files");
-			_gedit_cmd_load_files_from_prompt (window, 
-							   file_list, 
-							   encoding, 
+			_gedit_cmd_load_files_from_prompt (window,
+							   file_list,
+							   encoding,
 							   line_position);
 		}
 		else
@@ -732,7 +733,7 @@ main (int argc, char *argv[])
 			gedit_debug_message (DEBUG_APP, "Create tab");
 			gedit_window_create_tab (window, TRUE);
 		}
-		
+
 		gedit_debug_message (DEBUG_APP, "Show window");
 		gtk_widget_show (GTK_WIDGET (window));
 
@@ -740,7 +741,7 @@ main (int argc, char *argv[])
 	}
 
 	gedit_debug_message (DEBUG_APP, "Start gtk-main");
-	
+
 #ifdef OS_OSX
 	gedit_osx_init(gedit_app_get_default ());
 #endif
@@ -751,7 +752,7 @@ main (int argc, char *argv[])
 #endif
 
 	/* We kept the original engine reference here. So let's unref it to
-	 * finalize it properly. 
+	 * finalize it properly.
 	 */
 	g_object_unref (engine);
 	gedit_prefs_manager_app_shutdown ();
