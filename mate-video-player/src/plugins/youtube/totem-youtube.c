@@ -1,5 +1,5 @@
 /* -*- Mode: C; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*- */
-/* 
+/*
  * Copyright (C) 2009 Philip Withnall <philip@tecnocode.co.uk>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -166,9 +166,9 @@ new_from_stream_thread (GSimpleAsyncResult *result,
  * @preserve_aspect_ratio: %TRUE to preserve the image's aspect ratio
  * @cancellable: optional #GCancellable object, %NULL to ignore
  * @callback: a #GAsyncReadyCallback to call when the the pixbuf is loaded
- * @user_data: the data to pass to the callback function 
+ * @user_data: the data to pass to the callback function
  *
- * Creates a new pixbuf by asynchronously loading an image from an input stream.  
+ * Creates a new pixbuf by asynchronously loading an image from an input stream.
  *
  * For more details see gdk_pixbuf_new_from_stream_at_scale(), which is the synchronous
  * version of this function.
@@ -209,9 +209,9 @@ totem_gdk_pixbuf_new_from_stream_at_scale_async (GInputStream        *stream,
  * @stream: a #GInputStream from which to load the pixbuf
  * @cancellable: optional #GCancellable object, %NULL to ignore
  * @callback: a #GAsyncReadyCallback to call when the the pixbuf is loaded
- * @user_data: the data to pass to the callback function 
+ * @user_data: the data to pass to the callback function
  *
- * Creates a new pixbuf by asynchronously loading an image from an input stream.  
+ * Creates a new pixbuf by asynchronously loading an image from an input stream.
  *
  * For more details see gdk_pixbuf_new_from_stream(), which is the synchronous
  * version of this function.
@@ -328,7 +328,12 @@ set_up_tree_view (TotemYouTubePlugin *self, GtkBuilder *builder, guint key)
 	g_signal_connect (menu_item, "activate", G_CALLBACK (open_in_web_browser_activate_cb), self);
 
 	/* Connect to more scroll events */
-	self->vadjust[key] = gtk_tree_view_get_vadjustment (GTK_TREE_VIEW (tree_view));
+	#if GTK_CHECK_VERSION(3, 0, 0)
+		self->vadjust[key] = gtk_scrollable_get_vadjustment(GTK_SCROLLABLE(tree_view));
+	#else
+		self->vadjust[key] = gtk_tree_view_get_vadjustment(GTK_TREE_VIEW(tree_view));
+	#endif
+
 	g_signal_connect (self->vadjust[key], "value-changed", G_CALLBACK (value_changed_cb), self);
 
 	self->cancel_button = GTK_WIDGET (gtk_builder_get_object (builder, "yt_cancel_button"));
