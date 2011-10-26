@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# fill it
+pkgname=mate-bluetooth
+pkgver=2011.08.31
+pkgrel=1
+pkgdesc="A collection of Bluetooth utilities and modules for MATE"
+#depends="gstreamer0.10-base-plugins, mate-panel, mate-character-map, libgtop, libmatenotify, cpufrequtils"
+# editar esta funcion!
+build() {
+	cd $pkgsrc
+	# descomprimir
+	tar xvzf download
+	# entramos a la carpeta
+	cd ${pkgname}
+
+	./configure --prefix=/usr --sysconfdir=/etc \
+		--localstatedir=/var --disable-desktop-update \
+		--disable-icon-update || return 1
+		#--disable-schemas-compile
+
+	# there is some pre-compiled files on the tar
+	make clean
+	make || return 1
+
+	make MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 DESTDIR="${pkgdir}" install || return 1
+
+	install -m755 -d "${pkgdir}/usr/share/mateconf/schemas"
+	mateconf-merge-schema "${pkgdir}/usr/share/mateconf/schemas/${pkgname}.schemas" --domain ${pkgname} ${pkgdir}/etc/mateconf/schemas/*.schemas || return 1
+	rm -f ${pkgdir}/etc/mateconf/schemas/*.schemas
+}
+
+# esto incluye la parte que se repite en la mayoria de los builds
+. /usr/share/mate-doc-utils/mate-debian.sh
