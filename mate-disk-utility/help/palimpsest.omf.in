@@ -24,7 +24,7 @@
         <email>davidz@redhat.com</email>
       </person>
     </maintainer>
-    <subject category="MATE|System"/>
+    <subject category="GNOME|System"/>
     <date>2007-03-09</date>
     <type>user's guide</type>
     <description>
