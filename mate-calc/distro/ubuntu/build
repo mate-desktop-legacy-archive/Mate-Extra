@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # fill it
-pkgname=mate-bluetooth
+pkgname=mate-calc
 pkgver=2011.08.31
 pkgrel=1
-pkgdesc="A collection of Bluetooth utilities and modules for MATE"
-#depends="gstreamer0.10-base-plugins, mate-panel, mate-character-map, libgtop, libmatenotify, cpufrequtils"
+pkgdesc="Calculator for the Mate desktop environment"
+#depends=('gtk2' 'libxml2' 'libpng' 'freetype2' 'pixman' 'glib' 'pango' 'gdk-pixbuf2' 'cairo' 'atk')
 # editar esta funcion!
 build() {
 	cd $pkgsrc
@@ -14,20 +14,12 @@ build() {
 	# entramos a la carpeta
 	cd ${pkgname}
 
-	./configure --prefix=/usr --sysconfdir=/etc \
-		--localstatedir=/var --disable-desktop-update \
-		--disable-icon-update || return 1
-		#--disable-schemas-compile
-
-	# there is some pre-compiled files on the tar
-	make clean
+	./autogen.sh || return 1
+	intltoolize --automake --copy --force || return 1
+	./configure --prefix=/usr || return 1
 	make || return 1
 
-	make MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 DESTDIR="${pkgdir}" install || return 1
-
-	install -m755 -d "${pkgdir}/usr/share/mateconf/schemas"
-	mateconf-merge-schema "${pkgdir}/usr/share/mateconf/schemas/${pkgname}.schemas" --domain ${pkgname} ${pkgdir}/etc/mateconf/schemas/*.schemas || return 1
-	rm -f ${pkgdir}/etc/mateconf/schemas/*.schemas
+	make DESTDIR="${pkgdir}" install || return 1
 }
 
 # esto incluye la parte que se repite en la mayoria de los builds
