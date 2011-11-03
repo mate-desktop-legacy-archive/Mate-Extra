@@ -61,7 +61,7 @@
 
 2009-02-23  Claudio Saavedra  <csaavedra@igalia.com>
 
-	* C/eog.xml: Fix a typo. Fixes bug #572889 (Łukasz Jernaś).
+	* C/eom.xml: Fix a typo. Fixes bug #572889 (Łukasz Jernaś).
 
 2009-02-16  Felix Riemann  <friemann@svn.mate.org>
 
@@ -98,13 +98,13 @@
 
 2009-01-05  Felix Riemann  <friemann@svn.mate.org>
 
-	* C/figures/eog_save_as_window.png: Use better compression. 
+	* C/figures/eom_save_as_window.png: Use better compression. 
 
 2009-01-05  Felix Riemann  <friemann@svn.mate.org>
 
-	* C/figures/eog_save_as_window.png: Update figure to show the actual
+	* C/figures/eom_save_as_window.png: Update figure to show the actual
 	layout the dialog has since 2.19.1. 
-	* C/eog.xml: Several smaller updates in the 'Saving Multiple Images'
+	* C/eom.xml: Several smaller updates in the 'Saving Multiple Images'
 	section.
 
 2008-12-15  Felix Riemann  <friemann@svn.mate.org>
@@ -145,7 +145,7 @@
 2008-09-21  Mario Blättermann  <mariobl@svn.mate.org>
 
 	* de/de.po: Updated German translation
-	* de/figures/eog_toolbar_editor_window.png: Added new screenshot
+	* de/figures/eom_toolbar_editor_window.png: Added new screenshot
 
 2008-09-20  Luca Ferretti  <elle.uca@libero.it>
 
@@ -225,7 +225,7 @@
 
 2008-04-18  Felix Riemann  <friemann@svn.mate.org>
 
-	* C/eog.xml: Update manual to reflect the current default scroll wheel
+	* C/eom.xml: Update manual to reflect the current default scroll wheel
 	policy.	Also try to be a bit more precise about how "Zoom Fit" works.
 
 2008-03-10 Maxim Dziumanenko <dziumanenko@gmail.com>
@@ -247,7 +247,7 @@
 2008-03-07  Felix Riemann  <friemann@svn.mate.org>
 
 	* Makefile.am: Keep lang list sorted alphabetically.
-	* C/eog.xml: 
+	* C/eom.xml: 
 	* da/da.po:
 	* en_GB/en_GB.po:
 	* es/es.po:
@@ -297,7 +297,7 @@
 2008-02-17  Changwoo Ryu  <cwryu@debian.org>
 
 	* ko/ko.po: Updated Korean translation.
-	* ko/figures/eog_toolbar_editor_window.png: Added a screenshot.
+	* ko/figures/eom_toolbar_editor_window.png: Added a screenshot.
 
 2008-02-16  Kenneth Nielsen  <k.nielsen81@gmail.com>
 
@@ -325,23 +325,23 @@
 
 	* Makefile.am:
 	* eu/Makefile.am:
-	* eu/eog-eu.omf:
-	* eu/eog.xml:
+	* eu/eom-eu.omf:
+	* eu/eom.xml:
 	* eu/eu.po:
 	* eu/legal.xml:
 	* ja/Makefile.am:
-	* ja/eog-ja.omf:
-	* ja/eog.xml:
+	* ja/eom-ja.omf:
+	* ja/eom.xml:
 	* ja/ja.po:
 	* ja/legal.xml:
 	* zh_CN/Makefile.am:
-	* zh_CN/eog-zh_CN.omf:
-	* zh_CN/eog.xml:
+	* zh_CN/eom-zh_CN.omf:
+	* zh_CN/eom.xml:
 	* zh_CN/legal.xml:
 	* zh_CN/zh_CN.po:
 	* zh_TW/Makefile.am:
-	* zh_TW/eog-zh_TW.omf:
-	* zh_TW/eog.xml:
+	* zh_TW/eom-zh_TW.omf:
+	* zh_TW/eom.xml:
 	* zh_TW/legal.xml:
 	* zh_TW/zh_TW.po:
 	Convert remaining translations to g-d-u. That should make
@@ -353,8 +353,8 @@
 
 2008-01-13  Felix Riemann  <friemann@svn.mate.org>
 
-	* C/eog.xml:
-	* C/figures/eog_toolbar_editor_window.png:
+	* C/eom.xml:
+	* C/figures/eom_toolbar_editor_window.png:
 	* Makefile.am:
 	Add chapter and figure about toolbar editor. Fixes bug #503637.
 
@@ -390,8 +390,8 @@
 
 	* Makefile.am: moved it from SUBDIRS to DOC_LINGUAS
 	* it/Makefile.am: removed
-	* it/eog-it.omf: remoded
-	* it/eog.xml: removed 
+	* it/eom-it.omf: remoded
+	* it/eom.xml: removed 
 	* it/it.po: added 
 	* it/legal.xml: added
 
@@ -447,7 +447,7 @@
 
 2007-06-24  Lucas Rocha  <lucasr@gnome.org>
 
-	* C/eog.xml: removed conditional text about libjpeg as most
+	* C/eom.xml: removed conditional text about libjpeg as most
 	distributions ship with it by default.
 
 2007-06-04  Claudio Saavedra  <csaavedra@alumnos.utalca.cl>
@@ -477,19 +477,19 @@
 
 2007-04-22  Felix Riemann  <friemann@svn.mate.org>
 
-	* C/eog.xml: Fix wrong label. Fixes bug 431297.
+	* C/eom.xml: Fix wrong label. Fixes bug 431297.
 
 2007-04-19  Changwoo Ryu  <cwryu@debian.org>
 
 	* ko/ko.po: Updated Korean translation.
-	* ko/figures/eog_save_as_window.png: Added a screenshot.
+	* ko/figures/eom_save_as_window.png: Added a screenshot.
 
 2007-04-13  Changwoo Ryu  <cwryu@debian.org>
 
 	* Makefile.am: Removed ko from SUBDIRS and added ko to DOC_LINGUAS.
 	* ko/ko.po: Migrated to mate-doc-utils.
 	* ko/figures/*.png: Updated screenshots.
-	* ko/Makefile.am, ko/eog.xml, ko/eog-ko.omf, ko/legal.xml: Removed.
+	* ko/Makefile.am, ko/eom.xml, ko/eom-ko.omf, ko/legal.xml: Removed.
 
 2007-03-23  Daniel Nylander <po@danielnylander.se>
 
@@ -530,7 +530,7 @@
 
 2007-02-28  Joachim Noreiko  <jnoreiko@yahoo.com>
 
-	* C/eog.xml: Updates for 2.18 - #401893:
+	* C/eom.xml: Updates for 2.18 - #401893:
 	Remove 180° rotation
 	Update labels in preferences dialog
 	Add description of EXIF-rotation
@@ -609,8 +609,8 @@
 	* de/figures/*: Updated screenshots.
 	* de/de.po: Migrated and updated German translation.
 	* Makefile.am: Added de to DOC_LINGUAS.
-	* de/eog-de.omf: Removed
-	* de/eog.xml: Removed
+	* de/eom-de.omf: Removed
+	* de/eom.xml: Removed
 	* de/legal.xml: Removed
 	* de/Makefile.am: Removed
 
@@ -620,7 +620,7 @@
 	
 2006-12-06  Joachim Noreiko  <jnoreiko@yahoo.com>
 
-	* C/eog.xml: Updates for 2.16. General tweaks, including:
+	* C/eom.xml: Updates for 2.16. General tweaks, including:
 	  Changing titles to gerunds
 	  Split off new section 'Saving Multiple Images'
 	  Clearing up section on deleting images - #382610
@@ -652,8 +652,8 @@
 	* sv/sv.po: Added Swedish translation.
 	* sv/figures/*png: Updated screenshot.
 	* Makefile.am: Added sv to DOC_LINGUAS.
-	* help/sv/eog-sv.omf: Removed
-	* help/sv/eog.xml: Removed
+	* help/sv/eom-sv.omf: Removed
+	* help/sv/eom.xml: Removed
 	* help/sv/legal.xml: Removed
 
 2006-10-19  Claudio Saavedra  <csaavedra@alumnos.utalca.cl>
@@ -670,12 +670,12 @@
 	
 2006-10-18  Claudio Saavedra  <csaavedra@alumnos.utalca.cl>
 
-	* help/es/eog-es.omf:
-	* help/es/eog.xml:
+	* help/es/eom-es.omf:
+	* help/es/eom.xml:
 	* help/es/legal.xml:
 	* help/es/Makefile.am:
-	* help/uk/eog-uk.omf:
-	* help/uk/eog.xml:
+	* help/uk/eom-uk.omf:
+	* help/uk/eom.xml:
 	* help/uk/legal.xml:
 	* help/uk/Makefile.am:
 
@@ -717,7 +717,7 @@
 
 2006-07-13  Lucas Rocha  <lucasr@cvs.mate.org>
 
-	* C/eog.xml: manual update from
+	* C/eom.xml: manual update from
 	Felix Riemann <felix@hsgheli.de>.
 
 2006-07-13  Lucas Rocha  <lucasr@gnome.org>
@@ -738,6 +738,6 @@
 
 2006-04-20  Lucas Rocha  <lucasr@cvs.mate.org>
 
-	* C/eog.xml, C/figures/*: manual update from
+	* C/eom.xml, C/figures/*: manual update from
 	Felix Riemann <felix@hsgheli.de>.
 	* ChangeLog: added ChangeLog here.

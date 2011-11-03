@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>eom-metadata-reader</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.0">
+<link rel="home" href="index.html" title="Eye of MATE Reference Manual">
+<link rel="up" href="ch02.html" title="Image data and manipulation">
+<link rel="prev" href="eom-eom-transform.html" title="EomTransform">
+<link rel="next" href="EomMetadataReaderPng.html" title="EomMetadataReaderPng">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="eom-eom-transform.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Eye of MATE Reference Manual</th>
+<td><a accesskey="n" href="EomMetadataReaderPng.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#eom-eom-metadata-reader.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#eom-eom-metadata-reader.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#eom-eom-metadata-reader.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#eom-eom-metadata-reader.implementations" class="shortcut">Known Implementations</a>
+</td></tr>
+</table>
+<div class="refentry" title="eom-metadata-reader">
+<a name="eom-eom-metadata-reader"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="eom-eom-metadata-reader.top_of_page"></a>eom-metadata-reader</span></h2>
+<p>eom-metadata-reader</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="eom-eom-metadata-reader.synopsis"></a><h2>Synopsis</h2>
+<a name="EomMetadataReader"></a><pre class="synopsis">#define             <a class="link" href="eom-eom-metadata-reader.html#EOM-METADATA-READER-GET-INTERFACE:CAPS" title="EOM_METADATA_READER_GET_INTERFACE()">EOM_METADATA_READER_GET_INTERFACE</a>   (o)
+                    <a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader-struct" title="EomMetadataReader">EomMetadataReader</a>;
+                    <a class="link" href="eom-eom-metadata-reader.html#EomMetadataReaderInterface" title="EomMetadataReaderInterface">EomMetadataReaderInterface</a>;
+enum                <a class="link" href="eom-eom-metadata-reader.html#EomMetadataFileType" title="enum EomMetadataFileType">EomMetadataFileType</a>;
+<a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="returnvalue">EomMetadataReader</span></a>*  <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-new" title="eom_metadata_reader_new ()">eom_metadata_reader_new</a>             (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataFileType" title="enum EomMetadataFileType"><span class="type">EomMetadataFileType</span></a> type</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-consume" title="eom_metadata_reader_consume ()">eom_metadata_reader_consume</a>         (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> len</code></em>);
+<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-finished" title="eom_metadata_reader_finished ()">eom_metadata_reader_finished</a>        (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-exif-chunk" title="eom_metadata_reader_get_exif_chunk ()">eom_metadata_reader_get_exif_chunk</a>  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> **data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);
+<span class="returnvalue">ExifData</span>*           <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-exif-data" title="eom_metadata_reader_get_exif_data ()">eom_metadata_reader_get_exif_data</a>   (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
+<span class="returnvalue">XmpPtr</span>              <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-xmp-data" title="eom_metadata_reader_get_xmp_data ()">eom_metadata_reader_get_xmp_data</a>    (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
+<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-iptc-chunk" title="eom_metadata_reader_get_iptc_chunk ()">eom_metadata_reader_get_iptc_chunk</a>  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
+<span class="returnvalue">IptcData</span>*           <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-iptc-data" title="eom_metadata_reader_get_iptc_data ()">eom_metadata_reader_get_iptc_data</a>   (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
+<span class="returnvalue">cmsHPROFILE</span>         <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-icc-profile" title="eom_metadata_reader_get_icc_profile ()">eom_metadata_reader_get_icc_profile</a> (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="eom-eom-metadata-reader.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  GInterface
+   +----EomMetadataReader
+</pre>
+</div>
+<div class="refsect1" title="Known Implementations">
+<a name="eom-eom-metadata-reader.implementations"></a><h2>Known Implementations</h2>
+<p>
+EomMetadataReader is implemented by
+ <a class="link" href="EomMetadataReaderJpg.html" title="EomMetadataReaderJpg">EomMetadataReaderJpg</a> and  <a class="link" href="EomMetadataReaderPng.html" title="EomMetadataReaderPng">EomMetadataReaderPng</a>.</p>
+</div>
+<div class="refsect1" title="Description">
+<a name="eom-eom-metadata-reader.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="eom-eom-metadata-reader.details"></a><h2>Details</h2>
+<div class="refsect2" title="EOM_METADATA_READER_GET_INTERFACE()">
+<a name="EOM-METADATA-READER-GET-INTERFACE:CAPS"></a><h3>EOM_METADATA_READER_GET_INTERFACE()</h3>
+<pre class="programlisting">#define EOM_METADATA_READER_GET_INTERFACE(o)  (G_TYPE_INSTANCE_GET_INTERFACE ((o), EOM_TYPE_METADATA_READER, EomMetadataReaderInterface))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>o</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EomMetadataReader">
+<a name="EomMetadataReader-struct"></a><h3>EomMetadataReader</h3>
+<pre class="programlisting">typedef struct _EomMetadataReader EomMetadataReader;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomMetadataReaderInterface">
+<a name="EomMetadataReaderInterface"></a><h3>EomMetadataReaderInterface</h3>
+<pre class="programlisting">typedef struct {
+	GTypeInterface parent;
+
+	void		(*consume)		(EomMetadataReader *self,
+						 const guchar *buf,
+						 guint len);
+
+	gboolean (*finished)		(EomMetadataReader *self);
+
+	void		(*get_raw_exif)		(EomMetadataReader *self,
+						 guchar **data,
+						 guint *len);
+
+	gpointer (*get_exif_data) (EomMetadataReader *self);
+
+	gpointer (*get_icc_profile) (EomMetadataReader *self);
+
+	gpointer (*get_xmp_ptr)		(EomMetadataReader *self);
+} EomMetadataReaderInterface;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="enum EomMetadataFileType">
+<a name="EomMetadataFileType"></a><h3>enum EomMetadataFileType</h3>
+<pre class="programlisting">typedef enum {
+	EOM_METADATA_JPEG,
+	EOM_METADATA_PNG
+} EomMetadataFileType;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="eom_metadata_reader_new ()">
+<a name="eom-metadata-reader-new"></a><h3>eom_metadata_reader_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="returnvalue">EomMetadataReader</span></a>*  eom_metadata_reader_new             (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataFileType" title="enum EomMetadataFileType"><span class="type">EomMetadataFileType</span></a> type</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_metadata_reader_consume ()">
+<a name="eom-metadata-reader-consume"></a><h3>eom_metadata_reader_consume ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_metadata_reader_consume         (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> len</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>emr</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>buf</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>len</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_metadata_reader_finished ()">
+<a name="eom-metadata-reader-finished"></a><h3>eom_metadata_reader_finished ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_metadata_reader_finished        (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>emr</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_metadata_reader_get_exif_chunk ()">
+<a name="eom-metadata-reader-get-exif-chunk"></a><h3>eom_metadata_reader_get_exif_chunk ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_metadata_reader_get_exif_chunk  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> **data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>emr</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>len</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_metadata_reader_get_exif_data ()">
+<a name="eom-metadata-reader-get-exif-data"></a><h3>eom_metadata_reader_get_exif_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">ExifData</span>*           eom_metadata_reader_get_exif_data   (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>emr</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_metadata_reader_get_xmp_data ()">
+<a name="eom-metadata-reader-get-xmp-data"></a><h3>eom_metadata_reader_get_xmp_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">XmpPtr</span>              eom_metadata_reader_get_xmp_data    (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>emr</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_metadata_reader_get_iptc_chunk ()">
+<a name="eom-metadata-reader-get-iptc-chunk"></a><h3>eom_metadata_reader_get_iptc_chunk ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            eom_metadata_reader_get_iptc_chunk  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>emr</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_metadata_reader_get_iptc_data ()">
+<a name="eom-metadata-reader-get-iptc-data"></a><h3>eom_metadata_reader_get_iptc_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">IptcData</span>*           eom_metadata_reader_get_iptc_data   (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>emr</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_metadata_reader_get_icc_profile ()">
+<a name="eom-metadata-reader-get-icc-profile"></a><h3>eom_metadata_reader_get_icc_profile ()</h3>
+<pre class="programlisting"><span class="returnvalue">cmsHPROFILE</span>         eom_metadata_reader_get_icc_profile (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>emr</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

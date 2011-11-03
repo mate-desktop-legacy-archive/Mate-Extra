@@ -9,7 +9,7 @@ AUTOMAKE_OPTIONS = 1.6
 # of using the various options.
 
 # The name of the module, e.g. 'glib'.
-DOC_MODULE=eog
+DOC_MODULE=eom
 
 # The top-level SGML file. You can change this if you want to.
 DOC_MAIN_SGML_FILE=$(DOC_MODULE)-docs.sgml
@@ -48,20 +48,20 @@ CFILE_GLOB=$(top_srcdir)/src/*.c
 # Header files to ignore when scanning.
 # e.g. IGNORE_HFILES=gtkdebug.h gtkintl.h
 IGNORE_HFILES= \
-	eog-python-plugin.h \
-	eog-image-private.h \
-	eog-image-jpeg.h \
-	eog-marshal.h \
-	eog-application-service.h \
-	eog-enum-types.h \
-	eog-module.h \
-	eog-python-module.h
+	eom-python-plugin.h \
+	eom-image-private.h \
+	eom-image-jpeg.h \
+	eom-marshal.h \
+	eom-application-service.h \
+	eom-enum-types.h \
+	eom-module.h \
+	eom-python-module.h
 
 if !HAVE_EXIF
 if !HAVE_EXEMPI
 IGNORE_HFILES +=			\
-	eog-exif-util.h			\
-	eog-exif-details.h
+	eom-exif-util.h			\
+	eom-exif-details.h
 endif
 endif
 
@@ -91,20 +91,20 @@ INCLUDES= \
 	-I$(top_srcdir)/jpegutils				\
 	-I$(top_srcdir)/cut-n-paste/toolbar-editor		\
 	-I$(top_srcdir)/cut-n-paste/totem-screensaver		\
-	$(EOG_CFLAGS)
+	$(EOM_CFLAGS)
 
 if ENABLE_JPEG
-jpeg_LIB = $(top_builddir)/jpegutils/libeog-jpegutils.la
+jpeg_LIB = $(top_builddir)/jpegutils/libeom-jpegutils.la
 endif
 
 GTKDOC_LIBS=\
-	$(top_builddir)/src/libeog.la 	\
+	$(top_builddir)/src/libeom.la 	\
 	$(top_builddir)/cut-n-paste/toolbar-editor/libtoolbareditor.la \
 	$(top_builddir)/cut-n-paste/totem-screensaver/libtotemscrsaver.la \
 	$(BINDING_LIBS)			\
 	$(LIBJPEG)			\
 	$(X_LIBS)			\
-	$(EOG_LIBS)			\
+	$(EOM_LIBS)			\
 	$(jpeg_LIB)			\
 	$(MORE_GTKDOC_LIBS)
 

@@ -359,9 +359,9 @@ Date:   Fri Sep 10 17:53:19 2010 +0300
 
     Ask the user whether to reload an externally modified image
     
-    Fixes bug 534348 - eog should suggest to reload a modified file
+    Fixes bug 534348 - eom should suggest to reload a modified file
 
- src/eog-window.c |   72 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/eom-window.c |   72 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  1 files changed, 72 insertions(+), 0 deletions(-)
 
 commit fa9d92a82bbc45379cd6bcd5dbeabe6683597791
@@ -370,29 +370,29 @@ Date:   Fri Sep 10 17:52:41 2010 +0300
 
     Emit ::file-changed when a image in a a monitored directory changes
 
- src/eog-list-store.c |    6 ++++++
+ src/eom-list-store.c |    6 ++++++
  1 files changed, 6 insertions(+), 0 deletions(-)
 
 commit bb1cb9e580666b423a22c0a9d3ab946d48b08f07
 Author: Claudio Saavedra <csaavedra@igalia.com>
 Date:   Fri Sep 10 17:51:37 2010 +0300
 
-    Add a EogImage::file-changed signal
+    Add a EomImage::file-changed signal
     
     This is going to be useful to broadcast changes in the underlying file
 
- doc/reference/eog-sections.txt |    1 +
- src/eog-image.c                |   23 +++++++++++++++++++++++
- src/eog-image.h                |    4 ++++
+ doc/reference/eom-sections.txt |    1 +
+ src/eom-image.c                |   23 +++++++++++++++++++++++
+ src/eom-image.h                |    4 ++++
  3 files changed, 28 insertions(+), 0 deletions(-)
 
 commit 451cab1e63535baadf75250bc2bbd723f0dced12
 Author: Claudio Saavedra <csaavedra@igalia.com>
 Date:   Fri Sep 10 17:58:46 2010 +0300
 
-    Fix a typo in EogImage:next-frame signal definition
+    Fix a typo in EomImage:next-frame signal definition
 
- src/eog-image.c |    2 +-
+ src/eom-image.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit a9e5987337d47d478fa1f697439b83701b1abe64
@@ -437,27 +437,27 @@ Date:   Thu Sep 9 16:00:49 2010 +0300
 
     Don't show the side pane on show_all()
     
-    This was causing the mateconf key to be toggled on always on eog startup,
+    This was causing the mateconf key to be toggled on always on eom startup,
     making the side pane visible regardless of the previously set
     preference.
     
     Fixes bug #613056 - Side pane always shown at startup when plug-in is activated
 
- src/eog-window.c |    4 ++++
+ src/eom-window.c |    4 ++++
  1 files changed, 4 insertions(+), 0 deletions(-)
 
 commit 55cb21069a85a054365edc9225303bfa73dae3ab
 Author: Claudio Saavedra <csaavedra@igalia.com>
 Date:   Thu Sep 9 02:21:12 2010 +0300
 
-    Show original filename instead of "eog-wallpaper.png" in the info bar
+    Show original filename instead of "eom-wallpaper.png" in the info bar
     
     When copying over non-persistent files, the info bar was showing
-    "eog-wallpaper.png" as the name of the recently copied image to the
+    "eom-wallpaper.png" as the name of the recently copied image to the
     user. Since this is an internal detail, show the original filename
     instead.
 
- src/eog-window.c |   27 +++++++++++++++------------
+ src/eom-window.c |   27 +++++++++++++++------------
  1 files changed, 15 insertions(+), 12 deletions(-)
 
 commit 13dc369d50f83b14417e23a101417fbc612286a9
@@ -466,7 +466,7 @@ Date:   Thu Sep 9 02:09:40 2010 +0300
 
     Plug a couple of leaks
 
- src/eog-window.c |    2 ++
+ src/eom-window.c |    2 ++
  1 files changed, 2 insertions(+), 0 deletions(-)
 
 commit 2d214cd5d051bba6d0fda5cfd719b1c405267cad
@@ -477,21 +477,21 @@ Date:   Thu Sep 9 01:37:49 2010 +0300
     
     Fixes bug #625384 - Background setting doesn't work as expected
 
- src/eog-window.c |    3 ++-
+ src/eom-window.c |    3 ++-
  1 files changed, 2 insertions(+), 1 deletions(-)
 
 commit 7cf4c491f6da479a7131bdcf89d569862f2c450c
 Author: Claudio Saavedra <csaavedra@igalia.com>
 Date:   Thu Sep 9 01:36:29 2010 +0300
 
-    Add eog_util_file_is_persistent()
+    Add eom_util_file_is_persistent()
     
     This method checks whether a file is native and in a non-unmountable
     location.
 
- doc/reference/eog-sections.txt |    1 +
- src/eog-util.c                 |   28 ++++++++++++++++++++++++++++
- src/eog-util.h                 |    3 +++
+ doc/reference/eom-sections.txt |    1 +
+ src/eom-util.c                 |   28 ++++++++++++++++++++++++++++
+ src/eom-util.h                 |    3 +++
  3 files changed, 32 insertions(+), 0 deletions(-)
 
 commit b76e82d6ddd25b9fb872f9bc6015f0789884cc96
@@ -597,7 +597,7 @@ commit 780c6267217f12cddad41c1c19b35ffafe842dda
 Author: Michael Kotsarinis <mk73628@gmail.com>
 Date:   Tue Aug 31 22:52:44 2010 +0300
 
-    l10n: Updated Greek translation for eog
+    l10n: Updated Greek translation for eom
 
  po/el.po |  726 +++++++++++++++++++++++++++++---------------------------------
  1 files changed, 335 insertions(+), 391 deletions(-)
@@ -690,8 +690,8 @@ Date:   Fri Aug 27 18:21:16 2010 +0100
 
     Bug 628148 — Miscellaneous string fixes
 
- data/eog.schemas.in |   22 ++++++++++++----------
- src/eog-window.c    |    2 +-
+ data/eom.schemas.in |   22 ++++++++++++----------
+ src/eom-window.c    |    2 +-
  2 files changed, 13 insertions(+), 11 deletions(-)
 
 commit a2fcce6e3444a0f1963909c44f659a65c7afd3a8
@@ -818,9 +818,9 @@ commit e2c570e95bff2c234970fdaab6e16a8f4fa4090b
 Author: Claudio Saavedra <csaavedra@igalia.com>
 Date:   Thu Aug 12 22:08:00 2010 +0300
 
-    Use cairo recommended rowstride for the surface in EogPrintPreview
+    Use cairo recommended rowstride for the surface in EomPrintPreview
 
- src/eog-print-preview.c |    8 +++++---
+ src/eom-print-preview.c |    8 +++++---
  1 files changed, 5 insertions(+), 3 deletions(-)
 
 commit d56dda77e2c4e42e56ecced4482a639775c78d9b
@@ -829,7 +829,7 @@ Date:   Thu Aug 12 02:12:32 2010 +0300
 
     Update the copyright years in the about dialog
 
- src/eog-window.c |    2 +-
+ src/eom-window.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit d2c5e3cd40b68f355612d21588eaf2c41c03981f
@@ -840,20 +840,20 @@ Date:   Thu Aug 12 01:58:24 2010 +0300
     
     No need to use a GdkBitmap for this.
 
- src/eog-scroll-view.c |   14 +-------------
+ src/eom-scroll-view.c |   14 +-------------
  1 files changed, 1 insertions(+), 13 deletions(-)
 
 commit e86b081699e55e2591244edc0a810c0e8014964a
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Wed Aug 11 19:05:54 2010 +0200
 
-    Stop having EogWindow react on focus-in event in fullscreen
+    Stop having EomWindow react on focus-in event in fullscreen
     
     There appears to be no actual use case for doing this.
     Fixes the toolbar appearing after regaining focus (e.g. after deleting
     an image or ALT+TABing). Fixes bug 626569.
 
- src/eog-window.c |   19 -------------------
+ src/eom-window.c |   19 -------------------
  1 files changed, 0 insertions(+), 19 deletions(-)
 
 commit a12a68fe035ed6cc3694191f5ee16b24cbc133d8
@@ -909,7 +909,7 @@ Date:   Sun Aug 8 17:16:22 2010 +0200
     
     Fixes bug 625352.
 
- src/eog-window.c |    6 ++++--
+ src/eom-window.c |    6 ++++--
  1 files changed, 4 insertions(+), 2 deletions(-)
 
 commit 3a2cc7a6356f5cf80f7a9c5bddd69ee8430a884a
@@ -921,19 +921,19 @@ Date:   Sun Aug 8 16:46:02 2010 +0200
     This is said to improve the viewing contrast of the image.
     Fixes bug 616450.
 
- data/eog.schemas.in |    2 +-
+ data/eom.schemas.in |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 0fa1f2a8a906847e098191b2d634c7d305e658f1
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Sat Aug 7 00:21:26 2010 +0200
 
-    Correct EogScrollView's background color preference order
+    Correct EomScrollView's background color preference order
     
     The override-color needs preference over the other colors.
     The background color can't be forced to black for fullscreen otherwise.
 
- src/eog-scroll-view.c |    8 ++++----
+ src/eom-scroll-view.c |    8 ++++----
  1 files changed, 4 insertions(+), 4 deletions(-)
 
 commit 00673f72432c43149747ca0c345b22b7e3edb6f1
@@ -946,13 +946,13 @@ Date:   Sun Jun 6 20:07:08 2010 +0000
     color as background. For now requires a loaded image until we can
     finally fix bug 538279. Fixes bug 502992.
 
- data/eog-preferences-dialog.ui |  595 ++++++++++++++--------------------------
- data/eog.schemas.in            |   24 ++
- src/eog-config-keys.h          |    2 +
- src/eog-preferences-dialog.c   |   34 +++
- src/eog-scroll-view.c          |   40 +++-
- src/eog-scroll-view.h          |    2 +-
- src/eog-window.c               |   85 ++++++
+ data/eom-preferences-dialog.ui |  595 ++++++++++++++--------------------------
+ data/eom.schemas.in            |   24 ++
+ src/eom-config-keys.h          |    2 +
+ src/eom-preferences-dialog.c   |   34 +++
+ src/eom-scroll-view.c          |   40 +++-
+ src/eom-scroll-view.h          |    2 +-
+ src/eom-window.c               |   85 ++++++
  7 files changed, 382 insertions(+), 400 deletions(-)
 
 commit c5aa022a33f7ed7d18fb968419cd6f6e54868ad1
@@ -1025,7 +1025,7 @@ Date:   Thu Aug 5 00:49:36 2010 +0300
     Bump version to 2.31.5
     
     Since MATE 3.0 won't be released until March 2011, this branch contains
-    a conservative backport of features and fixes introduced for eog 3.0 that
+    a conservative backport of features and fixes introduced for eom 3.0 that
     can be included safely in MATE 2.32.
 
  configure.ac |    4 ++--
@@ -1058,7 +1058,7 @@ Date:   Thu Jul 22 19:40:19 2010 +0200
     With commit e41b97bb the parent switched from a GtkFrame to a GtkHPaned
     which doesn't have that property.
 
- src/eog-window.c |    8 --------
+ src/eom-window.c |    8 --------
  1 files changed, 0 insertions(+), 8 deletions(-)
 
 commit a3d805e088526fb84c496ee51d630f716b2db165
@@ -1069,18 +1069,18 @@ Date:   Sun Jul 18 23:53:03 2010 +0200
     
     Instead of using some strange guchar magic.
 
- src/eog-window.c |   11 ++++++-----
+ src/eom-window.c |   11 ++++++-----
  1 files changed, 6 insertions(+), 5 deletions(-)
 
 commit 8bb91bebea5137246c4ff84d1755cb7f20e04ae6
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Sun Jul 18 23:45:11 2010 +0200
 
-    Don't assert when accessing unknown EogWindow properties
+    Don't assert when accessing unknown EomWindow properties
     
     Use G_OBJECT_WARN_INVALID_PROPERTY_ID to emit a warning instead.
 
- src/eog-window.c |    4 ++--
+ src/eom-window.c |    4 ++--
  1 files changed, 2 insertions(+), 2 deletions(-)
 
 commit 13113a250ed561e756f10d82d633f3f0a5585a01
@@ -1094,7 +1094,7 @@ Date:   Tue Jul 13 07:51:09 2010 +0200
     
     https://bugzilla.mate.org/show_bug.cgi?id=614807
 
- src/eog-window.c |    9 +--------
+ src/eom-window.c |    9 +--------
  1 files changed, 1 insertions(+), 8 deletions(-)
 
 commit a68169b1e3853262ebbc979fe9a61da5dc97ff40
@@ -1106,7 +1106,7 @@ Date:   Mon Jul 5 21:57:27 2010 +0200
     Happens in the KeyEvent handler as it's not working when linking the
     shortcut key to the PauseSlideshow action. Fixes bug #553283.
 
- src/eog-window.c |    9 +++++++++
+ src/eom-window.c |    9 +++++++++
  1 files changed, 9 insertions(+), 0 deletions(-)
 
 commit 306e44c64de6938894a2911e329847c65719e99a
@@ -1118,15 +1118,15 @@ Date:   Mon Jul 5 21:42:00 2010 +0200
     Basically switches between standard fullscreen and slideshow.
     Fixes bug #618886.
 
- data/eog-ui.xml  |    2 ++
- src/eog-window.c |   43 +++++++++++++++++++++++++++++++++++++++++++
+ data/eom-ui.xml  |    2 ++
+ src/eom-window.c |   43 +++++++++++++++++++++++++++++++++++++++++++
  2 files changed, 45 insertions(+), 0 deletions(-)
 
 commit 9f9a189ae1869853014e4a391576a15290cfd9e6
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Fri Jun 18 22:56:03 2010 +0200
 
-    Update POTFILES.in to include eog-application.c
+    Update POTFILES.in to include eom-application.c
     
     The recent totem-scrsaver updates introduced a translatable string here.
 
@@ -1165,7 +1165,7 @@ Date:   Sun Jun 13 13:31:40 2010 +0100
  cut-n-paste/totem-screensaver/totem-scrsaver.c |  382 ++++++++++++++----------
  cut-n-paste/totem-screensaver/totem-scrsaver.h |   24 +-
  po/POTFILES.in                                 |    1 -
- src/eog-application.c                          |    5 +-
+ src/eom-application.c                          |    5 +-
  5 files changed, 242 insertions(+), 172 deletions(-)
 
 commit 8d0adcc916689bc09098a802f88dd81401308eee
@@ -1179,7 +1179,7 @@ Date:   Thu Jun 3 23:06:04 2010 +0200
     To achieve this it's simply deleted. The next redraw, which will be
     triggered by changing the view's background color, will recreate it.
 
- src/eog-scroll-view.c |   11 +++++++++--
+ src/eom-scroll-view.c |   11 +++++++++--
  1 files changed, 9 insertions(+), 2 deletions(-)
 
 commit 42746ad52b7fdca4dd1ce89fbb3ee35eb7b91bab
@@ -1192,7 +1192,7 @@ Date:   Thu Jun 3 23:01:34 2010 +0200
     redraw (which is triggered directly afterwards). Fixes wrong SVG display
     when changing the transparency settings with an image loaded.
 
- src/eog-scroll-view.c |    5 +++++
+ src/eom-scroll-view.c |    5 +++++
  1 files changed, 5 insertions(+), 0 deletions(-)
 
 commit 849cb9821117d6f5f344dec491c41ac26c90e399
@@ -1201,57 +1201,57 @@ Date:   Thu Jun 3 21:07:52 2010 +0200
 
     Fix API docs about new background color property
 
- src/eog-scroll-view.c |    2 +-
+ src/eom-scroll-view.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit c38a2236c896748fafad4f97acc3cc1758b74c6e
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Thu Jun 3 17:20:18 2010 +0200
 
-    Cleanup the updating code for the two bg color fields in EogScrollView
+    Cleanup the updating code for the two bg color fields in EomScrollView
     
     Looks a lot cleaner now.
 
- src/eog-scroll-view.c |   71 ++++++++++++++++++++++---------------------------
+ src/eom-scroll-view.c |   71 ++++++++++++++++++++++---------------------------
  1 files changed, 32 insertions(+), 39 deletions(-)
 
 commit d9bd3525641052cca7c74319c4c4d06d2be5c3d7
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Thu Jun 3 16:52:27 2010 +0200
 
-    Add fallback background color support to EogScrollView
+    Add fallback background color support to EomScrollView
     
     This allows to temporarily set the view's background color and fallback
     to a predetermined default or the theme's color. Necessary to make the
     color user settable and still allowing us to override it, e.g. for the
     fullscreen mode.
 
- src/eog-scroll-view.c |  146 ++++++++++++++++++++++++++++++++++++++++++++++++-
- src/eog-scroll-view.h |    5 +-
- src/eog-window.c      |    5 +-
+ src/eom-scroll-view.c |  146 ++++++++++++++++++++++++++++++++++++++++++++++++-
+ src/eom-scroll-view.h |    5 +-
+ src/eom-window.c      |    5 +-
  3 files changed, 150 insertions(+), 6 deletions(-)
 
 commit ceadfd9141867358aea715ea060a2abe18e7846a
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Thu May 13 21:37:41 2010 +0200
 
-    Finish making EogScrollView GSEAL-compatible.
+    Finish making EomScrollView GSEAL-compatible.
     
-    Eog should be completely GSEAL-compatible now.
+    Eom should be completely GSEAL-compatible now.
     Completes bug 606883.
 
- src/eog-scroll-view.c |   62 ++++++++++++++++++++++++++----------------------
+ src/eom-scroll-view.c |   62 ++++++++++++++++++++++++++----------------------
  1 files changed, 34 insertions(+), 28 deletions(-)
 
 commit f7d398d4133d49c91a4a407c555170379007cd0c
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Thu May 13 21:22:45 2010 +0200
 
-    Make the easy parts of EogScrollView GSEAL-compatible
+    Make the easy parts of EomScrollView GSEAL-compatible
     
     Part of bug 606883.
 
- src/eog-scroll-view.c |   98 +++++++++++++++++++++++++------------------------
+ src/eom-scroll-view.c |   98 +++++++++++++++++++++++++------------------------
  1 files changed, 50 insertions(+), 48 deletions(-)
 
 commit 0c943a3feaeafec7af1366a2fb2fb1d5112ed216
@@ -1260,32 +1260,32 @@ Date:   Thu May 13 15:08:46 2010 +0200
 
     Constify transform lookup table
 
- src/eog-image.c |    2 +-
+ src/eom-image.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit f93419af0e466c219066de62fb6567025eb23d74
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Sun May 9 22:16:12 2010 +0200
 
-    Make EogPluginEngine GSEAL-compatible
+    Make EomPluginEngine GSEAL-compatible
     
     Has a workaround for the different behaviour of gtk_window_get_group()
     that makes sure that the configure dialog and its parent share a window
     group of their own as before. Not sure if it's needed.
     Part of bug 606883.
 
- src/eog-plugin-engine.c |    7 +++++--
+ src/eom-plugin-engine.c |    7 +++++--
  1 files changed, 5 insertions(+), 2 deletions(-)
 
 commit 72f24e4cf31609b492edefb59e165995070df0ae
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Sun May 9 21:19:25 2010 +0200
 
-    Make EogThumbNav GSEAL-compatible
+    Make EomThumbNav GSEAL-compatible
     
     Part of bug 606883.
 
- src/eog-thumb-nav.c |   36 +++++++++++++++++++-----------------
+ src/eom-thumb-nav.c |   36 +++++++++++++++++++-----------------
  1 files changed, 19 insertions(+), 17 deletions(-)
 
 commit 4aa9d57ac2180da1370f22ac003a8641f267cc0e
@@ -1301,12 +1301,12 @@ commit 589d86abf0fc27e8580565fab2cb8f1bf331006b
 Author: Andre Klapper <a9016009@gmx.de>
 Date:   Wed Apr 14 17:24:49 2010 +0200
 
-    Make libegg code and EogWindow GSEAL-compatible. See bug 606883.
+    Make libegg code and EomWindow GSEAL-compatible. See bug 606883.
 
  configure.ac                                      |    2 +-
  cut-n-paste/toolbar-editor/egg-editable-toolbar.c |   50 +++++++++++----------
  cut-n-paste/toolbar-editor/egg-toolbar-editor.c   |    8 ++--
- src/eog-window.c                                  |   24 ++++++++++
+ src/eom-window.c                                  |   24 ++++++++++
  4 files changed, 55 insertions(+), 29 deletions(-)
 
 commit af92dcbcacca1ec59c917ed172c49334ca34606e
@@ -1318,8 +1318,8 @@ Date:   Wed Apr 28 22:34:56 2010 +0200
     The menu item talks about opening an image. So should the file open
     dialog and the status while the image is opened. (bug 614497)
 
- src/eog-file-chooser.c |    2 +-
- src/eog-window.c       |    2 +-
+ src/eom-file-chooser.c |    2 +-
+ src/eom-window.c       |    2 +-
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 commit 07485994a6744e27d49cc338b2cfaad830e3e72f
@@ -1335,9 +1335,9 @@ Date:   Wed Apr 28 20:25:24 2010 +0200
     This causes custom toolbars to loose these items on the first start.
     (bug 614457)
 
- data/eog-toolbar.xml |    8 +++---
- data/eog-ui.xml      |   57 +++++++++++++++++++++++------------------------
- src/eog-window.c     |   59 ++++++++++++++++++++++++-------------------------
+ data/eom-toolbar.xml |    8 +++---
+ data/eom-ui.xml      |   57 +++++++++++++++++++++++------------------------
+ src/eom-window.c     |   59 ++++++++++++++++++++++++-------------------------
  3 files changed, 61 insertions(+), 63 deletions(-)
 
 commit 20674204ea032b094e5525b08befdf47b611f78b
@@ -1349,7 +1349,7 @@ Date:   Sun Apr 18 15:42:57 2010 +0200
     Use librsvg to draw the SVGs to the cairo context during printing.
     Should improve print quality quite a bit. Fixes bug 518055.
 
- src/eog-print.c |   31 ++++++++++++++++++++++++-------
+ src/eom-print.c |   31 ++++++++++++++++++++++++-------
  1 files changed, 24 insertions(+), 7 deletions(-)
 
 commit 1549c2788479115bf910709ea6b22fcaecbc460f
@@ -1360,7 +1360,7 @@ Date:   Sat Apr 10 17:00:48 2010 +0900
     
     (bug 615344)
 
- src/eog-image.c |    4 ++++
+ src/eom-image.c |    4 ++++
  1 files changed, 4 insertions(+), 0 deletions(-)
 
 commit 64213a202d0191d138150894e16615967940700f
@@ -1374,12 +1374,12 @@ Date:   Sun Apr 18 14:12:17 2010 +0200
     rendering can be quite slow at large zoom factors. Fixes bug 108435.
 
  configure.ac            |   18 ++++
- src/eog-image-private.h |    6 ++
- src/eog-image.c         |   68 +++++++++++++-
- src/eog-image.h         |   10 ++
- src/eog-scroll-view.c   |  226 ++++++++++++++++++++++++++++++++++++++++++-----
- src/eog-transform.c     |   11 +++
- src/eog-transform.h     |    2 +
+ src/eom-image-private.h |    6 ++
+ src/eom-image.c         |   68 +++++++++++++-
+ src/eom-image.h         |   10 ++
+ src/eom-scroll-view.c   |  226 ++++++++++++++++++++++++++++++++++++++++++-----
+ src/eom-transform.c     |   11 +++
+ src/eom-transform.h     |    2 +
  src/main.c              |    6 ++
  8 files changed, 320 insertions(+), 27 deletions(-)
 
@@ -1413,7 +1413,7 @@ Date:   Wed Apr 14 20:48:44 2010 +0200
     
     (bug 614405)
 
- src/eog-window.c |    1 +
+ src/eom-window.c |    1 +
  1 files changed, 1 insertions(+), 0 deletions(-)
 
 commit 018205abbee24b7f71d89afcbbf500322b35b490
@@ -1427,11 +1427,11 @@ Date:   Fri Apr 2 15:00:26 2010 +0200
     the file menu. It also actualize paper size in Image Settings each
     time it changes. (bug 614451)
 
- data/eog-ui.xml             |    1 -
- src/eog-print-image-setup.c |   31 ++++++++++++++++++++++++++++++
- src/eog-print-image-setup.h |    5 ++++
- src/eog-print.c             |    7 +++++-
- src/eog-window.c            |   44 +------------------------------------------
+ data/eom-ui.xml             |    1 -
+ src/eom-print-image-setup.c |   31 ++++++++++++++++++++++++++++++
+ src/eom-print-image-setup.h |    5 ++++
+ src/eom-print.c             |    7 +++++-
+ src/eom-window.c            |   44 +------------------------------------------
  5 files changed, 43 insertions(+), 45 deletions(-)
 
 commit ee4739142f280ea1b37dccee1e7e5d1a69f2356f
@@ -1478,9 +1478,9 @@ Date:   Wed Jun 16 23:33:09 2010 +0300
 
  help/Makefile.am                              |    2 +-
  help/fi/fi.po                                 | 1510 +++++++++++++++++++++++++
- help/fi/figures/eog_save_as_window.png        |  Bin 0 -> 25648 bytes
- help/fi/figures/eog_start_window.png          |  Bin 0 -> 14190 bytes
- help/fi/figures/eog_toolbar_editor_window.png |  Bin 0 -> 22618 bytes
+ help/fi/figures/eom_save_as_window.png        |  Bin 0 -> 25648 bytes
+ help/fi/figures/eom_start_window.png          |  Bin 0 -> 14190 bytes
+ help/fi/figures/eom_toolbar_editor_window.png |  Bin 0 -> 22618 bytes
  5 files changed, 1511 insertions(+), 1 deletions(-)
 
 commit d44efad798c313288f4b136b08e88ad580880673
@@ -1507,8 +1507,8 @@ Date:   Thu Jun 3 23:30:39 2010 +0200
     Also it's not needed in its old position, but is in its new.
     This fixes compiler warnings about redefining _POSIX_C_SOURCE.
 
- src/eog-python-module.c |    4 ++++
- src/eog-python-module.h |    1 -
+ src/eom-python-module.c |    4 ++++
+ src/eom-python-module.h |    1 -
  2 files changed, 4 insertions(+), 1 deletions(-)
 
 commit 51c200fcee02f6963d077cf434c040b1807ae228
@@ -1537,9 +1537,9 @@ Date:   Sun May 9 14:37:00 2010 +0200
     
     Fixes warnings and unsaved toolbars when ~/.mate2 does not exists yet.
     Also set the directory permissions less permissive by default.
-    See: http://mail.mate.org/archives/eog-list/2010-May/msg00003.html
+    See: http://mail.mate.org/archives/eom-list/2010-May/msg00003.html
 
- src/eog-util.c |    2 +-
+ src/eom-util.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 30bbf4c0d3f47535a11a6cd71d606b39f09a0dbf
@@ -1685,7 +1685,7 @@ Date:   Tue Apr 13 22:55:06 2010 +0200
  jpegutils/transupp-8a.c                 | 1609 +++++++++++++++++++++++++++++++
  jpegutils/transupp-8a.h                 |  215 ++++
  jpegutils/transupp.h                    |  162 +---
- src/eog-image-jpeg.c                    |    5 +-
+ src/eom-image-jpeg.c                    |    5 +-
  10 files changed, 2189 insertions(+), 161 deletions(-)
 
 commit 9c1de12ccb106a54d8555281155a800725244d1c
@@ -1981,9 +1981,9 @@ commit d025360cfe9592459b675f2922a90d50c4ead66e
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Sun Mar 7 20:51:47 2010 +0100
 
-    Mark EogCloseConfirmationDialog's functions as internal
+    Mark EomCloseConfirmationDialog's functions as internal
 
- src/eog-close-confirmation-dialog.h |    7 +++++++
+ src/eom-close-confirmation-dialog.h |    7 +++++++
  1 files changed, 7 insertions(+), 0 deletions(-)
 
 commit cef2bbf0efc316b75ce7f4d06f860d07ff087c7f
@@ -2038,7 +2038,7 @@ Date:   Sun Feb 28 21:59:51 2010 +0900
 
     Updated Japanese translation.
       Original update by Hideki Yamane (Debian-JP).
-        http://l10n.mate.org/vertimus/eog/master/po/ja
+        http://l10n.mate.org/vertimus/eom/master/po/ja
       Merged bug report by SUGITA Toshinori.
         https://bugzilla.mate.org/show_bug.cgi?id=611279
 
@@ -2124,7 +2124,7 @@ Date:   Fri Feb 12 17:41:33 2010 +0100
 
     Explicitly link to libX11
     
-    Explicitly links eog to libX11 if necessary. Should fix linker errors
+    Explicitly links eom to libX11 if necessary. Should fix linker errors
     using non-recursive linkers. Includes fallback for X11 distributions
     without pkg-config support. Fixes bug #609184.
 
@@ -2142,8 +2142,8 @@ Date:   Mon Feb 22 23:03:26 2010 +0100
     Fixes build failures and warnings with more strict compiler settings.
     See bug#610692.
 
- src/eog-scroll-view.c |    1 +
- src/eog-thumb-view.c  |    1 +
+ src/eom-scroll-view.c |    1 +
+ src/eom-thumb-view.c  |    1 +
  2 files changed, 2 insertions(+), 0 deletions(-)
 
 commit a331097b8ea87868b6c5c4ad0f7ec064d7dc5035
@@ -2181,9 +2181,9 @@ Date:   Mon Feb 15 22:19:01 2010 +0100
     
     Spotted by gtk-doc-1.13.
 
- src/eog-application.c       |    4 ++--
- src/eog-print-image-setup.c |    2 +-
- src/eog-thumb-view.c        |    2 +-
+ src/eom-application.c       |    4 ++--
+ src/eom-print-image-setup.c |    2 +-
+ src/eom-thumb-view.c        |    2 +-
  3 files changed, 4 insertions(+), 4 deletions(-)
 
 commit 5116d814b7d42d33c88cd211f3e0f308d5bec72f
@@ -2325,7 +2325,7 @@ Date:   Sat Feb 6 13:01:46 2010 +0000
 
     [window] Update about dialog with new maintainers
 
- src/eog-window.c |    6 +++---
+ src/eom-window.c |    6 +++---
  1 files changed, 3 insertions(+), 3 deletions(-)
 
 commit 0c7fa22735fc0137d416e39eece9676e2dde38db
@@ -2368,8 +2368,8 @@ Date:   Fri Feb 5 16:06:11 2010 +0100
     action as it can't be used in the toolbar for now anyway since we don't
     have a fitting icon.
 
- data/eog-ui.xml  |    2 ++
- src/eog-window.c |    7 ++-----
+ data/eom-ui.xml  |    2 ++
+ src/eom-window.c |    7 ++-----
  2 files changed, 4 insertions(+), 5 deletions(-)
 
 commit 9221716bc34aa8cf78293b89160920260018fe48
@@ -2379,12 +2379,12 @@ Date:   Fri Feb 5 15:54:05 2010 +0100
     Make it possible to select a random image from the collection
     
     This allows the user to crawl randomly through his collection.
-    Patch posted to eog-list:
-    http://mail.mate.org/archives/eog-list/2009-December/msg00003.html
+    Patch posted to eom-list:
+    http://mail.mate.org/archives/eom-list/2009-December/msg00003.html
 
- src/eog-thumb-view.c |    9 +++++++++
- src/eog-thumb-view.h |    3 ++-
- src/eog-window.c     |   21 +++++++++++++++++++++
+ src/eom-thumb-view.c |    9 +++++++++
+ src/eom-thumb-view.h |    3 ++-
+ src/eom-window.c     |   21 +++++++++++++++++++++
  3 files changed, 32 insertions(+), 1 deletions(-)
 
 commit f71a40269ae3b3ec3400e4d5352c064a6a7ffed5
@@ -2398,7 +2398,7 @@ Date:   Fri Feb 5 15:29:17 2010 +0100
     by selecting the next image. Confirming the question still opens the
     Appearance capplet as before. Fixes bug #606935.
 
- src/eog-window.c |   68 +++++++++++++++++++++++++++++++++++++++++++++++++----
+ src/eom-window.c |   68 +++++++++++++++++++++++++++++++++++++++++++++++++----
  1 files changed, 62 insertions(+), 6 deletions(-)
 
 commit 20400bfe00c20e4efb1b18eef714007b376b27f1
@@ -2427,21 +2427,21 @@ commit b6aa6dd2209b09850a03bde1765e059b432eb6ed
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Fri Jan 29 21:37:54 2010 +0100
 
-    Make EogWindow GSEAL-compatible as far as possible
+    Make EomWindow GSEAL-compatible as far as possible
     
     There are some GTK_WIDGET_REALIZED calls left for which there's no
     replacement yet in GTK+.
 
- src/eog-window.c |   32 +++++++++++++++++++-------------
+ src/eom-window.c |   32 +++++++++++++++++++-------------
  1 files changed, 19 insertions(+), 13 deletions(-)
 
 commit d7a07bd0985e9540f869ebdfc6b4a950828c1df4
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Fri Jan 29 21:15:14 2010 +0100
 
-    Make EogPluginManager GSEAL-compatible
+    Make EomPluginManager GSEAL-compatible
 
- src/eog-plugin-manager.c |    8 +++++---
+ src/eom-plugin-manager.c |    8 +++++---
  1 files changed, 5 insertions(+), 3 deletions(-)
 
 commit b5cacd8f5c843053b204064eba9ab6a828490b00
@@ -2547,9 +2547,9 @@ commit 35e354e9530e1915c0bca0653af378788c2369a7
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Sun Jan 17 13:58:55 2010 +0100
 
-    Make EogCloseConfirmationDialog GSEAL-compatible
+    Make EomCloseConfirmationDialog GSEAL-compatible
 
- src/eog-close-confirmation-dialog.c |   23 +++++++++++------------
+ src/eom-close-confirmation-dialog.c |   23 +++++++++++------------
  1 files changed, 11 insertions(+), 12 deletions(-)
 
 commit 1fb61f05ff2a59e3bb579b8731c263c4308ca722
@@ -2565,18 +2565,18 @@ commit ac6f518e1870af98dc47389d695f7773debe3dda
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Wed Jan 13 22:15:14 2010 +0100
 
-    Make EogPrintPreview GSEAL-compatible
+    Make EomPrintPreview GSEAL-compatible
 
- src/eog-print-preview.c |   50 ++++++++++++++++++++++------------------------
+ src/eom-print-preview.c |   50 ++++++++++++++++++++++------------------------
  1 files changed, 24 insertions(+), 26 deletions(-)
 
 commit f0837c4a76e5c95a140776e4421b3e094c306024
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Wed Jan 13 19:53:48 2010 +0100
 
-    Make EogSidebar GSEAL-compatible
+    Make EomSidebar GSEAL-compatible
 
- src/eog-sidebar.c |   13 ++++++++-----
+ src/eom-sidebar.c |   13 ++++++++-----
  1 files changed, 8 insertions(+), 5 deletions(-)
 
 commit 327f1b3c20e46bce6dfdb2a4b7f6a8daf7191593
@@ -2631,16 +2631,16 @@ Date:   Sat Jan 9 23:49:58 2010 +0100
 
     Improve compatibility with GSEALed GtkWidget
     
-    First steps to GSEAL-compatibility of eog's "core".
+    First steps to GSEAL-compatibility of eom's "core".
     Handles some GtkWidget-related seals.
 
- src/eog-error-message-area.c |    4 +-
- src/eog-plugin-manager.c     |    5 ++-
- src/eog-print-preview.c      |   18 +++++++------
- src/eog-properties-dialog.c  |   10 ++++----
- src/eog-scroll-view.c        |   55 +++++++++++++++++++++--------------------
- src/eog-sidebar.c            |    4 +-
- src/eog-window.c             |   29 +++++++++++----------
+ src/eom-error-message-area.c |    4 +-
+ src/eom-plugin-manager.c     |    5 ++-
+ src/eom-print-preview.c      |   18 +++++++------
+ src/eom-properties-dialog.c  |   10 ++++----
+ src/eom-scroll-view.c        |   55 +++++++++++++++++++++--------------------
+ src/eom-sidebar.c            |    4 +-
+ src/eom-window.c             |   29 +++++++++++----------
  7 files changed, 65 insertions(+), 60 deletions(-)
 
 commit 9533661e753a77e19716ae7a791ef66739cb08ed
@@ -2658,35 +2658,35 @@ Date:   Sat Jan 9 00:11:53 2010 +0100
 
     Fix critical warning
     
-    We called eog_is_animation() in a location where it was possible the
+    We called eom_is_animation() in a location where it was possible the
     passed image wasn't set.
 
- src/eog-scroll-view.c |    2 +-
+ src/eom-scroll-view.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 238a42350bd066686aee46f72a3017862b493d2f
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Fri Jan 8 22:24:34 2010 +0100
 
-    Remove EogMessageArea from the API docs
+    Remove EomMessageArea from the API docs
 
- doc/reference/eog-docs.sgml.in |    1 -
- doc/reference/eog-sections.txt |   24 ------------------------
+ doc/reference/eom-docs.sgml.in |    1 -
+ doc/reference/eom-sections.txt |   24 ------------------------
  2 files changed, 0 insertions(+), 25 deletions(-)
 
 commit b0c6f3dfb537a8f855c268f91a788eaf5ce7bdba
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Fri Jan 8 22:21:23 2010 +0100
 
-    Remove now unneeded EogMessageArea widget
+    Remove now unneeded EomMessageArea widget
 
- bindings/python/eog.defs     |  112 --------
- bindings/python/eog.override |    1 -
+ bindings/python/eom.defs     |  112 --------
+ bindings/python/eom.override |    1 -
  src/Makefile.am              |    2 -
- src/eog-error-message-area.c |    1 -
- src/eog-message-area.c       |  636 ------------------------------------------
- src/eog-message-area.h       |   99 -------
- src/eog-window.c             |    3 +-
+ src/eom-error-message-area.c |    1 -
+ src/eom-message-area.c       |  636 ------------------------------------------
+ src/eom-message-area.h       |   99 -------
+ src/eom-window.c             |    3 +-
  7 files changed, 1 insertions(+), 853 deletions(-)
 
 commit cdcf54b123c3f2ac9274dfe9cd0559909b42b320
@@ -2699,8 +2699,8 @@ Date:   Fri Jan 8 22:06:56 2010 +0100
     Use that instead of our own copy of gedit's widget which was also the
     base for GtkInfoBar.
 
- src/eog-error-message-area.c |   24 +++++++++++++-----------
- src/eog-window.c             |    4 ++--
+ src/eom-error-message-area.c |   24 +++++++++++++-----------
+ src/eom-window.c             |    4 ++--
  2 files changed, 15 insertions(+), 13 deletions(-)
 
 commit 8024648adaa4cf059e023909731e82838385abba
@@ -2749,9 +2749,9 @@ Date:   Fri Jan 1 14:02:35 2010 +0000
     
     Use GtkBuilder attributes on labels instead. Fixes bug #605852.
 
- data/eog-image-properties-dialog.ui |  120 +++++++++++++++++++++++------------
- data/eog-multiple-save-as-dialog.ui |   30 +++++++---
- data/eog-preferences-dialog.ui      |   24 +++++---
+ data/eom-image-properties-dialog.ui |  120 +++++++++++++++++++++++------------
+ data/eom-multiple-save-as-dialog.ui |   30 +++++++---
+ data/eom-preferences-dialog.ui      |   24 +++++---
  3 files changed, 118 insertions(+), 56 deletions(-)
 
 commit 7dd5435f7640a9bdeced67f4a6f66c90327eb18a
@@ -2764,9 +2764,9 @@ Date:   Fri Jan 1 13:54:30 2010 +0000
     fixes. Proper Unicode ellipsis characters have been introduced, as well as
     proper multiplication symbols. Fixes bug #605851.
 
- data/eog.schemas.in         |   29 ++++++++++++++---------------
- src/eog-print-image-setup.c |    2 +-
- src/eog-window.c            |   16 ++++++++--------
+ data/eom.schemas.in         |   29 ++++++++++++++---------------
+ src/eom-print-image-setup.c |    2 +-
+ src/eom-window.c            |   16 ++++++++--------
  src/main.c                  |    4 ++--
  4 files changed, 25 insertions(+), 26 deletions(-)
 
@@ -2790,7 +2790,7 @@ Date:   Wed Dec 30 19:55:02 2009 +0100
     session the old behaviour (using the source path) is applied.
     Fixes bug #604230.
 
- src/eog-window.c |   32 ++++++++++++++++++++++++++------
+ src/eom-window.c |   32 ++++++++++++++++++++++++++------
  1 files changed, 26 insertions(+), 6 deletions(-)
 
 commit 7f76e382a911f71a8e834f2c4bf74570b8ca9c9a
@@ -2844,7 +2844,7 @@ Date:   Sun Dec 13 11:53:01 2009 +0100
 
     Fix compiler warning
 
- src/eog-close-confirmation-dialog.c |    2 +-
+ src/eom-close-confirmation-dialog.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 3793023b1bb6ec41890f7c84c488370cc1a1c655
@@ -2902,7 +2902,7 @@ Date:   Tue Dec 1 13:26:23 2009 +0100
     warnings when some thumbnails of changed images are not loaded (e.g.
     because the collection is hidden).  Instead a generic icon is shown.
 
- src/eog-close-confirmation-dialog.c |   46 +++++++++++++++++++++++++++++++----
+ src/eom-close-confirmation-dialog.c |   46 +++++++++++++++++++++++++++++++----
  1 files changed, 41 insertions(+), 5 deletions(-)
 
 commit 74268d4bac49d5c15268c9375f8b853e5b860df6
@@ -2927,7 +2927,7 @@ Date:   Fri Nov 27 21:33:23 2009 +0100
     'chunk_len' was likely used during initial development of the PNG reader
     but was never in the final version.
 
- src/eog-metadata-reader-png.c |   10 ++--------
+ src/eom-metadata-reader-png.c |   10 ++--------
  1 files changed, 2 insertions(+), 8 deletions(-)
 
 commit 17d4f73537c4b3792b693cc643c50b0fd7544510
@@ -2963,9 +2963,9 @@ Date:   Sun Nov 22 12:23:51 2009 +0100
     during saving to avoid interaction. Alltogether this should improve the
     situation visually quite a bit.
 
- src/eog-close-confirmation-dialog.c |   18 +++++++++++++++++-
- src/eog-close-confirmation-dialog.h |    1 +
- src/eog-window.c                    |    3 +--
+ src/eom-close-confirmation-dialog.c |   18 +++++++++++++++++-
+ src/eom-close-confirmation-dialog.h |    1 +
+ src/eom-window.c                    |    3 +--
  3 files changed, 19 insertions(+), 3 deletions(-)
 
 commit aca371d4aafafc3290a770a29516bbf95f9c256e
@@ -3031,7 +3031,7 @@ Date:   Sun Nov 15 21:18:11 2009 +0100
     Make both window and dialog insensitive to avoid any further change to
     the images during longer save operations.
 
- src/eog-window.c |    9 +++++----
+ src/eom-window.c |    9 +++++----
  1 files changed, 5 insertions(+), 4 deletions(-)
 
 commit 90f583ced89d53c851edd29acf6316c96fb8d660
@@ -3043,7 +3043,7 @@ Date:   Sun Nov 15 21:03:44 2009 +0100
     Makes the secondary labels sound a bit less dramatic.
 
  po/POTFILES.in                      |    1 +
- src/eog-close-confirmation-dialog.c |    5 ++---
+ src/eom-close-confirmation-dialog.c |    5 ++---
  2 files changed, 3 insertions(+), 3 deletions(-)
 
 commit b53f8c99ea0a3265e746a0711449dd8b2720170b
@@ -3052,8 +3052,8 @@ Date:   Sun Nov 15 20:52:39 2009 +0100
 
     Update copyright year in the save conirmation dialog sources
 
- src/eog-close-confirmation-dialog.c |    2 +-
- src/eog-close-confirmation-dialog.h |    2 +-
+ src/eom-close-confirmation-dialog.c |    2 +-
+ src/eom-close-confirmation-dialog.h |    2 +-
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 commit c7e758832bc1db897c01cce32e04735c01b879ae
@@ -3066,9 +3066,9 @@ Date:   Sun Nov 15 20:50:11 2009 +0100
     decide for every changed image. Fixes bgo#322243.
 
  src/Makefile.am                     |    2 +
- src/eog-close-confirmation-dialog.c |  648 +++++++++++++++++++++++++++++++++++
- src/eog-close-confirmation-dialog.h |   71 ++++
- src/eog-window.c                    |  152 ++++++++-
+ src/eom-close-confirmation-dialog.c |  648 +++++++++++++++++++++++++++++++++++
+ src/eom-close-confirmation-dialog.h |   71 ++++
+ src/eom-window.c                    |  152 ++++++++-
  4 files changed, 863 insertions(+), 10 deletions(-)
 
 commit 62f1a9c1a05208cf28f9c26f248d15883e6dc8fd
@@ -3171,7 +3171,7 @@ Date:   Thu Oct 22 19:16:46 2009 +0200
 
     Fix mem leak when rotating animations
 
- src/eog-scroll-view.c |    6 ++++++
+ src/eom-scroll-view.c |    6 ++++++
  1 files changed, 6 insertions(+), 0 deletions(-)
 
 commit 8871921af177bc83bd65cc3e8d8a84bada52576e
@@ -3200,13 +3200,13 @@ Date:   Sun Oct 18 17:31:12 2009 +0200
 
     Add support for animated images
     
-    Plays animated images in eog as supported by GdkPixbufAnimation.
+    Plays animated images in eom as supported by GdkPixbufAnimation.
     Fixes bgo#335093.
 
- src/eog-image-private.h |    3 +
- src/eog-image.c         |  139 ++++++++++++++++++++++++++++++++++++++++++++++-
- src/eog-image.h         |    7 +++
- src/eog-scroll-view.c   |   31 ++++++++++-
+ src/eom-image-private.h |    3 +
+ src/eom-image.c         |  139 ++++++++++++++++++++++++++++++++++++++++++++++-
+ src/eom-image.h         |    7 +++
+ src/eom-scroll-view.c   |   31 ++++++++++-
  4 files changed, 177 insertions(+), 3 deletions(-)
 
 commit 10d243bb8e6f5d0ea4e8005b49851498153efe4d
@@ -3246,7 +3246,7 @@ Date:   Mon Oct 12 16:23:00 2009 +0200
     image, switch to another, switch back and try to save/undo the changes.
     Respect lockdown settings for Save.
 
- src/eog-window.c |    8 ++++----
+ src/eom-window.c |    8 ++++----
  1 files changed, 4 insertions(+), 4 deletions(-)
 
 commit bab906c52f31e96e4b7311cd04fd8e92299a8791
@@ -3258,7 +3258,7 @@ Date:   Mon Oct 12 16:08:27 2009 +0200
     Left/Right arrows are simply mapped to Up/Down. This makes sure this
     mapping gets inverted in RTL locales. Fixes bgo#566104.
 
- src/eog-window.c |   20 ++++++++++++++++++--
+ src/eom-window.c |   20 ++++++++++++++++++--
  1 files changed, 18 insertions(+), 2 deletions(-)
 
 commit c790e8f6a65d4854ecbd0a2b2c05036c78792b26
@@ -3339,7 +3339,7 @@ Date:   Sat Oct 10 12:47:01 2009 +0200
 
     Minor Arabic fix
 
- help/ar/figures/eog_save_as_window.png |  Bin 35751 -> 35692 bytes
+ help/ar/figures/eom_save_as_window.png |  Bin 35751 -> 35692 bytes
  po/ar.po                               |    8 ++++----
  2 files changed, 4 insertions(+), 4 deletions(-)
 
@@ -3350,9 +3350,9 @@ Date:   Sat Oct 10 12:35:26 2009 +0200
     Updated Arabic translation
 
  help/ar/ar.po                                 | 1196 +++++++++++++++++++------
- help/ar/figures/eog_save_as_window.png        |  Bin 28773 -> 35751 bytes
- help/ar/figures/eog_start_window.png          |  Bin 18496 -> 16121 bytes
- help/ar/figures/eog_toolbar_editor_window.png |  Bin 25066 -> 31158 bytes
+ help/ar/figures/eom_save_as_window.png        |  Bin 28773 -> 35751 bytes
+ help/ar/figures/eom_start_window.png          |  Bin 18496 -> 16121 bytes
+ help/ar/figures/eom_toolbar_editor_window.png |  Bin 25066 -> 31158 bytes
  4 files changed, 925 insertions(+), 271 deletions(-)
 
 commit aa32c3254014cb060dff9fe10dbdd32417914d26
@@ -3417,8 +3417,8 @@ Date:   Fri Oct 9 19:06:28 2009 +0200
     
     Fixes #597059. Makes statusbar message and image counter translatable.
 
- src/eog-statusbar.c |   12 +++++++++++-
- src/eog-window.c    |   19 ++++++++++++-------
+ src/eom-statusbar.c |   12 +++++++++++-
+ src/eom-window.c    |   19 ++++++++++++-------
  2 files changed, 23 insertions(+), 8 deletions(-)
 
 commit ec87c9b2919995503122b966c900de8156d10e32
@@ -3431,7 +3431,7 @@ Date:   Thu Oct 8 13:28:45 2009 +0200
     the automatic image switching. This fixes broken image view in those
     cases. Fixes bgo#597754.
 
- src/eog-window.c |    3 +++
+ src/eom-window.c |    3 +++
  1 files changed, 3 insertions(+), 0 deletions(-)
 
 commit 00ff0cf6c523dac1cbb5ec869c78ef0f598a008a
@@ -3460,7 +3460,7 @@ Date:   Tue Sep 22 23:00:29 2009 +0200
     
     This is to avoid problems (eg. crashes) in case the stack is not clean.
 
- src/eog-properties-dialog.c |    2 +-
+ src/eom-properties-dialog.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit cf06700f8d2d45c3d582e2dc071c8fce72db468c
@@ -3469,8 +3469,8 @@ Date:   Tue Sep 22 22:57:39 2009 +0200
 
     Remove unused variables and unnecessary assignments
 
- plugins/reload/eog-reload-plugin.c |    3 ---
- src/eog-properties-dialog.c        |    1 -
+ plugins/reload/eom-reload-plugin.c |    3 ---
+ src/eom-properties-dialog.c        |    1 -
  2 files changed, 0 insertions(+), 4 deletions(-)
 
 commit 213a4c70f34cb4319ee39422569fbdb533456d09
@@ -3700,7 +3700,7 @@ Date:   Tue Sep 8 11:47:13 2009 +0200
     
     Fixes broken image order in some locales (eg. cs_CZ). Fixes bgo#594403.
 
- src/eog-list-store.c |    4 ++--
+ src/eom-list-store.c |    4 ++--
  1 files changed, 2 insertions(+), 2 deletions(-)
 
 commit ec41a2a8c1db6d8bdb3cf953c7309c3e3fd2940e
@@ -3788,7 +3788,7 @@ Date:   Tue Aug 25 20:00:21 2009 +0200
     
     Closes: http://bugzilla.mate.org/show_bug.cgi?id=592945
 
- src/eog-image.c |    5 ++++-
+ src/eom-image.c |    5 ++++-
  1 files changed, 4 insertions(+), 1 deletions(-)
 
 commit 3c501d254c968bcd955194a6881c7b5bb8868c34
@@ -3801,7 +3801,7 @@ Date:   Tue Aug 25 19:56:17 2009 +0200
     dimensions. This breaks with the image collection tooltips which don't
     request image data but Exif data in addition to the dimensions.
 
- src/eog-image.c |    3 ++-
+ src/eom-image.c |    3 ++-
  1 files changed, 2 insertions(+), 1 deletions(-)
 
 commit f54d50e992ed57bb06ea433de65d9cce8d129463
@@ -3845,13 +3845,13 @@ commit 66d71ddf5d7129a02bcee28931ba6e8d8d592289
 Author: Felix Riemann <friemann@gnome.org>
 Date:   Mon Aug 24 18:08:42 2009 +0200
 
-    Don't access Exif data unconditionally, even in EogImage itself
+    Don't access Exif data unconditionally, even in EomImage itself
     
     This could lead to a race condition with broken Exif data when having
     certain plugins like the statusbar-date plugin enabled.
     This hopefully fixes bgo#590693.
 
- src/eog-image.c |   12 +++++++++---
+ src/eom-image.c |   12 +++++++++---
  1 files changed, 9 insertions(+), 3 deletions(-)
 
 commit bc010e9885f3be9f50f37366e4f6fd6910c103db
@@ -3863,7 +3863,7 @@ Date:   Mon Aug 24 17:59:25 2009 +0200
     Avoids critical warnings because we forgot that g_app_info_get_icon
     can return NULL in commit 7bba458.
 
- src/eog-window.c |   10 +++++++---
+ src/eom-window.c |   10 +++++++---
  1 files changed, 7 insertions(+), 3 deletions(-)
 
 commit 7bba45892744820d252fd981029ee93a22fec21e
@@ -3878,7 +3878,7 @@ Date:   Mon Aug 24 17:47:15 2009 +0200
     
     Closes: http://bugzilla.mate.org/show_bug.cgi?id=592649 (bgo#592649).
 
- src/eog-window.c |   36 +++++++++++++++++++++++++++++++++++-
+ src/eom-window.c |   36 +++++++++++++++++++++++++++++++++++-
  1 files changed, 35 insertions(+), 1 deletions(-)
 
 commit c3defb14a992bce58018c16872b22f9aa32fc25f

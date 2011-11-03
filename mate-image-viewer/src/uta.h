@@ -24,51 +24,51 @@
 #ifndef UTA_H
 #define UTA_H
 
-#define EOG_UTILE_SHIFT 5
-#define EOG_UTILE_SIZE (1 << EOG_UTILE_SHIFT)
+#define EOM_UTILE_SHIFT 5
+#define EOM_UTILE_SIZE (1 << EOM_UTILE_SHIFT)
 
-typedef guint32 EogUtaBbox;
+typedef guint32 EomUtaBbox;
 
-struct _EogIRect {
+struct _EomIRect {
   int x0, y0, x1, y1;
 };
 
-struct _EogUta {
+struct _EomUta {
   int x0;
   int y0;
   int width;
   int height;
-  EogUtaBbox *utiles;
+  EomUtaBbox *utiles;
 };
 
-typedef struct _EogIRect EogIRect;
-typedef struct _EogUta EogUta;
+typedef struct _EomIRect EomIRect;
+typedef struct _EomUta EomUta;
 
 
 
 G_GNUC_INTERNAL
-void	eog_uta_free 		(EogUta *uta);
+void	eom_uta_free 		(EomUta *uta);
 
 G_GNUC_INTERNAL
-void	eog_irect_intersect 	(EogIRect *dest,
-				 const EogIRect *src1, const EogIRect *src2);
+void	eom_irect_intersect 	(EomIRect *dest,
+				 const EomIRect *src1, const EomIRect *src2);
 G_GNUC_INTERNAL
-int	eog_irect_empty 	(const EogIRect *src);
+int	eom_irect_empty 	(const EomIRect *src);
 
 G_GNUC_INTERNAL
-EogUta *uta_ensure_size (EogUta *uta, int x1, int y1, int x2, int y2);
+EomUta *uta_ensure_size (EomUta *uta, int x1, int y1, int x2, int y2);
 
 G_GNUC_INTERNAL
-EogUta *uta_add_rect (EogUta *uta, int x1, int y1, int x2, int y2);
+EomUta *uta_add_rect (EomUta *uta, int x1, int y1, int x2, int y2);
 
 G_GNUC_INTERNAL
-void uta_remove_rect (EogUta *uta, int x1, int y1, int x2, int y2);
+void uta_remove_rect (EomUta *uta, int x1, int y1, int x2, int y2);
 
 G_GNUC_INTERNAL
-void uta_find_first_glom_rect (EogUta *uta, EogIRect *rect, int max_width, int max_height);
+void uta_find_first_glom_rect (EomUta *uta, EomIRect *rect, int max_width, int max_height);
 
 G_GNUC_INTERNAL
-void uta_copy_area (EogUta *uta, int src_x, int src_y, int dest_x, int dest_y, int width, int height);
+void uta_copy_area (EomUta *uta, int src_x, int src_y, int dest_x, int dest_y, int width, int height);
 
 
 

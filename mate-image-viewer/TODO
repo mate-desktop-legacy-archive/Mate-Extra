@@ -1,7 +1,7 @@
 
 Please see also bugzilla for a more accurate list of open bugs, things todo:
 
-http://bugzilla.mate.org/buglist.cgi?product=EOG&bug_status=NEW&bug_status=REOPENED&bug_status=UNCONFIRMED
+http://bugzilla.mate.org/buglist.cgi?product=EOM&bug_status=NEW&bug_status=REOPENED&bug_status=UNCONFIRMED
 
 ================================================================
 
@@ -15,5 +15,5 @@ freedesktop.org thumbnail specification).
 * Remember the inner window layout in collection mode (window size and
 position is already implemented)
 
-* libeog/eog-job-manager.c: More tests required.
+* libeom/eom-job-manager.c: More tests required.
 

@@ -46,16 +46,16 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 LTLIBRARIES = $(noinst_LTLIBRARIES)
 am__DEPENDENCIES_1 =
-eog_la_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+eom_la_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
-nodist_eog_la_OBJECTS = eog_la-eog.lo
-eog_la_OBJECTS = $(nodist_eog_la_OBJECTS)
+nodist_eom_la_OBJECTS = eom_la-eom.lo
+eom_la_OBJECTS = $(nodist_eom_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
 am__v_lt_0 = --silent
-eog_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
-	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(eog_la_CFLAGS) $(CFLAGS) \
-	$(eog_la_LDFLAGS) $(LDFLAGS) -o $@
+eom_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(eom_la_CFLAGS) $(CFLAGS) \
+	$(eom_la_LDFLAGS) $(LDFLAGS) -o $@
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -82,7 +82,7 @@ am__v_CCLD_0 = @echo "  CCLD  " $@;
 AM_V_GEN = $(am__v_GEN_$(V))
 am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))
 am__v_GEN_0 = @echo "  GEN   " $@;
-SOURCES = $(nodist_eog_la_SOURCES)
+SOURCES = $(nodist_eom_la_SOURCES)
 DIST_SOURCES =
 ETAGS = etags
 CTAGS = ctags
@@ -121,14 +121,14 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
-EOG_API_VERSION = @EOG_API_VERSION@
-EOG_CFLAGS = @EOG_CFLAGS@
-EOG_DOC_EXIF_START = @EOG_DOC_EXIF_START@
-EOG_DOC_EXIF_STOP = @EOG_DOC_EXIF_STOP@
-EOG_LIBS = @EOG_LIBS@
-EOG_MAJOR_VERSION = @EOG_MAJOR_VERSION@
-EOG_MICRO_VERSION = @EOG_MICRO_VERSION@
-EOG_MINOR_VERSION = @EOG_MINOR_VERSION@
+EOM_API_VERSION = @EOM_API_VERSION@
+EOM_CFLAGS = @EOM_CFLAGS@
+EOM_DOC_EXIF_START = @EOM_DOC_EXIF_START@
+EOM_DOC_EXIF_STOP = @EOM_DOC_EXIF_STOP@
+EOM_LIBS = @EOM_LIBS@
+EOM_MAJOR_VERSION = @EOM_MAJOR_VERSION@
+EOM_MICRO_VERSION = @EOM_MICRO_VERSION@
+EOM_MINOR_VERSION = @EOM_MINOR_VERSION@
 EXEEXT = @EXEEXT@
 EXEMPI_CFLAGS = @EXEMPI_CFLAGS@
 EXEMPI_LIBS = @EXEMPI_LIBS@
@@ -296,57 +296,57 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 noinst_LTLIBRARIES = \
-	eog.la
+	eom.la
 
-nodist_eog_la_SOURCES = \
-	eog.c
+nodist_eom_la_SOURCES = \
+	eom.c
 
-eog_la_LDFLAGS = \
+eom_la_LDFLAGS = \
 	-module -avoid-version
 
-eog_la_LIBADD = \
+eom_la_LIBADD = \
 	$(PYTHON_LIB_LOC)       \
 	$(PYTHON_LIBS)		\
 	$(PYTHON_EXTRA_LIBS)	\
 	$(PYGTK_LIBS)
 
-eog_la_CFLAGS = \
+eom_la_CFLAGS = \
 	-I$(top_srcdir)					\
 	-I$(top_builddir)				\
 	-I$(top_srcdir)/src				\
 	-I$(top_builddir)/src				\
 	-I$(top_srcdir)/cut-n-paste/toolbar-editor	\
-	$(EOG_CFLAGS)					\
+	$(EOM_CFLAGS)					\
 	$(NO_STRICT_ALIASING_CFLAGS)			\
 	$(PYGTK_CFLAGS)					\
 	$(PYTHON_CFLAGS)				\
 	$(AM_CFLAGS)
 
-BINDING_EOG_HEADERS_SRCDIR_IN = \
-	src/eog-application.h				\
-	src/eog-window.h				\
-	src/eog-dialog.h				\
-	src/eog-properties-dialog.h			\
-	src/eog-message-area.h				\
-	src/eog-statusbar.h				\
-	src/eog-thumb-nav.h				\
-	src/eog-image.h					\
-	src/eog-scroll-view.h				\
-	src/eog-thumb-view.h				\
-	src/eog-list-store.h				\
-	src/eog-job-queue.h				\
-	src/eog-jobs.h					\
-	src/eog-plugin.h
+BINDING_EOM_HEADERS_SRCDIR_IN = \
+	src/eom-application.h				\
+	src/eom-window.h				\
+	src/eom-dialog.h				\
+	src/eom-properties-dialog.h			\
+	src/eom-message-area.h				\
+	src/eom-statusbar.h				\
+	src/eom-thumb-nav.h				\
+	src/eom-image.h					\
+	src/eom-scroll-view.h				\
+	src/eom-thumb-view.h				\
+	src/eom-list-store.h				\
+	src/eom-job-queue.h				\
+	src/eom-jobs.h					\
+	src/eom-plugin.h
 
 BINDING_HEADERS_BUILDDIR_IN = 
-BINDING_EOG_HEADERS_SRCDIR := $(addprefix $(top_srcdir)/,$(BINDING_EOG_HEADERS_SRCDIR_IN))
+BINDING_EOM_HEADERS_SRCDIR := $(addprefix $(top_srcdir)/,$(BINDING_EOM_HEADERS_SRCDIR_IN))
 BINDING_HEADERS_BUILDDIR := $(addprefix $(top_builddir)/,$(BINDING_HEADERS_BUILDDIR_IN))
 BUILT_SOURCES = \
-	eog.c
+	eom.c
 
 EXTRA_DIST = \
-	eog.override	\
-	eog.defs
+	eom.override	\
+	eom.defs
 
 CLEANFILES = $(BUILT_SOURCES)
 all: $(BUILT_SOURCES)
@@ -393,8 +393,8 @@ clean-noinstLTLIBRARIES:
 	  echo "rm -f \"$${dir}/so_locations\""; \
 	  rm -f "$${dir}/so_locations"; \
 	done
-eog.la: $(eog_la_OBJECTS) $(eog_la_DEPENDENCIES) 
-	$(AM_V_CCLD)$(eog_la_LINK)  $(eog_la_OBJECTS) $(eog_la_LIBADD) $(LIBS)
+eom.la: $(eom_la_OBJECTS) $(eom_la_DEPENDENCIES) 
+	$(AM_V_CCLD)$(eom_la_LINK)  $(eom_la_OBJECTS) $(eom_la_LIBADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -402,7 +402,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eog_la-eog.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eom_la-eom.Plo@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -428,13 +428,13 @@ distclean-compile:
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(LTCOMPILE) -c -o $@ $<
 
-eog_la-eog.lo: eog.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eog_la_CFLAGS) $(CFLAGS) -MT eog_la-eog.lo -MD -MP -MF $(DEPDIR)/eog_la-eog.Tpo -c -o eog_la-eog.lo `test -f 'eog.c' || echo '$(srcdir)/'`eog.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/eog_la-eog.Tpo $(DEPDIR)/eog_la-eog.Plo
+eom_la-eom.lo: eom.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eom_la_CFLAGS) $(CFLAGS) -MT eom_la-eom.lo -MD -MP -MF $(DEPDIR)/eom_la-eom.Tpo -c -o eom_la-eom.lo `test -f 'eom.c' || echo '$(srcdir)/'`eom.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/eom_la-eom.Tpo $(DEPDIR)/eom_la-eom.Plo
 @am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='eog.c' object='eog_la-eog.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='eom.c' object='eom_la-eom.lo' libtool=yes @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eog_la_CFLAGS) $(CFLAGS) -c -o eog_la-eog.lo `test -f 'eog.c' || echo '$(srcdir)/'`eog.c
+@am__fastdepCC_FALSE@	$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eom_la_CFLAGS) $(CFLAGS) -c -o eom_la-eom.lo `test -f 'eom.c' || echo '$(srcdir)/'`eom.c
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -648,10 +648,10 @@ uninstall-am:
 	tags uninstall uninstall-am
 
 
-$(top_builddir)/src/eog-enum-types.h:
-	$(AM_V_GEN)cd $(top_builddir)/src && $(MAKE) eog-enum-types.h
+$(top_builddir)/src/eom-enum-types.h:
+	$(AM_V_GEN)cd $(top_builddir)/src && $(MAKE) eom-enum-types.h
 
-eog.c: eog.defs eog.override $(top_builddir)/src/eog-enum-types.h
+eom.c: eom.defs eom.override $(top_builddir)/src/eom-enum-types.h
 	$(AM_V_GEN)( cd $(srcdir) && $(PYGOBJECT_CODEGEN) \
 		--register $(PYGOBJECT_DEFSDIR)/gio-types.defs \
 		--register $(PYGTK_DEFSDIR)/pango-types.defs \
@@ -661,7 +661,7 @@ eog.c: eog.defs eog.override $(top_builddir)/src/eog-enum-types.h
 		--prefix py$* $(<F) ) > $@
 
 regenerate-python-binding:
-	$(PYGTK_H2DEF) $(sort $(BINDING_EOG_HEADERS_SRCDIR) $(BINDING_HEADERS_BUILDDIR)) > eog.defs.new
+	$(PYGTK_H2DEF) $(sort $(BINDING_EOM_HEADERS_SRCDIR) $(BINDING_HEADERS_BUILDDIR)) > eom.defs.new
 
 dist-hook:
 	cd $(distdir); rm -f $(BUILT_SOURCES)

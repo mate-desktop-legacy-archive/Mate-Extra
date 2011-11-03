@@ -11,9 +11,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog 2.32\n"
+"Project-Id-Version: eom 2.32\n"
 "Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
-"product=eog&component=general\n"
+"product=eom&component=general\n"
 "POT-Creation-Date: 2010-09-14 12:44+0000\n"
 "PO-Revision-Date: 2010-09-14 18:08+0300\n"
 "Last-Translator: Ivar Smolin <okul@linux.ee>\n"
@@ -357,11 +357,11 @@ msgstr "Pildi interpoleerimine"
 
 msgid ""
 "List of active plugins. It doesn't contain the \"Location\" of the active "
-"plugins. See the .eog-plugin file for obtaining the \"Location\" of a given "
+"plugins. See the .eom-plugin file for obtaining the \"Location\" of a given "
 "plugin."
 msgstr ""
 "Aktiivsete pluginate nimekiri. See ei sisalda aktiivsete pluginate \"Asukohta"
-"\". Plugina asukoha teadasaamiseks vaata faili .eog-plugin."
+"\". Plugina asukoha teadasaamiseks vaata faili .eom-plugin."
 
 msgid "Loop through the image sequence"
 msgstr "Pildiseeria lõppemisel uuesti alustamine"
@@ -846,7 +846,7 @@ msgid "The MATE image viewer."
 msgstr "MATE pildinäitaja."
 
 #. I18N: When setting mnemonics for these strings, watch out to not
-#. clash with mnemonics from eog's menubar
+#. clash with mnemonics from eom's menubar
 msgid "_Open Background Preferences"
 msgstr "Ava _taustaeelistused"
 
@@ -1211,7 +1211,7 @@ msgstr "Rakenduse versiooni näitamine"
 msgid "[FILE…]"
 msgstr "[FAIL…]"
 
-#. I18N: The '%s' is replaced with eog's command name.
+#. I18N: The '%s' is replaced with eom's command name.
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options."
 msgstr "Kõigi saadaolevate käsureavalikute nägemiseks käivita '%s --help'."

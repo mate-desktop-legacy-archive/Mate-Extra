@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>eom-pixbuf-util</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.0">
+<link rel="home" href="index.html" title="Eye of MATE Reference Manual">
+<link rel="up" href="ch06.html" title="Utilities">
+<link rel="prev" href="eom-eom-exif-util.html" title="eom-exif-util">
+<link rel="next" href="eom-zoom.html" title="zoom">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="eom-eom-exif-util.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch06.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Eye of MATE Reference Manual</th>
+<td><a accesskey="n" href="eom-zoom.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#eom-eom-pixbuf-util.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#eom-eom-pixbuf-util.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry" title="eom-pixbuf-util">
+<a name="eom-eom-pixbuf-util"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="eom-eom-pixbuf-util.top_of_page"></a>eom-pixbuf-util</span></h2>
+<p>eom-pixbuf-util</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="eom-eom-pixbuf-util.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis"><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a>*             <a class="link" href="eom-eom-pixbuf-util.html#eom-pixbuf-get-savable-formats" title="eom_pixbuf_get_savable_formats ()">eom_pixbuf_get_savable_formats</a>      (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="returnvalue">GdkPixbufFormat</span></a>*    <a class="link" href="eom-eom-pixbuf-util.html#eom-pixbuf-get-format-by-suffix" title="eom_pixbuf_get_format_by_suffix ()">eom_pixbuf_get_format_by_suffix</a>     (<em class="parameter"><code>const <span class="type">char</span> *suffix</code></em>);
+<a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="returnvalue">GdkPixbufFormat</span></a>*    <a class="link" href="eom-eom-pixbuf-util.html#eom-pixbuf-get-format" title="eom_pixbuf_get_format ()">eom_pixbuf_get_format</a>               (<em class="parameter"><code><a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);
+<span class="returnvalue">char</span>*               <a class="link" href="eom-eom-pixbuf-util.html#eom-pixbuf-get-common-suffix" title="eom_pixbuf_get_common_suffix ()">eom_pixbuf_get_common_suffix</a>        (<em class="parameter"><code><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="type">GdkPixbufFormat</span></a> *format</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="eom-eom-pixbuf-util.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="eom-eom-pixbuf-util.details"></a><h2>Details</h2>
+<div class="refsect2" title="eom_pixbuf_get_savable_formats ()">
+<a name="eom-pixbuf-get-savable-formats"></a><h3>eom_pixbuf_get_savable_formats ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a>*             eom_pixbuf_get_savable_formats      (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_pixbuf_get_format_by_suffix ()">
+<a name="eom-pixbuf-get-format-by-suffix"></a><h3>eom_pixbuf_get_format_by_suffix ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="returnvalue">GdkPixbufFormat</span></a>*    eom_pixbuf_get_format_by_suffix     (<em class="parameter"><code>const <span class="type">char</span> *suffix</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>suffix</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_pixbuf_get_format ()">
+<a name="eom-pixbuf-get-format"></a><h3>eom_pixbuf_get_format ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="returnvalue">GdkPixbufFormat</span></a>*    eom_pixbuf_get_format               (<em class="parameter"><code><a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>file</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_pixbuf_get_common_suffix ()">
+<a name="eom-pixbuf-get-common-suffix"></a><h3>eom_pixbuf_get_common_suffix ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span>*               eom_pixbuf_get_common_suffix        (<em class="parameter"><code><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="type">GdkPixbufFormat</span></a> *format</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>format</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

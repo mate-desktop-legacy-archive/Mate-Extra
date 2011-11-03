@@ -40,11 +40,11 @@ POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
 @HAVE_EXEMPI_FALSE@@HAVE_EXIF_FALSE@am__append_1 = \
-@HAVE_EXEMPI_FALSE@@HAVE_EXIF_FALSE@	eog-exif-util.h			\
-@HAVE_EXEMPI_FALSE@@HAVE_EXIF_FALSE@	eog-exif-details.h
+@HAVE_EXEMPI_FALSE@@HAVE_EXIF_FALSE@	eom-exif-util.h			\
+@HAVE_EXEMPI_FALSE@@HAVE_EXIF_FALSE@	eom-exif-details.h
 
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
-	$(srcdir)/eog-docs.sgml.in $(srcdir)/version.xml.in \
+	$(srcdir)/eom-docs.sgml.in $(srcdir)/version.xml.in \
 	$(top_srcdir)/gtk-doc.make
 subdir = doc/reference
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -53,7 +53,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = version.xml eog-docs.sgml
+CONFIG_CLEAN_FILES = version.xml eom-docs.sgml
 CONFIG_CLEAN_VPATH_FILES =
 AM_V_GEN = $(am__v_GEN_$(V))
 am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))
@@ -98,14 +98,14 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
-EOG_API_VERSION = @EOG_API_VERSION@
-EOG_CFLAGS = @EOG_CFLAGS@
-EOG_DOC_EXIF_START = @EOG_DOC_EXIF_START@
-EOG_DOC_EXIF_STOP = @EOG_DOC_EXIF_STOP@
-EOG_LIBS = @EOG_LIBS@
-EOG_MAJOR_VERSION = @EOG_MAJOR_VERSION@
-EOG_MICRO_VERSION = @EOG_MICRO_VERSION@
-EOG_MINOR_VERSION = @EOG_MINOR_VERSION@
+EOM_API_VERSION = @EOM_API_VERSION@
+EOM_CFLAGS = @EOM_CFLAGS@
+EOM_DOC_EXIF_START = @EOM_DOC_EXIF_START@
+EOM_DOC_EXIF_STOP = @EOM_DOC_EXIF_STOP@
+EOM_LIBS = @EOM_LIBS@
+EOM_MAJOR_VERSION = @EOM_MAJOR_VERSION@
+EOM_MICRO_VERSION = @EOM_MICRO_VERSION@
+EOM_MINOR_VERSION = @EOM_MINOR_VERSION@
 EXEEXT = @EXEEXT@
 EXEMPI_CFLAGS = @EXEMPI_CFLAGS@
 EXEMPI_LIBS = @EXEMPI_LIBS@
@@ -282,7 +282,7 @@ AUTOMAKE_OPTIONS = 1.6
 # of using the various options.
 
 # The name of the module, e.g. 'glib'.
-DOC_MODULE = eog
+DOC_MODULE = eom
 
 # The top-level SGML file. You can change this if you want to.
 DOC_MAIN_SGML_FILE = $(DOC_MODULE)-docs.sgml
@@ -320,9 +320,9 @@ CFILE_GLOB = $(top_srcdir)/src/*.c
 
 # Header files to ignore when scanning.
 # e.g. IGNORE_HFILES=gtkdebug.h gtkintl.h
-IGNORE_HFILES = eog-python-plugin.h eog-image-private.h \
-	eog-image-jpeg.h eog-marshal.h eog-application-service.h \
-	eog-enum-types.h eog-module.h eog-python-module.h \
+IGNORE_HFILES = eom-python-plugin.h eom-image-private.h \
+	eom-image-jpeg.h eom-marshal.h eom-application-service.h \
+	eom-enum-types.h eom-module.h eom-python-module.h \
 	$(am__append_1)
 
 # Images to copy into HTML directory.
@@ -351,17 +351,17 @@ INCLUDES = \
 	-I$(top_srcdir)/jpegutils				\
 	-I$(top_srcdir)/cut-n-paste/toolbar-editor		\
 	-I$(top_srcdir)/cut-n-paste/totem-screensaver		\
-	$(EOG_CFLAGS)
+	$(EOM_CFLAGS)
 
-@ENABLE_JPEG_TRUE@jpeg_LIB = $(top_builddir)/jpegutils/libeog-jpegutils.la
+@ENABLE_JPEG_TRUE@jpeg_LIB = $(top_builddir)/jpegutils/libeom-jpegutils.la
 GTKDOC_LIBS = \
-	$(top_builddir)/src/libeog.la 	\
+	$(top_builddir)/src/libeom.la 	\
 	$(top_builddir)/cut-n-paste/toolbar-editor/libtoolbareditor.la \
 	$(top_builddir)/cut-n-paste/totem-screensaver/libtotemscrsaver.la \
 	$(BINDING_LIBS)			\
 	$(LIBJPEG)			\
 	$(X_LIBS)			\
-	$(EOG_LIBS)			\
+	$(EOM_LIBS)			\
 	$(jpeg_LIB)			\
 	$(MORE_GTKDOC_LIBS)
 
@@ -449,7 +449,7 @@ $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 $(am__aclocal_m4_deps):
 version.xml: $(top_builddir)/config.status $(srcdir)/version.xml.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
-eog-docs.sgml: $(top_builddir)/config.status $(srcdir)/eog-docs.sgml.in
+eom-docs.sgml: $(top_builddir)/config.status $(srcdir)/eom-docs.sgml.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 
 mostlyclean-libtool:

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mr\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=eog&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=eom&component=general\n"
 "POT-Creation-Date: 2010-04-06 07:17+0000\n"
 "PO-Revision-Date: 2010-04-13 09:46+0530\n"
 "Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
@@ -62,271 +62,271 @@ msgstr "विभाजक"
 msgid "Running in fullscreen mode"
 msgstr "पूर्णपडदा पध्दतीत कार्यरत आहे"
 
-#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:1
+#: ../plugins/fullscreen/fullscreen.eom-plugin.desktop.in.h:1
 msgid "Activate fullscreen mode with double-click"
 msgstr "दुहेरी-क्लिक सह पूर्णत्व पद्धती सक्रीय करा"
 
-#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:2
+#: ../plugins/fullscreen/fullscreen.eom-plugin.desktop.in.h:2
 msgid "Fullscreen with double-click"
 msgstr "दुहेरी-क्लिक सह पूर्णपडदा करा"
 
-#: ../plugins/reload/reload.eog-plugin.desktop.in.h:1
-#: ../plugins/reload/eog-reload-plugin.c:45
+#: ../plugins/reload/reload.eom-plugin.desktop.in.h:1
+#: ../plugins/reload/eom-reload-plugin.c:45
 msgid "Reload Image"
 msgstr "प्रतिमा पुन्ह दाखल करा"
 
-#: ../plugins/reload/reload.eog-plugin.desktop.in.h:2
-#: ../plugins/reload/eog-reload-plugin.c:47
+#: ../plugins/reload/reload.eom-plugin.desktop.in.h:2
+#: ../plugins/reload/eom-reload-plugin.c:47
 msgid "Reload current image"
 msgstr "वर्तमान प्रतिमा पुन्ह दाखल करा"
 
-#: ../plugins/statusbar-date/statusbar-date.eog-plugin.desktop.in.h:1
+#: ../plugins/statusbar-date/statusbar-date.eom-plugin.desktop.in.h:1
 msgid "Date in statusbar"
 msgstr "स्थितीपट्टीत दिनांक दाखवा"
 
-#: ../plugins/statusbar-date/statusbar-date.eog-plugin.desktop.in.h:2
+#: ../plugins/statusbar-date/statusbar-date.eom-plugin.desktop.in.h:2
 msgid "Shows the image date in the window statusbar"
 msgstr "चौकट स्थितीपट्टीत प्रतिमा दिनांक दर्शवितो"
 
-#: ../data/eog.desktop.in.in.h:1
+#: ../data/eom.desktop.in.in.h:1
 msgid "Browse and rotate images"
 msgstr "प्रतिमाचे संचार व गोल फिरवा"
 
-#: ../data/eog.desktop.in.in.h:2
+#: ../data/eom.desktop.in.in.h:2
 msgid "Image Viewer"
 msgstr "प्रतिमा दर्शक"
 
-#: ../data/eog-image-properties-dialog.ui.h:1
+#: ../data/eom-image-properties-dialog.ui.h:1
 msgid "<b>Aperture Value:</b>"
 msgstr "<b>भोकाचे मूल्य:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:2
+#: ../data/eom-image-properties-dialog.ui.h:2
 msgid "<b>Author:</b>"
 msgstr "<b>लेखक:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:3
+#: ../data/eom-image-properties-dialog.ui.h:3
 msgid "<b>Bytes:</b>"
 msgstr "<b>बाइट्स</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:4
+#: ../data/eom-image-properties-dialog.ui.h:4
 msgid "<b>Camera Model:</b>"
 msgstr "<b>कैमेरा प्रारूप:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:5
+#: ../data/eom-image-properties-dialog.ui.h:5
 msgid "<b>Copyright:</b>"
 msgstr "<b>प्रतिलिपी अधिकार:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:6
+#: ../data/eom-image-properties-dialog.ui.h:6
 msgid "<b>Date/Time:</b>"
 msgstr "<b>दिनांक/वेळ:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:7
+#: ../data/eom-image-properties-dialog.ui.h:7
 msgid "<b>Description:</b>"
 msgstr "<b>विवरण:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:8
+#: ../data/eom-image-properties-dialog.ui.h:8
 msgid "<b>Details</b>"
 msgstr "<b>तपशील</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:9
+#: ../data/eom-image-properties-dialog.ui.h:9
 msgid "<b>Exposure Time:</b>"
 msgstr "<b>वास्तविक वेळ:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:10
+#: ../data/eom-image-properties-dialog.ui.h:10
 msgid "<b>Flash:</b>"
 msgstr "<b>फ्लॅश:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:11
+#: ../data/eom-image-properties-dialog.ui.h:11
 msgid "<b>Focal Length:</b>"
 msgstr "<b>फोकल लांबी:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:12
+#: ../data/eom-image-properties-dialog.ui.h:12
 msgid "<b>Height:</b>"
 msgstr "<b>ऊंची:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:13
+#: ../data/eom-image-properties-dialog.ui.h:13
 msgid "<b>ISO Speed Rating:</b>"
 msgstr "<b>ISO गति गुणवत्ताश्रेणी</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:14
+#: ../data/eom-image-properties-dialog.ui.h:14
 msgid "<b>Keywords:</b>"
 msgstr "<b>मुख्यशब्द:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:15
+#: ../data/eom-image-properties-dialog.ui.h:15
 msgid "<b>Location:</b>"
 msgstr "<b>स्थान:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:16
+#: ../data/eom-image-properties-dialog.ui.h:16
 msgid "<b>Metering Mode:</b>"
 msgstr "<b> मिटरींग पध्दती</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:17
+#: ../data/eom-image-properties-dialog.ui.h:17
 msgid "<b>Name:</b>"
 msgstr "<b>नाव:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:18
+#: ../data/eom-image-properties-dialog.ui.h:18
 msgid "<b>Type:</b>"
 msgstr "<b>प्रकार:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:19
+#: ../data/eom-image-properties-dialog.ui.h:19
 msgid "<b>Width:</b>"
 msgstr "<b>रुंदी:</b>"
 
-#: ../data/eog-image-properties-dialog.ui.h:20
+#: ../data/eom-image-properties-dialog.ui.h:20
 msgid "Details"
 msgstr "तपशील"
 
-#: ../data/eog-image-properties-dialog.ui.h:21
+#: ../data/eom-image-properties-dialog.ui.h:21
 msgid "General"
 msgstr "सर्वसाधारण"
 
-#: ../data/eog-image-properties-dialog.ui.h:22
+#: ../data/eom-image-properties-dialog.ui.h:22
 msgid "Image Properties"
 msgstr "प्रतिमा गुणधर्म"
 
-#: ../data/eog-image-properties-dialog.ui.h:23
+#: ../data/eom-image-properties-dialog.ui.h:23
 msgid "Metadata"
 msgstr "व्यापक माहिती"
 
-#: ../data/eog-image-properties-dialog.ui.h:24
+#: ../data/eom-image-properties-dialog.ui.h:24
 msgid "_Next"
 msgstr "पुढील (_N)"
 
-#: ../data/eog-image-properties-dialog.ui.h:25
+#: ../data/eom-image-properties-dialog.ui.h:25
 msgid "_Previous"
 msgstr "मागील  (_P)"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:1
+#: ../data/eom-multiple-save-as-dialog.ui.h:1
 msgid "<b>File Name Preview</b>"
 msgstr "<b>फाइल नाव पुनरावलोकन</b>"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:2
+#: ../data/eom-multiple-save-as-dialog.ui.h:2
 msgid "<b>File Path Specifications</b>"
 msgstr "<b>फाइलची दिशा संयोजना</b>"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:3
+#: ../data/eom-multiple-save-as-dialog.ui.h:3
 msgid "<b>Options</b>"
 msgstr "<b>पर्याय</b>"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:5
+#: ../data/eom-multiple-save-as-dialog.ui.h:5
 #, no-c-format
 msgid "<small><i><b>%f:</b> original filename</i></small>"
 msgstr "<small><i><b>%f:</b> मुळ फाइलनाव</i></small>"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:7
+#: ../data/eom-multiple-save-as-dialog.ui.h:7
 #, no-c-format
 msgid "<small><i><b>%n:</b> counter</i></small>"
 msgstr "<small><i><b>%n:</b> काउंटर</i></small>"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:8
+#: ../data/eom-multiple-save-as-dialog.ui.h:8
 msgid "Choose a folder"
 msgstr "संचयीका निवडा"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:9
+#: ../data/eom-multiple-save-as-dialog.ui.h:9
 msgid "Destination folder:"
 msgstr "लक्ष्य संचयीका:"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:10
+#: ../data/eom-multiple-save-as-dialog.ui.h:10
 msgid "Filename format:"
 msgstr "फाइल नाव स्वरूपन:"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:11
+#: ../data/eom-multiple-save-as-dialog.ui.h:11
 msgid "Rename from:"
 msgstr "येथून पुनःनामांकीत करा:"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:12
+#: ../data/eom-multiple-save-as-dialog.ui.h:12
 msgid "Replace spaces with underscores"
 msgstr "जागा अंडरस्कोर सहीत बदलवून घ्या"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:13
+#: ../data/eom-multiple-save-as-dialog.ui.h:13
 msgid "Save As"
 msgstr "असे संग्रहा"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:14
+#: ../data/eom-multiple-save-as-dialog.ui.h:14
 msgid "Start counter at:"
 msgstr "या ठिकाणी काउंटर सुरू करा:"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:15
+#: ../data/eom-multiple-save-as-dialog.ui.h:15
 msgid "To:"
 msgstr "प्रती:"
 
-#: ../data/eog-preferences-dialog.ui.h:1
+#: ../data/eom-preferences-dialog.ui.h:1
 msgid "<b>Image Enhancements</b>"
 msgstr "<b>प्रतिमा विस्तारपण</b>"
 
-#: ../data/eog-preferences-dialog.ui.h:2
+#: ../data/eom-preferences-dialog.ui.h:2
 msgid "<b>Image Zoom</b>"
 msgstr "<b>प्रतिमा विशालीकरण</b>"
 
-#: ../data/eog-preferences-dialog.ui.h:3
+#: ../data/eom-preferences-dialog.ui.h:3
 msgid "<b>Sequence</b>"
 msgstr "<b>अनुक्रम</b>"
 
-#: ../data/eog-preferences-dialog.ui.h:4
+#: ../data/eom-preferences-dialog.ui.h:4
 msgid "<b>Transparent Parts</b>"
 msgstr "<b>पारदर्शी भाग</b>"
 
-#: ../data/eog-preferences-dialog.ui.h:5
+#: ../data/eom-preferences-dialog.ui.h:5
 msgid "As _background"
 msgstr "पार्श्वभूमी नुरूप (_b)"
 
-#: ../data/eog-preferences-dialog.ui.h:6
+#: ../data/eom-preferences-dialog.ui.h:6
 msgid "As check _pattern"
 msgstr "नमुने तपासणी नुरूप (_p)"
 
-#: ../data/eog-preferences-dialog.ui.h:7
+#: ../data/eom-preferences-dialog.ui.h:7
 msgid "As custom c_olor:"
 msgstr "इच्छिक रंग नुरूप (_o):"
 
-#: ../data/eog-preferences-dialog.ui.h:8
+#: ../data/eom-preferences-dialog.ui.h:8
 msgid "Color for Transparent Areas"
 msgstr "पारदर्शी क्षेत्र करीता रंग"
 
-#: ../data/eog-preferences-dialog.ui.h:9
+#: ../data/eom-preferences-dialog.ui.h:9
 msgid "E_xpand images to fit screen"
 msgstr "पडद्यात घट्ट बसविण्याकरीता प्रतिमा ओढा (_x)"
 
-#: ../data/eog-preferences-dialog.ui.h:10
+#: ../data/eom-preferences-dialog.ui.h:10
 msgid "Eye of MATE Preferences"
 msgstr "Eye of MATE प्राधान्यता"
 
-#: ../data/eog-preferences-dialog.ui.h:11
+#: ../data/eom-preferences-dialog.ui.h:11
 msgid "Image View"
 msgstr "प्रतिमा दृश्य"
 
-#: ../data/eog-preferences-dialog.ui.h:12
+#: ../data/eom-preferences-dialog.ui.h:12
 msgid "Plugins"
 msgstr "प्लगईन"
 
-#: ../data/eog-preferences-dialog.ui.h:13
+#: ../data/eom-preferences-dialog.ui.h:13
 msgid "Slideshow"
 msgstr "स्लाईडप्रदर्शन"
 
-#: ../data/eog-preferences-dialog.ui.h:14
+#: ../data/eom-preferences-dialog.ui.h:14
 msgid "Smooth images when zoomed-_in"
 msgstr "प्रतिमा मोठी केल्यावर गुळगुळीत करा (_i)"
 
-#: ../data/eog-preferences-dialog.ui.h:15
+#: ../data/eom-preferences-dialog.ui.h:15
 msgid "Smooth images when zoomed-_out"
 msgstr "प्रतिमा लहान केल्यावर गुळगुळीत करा (_o)"
 
-#: ../data/eog-preferences-dialog.ui.h:16
+#: ../data/eom-preferences-dialog.ui.h:16
 msgid "_Automatic orientation"
 msgstr "स्वंयचलित निर्देशन (_A)"
 
-#: ../data/eog-preferences-dialog.ui.h:17
+#: ../data/eom-preferences-dialog.ui.h:17
 msgid "_Loop sequence"
 msgstr "लुप श्रृंखला (_L)"
 
-#: ../data/eog-preferences-dialog.ui.h:18
+#: ../data/eom-preferences-dialog.ui.h:18
 msgid "_Switch image after:"
 msgstr "यानंतर प्रतिमा बदलून घ्या (_S):"
 
-#: ../data/eog-preferences-dialog.ui.h:19
+#: ../data/eom-preferences-dialog.ui.h:19
 msgid "seconds"
 msgstr "सेकंद"
 
-#: ../data/eog.schemas.in.h:1
+#: ../data/eom.schemas.in.h:1
 msgid ""
 "A value greater than 0 determines the seconds an image stays on screen until "
 "the next one is shown automatically. Zero disables the automatic browsing."
@@ -334,24 +334,24 @@ msgstr ""
 "पडद्यावर उमटणारी प्रतिमा किती सेकंदात येत राहील ते 0 पेक्षा अधिक मूल्य असणारी ठरविते व "
 "त्यानंतरच अन्य प्रतिमा आपोआप उमटताना दिसेल. शून्य आपोआप संचार अकार्यान्वीत करतो."
 
-#: ../data/eog.schemas.in.h:2
+#: ../data/eom.schemas.in.h:2
 msgid "Active plugins"
 msgstr "सक्रीय प्लगईन"
 
-#: ../data/eog.schemas.in.h:4
+#: ../data/eom.schemas.in.h:4
 #, no-c-format
 msgid "Allow zoom greater than 100% initially"
 msgstr "आरंभी 100% पेक्षा जास्त प्रमाणात विशाल करून पहा"
 
-#: ../data/eog.schemas.in.h:5
+#: ../data/eom.schemas.in.h:5
 msgid "Automatic orientation"
 msgstr "स्वंयचलित निर्देशन"
 
-#: ../data/eog.schemas.in.h:6
+#: ../data/eom.schemas.in.h:6
 msgid "Delay in seconds until showing the next image"
 msgstr "अन्य एक प्रतिमा उमटताना सेकंदामध्ये लागणारा वेळ किंवा होणारा उशीर"
 
-#: ../data/eog.schemas.in.h:7
+#: ../data/eom.schemas.in.h:7
 msgid ""
 "Determines how transparency should be indicated. Valid values are "
 "CHECK_PATTERN, COLOR and NONE. If COLOR is choosen, then the trans_color key "
@@ -360,11 +360,11 @@ msgstr ""
 "पारदर्शिकता कशी घ्यावी ते सांगणारी कृती. योग्य मूल्य तपासा CHECK_PATTERN, COLOR व "
 "NONE अशी आहेत. जर COLOR हे मूल्य निवडले असेल तर trans_color हे बटण वापरलेला रंग ठरविते."
 
-#: ../data/eog.schemas.in.h:8
+#: ../data/eom.schemas.in.h:8
 msgid "Extrapolate Image"
 msgstr "प्रतिमा एक्सट्रापोलेट करा"
 
-#: ../data/eog.schemas.in.h:9
+#: ../data/eom.schemas.in.h:9
 msgid ""
 "If activated Eye of MATE wont ask for confirmation when moving images to "
 "the trash. It will still ask if any of the files cannot be moved to the "
@@ -373,7 +373,7 @@ msgstr ""
 "Eye of MATE सक्रीय केल्यास, प्रतिमा कचरापेटी हलवतेवेळी खात्रीकरीता विचारू नका. तरी, "
 "कुठलिही फाइल्स् हलवण्याजोगी नाही याची तपासणी करतो व नंतरच नष्ट करतो."
 
-#: ../data/eog.schemas.in.h:10
+#: ../data/eom.schemas.in.h:10
 msgid ""
 "If activated and no image is loaded in the active window, the filechooser "
 "will display the user's pictures folder using the XDG special user "
@@ -384,7 +384,7 @@ msgstr ""
 "filechooser वापरकर्त्याचे चित्र फोल्डर दाखवतो. निष्क्रीय केल्यास किंवा चित्र फोल्डर सेट न "
 "केल्यास, सध्याची कार्यरत डिरेक्ट्री दाखवली जाते."
 
-#: ../data/eog.schemas.in.h:11
+#: ../data/eom.schemas.in.h:11
 msgid ""
 "If activated the detailed metadata list in the properties dialog will be "
 "moved to its own page in the dialog. This should make the dialog more usable "
@@ -395,7 +395,7 @@ msgstr ""
 "लहान पडद्यावरील संवाद आणखी वापरण्याजोगी होतील, उ.दा. netbooks च्या वापरणीप्रमाणे. "
 "अकार्यक्षम केल्यास विजेट \"Metadata\" पानात अंतर्भूत केले जाईल."
 
-#: ../data/eog.schemas.in.h:12
+#: ../data/eom.schemas.in.h:12
 msgid ""
 "If the transparency key has the value COLOR, then this key determines the "
 "color which is used for indicating transparency."
@@ -403,7 +403,7 @@ msgstr ""
 "जर पारदर्शी बटणाला COLOR हे मूल्य असेल तर ते बटण पारदर्शिकतेसाठी कोणता रंग निवडावा ते "
 "ठरविते."
 
-#: ../data/eog.schemas.in.h:13
+#: ../data/eom.schemas.in.h:13
 msgid ""
 "If this is set to FALSE small images will not be stretched to fit into the "
 "screen initially."
@@ -411,54 +411,54 @@ msgstr ""
 "ही कृती जर चूक दाखवत असेल तर आरंभीला लघुप्रतिमा पडद्यावर घेण्यासाठी ओढता ताणता येणार "
 "नाहीत."
 
-#: ../data/eog.schemas.in.h:14
+#: ../data/eom.schemas.in.h:14
 msgid ""
 "Image collection pane position. Set to 0 for bottom; 1 for left; 2 for top; "
 "3 for right."
 msgstr "प्रतिमा संग्रह पटल स्थिती. तळ करीता 0; डावा करीता 1; शिर्ष करीता 2; उजवा करीता 3."
 
-#: ../data/eog.schemas.in.h:15
+#: ../data/eom.schemas.in.h:15
 msgid "Interpolate Image"
 msgstr "प्रतिमा एकमेकावर ग्या"
 
-#: ../data/eog.schemas.in.h:16
+#: ../data/eom.schemas.in.h:16
 msgid ""
 "List of active plugins. It doesn't contain the \"Location\" of the active "
-"plugins. See the .eog-plugin file for obtaining the \"Location\" of a given "
+"plugins. See the .eom-plugin file for obtaining the \"Location\" of a given "
 "plugin."
 msgstr ""
 "सक्रीय प्लगईनची यादी. त्यात सक्रीय प्लगईनची \"स्थान\" समाविष्टीत नाही. प्रविष्ट केलेल्या "
-"प्लगइनचे \"स्थान\" प्राप्त करण्याकरीता .eog-plugin फाइल पहा."
+"प्लगइनचे \"स्थान\" प्राप्त करण्याकरीता .eom-plugin फाइल पहा."
 
-#: ../data/eog.schemas.in.h:17
+#: ../data/eom.schemas.in.h:17
 msgid "Loop through the image sequence"
 msgstr "प्रतिमा श्रृंखला मधून वारंवार कार्यरत रहा"
 
-#: ../data/eog.schemas.in.h:18
+#: ../data/eom.schemas.in.h:18
 msgid "Scroll wheel zoom"
 msgstr "स्क्रोल चाक विशालीकरण"
 
-#: ../data/eog.schemas.in.h:19
+#: ../data/eom.schemas.in.h:19
 msgid "Show/hide the image collection pane scroll buttons."
 msgstr "प्रतिमा संग्रह पट्टल स्क्रोल बटण दाखवा/लपवा."
 
-#: ../data/eog.schemas.in.h:20
+#: ../data/eom.schemas.in.h:20
 msgid "Show/hide the image collection pane."
 msgstr "प्रतिमा संग्रह पट्टल स्क्रोल बटण दाखवा/लपवा."
 
-#: ../data/eog.schemas.in.h:21
+#: ../data/eom.schemas.in.h:21
 msgid "Show/hide the window side pane."
 msgstr "चौकटीतील बाजूचे पटल दाखवा/लपवा."
 
-#: ../data/eog.schemas.in.h:22
+#: ../data/eom.schemas.in.h:22
 msgid "Show/hide the window statusbar."
 msgstr "चौकटीतील स्थितीपट्टी दाखवा/लपवा."
 
-#: ../data/eog.schemas.in.h:23
+#: ../data/eom.schemas.in.h:23
 msgid "Show/hide the window toolbar."
 msgstr "चौकटीतील साधनपट्टी दाखवा/लपवा."
 
-#: ../data/eog.schemas.in.h:25
+#: ../data/eom.schemas.in.h:25
 #, no-c-format
 msgid ""
 "The multiplier to be applied when using the mouse scroll wheel for zooming. "
@@ -470,33 +470,33 @@ msgstr ""
 "करीता विशालीकरण टप्पाचे वर्णन करते. उदाहरणार्थ, प्रत्येक स्क्रोल घटना करीता 0.05 म्हणजे "
 "5% झूम वाढ व 1 म्हणजे 100% झूम वाढ दर्शवितो."
 
-#: ../data/eog.schemas.in.h:26
+#: ../data/eom.schemas.in.h:26
 msgid "Transparency color"
 msgstr "पारदर्शिकीय रंग"
 
-#: ../data/eog.schemas.in.h:27
+#: ../data/eom.schemas.in.h:27
 msgid "Transparency indicator"
 msgstr "पारदर्शिकीय सूचक"
 
-#: ../data/eog.schemas.in.h:28
+#: ../data/eom.schemas.in.h:28
 msgid "Trash images without asking"
 msgstr "न विचारता प्रतिमा कचरापेटीत टाका"
 
-#: ../data/eog.schemas.in.h:29
+#: ../data/eom.schemas.in.h:29
 msgid "Whether or not the sequence of images should be shown in an endless loop."
 msgstr "अखंड साखळीच्या रूपात प्रतिमाची क्रमवारी दाखवायची आहे की नाही."
 
-#: ../data/eog.schemas.in.h:30
+#: ../data/eom.schemas.in.h:30
 msgid ""
 "Whether the filechooser should show the user's pictures folder if no images "
 "are loaded."
 msgstr "प्रतिमा लोड न झाल्यास filechooser ने वापरकर्त्याचे चित्र फोल्डर दाखवायचे."
 
-#: ../data/eog.schemas.in.h:31
+#: ../data/eom.schemas.in.h:31
 msgid "Whether the image collection pane should be resizable or not."
 msgstr "प्रतिमा संग्रह पटल पुन्हआकार देण्याजोगी असावी किंवा नाही."
 
-#: ../data/eog.schemas.in.h:32
+#: ../data/eom.schemas.in.h:32
 msgid ""
 "Whether the image should be extrapolated on zoom-in or not. This leads to "
 "blurry quality and is somewhat slower than non extrapolated images."
@@ -504,7 +504,7 @@ msgstr ""
 "प्रतिमा मोठे केल्यावर एक्स्ट्रापोलेट करायचे की नाही. यामुळे प्रतिमेचा दर्जा फुसट होतो व "
 "विना एक्स्ट्रापोलेट प्रतिमापेक्षा हळु होते."
 
-#: ../data/eog.schemas.in.h:33
+#: ../data/eom.schemas.in.h:33
 msgid ""
 "Whether the image should be interpolated on zoom-out or not. This leads to "
 "better quality but is somewhat slower than non interpolated images."
@@ -512,281 +512,281 @@ msgstr ""
 "प्रतिमा लहान झाल्यावर इंटरपोलेट कारायचे की नाही. यामुळे प्रतिमेचा दर्जा उत्तम होतो परंतु "
 "विना एक्स्ट्रापोलेट प्रतिमापेक्षा हळु होते."
 
-#: ../data/eog.schemas.in.h:34
+#: ../data/eom.schemas.in.h:34
 msgid "Whether the image should be rotated automatically based on EXIF orientation."
 msgstr "EXIF निर्देशिकावर आधारीत प्रतिमा आपोआप गोलगोल फीरविले पाहिजे का."
 
-#: ../data/eog.schemas.in.h:35
+#: ../data/eom.schemas.in.h:35
 msgid "Whether the metadata list in the properties dialog should have its own page."
 msgstr "गुणधर्म संवाद मधील मेटाडाटा सूचीचे स्वतःचे पान असायला हवे."
 
-#: ../data/eog.schemas.in.h:36
+#: ../data/eom.schemas.in.h:36
 msgid "Whether the scroll wheel should be used for zooming or not."
 msgstr "स्क्रोल चाक विशालीकरण करीता वापरले जावे किंवा नाही."
 
-#: ../data/eog.schemas.in.h:37
+#: ../data/eom.schemas.in.h:37
 msgid "Zoom multiplier"
 msgstr "झूम मल्टीप्लायर"
 
-#: ../src/eog-file-chooser.c:128
+#: ../src/eom-file-chooser.c:128
 msgid "File format is unknown or unsupported"
 msgstr "फाइल अपरिचीत किंवा असमर्थीत आहे"
 
-#: ../src/eog-file-chooser.c:133
+#: ../src/eom-file-chooser.c:133
 msgid ""
 "Eye of MATE could not determine a supported writable file format based on "
 "the filename."
 msgstr "फाइलनावावर आधारीत Eye of MATE लिहीण्याजोगी फाइल स्वरूपन निश्चित करू शकले नाही."
 
-#: ../src/eog-file-chooser.c:134
+#: ../src/eom-file-chooser.c:134
 msgid "Please try a different file extension like .png or .jpg."
 msgstr "कृपया अन्य फाइल विस्तार जसे की .png किंवा .jpg वापरून पहा."
 
-#: ../src/eog-file-chooser.c:166
+#: ../src/eom-file-chooser.c:166
 msgid "All Files"
 msgstr "सर्व फाइल"
 
-#: ../src/eog-file-chooser.c:171
+#: ../src/eom-file-chooser.c:171
 msgid "All Images"
 msgstr "सर्व प्रतिमा"
 
 #. Filter name: First description then file extension, eg. "The PNG-Format (*.png)".
-#: ../src/eog-file-chooser.c:192
+#: ../src/eom-file-chooser.c:192
 #, c-format
 msgid "%s (*.%s)"
 msgstr "%s (*.%s)"
 
 #. Pixel size of image: width x height in pixel
-#: ../src/eog-file-chooser.c:288 ../src/eog-properties-dialog.c:137
-#: ../src/eog-properties-dialog.c:139 ../src/eog-thumb-view.c:379
+#: ../src/eom-file-chooser.c:288 ../src/eom-properties-dialog.c:137
+#: ../src/eom-properties-dialog.c:139 ../src/eom-thumb-view.c:379
 msgid "pixel"
 msgid_plural "pixels"
 msgstr[0] "बिंदू"
 msgstr[1] "बिंदू"
 
-#: ../src/eog-file-chooser.c:437
+#: ../src/eom-file-chooser.c:437
 msgid "Load Image"
 msgstr "प्रतिमा सुरू करा"
 
-#: ../src/eog-file-chooser.c:445
+#: ../src/eom-file-chooser.c:445
 msgid "Save Image"
 msgstr "प्रतिमा संचयीत करा"
 
-#: ../src/eog-file-chooser.c:453
+#: ../src/eom-file-chooser.c:453
 msgid "Open Folder"
 msgstr "संचयीका उघडा"
 
-#: ../src/eog-image.c:546
+#: ../src/eom-image.c:546
 #, c-format
 msgid "Transformation on unloaded image."
 msgstr "दाखल न केलेल्या प्रतिमार रूपांतर."
 
-#: ../src/eog-image.c:574
+#: ../src/eom-image.c:574
 #, c-format
 msgid "Transformation failed."
 msgstr "रूपांतर अपयशी."
 
-#: ../src/eog-image.c:978
+#: ../src/eom-image.c:978
 #, c-format
 msgid "EXIF not supported for this file format."
 msgstr "अशा फाइल रितीकरिता EXIF कृतीला सहाय्य नाही."
 
-#: ../src/eog-image.c:1093
+#: ../src/eom-image.c:1093
 #, c-format
 msgid "Image loading failed."
 msgstr "प्रतिमा."
 
-#: ../src/eog-image.c:1498 ../src/eog-image.c:1600
+#: ../src/eom-image.c:1498 ../src/eom-image.c:1600
 #, c-format
 msgid "No image loaded."
 msgstr "प्रतिमा दाखल केले नाही."
 
-#: ../src/eog-image.c:1508 ../src/eog-image.c:1612
+#: ../src/eom-image.c:1508 ../src/eom-image.c:1612
 #, c-format
 msgid "Temporary file creation failed."
 msgstr "तात्पुरती फाइल सुरू करण्यास अपयशी."
 
-#: ../src/eog-image-jpeg.c:361
+#: ../src/eom-image-jpeg.c:361
 #, c-format
 msgid "Couldn't create temporary file for saving: %s"
 msgstr "संचयन करीता तात्पुरती फाइल बनविता येऊ शकले नाही: %s"
 
-#: ../src/eog-image-jpeg.c:380
+#: ../src/eom-image-jpeg.c:380
 #, c-format
 msgid "Couldn't allocate memory for loading JPEG file"
 msgstr "JPEG फाइल करीता स्मृती उपलब्ध करू शकले नाही"
 
-#: ../src/eog-exif-details.c:68
+#: ../src/eom-exif-details.c:68
 msgid "Camera"
 msgstr "कैमेरा"
 
-#: ../src/eog-exif-details.c:69
+#: ../src/eom-exif-details.c:69
 msgid "Image Data"
 msgstr "प्रतिमा विषयक माहिती"
 
-#: ../src/eog-exif-details.c:70
+#: ../src/eom-exif-details.c:70
 msgid "Image Taking Conditions"
 msgstr "प्रतिमा निवड विषयक नियम"
 
-#: ../src/eog-exif-details.c:71
+#: ../src/eom-exif-details.c:71
 msgid "Maker Note"
 msgstr "कर्त्याची नोंद"
 
-#: ../src/eog-exif-details.c:72
+#: ../src/eom-exif-details.c:72
 msgid "Other"
 msgstr "इतर"
 
-#: ../src/eog-exif-details.c:74
+#: ../src/eom-exif-details.c:74
 msgid "XMP Exif"
 msgstr "XMP Exif"
 
-#: ../src/eog-exif-details.c:75
+#: ../src/eom-exif-details.c:75
 msgid "XMP IPTC"
 msgstr "XMP IPTC"
 
-#: ../src/eog-exif-details.c:76
+#: ../src/eom-exif-details.c:76
 msgid "XMP Rights Management"
 msgstr "XMP हक्क व्यवस्थापन"
 
-#: ../src/eog-exif-details.c:77
+#: ../src/eom-exif-details.c:77
 msgid "XMP Other"
 msgstr "XMP इतर"
 
-#: ../src/eog-exif-details.c:251
+#: ../src/eom-exif-details.c:251
 msgid "Tag"
 msgstr "टॅग"
 
-#: ../src/eog-exif-details.c:258
+#: ../src/eom-exif-details.c:258
 msgid "Value"
 msgstr "मूल्य"
 
 #. A strftime-formatted string, to display the date the image was taken.
-#: ../src/eog-exif-util.c:113 ../src/eog-exif-util.c:153
+#: ../src/eom-exif-util.c:113 ../src/eom-exif-util.c:153
 msgid "%a, %d %B %Y  %X"
 msgstr "%a, %d %B %Y  %X"
 
 #. A strftime-formatted string, to display the date the image was taken, for the case we don't have the time.
-#: ../src/eog-exif-util.c:147
+#: ../src/eom-exif-util.c:147
 msgid "%a, %d %B %Y"
 msgstr "%a, %d %B %Y"
 
-#: ../src/eog-error-message-area.c:110
+#: ../src/eom-error-message-area.c:110
 msgid "_Retry"
 msgstr "पुन्हा प्रयत्न करा (_R)"
 
-#: ../src/eog-error-message-area.c:140
+#: ../src/eom-error-message-area.c:140
 #, c-format
 msgid "Could not load image '%s'."
 msgstr "प्रतिमा '%s' दाखल करता आले नाही."
 
-#: ../src/eog-error-message-area.c:174
+#: ../src/eom-error-message-area.c:174
 #, c-format
 msgid "No images found in '%s'."
 msgstr "'%s' मध्ये प्रतिमा आढळली नाही."
 
-#: ../src/eog-error-message-area.c:181
+#: ../src/eom-error-message-area.c:181
 msgid "The given locations contain no images."
 msgstr "प्रविष्ट स्थानात प्रतिमा समाविष्टीत नाही."
 
-#: ../src/eog-print.c:197
+#: ../src/eom-print.c:197
 msgid "Image Settings"
 msgstr "प्रतिमा संयोजना"
 
-#: ../src/eog-print-image-setup.c:834
+#: ../src/eom-print-image-setup.c:834
 msgid "Image"
 msgstr "प्रतिमा"
 
-#: ../src/eog-print-image-setup.c:835
+#: ../src/eom-print-image-setup.c:835
 msgid "The image whose printing properties will be setup"
 msgstr "छपाई गुणधर्म स्थापीत केले जाईल ती प्रतिमा"
 
-#: ../src/eog-print-image-setup.c:841
+#: ../src/eom-print-image-setup.c:841
 msgid "Page Setup"
 msgstr "पृष्ठ संयोजना"
 
-#: ../src/eog-print-image-setup.c:842
+#: ../src/eom-print-image-setup.c:842
 msgid "The information for the page where the image will be printed"
 msgstr "प्रतिमा जेथे छापायची त्या पानावरील माहिती"
 
-#: ../src/eog-print-image-setup.c:870
+#: ../src/eom-print-image-setup.c:870
 msgid "Position"
 msgstr "जागा"
 
-#: ../src/eog-print-image-setup.c:875
+#: ../src/eom-print-image-setup.c:875
 msgid "_Left:"
 msgstr "डावी (_L):"
 
-#: ../src/eog-print-image-setup.c:876
+#: ../src/eom-print-image-setup.c:876
 msgid "_Right:"
 msgstr "उजवी (_R):"
 
-#: ../src/eog-print-image-setup.c:877
+#: ../src/eom-print-image-setup.c:877
 msgid "_Top:"
 msgstr "शिर्ष (_T):"
 
-#: ../src/eog-print-image-setup.c:878
+#: ../src/eom-print-image-setup.c:878
 msgid "_Bottom:"
 msgstr "तळ(_B):"
 
-#: ../src/eog-print-image-setup.c:880
+#: ../src/eom-print-image-setup.c:880
 msgid "C_enter:"
 msgstr "मध्य (_e):"
 
-#: ../src/eog-print-image-setup.c:885
+#: ../src/eom-print-image-setup.c:885
 msgid "None"
 msgstr "कोणी नाही"
 
-#: ../src/eog-print-image-setup.c:887
+#: ../src/eom-print-image-setup.c:887
 msgid "Horizontal"
 msgstr "आढवे"
 
-#: ../src/eog-print-image-setup.c:889
+#: ../src/eom-print-image-setup.c:889
 msgid "Vertical"
 msgstr "उभे"
 
-#: ../src/eog-print-image-setup.c:891
+#: ../src/eom-print-image-setup.c:891
 msgid "Both"
 msgstr "दोन्ही"
 
-#: ../src/eog-print-image-setup.c:907
+#: ../src/eom-print-image-setup.c:907
 msgid "Size"
 msgstr "आकार"
 
-#: ../src/eog-print-image-setup.c:912
+#: ../src/eom-print-image-setup.c:912
 msgid "_Width:"
 msgstr "रूंदी (_W):"
 
-#: ../src/eog-print-image-setup.c:914
+#: ../src/eom-print-image-setup.c:914
 msgid "_Height:"
 msgstr "ऊंची (_H):"
 
-#: ../src/eog-print-image-setup.c:917
+#: ../src/eom-print-image-setup.c:917
 msgid "_Scaling:"
 msgstr "स्केलींग (_S):"
 
-#: ../src/eog-print-image-setup.c:930
+#: ../src/eom-print-image-setup.c:930
 msgid "_Unit:"
 msgstr "यूनीट (_U):"
 
-#: ../src/eog-print-image-setup.c:935
+#: ../src/eom-print-image-setup.c:935
 msgid "Millimeters"
 msgstr "मिलीमीटर"
 
-#: ../src/eog-print-image-setup.c:937
+#: ../src/eom-print-image-setup.c:937
 msgid "Inches"
 msgstr "इंच"
 
-#: ../src/eog-print-image-setup.c:967
+#: ../src/eom-print-image-setup.c:967
 msgid "Preview"
 msgstr "पूर्वदृश्य"
 
-#: ../src/eog-properties-dialog.c:154
+#: ../src/eom-properties-dialog.c:154
 msgid "Unknown"
 msgstr "अपरिचीत"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../src/eog-properties-dialog.c:232
+#: ../src/eom-properties-dialog.c:232
 #, c-format
 msgid "%.1f (lens)"
 msgstr "%.1f (lens)"
@@ -794,12 +794,12 @@ msgstr "%.1f (lens)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../src/eog-properties-dialog.c:243
+#: ../src/eom-properties-dialog.c:243
 #, c-format
 msgid "%.1f (35mm film)"
 msgstr "%.1f (35mm film)"
 
-#: ../src/eog-save-as-dialog-helper.c:161
+#: ../src/eom-save-as-dialog-helper.c:161
 msgid "as is"
 msgstr "जसे आहे तसे"
 
@@ -813,25 +813,25 @@ msgstr "जसे आहे तसे"
 #. * Note that translating this doesn't guarantee that you get localized
 #. * digits. That needs support from your system and locale definition
 #. * too.
-#: ../src/eog-statusbar.c:125
+#: ../src/eom-statusbar.c:125
 #, c-format
 msgid "%d / %d"
 msgstr "%d / %d"
 
-#: ../src/eog-thumb-view.c:407
+#: ../src/eom-thumb-view.c:407
 msgid "Taken on"
 msgstr "प्राप्त केले"
 
-#: ../src/eog-uri-converter.c:984
+#: ../src/eom-uri-converter.c:984
 #, c-format
 msgid "At least two file names are equal."
 msgstr "किमान दोन फाइल नाव समान आहेत."
 
-#: ../src/eog-util.c:68
+#: ../src/eom-util.c:68
 msgid "Could not display help for Eye of MATE"
 msgstr "Eye of MATE करीता मदत दृश्यीत करू शकत नाही"
 
-#: ../src/eog-util.c:116
+#: ../src/eom-util.c:116
 msgid " (invalid Unicode)"
 msgstr " (अवैध युनिकोड)"
 
@@ -841,14 +841,14 @@ msgstr " (अवैध युनिकोड)"
 #. * - image height
 #. * - image size in bytes
 #. * - zoom in percent
-#: ../src/eog-window.c:770
+#: ../src/eom-window.c:770
 #, c-format
 msgid "%i x %i pixel  %s    %i%%"
 msgid_plural "%i x %i pixels  %s    %i%%"
 msgstr[0] "%i x %i पिक्सेल  %s    %i%%"
 msgstr[1] "%i x %i पिक्सेल्स्  %s    %i%%"
 
-#: ../src/eog-window.c:1188
+#: ../src/eom-window.c:1188
 #, c-format
 msgid "Use \"%s\" to open the selected image"
 msgstr "निवडलेली प्रतिमा उघडण्याकरीता  \"%s\" चा वापर करा"
@@ -858,17 +858,17 @@ msgstr "निवडलेली प्रतिमा उघडण्याक�
 #. * - the original filename
 #. * - the current image's position in the queue
 #. * - the total number of images queued for saving
-#: ../src/eog-window.c:1338
+#: ../src/eom-window.c:1338
 #, c-format
 msgid "Saving image \"%s\" (%u/%u)"
 msgstr "प्रतिमा \"%s\" (%u/%u) संचयीत करीत आहे"
 
-#: ../src/eog-window.c:1677
+#: ../src/eom-window.c:1677
 #, c-format
 msgid "Loading image \"%s\""
 msgstr "प्रतिमा \"%s\" दाखल करीत आहे"
 
-#: ../src/eog-window.c:2376
+#: ../src/eom-window.c:2376
 #, c-format
 msgid ""
 "Error printing file:\n"
@@ -877,21 +877,21 @@ msgstr ""
 "फाइल छपाई करतेवेळी त्रुटी:\n"
 "%s"
 
-#: ../src/eog-window.c:2518
+#: ../src/eom-window.c:2518
 msgid "Toolbar Editor"
 msgstr "उपकरणपट्टी संपादक"
 
-#: ../src/eog-window.c:2521
+#: ../src/eom-window.c:2521
 msgid "_Reset to Default"
 msgstr "मुलभूत करीता पुनःनिर्धारीत करा (_R)"
 
-#: ../src/eog-window.c:2607
+#: ../src/eom-window.c:2607
 msgid "translator-credits"
 msgstr ""
 "संदिप शेडमाके <sandeep.shedmake@gmail.com>, 2008, 2009. संदिप शेडमाके "
 "<sshedmak@redhat.com> 2009, 2010."
 
-#: ../src/eog-window.c:2610
+#: ../src/eom-window.c:2610
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -903,7 +903,7 @@ msgstr ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version.\n"
 
-#: ../src/eog-window.c:2614
+#: ../src/eom-window.c:2614
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -915,7 +915,7 @@ msgstr ""
 "FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
 "more details.\n"
 
-#: ../src/eog-window.c:2618
+#: ../src/eom-window.c:2618
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
@@ -925,33 +925,33 @@ msgstr ""
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place - Suite 330, Boston, MA 02111-1307, USA."
 
-#: ../src/eog-window.c:2631
+#: ../src/eom-window.c:2631
 msgid "Eye of MATE"
 msgstr "Eye of MATE"
 
-#: ../src/eog-window.c:2634
+#: ../src/eom-window.c:2634
 msgid "The MATE image viewer."
 msgstr "MATE प्रतिमा दृश्यक."
 
-#: ../src/eog-window.c:3075
+#: ../src/eom-window.c:3075
 msgid "Saving image locally..."
 msgstr "प्रतिमा स्थानीयरित्या साठवत आहे..."
 
-#: ../src/eog-window.c:3157
+#: ../src/eom-window.c:3157
 #, c-format
 msgid ""
 "Are you sure you want to move\n"
 "\"%s\" to the trash?"
 msgstr "तुम्हाला नक्की \"%s\" ला कचरापेटीकडे हलवायचे?"
 
-#: ../src/eog-window.c:3160
+#: ../src/eom-window.c:3160
 #, c-format
 msgid ""
 "A trash for \"%s\" couldn't be found. Do you want to remove this image "
 "permanently?"
 msgstr "\"%s\" करीता कचरापेटी आढळली नाही. तुम्हाला ही प्रतिमा नेहमीकरीता काढूण टाकायची?"
 
-#: ../src/eog-window.c:3165
+#: ../src/eom-window.c:3165
 #, c-format
 msgid ""
 "Are you sure you want to move\n"
@@ -966,7 +966,7 @@ msgstr[1] ""
 "तुम्हाला नक्की %d निवडलेल्या प्रतिमा \n"
 "कचरापेटीकडे हलवायचे?"
 
-#: ../src/eog-window.c:3170
+#: ../src/eom-window.c:3170
 msgid ""
 "Some of the selected images can't be moved to the trash and will be removed "
 "permanently. Are you sure you want to proceed?"
@@ -974,387 +974,387 @@ msgstr ""
 "काहिक निवडलेली प्रतिमा कचरापेटीत स्थानांतरीत केले जाऊ शकत नाही व नेहमीकरीता काढूण "
 "टाकले जातिल. तुम्हाला नक्की पुढे जायचे?"
 
-#: ../src/eog-window.c:3187 ../src/eog-window.c:3614 ../src/eog-window.c:3638
+#: ../src/eom-window.c:3187 ../src/eom-window.c:3614 ../src/eom-window.c:3638
 msgid "Move to _Trash"
 msgstr "कचरापेटीकडे हलवा (_T)"
 
-#: ../src/eog-window.c:3189
+#: ../src/eom-window.c:3189
 msgid "_Do not ask again during this session"
 msgstr "या सत्रवेळी पुनः विचारू नका (_D)"
 
-#: ../src/eog-window.c:3234 ../src/eog-window.c:3248
+#: ../src/eom-window.c:3234 ../src/eom-window.c:3248
 #, c-format
 msgid "Couldn't access trash."
 msgstr "कचरापेटीस प्रवेश नाही."
 
-#: ../src/eog-window.c:3256
+#: ../src/eom-window.c:3256
 #, c-format
 msgid "Couldn't delete file"
 msgstr "फाइल नष्ट करण्यास अशक्य"
 
-#: ../src/eog-window.c:3327
+#: ../src/eom-window.c:3327
 #, c-format
 msgid "Error on deleting image %s"
 msgstr "प्रतिमा %s काढूण टाकतेवेळी त्रुटी"
 
-#: ../src/eog-window.c:3534
+#: ../src/eom-window.c:3534
 msgid "_File"
 msgstr "फाइल (_F)"
 
-#: ../src/eog-window.c:3535
+#: ../src/eom-window.c:3535
 msgid "_Edit"
 msgstr "संपादन (_E)"
 
-#: ../src/eog-window.c:3536
+#: ../src/eom-window.c:3536
 msgid "_View"
 msgstr "दृश्य (_V)"
 
-#: ../src/eog-window.c:3537
+#: ../src/eom-window.c:3537
 msgid "_Image"
 msgstr "प्रतिमा (_I)"
 
-#: ../src/eog-window.c:3538
+#: ../src/eom-window.c:3538
 msgid "_Go"
 msgstr "जा (_G)"
 
-#: ../src/eog-window.c:3539
+#: ../src/eom-window.c:3539
 msgid "_Tools"
 msgstr "उपकरणे (_T)"
 
-#: ../src/eog-window.c:3540
+#: ../src/eom-window.c:3540
 msgid "_Help"
 msgstr "मदत (_H)"
 
-#: ../src/eog-window.c:3542
+#: ../src/eom-window.c:3542
 msgid "_Open..."
 msgstr "उघडा (_O)..."
 
-#: ../src/eog-window.c:3543
+#: ../src/eom-window.c:3543
 msgid "Open a file"
 msgstr "फाइल उघडा"
 
-#: ../src/eog-window.c:3545
+#: ../src/eom-window.c:3545
 msgid "_Close"
 msgstr "बंद करा(_C)"
 
-#: ../src/eog-window.c:3546
+#: ../src/eom-window.c:3546
 msgid "Close window"
 msgstr "संचयीका बंद करा"
 
-#: ../src/eog-window.c:3548
+#: ../src/eom-window.c:3548
 msgid "T_oolbar"
 msgstr "साधनपट्टी (_o)"
 
-#: ../src/eog-window.c:3549
+#: ../src/eom-window.c:3549
 msgid "Edit the application toolbar"
 msgstr "अनुप्रयोग साधनपट्टी संपादीत करा"
 
-#: ../src/eog-window.c:3551
+#: ../src/eom-window.c:3551
 msgid "Prefere_nces"
 msgstr "प्राधान्यता (_n)"
 
-#: ../src/eog-window.c:3552
+#: ../src/eom-window.c:3552
 msgid "Preferences for Eye of MATE"
 msgstr "Eye of MATE करीता प्राधान्यता"
 
-#: ../src/eog-window.c:3554
+#: ../src/eom-window.c:3554
 msgid "_Contents"
 msgstr "अनुक्रम (_C)"
 
-#: ../src/eog-window.c:3555
+#: ../src/eom-window.c:3555
 msgid "Help on this application"
 msgstr "कार्यक्रमकरीता मदत"
 
-#: ../src/eog-window.c:3557 ../src/eog-plugin-manager.c:505
+#: ../src/eom-window.c:3557 ../src/eom-plugin-manager.c:505
 msgid "_About"
 msgstr "विषयी (_A)"
 
-#: ../src/eog-window.c:3558
+#: ../src/eom-window.c:3558
 msgid "About this application"
 msgstr "या अनुप्रयोग विषयी"
 
-#: ../src/eog-window.c:3563
+#: ../src/eom-window.c:3563
 msgid "_Toolbar"
 msgstr "साधनपट्टी (_T)"
 
-#: ../src/eog-window.c:3564
+#: ../src/eom-window.c:3564
 msgid "Changes the visibility of the toolbar in the current window"
 msgstr "सद्याच्या चौकटमध्ये साधनपट्टीचे दृश्य बदलवितो"
 
-#: ../src/eog-window.c:3566
+#: ../src/eom-window.c:3566
 msgid "_Statusbar"
 msgstr "स्थितीपट्टी(_S)"
 
-#: ../src/eog-window.c:3567
+#: ../src/eom-window.c:3567
 msgid "Changes the visibility of the statusbar in the current window"
 msgstr "सद्याच्या चौकटीमध्ये स्थितीदर्शीकेचे दृश्य बदलवितो"
 
-#: ../src/eog-window.c:3569
+#: ../src/eom-window.c:3569
 msgid "_Image Collection"
 msgstr "प्रतिमा संकलन (_I)"
 
-#: ../src/eog-window.c:3570
+#: ../src/eom-window.c:3570
 msgid "Changes the visibility of the image collection pane in the current window"
 msgstr "सद्याच्या चौकटमध्ये प्रतिमा संग्रह पटलाचे दृश्य बदलवितो"
 
-#: ../src/eog-window.c:3572
+#: ../src/eom-window.c:3572
 msgid "Side _Pane"
 msgstr "बाजूचे पटल (_P)"
 
-#: ../src/eog-window.c:3573
+#: ../src/eom-window.c:3573
 msgid "Changes the visibility of the side pane in the current window"
 msgstr "सद्याच्या चौकटमध्ये बाजूच्या पटलाचे दृश्य बदलवितो"
 
-#: ../src/eog-window.c:3578
+#: ../src/eom-window.c:3578
 msgid "_Save"
 msgstr "संचयीता करा(_S)"
 
-#: ../src/eog-window.c:3579
+#: ../src/eom-window.c:3579
 msgid "Save changes in currently selected images"
 msgstr "सद्या निवडलेल्या प्रतिमा मध्ये संचयीत करतो"
 
-#: ../src/eog-window.c:3581
+#: ../src/eom-window.c:3581
 msgid "Open _with"
 msgstr "यासह उघडा (_w)"
 
-#: ../src/eog-window.c:3582
+#: ../src/eom-window.c:3582
 msgid "Open the selected image with a different application"
 msgstr "निवडलेली प्रतिमा अन्य अनुप्रयोगसह उघटा"
 
-#: ../src/eog-window.c:3584
+#: ../src/eom-window.c:3584
 msgid "Save _As..."
 msgstr "असे संग्रहा (_A)..."
 
-#: ../src/eog-window.c:3585
+#: ../src/eom-window.c:3585
 msgid "Save the selected images with a different name"
 msgstr "निवडलेली प्रतिमा अन्य नावाने संचयीत करा"
 
-#: ../src/eog-window.c:3588
+#: ../src/eom-window.c:3588
 msgid "Setup the page properties for printing"
 msgstr "छपाई करीता पान गुणधर्म स्थापीत करा"
 
-#: ../src/eog-window.c:3590
+#: ../src/eom-window.c:3590
 msgid "_Print..."
 msgstr "छापा (_P)..."
 
-#: ../src/eog-window.c:3591
+#: ../src/eom-window.c:3591
 msgid "Print the selected image"
 msgstr "निवडलेली प्रतिमाचे छपाई करा"
 
-#: ../src/eog-window.c:3593
+#: ../src/eom-window.c:3593
 msgid "Prope_rties"
 msgstr "गुणधर्म (_r)"
 
-#: ../src/eog-window.c:3594
+#: ../src/eom-window.c:3594
 msgid "Show the properties and metadata of the selected image"
 msgstr "निवडलेली प्रतिमाचे गुणधर्म व व्यापक माहिती दाखवा"
 
-#: ../src/eog-window.c:3596
+#: ../src/eom-window.c:3596
 msgid "_Undo"
 msgstr "मुळ स्थितीवर या (_U)"
 
-#: ../src/eog-window.c:3597
+#: ../src/eom-window.c:3597
 msgid "Undo the last change in the image"
 msgstr "प्रतिमा मधील शेवटचे बदल रद्द करा"
 
-#: ../src/eog-window.c:3599
+#: ../src/eom-window.c:3599
 msgid "Flip _Horizontal"
 msgstr "आडव्या दिशेने हालवा (_H)"
 
-#: ../src/eog-window.c:3600
+#: ../src/eom-window.c:3600
 msgid "Mirror the image horizontally"
 msgstr "प्रतिमा आढव्या बाजूने प्रतिकृत करा"
 
-#: ../src/eog-window.c:3602
+#: ../src/eom-window.c:3602
 msgid "Flip _Vertical"
 msgstr "उभ्या दिशेने हालवा (_V)"
 
-#: ../src/eog-window.c:3603
+#: ../src/eom-window.c:3603
 msgid "Mirror the image vertically"
 msgstr "प्रतिमा उभ्या बाजूने प्रतिकृत करा"
 
-#: ../src/eog-window.c:3605
+#: ../src/eom-window.c:3605
 msgid "_Rotate Clockwise"
 msgstr "घड्याळ प्रमाणे फिरवा (_R)"
 
-#: ../src/eog-window.c:3606
+#: ../src/eom-window.c:3606
 msgid "Rotate the image 90 degrees to the right"
 msgstr "प्रतिमा 90 डीग्री उजव्या बाजूस फिरवा"
 
-#: ../src/eog-window.c:3608
+#: ../src/eom-window.c:3608
 msgid "Rotate Counterc_lockwise"
 msgstr "घड्याळाच्या उलट दिशेने फिरवा (_l)"
 
-#: ../src/eog-window.c:3609
+#: ../src/eom-window.c:3609
 msgid "Rotate the image 90 degrees to the left"
 msgstr "प्रतिमा 90 डीग्री डाव्या बाजूस फिरवा"
 
-#: ../src/eog-window.c:3611
+#: ../src/eom-window.c:3611
 msgid "Set as _Desktop Background"
 msgstr "डेस्कटॉप पार्श्वभूमी नुरूप निश्चित करा (_b)"
 
-#: ../src/eog-window.c:3612
+#: ../src/eom-window.c:3612
 msgid "Set the selected image as the desktop background"
 msgstr "निवडलेली प्रतिमा यांस डेस्कटॉप पार्श्वभूमी नुरूप निश्चित करा"
 
-#: ../src/eog-window.c:3615
+#: ../src/eom-window.c:3615
 msgid "Move the selected image to the trash folder"
 msgstr "निवडलेली प्रतिमा कचरापेटी संचयीका मध्ये हलवा"
 
-#: ../src/eog-window.c:3617 ../src/eog-window.c:3629 ../src/eog-window.c:3632
+#: ../src/eom-window.c:3617 ../src/eom-window.c:3629 ../src/eom-window.c:3632
 msgid "_Zoom In"
 msgstr "मोठ्यात मोठे करा (_Z)"
 
-#: ../src/eog-window.c:3618 ../src/eog-window.c:3630
+#: ../src/eom-window.c:3618 ../src/eom-window.c:3630
 msgid "Enlarge the image"
 msgstr "प्रतिमा मोठे करा"
 
-#: ../src/eog-window.c:3620 ../src/eog-window.c:3635
+#: ../src/eom-window.c:3620 ../src/eom-window.c:3635
 msgid "Zoom _Out"
 msgstr "लहानात लहान करा (_O)"
 
-#: ../src/eog-window.c:3621 ../src/eog-window.c:3633 ../src/eog-window.c:3636
+#: ../src/eom-window.c:3621 ../src/eom-window.c:3633 ../src/eom-window.c:3636
 msgid "Shrink the image"
 msgstr "प्रतिमा संकुचीत करा"
 
-#: ../src/eog-window.c:3623
+#: ../src/eom-window.c:3623
 msgid "_Normal Size"
 msgstr "सामान्य आकार (_N)"
 
-#: ../src/eog-window.c:3624
+#: ../src/eom-window.c:3624
 msgid "Show the image at its normal size"
 msgstr "प्रतिमा सामान्य आकारात दाखवा"
 
-#: ../src/eog-window.c:3626
+#: ../src/eom-window.c:3626
 msgid "Best _Fit"
 msgstr "सर्वात उत्तम आकार (_F)"
 
-#: ../src/eog-window.c:3627
+#: ../src/eom-window.c:3627
 msgid "Fit the image to the window"
 msgstr "प्रतिमा चौकटीत गट्ट बसवा"
 
-#: ../src/eog-window.c:3644
+#: ../src/eom-window.c:3644
 msgid "_Full Screen"
 msgstr "पूर्ण पडदा (_F)"
 
-#: ../src/eog-window.c:3645
+#: ../src/eom-window.c:3645
 msgid "Show the current image in fullscreen mode"
 msgstr "सद्याची प्रतिमा पूर्णतया पध्दतीत दाखवा"
 
-#: ../src/eog-window.c:3650 ../src/eog-window.c:3662
+#: ../src/eom-window.c:3650 ../src/eom-window.c:3662
 msgid "_Previous Image"
 msgstr "पूर्वीची प्रतिमा (_P)"
 
-#: ../src/eog-window.c:3651
+#: ../src/eom-window.c:3651
 msgid "Go to the previous image of the collection"
 msgstr "संग्रहातील पूर्वीच्या प्रतिमाकडे जा"
 
-#: ../src/eog-window.c:3653
+#: ../src/eom-window.c:3653
 msgid "_Next Image"
 msgstr "पुढची प्रतिमा (_N)"
 
-#: ../src/eog-window.c:3654
+#: ../src/eom-window.c:3654
 msgid "Go to the next image of the collection"
 msgstr "संग्रहातील पुढच्या प्रतिमाकडे जा"
 
-#: ../src/eog-window.c:3656 ../src/eog-window.c:3665
+#: ../src/eom-window.c:3656 ../src/eom-window.c:3665
 msgid "_First Image"
 msgstr "पहिली प्रतिमा (_F)"
 
-#: ../src/eog-window.c:3657
+#: ../src/eom-window.c:3657
 msgid "Go to the first image of the collection"
 msgstr "संग्रहातील पहिल्या प्रतिमाकडे जा"
 
-#: ../src/eog-window.c:3659 ../src/eog-window.c:3668
+#: ../src/eom-window.c:3659 ../src/eom-window.c:3668
 msgid "_Last Image"
 msgstr "शेवटची प्रतिमा (_L)"
 
-#: ../src/eog-window.c:3660
+#: ../src/eom-window.c:3660
 msgid "Go to the last image of the collection"
 msgstr "संग्रहातील शेवटच्या प्रतिमाकडे जा"
 
-#: ../src/eog-window.c:3674
+#: ../src/eom-window.c:3674
 msgid "_Slideshow"
 msgstr "स्लाईडशो (_S)"
 
-#: ../src/eog-window.c:3675
+#: ../src/eom-window.c:3675
 msgid "Start a slideshow view of the images"
 msgstr "प्रतिमाचे स्लाईडशो दृश्य सुरू करा"
 
-#: ../src/eog-window.c:3741
+#: ../src/eom-window.c:3741
 msgid "Previous"
 msgstr "पूर्वीचा"
 
-#: ../src/eog-window.c:3745
+#: ../src/eom-window.c:3745
 msgid "Next"
 msgstr "पुढचा"
 
-#: ../src/eog-window.c:3749
+#: ../src/eom-window.c:3749
 msgid "Right"
 msgstr "उजवीकडे"
 
-#: ../src/eog-window.c:3752
+#: ../src/eom-window.c:3752
 msgid "Left"
 msgstr "डावीकडे"
 
-#: ../src/eog-window.c:3755
+#: ../src/eom-window.c:3755
 msgid "In"
 msgstr "आंतरीक"
 
-#: ../src/eog-window.c:3758
+#: ../src/eom-window.c:3758
 msgid "Out"
 msgstr "बाहेरील"
 
-#: ../src/eog-window.c:3761
+#: ../src/eom-window.c:3761
 msgid "Normal"
 msgstr "साधारण"
 
-#: ../src/eog-window.c:3764
+#: ../src/eom-window.c:3764
 msgid "Fit"
 msgstr "योग्य"
 
-#: ../src/eog-window.c:3767
+#: ../src/eom-window.c:3767
 msgid "Collection"
 msgstr "संकलन"
 
-#: ../src/eog-window.c:3770
+#: ../src/eom-window.c:3770
 msgctxt "action (to trash)"
 msgid "Trash"
 msgstr "कचरापेटी"
 
-#: ../src/eog-plugin-manager.c:51
+#: ../src/eom-plugin-manager.c:51
 msgid "Plugin"
 msgstr "प्लगईन"
 
-#: ../src/eog-plugin-manager.c:52
+#: ../src/eom-plugin-manager.c:52
 msgid "Enabled"
 msgstr "कार्यान्वीत"
 
-#: ../src/eog-plugin-manager.c:513
+#: ../src/eom-plugin-manager.c:513
 msgid "C_onfigure"
 msgstr "संयोजीत (_o)"
 
-#: ../src/eog-plugin-manager.c:523
+#: ../src/eom-plugin-manager.c:523
 msgid "A_ctivate"
 msgstr "सक्रीय करा (_c)"
 
-#: ../src/eog-plugin-manager.c:535
+#: ../src/eom-plugin-manager.c:535
 msgid "Ac_tivate All"
 msgstr "सर्व सक्रीय करा (_t)"
 
-#: ../src/eog-plugin-manager.c:540
+#: ../src/eom-plugin-manager.c:540
 msgid "_Deactivate All"
 msgstr "सर्व असक्रीय करा (_D)"
 
-#: ../src/eog-plugin-manager.c:831
+#: ../src/eom-plugin-manager.c:831
 msgid "Active _Plugins:"
 msgstr "सक्रीय प्लगईन (_P):"
 
-#: ../src/eog-plugin-manager.c:860
+#: ../src/eom-plugin-manager.c:860
 msgid "_About Plugin"
 msgstr "प्लगईन विषयी (_A)"
 
-#: ../src/eog-plugin-manager.c:867
+#: ../src/eom-plugin-manager.c:867
 msgid "C_onfigure Plugin"
 msgstr "प्लगईन संयोजीत करा(_o)"
 
@@ -1378,7 +1378,7 @@ msgstr "वर्तमान घटना पुन्हा वापरण्
 msgid "[FILE...]"
 msgstr "[फाइल...]"
 
-#. I18N: The '%s' is replaced with eog's command name.
+#. I18N: The '%s' is replaced with eom's command name.
 #: ../src/main.c:195
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options."

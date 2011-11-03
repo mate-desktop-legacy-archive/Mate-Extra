@@ -3,16 +3,16 @@ actioniconsdir = $(pkgdatadir)/icons/hicolor/$(size)/actions
 appiconsdir = $(datadir)/icons/hicolor/$(size)/apps
 
 dist_appicons_DATA = \
-	apps/eog.png
+	apps/eom.png
 dist_actionicons_DATA = \
-	actions/eog-plugin.png	  	\
-	actions/eog-image-collection.png  \
+	actions/eom-plugin.png	  	\
+	actions/eom-image-collection.png  \
 	actions/slideshow-play.png
 
 noinst_DATA = \
-	apps/eog.svg  \
-	actions/eog-image-collection.svg  \
-	actions/eog-plugin.svg  \
+	apps/eom.svg  \
+	actions/eom-image-collection.svg  \
+	actions/eom-plugin.svg  \
 	actions/slideshow-play.svg
 
 EXTRA_DIST = $(noinst_DATA)

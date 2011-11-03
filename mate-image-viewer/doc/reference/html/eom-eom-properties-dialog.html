@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EomPropertiesDialog</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.0">
+<link rel="home" href="index.html" title="Eye of MATE Reference Manual">
+<link rel="up" href="ch01.html" title="User Interface">
+<link rel="prev" href="ch01.html" title="User Interface">
+<link rel="next" href="eom-eom-list-store.html" title="EomListStore">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Eye of MATE Reference Manual</th>
+<td><a accesskey="n" href="eom-eom-list-store.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#eom-eom-properties-dialog.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#eom-eom-properties-dialog.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#eom-eom-properties-dialog.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#eom-eom-properties-dialog.properties" class="shortcut">Properties</a>
+</td></tr>
+</table>
+<div class="refentry" title="EomPropertiesDialog">
+<a name="eom-eom-properties-dialog"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="eom-eom-properties-dialog.top_of_page"></a>EomPropertiesDialog</span></h2>
+<p>EomPropertiesDialog</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="eom-eom-properties-dialog.synopsis"></a><h2>Synopsis</h2>
+<a name="EomPropertiesDialog"></a><pre class="synopsis">enum                <a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialogPage" title="enum EomPropertiesDialogPage">EomPropertiesDialogPage</a>;
+                    <a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog-struct" title="EomPropertiesDialog">EomPropertiesDialog</a>;
+<a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           <a class="link" href="eom-eom-properties-dialog.html#eom-properties-dialog-new" title="eom_properties_dialog_new ()">eom_properties_dialog_new</a>           (<em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-thumb-view.html#EomThumbView"><span class="type">EomThumbView</span></a> *thumbview</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *next_image_action</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *previous_image_action</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="eom-eom-properties-dialog.html#eom-properties-dialog-update" title="eom_properties_dialog_update ()">eom_properties_dialog_update</a>        (<em class="parameter"><code><a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog"><span class="type">EomPropertiesDialog</span></a> *prop</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="eom-eom-properties-dialog.html#eom-properties-dialog-set-page" title="eom_properties_dialog_set_page ()">eom_properties_dialog_set_page</a>      (<em class="parameter"><code><a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog"><span class="type">EomPropertiesDialog</span></a> *prop</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialogPage" title="enum EomPropertiesDialogPage"><span class="type">EomPropertiesDialogPage</span></a> page</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="eom-eom-properties-dialog.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="EomDialog.html" title="EomDialog">EomDialog</a>
+         +----EomPropertiesDialog
+</pre>
+</div>
+<div class="refsect1" title="Properties">
+<a name="eom-eom-properties-dialog.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog--netbook-mode" title='The "netbook-mode" property'>netbook-mode</a>"             <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
+  "<a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog--thumbview" title='The "thumbview" property'>thumbview</a>"                <a class="link" href="eom-eom-thumb-view.html#EomThumbView"><span class="type">EomThumbView</span></a>*         : Read / Write / Construct Only
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="eom-eom-properties-dialog.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="eom-eom-properties-dialog.details"></a><h2>Details</h2>
+<div class="refsect2" title="enum EomPropertiesDialogPage">
+<a name="EomPropertiesDialogPage"></a><h3>enum EomPropertiesDialogPage</h3>
+<pre class="programlisting">typedef enum {
+	EOM_PROPERTIES_DIALOG_PAGE_GENERAL = 0,
+	EOM_PROPERTIES_DIALOG_PAGE_EXIF,
+	EOM_PROPERTIES_DIALOG_PAGE_DETAILS,
+	EOM_PROPERTIES_DIALOG_N_PAGES
+} EomPropertiesDialogPage;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomPropertiesDialog">
+<a name="EomPropertiesDialog-struct"></a><h3>EomPropertiesDialog</h3>
+<pre class="programlisting">typedef struct _EomPropertiesDialog EomPropertiesDialog;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="eom_properties_dialog_new ()">
+<a name="eom-properties-dialog-new"></a><h3>eom_properties_dialog_new ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           eom_properties_dialog_new           (<em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-thumb-view.html#EomThumbView"><span class="type">EomThumbView</span></a> *thumbview</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *next_image_action</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *previous_image_action</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>parent</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>thumbview</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>next_image_action</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>previous_image_action</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_properties_dialog_update ()">
+<a name="eom-properties-dialog-update"></a><h3>eom_properties_dialog_update ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_properties_dialog_update        (<em class="parameter"><code><a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog"><span class="type">EomPropertiesDialog</span></a> *prop</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>prop</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>image</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_properties_dialog_set_page ()">
+<a name="eom-properties-dialog-set-page"></a><h3>eom_properties_dialog_set_page ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_properties_dialog_set_page      (<em class="parameter"><code><a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog"><span class="type">EomPropertiesDialog</span></a> *prop</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialogPage" title="enum EomPropertiesDialogPage"><span class="type">EomPropertiesDialogPage</span></a> page</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>prop</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>page</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" title="Property Details">
+<a name="eom-eom-properties-dialog.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" title='The "netbook-mode" property'>
+<a name="EomPropertiesDialog--netbook-mode"></a><h3>The <code class="literal">"netbook-mode"</code> property</h3>
+<pre class="programlisting">  "netbook-mode"             <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<p>Netbook Mode.</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2" title='The "thumbview" property'>
+<a name="EomPropertiesDialog--thumbview"></a><h3>The <code class="literal">"thumbview"</code> property</h3>
+<pre class="programlisting">  "thumbview"                <a class="link" href="eom-eom-thumb-view.html#EomThumbView"><span class="type">EomThumbView</span></a>*         : Read / Write / Construct Only</pre>
+<p>Thumbview.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

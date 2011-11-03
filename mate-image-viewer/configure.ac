@@ -1,25 +1,25 @@
 AC_PREREQ(2.59)
 
-m4_define(eog_major_version,  2)
-m4_define(eog_minor_version, 32)
-m4_define(eog_micro_version, 0)
-m4_define(eog_version, eog_major_version.eog_minor_version.eog_micro_version)
+m4_define(eom_major_version,  2)
+m4_define(eom_minor_version, 32)
+m4_define(eom_micro_version, 0)
+m4_define(eom_version, eom_major_version.eom_minor_version.eom_micro_version)
 
-AC_INIT([eog], eog_version, [http://bugzilla.mate.org/enter_bug.cgi?product=eog], [eog])
+AC_INIT([eom], eom_version, [http://bugzilla.mate.org/enter_bug.cgi?product=eom], [eom])
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-bzip2])
 
 # Support silencing the build output if supported (automake-1.11+)
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
-AC_DEFINE(EOG_MAJOR_VERSION, eog_major_version, [EOG major version])
-AC_SUBST(EOG_MAJOR_VERSION,  eog_major_version)
-AC_DEFINE(EOG_MINOR_VERSION, eog_minor_version, [EOG minor version])
-AC_SUBST(EOG_MINOR_VERSION,  eog_minor_version)
-AC_DEFINE(EOG_MICRO_VERSION, eog_micro_version, [EOG micro version])
-AC_SUBST(EOG_MICRO_VERSION,  eog_micro_version)
+AC_DEFINE(EOM_MAJOR_VERSION, eom_major_version, [EOM major version])
+AC_SUBST(EOM_MAJOR_VERSION,  eom_major_version)
+AC_DEFINE(EOM_MINOR_VERSION, eom_minor_version, [EOM minor version])
+AC_SUBST(EOM_MINOR_VERSION,  eom_minor_version)
+AC_DEFINE(EOM_MICRO_VERSION, eom_micro_version, [EOM micro version])
+AC_SUBST(EOM_MICRO_VERSION,  eom_micro_version)
 
-EOG_API_VERSION=2.20
-AC_SUBST(EOG_API_VERSION)
+EOM_API_VERSION=2.20
+AC_SUBST(EOM_API_VERSION)
 
 AC_CONFIG_HEADERS([config.h])
 
@@ -93,7 +93,7 @@ MATE_ICON_THEME_REQUIRED=2.19.1
 SHARED_MIME_INFO_REQUIRED=0.20
 EXEMPI_REQUIRED=1.99.5
 
-EOG_MODULES="gtk+-2.0 >= $GTK_REQUIRED \
+EOM_MODULES="gtk+-2.0 >= $GTK_REQUIRED \
              glib-2.0 >= $GLIB_REQUIRED \
              gio-2.0 >= $GLIB_REQUIRED \
              gthread-2.0 >= $GLIB_REQUIRED \
@@ -135,7 +135,7 @@ if test x$with_libexif != xno; then
 fi
 if test "x$have_exif" = "xyes"; then
   AC_DEFINE(HAVE_EXIF, 1, [EXIF Support.])
-  EOG_MODULES="$EOG_MODULES libexif >= $LIBEXIF_REQUIRED"
+  EOM_MODULES="$EOM_MODULES libexif >= $LIBEXIF_REQUIRED"
 fi
 
 AM_CONDITIONAL([HAVE_EXIF], [test "x$have_exif" = "xyes"])
@@ -151,7 +151,7 @@ if test x$with_cms != xno; then
 fi
 if test "x$have_lcms" = "xyes"; then
   AC_DEFINE(HAVE_LCMS, 1, [Little CMS Support.])
-  EOG_MODULES="$EOG_MODULES lcms"
+  EOM_MODULES="$EOM_MODULES lcms"
 fi
 
 AM_CONDITIONAL([HAVE_LCMS], [test "x$have_lcms" = "xyes"])
@@ -166,22 +166,22 @@ if test x$with_xmp != xno; then
 fi
 if test "x$have_exempi" = "xyes"; then
   AC_DEFINE(HAVE_EXEMPI,1, [XMP support.])
-  EOG_MODULES="$EOG_MODULES exempi-2.0 >= $EXEMPI_REQUIRED"
+  EOM_MODULES="$EOM_MODULES exempi-2.0 >= $EXEMPI_REQUIRED"
 fi
 
 AM_CONDITIONAL([HAVE_EXEMPI], [test "x$have_exempi" = "xyes"])
 
 # Build EXIF-related documentation if we really have support for it
 if test "x$have_exif" = "xyes" || test "x$have_exempi" = "xyes"; then
-  EOG_DOC_EXIF_START=""
-  EOG_DOC_EXIF_STOP=""
+  EOM_DOC_EXIF_START=""
+  EOM_DOC_EXIF_STOP=""
 else
-  EOG_DOC_EXIF_START="<!--"
-  EOG_DOC_EXIF_STOP="-->"
+  EOM_DOC_EXIF_START="<!--"
+  EOM_DOC_EXIF_STOP="-->"
 fi
 
-AC_SUBST([EOG_DOC_EXIF_START])
-AC_SUBST([EOG_DOC_EXIF_STOP])
+AC_SUBST([EOM_DOC_EXIF_START])
+AC_SUBST([EOM_DOC_EXIF_STOP])
 
 # ********************
 # Jpeg (semi-optional)
@@ -263,7 +263,7 @@ if test x$have_dbus = xyes; then
    fi
 
     AC_DEFINE(HAVE_DBUS, 1, [DBUS based activation.])
-    EOG_MODULES="$EOG_MODULES dbus-glib-1 >= $DBUS_GLIB_REQUIRED"
+    EOM_MODULES="$EOM_MODULES dbus-glib-1 >= $DBUS_GLIB_REQUIRED"
 fi
 
 AM_CONDITIONAL([HAVE_DBUS], [test "x$have_dbus" = "xyes"])
@@ -288,7 +288,7 @@ if test x$with_librsvg != xno; then
 fi
 if test "x$have_rsvg" = "xyes"; then
   AC_DEFINE(HAVE_RSVG, 1, [RSVG Support.])
-  EOG_MODULES="$EOG_MODULES librsvg-2.0 >= $LIBRSVG_REQUIRED"
+  EOM_MODULES="$EOM_MODULES librsvg-2.0 >= $LIBRSVG_REQUIRED"
 fi
 
 AM_CONDITIONAL([HAVE_RSVG], [test "x$have_rsvg" = "xyes"])
@@ -297,9 +297,9 @@ AM_CONDITIONAL([HAVE_RSVG], [test "x$have_rsvg" = "xyes"])
 # CFLAGS/LIBS init
 # ****************
 
-PKG_CHECK_MODULES(EOG, $EOG_MODULES)
-AC_SUBST(EOG_CFLAGS)
-AC_SUBST(EOG_LIBS)
+PKG_CHECK_MODULES(EOM, $EOM_MODULES)
+AC_SUBST(EOM_CFLAGS)
+AC_SUBST(EOM_LIBS)
 
 # *******************************************************
 # libX11 (required for TotemScrSaver and Color Profiling)
@@ -463,8 +463,8 @@ cut-n-paste/totem-screensaver/Makefile
 help/Makefile
 po/Makefile.in
 data/Makefile
-data/eog.pc
-data/eog.desktop.in
+data/eom.pc
+data/eom.desktop.in
 data/pixmaps/Makefile
 data/icons/Makefile
 data/icons/16x16/Makefile
@@ -476,7 +476,7 @@ data/icons/scalable/Makefile
 doc/Makefile
 doc/reference/Makefile
 doc/reference/version.xml
-doc/reference/eog-docs.sgml
+doc/reference/eom-docs.sgml
 plugins/Makefile
 bindings/Makefile
 bindings/python/Makefile

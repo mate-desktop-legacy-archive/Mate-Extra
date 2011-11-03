@@ -112,14 +112,14 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
-EOG_API_VERSION = @EOG_API_VERSION@
-EOG_CFLAGS = @EOG_CFLAGS@
-EOG_DOC_EXIF_START = @EOG_DOC_EXIF_START@
-EOG_DOC_EXIF_STOP = @EOG_DOC_EXIF_STOP@
-EOG_LIBS = @EOG_LIBS@
-EOG_MAJOR_VERSION = @EOG_MAJOR_VERSION@
-EOG_MICRO_VERSION = @EOG_MICRO_VERSION@
-EOG_MINOR_VERSION = @EOG_MINOR_VERSION@
+EOM_API_VERSION = @EOM_API_VERSION@
+EOM_CFLAGS = @EOM_CFLAGS@
+EOM_DOC_EXIF_START = @EOM_DOC_EXIF_START@
+EOM_DOC_EXIF_STOP = @EOM_DOC_EXIF_STOP@
+EOM_LIBS = @EOM_LIBS@
+EOM_MAJOR_VERSION = @EOM_MAJOR_VERSION@
+EOM_MICRO_VERSION = @EOM_MICRO_VERSION@
+EOM_MINOR_VERSION = @EOM_MINOR_VERSION@
 EXEEXT = @EXEEXT@
 EXEMPI_CFLAGS = @EXEMPI_CFLAGS@
 EXEMPI_LIBS = @EXEMPI_LIBS@
@@ -290,11 +290,11 @@ size = scalable
 actioniconsdir = $(pkgdatadir)/icons/hicolor/$(size)/actions
 appiconsdir = $(datadir)/icons/hicolor/$(size)/apps
 dist_appicons_DATA = \
-	apps/eog.svg
+	apps/eom.svg
 
 dist_actionicons_DATA = \
-	actions/eog-plugin.svg	  	\
-	actions/eog-image-collection.svg  \
+	actions/eom-plugin.svg	  	\
+	actions/eom-image-collection.svg  \
 	actions/slideshow-play.svg
 
 all: all-am

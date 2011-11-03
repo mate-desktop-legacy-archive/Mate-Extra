@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EomTransform</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.0">
+<link rel="home" href="index.html" title="Eye of MATE Reference Manual">
+<link rel="up" href="ch02.html" title="Image data and manipulation">
+<link rel="prev" href="EomImageSaveInfo.html" title="EomImageSaveInfo">
+<link rel="next" href="eom-eom-metadata-reader.html" title="eom-metadata-reader">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="EomImageSaveInfo.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Eye of MATE Reference Manual</th>
+<td><a accesskey="n" href="eom-eom-metadata-reader.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#eom-eom-transform.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#eom-eom-transform.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#eom-eom-transform.object-hierarchy" class="shortcut">Object Hierarchy</a>
+</td></tr>
+</table>
+<div class="refentry" title="EomTransform">
+<a name="eom-eom-transform"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="eom-eom-transform.top_of_page"></a>EomTransform</span></h2>
+<p>EomTransform</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="eom-eom-transform.synopsis"></a><h2>Synopsis</h2>
+<a name="EomTransform"></a><pre class="synopsis">enum                <a class="link" href="eom-eom-transform.html#EomTransformType" title="enum EomTransformType">EomTransformType</a>;
+                    <a class="link" href="eom-eom-transform.html#EomTransform-struct" title="EomTransform">EomTransform</a>;
+<a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a>*          <a class="link" href="eom-eom-transform.html#eom-transform-apply" title="eom_transform_apply ()">eom_transform_apply</a>                 (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>);
+<a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-reverse" title="eom_transform_reverse ()">eom_transform_reverse</a>               (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);
+<a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-compose" title="eom_transform_compose ()">eom_transform_compose</a>               (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *compose</code></em>);
+<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-transform.html#eom-transform-is-identity" title="eom_transform_is_identity ()">eom_transform_is_identity</a>           (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);
+<a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-identity-new" title="eom_transform_identity_new ()">eom_transform_identity_new</a>          (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-rotate-new" title="eom_transform_rotate_new ()">eom_transform_rotate_new</a>            (<em class="parameter"><code><span class="type">int</span> degree</code></em>);
+<a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-flip-new" title="eom_transform_flip_new ()">eom_transform_flip_new</a>              (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransformType" title="enum EomTransformType"><span class="type">EomTransformType</span></a> type</code></em>);
+<a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-scale-new" title="eom_transform_scale_new ()">eom_transform_scale_new</a>             (<em class="parameter"><code><span class="type">double</span> sx</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> sy</code></em>);
+<a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-new" title="eom_transform_new ()">eom_transform_new</a>                   (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransformType" title="enum EomTransformType"><span class="type">EomTransformType</span></a> trans</code></em>);
+<a class="link" href="eom-eom-transform.html#EomTransformType" title="enum EomTransformType"><span class="returnvalue">EomTransformType</span></a>    <a class="link" href="eom-eom-transform.html#eom-transform-get-transform-type" title="eom_transform_get_transform_type ()">eom_transform_get_transform_type</a>    (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="eom-eom-transform.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----EomTransform
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="eom-eom-transform.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="eom-eom-transform.details"></a><h2>Details</h2>
+<div class="refsect2" title="enum EomTransformType">
+<a name="EomTransformType"></a><h3>enum EomTransformType</h3>
+<pre class="programlisting">typedef enum {
+	EOM_TRANSFORM_NONE,
+	EOM_TRANSFORM_ROT_90,
+	EOM_TRANSFORM_ROT_180,
+	EOM_TRANSFORM_ROT_270,
+	EOM_TRANSFORM_FLIP_HORIZONTAL,
+	EOM_TRANSFORM_FLIP_VERTICAL,
+	EOM_TRANSFORM_TRANSPOSE,
+	EOM_TRANSFORM_TRANSVERSE
+} EomTransformType;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomTransform">
+<a name="EomTransform-struct"></a><h3>EomTransform</h3>
+<pre class="programlisting">typedef struct _EomTransform EomTransform;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_apply ()">
+<a name="eom-transform-apply"></a><h3>eom_transform_apply ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a>*          eom_transform_apply                 (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>trans</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>pixbuf</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_reverse ()">
+<a name="eom-transform-reverse"></a><h3>eom_transform_reverse ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       eom_transform_reverse               (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>trans</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_compose ()">
+<a name="eom-transform-compose"></a><h3>eom_transform_compose ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       eom_transform_compose               (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *compose</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>trans</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>compose</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_is_identity ()">
+<a name="eom-transform-is-identity"></a><h3>eom_transform_is_identity ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_transform_is_identity           (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>trans</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_identity_new ()">
+<a name="eom-transform-identity-new"></a><h3>eom_transform_identity_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       eom_transform_identity_new          (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_rotate_new ()">
+<a name="eom-transform-rotate-new"></a><h3>eom_transform_rotate_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       eom_transform_rotate_new            (<em class="parameter"><code><span class="type">int</span> degree</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>degree</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_flip_new ()">
+<a name="eom-transform-flip-new"></a><h3>eom_transform_flip_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       eom_transform_flip_new              (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransformType" title="enum EomTransformType"><span class="type">EomTransformType</span></a> type</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_scale_new ()">
+<a name="eom-transform-scale-new"></a><h3>eom_transform_scale_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       eom_transform_scale_new             (<em class="parameter"><code><span class="type">double</span> sx</code></em>,
+                                                         <em class="parameter"><code><span class="type">double</span> sy</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>sx</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>sy</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_new ()">
+<a name="eom-transform-new"></a><h3>eom_transform_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       eom_transform_new                   (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransformType" title="enum EomTransformType"><span class="type">EomTransformType</span></a> trans</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>trans</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_transform_get_transform_type ()">
+<a name="eom-transform-get-transform-type"></a><h3>eom_transform_get_transform_type ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-transform.html#EomTransformType" title="enum EomTransformType"><span class="returnvalue">EomTransformType</span></a>    eom_transform_get_transform_type    (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>trans</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

@@ -3,9 +3,9 @@ actioniconsdir = $(pkgdatadir)/icons/hicolor/$(size)/actions
 appiconsdir = $(datadir)/icons/hicolor/$(size)/apps
 
 dist_appicons_DATA = \
-	apps/eog.png
+	apps/eom.png
 dist_actionicons_DATA = \
-	actions/eog-image-collection.png  \
+	actions/eom-image-collection.png  \
 	actions/slideshow-play.png
 
 -include $(top_srcdir)/git.mk

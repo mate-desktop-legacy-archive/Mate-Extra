@@ -38,7 +38,7 @@ host_triplet = @host@
 
 # Statusbar Date Plugin
 @HAVE_EXIF_TRUE@am__append_1 = statusbar-date/libstatusbar-date.la
-@HAVE_EXIF_TRUE@am__append_2 = statusbar-date/statusbar-date.eog-plugin.desktop.in
+@HAVE_EXIF_TRUE@am__append_2 = statusbar-date/statusbar-date.eom-plugin.desktop.in
 subdir = plugins
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in ChangeLog
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -76,22 +76,22 @@ am__DEPENDENCIES_1 =
 fullscreen_libfullscreen_la_DEPENDENCIES = $(am__DEPENDENCIES_1)
 am__dirstamp = $(am__leading_dot)dirstamp
 am_fullscreen_libfullscreen_la_OBJECTS =  \
-	fullscreen/eog-fullscreen-plugin.lo
+	fullscreen/eom-fullscreen-plugin.lo
 fullscreen_libfullscreen_la_OBJECTS =  \
 	$(am_fullscreen_libfullscreen_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
 am__v_lt_0 = --silent
 reload_libreload_la_DEPENDENCIES = $(am__DEPENDENCIES_1)
-am_reload_libreload_la_OBJECTS = reload/eog-reload-plugin.lo
+am_reload_libreload_la_OBJECTS = reload/eom-reload-plugin.lo
 reload_libreload_la_OBJECTS = $(am_reload_libreload_la_OBJECTS)
 @HAVE_EXIF_TRUE@statusbar_date_libstatusbar_date_la_DEPENDENCIES =  \
 @HAVE_EXIF_TRUE@	$(am__DEPENDENCIES_1)
 am__statusbar_date_libstatusbar_date_la_SOURCES_DIST =  \
-	statusbar-date/eog-statusbar-date-plugin.h \
-	statusbar-date/eog-statusbar-date-plugin.c
+	statusbar-date/eom-statusbar-date-plugin.h \
+	statusbar-date/eom-statusbar-date-plugin.c
 @HAVE_EXIF_TRUE@am_statusbar_date_libstatusbar_date_la_OBJECTS =  \
-@HAVE_EXIF_TRUE@	statusbar-date/eog-statusbar-date-plugin.lo
+@HAVE_EXIF_TRUE@	statusbar-date/eom-statusbar-date-plugin.lo
 statusbar_date_libstatusbar_date_la_OBJECTS =  \
 	$(am_statusbar_date_libstatusbar_date_la_OBJECTS)
 @HAVE_EXIF_TRUE@am_statusbar_date_libstatusbar_date_la_rpath = -rpath \
@@ -166,14 +166,14 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
-EOG_API_VERSION = @EOG_API_VERSION@
-EOG_CFLAGS = @EOG_CFLAGS@
-EOG_DOC_EXIF_START = @EOG_DOC_EXIF_START@
-EOG_DOC_EXIF_STOP = @EOG_DOC_EXIF_STOP@
-EOG_LIBS = @EOG_LIBS@
-EOG_MAJOR_VERSION = @EOG_MAJOR_VERSION@
-EOG_MICRO_VERSION = @EOG_MICRO_VERSION@
-EOG_MINOR_VERSION = @EOG_MINOR_VERSION@
+EOM_API_VERSION = @EOM_API_VERSION@
+EOM_CFLAGS = @EOM_CFLAGS@
+EOM_DOC_EXIF_START = @EOM_DOC_EXIF_START@
+EOM_DOC_EXIF_STOP = @EOM_DOC_EXIF_STOP@
+EOM_LIBS = @EOM_LIBS@
+EOM_MAJOR_VERSION = @EOM_MAJOR_VERSION@
+EOM_MICRO_VERSION = @EOM_MICRO_VERSION@
+EOM_MINOR_VERSION = @EOM_MINOR_VERSION@
 EXEEXT = @EXEEXT@
 EXEMPI_CFLAGS = @EXEMPI_CFLAGS@
 EXEMPI_LIBS = @EXEMPI_LIBS@
@@ -341,38 +341,38 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = subdir-objects
-pluginsdir = $(libdir)/eog/plugins
+pluginsdir = $(libdir)/eom/plugins
 INCLUDES = \
 	-I$(top_srcdir)/src 				\
-	$(EOG_CFLAGS) 					\
+	$(EOM_CFLAGS) 					\
 	$(WARN_CFLAGS)					\
-	-DEOG_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
+	-DEOM_LOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\"
 
 AM_LDFLAGS = -avoid-version -module
 plugins_LTLIBRARIES = fullscreen/libfullscreen.la reload/libreload.la \
 	$(am__append_1)
-plugins_in_files = fullscreen/fullscreen.eog-plugin.desktop.in \
-	reload/reload.eog-plugin.desktop.in $(am__append_2)
+plugins_in_files = fullscreen/fullscreen.eom-plugin.desktop.in \
+	reload/reload.eom-plugin.desktop.in $(am__append_2)
 
 # Fullscreen plugin
 fullscreen_libfullscreen_la_SOURCES = \
-	fullscreen/eog-fullscreen-plugin.h  \
-	fullscreen/eog-fullscreen-plugin.c
+	fullscreen/eom-fullscreen-plugin.h  \
+	fullscreen/eom-fullscreen-plugin.c
 
-fullscreen_libfullscreen_la_LIBADD = $(EOG_LIBS)
+fullscreen_libfullscreen_la_LIBADD = $(EOM_LIBS)
 
 # Reload plugin
 reload_libreload_la_SOURCES = \
-	reload/eog-reload-plugin.h  \
-	reload/eog-reload-plugin.c
+	reload/eom-reload-plugin.h  \
+	reload/eom-reload-plugin.c
 
-reload_libreload_la_LIBADD = $(EOG_LIBS)
+reload_libreload_la_LIBADD = $(EOM_LIBS)
 @HAVE_EXIF_TRUE@statusbar_date_libstatusbar_date_la_SOURCES = \
-@HAVE_EXIF_TRUE@	statusbar-date/eog-statusbar-date-plugin.h  \
-@HAVE_EXIF_TRUE@	statusbar-date/eog-statusbar-date-plugin.c
+@HAVE_EXIF_TRUE@	statusbar-date/eom-statusbar-date-plugin.h  \
+@HAVE_EXIF_TRUE@	statusbar-date/eom-statusbar-date-plugin.c
 
-@HAVE_EXIF_TRUE@statusbar_date_libstatusbar_date_la_LIBADD = $(EOG_LIBS)
-plugins_DATA = $(plugins_in_files:.eog-plugin.desktop.in=.eog-plugin)
+@HAVE_EXIF_TRUE@statusbar_date_libstatusbar_date_la_LIBADD = $(EOM_LIBS)
+plugins_DATA = $(plugins_in_files:.eom-plugin.desktop.in=.eom-plugin)
 DISTCLEANFILES = $(plugins_DATA)
 CLEANFILES = $(plugins_DATA)
 EXTRA_DIST = $(plugins_in_files)
@@ -447,7 +447,7 @@ fullscreen/$(am__dirstamp):
 fullscreen/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) fullscreen/$(DEPDIR)
 	@: > fullscreen/$(DEPDIR)/$(am__dirstamp)
-fullscreen/eog-fullscreen-plugin.lo: fullscreen/$(am__dirstamp) \
+fullscreen/eom-fullscreen-plugin.lo: fullscreen/$(am__dirstamp) \
 	fullscreen/$(DEPDIR)/$(am__dirstamp)
 fullscreen/libfullscreen.la: $(fullscreen_libfullscreen_la_OBJECTS) $(fullscreen_libfullscreen_la_DEPENDENCIES) fullscreen/$(am__dirstamp)
 	$(AM_V_CCLD)$(LINK) -rpath $(pluginsdir) $(fullscreen_libfullscreen_la_OBJECTS) $(fullscreen_libfullscreen_la_LIBADD) $(LIBS)
@@ -457,7 +457,7 @@ reload/$(am__dirstamp):
 reload/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) reload/$(DEPDIR)
 	@: > reload/$(DEPDIR)/$(am__dirstamp)
-reload/eog-reload-plugin.lo: reload/$(am__dirstamp) \
+reload/eom-reload-plugin.lo: reload/$(am__dirstamp) \
 	reload/$(DEPDIR)/$(am__dirstamp)
 reload/libreload.la: $(reload_libreload_la_OBJECTS) $(reload_libreload_la_DEPENDENCIES) reload/$(am__dirstamp)
 	$(AM_V_CCLD)$(LINK) -rpath $(pluginsdir) $(reload_libreload_la_OBJECTS) $(reload_libreload_la_LIBADD) $(LIBS)
@@ -467,7 +467,7 @@ statusbar-date/$(am__dirstamp):
 statusbar-date/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) statusbar-date/$(DEPDIR)
 	@: > statusbar-date/$(DEPDIR)/$(am__dirstamp)
-statusbar-date/eog-statusbar-date-plugin.lo:  \
+statusbar-date/eom-statusbar-date-plugin.lo:  \
 	statusbar-date/$(am__dirstamp) \
 	statusbar-date/$(DEPDIR)/$(am__dirstamp)
 statusbar-date/libstatusbar-date.la: $(statusbar_date_libstatusbar_date_la_OBJECTS) $(statusbar_date_libstatusbar_date_la_DEPENDENCIES) statusbar-date/$(am__dirstamp)
@@ -475,19 +475,19 @@ statusbar-date/libstatusbar-date.la: $(statusbar_date_libstatusbar_date_la_OBJEC
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
-	-rm -f fullscreen/eog-fullscreen-plugin.$(OBJEXT)
-	-rm -f fullscreen/eog-fullscreen-plugin.lo
-	-rm -f reload/eog-reload-plugin.$(OBJEXT)
-	-rm -f reload/eog-reload-plugin.lo
-	-rm -f statusbar-date/eog-statusbar-date-plugin.$(OBJEXT)
-	-rm -f statusbar-date/eog-statusbar-date-plugin.lo
+	-rm -f fullscreen/eom-fullscreen-plugin.$(OBJEXT)
+	-rm -f fullscreen/eom-fullscreen-plugin.lo
+	-rm -f reload/eom-reload-plugin.$(OBJEXT)
+	-rm -f reload/eom-reload-plugin.lo
+	-rm -f statusbar-date/eom-statusbar-date-plugin.$(OBJEXT)
+	-rm -f statusbar-date/eom-statusbar-date-plugin.lo
 
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@fullscreen/$(DEPDIR)/eog-fullscreen-plugin.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@reload/$(DEPDIR)/eog-reload-plugin.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@statusbar-date/$(DEPDIR)/eog-statusbar-date-plugin.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@fullscreen/$(DEPDIR)/eom-fullscreen-plugin.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@reload/$(DEPDIR)/eom-reload-plugin.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@statusbar-date/$(DEPDIR)/eom-statusbar-date-plugin.Plo@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
@@ -758,7 +758,7 @@ uninstall-am: uninstall-pluginsDATA uninstall-pluginsLTLIBRARIES
 
 # Generate plugin info files
 
-%.eog-plugin: %.eog-plugin.desktop.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po) ; $(AM_V_GEN)$(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
+%.eom-plugin: %.eom-plugin.desktop.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po) ; $(AM_V_GEN)$(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
 
 -include $(top_srcdir)/git.mk
 

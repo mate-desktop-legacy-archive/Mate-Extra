@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EomStatusbar</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.0">
+<link rel="home" href="index.html" title="Eye of MATE Reference Manual">
+<link rel="up" href="ch01.html" title="User Interface">
+<link rel="prev" href="eom-eom-window.html" title="EomWindow">
+<link rel="next" href="EomExifDetails.html" title="EomExifDetails">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="eom-eom-window.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Eye of MATE Reference Manual</th>
+<td><a accesskey="n" href="EomExifDetails.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#EomStatusbar.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#EomStatusbar.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#EomStatusbar.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#EomStatusbar.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+</td></tr>
+</table>
+<div class="refentry" title="EomStatusbar">
+<a name="EomStatusbar"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="EomStatusbar.top_of_page"></a>EomStatusbar</span></h2>
+<p>EomStatusbar</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="EomStatusbar.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">                    <a class="link" href="EomStatusbar.html#EomStatusbar-struct" title="EomStatusbar">EomStatusbar</a>;
+<a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         <a class="link" href="EomStatusbar.html#eom-statusbar-new" title="eom_statusbar_new ()">eom_statusbar_new</a>                   (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EomStatusbar.html#eom-statusbar-set-image-number" title="eom_statusbar_set_image_number ()">eom_statusbar_set_image_number</a>      (<em class="parameter"><code><a class="link" href="EomStatusbar.html" title="EomStatusbar"><span class="type">EomStatusbar</span></a> *statusbar</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> num</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> tot</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EomStatusbar.html#eom-statusbar-set-progress" title="eom_statusbar_set_progress ()">eom_statusbar_set_progress</a>          (<em class="parameter"><code><a class="link" href="EomStatusbar.html" title="EomStatusbar"><span class="type">EomStatusbar</span></a> *statusbar</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> progress</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="EomStatusbar.html#eom-statusbar-set-has-resize-grip" title="eom_statusbar_set_has_resize_grip ()">eom_statusbar_set_has_resize_grip</a>   (<em class="parameter"><code><a class="link" href="EomStatusbar.html" title="EomStatusbar"><span class="type">EomStatusbar</span></a> *statusbar</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> has_resize_grip</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="EomStatusbar.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+         +----<a href="http://library.mate.org/devel/gtk/unstable/GtkObject.html">GtkObject</a>
+               +----<a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html">GtkWidget</a>
+                     +----<a href="http://library.mate.org/devel/gtk/unstable/GtkContainer.html">GtkContainer</a>
+                           +----<a href="http://library.mate.org/devel/gtk/unstable/GtkBox.html">GtkBox</a>
+                                 +----<a href="http://library.mate.org/devel/gtk/unstable/GtkHBox.html">GtkHBox</a>
+                                       +----<a href="http://library.mate.org/devel/gtk/unstable/GtkStatusbar.html">GtkStatusbar</a>
+                                             +----EomStatusbar
+</pre>
+</div>
+<div class="refsect1" title="Implemented Interfaces">
+<a name="EomStatusbar.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+EomStatusbar implements
+ AtkImplementorIface,  <a href="http://library.mate.org/devel/gtk/unstable/gtk-gtkbuildable.html#GtkBuildable">GtkBuildable</a> and  <a href="http://library.mate.org/devel/gtk/unstable/gtk-Orientable.html#GtkOrientable">GtkOrientable</a>.</p>
+</div>
+<div class="refsect1" title="Description">
+<a name="EomStatusbar.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="EomStatusbar.details"></a><h2>Details</h2>
+<div class="refsect2" title="EomStatusbar">
+<a name="EomStatusbar-struct"></a><h3>EomStatusbar</h3>
+<pre class="programlisting">typedef struct _EomStatusbar EomStatusbar;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="eom_statusbar_new ()">
+<a name="eom-statusbar-new"></a><h3>eom_statusbar_new ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         eom_statusbar_new                   (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_statusbar_set_image_number ()">
+<a name="eom-statusbar-set-image-number"></a><h3>eom_statusbar_set_image_number ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_statusbar_set_image_number      (<em class="parameter"><code><a class="link" href="EomStatusbar.html" title="EomStatusbar"><span class="type">EomStatusbar</span></a> *statusbar</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> num</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> tot</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>statusbar</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>num</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>tot</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_statusbar_set_progress ()">
+<a name="eom-statusbar-set-progress"></a><h3>eom_statusbar_set_progress ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_statusbar_set_progress          (<em class="parameter"><code><a class="link" href="EomStatusbar.html" title="EomStatusbar"><span class="type">EomStatusbar</span></a> *statusbar</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> progress</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>statusbar</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>progress</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_statusbar_set_has_resize_grip ()">
+<a name="eom-statusbar-set-has-resize-grip"></a><h3>eom_statusbar_set_has_resize_grip ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_statusbar_set_has_resize_grip   (<em class="parameter"><code><a class="link" href="EomStatusbar.html" title="EomStatusbar"><span class="type">EomStatusbar</span></a> *statusbar</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> has_resize_grip</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>statusbar</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>has_resize_grip</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

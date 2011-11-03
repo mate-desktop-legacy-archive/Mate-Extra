@@ -1,19 +1,19 @@
-INCLUDES = $(EOG_CFLAGS) \
+INCLUDES = $(EOM_CFLAGS) \
 	$(EXIF_CFLAGS)
 
-noinst_LTLIBRARIES = libeog-jpegutils.la
+noinst_LTLIBRARIES = libeom-jpegutils.la
 
-libeog_jpegutils_la_SOURCES =		\
+libeom_jpegutils_la_SOURCES =		\
 	jpegint.h			\
 	transupp.h
 
 if HAVE_LIBJPEG_80
-libeog_jpegutils_la_SOURCES +=		\
+libeom_jpegutils_la_SOURCES +=		\
 	jpegint-8a.h			\
 	transupp-8a.c			\
 	transupp-8a.h
 else
-libeog_jpegutils_la_SOURCES +=		\
+libeom_jpegutils_la_SOURCES +=		\
 	transupp-6b.c			\
 	transupp-6b.h
 endif

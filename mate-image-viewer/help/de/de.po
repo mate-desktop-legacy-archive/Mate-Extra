@@ -1,4 +1,4 @@
-# German translation of eog manual
+# German translation of eom manual
 #
 # Jan Arne Petersen <jpetersen@jpetersen.org>, 2006.
 # Mario Blättermann <mariobl@gnome.org>, 2008.
@@ -7,7 +7,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: eog\n"
+"Project-Id-Version: eom\n"
 "POT-Creation-Date: 2009-03-21 19:36+0000\n"
 "PO-Revision-Date: 2009-01-24 18:36+0100\n"
 "Last-Translator: Felix Riemann <friemann@svn.mate.org>\n"
@@ -18,77 +18,77 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/eog.xml:342(None)
+#: C/eom.xml:342(None)
 msgid ""
-"@@image: 'figures/eog_start_window.png'; md5=3fa9a50f8828d553ca1f5deb4f3a9c93"
+"@@image: 'figures/eom_start_window.png'; md5=3fa9a50f8828d553ca1f5deb4f3a9c93"
 msgstr "image updated 2006-12-16"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/eog.xml:612(None)
+#: C/eom.xml:612(None)
 msgid ""
-"@@image: 'figures/eog_save_as_window.png'; "
+"@@image: 'figures/eom_save_as_window.png'; "
 "md5=fdebb65611d88ced4201754b0f417783"
 msgstr "image updated 2009-03-23"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/eog.xml:700(None)
+#: C/eom.xml:700(None)
 msgid ""
-"@@image: 'figures/eog_toolbar_editor_window.png'; "
+"@@image: 'figures/eom_toolbar_editor_window.png'; "
 "md5=b5555dbf7beaf036227fc6e32e974b83"
 msgstr "image updated 2008-09-21"
 
-#: C/eog.xml:24(title)
+#: C/eom.xml:24(title)
 msgid "Image Viewer Manual"
 msgstr "Bildbetrachter-Handbuch"
 
-#: C/eog.xml:27(year)
+#: C/eom.xml:27(year)
 msgid "2006"
 msgstr "2006"
 
-#: C/eog.xml:28(year)
+#: C/eom.xml:28(year)
 msgid "2007"
 msgstr "2007"
 
-#: C/eog.xml:29(holder) C/eog.xml:57(publishername) C/eog.xml:69(orgname)
-#: C/eog.xml:76(orgname) C/eog.xml:83(orgname) C/eog.xml:97(orgname)
-#: C/eog.xml:104(orgname) C/eog.xml:126(para) C/eog.xml:127(para)
-#: C/eog.xml:135(para) C/eog.xml:143(para) C/eog.xml:151(para)
-#: C/eog.xml:159(para) C/eog.xml:167(para) C/eog.xml:175(para)
-#: C/eog.xml:183(para) C/eog.xml:191(para) C/eog.xml:204(para)
+#: C/eom.xml:29(holder) C/eom.xml:57(publishername) C/eom.xml:69(orgname)
+#: C/eom.xml:76(orgname) C/eom.xml:83(orgname) C/eom.xml:97(orgname)
+#: C/eom.xml:104(orgname) C/eom.xml:126(para) C/eom.xml:127(para)
+#: C/eom.xml:135(para) C/eom.xml:143(para) C/eom.xml:151(para)
+#: C/eom.xml:159(para) C/eom.xml:167(para) C/eom.xml:175(para)
+#: C/eom.xml:183(para) C/eom.xml:191(para) C/eom.xml:204(para)
 msgid "MATE Documentation Project"
 msgstr "MATE-Dokumentationsprojekt"
 
-#: C/eog.xml:32(year)
+#: C/eom.xml:32(year)
 msgid "2002"
 msgstr "2002"
 
-#: C/eog.xml:33(year)
+#: C/eom.xml:33(year)
 msgid "2003"
 msgstr "2003"
 
-#: C/eog.xml:34(year)
+#: C/eom.xml:34(year)
 msgid "2004"
 msgstr "2004"
 
-#: C/eog.xml:35(holder) C/eog.xml:90(orgname)
+#: C/eom.xml:35(holder) C/eom.xml:90(orgname)
 msgid "Sun Microsystems"
 msgstr "Sun Microsystems"
 
-#: C/eog.xml:38(year) C/eog.xml:42(year) C/eog.xml:196(date)
+#: C/eom.xml:38(year) C/eom.xml:42(year) C/eom.xml:196(date)
 msgid "2000"
 msgstr "2000"
 
-#: C/eog.xml:39(holder)
+#: C/eom.xml:39(holder)
 msgid "Eliot Landrum"
 msgstr "Eliot Landrum"
 
-#: C/eog.xml:43(holder)
+#: C/eom.xml:43(holder)
 msgid "The Free Software Foundation"
 msgstr "The Free Software Foundation"
 
-#: C/eog.xml:2(para)
+#: C/eom.xml:2(para)
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
@@ -105,7 +105,7 @@ msgstr ""
 "<ulink type=\"help\" url=\"ghelp:fdl\">Link</ulink> oder in der mit diesem "
 "Handbuch gelieferten Datei COPYING-DOCS."
 
-#: C/eog.xml:12(para)
+#: C/eom.xml:12(para)
 msgid ""
 "This manual is part of a collection of MATE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
@@ -117,7 +117,7 @@ msgstr ""
 "möchten, können Sie dies tun, indem Sie dem Handbuch eine Kopie der Lizenz, "
 "wie in Abschnitt 6 der Lizenz beschrieben, hinzufügen."
 
-#: C/eog.xml:19(para)
+#: C/eom.xml:19(para)
 msgid ""
 "Many of the names used by companies to distinguish their products and "
 "services are claimed as trademarks. Where those names appear in any MATE "
@@ -132,7 +132,7 @@ msgstr ""
 "informiert wurden, sind die Namen in Grossbuchstaben oder mit großen "
 "Anfangsbuchstaben geschrieben."
 
-#: C/eog.xml:35(para)
+#: C/eom.xml:35(para)
 msgid ""
 "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
 "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
@@ -161,7 +161,7 @@ msgstr ""
 "ODER EINER MODIFIZIERTEN VERSION DES DOKUMENTS UNTERLIEGT DIESER "
 "BESCHRÄNKUNG; UND"
 
-#: C/eog.xml:55(para)
+#: C/eom.xml:55(para)
 msgid ""
 "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
 "NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
@@ -188,7 +188,7 @@ msgstr ""
 "PARTEI ÜBER MÖGLICHE SCHÄDEN INFORMIERT WORDEN SEIN SOLLTE, HAFTBAR GEMACHT "
 "WERDEN."
 
-#: C/eog.xml:28(para)
+#: C/eom.xml:28(para)
 msgid ""
 "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
@@ -198,153 +198,153 @@ msgstr ""
 "BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE MIT DER FOLGENDEN "
 "VEREINBARUNG BEREITGESTELLT: <placeholder-1/>"
 
-#: C/eog.xml:66(firstname)
+#: C/eom.xml:66(firstname)
 msgid "Jens"
 msgstr "Jens"
 
-#: C/eog.xml:67(surname)
+#: C/eom.xml:67(surname)
 msgid "Finke"
 msgstr "Finke"
 
-#: C/eog.xml:73(firstname)
+#: C/eom.xml:73(firstname)
 msgid "Angela"
 msgstr "Angela"
 
-#: C/eog.xml:74(surname)
+#: C/eom.xml:74(surname)
 msgid "Boyle"
 msgstr "Boyle"
 
-#: C/eog.xml:80(firstname)
+#: C/eom.xml:80(firstname)
 msgid "Stuart"
 msgstr "Stuart"
 
-#: C/eog.xml:81(surname)
+#: C/eom.xml:81(surname)
 msgid "Ellis"
 msgstr "Ellis"
 
-#: C/eog.xml:87(firstname)
+#: C/eom.xml:87(firstname)
 msgid "Sun"
 msgstr "Sun"
 
-#: C/eog.xml:88(surname)
+#: C/eom.xml:88(surname)
 msgid "MATE Documentation Team"
 msgstr "MATE-Dokumentationsteam"
 
-#: C/eog.xml:94(firstname)
+#: C/eom.xml:94(firstname)
 msgid "Eliot"
 msgstr "Eliot"
 
-#: C/eog.xml:95(surname)
+#: C/eom.xml:95(surname)
 msgid "Landrum"
 msgstr "Landrum"
 
-#: C/eog.xml:101(firstname)
+#: C/eom.xml:101(firstname)
 msgid "Federico"
 msgstr "Federico"
 
-#: C/eog.xml:102(surname)
+#: C/eom.xml:102(surname)
 msgid "Mena Quintero"
 msgstr "Mena Quintero"
 
-#: C/eog.xml:123(revnumber)
+#: C/eom.xml:123(revnumber)
 msgid "Image Viewer Manual V2.8"
 msgstr "Bildbetrachter-Handbuch V2.8"
 
-#: C/eog.xml:124(date)
+#: C/eom.xml:124(date)
 msgid "February 2007"
 msgstr "Februar 2007"
 
-#: C/eog.xml:131(revnumber)
+#: C/eom.xml:131(revnumber)
 msgid "Image Viewer Manual V2.7"
 msgstr "Bildbetrachter-Handbuch V2.7"
 
-#: C/eog.xml:132(date)
+#: C/eom.xml:132(date)
 msgid "February 2004"
 msgstr "Februar 2004"
 
-#: C/eog.xml:134(para) C/eog.xml:142(para) C/eog.xml:150(para)
-#: C/eog.xml:158(para) C/eog.xml:166(para) C/eog.xml:174(para)
-#: C/eog.xml:182(para) C/eog.xml:190(para)
+#: C/eom.xml:134(para) C/eom.xml:142(para) C/eom.xml:150(para)
+#: C/eom.xml:158(para) C/eom.xml:166(para) C/eom.xml:174(para)
+#: C/eom.xml:182(para) C/eom.xml:190(para)
 msgid "Sun MATE Documentation Team"
 msgstr "Sun MATE-Dokumentationsteam"
 
-#: C/eog.xml:139(revnumber)
+#: C/eom.xml:139(revnumber)
 msgid "Eye of MATE Manual V2.6"
 msgstr "Eye of MATE-Handbuch V2.6"
 
-#: C/eog.xml:140(date)
+#: C/eom.xml:140(date)
 msgid "November 2003"
 msgstr "November 2003"
 
-#: C/eog.xml:147(revnumber)
+#: C/eom.xml:147(revnumber)
 msgid "Eye of MATE Manual V2.5"
 msgstr "Eye of MATE-Handbuch V2.3"
 
-#: C/eog.xml:148(date)
+#: C/eom.xml:148(date)
 msgid "September 2003"
 msgstr "September 2003"
 
-#: C/eog.xml:155(revnumber)
+#: C/eom.xml:155(revnumber)
 msgid "Eye of MATE Manual V2.4"
 msgstr "Eye of MATE-Handbuch V2.4"
 
-#: C/eog.xml:156(date)
+#: C/eom.xml:156(date)
 msgid "January 2003"
 msgstr "Januar 2003"
 
-#: C/eog.xml:163(revnumber)
+#: C/eom.xml:163(revnumber)
 msgid "Eye of MATE Manual V2.3"
 msgstr "Eye of MATE-Handbuch V2.3"
 
-#: C/eog.xml:164(date)
+#: C/eom.xml:164(date)
 msgid "October 2002"
 msgstr "Oktober 2002"
 
-#: C/eog.xml:171(revnumber)
+#: C/eom.xml:171(revnumber)
 msgid "Eye of MATE Manual V2.2"
 msgstr "Eye of MATE-Handbuch V2.2"
 
-#: C/eog.xml:172(date)
+#: C/eom.xml:172(date)
 msgid "August 2002"
 msgstr "August 2002"
 
-#: C/eog.xml:179(revnumber)
+#: C/eom.xml:179(revnumber)
 msgid "Eye of MATE Manual V2.1"
 msgstr "Eye of MATE-Handbuch V2.1"
 
-#: C/eog.xml:180(date)
+#: C/eom.xml:180(date)
 msgid "July 2002"
 msgstr "Juli 2002"
 
-#: C/eog.xml:187(revnumber)
+#: C/eom.xml:187(revnumber)
 msgid "Eye of MATE Manual V2.0"
 msgstr "Eye of MATE-Handbuch V2.0"
 
-#: C/eog.xml:188(date)
+#: C/eom.xml:188(date)
 msgid "May 2002"
 msgstr "Mai 2002"
 
-#: C/eog.xml:195(revnumber)
+#: C/eom.xml:195(revnumber)
 msgid "Eye of MATE User's Guide"
 msgstr "Eye of MATE-Benutzerhandbuch"
 
-#: C/eog.xml:198(para)
+#: C/eom.xml:198(para)
 msgid "Eliot Landrum <email>eliot@landrum.cx</email>"
 msgstr "Eliot Landrum <email>eliot@landrum.cx</email>"
 
-#: C/eog.xml:201(para)
+#: C/eom.xml:201(para)
 msgid "Federico Mena Quintero <email>federico@gnu.org</email>"
 msgstr "Federico Mena Quintero <email>federico@gnu.org</email>"
 
-#: C/eog.xml:208(releaseinfo)
+#: C/eom.xml:208(releaseinfo)
 msgid "This manual describes version 2.18 of Image Viewer."
 msgstr "In diesem Handbuch wird Version 2.18 des Bildbetrachters beschrieben."
 
-#: C/eog.xml:211(title)
+#: C/eom.xml:211(title)
 msgid "Feedback"
 msgstr "Rückmeldungen"
 
-#: C/eog.xml:212(para)
+#: C/eom.xml:212(para)
 msgid ""
 "To report a bug or make a suggestion regarding the Image Viewer application "
 "or this manual, follow the directions in the <ulink url=\"ghelp:user-guide?"
@@ -355,21 +355,21 @@ msgstr ""
 "user-guide?feedback-bugs\" type=\"help\">MATE-Seite für Rückmeldungen</"
 "ulink>."
 
-#: C/eog.xml:217(para)
+#: C/eom.xml:217(para)
 msgid "User manual for <application>Eye of MATE Image Viewer</application>."
 msgstr ""
 "Benutzerhandbuch für den <application>Eye of MATE-Bildbetrachter</"
 "application>."
 
-#: C/eog.xml:223(primary)
+#: C/eom.xml:223(primary)
 msgid "Eye of MATE"
 msgstr "Eye of MATE"
 
-#: C/eog.xml:230(title)
+#: C/eom.xml:230(title)
 msgid "Introduction"
 msgstr "Einführung"
 
-#: C/eog.xml:231(para)
+#: C/eom.xml:231(para)
 msgid ""
 "The <application>Eye of MATE Image Viewer</application> application enables "
 "you to view single image files, as well as large image collections."
@@ -378,22 +378,22 @@ msgstr ""
 "sich sowohl einzelne Bilddateien, als auch große Bildersammlungen anzeigen "
 "lassen."
 
-#: C/eog.xml:236(title)
+#: C/eom.xml:236(title)
 msgid "Starting Image Viewer"
 msgstr "So starten Sie den Bildbetrachter"
 
-#: C/eog.xml:237(para)
+#: C/eom.xml:237(para)
 msgid ""
 "You can start <application>Image Viewer</application> in the following ways:"
 msgstr ""
 "Sie können den <application>Bildbetrachter</application> auf eine der "
 "folgenden Arten starten:"
 
-#: C/eog.xml:240(para)
+#: C/eom.xml:240(para)
 msgid "Open an image file in <application>Caja</application>."
 msgstr "Öffnen Sie eine Bilddatei in <application>Caja</application>."
 
-#: C/eog.xml:243(para)
+#: C/eom.xml:243(para)
 msgid ""
 "Choose <menuchoice><guimenu>Graphics</guimenu><guimenuitem>Image Viewer</"
 "guimenuitem></menuchoice> from the <guimenu>Applications</guimenu> menu."
@@ -402,21 +402,21 @@ msgstr ""
 "guisubmenu><guimenuitem>Bildbetrachter</guimenuitem></menuchoice> vom "
 "<guimenu>Anwendungs</guimenu>-Menü."
 
-#: C/eog.xml:248(para)
+#: C/eom.xml:248(para)
 msgid ""
-"Run <command>eog</command> at the prompt in a terminal such as "
+"Run <command>eom</command> at the prompt in a terminal such as "
 "<application>mate-terminal</application>, or from the <application>Run "
 "Application</application> dialog."
 msgstr ""
-"Starten Sie <command>eog</command> in der Eingabeaufforderung eines "
+"Starten Sie <command>eom</command> in der Eingabeaufforderung eines "
 "Terminals wie <application>mate-terminal</application>, oder vom "
 "<application>Anwendung ausführen</application>-Dialog."
 
-#: C/eog.xml:256(title)
+#: C/eom.xml:256(title)
 msgid "Closing Image Viewer"
 msgstr "So schließen Sie den Bildbetrachter"
 
-#: C/eog.xml:257(para)
+#: C/eom.xml:257(para)
 msgid ""
 "To close the current <application>Image Viewer</application> window choose "
 "<menuchoice><guimenu>File</guimenu><guimenuitem>Close</guimenuitem></"
@@ -428,11 +428,11 @@ msgstr ""
 "guimenu><guimenuitem>Schließen</guimenuitem></menuchoice>, oder drücken Sie "
 "<keycombo><keycap>Strg</keycap><keycap>W</keycap></keycombo>."
 
-#: C/eog.xml:263(title)
+#: C/eom.xml:263(title)
 msgid "Supported File Types"
 msgstr "Unterstützte Bilddateiformate"
 
-#: C/eog.xml:264(para)
+#: C/eom.xml:264(para)
 msgid ""
 "<application>Image Viewer</application> supports a variety of image file "
 "formats. The following image formats can be opened:"
@@ -440,67 +440,67 @@ msgstr ""
 "Der <application>Bildbetrachter</application> unterstützt eine Vielfalt von "
 "Bilddateiformaten. Die folgenden Bildformate können geöffnet werden:"
 
-#: C/eog.xml:266(para)
+#: C/eom.xml:266(para)
 msgid "ANI - Animation"
 msgstr "ANI - Animation"
 
-#: C/eog.xml:268(para) C/eog.xml:300(para)
+#: C/eom.xml:268(para) C/eom.xml:300(para)
 msgid "BMP - Windows Bitmap"
 msgstr "BMP - Windows Bitmap"
 
-#: C/eog.xml:270(para)
+#: C/eom.xml:270(para)
 msgid "GIF - Graphics Interchange Format"
 msgstr "GIF - Graphics Interchange Format"
 
-#: C/eog.xml:272(para) C/eog.xml:302(para)
+#: C/eom.xml:272(para) C/eom.xml:302(para)
 msgid "ICO - Windows Icon"
 msgstr "ICO - Windows Icon"
 
-#: C/eog.xml:274(para) C/eog.xml:304(para)
+#: C/eom.xml:274(para) C/eom.xml:304(para)
 msgid "JPEG - Joint Photographic Experts Group"
 msgstr "JPEG - Joint Photographic Experts Group"
 
-#: C/eog.xml:276(para)
+#: C/eom.xml:276(para)
 msgid "PCX - PC Paintbrush"
 msgstr "PCX - PC Paintbrush"
 
-#: C/eog.xml:278(para) C/eog.xml:306(para)
+#: C/eom.xml:278(para) C/eom.xml:306(para)
 msgid "PNG - Portable Network Graphics"
 msgstr "PNG - Portable Network Graphics"
 
-#: C/eog.xml:280(para)
+#: C/eom.xml:280(para)
 msgid "PNM - Portable Anymap from the PPM Toolkit"
 msgstr "PNM - Portable Anymap from the PPM Toolkit"
 
-#: C/eog.xml:282(para)
+#: C/eom.xml:282(para)
 msgid "RAS - Sun Raster"
 msgstr "RAS - Sun Raster"
 
-#: C/eog.xml:284(para)
+#: C/eom.xml:284(para)
 msgid "SVG - Scalable Vector Graphics"
 msgstr "SVG - Scalable Vector Graphics"
 
-#: C/eog.xml:286(para)
+#: C/eom.xml:286(para)
 msgid "TGA - Targa"
 msgstr "TGA - Targa"
 
-#: C/eog.xml:288(para)
+#: C/eom.xml:288(para)
 msgid "TIFF - Tagged Image File Format"
 msgstr "TIFF - Tagged Image File Format"
 
-#: C/eog.xml:290(para)
+#: C/eom.xml:290(para)
 msgid "WBMP - Wireless Bitmap"
 msgstr "WBMP - Wireless Bitmap"
 
-#: C/eog.xml:292(para)
+#: C/eom.xml:292(para)
 msgid "XBM - X Bitmap"
 msgstr "XBM - X Bitmap"
 
-#: C/eog.xml:294(para)
+#: C/eom.xml:294(para)
 msgid "XPM - X Pixmap"
 msgstr "XPM - X Pixmap"
 
-#: C/eog.xml:298(para)
+#: C/eom.xml:298(para)
 msgid ""
 "<application>Image Viewer</application> supports the following formats for "
 "saving:"
@@ -508,7 +508,7 @@ msgstr ""
 "Der <application>Bildbetrachter</application> unterstützt das Speichern von "
 "folgenden Formaten:"
 
-#: C/eog.xml:309(para)
+#: C/eom.xml:309(para)
 msgid ""
 "<application>Image Viewer</application> may be able to open and save other "
 "image formats, depending on your system configuration and other installed "
@@ -518,11 +518,11 @@ msgstr ""
 "Systemkonfiguration und installierten Software, möglicherweise noch andere "
 "Bildformate öffnen und speichern."
 
-#: C/eog.xml:313(title)
+#: C/eom.xml:313(title)
 msgid "Image Viewer Features"
 msgstr "Funktionen des Bildbetrachters"
 
-#: C/eog.xml:314(para)
+#: C/eom.xml:314(para)
 msgid ""
 "<application>Image Viewer</application> has a variety of features to help "
 "you view your images. You can zoom in and out or view the image full screen. "
@@ -537,7 +537,7 @@ msgstr ""
 "<application>Bildbetrachter</application> wenig Speicher. Sie können das "
 "Bild, was Sie betrachten, auch drehen und spiegeln."
 
-#: C/eog.xml:319(para)
+#: C/eom.xml:319(para)
 msgid ""
 "The collection view allows the viewing and editing of large image "
 "collections. In this view image operations can be applied to all selected "
@@ -547,7 +547,7 @@ msgstr ""
 "größeren Bildersammlungen. In dieser Ansicht können Bildoperationen auf alle "
 "ausgewählten Bilder gleichzeitig angewendet werden."
 
-#: C/eog.xml:323(para)
+#: C/eom.xml:323(para)
 msgid ""
 "<application>Image Viewer</application> has special support for digital "
 "camera pictures and displays EXIF metadata recorded with the image. This "
@@ -566,11 +566,11 @@ msgstr ""
 "werden. Außerdem bleiben alle vorhandenen Metadaten (wie EXIF) erhalten und "
 "werden entsprechend angepasst."
 
-#: C/eog.xml:335(title)
+#: C/eom.xml:335(title)
 msgid "Getting Started"
 msgstr "Erste Schritte"
 
-#: C/eog.xml:336(para)
+#: C/eom.xml:336(para)
 msgid ""
 "When you start <application>Image Viewer</application>, the following window "
 "is displayed:"
@@ -578,15 +578,15 @@ msgstr ""
 "Wenn Sie den <application>Bildbetrachter</application> starten, wird das "
 "folgende Fenster angezeigt:"
 
-#: C/eog.xml:338(title)
+#: C/eom.xml:338(title)
 msgid "Image Viewer Start Up Window"
 msgstr "Bildbetrachter-Startfenster"
 
-#: C/eog.xml:0(application)
+#: C/eom.xml:0(application)
 msgid "Image Viewer"
 msgstr "Bildbetrachter"
 
-#: C/eog.xml:345(phrase)
+#: C/eom.xml:345(phrase)
 msgid ""
 "Shows <placeholder-1/> main window. Contains titlebar, menubar, toolbar, and "
 "display area. Menubar contains File, Edit, View, and Help menus."
@@ -595,7 +595,7 @@ msgstr ""
 "Menüleiste, Werkzeugleiste und Anzeigebereich. Die Menüleiste enthält die "
 "Menüs Datei, Bearbeiten, Ansicht und Hilfe."
 
-#: C/eog.xml:350(para)
+#: C/eom.xml:350(para)
 msgid ""
 "The <application>Image Viewer</application> window contains the following "
 "elements:"
@@ -603,11 +603,11 @@ msgstr ""
 "Das <application>Bildbetracher</application>-Fenster besteht aus folgenden "
 "Elementen:"
 
-#: C/eog.xml:353(term)
+#: C/eom.xml:353(term)
 msgid "Menubar"
 msgstr "Menüleiste"
 
-#: C/eog.xml:355(para)
+#: C/eom.xml:355(para)
 msgid ""
 "The menus on the menubar contain all of the commands that you need to work "
 "with images in <application>Image Viewer</application>."
@@ -615,11 +615,11 @@ msgstr ""
 "Die Menüs in der Menüleiste enthalten alle Befehle, die Sie für die Arbeit "
 "mit Bildern im <application>Bildbetrachter</application> benötigen."
 
-#: C/eog.xml:359(term)
+#: C/eom.xml:359(term)
 msgid "Toolbar"
 msgstr "Werkzeugleiste"
 
-#: C/eog.xml:361(para)
+#: C/eom.xml:361(para)
 msgid ""
 "The toolbar contains a subset of the commands that you can access from the "
 "menubar. To show or hide the toolbar, choose <menuchoice><guimenu>View</"
@@ -630,19 +630,19 @@ msgstr ""
 "verbergen, wählen Sie <menuchoice><guimenu>Ansicht</"
 "guimenu><guimenuitem>Werkzeugleiste</guimenuitem></menuchoice>."
 
-#: C/eog.xml:365(term)
+#: C/eom.xml:365(term)
 msgid "Display area"
 msgstr "Anzeigebereich"
 
-#: C/eog.xml:367(para)
+#: C/eom.xml:367(para)
 msgid "The display area shows the image file."
 msgstr "Im Anzeigebereich wird die Bilddatei angezeigt."
 
-#: C/eog.xml:371(term)
+#: C/eom.xml:371(term)
 msgid "Statusbar"
 msgstr "Statusleiste"
 
-#: C/eog.xml:373(para)
+#: C/eom.xml:373(para)
 msgid ""
 "The statusbar provides information about the image. To show or hide the "
 "statusbar, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Statusbar</"
@@ -653,11 +653,11 @@ msgstr ""
 "<menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Statusleiste</"
 "guimenuitem></menuchoice>."
 
-#: C/eog.xml:377(term)
+#: C/eom.xml:377(term)
 msgid "Image Collection"
 msgstr "Bildersammlung"
 
-#: C/eog.xml:379(para)
+#: C/eom.xml:379(para)
 msgid ""
 "The image collection shows you all supported images in the current working "
 "directory. It shows up once an image has been loaded. To show or hide the "
@@ -670,11 +670,11 @@ msgstr ""
 "<menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Bildersammlung</"
 "guimenuitem></menuchoice>."
 
-#: C/eog.xml:383(term)
+#: C/eom.xml:383(term)
 msgid "Image Information Pane"
 msgstr "Seitenleiste"
 
-#: C/eog.xml:385(para)
+#: C/eom.xml:385(para)
 msgid ""
 "The image information pane provides further information about the current "
 "image, for example EXIF metadata (if available). It shows up after an image "
@@ -689,7 +689,7 @@ msgstr ""
 "verbergen, wählen Sie <menuchoice><guimenu>Ansicht</"
 "guimenu><guimenuitem>Seitenleiste</guimenuitem></menuchoice>."
 
-#: C/eog.xml:389(para)
+#: C/eom.xml:389(para)
 msgid ""
 "Most actions in <application>Image Viewer</application> can be performed "
 "several ways. For example, you can open a file in the following ways:"
@@ -698,7 +698,7 @@ msgstr ""
 "verschiedene Weisen ausgeführt werden. Beispielsweise können Sie eine Datei "
 "folgendermaßen öffnen:"
 
-#: C/eog.xml:392(para)
+#: C/eom.xml:392(para)
 msgid ""
 "Drag an image file into the <application>Image Viewer</application> window "
 "from another application or window."
@@ -706,13 +706,13 @@ msgstr ""
 "Ziehen Sie eine Bilddatei aus einer anderen Anwendung oder einem anderen "
 "Fenster in den <application>Bildbetrachter</application>."
 
-#: C/eog.xml:394(para)
+#: C/eom.xml:394(para)
 msgid "Double-click on an image file in the file manager or other application."
 msgstr ""
 "Doppelklicken Sie auf eine Bilddatei im Dateimanager oder in einer anderen "
 "Anwendung."
 
-#: C/eog.xml:396(para)
+#: C/eom.xml:396(para)
 msgid ""
 "Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open</guimenuitem></"
 "menuchoice> and select an image file in the <application>Load Image</"
@@ -722,7 +722,7 @@ msgstr ""
 "guimenuitem></menuchoice> und wählen Sie eine Bilddatei im Dialog "
 "<application>Bild öffnen</application>."
 
-#: C/eog.xml:399(para)
+#: C/eom.xml:399(para)
 msgid ""
 "Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo> and "
 "select an image file in the <application>Load Image</application> dialog."
@@ -730,19 +730,19 @@ msgstr ""
 "Drücken Sie <keycombo><keycap>Strg</keycap><keycap>O</keycap></keycombo> und "
 "wählen Sie eine Bilddatei im Dialog <application>Bild öffnen</application>."
 
-#: C/eog.xml:408(title)
+#: C/eom.xml:408(title)
 msgid "Viewing Images"
 msgstr "Betrachten von Bildern"
 
-#: C/eog.xml:412(title)
+#: C/eom.xml:412(title)
 msgid "Opening an Image"
 msgstr "So öffnen Sie ein Bild"
 
-#: C/eog.xml:413(para)
+#: C/eom.xml:413(para)
 msgid "To open an image, perform the following steps:"
 msgstr "Um ein Bild zu öffnen, führen Sie die folgenden Schritte aus:"
 
-#: C/eog.xml:416(para)
+#: C/eom.xml:416(para)
 msgid ""
 "Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open</guimenuitem></"
 "menuchoice>, or press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></"
@@ -752,7 +752,7 @@ msgstr ""
 "guimenuitem></menuchoice>, oder drücken Sie <keycombo><keycap>Strg</"
 "keycap><keycap>O</keycap></keycombo>."
 
-#: C/eog.xml:420(para)
+#: C/eom.xml:420(para)
 msgid ""
 "In the <guilabel>Load Image</guilabel> dialog, select the file you want to "
 "open."
@@ -760,7 +760,7 @@ msgstr ""
 "Wählen Sie im Dialog <guilabel>Bild öffnen</guilabel> die Datei aus, die Sie "
 "öffnen wollen."
 
-#: C/eog.xml:425(para)
+#: C/eom.xml:425(para)
 msgid ""
 "Click <guibutton>Open</guibutton>. <application>Image Viewer</application> "
 "displays the name of the image file in the titlebar of the window."
@@ -769,7 +769,7 @@ msgstr ""
 "<application>Bildbetrachter</application> zeigt den Namen des Bildes in der "
 "Titelleiste des Fensters an."
 
-#: C/eog.xml:430(para)
+#: C/eom.xml:430(para)
 msgid ""
 "To open another image, choose <menuchoice><guimenu>File</"
 "guimenu><guimenuitem>Open</guimenuitem></menuchoice> again. "
@@ -780,25 +780,25 @@ msgstr ""
 "menuchoice>. Der <application>Bildbetrachter</application> öffnet jedes Bild "
 "in einem neuen Fenster."
 
-#: C/eog.xml:437(title)
+#: C/eom.xml:437(title)
 msgid "Viewing the Images in a Folder"
 msgstr "Betrachten der in einem Ordner enthaltenen Bilder"
 
-#: C/eog.xml:438(para)
+#: C/eom.xml:438(para)
 msgid "To view all images in a folder, perform the following steps:"
 msgstr ""
 "Um alle in einem Ordner enthaltenen Bilder zu betrachten, gehen Sie wie "
 "folgt vor:"
 
-#: C/eog.xml:441(para)
+#: C/eom.xml:441(para)
 msgid ""
-"Open one of the images in the folder (see <xref linkend=\"eog-open-image\"/"
+"Open one of the images in the folder (see <xref linkend=\"eom-open-image\"/"
 ">)."
 msgstr ""
-"Öffnen Sie eines der Bilder im Ordner (siehe <xref linkend=\"eog-open-image"
+"Öffnen Sie eines der Bilder im Ordner (siehe <xref linkend=\"eom-open-image"
 "\"/>)."
 
-#: C/eog.xml:445(para)
+#: C/eom.xml:445(para)
 msgid ""
 "Open the image collection by choosing <menuchoice><guimenu>View</"
 "guimenu><guimenuitem>Image Collection</guimenuitem></menuchoice> or pressing "
@@ -808,7 +808,7 @@ msgstr ""
 "guimenu><guimenuitem>Bildersammlung</guimenuitem></menuchoice> wählen, oder "
 "drücken Sie <keycap>F9</keycap>."
 
-#: C/eog.xml:450(para)
+#: C/eom.xml:450(para)
 msgid ""
 "The collection shows thumbnails of all supported images in the folder. You "
 "can browse the images by clicking on an image in the collection, by choosing "
@@ -824,7 +824,7 @@ msgstr ""
 "oder <keycombo><keycap>Alt</keycap><keycap>Pfeiltaste rechts</keycap></"
 "keycombo>."
 
-#: C/eog.xml:451(para)
+#: C/eom.xml:451(para)
 msgid ""
 "To view all of the images in the directory fullscreen, choose "
 "<menuchoice><guimenu>View</guimenu><guimenuitem>Full Screen</guimenuitem></"
@@ -833,7 +833,7 @@ msgid ""
 "guimenuitem></menuchoice> or press <keycap>F5</keycap>. To return to the "
 "collection view, press the <keycap>Esc</keycap> key, or "
 "<keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. For more "
-"information about how to customize the slide show, see <xref linkend=\"eog-"
+"information about how to customize the slide show, see <xref linkend=\"eom-"
 "prefs-slideshow\"/>."
 msgstr ""
 "Um alle Bilder im Ordner im Vollbildmodus zu betrachten, wählen Sie "
@@ -844,13 +844,13 @@ msgstr ""
 "<keycap>F5</keycap>. Um zur Bildersammlung zurückzukehren, drücken Sie die "
 "<keycap>Esc</keycap>-Taste oder <keycombo><keycap>Strg</keycap><keycap>W</"
 "keycap></keycombo>. Weitere Möglichkeiten zu den Einstellmöglichkeiten der "
-"Diaschau finden Sie in <xref linkend=\"eog-prefs-slideshow\"/>."
+"Diaschau finden Sie in <xref linkend=\"eom-prefs-slideshow\"/>."
 
-#: C/eog.xml:457(title)
+#: C/eom.xml:457(title)
 msgid "Scrolling an Image"
 msgstr "So bewegen Sie sich in einem Bild"
 
-#: C/eog.xml:458(para)
+#: C/eom.xml:458(para)
 msgid ""
 "To scroll around an image that is larger than the image window or full "
 "screen view, you can use the following methods:"
@@ -858,11 +858,11 @@ msgstr ""
 "Um sich in einem Bild zu bewegen, das größer als Ihr Bildfenster oder das "
 "Vollbild ist, stehen Ihnen die folgenden Methoden zur Verfügung:"
 
-#: C/eog.xml:460(para)
+#: C/eom.xml:460(para)
 msgid "Use the arrow keys on the keyboard."
 msgstr "Bewegen Sie sich mit den Pfeiltasten der Tastatur durch das Bild."
 
-#: C/eog.xml:462(para)
+#: C/eom.xml:462(para)
 msgid ""
 "Drag the image to move it in the window. (This means you drag the image in "
 "the opposite direction you want to scroll in: to scroll down the image, drag "
@@ -873,19 +873,19 @@ msgstr ""
 "Beispiel das Bild nach unten rollen möchten, ziehen Sie es im Fenster nach "
 "oben."
 
-#: C/eog.xml:464(para)
+#: C/eom.xml:464(para)
 msgid "Use the scrollbars on the window."
 msgstr "Verwenden Sie die Bildlaufleisten im Fenster."
 
-#: C/eog.xml:471(title)
+#: C/eom.xml:471(title)
 msgid "Zooming"
 msgstr "So ändern Sie die Ansichtsgröße"
 
-#: C/eog.xml:472(para)
+#: C/eom.xml:472(para)
 msgid "You can zoom in or out of the image in the following ways:"
 msgstr "Sie können die Ansicht auf folgende Arten vergrößern oder verkleinern:"
 
-#: C/eog.xml:474(para)
+#: C/eom.xml:474(para)
 msgid ""
 "Use the <mousebutton>scroll wheel</mousebutton> on your mouse. Scrolling "
 "down zooms out; scrolling up zooms in."
@@ -894,7 +894,7 @@ msgstr ""
 "des Rades nach unten verkleinert die Ansicht, durch Drehen des Rades nach "
 "oben können Sie die Ansicht vergrößern."
 
-#: C/eog.xml:475(para)
+#: C/eom.xml:475(para)
 msgid ""
 "Choose <menuchoice><guimenu>View</guimenu><guimenuitem>Zoom In</"
 "guimenuitem></menuchoice> or <menuchoice><guimenu>View</"
@@ -913,7 +913,7 @@ msgstr ""
 "wählen Sie <menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Einpassen</"
 "guimenuitem></menuchoice>."
 
-#: C/eog.xml:478(para)
+#: C/eom.xml:478(para)
 msgid ""
 "Use the zoom buttons in the toolbar. <guilabel>Normal</guilabel> will "
 "restore the picture to its original unscaled size. <guilabel>Fit</guilabel> "
@@ -924,7 +924,7 @@ msgstr ""
 "unveränderten Größe wieder her. <guilabel>Anpassen</guilabel> verkleinert "
 "das Bild soweit, dass es in das Fenster passt, falls es zu groß ist."
 
-#: C/eog.xml:482(para)
+#: C/eom.xml:482(para)
 msgid ""
 "Use the keyboard. To zoom in, <keycombo><keycap>Ctrl</keycap><keycap>+</"
 "keycap></keycombo> or <keycap>+</keycap>. To zoom out, "
@@ -938,7 +938,7 @@ msgstr ""
 "keycap>. Um es zu verkleinern, drücken Sie <keycombo><keycap>Strg</"
 "keycap><keycap>-</keycap></keycombo> oder <keycap>-</keycap>."
 
-#: C/eog.xml:484(para)
+#: C/eom.xml:484(para)
 msgid ""
 "When an image is zoomed to fit the window, resizing the window will also "
 "change the zoom level, so the image still fits the window."
@@ -947,11 +947,11 @@ msgstr ""
 "Größenänderungen des Fensters auch zur Anpassung der Bildgröße, so dass das "
 "Bild das Fenster stets ausfüllt."
 
-#: C/eog.xml:489(title)
+#: C/eom.xml:489(title)
 msgid "Viewing an Image Full Screen/Slideshow"
 msgstr "Betrachten im Vollbildmodus/als Diaschau"
 
-#: C/eog.xml:490(para)
+#: C/eom.xml:490(para)
 msgid ""
 "To show the image using the entire screen, choose <menuchoice><guimenu>View</"
 "guimenu><guimenuitem>Full Screen</guimenuitem></menuchoice>."
@@ -960,7 +960,7 @@ msgstr ""
 "<menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Vollbild</guimenuitem></"
 "menuchoice>."
 
-#: C/eog.xml:491(para)
+#: C/eom.xml:491(para)
 msgid ""
 "No panels, window frames, or menubars are visible when an image is shown "
 "like this. To return to the normal view, press <keycap>Esc</keycap>, or "
@@ -972,7 +972,7 @@ msgstr ""
 "<keycap>Esc</keycap>, oder <keycap>F11</keycap>, oder "
 "<keycombo><keycap>Strg</keycap><keycap>W</keycap></keycombo>."
 
-#: C/eog.xml:492(para)
+#: C/eom.xml:492(para)
 msgid ""
 "You can zoom or scroll around the image in the same way as when it is shown "
 "in a window, using the mouse or the keyboard."
@@ -981,7 +981,7 @@ msgstr ""
 "Weise vergrößern, verkleinern oder innerhalb des Bildschirms verschieben, "
 "wie es innerhalb eines Fensters möglich ist."
 
-#: C/eog.xml:493(para)
+#: C/eom.xml:493(para)
 msgid ""
 "If you have multiple images in your collection you can press <keycap>Space</"
 "keycap> or use the right/down cursor keys to advance to the next image. The "
@@ -994,7 +994,7 @@ msgstr ""
 "Sie mit der <keycap>Rücktaste</keycap> oder mit den <keycap>Pfeiltasten nach "
 "links/nach oben</keycap>"
 
-#: C/eog.xml:494(para)
+#: C/eom.xml:494(para)
 msgid ""
 "In this case you can also use the slideshow mode, where <application>Image "
 "Viewer</application> automatically switches to the next image in your "
@@ -1004,7 +1004,7 @@ msgid ""
 "<keycap>P</keycap>. To stop the slideshow, press the <keycap>Esc</keycap> or "
 "<keycap>F5</keycap> key, or <keycombo><keycap>Ctrl</keycap><keycap>W</"
 "keycap></keycombo>. For more information about how to customize the slide "
-"show, see <xref linkend=\"eog-prefs-slideshow\"/>."
+"show, see <xref linkend=\"eom-prefs-slideshow\"/>."
 msgstr ""
 "In diesem Fall können Sie auch eine Diaschau starten, in welcher der "
 "<application>Bildbetrachter</application> automatisch zum nächsten Bild "
@@ -1015,31 +1015,31 @@ msgstr ""
 "fortsetzen. Um die Diaschau zu beenden, drücken Sie die <keycap>Esc</keycap>-"
 "Taste oder <keycap>F5</keycap>, oder <keycombo><keycap>Strg</"
 "keycap><keycap>W</keycap></keycombo>. Weitere Informationen über die "
-"Einstellmöglichkeiten der Diaschau finden Sie in <xref linkend=\"eog-prefs-"
+"Einstellmöglichkeiten der Diaschau finden Sie in <xref linkend=\"eom-prefs-"
 "slideshow\"/>."
 
-#: C/eog.xml:501(title)
+#: C/eom.xml:501(title)
 msgid "Manipulating Images"
 msgstr "Bearbeiten von Bildern"
 
-#: C/eog.xml:503(para)
+#: C/eom.xml:503(para)
 msgid ""
 "All image manipulations apply to all selected images at once. The "
 "modifications are done in memory and alter the original files on disk only "
-"when the images are saved with the save function (see <xref linkend=\"eog-"
+"when the images are saved with the save function (see <xref linkend=\"eom-"
 "save-image\"/>)."
 msgstr ""
 "Alle Bildmanipulationen werden auf alle ausgewählten Bilder zugleich "
 "angewendet. Die Veränderungen werden zwischengespeichert und erst dann auf "
 "die Originalbilder angewendet, wenn die Bilder mit der Speichern-Funktion "
-"auf der Festplatte gespeichert werden (siehe <xref linkend=\"eog-save-image"
+"auf der Festplatte gespeichert werden (siehe <xref linkend=\"eom-save-image"
 "\"/>)."
 
-#: C/eog.xml:509(title)
+#: C/eom.xml:509(title)
 msgid "Flipping an Image"
 msgstr "So spiegeln Sie ein Bild"
 
-#: C/eog.xml:510(para)
+#: C/eom.xml:510(para)
 msgid ""
 "To flip an image along the horizontal axis of the image, choose "
 "<menuchoice><guimenu>Image</guimenu><guimenuitem>Flip Horizontal</"
@@ -1049,7 +1049,7 @@ msgstr ""
 "<menuchoice><guimenu>Bild</guimenu><guimenuitem>Horizontal spiegeln</"
 "guimenuitem></menuchoice>."
 
-#: C/eog.xml:515(para)
+#: C/eom.xml:515(para)
 msgid ""
 "To flip an image along the vertical axis of the image, choose "
 "<menuchoice><guimenu>Image</guimenu><guimenuitem>Flip Vertical</"
@@ -1059,11 +1059,11 @@ msgstr ""
 "<menuchoice><guimenu>Bild</guimenu><guimenuitem>Vertikal spiegeln</"
 "guimenuitem></menuchoice>."
 
-#: C/eog.xml:524(title)
+#: C/eom.xml:524(title)
 msgid "Rotating an Image"
 msgstr "So drehen Sie ein Bild"
 
-#: C/eog.xml:525(para)
+#: C/eom.xml:525(para)
 msgid ""
 "To rotate an image 90 degrees in a clockwise direction, choose "
 "<menuchoice><guimenu>Image</guimenu><guimenuitem>Rotate Clockwise</"
@@ -1073,7 +1073,7 @@ msgstr ""
 "<menuchoice><guimenu>Bild</guimenu><guimenuitem>Im Uhrzeigersinn drehen</"
 "guimenuitem></menuchoice>."
 
-#: C/eog.xml:530(para)
+#: C/eom.xml:530(para)
 msgid ""
 "To rotate an image 90 degrees in an anticlockwise direction, choose "
 "<menuchoice><guimenu>Image</guimenu><guimenuitem>Rotate Counter Clockwise</"
@@ -1083,11 +1083,11 @@ msgstr ""
 "<menuchoice><guimenu>Bild</guimenu><guimenuitem>Gegen den Uhrzeigersinn "
 "drehen</guimenuitem></menuchoice>."
 
-#: C/eog.xml:539(title)
+#: C/eom.xml:539(title)
 msgid "Undoing an Action"
 msgstr "Eine Aktion rückgängig machen"
 
-#: C/eog.xml:540(para)
+#: C/eom.xml:540(para)
 msgid ""
 "To undo a flip or rotate action, choose <menuchoice><guimenu>Edit</"
 "guimenu><guimenuitem>Undo</guimenuitem></menuchoice> or press "
@@ -1098,11 +1098,11 @@ msgstr ""
 "guimenuitem></menuchoice> oder drücken Sie <keycombo><keycap>Strg</"
 "keycap><keycap>Z</keycap></keycombo> ."
 
-#: C/eog.xml:551(title)
+#: C/eom.xml:551(title)
 msgid "Deleting an Image"
 msgstr "So löschen Sie ein Bild"
 
-#: C/eog.xml:552(para)
+#: C/eom.xml:552(para)
 msgid ""
 "To move an image to the Trash, choose <menuchoice><guimenu>Edit</"
 "guimenu><guimenuitem>Move to Trash</guimenuitem></menuchoice>. This moves "
@@ -1115,7 +1115,7 @@ msgstr ""
 "Müllordner.  Auf die gleiche Weise können auch mehrere Bilder gleichzeitig "
 "in den Müll verschoben werden: Wählen Sie die Bilder zunächst alle aus."
 
-#: C/eog.xml:558(para)
+#: C/eom.xml:558(para)
 msgid ""
 "To restore an image from the Trash, open the Trash folder in "
 "<application>Caja</application> file manager and move the image file to "
@@ -1130,7 +1130,7 @@ msgstr ""
 "des Mülls finden Sie im <ulink type=\"help\" url=\"ghelp:user-guide?caja-"
 "trash\">Desktop-Benutzerhandbuch</ulink>."
 
-#: C/eog.xml:560(para)
+#: C/eom.xml:560(para)
 msgid ""
 "You can also use the <keycap>Del</keycap> key to move an image to the Trash, "
 "in which case you will be asked for confirmation."
@@ -1139,11 +1139,11 @@ msgstr ""
 "den Müll zu verschieben, in diesem Fall werden Sie um Bestätigung des "
 "Vorgangs gebeten."
 
-#: C/eog.xml:567(title)
+#: C/eom.xml:567(title)
 msgid "Saving Images"
 msgstr "Speichern von Bildern"
 
-#: C/eog.xml:569(para)
+#: C/eom.xml:569(para)
 msgid ""
 "<application>Image Viewer</application> always tries to choose the save "
 "method with least impact to the image data. For example, if an otherwise "
@@ -1160,11 +1160,11 @@ msgstr ""
 "auf Ihrem System installiert ist, werden alle Änderungen an JPEG-Bildern "
 "ohne Verlust an Bildinformationen ausgeführt."
 
-#: C/eog.xml:576(title)
+#: C/eom.xml:576(title)
 msgid "Saving an Image"
 msgstr "So speichern Sie ein Bild"
 
-#: C/eog.xml:577(para)
+#: C/eom.xml:577(para)
 msgid ""
 "To save an image, choose <menuchoice><guimenu>File</"
 "guimenu><guimenuitem>Save</guimenuitem></menuchoice>. The image will be "
@@ -1176,11 +1176,11 @@ msgstr ""
 "unter dem gleichen Namen und Dateityp gespeichert. Daher brauchen "
 "unbearbeitete Bilder nicht gespeichert zu werden."
 
-#: C/eog.xml:587(title)
+#: C/eom.xml:587(title)
 msgid "Saving an Image under a Different Name"
 msgstr "Speichern eines Bildes unter einem anderen Namen"
 
-#: C/eog.xml:588(para)
+#: C/eom.xml:588(para)
 msgid ""
 "To save an image under a different name, or convert it to a different file "
 "type, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Save As</"
@@ -1190,7 +1190,7 @@ msgstr ""
 "Dateiformat umzuwandeln, wählen Sie <menuchoice><guimenu>Datei</"
 "guimenu><guimenuitem>Speichern unter</guimenuitem></menuchoice>."
 
-#: C/eog.xml:593(para)
+#: C/eom.xml:593(para)
 msgid ""
 "Specify the filename in the <guilabel>Name</guilabel> field in the "
 "<guilabel>Save Image</guilabel> dialog, then click <guibutton>Save</"
@@ -1211,17 +1211,17 @@ msgstr ""
 "Ihnen das Durchsuchen weiterer Ordner und die Angabe des Dateityps in der "
 "Aufklappliste."
 
-#: C/eog.xml:594(para)
+#: C/eom.xml:594(para)
 msgid "You can save multiple images at once: see the next section."
 msgstr ""
 "Im nächsten Abschnitt sehen Sie, wie Sie mehrere Bilder auf einmal speichern "
 "können."
 
-#: C/eog.xml:599(title)
+#: C/eom.xml:599(title)
 msgid "Saving Multiple Images"
 msgstr "Speichern mehrerer Bilder"
 
-#: C/eog.xml:600(para)
+#: C/eom.xml:600(para)
 msgid ""
 "Saving multiple images at once allows you to convert several images to a "
 "different format, or give them similar filenames."
@@ -1229,7 +1229,7 @@ msgstr ""
 "Das gleichzeitige Speichern mehrerer Bilder ermöglicht Ihnen die Umwandlung "
 "mehrerer Bilder in ein anderes Format, oder die Vergabe ähnlicher Dateinamen."
 
-#: C/eog.xml:601(para)
+#: C/eom.xml:601(para)
 msgid ""
 "To save multiple images, select the images and choose "
 "<menuchoice><guimenu>File</guimenu><guimenuitem>Save As</guimenuitem></"
@@ -1239,21 +1239,21 @@ msgstr ""
 "<menuchoice><guimenu>Datei</guimenu><guimenuitem>Speichern unter</"
 "guimenuitem></menuchoice>. Der folgende Dialog wird angezeigt:"
 
-#: C/eog.xml:608(title)
+#: C/eom.xml:608(title)
 msgid "Save As dialog for multiple images"
 msgstr "Der »Speichern unter«-Dialog für mehrere Bilder"
 
-#: C/eog.xml:615(guilabel)
+#: C/eom.xml:615(guilabel)
 msgid "Save As"
 msgstr "Speichern unter"
 
-#: C/eog.xml:615(phrase)
+#: C/eom.xml:615(phrase)
 msgid "Shows Eye of MATE <placeholder-1/> dialog when saving multiple images."
 msgstr ""
 "Zeigt den <placeholder-1/>-Dialog von Eye of MATE beim Speichern mehrerer "
 "Bilder."
 
-#: C/eog.xml:620(para)
+#: C/eom.xml:620(para)
 msgid ""
 "The folder in which the images will be saved is specified by the "
 "<guilabel>Destination folder</guilabel> drop-down box. Initially the folder "
@@ -1272,7 +1272,7 @@ msgstr ""
 "sich aus einfachen Zeichen und besonderen Markierungen zusammen. Die "
 "folgenden speziellen Markierungen sind verfügbar:"
 
-#: C/eog.xml:623(para)
+#: C/eom.xml:623(para)
 msgid ""
 "<guilabel>Filename (%f)</guilabel> - Original filename without the "
 "fileformat suffix."
@@ -1280,7 +1280,7 @@ msgstr ""
 "<guilabel>Dateiname (%f)</guilabel> - Originaler Dateiname ohne das "
 "Dateiformat bestimmende Dateiendung."
 
-#: C/eog.xml:625(para)
+#: C/eom.xml:625(para)
 msgid ""
 "<guilabel>Counter (%n)</guilabel> - Auto-incremented number (starts at "
 "specified counter start)."
@@ -1288,13 +1288,13 @@ msgstr ""
 "<guilabel>Zähler (%n)</guilabel> - Automatisch hochgezählte Nummer "
 "(beginnend mit der angegebenen Zähler-Startnummer)"
 
-#: C/eog.xml:628(para)
+#: C/eom.xml:628(para)
 msgid "Everything but these special tags are considered normal text."
 msgstr ""
 "Alles außer dieser speziellen Markierungen wird als gewöhnlicher Text "
 "betrachtet."
 
-#: C/eog.xml:629(para)
+#: C/eom.xml:629(para)
 msgid ""
 "The image format is determined by the drop-down box after the schema "
 "definition. Select a specific image format or use the <guilabel>as is</"
@@ -1306,7 +1306,7 @@ msgstr ""
 "verwenden Sie die Option <guilabel>wie bisher</guilabel>, um das Dateiformat "
 "der Originaldatei beizubehalten."
 
-#: C/eog.xml:632(para)
+#: C/eom.xml:632(para)
 msgid ""
 "The <guilabel>Options</guilabel> section allows to remove all space "
 "characters by underscores in the resulting filename if <guilabel>Replace "
@@ -1321,7 +1321,7 @@ msgstr ""
 "guilabel> bestimmt, bei welcher Zahl der Zähler starten soll, falls Sie die "
 "Markierung %n für die Angabe des Dateiformats verwenden."
 
-#: C/eog.xml:633(para)
+#: C/eom.xml:633(para)
 msgid ""
 "The <guilabel>File Name Preview</guilabel> section of the dialog shows the "
 "resulting file name according to the above settings for an example filename "
@@ -1331,15 +1331,15 @@ msgstr ""
 "aus den vorgenommenen Einstellungen ergebenden Dateinamen. Dargestellt wird "
 "ein Beispiel aus den ausgewählten Bildern."
 
-#: C/eog.xml:642(title)
+#: C/eom.xml:642(title)
 msgid "Printing Images"
 msgstr "Drucken von Bildern"
 
-#: C/eog.xml:644(title)
+#: C/eom.xml:644(title)
 msgid "Setting your Page Settings"
 msgstr "Anpassen der Seiteneinstellungen"
 
-#: C/eog.xml:645(para)
+#: C/eom.xml:645(para)
 msgid ""
 "Before printing you need to set the page settings you would like to use. To "
 "do that choose <menuchoice><guimenu>File</guimenu><guimenuitem>Page Setup</"
@@ -1349,7 +1349,7 @@ msgstr ""
 "Wählen Sie <menuchoice><guimenu>Datei</guimenu><guimenuitem>Seite "
 "einrichten</guimenuitem></menuchoice>."
 
-#: C/eog.xml:646(para)
+#: C/eom.xml:646(para)
 msgid ""
 "In the <guilabel>Page Setup</guilabel> dialog you can now choose paper size "
 "and orientation. If possible also select your printer to have the page "
@@ -1359,15 +1359,15 @@ msgstr ""
 "Papiergröße und dessen Ausrichtung wählen. Falls möglich, können Sie hier "
 "auch Ihren Drucker wählen, um die korrekten Seitenränder festzulegen."
 
-#: C/eog.xml:650(title)
+#: C/eom.xml:650(title)
 msgid "Printing an Image"
 msgstr "Drucken eines Bildes"
 
-#: C/eog.xml:651(para)
+#: C/eom.xml:651(para)
 msgid "To print an image, perform the following steps:"
 msgstr "Um ein Bild zu drucken, führen Sie die folgenden Schritte aus:"
 
-#: C/eog.xml:654(para)
+#: C/eom.xml:654(para)
 msgid ""
 "Select <menuchoice><guimenu>File</guimenu><guimenuitem>Print</guimenuitem></"
 "menuchoice>"
@@ -1375,7 +1375,7 @@ msgstr ""
 "Wählen Sie <menuchoice><guimenu>Datei</guimenu><guimenuitem>Drucken</"
 "guimenuitem></menuchoice>."
 
-#: C/eog.xml:657(para)
+#: C/eom.xml:657(para)
 msgid ""
 "In the <guilabel>Print</guilabel> dialog, select the printer you want to use "
 "from the list."
@@ -1383,7 +1383,7 @@ msgstr ""
 "Im Dialog <guilabel>Drucken</guilabel> wählen Sie den zu verwendenden "
 "Drucker in der Liste aus."
 
-#: C/eog.xml:660(para)
+#: C/eom.xml:660(para)
 msgid ""
 "Click <guilabel>Print</guilabel>. <application>Image Viewer</application> "
 "starts printing now."
@@ -1391,7 +1391,7 @@ msgstr ""
 "Klicken Sie auf <guilabel>Drucken</guilabel>. Der "
 "<application>Bildbetrachter</application> startet jetzt den Druckvorgang."
 
-#: C/eog.xml:663(para)
+#: C/eom.xml:663(para)
 msgid ""
 "Images that are too large for the page are automatically scaled down to fit "
 "the page. Images that are smaller than the page are centered on it."
@@ -1400,7 +1400,7 @@ msgstr ""
 "auf die Seite zu passen. Bilder, die kleiner als die Seite sind, werden "
 "zentriert dargestellt."
 
-#: C/eog.xml:665(para)
+#: C/eom.xml:665(para)
 msgid ""
 "Please note that <application>Image Viewer</application> is currently "
 "lacking progress reporting while printing. During that time the user "
@@ -1411,25 +1411,25 @@ msgstr ""
 "Während dieser Zeit reagiert die Benutzeroberfläche kurzzeitig nicht auf "
 "Eingaben. "
 
-#: C/eog.xml:670(title)
+#: C/eom.xml:670(title)
 msgid "Arranging an Image on the Page"
 msgstr "Anordnen eines Bildes auf der Seite"
 
-#: C/eog.xml:671(para)
+#: C/eom.xml:671(para)
 msgid ""
 "Maybe you don't want your image centered or want it scaled down even "
 "further. To do that you need to open the <guilabel>Print</guilabel> dialog "
-"(see <xref linkend=\"eog-print-image\"/>) and then select the "
+"(see <xref linkend=\"eom-print-image\"/>) and then select the "
 "<guilabel>Image Settings</guilabel> tab which offers you the following "
 "options:"
 msgstr ""
 "Möglicherweise möchten Sie das Bild nicht auf der Seite zentrieren, oder Sie "
 "möchten es noch weiter verkleinern. Um dies zu tun, öffnen Sie den "
-"<guilabel>Druckdialog</guilabel> (siehe <xref linkend=\"eog-print-image\"/>) "
+"<guilabel>Druckdialog</guilabel> (siehe <xref linkend=\"eom-print-image\"/>) "
 "und wählen dann den Reiter <guilabel>Bildeinstellungen</guilabel>, der Ihnen "
 "die folgenden Optionen bietet:"
 
-#: C/eog.xml:674(para)
+#: C/eom.xml:674(para)
 msgid ""
 "The options in the <guilabel>Position</guilabel> section allow you to change "
 "the images position on the page."
@@ -1437,7 +1437,7 @@ msgstr ""
 "Die Optionen im Abschnitt <guilabel>Position</guilabel> ermöglichen Ihnen "
 "die Anpassung der Position des Bildes auf der Seite."
 
-#: C/eog.xml:677(para)
+#: C/eom.xml:677(para)
 msgid ""
 "It is also possible to position the image on the page by dragging it around "
 "in the <guilabel>Preview</guilabel> field."
@@ -1445,7 +1445,7 @@ msgstr ""
 "Es ist auch möglich, das Bild auf der Seite anzuordnen, indem Sie es "
 "innerhalb des <guilabel>Vorschau</guilabel>-Feldes verschieben."
 
-#: C/eog.xml:680(para)
+#: C/eom.xml:680(para)
 msgid ""
 "The options in the <guilabel>Size</guilabel> section allow you to scale your "
 "image to your liking. Scaling is limited by either the image size or by the "
@@ -1456,7 +1456,7 @@ msgstr ""
 "durch die Bildgröße oder durch die Seitengröße begrenzt, je nachdem, welche "
 "Begrenzung zuerst erreicht wird."
 
-#: C/eog.xml:683(para)
+#: C/eom.xml:683(para)
 msgid ""
 "The <guilabel>Unit</guilabel> option allows you to change the metric unit "
 "which is used by the options on the <guilabel>Image Settings</guilabel> tab. "
@@ -1468,11 +1468,11 @@ msgstr ""
 "guilabel> verwendet wird. Wenn Sie diese Option ändern, werden auch die "
 "Werte in den anderen Feldern entsprechend geändert."
 
-#: C/eog.xml:690(title)
+#: C/eom.xml:690(title)
 msgid "Personalizing The Toolbar"
 msgstr "Anpassen der Werkzeugleiste"
 
-#: C/eog.xml:691(para)
+#: C/eom.xml:691(para)
 msgid ""
 "Image Viewer's default toolbar contains only a basic set of items to keep it "
 "simple. But you can modify the toolbar if you prefer a different set."
@@ -1481,11 +1481,11 @@ msgstr ""
 "Grundausstattung an Objekten, um diese einfach zu halten. Sie können die "
 "Werkzeugleiste anpassen, falls Sie eine andere Zusammenstellung bevorzugen."
 
-#: C/eog.xml:693(title)
+#: C/eom.xml:693(title)
 msgid "Modifying the Toolbar"
 msgstr "Anpassen der Werkzeugleiste"
 
-#: C/eog.xml:694(para)
+#: C/eom.xml:694(para)
 msgid ""
 "If you want to modify the toolbar you need to open the toolbar editor by "
 "going to <menuchoice><guimenu>Edit</guimenu><guimenuitem>Toolbar</"
@@ -1496,15 +1496,15 @@ msgstr ""
 "guimenu><guimenuitem>Werkzeugleiste</guimenuitem></menuchoice>. Das folgende "
 "Fenster wird geöffnet:"
 
-#: C/eog.xml:696(title)
+#: C/eom.xml:696(title)
 msgid "The toolbar editor window"
 msgstr "Das Werkzeugleisteneditor-Fenster"
 
-#: C/eog.xml:703(phrase)
+#: C/eom.xml:703(phrase)
 msgid "Shows Eye of MATE toolbar editor window."
 msgstr "Zeigt das Fenster des Werkzeugleisteneditors von Eye of MATE."
 
-#: C/eog.xml:708(para)
+#: C/eom.xml:708(para)
 msgid ""
 "It contains the items that are not in the toolbar and the separator item. "
 "You can now edit the toolbar:"
@@ -1512,7 +1512,7 @@ msgstr ""
 "Es enthält die Objekte, die nicht in der Werkzeugleiste vorhanden sind, "
 "sowie eine Trennlinie. Sie können jetzt die Werkzeugleiste bearbeiten:"
 
-#: C/eog.xml:711(para)
+#: C/eom.xml:711(para)
 msgid ""
 "To add new items to the toolbar, drag them from the toolbar editor to the "
 "toolbar."
@@ -1520,7 +1520,7 @@ msgstr ""
 "Um neue Objekte zur Werkzeugleiste hinzuzufügen, ziehen Sie sie aus dem "
 "Werkzeugleisteneditor in die Werkzeugleiste."
 
-#: C/eog.xml:714(para)
+#: C/eom.xml:714(para)
 msgid ""
 "To remove items from the toolbar, drag them from the toolbar to the toolbar "
 "editor."
@@ -1528,7 +1528,7 @@ msgstr ""
 "Um Objekte aus der Werkzeugleiste zu entfernen, ziehen Sie sie aus der "
 "Werkzeugleiste in den Werkzeugleisteneditor."
 
-#: C/eog.xml:717(para)
+#: C/eom.xml:717(para)
 msgid ""
 "To rearrange items on the toolbar, drag them to their new position on the "
 "toolbar."
@@ -1536,7 +1536,7 @@ msgstr ""
 "Um die Objekte in der Werkzeugleiste neu zu ordnen, ziehen Sie sie innerhalb "
 "der Werkzeugleiste an ihre neue Position."
 
-#: C/eog.xml:720(para)
+#: C/eom.xml:720(para)
 msgid ""
 "When you have finished editing the toolbar, click the <guibutton>Close</"
 "guibutton> button in the toolbar editor window. This will close the toolbar "
@@ -1547,11 +1547,11 @@ msgstr ""
 "Werkzeugleisteneditors. Dies schließt den Werkzeugleisteneditor und "
 "aktiviert die neue Werkzeugleiste."
 
-#: C/eog.xml:723(title)
+#: C/eom.xml:723(title)
 msgid "Resetting the Toolbar"
 msgstr "Zurücksetzen der Werkzeugleiste"
 
-#: C/eog.xml:724(para)
+#: C/eom.xml:724(para)
 msgid ""
 "To revert your changes to the toolbar and return to the default layout, "
 "perform the following steps:"
@@ -1559,20 +1559,20 @@ msgstr ""
 "Um Ihre Änderungen rückgängig zu machen und zur Standardanordnung "
 "zurückzukehren, gehen Sie wie folgt vor:"
 
-#: C/eog.xml:727(para)
+#: C/eom.xml:727(para)
 msgid ""
-"Open the toolbar editor (see <xref linkend=\"eog-toolbareditor-use\"/>)."
+"Open the toolbar editor (see <xref linkend=\"eom-toolbareditor-use\"/>)."
 msgstr ""
-"Öffnen Sie den Werkzeugleisteneditor (siehe <xref linkend=\"eog-"
+"Öffnen Sie den Werkzeugleisteneditor (siehe <xref linkend=\"eom-"
 "toolbareditor-use\"/>)."
 
-#: C/eog.xml:730(para)
+#: C/eom.xml:730(para)
 msgid "Click the <guibutton>Reset to Default</guibutton> button."
 msgstr ""
 "Klicken Sie auf die Schaltfläche <guibutton>Zurücksetzen auf "
 "Standardeinstellungen</guibutton>."
 
-#: C/eog.xml:733(para)
+#: C/eom.xml:733(para)
 msgid ""
 "Click the <guibutton>Close</guibutton> button to close the toolbar editor. "
 "The toolbar has been reset to the default layout now."
@@ -1581,11 +1581,11 @@ msgstr ""
 "Werkzeugleisteneditor zu schließen. Die Werkzeugleiste wurde nun auf die "
 "Standardanordnung zurückgesetzt."
 
-#: C/eog.xml:739(title)
+#: C/eom.xml:739(title)
 msgid "Preferences"
 msgstr "Einstellungen"
 
-#: C/eog.xml:740(para)
+#: C/eom.xml:740(para)
 msgid ""
 "Preferences can be changed by going to <menuchoice><guimenu>Edit</"
 "guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>. You will be "
@@ -1598,15 +1598,15 @@ msgstr ""
 "Bidbetrachtung und für Diaschauen. Alle Änderungen werden auf alle "
 "geöffneten Fenster unmittelbar angewendet."
 
-#: C/eog.xml:744(title)
+#: C/eom.xml:744(title)
 msgid "Image View"
 msgstr "Bildansicht"
 
-#: C/eog.xml:747(guilabel)
+#: C/eom.xml:747(guilabel)
 msgid "Image Enhancements"
 msgstr "Bildverbesserungen"
 
-#: C/eog.xml:749(para)
+#: C/eom.xml:749(para)
 msgid ""
 "Select the <guilabel>Smooth images when zoomed</guilabel> option to enable "
 "image smoothing when you change the image's zoom factor. If you select this "
@@ -1618,14 +1618,14 @@ msgstr ""
 "diese Option wählen, werden Ihre Bilder geglättet, um deren Anzeigequalität "
 "beim Betrachten im <application>Bildbetrachter</application> zu verbessern."
 
-#: C/eog.xml:750(para)
+#: C/eom.xml:750(para)
 msgid ""
 "If you select the <guilabel>Automatic orientation</guilabel> option, your "
 "images will be rotated on loading according to their metadata. For example "
 "portraits are automatically rotated upright. Note that this function "
 "requires a correctly set orientation tag in the image's metadata and thus "
 "does not work with all images. The rotation is not saved until you save the "
-"rotated image (see <xref linkend=\"eog-save-rename\"/>)."
+"rotated image (see <xref linkend=\"eom-save-rename\"/>)."
 msgstr ""
 "Falls Sie die Option <guilabel>Automatische Drehung des Bildes</guilabel> "
 "wählen, werden Ihre bilder beim Laden ensprechend der enthaltenen Metadaten "
@@ -1633,14 +1633,14 @@ msgstr ""
 "Beachten Sie, dass diese Funktion eine korrekt gesetzte Markierung für die "
 "Orientierung in den Metadaten des Bildes voraussetzt. Daher funktioniert "
 "dies nicht mit allen Bildern. Die Drehung wird nicht gespeichert, solange "
-"Sie das gedrehte Bild nicht speichern (siehe <xref linkend=\"eog-save-rename"
+"Sie das gedrehte Bild nicht speichern (siehe <xref linkend=\"eom-save-rename"
 "\"/>)."
 
-#: C/eog.xml:755(guilabel)
+#: C/eom.xml:755(guilabel)
 msgid "Transparent Parts"
 msgstr "Transparente Bildteile"
 
-#: C/eog.xml:757(para)
+#: C/eom.xml:757(para)
 msgid ""
 "Select one of the following options to determine how <application>Image "
 "Viewer</application> displays transparent parts of an image:"
@@ -1649,19 +1649,19 @@ msgstr ""
 "<application>Bildbetrachter</application> transparente Teile eines Bildes "
 "anzeigen soll:"
 
-#: C/eog.xml:759(guilabel)
+#: C/eom.xml:759(guilabel)
 msgid "As check pattern"
 msgstr "Als Karo-Muster"
 
-#: C/eog.xml:760(para)
+#: C/eom.xml:760(para)
 msgid "Displays any transparent parts of the image in a check pattern."
 msgstr "Zeigt die transparenten Teile des Bildes in einem Karo-Muster an."
 
-#: C/eog.xml:762(guilabel)
+#: C/eom.xml:762(guilabel)
 msgid "As custom color"
 msgstr "Benutzerdefinierte Farbe benutzen"
 
-#: C/eog.xml:763(para)
+#: C/eom.xml:763(para)
 msgid ""
 "Displays any transparent parts of the image in a solid color that you "
 "specify. Click on the color selector button to select a color."
@@ -1669,11 +1669,11 @@ msgstr ""
 "Stellt transparente Teile des Bildes in einer von Ihnen festgelegten Farbe "
 "dar. Klicken Sie auf die Farbauswahl-Schaltfläche, um eine Farbe auszuwählen."
 
-#: C/eog.xml:765(guimenuitem)
+#: C/eom.xml:765(guimenuitem)
 msgid "As background"
 msgstr "Als Hintergrundbild verwenden"
 
-#: C/eog.xml:766(para)
+#: C/eom.xml:766(para)
 msgid ""
 "Displays any transparent parts of the image in the background color of the "
 "<application>Image Viewer</application> application."
@@ -1681,15 +1681,15 @@ msgstr ""
 "Stellt transparente Teile des Bildes in der Hintergundfarbe des "
 "<application>Bildbetrachters</application> dar."
 
-#: C/eog.xml:776(title)
+#: C/eom.xml:776(title)
 msgid "Slideshow"
 msgstr "Diaschau"
 
-#: C/eog.xml:779(guilabel)
+#: C/eom.xml:779(guilabel)
 msgid "Image Zoom"
 msgstr "Bilder vergrößern oder verkleinern"
 
-#: C/eog.xml:781(para)
+#: C/eom.xml:781(para)
 msgid ""
 "Select the <guilabel>Expand images to fit screen</guilabel> option to "
 "enlarge images to fit the screen during the slide show. If you do not select "
@@ -1701,11 +1701,11 @@ msgstr ""
 "Sie diese Option nicht auswählen, werden die Bilder, die kleiner als der "
 "Bildschirm sind, nicht an die Größe des Bildschirms angepasst."
 
-#: C/eog.xml:785(guilabel)
+#: C/eom.xml:785(guilabel)
 msgid "Sequence"
 msgstr "Sequenz"
 
-#: C/eog.xml:787(para)
+#: C/eom.xml:787(para)
 msgid ""
 "Select the <guilabel>Loop sequence</guilabel> option to cycle endlessly "
 "through the list of images during the slide show. If you do not select this "
@@ -1717,21 +1717,21 @@ msgstr ""
 "nicht wählen, wird die Diaschau nach der Anzeige des letzten Bildes beendet "
 "und die Anwendung kehrt zur Bildersammlungs-Ansicht zurück."
 
-#: C/eog.xml:789(para)
+#: C/eom.xml:789(para)
 msgid ""
 "Use the <guilabel>Switch image after ... seconds</guilabel> spin box to "
 "specify how long each image is displayed during the slide show. If you set "
 "this value to zero, the auto advance function is disabled and only manual "
-"browsing is available (see <xref linkend=\"eog-fullscreen\"/>)."
+"browsing is available (see <xref linkend=\"eom-fullscreen\"/>)."
 msgstr ""
 "Verwenden Sie das Einstellfeld <guilabel>Bild wechseln nach … Sekunden</"
 "guilabel>, um die Anzeigedauer des einzelnen Bildes während der Diaschau "
 "anzugeben. Wenn Sie diesen Wert auf Null setzen, wird die automatische "
 "Wechselfunktion deaktiviert. In diesem Fall ist nur manuelles Weiterschalten "
-"möglich (siehe <xref linkend=\"eog-fullscreen\"/>)."
+"möglich (siehe <xref linkend=\"eom-fullscreen\"/>)."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: C/eog.xml:0(None)
+#: C/eom.xml:0(None)
 msgid "translator-credits"
 msgstr ""
 "Jan Arne Petersen <jpetersen@jpetersen.org>, 2006\n"
@@ -1792,8 +1792,8 @@ msgstr ""
 #~ "ein und dr&uuml;cken anschlie&szlig;end die <keycap> Eingabetaste</"
 #~ "keycap>:"
 
-#~ msgid "eog"
-#~ msgstr "eog"
+#~ msgid "eom"
+#~ msgstr "eom"
 
 #~ msgid "filename.jpg"
 #~ msgstr "Dateiname.jpg"

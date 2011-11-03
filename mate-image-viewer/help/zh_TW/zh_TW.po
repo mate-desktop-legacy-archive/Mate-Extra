@@ -9,122 +9,122 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: eog-C.xml:23(title) eog-C.xml:98(revnumber)
+#: eom-C.xml:23(title) eom-C.xml:98(revnumber)
 msgid "Eye of MATE Manual V2.3"
 msgstr "Eye of MATE 手冊 V2.3"
 
-#: eog-C.xml:26(year)
+#: eom-C.xml:26(year)
 msgid "2002"
 msgstr ""
 
-#: eog-C.xml:27(holder) eog-C.xml:62(orgname)
+#: eom-C.xml:27(holder) eom-C.xml:62(orgname)
 msgid "Sun Microsystems"
 msgstr ""
 
-#: eog-C.xml:30(year) eog-C.xml:34(year) eog-C.xml:139(date)
+#: eom-C.xml:30(year) eom-C.xml:34(year) eom-C.xml:139(date)
 msgid "2000"
 msgstr ""
 
-#: eog-C.xml:31(holder)
+#: eom-C.xml:31(holder)
 msgid "Eliot Landrum"
 msgstr ""
 
-#: eog-C.xml:35(holder)
+#: eom-C.xml:35(holder)
 msgid "The Free Software Foundation"
 msgstr ""
 
-#: eog-C.xml:49(publishername) eog-C.xml:70(orgname) eog-C.xml:78(orgname)
-#: eog-C.xml:104(para) eog-C.xml:114(para) eog-C.xml:124(para)
-#: eog-C.xml:134(para) eog-C.xml:147(para)
+#: eom-C.xml:49(publishername) eom-C.xml:70(orgname) eom-C.xml:78(orgname)
+#: eom-C.xml:104(para) eom-C.xml:114(para) eom-C.xml:124(para)
+#: eom-C.xml:134(para) eom-C.xml:147(para)
 msgid "MATE Documentation Project"
 msgstr "MATE 文件專案"
 
-#: eog-C.xml:59(firstname)
+#: eom-C.xml:59(firstname)
 msgid "Sun"
 msgstr ""
 
-#: eog-C.xml:60(surname)
+#: eom-C.xml:60(surname)
 msgid "MATE Documentation Team"
 msgstr "MATE 文件小組"
 
-#: eog-C.xml:63(email)
+#: eom-C.xml:63(email)
 msgid "gdocteam@sun.com"
 msgstr ""
 
-#: eog-C.xml:67(firstname)
+#: eom-C.xml:67(firstname)
 msgid "Eliot"
 msgstr ""
 
-#: eog-C.xml:68(surname)
+#: eom-C.xml:68(surname)
 msgid "Landrum"
 msgstr ""
 
-#: eog-C.xml:71(email)
+#: eom-C.xml:71(email)
 msgid "eliot@landrum.cx"
 msgstr ""
 
-#: eog-C.xml:75(firstname)
+#: eom-C.xml:75(firstname)
 msgid "Federico"
 msgstr ""
 
-#: eog-C.xml:76(surname)
+#: eom-C.xml:76(surname)
 msgid "Mena Quintero"
 msgstr ""
 
-#: eog-C.xml:79(email)
+#: eom-C.xml:79(email)
 msgid "federico@gnu.org"
 msgstr ""
 
-#: eog-C.xml:101(para) eog-C.xml:111(para) eog-C.xml:121(para)
-#: eog-C.xml:131(para)
+#: eom-C.xml:101(para) eom-C.xml:111(para) eom-C.xml:121(para)
+#: eom-C.xml:131(para)
 msgid "Sun MATE Documentation Team <email>gdocteam@sun.com</email>"
 msgstr "Sun MATE 文件小組 <email>gdocteam@sun.com</email>"
 
-#: eog-C.xml:108(revnumber)
+#: eom-C.xml:108(revnumber)
 msgid "Eye of MATE Manual V2.2"
 msgstr "Eye of MATE 手冊 V2.2"
 
-#: eog-C.xml:109(date)
+#: eom-C.xml:109(date)
 msgid "August 2002"
 msgstr "2002 年 8 月"
 
-#: eog-C.xml:118(revnumber)
+#: eom-C.xml:118(revnumber)
 msgid "Eye of MATE Manual V2.1"
 msgstr "Eye of MATE 手冊 V2.1"
 
-#: eog-C.xml:119(date)
+#: eom-C.xml:119(date)
 msgid "July 2002"
 msgstr "2002 年 7 月"
 
-#: eog-C.xml:128(revnumber)
+#: eom-C.xml:128(revnumber)
 msgid "Eye of MATE Manual V2.0"
 msgstr "Eye of MATE 手冊 V2.0"
 
-#: eog-C.xml:129(date)
+#: eom-C.xml:129(date)
 msgid "May 2002"
 msgstr "2002 年 5 月"
 
-#: eog-C.xml:138(revnumber)
+#: eom-C.xml:138(revnumber)
 msgid "Eye of MATE User's Guide"
 msgstr "Eye of MATE 使用者指南"
 
-#: eog-C.xml:141(para)
+#: eom-C.xml:141(para)
 msgid "Eliot Landrum <email>eliot@landrum.cx</email>"
 msgstr ""
 
-#: eog-C.xml:144(para)
+#: eom-C.xml:144(para)
 msgid "Federico Mena Quintero <email>federico@gnu.org</email>"
 msgstr ""
 
-#: eog-C.xml:152(releaseinfo)
+#: eom-C.xml:152(releaseinfo)
 msgid "This manual describes version 1.0.2 of Eye of MATE."
 msgstr "本手冊的內容是說明 1.0.2 版的 Eye of MATE。"
 
-#: eog-C.xml:155(title)
+#: eom-C.xml:155(title)
 msgid "Feedback"
 msgstr "回饋"
 
-#: eog-C.xml:156(para)
+#: eom-C.xml:156(para)
 msgid ""
 "To report a bug or make a suggestion regarding the Eye of MATE application "
 "or this manual, follow the directions in the <ulink url=\"ghelp:mate-"
@@ -134,15 +134,15 @@ msgstr ""
 "url=\"ghelp:mate-feedback\" type=\"help\">MATE Feedback Page</ulink> 的指"
 "示。"
 
-#: eog-C.xml:166(primary)
+#: eom-C.xml:166(primary)
 msgid "Eye of MATE"
 msgstr ""
 
-#: eog-C.xml:174(title)
+#: eom-C.xml:174(title)
 msgid "Introduction"
 msgstr "介紹"
 
-#: eog-C.xml:175(para)
+#: eom-C.xml:175(para)
 msgid ""
 "The <application>Eye of MATE</application> application enables you to view "
 "image files. <application>Eye of MATE</application> provides the following "
@@ -151,59 +151,59 @@ msgstr ""
 "使用 <application>Eye of MATE</application> 應用程式，您可以檢視影像檔案。 "
 "<application>Eye of MATE</application> 提供了下列功能："
 
-#: eog-C.xml:178(para)
+#: eom-C.xml:178(para)
 msgid "Support for the following image file formats:"
 msgstr "支援以下的影像檔案格式："
 
-#: eog-C.xml:180(para)
+#: eom-C.xml:180(para)
 msgid "BMP - Windows Bitmap"
 msgstr "BMP - Windows 點陣圖"
 
-#: eog-C.xml:182(para)
+#: eom-C.xml:182(para)
 msgid "GIF - Graphics Interchange Format"
 msgstr "GIF - 圖形交換格式"
 
-#: eog-C.xml:184(para)
+#: eom-C.xml:184(para)
 msgid "ICO - Windows Icon"
 msgstr "ICO - Windows 圖示"
 
-#: eog-C.xml:186(para)
+#: eom-C.xml:186(para)
 msgid "JPEG - Joint Photographic Experts Group"
 msgstr "JPEG - 聯合圖像專業團體"
 
-#: eog-C.xml:188(para)
+#: eom-C.xml:188(para)
 msgid "PNG - Portable Network Graphics"
 msgstr "PNG - 可攜式網路圖形"
 
-#: eog-C.xml:190(para)
+#: eom-C.xml:190(para)
 msgid "PNM - Portable Anymap from the PPM Toolkit"
 msgstr "PNM - PPM 圖形檔工具箱中的圖形轉換格式"
 
-#: eog-C.xml:192(para)
+#: eom-C.xml:192(para)
 msgid "RAS - Sun Raster"
 msgstr "RAS - Sun Raster 格式"
 
-#: eog-C.xml:194(para)
+#: eom-C.xml:194(para)
 msgid "SVG - Scaleable Vector Graphics"
 msgstr "SVG - 可變式向量圖形"
 
-#: eog-C.xml:196(para)
+#: eom-C.xml:196(para)
 msgid "TGA - Targa"
 msgstr ""
 
-#: eog-C.xml:198(para)
+#: eom-C.xml:198(para)
 msgid "TIFF - Tagged Image File Format"
 msgstr "TIFF - 標籤影像檔案格式"
 
-#: eog-C.xml:200(para)
+#: eom-C.xml:200(para)
 msgid "XBM - X Bitmap"
 msgstr "XBM - X 點陣圖"
 
-#: eog-C.xml:202(para)
+#: eom-C.xml:202(para)
 msgid "XPM - X Pixmap"
 msgstr "XPM - X 像素對映圖"
 
-#: eog-C.xml:206(para)
+#: eom-C.xml:206(para)
 msgid ""
 "A variety of zoom levels and full screen viewing, with low usage of memory "
 "regardless of the zoom level."
@@ -211,30 +211,30 @@ msgstr ""
 "各種放大縮小顯示層級以及全螢幕顯示，同時不論縮放層級為何，佔用的記憶體量都很"
 "小。"
 
-#: eog-C.xml:209(para)
+#: eom-C.xml:209(para)
 msgid ""
 "MateComponent embedding technology that enables you to embed image views in other "
 "MATE applications."
 msgstr "MateComponent 的內嵌技術，可以讓您將影像檢視內嵌至 MATE 其他的應用程式中。"
 
-#: eog-C.xml:218(title)
+#: eom-C.xml:218(title)
 msgid "Getting Started"
 msgstr "入門"
 
-#: eog-C.xml:220(title)
+#: eom-C.xml:220(title)
 msgid "To Start Eye of MATE"
 msgstr "啟動 Eye of MATE"
 
-#: eog-C.xml:221(para)
+#: eom-C.xml:221(para)
 msgid ""
 "You can start <application>Eye of MATE</application> in the following ways:"
 msgstr "您可以使用下列方式啟動 <application>Eye of MATE</application>："
 
-#: eog-C.xml:224(term)
+#: eom-C.xml:224(term)
 msgid "<guimenu>Applications</guimenu> menu"
 msgstr "<guimenu>應用程式</guimenu>功能表"
 
-#: eog-C.xml:226(para)
+#: eom-C.xml:226(para)
 msgid ""
 "Choose <menuchoice><guisubmenu>Graphics</guisubmenu><guimenuitem>Eye of "
 "MATE Image Viewer</guimenuitem></menuchoice>."
@@ -242,11 +242,11 @@ msgstr ""
 "請選擇 <menuchoice><guisubmenu>圖形 </guisubmenu><guimenuitem>Eye of MATE 影"
 "像檢視器 </guimenuitem></menuchoice>。"
 
-#: eog-C.xml:234(term)
+#: eom-C.xml:234(term)
 msgid "Command line"
 msgstr "指令行"
 
-#: eog-C.xml:236(para)
+#: eom-C.xml:236(para)
 msgid ""
 "To run <application>Eye of MATE</application> and open a file from a "
 "command line, type the following command, then press <keycap> Return</"
@@ -255,22 +255,22 @@ msgstr ""
 "如果要從指令行執行 <application>Eye of MATE</application> 並開啟檔案， 請鍵"
 "入下列指令，再按一下 <keycap> Return</keycap>："
 
-#: eog-C.xml:238(command)
-msgid "eog"
+#: eom-C.xml:238(command)
+msgid "eom"
 msgstr ""
 
-#: eog-C.xml:238(replaceable)
+#: eom-C.xml:238(replaceable)
 msgid "filename.jpg"
 msgstr ""
 
-#: eog-C.xml:239(para)
+#: eom-C.xml:239(para)
 msgid ""
 "where <replaceable>filename.jpg</replaceable> is the name of the file you "
 "want to open."
 msgstr ""
 "其中 <replaceable>filename.jpg</replaceable> 指的是您想要開啟檔案的名稱。"
 
-#: eog-C.xml:240(para)
+#: eom-C.xml:240(para)
 msgid ""
 "<application>Eye of MATE</application> opens each file that you specify in "
 "a new window."
@@ -278,34 +278,34 @@ msgstr ""
 "<application>Eye of MATE</application> 會將您指定的檔案分別開啟在不同的新視"
 "窗中。"
 
-#: eog-C.xml:246(title)
+#: eom-C.xml:246(title)
 msgid "When You Start Eye of MATE"
 msgstr "當您啟動 Eye of MATE 時"
 
-#: eog-C.xml:247(para)
+#: eom-C.xml:247(para)
 msgid ""
 "When you start <application>Eye of MATE</application>, the following window "
 "is displayed."
 msgstr ""
 "當您啟動 <application>Eye of MATE</application> 時，會顯示下面的視窗。"
 
-#: eog-C.xml:250(title)
+#: eom-C.xml:250(title)
 msgid "Eye of MATE Start Up Window Before You Open a File"
 msgstr "開啟檔案前的 Eye of MATE 啟動視窗"
 
-#: eog-C.xml:257(phrase)
+#: eom-C.xml:257(phrase)
 msgid "Shows Eye of MATE main window"
 msgstr "顯示 Eye of MATE 主視窗"
 
-#: eog-C.xml:270(title)
+#: eom-C.xml:270(title)
 msgid "Usage"
 msgstr "使用"
 
-#: eog-C.xml:274(title)
+#: eom-C.xml:274(title)
 msgid "To Open an Image"
 msgstr "開啟影像"
 
-#: eog-C.xml:275(para)
+#: eom-C.xml:275(para)
 msgid ""
 "To open an image, choose <menuchoice><guimenu>File</"
 "guimenu><guimenuitem>Open</guimenuitem></menuchoice>. The <guilabel>Open "
@@ -316,7 +316,7 @@ msgstr ""
 "guimenuitem></menuchoice>。 此時會顯示<guilabel>開啟影像</guilabel>對話方"
 "塊。 選取您要開啟的檔案，然後按一下<guibutton>確定</guibutton>。"
 
-#: eog-C.xml:282(para)
+#: eom-C.xml:282(para)
 msgid ""
 "To open another image in a new window, choose <menuchoice><guimenu>File</"
 "guimenu><guimenuitem>New Window</guimenuitem></menuchoice>. Choose "
@@ -337,7 +337,7 @@ msgstr ""
 "影像顯示在視窗中。 但是如果視窗不是空白的，應用程式就會開啟一個新視窗來顯示檔"
 "案。"
 
-#: eog-C.xml:297(para)
+#: eom-C.xml:297(para)
 msgid ""
 "If you try to open an image file format that <application>Eye of MATE</"
 "application> does not recognize, the application displays an error message."
@@ -345,11 +345,11 @@ msgstr ""
 "如果您想開啟的檔案，其格式 <application>Eye of MATE</application> 無法辨識，"
 "應用程式便會顯示錯誤訊息。"
 
-#: eog-C.xml:303(title)
+#: eom-C.xml:303(title)
 msgid "To Scroll an Image"
 msgstr "捲動檢視影像"
 
-#: eog-C.xml:304(para)
+#: eom-C.xml:304(para)
 msgid ""
 "To scroll around an image that is larger than the image window or full "
 "screen window, you can use the following methods:"
@@ -357,11 +357,11 @@ msgstr ""
 "當影像尺寸比影像視窗或全螢幕還要大的時候，您可以用下列的方法，以捲動的方式檢"
 "視影像："
 
-#: eog-C.xml:307(para)
+#: eom-C.xml:307(para)
 msgid "Use the arrow keys on the keyboard."
 msgstr "使用鍵盤上的箭號鍵。"
 
-#: eog-C.xml:309(para)
+#: eom-C.xml:309(para)
 msgid ""
 "Drag the image in the opposite direction to the direction in which you want "
 "to scroll. For example, if you want to scroll down the image, drag the image "
@@ -370,15 +370,15 @@ msgstr ""
 "朝您想捲動的反方向，直接拖曳影像。 例如，如果您想將影像向下捲動，就請向上拖曳"
 "視窗中的影像。"
 
-#: eog-C.xml:313(para)
+#: eom-C.xml:313(para)
 msgid "Use the scrollbars on the window."
 msgstr "使用視窗的捲動軸。"
 
-#: eog-C.xml:319(title)
+#: eom-C.xml:319(title)
 msgid "To Change the Zoom Factor"
 msgstr "變更縮放係數"
 
-#: eog-C.xml:320(para)
+#: eom-C.xml:320(para)
 msgid ""
 "You can use the following methods to resize the view of an image in the "
 "<application>Eye of MATE</application> window:"
@@ -386,7 +386,7 @@ msgstr ""
 "您可以使用下列方式，調整 <application>Eye of MATE</application> 視窗中影像檢"
 "視的大小："
 
-#: eog-C.xml:323(para)
+#: eom-C.xml:323(para)
 msgid ""
 "To enlarge the view of an image, choose <menuchoice><guimenu>View</"
 "guimenu><guimenuitem>Zoom In</guimenuitem></menuchoice>."
@@ -394,7 +394,7 @@ msgstr ""
 "如果要放大影像的檢視，請選擇 <menuchoice><guimenu>檢視</"
 "guimenu><guimenuitem> 放大</guimenuitem></menuchoice>。"
 
-#: eog-C.xml:329(para)
+#: eom-C.xml:329(para)
 msgid ""
 "To shrink the view of an image, choose <menuchoice><guimenu>View</"
 "guimenu><guimenuitem>Zoom Out</guimenuitem></menuchoice>."
@@ -402,7 +402,7 @@ msgstr ""
 "如果要縮小影像的檢視，請選擇 <menuchoice><guimenu>檢視</guimenu><guimenuitem>"
 "縮小</guimenuitem></menuchoice>。"
 
-#: eog-C.xml:335(para)
+#: eom-C.xml:335(para)
 msgid ""
 "To view the image at its actual size, choose <menuchoice><guimenu>View</"
 "guimenu><guimenuitem>Zoom 1:1</guimenuitem></menuchoice>."
@@ -410,7 +410,7 @@ msgstr ""
 "如果要檢視影像的實際尺寸，請選擇 <menuchoice><guimenu>檢視</"
 "guimenu><guimenuitem> 縮放比例 1:1</guimenuitem></menuchoice>。"
 
-#: eog-C.xml:341(para)
+#: eom-C.xml:341(para)
 msgid ""
 "To enlarge or shrink the view of an image so that the image fits the "
 "<application>Eye of MATE</application> window, choose "
@@ -421,7 +421,7 @@ msgstr ""
 "視窗的大小，請選擇 <menuchoice><guimenu>檢視</guimenu><guimenuitem>縮放至同視"
 "窗大小</guimenuitem></menuchoice>。"
 
-#: eog-C.xml:348(para)
+#: eom-C.xml:348(para)
 msgid ""
 "To display the image in full screen mode, choose <menuchoice><guimenu>View</"
 "guimenu><guimenuitem>Full Screen</guimenuitem></menuchoice>. Full screen "
@@ -436,11 +436,11 @@ msgstr ""
 "列，或是工具列。 要結束這個模式，請按一下 <keycap>Esc</keycap> 鍵或是"
 "<keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>。"
 
-#: eog-C.xml:362(title)
+#: eom-C.xml:362(title)
 msgid "To Change the Interpolation Method"
 msgstr "變更插入法"
 
-#: eog-C.xml:363(para)
+#: eom-C.xml:363(para)
 msgid ""
 "To change the interpolation method for the image, choose "
 "<menuchoice><guimenu>View</guimenu><guimenuitem>Interpolation</guimenuitem></"
@@ -451,11 +451,11 @@ msgstr ""
 "guimenu><guimenuitem>插入法</guimenuitem></menuchoice>，然後選擇您想要的插入"
 "法。 請選取下列任一項選項："
 
-#: eog-C.xml:372(guimenuitem) eog-C.xml:512(guimenuitem)
+#: eom-C.xml:372(guimenuitem) eom-C.xml:512(guimenuitem)
 msgid "Nearest Neighbor"
 msgstr "最近鄰域內插法"
 
-#: eog-C.xml:373(para)
+#: eom-C.xml:373(para)
 msgid ""
 "This method of interpolation takes a location in the original image and "
 "replicates the pixel that is nearest to this location. When you zoom in on "
@@ -466,19 +466,19 @@ msgstr ""
 "製。 當您將影像放大檢視的時候，像素會因為重製而增加。 但是當您將影像縮小檢視"
 "的時候，影像就會遺失部分的細節。"
 
-#: eog-C.xml:377(guimenuitem) eog-C.xml:517(guimenuitem)
+#: eom-C.xml:377(guimenuitem) eom-C.xml:517(guimenuitem)
 msgid "Tiles"
 msgstr "並列"
 
-#: eog-C.xml:378(para) eog-C.xml:518(para)
+#: eom-C.xml:378(para) eom-C.xml:518(para)
 msgid "No information available at time of publication."
 msgstr "本手冊出版之時，尚無此相關資訊。"
 
-#: eog-C.xml:380(guimenuitem) eog-C.xml:520(guimenuitem)
+#: eom-C.xml:380(guimenuitem) eom-C.xml:520(guimenuitem)
 msgid "Bilinear"
 msgstr "雙線性內插法"
 
-#: eog-C.xml:381(para) eog-C.xml:521(para)
+#: eom-C.xml:381(para) eom-C.xml:521(para)
 msgid ""
 "This is a simple and fast method of interpolation. When you zoom in on an "
 "image, <application>Eye of MATE</application> uses up to four adjacent "
@@ -491,11 +491,11 @@ msgstr ""
 "<application>Eye of MATE</application> 會將現有影像區域中的顏色平均，以計算"
 "像素的顏色。"
 
-#: eog-C.xml:386(guimenuitem) eog-C.xml:526(guimenuitem)
+#: eom-C.xml:386(guimenuitem) eom-C.xml:526(guimenuitem)
 msgid "Hyperbolic"
 msgstr "雙曲線插入法"
 
-#: eog-C.xml:387(para) eog-C.xml:527(para)
+#: eom-C.xml:387(para) eom-C.xml:527(para)
 msgid ""
 "This is a high-quality, slow method of interpolation. The application "
 "performs interpolation on the image in the manner described in Digital Image "
@@ -504,11 +504,11 @@ msgstr ""
 "這是一個品質高但是費時的插入法。 應用程式在影像上進行的這種插入法，是根據 "
 "George Wolberg 在其著作《Digital Image Warping》中所描述的方法。"
 
-#: eog-C.xml:397(title)
+#: eom-C.xml:397(title)
 msgid "To Change the Dithering Method"
 msgstr "變更混色法"
 
-#: eog-C.xml:398(para)
+#: eom-C.xml:398(para)
 msgid ""
 "To change the dithering method for the image, choose "
 "<menuchoice><guimenu>View</guimenu><guisubmenu>Dither</guisubmenu></"
@@ -519,19 +519,19 @@ msgstr ""
 "混色</guisubmenu></menuchoice>，然後選擇您所想要的混色法。 請選取下列任一項選"
 "項："
 
-#: eog-C.xml:406(guimenuitem) eog-C.xml:538(guimenuitem)
+#: eom-C.xml:406(guimenuitem) eom-C.xml:538(guimenuitem)
 msgid "None"
 msgstr "無"
 
-#: eog-C.xml:407(para) eog-C.xml:539(para)
+#: eom-C.xml:407(para) eom-C.xml:539(para)
 msgid "This option does not use dithering."
 msgstr "選取這個選項，表示不使用混色。"
 
-#: eog-C.xml:409(guimenuitem) eog-C.xml:541(guimenuitem)
+#: eom-C.xml:409(guimenuitem) eom-C.xml:541(guimenuitem)
 msgid "Normal (pseudocolor)"
 msgstr "一般 (虛擬色彩)"
 
-#: eog-C.xml:410(para) eog-C.xml:542(para)
+#: eom-C.xml:410(para) eom-C.xml:542(para)
 msgid ""
 "This option performs dithering on pseudocolor displays, which use a limited "
 "palette of colors."
@@ -539,19 +539,19 @@ msgstr ""
 "選取這個選項，會在虛擬色彩的顯示器上進行混色，因為這些顯示器使用的調色版顏色"
 "有限。"
 
-#: eog-C.xml:412(guimenuitem) eog-C.xml:544(guimenuitem)
+#: eom-C.xml:412(guimenuitem) eom-C.xml:544(guimenuitem)
 msgid "Maximum (high color)"
 msgstr "最大 (高畫質)"
 
-#: eog-C.xml:413(para) eog-C.xml:545(para)
+#: eom-C.xml:413(para) eom-C.xml:545(para)
 msgid "This option performs dithering on pseudocolor and high color displays."
 msgstr "選取這個選項，會在虛擬色彩或是高畫質的顯示器上，進行混色。"
 
-#: eog-C.xml:420(title)
+#: eom-C.xml:420(title)
 msgid "To Change the Check Type"
 msgstr "變更格點類型"
 
-#: eog-C.xml:421(para)
+#: eom-C.xml:421(para)
 msgid ""
 "To change the check type that <application>Eye of MATE</application> uses "
 "to display transparent or partially opaque backgrounds in the image, choose "
@@ -564,59 +564,59 @@ msgstr ""
 "guimenu><guisubmenu>格點類型</guisubmenu></menuchoice>，然後選取您想要的格點"
 "類型。請選取下列任一項選項："
 
-#: eog-C.xml:430(guimenuitem) eog-C.xml:555(guimenuitem)
+#: eom-C.xml:430(guimenuitem) eom-C.xml:555(guimenuitem)
 msgid "Dark"
 msgstr "深色"
 
-#: eog-C.xml:431(para) eog-C.xml:556(para)
+#: eom-C.xml:431(para) eom-C.xml:556(para)
 msgid "This option displays black and dark gray checks."
 msgstr "選取這個選項，會顯示黑或深灰色的格點。"
 
-#: eog-C.xml:433(guimenuitem) eog-C.xml:558(guimenuitem)
+#: eom-C.xml:433(guimenuitem) eom-C.xml:558(guimenuitem)
 msgid "Midtone"
 msgstr "中間調"
 
-#: eog-C.xml:434(para) eog-C.xml:559(para)
+#: eom-C.xml:434(para) eom-C.xml:559(para)
 msgid "This option displays dark gray and light gray checks."
 msgstr "選取這個選項，會顯示深灰以及淺灰的格點。"
 
-#: eog-C.xml:436(guimenuitem) eog-C.xml:561(guimenuitem)
+#: eom-C.xml:436(guimenuitem) eom-C.xml:561(guimenuitem)
 msgid "Light"
 msgstr "淺色"
 
-#: eog-C.xml:437(para) eog-C.xml:562(para)
+#: eom-C.xml:437(para) eom-C.xml:562(para)
 msgid "This option displays light gray and white checks."
 msgstr "選取這個選項，會顯示淺灰以及白色的格點。"
 
-#: eog-C.xml:439(guimenuitem) eog-C.xml:564(guimenuitem)
+#: eom-C.xml:439(guimenuitem) eom-C.xml:564(guimenuitem)
 msgid "Black"
 msgstr "黑色"
 
-#: eog-C.xml:440(para) eog-C.xml:565(para)
+#: eom-C.xml:440(para) eom-C.xml:565(para)
 msgid "This option displays solid black."
 msgstr "選取這個選項，會顯示純黑色。"
 
-#: eog-C.xml:442(guimenuitem) eog-C.xml:567(guimenuitem)
+#: eom-C.xml:442(guimenuitem) eom-C.xml:567(guimenuitem)
 msgid "Gray"
 msgstr "灰色"
 
-#: eog-C.xml:443(para) eog-C.xml:568(para)
+#: eom-C.xml:443(para) eom-C.xml:568(para)
 msgid "This option displays solid gray."
 msgstr "選取這個選項，會顯示純灰色。"
 
-#: eog-C.xml:445(guimenuitem) eog-C.xml:570(guimenuitem)
+#: eom-C.xml:445(guimenuitem) eom-C.xml:570(guimenuitem)
 msgid "White"
 msgstr "白色"
 
-#: eog-C.xml:446(para) eog-C.xml:571(para)
+#: eom-C.xml:446(para) eom-C.xml:571(para)
 msgid "This option displays solid white."
 msgstr "選取這個選項，會顯示純白色。"
 
-#: eog-C.xml:453(title)
+#: eom-C.xml:453(title)
 msgid "To Change the Check Size"
 msgstr "變更格點大小"
 
-#: eog-C.xml:454(para)
+#: eom-C.xml:454(para)
 msgid ""
 "To change the check size that <application>Eye of MATE</application> uses "
 "to display transparent or partially opaque backgrounds in the image, choose "
@@ -634,23 +634,23 @@ msgstr ""
 "guimenuitem>、<guimenuitem>中間調格點</guimenuitem>，或是<guimenuitem>淺色格"
 "點</guimenuitem>時，選取這個選項才有意義。 請選取下列任一項選項："
 
-#: eog-C.xml:465(guimenuitem) eog-C.xml:583(guimenuitem)
+#: eom-C.xml:465(guimenuitem) eom-C.xml:583(guimenuitem)
 msgid "Small"
 msgstr "小"
 
-#: eog-C.xml:467(guimenuitem) eog-C.xml:585(guimenuitem)
+#: eom-C.xml:467(guimenuitem) eom-C.xml:585(guimenuitem)
 msgid "Medium"
 msgstr "中"
 
-#: eog-C.xml:469(guimenuitem) eog-C.xml:587(guimenuitem)
+#: eom-C.xml:469(guimenuitem) eom-C.xml:587(guimenuitem)
 msgid "Large"
 msgstr "大"
 
-#: eog-C.xml:480(title)
+#: eom-C.xml:480(title)
 msgid "To Close an Image"
 msgstr "關閉影像"
 
-#: eog-C.xml:481(para)
+#: eom-C.xml:481(para)
 msgid ""
 "To close an image, choose <menuchoice><guimenu>File</"
 "guimenu><guimenuitem>Close</guimenuitem></menuchoice>. If the window is the "
@@ -661,7 +661,7 @@ msgstr ""
 "guimenuitem></menuchoice>。 如果關閉的是 <application>Eye of MATE</"
 "application> 的最後一個視窗，應用程式也會跟著結束。"
 
-#: eog-C.xml:487(para)
+#: eom-C.xml:487(para)
 msgid ""
 "To quit <application>Eye of MATE</application> and close all of the windows "
 "that you opened in the current session, choose <menuchoice><guimenu>File</"
@@ -671,11 +671,11 @@ msgstr ""
 "啟的所有視窗，請選擇 <menuchoice><guimenu>檔案</guimenu><guimenuitem>結束</"
 "guimenuitem></menuchoice>。"
 
-#: eog-C.xml:499(title)
+#: eom-C.xml:499(title)
 msgid "Preferences"
 msgstr "個人喜好"
 
-#: eog-C.xml:500(para)
+#: eom-C.xml:500(para)
 msgid ""
 "To configure <application>Eye of MATE</application>, choose "
 "<menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></"
@@ -685,15 +685,15 @@ msgstr ""
 "<menuchoice><guimenu>編輯</guimenu><guimenuitem>個人喜好</guimenuitem></"
 "menuchoice>。"
 
-#: eog-C.xml:508(guilabel)
+#: eom-C.xml:508(guilabel)
 msgid "Interpolation"
 msgstr "插入法"
 
-#: eog-C.xml:510(para) eog-C.xml:536(para) eog-C.xml:553(para)
+#: eom-C.xml:510(para) eom-C.xml:536(para) eom-C.xml:553(para)
 msgid "Select one of the following options:"
 msgstr "請選取下列任一項選項："
 
-#: eog-C.xml:513(para)
+#: eom-C.xml:513(para)
 msgid ""
 "This method of interpolation takes a location in the original image and "
 "replicates the pixel that is nearest to this location. When you zoom in on "
@@ -704,19 +704,19 @@ msgstr ""
 "製。 當您將影像放大檢視的時候，像素會因為重製而增加。 但是當您將影像縮小檢視"
 "的時候，影像就會遺失部分的細節。"
 
-#: eog-C.xml:534(guilabel)
+#: eom-C.xml:534(guilabel)
 msgid "Dither"
 msgstr "混色"
 
-#: eog-C.xml:551(guilabel)
+#: eom-C.xml:551(guilabel)
 msgid "Check type"
 msgstr "格點類型"
 
-#: eog-C.xml:577(guilabel)
+#: eom-C.xml:577(guilabel)
 msgid "Check size"
 msgstr "格點大小"
 
-#: eog-C.xml:579(para)
+#: eom-C.xml:579(para)
 msgid ""
 "This option is only relevant if you choose <guimenuitem>Dark checks</"
 "guimenuitem>, <guimenuitem>Midtone checks</guimenuitem>, or "

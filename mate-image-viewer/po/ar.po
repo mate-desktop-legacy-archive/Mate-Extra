@@ -1,4 +1,4 @@
-# translation of eog.HEAD.ar.po to Arabic
+# translation of eom.HEAD.ar.po to Arabic
 # Copyright (C) 2002,2003, 2004, 2006, 2007, 2008 Free Software Foundation, Inc.
 # Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
 # Isam Bayazidi <bayazidi@arabeyes.org>, 2002.
@@ -9,7 +9,7 @@
 # Osama Khalid <OsamaK.WFM@gmail.com>, 2008, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: eog.HEAD.ar\n"
+"Project-Id-Version: eom.HEAD.ar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-23 13:29+0300\n"
 "PO-Revision-Date: 2010-09-23 13:29+0300\n"
@@ -63,279 +63,279 @@ msgstr "احذف شريط الأدوات المحدد"
 msgid "Separator"
 msgstr "فاصل"
 
-#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:1
+#: ../plugins/fullscreen/fullscreen.eom-plugin.desktop.in.h:1
 msgid "Activate fullscreen mode with double-click"
 msgstr "نشّط طور ملء الشاشة بالنقر المزدوج"
 
-#: ../plugins/fullscreen/fullscreen.eog-plugin.desktop.in.h:2
+#: ../plugins/fullscreen/fullscreen.eom-plugin.desktop.in.h:2
 msgid "Fullscreen with double-click"
 msgstr "املأ الشاشة عند النقر المزدوج"
 
-#: ../plugins/reload/reload.eog-plugin.desktop.in.h:1
-#: ../plugins/reload/eog-reload-plugin.c:45
+#: ../plugins/reload/reload.eom-plugin.desktop.in.h:1
+#: ../plugins/reload/eom-reload-plugin.c:45
 msgid "Reload Image"
 msgstr "أعد تحميل الصّورة"
 
-#: ../plugins/reload/reload.eog-plugin.desktop.in.h:2
-#: ../plugins/reload/eog-reload-plugin.c:47
+#: ../plugins/reload/reload.eom-plugin.desktop.in.h:2
+#: ../plugins/reload/eom-reload-plugin.c:47
 msgid "Reload current image"
 msgstr "أعد تحميل الصورة الحالية"
 
-#: ../plugins/statusbar-date/statusbar-date.eog-plugin.desktop.in.h:1
+#: ../plugins/statusbar-date/statusbar-date.eom-plugin.desktop.in.h:1
 msgid "Date in statusbar"
 msgstr "التاريخ في شريط الحالة"
 
-#: ../plugins/statusbar-date/statusbar-date.eog-plugin.desktop.in.h:2
+#: ../plugins/statusbar-date/statusbar-date.eom-plugin.desktop.in.h:2
 msgid "Shows the image date in the window statusbar"
 msgstr "أظهرالتاريخ في شريط حالة النّافذة"
 
-#: ../data/eog.desktop.in.in.h:1
+#: ../data/eom.desktop.in.in.h:1
 msgid "Browse and rotate images"
 msgstr "تصفح و أدر الصور"
 
-#: ../data/eog.desktop.in.in.h:2
+#: ../data/eom.desktop.in.in.h:2
 msgid "Image Viewer"
 msgstr "عارض الصّور"
 
-#: ../data/eog-image-properties-dialog.ui.h:1
+#: ../data/eom-image-properties-dialog.ui.h:1
 msgid "Aperture Value:"
 msgstr "قيمة الفتحة:"
 
-#: ../data/eog-image-properties-dialog.ui.h:2
+#: ../data/eom-image-properties-dialog.ui.h:2
 msgid "Author:"
 msgstr "المؤلف:"
 
-#: ../data/eog-image-properties-dialog.ui.h:3
+#: ../data/eom-image-properties-dialog.ui.h:3
 msgid "Bytes:"
 msgstr "بايتات:"
 
-#: ../data/eog-image-properties-dialog.ui.h:4
+#: ../data/eom-image-properties-dialog.ui.h:4
 msgid "Camera Model:"
 msgstr "طراز الكاميرا:"
 
-#: ../data/eog-image-properties-dialog.ui.h:5
+#: ../data/eom-image-properties-dialog.ui.h:5
 msgid "Copyright:"
 msgstr "حقوق النشر:"
 
-#: ../data/eog-image-properties-dialog.ui.h:6
+#: ../data/eom-image-properties-dialog.ui.h:6
 msgid "Date/Time:"
 msgstr "التّاريخ والوقت:"
 
-#: ../data/eog-image-properties-dialog.ui.h:7
+#: ../data/eom-image-properties-dialog.ui.h:7
 msgid "Description:"
 msgstr "الوصف:"
 
-#: ../data/eog-image-properties-dialog.ui.h:8
+#: ../data/eom-image-properties-dialog.ui.h:8
 msgid "Details"
 msgstr "التفاصيل"
 
-#: ../data/eog-image-properties-dialog.ui.h:9
+#: ../data/eom-image-properties-dialog.ui.h:9
 msgid "Exposure Time:"
 msgstr "زمن التعرض:"
 
-#: ../data/eog-image-properties-dialog.ui.h:10
+#: ../data/eom-image-properties-dialog.ui.h:10
 msgid "Flash:"
 msgstr "فلاش:"
 
-#: ../data/eog-image-properties-dialog.ui.h:11
+#: ../data/eom-image-properties-dialog.ui.h:11
 msgid "Focal Length:"
 msgstr "البعد البؤري:"
 
-#: ../data/eog-image-properties-dialog.ui.h:12
+#: ../data/eom-image-properties-dialog.ui.h:12
 msgid "General"
 msgstr "عامّ"
 
-#: ../data/eog-image-properties-dialog.ui.h:13
+#: ../data/eom-image-properties-dialog.ui.h:13
 msgid "Height:"
 msgstr "الارتفاع:"
 
-#: ../data/eog-image-properties-dialog.ui.h:14
+#: ../data/eom-image-properties-dialog.ui.h:14
 msgid "ISO Speed Rating:"
 msgstr "ترتيب ISO للسرعة:"
 
-#: ../data/eog-image-properties-dialog.ui.h:15
+#: ../data/eom-image-properties-dialog.ui.h:15
 msgid "Image Properties"
 msgstr "خصائص الصورة"
 
-#: ../data/eog-image-properties-dialog.ui.h:16
+#: ../data/eom-image-properties-dialog.ui.h:16
 msgid "Keywords:"
 msgstr "الكلمات الأساسية:"
 
-#: ../data/eog-image-properties-dialog.ui.h:17
+#: ../data/eom-image-properties-dialog.ui.h:17
 msgid "Location:"
 msgstr "المكان:"
 
-#: ../data/eog-image-properties-dialog.ui.h:18
+#: ../data/eom-image-properties-dialog.ui.h:18
 msgid "Metadata"
 msgstr "البيانات الإضافية"
 
-#: ../data/eog-image-properties-dialog.ui.h:19
+#: ../data/eom-image-properties-dialog.ui.h:19
 msgid "Metering Mode:"
 msgstr "نمط القياس:"
 
-#: ../data/eog-image-properties-dialog.ui.h:20
+#: ../data/eom-image-properties-dialog.ui.h:20
 msgid "Name:"
 msgstr "الاسم:"
 
-#: ../data/eog-image-properties-dialog.ui.h:21
+#: ../data/eom-image-properties-dialog.ui.h:21
 msgid "Type:"
 msgstr "النوع:"
 
-#: ../data/eog-image-properties-dialog.ui.h:22
+#: ../data/eom-image-properties-dialog.ui.h:22
 msgid "Width:"
 msgstr "العرض:"
 
-#: ../data/eog-image-properties-dialog.ui.h:23
+#: ../data/eom-image-properties-dialog.ui.h:23
 msgid "_Next"
 msgstr "ال_تّالي"
 
-#: ../data/eog-image-properties-dialog.ui.h:24
+#: ../data/eom-image-properties-dialog.ui.h:24
 msgid "_Previous"
 msgstr "ال_سابق"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:2
+#: ../data/eom-multiple-save-as-dialog.ui.h:2
 #, no-c-format
 msgid "<b>%f:</b> original filename"
 msgstr "‏<b>‪%f‬:</b> اسم الملف الأصلي"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:4
+#: ../data/eom-multiple-save-as-dialog.ui.h:4
 #, no-c-format
 msgid "<b>%n:</b> counter"
 msgstr "‏<b>‪%n‬:</b> عدّاد"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:5
+#: ../data/eom-multiple-save-as-dialog.ui.h:5
 msgid "Choose a folder"
 msgstr "اختر مجلّدًا"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:6
+#: ../data/eom-multiple-save-as-dialog.ui.h:6
 msgid "Destination folder:"
 msgstr "المجلد المقصد:"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:7
+#: ../data/eom-multiple-save-as-dialog.ui.h:7
 msgid "File Name Preview"
 msgstr "معاينة أسماء الملفّات"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:8
+#: ../data/eom-multiple-save-as-dialog.ui.h:8
 msgid "File Path Specifications"
 msgstr "مواصفات مسارات الملفّات"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:9
+#: ../data/eom-multiple-save-as-dialog.ui.h:9
 msgid "Filename format:"
 msgstr "صيغة اسم الملف:"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:10
+#: ../data/eom-multiple-save-as-dialog.ui.h:10
 msgid "Options"
 msgstr "الخيارات"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:11
+#: ../data/eom-multiple-save-as-dialog.ui.h:11
 msgid "Rename from:"
 msgstr "غيّر الاسم من:"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:12
+#: ../data/eom-multiple-save-as-dialog.ui.h:12
 msgid "Replace spaces with underscores"
 msgstr "استبدل الفراغات بشرطة تحتية"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:13
+#: ../data/eom-multiple-save-as-dialog.ui.h:13
 msgid "Save As"
 msgstr "احفظ باسم"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:14
+#: ../data/eom-multiple-save-as-dialog.ui.h:14
 msgid "Start counter at:"
 msgstr "ابدأ العدّاد عند:"
 
-#: ../data/eog-multiple-save-as-dialog.ui.h:15
+#: ../data/eom-multiple-save-as-dialog.ui.h:15
 msgid "To:"
 msgstr "إلى:"
 
-#: ../data/eog-preferences-dialog.ui.h:1
+#: ../data/eom-preferences-dialog.ui.h:1
 msgid "As _background"
 msgstr "ك_خلفية"
 
-#: ../data/eog-preferences-dialog.ui.h:2
+#: ../data/eom-preferences-dialog.ui.h:2
 msgid "As check _pattern"
 msgstr "ك_نمط التماس"
 
-#: ../data/eog-preferences-dialog.ui.h:3
+#: ../data/eom-preferences-dialog.ui.h:3
 msgid "As custom c_olor:"
 msgstr "ك_لون مخصص:"
 
-#: ../data/eog-preferences-dialog.ui.h:4
+#: ../data/eom-preferences-dialog.ui.h:4
 msgid "As custom color:"
 msgstr "كلون مخصص"
 
-#: ../data/eog-preferences-dialog.ui.h:5
+#: ../data/eom-preferences-dialog.ui.h:5
 msgid "Background"
 msgstr "خلفية"
 
-#: ../data/eog-preferences-dialog.ui.h:6 ../data/eog.schemas.in.h:6
+#: ../data/eom-preferences-dialog.ui.h:6 ../data/eom.schemas.in.h:6
 msgid "Background Color"
 msgstr "لون الخلفية"
 
-#: ../data/eog-preferences-dialog.ui.h:7
+#: ../data/eom-preferences-dialog.ui.h:7
 msgid "Color for Transparent Areas"
 msgstr "لون المساحات الشفّافة"
 
-#: ../data/eog-preferences-dialog.ui.h:8
+#: ../data/eom-preferences-dialog.ui.h:8
 msgid "E_xpand images to fit screen"
 msgstr "وس_ع الصور لتلائم الشاشة"
 
-#: ../data/eog-preferences-dialog.ui.h:9
+#: ../data/eom-preferences-dialog.ui.h:9
 msgid "Eye of MATE Preferences"
 msgstr "تفضيلات عين جنوم"
 
-#: ../data/eog-preferences-dialog.ui.h:10
+#: ../data/eom-preferences-dialog.ui.h:10
 msgid "Image Enhancements"
 msgstr "تحسينات الصور"
 
-#: ../data/eog-preferences-dialog.ui.h:11
+#: ../data/eom-preferences-dialog.ui.h:11
 msgid "Image View"
 msgstr "عرض الصورة"
 
-#: ../data/eog-preferences-dialog.ui.h:12
+#: ../data/eom-preferences-dialog.ui.h:12
 msgid "Image Zoom"
 msgstr "تقريب الصّورة"
 
-#: ../data/eog-preferences-dialog.ui.h:13
+#: ../data/eom-preferences-dialog.ui.h:13
 msgid "Plugins"
 msgstr "ملحقات"
 
-#: ../data/eog-preferences-dialog.ui.h:14
+#: ../data/eom-preferences-dialog.ui.h:14
 msgid "Sequence"
 msgstr "متتالية"
 
-#: ../data/eog-preferences-dialog.ui.h:15
+#: ../data/eom-preferences-dialog.ui.h:15
 msgid "Slideshow"
 msgstr "عرض شرائح"
 
-#: ../data/eog-preferences-dialog.ui.h:16
+#: ../data/eom-preferences-dialog.ui.h:16
 msgid "Smooth images when zoomed-_in"
 msgstr "اجعل الصور ناعمة عند _تقريبها"
 
-#: ../data/eog-preferences-dialog.ui.h:17
+#: ../data/eom-preferences-dialog.ui.h:17
 msgid "Smooth images when zoomed-_out"
 msgstr "اجعل الصور ناعمة عند _تبعيدها"
 
-#: ../data/eog-preferences-dialog.ui.h:18
+#: ../data/eom-preferences-dialog.ui.h:18
 msgid "Transparent Parts"
 msgstr "الأجزاء الشّفافة"
 
-#: ../data/eog-preferences-dialog.ui.h:19
+#: ../data/eom-preferences-dialog.ui.h:19
 msgid "_Automatic orientation"
 msgstr "_توجه تلقائي"
 
-#: ../data/eog-preferences-dialog.ui.h:20
+#: ../data/eom-preferences-dialog.ui.h:20
 msgid "_Loop sequence"
 msgstr "متتالية _حلقيّة"
 
-#: ../data/eog-preferences-dialog.ui.h:21
+#: ../data/eom-preferences-dialog.ui.h:21
 msgid "_Switch image after:"
 msgstr "_بدّل الصورة بعد:"
 
-#: ../data/eog-preferences-dialog.ui.h:22
+#: ../data/eom-preferences-dialog.ui.h:22
 msgid "seconds"
 msgstr "ثوان"
 
-#: ../data/eog.schemas.in.h:1
+#: ../data/eom.schemas.in.h:1
 msgid ""
 "A value greater than 0 determines the seconds an image stays on screen until "
 "the next one is shown automatically. Zero disables the automatic browsing."
@@ -343,24 +343,24 @@ msgstr ""
 "أي قيمة أكبر من 0 تحدّد الثّواني الذي تبقاها صورةٌ على الشّاشة حتّى عرض الصّورة "
 "التّالية تلقائيًّا. الصّفر يلغى التّصفح التّلقائي."
 
-#: ../data/eog.schemas.in.h:2
+#: ../data/eom.schemas.in.h:2
 msgid "Active plugins"
 msgstr "الملحقات النشِطة"
 
-#: ../data/eog.schemas.in.h:4
+#: ../data/eom.schemas.in.h:4
 #, no-c-format
 msgid "Allow zoom greater than 100% initially"
 msgstr "اسمح بتقريب أكبر من 100% مبدئيًّا"
 
-#: ../data/eog.schemas.in.h:5
+#: ../data/eom.schemas.in.h:5
 msgid "Automatic orientation"
 msgstr "توجه تلقائي"
 
-#: ../data/eog.schemas.in.h:7
+#: ../data/eom.schemas.in.h:7
 msgid "Delay in seconds until showing the next image"
 msgstr "التّأخير بالثّواني حتّى عرض الصّورة التّالية"
 
-#: ../data/eog.schemas.in.h:8
+#: ../data/eom.schemas.in.h:8
 msgid ""
 "Determines how transparency should be indicated. Valid values are "
 "CHECK_PATTERN, COLOR and NONE. If COLOR is chosen, then the trans-color key "
@@ -369,11 +369,11 @@ msgstr ""
 "يحدد كيفيّة الإشارة للشّفافيّة. القيم الممكنة هي CHECK_PATTERN و COLOR و NONE. "
 "إن اختيرت القيمة COLOR فسيحدد مفتاح trans_color قيمة اللّون المستخدم."
 
-#: ../data/eog.schemas.in.h:9
+#: ../data/eom.schemas.in.h:9
 msgid "Extrapolate Image"
 msgstr "استوفي الصورة"
 
-#: ../data/eog.schemas.in.h:10
+#: ../data/eom.schemas.in.h:10
 msgid ""
 "If activated and no image is loaded in the active window, the file chooser "
 "will display the user's pictures folder using the XDG special user "
@@ -384,7 +384,7 @@ msgstr ""
 "المستخدم باستخدام مجلدات XDG الخاصة. إذا عُطّل أو لم يكن مجلد الصور موجودا "
 "فسيستخدم المجلد الحالي."
 
-#: ../data/eog.schemas.in.h:11
+#: ../data/eom.schemas.in.h:11
 msgid ""
 "If activated, Eye of MATE won't ask for confirmation when moving images to "
 "the trash. It will still ask if any of the files cannot be moved to the "
@@ -393,7 +393,7 @@ msgstr ""
 "إذا فُعّل فلن تسأل «عين جنوم» تأكيد نقل الصور إلى المهملات. لكن ستظل تسأل إذا "
 "تعذّر نقل أي ملف إلى المهملات وكان سيُحذف بدلا من هذا."
 
-#: ../data/eog.schemas.in.h:12
+#: ../data/eom.schemas.in.h:12
 msgid ""
 "If activated, the detailed metadata list in the properties dialog will be "
 "moved to its own page in the dialog. This should make the dialog more usable "
@@ -404,7 +404,7 @@ msgstr ""
 "مستقلة. سيجعل هذا الحوار مناسبا أكثر للشاشات الصغيرة مثل حواسيب النت. إذا "
 "عُطّل فستضمن القائمة في صفحة البيانات الفوقية."
 
-#: ../data/eog.schemas.in.h:13
+#: ../data/eom.schemas.in.h:13
 msgid ""
 "If the transparency key has the value COLOR, then this key determines the "
 "color which is used for indicating transparency."
@@ -412,21 +412,21 @@ msgstr ""
 "إذا كان لمفتاح الشّفافيّة القيمة COLOR، فسيحدد هذا المفتاح اللّون الذي سيستخدم "
 "للإشارة إلى الشّفافيّة."
 
-#: ../data/eog.schemas.in.h:14
+#: ../data/eom.schemas.in.h:14
 msgid ""
 "If this is active, the color set by the background-color key will be used to "
 "fill the area behind the image. If it is not set, the current GTK+ theme "
 "will determine the fill color."
 msgstr ""
 
-#: ../data/eog.schemas.in.h:15
+#: ../data/eom.schemas.in.h:15
 msgid ""
 "If this is set to FALSE small images will not be stretched to fit into the "
 "screen initially."
 msgstr ""
 "إذا عيّن هذا على أنّه \"خطأ\" فلن تمدّد الصّور الصّغيرة مبدئيًّا لملائمة الشّاشة."
 
-#: ../data/eog.schemas.in.h:16
+#: ../data/eom.schemas.in.h:16
 msgid ""
 "Image collection pane position. Set to 0 for bottom; 1 for left; 2 for top; "
 "3 for right."
@@ -434,55 +434,55 @@ msgstr ""
 "مكان لوح مجموعة الصور. حدد بـ 0 للأسفل، 1 للجهة اليسرى، 2 للأعلى، 3 للجهة "
 "اليمني."
 
-#: ../data/eog.schemas.in.h:17
+#: ../data/eom.schemas.in.h:17
 msgid "Interpolate Image"
 msgstr "استوفي الصورة"
 
-#: ../data/eog.schemas.in.h:18
+#: ../data/eom.schemas.in.h:18
 msgid ""
 "List of active plugins. It doesn't contain the \"Location\" of the active "
-"plugins. See the .eog-plugin file for obtaining the \"Location\" of a given "
+"plugins. See the .eom-plugin file for obtaining the \"Location\" of a given "
 "plugin."
 msgstr ""
 "قائمة الملحقات النشطة. لا تحتوي على قيمة \"المكان\"  للملحقات النشطة. انظر "
-"ملف .eog-plugin لتحصل على \"مكان\" أي ملحق."
+"ملف .eom-plugin لتحصل على \"مكان\" أي ملحق."
 
-#: ../data/eog.schemas.in.h:19
+#: ../data/eom.schemas.in.h:19
 msgid "Loop through the image sequence"
 msgstr "تّحلّق عبر تتالي الصّور"
 
-#: ../data/eog.schemas.in.h:20
+#: ../data/eom.schemas.in.h:20
 msgid "Scroll wheel zoom"
 msgstr "تحجيم بالعجلة"
 
-#: ../data/eog.schemas.in.h:21
+#: ../data/eom.schemas.in.h:21
 msgid "Show/Hide the image collection pane scroll buttons."
 msgstr "أظهر\\أخفِ أزرار لوحة مجموعة الصور."
 
-#: ../data/eog.schemas.in.h:22
+#: ../data/eom.schemas.in.h:22
 msgid "Show/Hide the image collection pane."
 msgstr "أظهر\\أخفِ لوحة مجموعة الصور."
 
-#: ../data/eog.schemas.in.h:23
+#: ../data/eom.schemas.in.h:23
 msgid "Show/Hide the window side pane."
 msgstr "أظهر\\أخفِ لوح النافذة الجانبي."
 
-#: ../data/eog.schemas.in.h:24
+#: ../data/eom.schemas.in.h:24
 msgid "Show/Hide the window statusbar."
 msgstr "أظهر\\أخفِ شريط حالة النّافذة."
 
-#: ../data/eog.schemas.in.h:25
+#: ../data/eom.schemas.in.h:25
 msgid "Show/Hide the window toolbar."
 msgstr "أظهر\\أخفِ شريط أدوات النّافذة."
 
-#: ../data/eog.schemas.in.h:26
+#: ../data/eom.schemas.in.h:26
 msgid ""
 "The color that is used to fill the area behind the image. If the use-"
 "background-color key is not set, the color is determined by the active GTK+ "
 "theme instead."
 msgstr ""
 
-#: ../data/eog.schemas.in.h:28
+#: ../data/eom.schemas.in.h:28
 #, no-c-format
 msgid ""
 "The multiplier to be applied when using the mouse scroll wheel for zooming. "
@@ -493,33 +493,33 @@ msgstr ""
 "قيمة الضعف المطبقة عند استعمال عجلة الفأرة عند التحجيم. هذه القيمة تعرف "
 "الخطوة التحجيمية عند كل تدوير. مثلا، 0.05 تؤدي إلى 5%."
 
-#: ../data/eog.schemas.in.h:29
+#: ../data/eom.schemas.in.h:29
 msgid "Transparency color"
 msgstr "لون الشّفافيّة"
 
-#: ../data/eog.schemas.in.h:30
+#: ../data/eom.schemas.in.h:30
 msgid "Transparency indicator"
 msgstr "مبيّن الشّفافيّة"
 
-#: ../data/eog.schemas.in.h:31
+#: ../data/eom.schemas.in.h:31
 msgid "Trash images without asking"
 msgstr "أرسل الصور إلى المهملات دون سؤال"
 
-#: ../data/eog.schemas.in.h:32
+#: ../data/eom.schemas.in.h:32
 msgid "Use a custom background color"
 msgstr "استخدم لون خلفية مخصص"
 
-#: ../data/eog.schemas.in.h:33
+#: ../data/eom.schemas.in.h:33
 msgid ""
 "Whether the file chooser should show the user's pictures folder if no images "
 "are loaded."
 msgstr "ما إذا كان مخير الملفات سيعرض مجلد صور المستخدم إذا لم تُحمّل أي صور."
 
-#: ../data/eog.schemas.in.h:34
+#: ../data/eom.schemas.in.h:34
 msgid "Whether the image collection pane should be resizable."
 msgstr "ما إذا كان شريط مجموعة الصور قابلا للتحجيم."
 
-#: ../data/eog.schemas.in.h:35
+#: ../data/eom.schemas.in.h:35
 msgid ""
 "Whether the image should be extrapolated on zoom-in. This leads to blurry "
 "quality and is somewhat slower than non-extrapolated images."
@@ -527,7 +527,7 @@ msgstr ""
 "فيما إذا يفترض استيفاء الصّورة عند تقريبها أم لا. يؤدي هذا لجودة أفضل لكنه "
 "أبطأ من الصّور غير المستوفاة."
 
-#: ../data/eog.schemas.in.h:36
+#: ../data/eom.schemas.in.h:36
 msgid ""
 "Whether the image should be interpolated on zoom-out. This leads to better "
 "quality but is somewhat slower than non-interpolated images."
@@ -535,50 +535,50 @@ msgstr ""
 "فيما إذا يفترض استيفاء الصّورة عند تبعيدها أم لا. يؤدي هذا لجودة أفضل لكنه "
 "أبطأ من الصّور غير المستوفاة."
 
-#: ../data/eog.schemas.in.h:37
+#: ../data/eom.schemas.in.h:37
 msgid ""
 "Whether the image should be rotated automatically based on EXIF orientation."
 msgstr "ما إذا كان يجب لف الصورة تلقائيًا بناء على توجه EXIF."
 
-#: ../data/eog.schemas.in.h:38
+#: ../data/eom.schemas.in.h:38
 msgid ""
 "Whether the metadata list in the properties dialog should have its own page."
 msgstr "ما إذا كانت قائمة البيانات الفوقية المفصّلة في صفحة منفصلة."
 
-#: ../data/eog.schemas.in.h:39
+#: ../data/eom.schemas.in.h:39
 msgid "Whether the scroll wheel should be used for zooming."
 msgstr "ما إذا سيتم استعمال عجلة الفأرة للتقريب أم لا."
 
-#: ../data/eog.schemas.in.h:40
+#: ../data/eom.schemas.in.h:40
 msgid "Whether the sequence of images should be shown in an endless loop."
 msgstr "فيما إذا يفترض عرض متتالية الصّور في حلقة لا نهائية."
 
-#: ../data/eog.schemas.in.h:41
+#: ../data/eom.schemas.in.h:41
 msgid "Zoom multiplier"
 msgstr "مضاعِف التقريب"
 
-#: ../src/eog-application.c:123
+#: ../src/eom-application.c:123
 msgid "Running in fullscreen mode"
 msgstr "شغل في نمط ملء الشاشة"
 
-#: ../src/eog-close-confirmation-dialog.c:159
+#: ../src/eom-close-confirmation-dialog.c:159
 msgid "Close _without Saving"
 msgstr "أغلق _دون حفظ"
 
-#: ../src/eog-close-confirmation-dialog.c:193
+#: ../src/eom-close-confirmation-dialog.c:193
 msgid "Question"
 msgstr "سؤال"
 
-#: ../src/eog-close-confirmation-dialog.c:374
+#: ../src/eom-close-confirmation-dialog.c:374
 msgid "If you don't save, your changes will be lost."
 msgstr "إذا لم تحفظ ستضيع جميع التغييرات."
 
-#: ../src/eog-close-confirmation-dialog.c:409
+#: ../src/eom-close-confirmation-dialog.c:409
 #, c-format
 msgid "Save changes to image \"%s\" before closing?"
 msgstr "أأحفظ التغييرات على الصورة \"%s\" قبل الإغلاق؟"
 
-#: ../src/eog-close-confirmation-dialog.c:604
+#: ../src/eom-close-confirmation-dialog.c:604
 #, c-format
 msgid "There is %d image with unsaved changes. Save changes before closing?"
 msgid_plural ""
@@ -591,46 +591,46 @@ msgstr[3] "هناك %d صور تحتوي تغييراتٍ غير محفوظة. �
 msgstr[4] "هناك %d صورة تحتوي تغييراتٍ غير محفوظة. أأحفظ التغييرات قبل الإغلاق؟"
 msgstr[5] "هناك %d صورة تحتوي تغييراتٍ غير محفوظة. أأحفظ التغييرات قبل الإغلاق؟"
 
-#: ../src/eog-close-confirmation-dialog.c:621
+#: ../src/eom-close-confirmation-dialog.c:621
 msgid "S_elect the images you want to save:"
 msgstr "ا_ختر الصور التي تريد حفظها:"
 
 #. Secondary label
-#: ../src/eog-close-confirmation-dialog.c:639
+#: ../src/eom-close-confirmation-dialog.c:639
 msgid "If you don't save, all your changes will be lost."
 msgstr "إذا لم تحفظ ستضيع جميع التغييرات."
 
-#: ../src/eog-file-chooser.c:128
+#: ../src/eom-file-chooser.c:128
 msgid "File format is unknown or unsupported"
 msgstr "نمط الملف مجهول أو غير مدعوم"
 
-#: ../src/eog-file-chooser.c:133
+#: ../src/eom-file-chooser.c:133
 msgid ""
 "Eye of MATE could not determine a supported writable file format based on "
 "the filename."
 msgstr "لم يمكن لعين جنوم تعيين نمط صور مدعوم قابل للكتابة من اسم الملف."
 
-#: ../src/eog-file-chooser.c:134
+#: ../src/eom-file-chooser.c:134
 msgid "Please try a different file extension like .png or .jpg."
 msgstr "الرجاء اختيار نمط صور مختلف مثل .png أو .jpg."
 
-#: ../src/eog-file-chooser.c:166
+#: ../src/eom-file-chooser.c:166
 msgid "All Files"
 msgstr "كل الملفّات"
 
-#: ../src/eog-file-chooser.c:171
+#: ../src/eom-file-chooser.c:171
 msgid "All Images"
 msgstr "كل الصّور"
 
 #. Filter name: First description then file extension, eg. "The PNG-Format (*.png)".
-#: ../src/eog-file-chooser.c:192
+#: ../src/eom-file-chooser.c:192
 #, c-format
 msgid "%s (*.%s)"
 msgstr "‏%s ‏(*.%s)"
 
 #. Pixel size of image: width x height in pixel
-#: ../src/eog-file-chooser.c:288 ../src/eog-properties-dialog.c:137
-#: ../src/eog-properties-dialog.c:139 ../src/eog-thumb-view.c:380
+#: ../src/eom-file-chooser.c:288 ../src/eom-properties-dialog.c:137
+#: ../src/eom-properties-dialog.c:139 ../src/eom-thumb-view.c:380
 msgid "pixel"
 msgid_plural "pixels"
 msgstr[0] "بكسل"
@@ -640,229 +640,229 @@ msgstr[3] "بكسلات"
 msgstr[4] "بكسلا"
 msgstr[5] "بكسل"
 
-#: ../src/eog-file-chooser.c:437
+#: ../src/eom-file-chooser.c:437
 msgid "Open Image"
 msgstr "افتح صورة"
 
-#: ../src/eog-file-chooser.c:445
+#: ../src/eom-file-chooser.c:445
 msgid "Save Image"
 msgstr "احفظ الصّورة"
 
-#: ../src/eog-file-chooser.c:453
+#: ../src/eom-file-chooser.c:453
 msgid "Open Folder"
 msgstr "افتح مجلّدا"
 
-#: ../src/eog-image.c:598
+#: ../src/eom-image.c:598
 #, c-format
 msgid "Transformation on unloaded image."
 msgstr "التحويل عند رفع صورة."
 
-#: ../src/eog-image.c:626
+#: ../src/eom-image.c:626
 #, c-format
 msgid "Transformation failed."
 msgstr "فشل التحويل."
 
-#: ../src/eog-image.c:1053
+#: ../src/eom-image.c:1053
 #, c-format
 msgid "EXIF not supported for this file format."
 msgstr "إكسيف(EXIF) غير مدعوم لهذا النسق من الملفّات."
 
-#: ../src/eog-image.c:1180
+#: ../src/eom-image.c:1180
 #, c-format
 msgid "Image loading failed."
 msgstr "فشل تحميل الصورة."
 
-#: ../src/eog-image.c:1585 ../src/eog-image.c:1687
+#: ../src/eom-image.c:1585 ../src/eom-image.c:1687
 #, c-format
 msgid "No image loaded."
 msgstr "لم تحمّل صورة."
 
-#: ../src/eog-image.c:1595 ../src/eog-image.c:1699
+#: ../src/eom-image.c:1595 ../src/eom-image.c:1699
 #, c-format
 msgid "Temporary file creation failed."
 msgstr "فشل إنشاء الملف المؤقّت."
 
-#: ../src/eog-image-jpeg.c:364
+#: ../src/eom-image-jpeg.c:364
 #, c-format
 msgid "Couldn't create temporary file for saving: %s"
 msgstr "تعذّر إنشاء ملف مؤقّت لحفظ: %s"
 
-#: ../src/eog-image-jpeg.c:383
+#: ../src/eom-image-jpeg.c:383
 #, c-format
 msgid "Couldn't allocate memory for loading JPEG file"
 msgstr "تعذّر تخصيص ذاكرة لتحميل ملف JPEG"
 
-#: ../src/eog-exif-details.c:68
+#: ../src/eom-exif-details.c:68
 msgid "Camera"
 msgstr "كاميرا"
 
-#: ../src/eog-exif-details.c:69
+#: ../src/eom-exif-details.c:69
 msgid "Image Data"
 msgstr "بيانات الصّورة"
 
-#: ../src/eog-exif-details.c:70
+#: ../src/eom-exif-details.c:70
 msgid "Image Taking Conditions"
 msgstr "ظروف أخذ الصّورة"
 
-#: ../src/eog-exif-details.c:71
+#: ../src/eom-exif-details.c:71
 msgid "Maker Note"
 msgstr "ملحوظة الصانع"
 
-#: ../src/eog-exif-details.c:72
+#: ../src/eom-exif-details.c:72
 msgid "Other"
 msgstr "أخرى"
 
-#: ../src/eog-exif-details.c:74
+#: ../src/eom-exif-details.c:74
 msgid "XMP Exif"
 msgstr "XMP Exif"
 
-#: ../src/eog-exif-details.c:75
+#: ../src/eom-exif-details.c:75
 msgid "XMP IPTC"
 msgstr "XMP IPTC"
 
-#: ../src/eog-exif-details.c:76
+#: ../src/eom-exif-details.c:76
 msgid "XMP Rights Management"
 msgstr "إدارة حقوق XMP"
 
-#: ../src/eog-exif-details.c:77
+#: ../src/eom-exif-details.c:77
 msgid "XMP Other"
 msgstr "‏XMP أخرى"
 
-#: ../src/eog-exif-details.c:251
+#: ../src/eom-exif-details.c:251
 msgid "Tag"
 msgstr "وسم"
 
-#: ../src/eog-exif-details.c:258
+#: ../src/eom-exif-details.c:258
 msgid "Value"
 msgstr "القيمة"
 
 #. A strftime-formatted string, to display the date the image was taken.
-#: ../src/eog-exif-util.c:113 ../src/eog-exif-util.c:153
+#: ../src/eom-exif-util.c:113 ../src/eom-exif-util.c:153
 msgid "%a, %d %B %Y  %X"
 msgstr "%A، %Oe %B %Y  %X"
 
 #. A strftime-formatted string, to display the date the image was taken, for the case we don't have the time.
-#: ../src/eog-exif-util.c:147
+#: ../src/eom-exif-util.c:147
 msgid "%a, %d %B %Y"
 msgstr "%A، %Oe %B %Y"
 
-#: ../src/eog-error-message-area.c:107
+#: ../src/eom-error-message-area.c:107
 msgid "_Retry"
 msgstr "أ_عد المحاولة"
 
-#: ../src/eog-error-message-area.c:141
+#: ../src/eom-error-message-area.c:141
 #, c-format
 msgid "Could not load image '%s'."
 msgstr "تعذّر تحميل الصورة '%s'."
 
-#: ../src/eog-error-message-area.c:175
+#: ../src/eom-error-message-area.c:175
 #, c-format
 msgid "No images found in '%s'."
 msgstr "لا توجد صور في '%s'."
 
-#: ../src/eog-error-message-area.c:182
+#: ../src/eom-error-message-area.c:182
 msgid "The given locations contain no images."
 msgstr "الأمكنة المعطاة لا تحتوي على أية صور."
 
-#: ../src/eog-print.c:219
+#: ../src/eom-print.c:219
 msgid "Image Settings"
 msgstr "إعدادات الصورة"
 
-#: ../src/eog-print-image-setup.c:834
+#: ../src/eom-print-image-setup.c:834
 msgid "Image"
 msgstr "صورة"
 
-#: ../src/eog-print-image-setup.c:835
+#: ../src/eom-print-image-setup.c:835
 msgid "The image whose printing properties will be set up"
 msgstr "الصورّة التي ستعد خصائص طباعتها"
 
-#: ../src/eog-print-image-setup.c:841
+#: ../src/eom-print-image-setup.c:841
 msgid "Page Setup"
 msgstr "إعداد الصفحة"
 
-#: ../src/eog-print-image-setup.c:842
+#: ../src/eom-print-image-setup.c:842
 msgid "The information for the page where the image will be printed"
 msgstr "معلومات الصفحة حيث ستطبع الصورة"
 
-#: ../src/eog-print-image-setup.c:870
+#: ../src/eom-print-image-setup.c:870
 msgid "Position"
 msgstr "الموضع"
 
-#: ../src/eog-print-image-setup.c:875
+#: ../src/eom-print-image-setup.c:875
 msgid "_Left:"
 msgstr "_يسار:"
 
-#: ../src/eog-print-image-setup.c:876
+#: ../src/eom-print-image-setup.c:876
 msgid "_Right:"
 msgstr "ي_مين:"
 
-#: ../src/eog-print-image-setup.c:877
+#: ../src/eom-print-image-setup.c:877
 msgid "_Top:"
 msgstr "أ_على:"
 
-#: ../src/eog-print-image-setup.c:878
+#: ../src/eom-print-image-setup.c:878
 msgid "_Bottom:"
 msgstr "أ_سفل:"
 
-#: ../src/eog-print-image-setup.c:880
+#: ../src/eom-print-image-setup.c:880
 msgid "C_enter:"
 msgstr "_مركز:"
 
-#: ../src/eog-print-image-setup.c:885
+#: ../src/eom-print-image-setup.c:885
 msgid "None"
 msgstr "لا شيء"
 
-#: ../src/eog-print-image-setup.c:887
+#: ../src/eom-print-image-setup.c:887
 msgid "Horizontal"
 msgstr "أفقيا"
 
-#: ../src/eog-print-image-setup.c:889
+#: ../src/eom-print-image-setup.c:889
 msgid "Vertical"
 msgstr "رأسيا"
 
-#: ../src/eog-print-image-setup.c:891
+#: ../src/eom-print-image-setup.c:891
 msgid "Both"
 msgstr "كلاهما"
 
-#: ../src/eog-print-image-setup.c:907
+#: ../src/eom-print-image-setup.c:907
 msgid "Size"
 msgstr "المقاس"
 
-#: ../src/eog-print-image-setup.c:912
+#: ../src/eom-print-image-setup.c:912
 msgid "_Width:"
 msgstr "ال_عرض:"
 
-#: ../src/eog-print-image-setup.c:914
+#: ../src/eom-print-image-setup.c:914
 msgid "_Height:"
 msgstr "الا_رتفاع:"
 
-#: ../src/eog-print-image-setup.c:917
+#: ../src/eom-print-image-setup.c:917
 msgid "_Scaling:"
 msgstr "ال_تحجيم:"
 
-#: ../src/eog-print-image-setup.c:930
+#: ../src/eom-print-image-setup.c:930
 msgid "_Unit:"
 msgstr "ال_وحدة:"
 
-#: ../src/eog-print-image-setup.c:935
+#: ../src/eom-print-image-setup.c:935
 msgid "Millimeters"
 msgstr "ملي مترات"
 
-#: ../src/eog-print-image-setup.c:937
+#: ../src/eom-print-image-setup.c:937
 msgid "Inches"
 msgstr "بوصات"
 
-#: ../src/eog-print-image-setup.c:967
+#: ../src/eom-print-image-setup.c:967
 msgid "Preview"
 msgstr "مُعاينة"
 
-#: ../src/eog-properties-dialog.c:154
+#: ../src/eom-properties-dialog.c:154
 msgid "Unknown"
 msgstr "مجهول"
 
 #. TRANSLATORS: This is the actual focal length used when
 #. the image was taken.
-#: ../src/eog-properties-dialog.c:232
+#: ../src/eom-properties-dialog.c:232
 #, c-format
 msgid "%.1f (lens)"
 msgstr "%I.1f (عدسة)"
@@ -870,12 +870,12 @@ msgstr "%I.1f (عدسة)"
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
-#: ../src/eog-properties-dialog.c:243
+#: ../src/eom-properties-dialog.c:243
 #, c-format
 msgid "%.1f (35mm film)"
 msgstr "%I.1f (فيلم 35مم)"
 
-#: ../src/eog-save-as-dialog-helper.c:161
+#: ../src/eom-save-as-dialog-helper.c:161
 msgid "as is"
 msgstr "كما هي"
 
@@ -889,25 +889,25 @@ msgstr "كما هي"
 #. * Note that translating this doesn't guarantee that you get localized
 #. * digits. That needs support from your system and locale definition
 #. * too.
-#: ../src/eog-statusbar.c:125
+#: ../src/eom-statusbar.c:125
 #, c-format
 msgid "%d / %d"
 msgstr "‏%Id ‏\\ %Id"
 
-#: ../src/eog-thumb-view.c:408
+#: ../src/eom-thumb-view.c:408
 msgid "Taken on"
 msgstr "أخذت على"
 
-#: ../src/eog-uri-converter.c:984
+#: ../src/eom-uri-converter.c:984
 #, c-format
 msgid "At least two file names are equal."
 msgstr "على الأقل هناك ملفان باسم واحد."
 
-#: ../src/eog-util.c:68
+#: ../src/eom-util.c:68
 msgid "Could not display help for Eye of MATE"
 msgstr "تعذّر عرض مساعدة عين جنوم"
 
-#: ../src/eog-util.c:116
+#: ../src/eom-util.c:116
 msgid " (invalid Unicode)"
 msgstr " (يونيكود غير صحيح)"
 
@@ -917,7 +917,7 @@ msgstr " (يونيكود غير صحيح)"
 #. * - image height
 #. * - image size in bytes
 #. * - zoom in percent
-#: ../src/eog-window.c:832
+#: ../src/eom-window.c:832
 #, c-format
 msgid "%i × %i pixel  %s    %i%%"
 msgid_plural "%i × %i pixels  %s    %i%%"
@@ -928,18 +928,18 @@ msgstr[3] "‏%i × %i بكسل  %s    %i%%"
 msgstr[4] "‏%i × %i بكسل  %s    %i%%"
 msgstr[5] "‏%i × %i بكسل  %s    %i%%"
 
-#: ../src/eog-window.c:1138
+#: ../src/eom-window.c:1138
 msgid "_Reload"
 msgstr "أ_عد التحميل"
 
-#: ../src/eog-window.c:1140 ../src/eog-window.c:2995
+#: ../src/eom-window.c:1140 ../src/eom-window.c:2995
 msgctxt "MessageArea"
 msgid "Hi_de"
 msgstr "أ_خفِ"
 
 #. The newline character is currently necessary due to a problem
 #. * with the automatic line break.
-#: ../src/eog-window.c:1150
+#: ../src/eom-window.c:1150
 #, c-format
 msgid ""
 "The image \"%s\" has been modified by an external application.\n"
@@ -948,7 +948,7 @@ msgstr ""
 "عدّل تطبيق خارجي الصورة \"%s\".\n"
 "أتريد إعادة تحميلها؟"
 
-#: ../src/eog-window.c:1305
+#: ../src/eom-window.c:1305
 #, c-format
 msgid "Use \"%s\" to open the selected image"
 msgstr "استعمل \"%s\" لفتح العنصر المنتقى"
@@ -958,17 +958,17 @@ msgstr "استعمل \"%s\" لفتح العنصر المنتقى"
 #. * - the original filename
 #. * - the current image's position in the queue
 #. * - the total number of images queued for saving
-#: ../src/eog-window.c:1455
+#: ../src/eom-window.c:1455
 #, c-format
 msgid "Saving image \"%s\" (%u/%u)"
 msgstr "يحفظ الصورة ‏\"%s\" ‏(%Iu‏/%Iu)"
 
-#: ../src/eog-window.c:1808
+#: ../src/eom-window.c:1808
 #, c-format
 msgid "Opening image \"%s\""
 msgstr "يفتح الصورة “%s”"
 
-#: ../src/eog-window.c:2498
+#: ../src/eom-window.c:2498
 #, c-format
 msgid ""
 "Error printing file:\n"
@@ -977,15 +977,15 @@ msgstr ""
 "خطأ أثناء طباعة الملف:\n"
 "%s"
 
-#: ../src/eog-window.c:2751
+#: ../src/eom-window.c:2751
 msgid "Toolbar Editor"
 msgstr "محرر شريط الأدوات"
 
-#: ../src/eog-window.c:2754
+#: ../src/eom-window.c:2754
 msgid "_Reset to Default"
 msgstr "أ_عد الضبط للمبدئي"
 
-#: ../src/eog-window.c:2840
+#: ../src/eom-window.c:2840
 msgid "translator-credits"
 msgstr ""
 "فريق عربآيز للترجمة http://www.arabeyes.org :\n"
@@ -993,7 +993,7 @@ msgstr ""
 "عبدالعزيز العرفج\t<alarfaj0@yahoo.com>\n"
 "خالد حسني\t<khaledhosny@eglug.org>"
 
-#: ../src/eog-window.c:2843
+#: ../src/eom-window.c:2843
 msgid ""
 "This program is free software; you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -1004,7 +1004,7 @@ msgstr ""
 "العامة لجنو والتي نشرتها منظمة البرمجيات الحرة؛ سواء الإصدارة 2 من الرخصة أو "
 "أي إصدارة بعدها حسب رغبتك.\n"
 
-#: ../src/eog-window.c:2847
+#: ../src/eom-window.c:2847
 msgid ""
 "This program is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
@@ -1015,7 +1015,7 @@ msgstr ""
 "حتى أي ضمان يضمن صلاحية العرض في السوق أو توافقه مع أي استخدام محدد. يمكنك "
 "مراجعة الرخصة العمومية العامة لجنو لمزيد من التفاصيل.\n"
 
-#: ../src/eog-window.c:2851
+#: ../src/eom-window.c:2851
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program; if not, write to the Free Software Foundation, Inc., 59 Temple "
@@ -1026,23 +1026,23 @@ msgstr ""
 "Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA "
 "02111-1307, USA."
 
-#: ../src/eog-window.c:2864
+#: ../src/eom-window.c:2864
 msgid "Eye of MATE"
 msgstr "عين جنوم"
 
-#: ../src/eog-window.c:2867
+#: ../src/eom-window.c:2867
 msgid "The MATE image viewer."
 msgstr "عارِض صور جنوم."
 
 #. I18N: When setting mnemonics for these strings, watch out to not
-#. clash with mnemonics from eog's menubar
-#: ../src/eog-window.c:2993
+#. clash with mnemonics from eom's menubar
+#: ../src/eom-window.c:2993
 msgid "_Open Background Preferences"
 msgstr "افتح تف_ضيلات الخلفية"
 
 #. The newline character is currently necessary due to a problem
 #. * with the automatic line break.
-#: ../src/eog-window.c:3009
+#: ../src/eom-window.c:3009
 #, c-format
 msgid ""
 "The image \"%s\" has been set as Desktop Background.\n"
@@ -1051,25 +1051,25 @@ msgstr ""
 "لقد جعلت الصورة \"%s\" خلفية سطح المكتب.\n"
 "أتريد تغيير مظهرها؟"
 
-#: ../src/eog-window.c:3405
+#: ../src/eom-window.c:3405
 msgid "Saving image locally…"
 msgstr "يحفظ الصورة محليا…"
 
-#: ../src/eog-window.c:3487
+#: ../src/eom-window.c:3487
 #, c-format
 msgid ""
 "Are you sure you want to move\n"
 "\"%s\" to the trash?"
 msgstr "أتريد فعلًا نقل الصورة \"%s\" إلى المهملات؟"
 
-#: ../src/eog-window.c:3490
+#: ../src/eom-window.c:3490
 #, c-format
 msgid ""
 "A trash for \"%s\" couldn't be found. Do you want to remove this image "
 "permanently?"
 msgstr "تعذّر العثور على مهملات ل\"%s\". أتريد إزالة هذه الصورة بشكل دائم؟"
 
-#: ../src/eog-window.c:3495
+#: ../src/eom-window.c:3495
 #, c-format
 msgid ""
 "Are you sure you want to move\n"
@@ -1084,7 +1084,7 @@ msgstr[3] "هل تريد فعلًا نقل %i صور محددة إلى المه�
 msgstr[4] "هل تريد فعلًا نقل %i صورة محددة إلى المهملات؟"
 msgstr[5] "هل تريد فعلًا نقل %i صور محددة إلى المهملات؟"
 
-#: ../src/eog-window.c:3500
+#: ../src/eom-window.c:3500
 msgid ""
 "Some of the selected images can't be moved to the trash and will be removed "
 "permanently. Are you sure you want to proceed?"
@@ -1092,396 +1092,396 @@ msgstr ""
 "بعض الصورة المختارة لا يمكن نقلها إلى المهملات وستحذف بشكل دائم. أمتأكد أنك "
 "تريد المتابعة؟"
 
-#: ../src/eog-window.c:3517 ../src/eog-window.c:3975 ../src/eog-window.c:3999
+#: ../src/eom-window.c:3517 ../src/eom-window.c:3975 ../src/eom-window.c:3999
 msgid "Move to _Trash"
 msgstr "انقل إلى  ال_مهملات"
 
-#: ../src/eog-window.c:3519
+#: ../src/eom-window.c:3519
 msgid "_Do not ask again during this session"
 msgstr "_لا تسأل ثانيا خلال هذه الجلسة"
 
-#: ../src/eog-window.c:3564 ../src/eog-window.c:3578
+#: ../src/eom-window.c:3564 ../src/eom-window.c:3578
 #, c-format
 msgid "Couldn't access trash."
 msgstr "تعذّر الوصول إلى المهملات."
 
-#: ../src/eog-window.c:3586
+#: ../src/eom-window.c:3586
 #, c-format
 msgid "Couldn't delete file"
 msgstr "تعذر حذف الملف"
 
-#: ../src/eog-window.c:3657
+#: ../src/eom-window.c:3657
 #, c-format
 msgid "Error on deleting image %s"
 msgstr "خطأ أثناء حذف الصّورة %s"
 
-#: ../src/eog-window.c:3899
+#: ../src/eom-window.c:3899
 msgid "_Image"
 msgstr "_صورة"
 
-#: ../src/eog-window.c:3900
+#: ../src/eom-window.c:3900
 msgid "_Edit"
 msgstr "_تحرير"
 
-#: ../src/eog-window.c:3901
+#: ../src/eom-window.c:3901
 msgid "_View"
 msgstr "_عرض"
 
-#: ../src/eog-window.c:3902
+#: ../src/eom-window.c:3902
 msgid "_Go"
 msgstr "ا_ذهب"
 
-#: ../src/eog-window.c:3903
+#: ../src/eom-window.c:3903
 msgid "_Tools"
 msgstr "أد_وات"
 
-#: ../src/eog-window.c:3904
+#: ../src/eom-window.c:3904
 msgid "_Help"
 msgstr "_مساعدة"
 
-#: ../src/eog-window.c:3906
+#: ../src/eom-window.c:3906
 msgid "_Open…"
 msgstr "ا_فتح…"
 
-#: ../src/eog-window.c:3907
+#: ../src/eom-window.c:3907
 msgid "Open a file"
 msgstr "افتح ملف"
 
-#: ../src/eog-window.c:3909
+#: ../src/eom-window.c:3909
 msgid "_Close"
 msgstr "أ_غلق"
 
-#: ../src/eog-window.c:3910
+#: ../src/eom-window.c:3910
 msgid "Close window"
 msgstr "أغلق النّافذة"
 
-#: ../src/eog-window.c:3912
+#: ../src/eom-window.c:3912
 msgid "T_oolbar"
 msgstr "ش_ريط الأدوات"
 
-#: ../src/eog-window.c:3913
+#: ../src/eom-window.c:3913
 msgid "Edit the application toolbar"
 msgstr "حرّر شريط الأدوات"
 
-#: ../src/eog-window.c:3915
+#: ../src/eom-window.c:3915
 msgid "Prefere_nces"
 msgstr "التّف_ضيلات"
 
-#: ../src/eog-window.c:3916
+#: ../src/eom-window.c:3916
 msgid "Preferences for Eye of MATE"
 msgstr "تفضيلات عين جنوم"
 
-#: ../src/eog-window.c:3918
+#: ../src/eom-window.c:3918
 msgid "_Contents"
 msgstr "ال_محتويات"
 
-#: ../src/eog-window.c:3919
+#: ../src/eom-window.c:3919
 msgid "Help on this application"
 msgstr "مساعدة حول هذا التّطبيق"
 
-#: ../src/eog-window.c:3921 ../src/eog-plugin-manager.c:505
+#: ../src/eom-window.c:3921 ../src/eom-plugin-manager.c:505
 msgid "_About"
 msgstr "_عنْ"
 
-#: ../src/eog-window.c:3922
+#: ../src/eom-window.c:3922
 msgid "About this application"
 msgstr "عنْ هذا التّطبيق"
 
-#: ../src/eog-window.c:3927
+#: ../src/eom-window.c:3927
 msgid "_Toolbar"
 msgstr "شريط الأ_دوات"
 
-#: ../src/eog-window.c:3928
+#: ../src/eom-window.c:3928
 msgid "Changes the visibility of the toolbar in the current window"
 msgstr "تُغَيّر رؤية شريط الأدوات في النافذة الحالية"
 
-#: ../src/eog-window.c:3930
+#: ../src/eom-window.c:3930
 msgid "_Statusbar"
 msgstr "شريط ال_حالة"
 
-#: ../src/eog-window.c:3931
+#: ../src/eom-window.c:3931
 msgid "Changes the visibility of the statusbar in the current window"
 msgstr "تُغَيّر رؤية شريط الحالة في النافذة الحالية"
 
-#: ../src/eog-window.c:3933
+#: ../src/eom-window.c:3933
 msgid "_Image Collection"
 msgstr "م_جموعة صور"
 
-#: ../src/eog-window.c:3934
+#: ../src/eom-window.c:3934
 msgid ""
 "Changes the visibility of the image collection pane in the current window"
 msgstr "تغيير رؤية لوح مجموعة الصور في النافذة الحالية"
 
-#: ../src/eog-window.c:3936
+#: ../src/eom-window.c:3936
 msgid "Side _Pane"
 msgstr "ال_لوحة الجانبية"
 
-#: ../src/eog-window.c:3937
+#: ../src/eom-window.c:3937
 msgid "Changes the visibility of the side pane in the current window"
 msgstr "تغيير رؤية لوح مجموعة الصور في النافذة الحالية"
 
-#: ../src/eog-window.c:3942
+#: ../src/eom-window.c:3942
 msgid "_Save"
 msgstr "ا_حفظ"
 
-#: ../src/eog-window.c:3943
+#: ../src/eom-window.c:3943
 msgid "Save changes in currently selected images"
 msgstr "احفظ التغييرات في الصور المحددة"
 
-#: ../src/eog-window.c:3945
+#: ../src/eom-window.c:3945
 msgid "Open _with"
 msgstr "افتح بـا_ستخدام"
 
-#: ../src/eog-window.c:3946
+#: ../src/eom-window.c:3946
 msgid "Open the selected image with a different application"
 msgstr "افتح الصورة المحددة بتطبيق آخر"
 
-#: ../src/eog-window.c:3948
+#: ../src/eom-window.c:3948
 msgid "Save _As…"
 msgstr "احفظ با_سم…"
 
-#: ../src/eog-window.c:3949
+#: ../src/eom-window.c:3949
 msgid "Save the selected images with a different name"
 msgstr "احفظ الصورة المحددة باسم آخر"
 
-#: ../src/eog-window.c:3951
+#: ../src/eom-window.c:3951
 msgid "_Print…"
 msgstr "ا_طبع…"
 
-#: ../src/eog-window.c:3952
+#: ../src/eom-window.c:3952
 msgid "Print the selected image"
 msgstr "اطبع الصورة المحددة"
 
-#: ../src/eog-window.c:3954
+#: ../src/eom-window.c:3954
 msgid "Prope_rties"
 msgstr "خ_صائص"
 
-#: ../src/eog-window.c:3955
+#: ../src/eom-window.c:3955
 msgid "Show the properties and metadata of the selected image"
 msgstr "اعرض خصائص وبيانات الصورة المحددة"
 
-#: ../src/eog-window.c:3957
+#: ../src/eom-window.c:3957
 msgid "_Undo"
 msgstr "_تراجع"
 
-#: ../src/eog-window.c:3958
+#: ../src/eom-window.c:3958
 msgid "Undo the last change in the image"
 msgstr "تراجع عن آخر تغيير في الصورة"
 
-#: ../src/eog-window.c:3960
+#: ../src/eom-window.c:3960
 msgid "Flip _Horizontal"
 msgstr "اقلب أ_فقيا"
 
-#: ../src/eog-window.c:3961
+#: ../src/eom-window.c:3961
 msgid "Mirror the image horizontally"
 msgstr "اعكس الصورة أفقيا"
 
-#: ../src/eog-window.c:3963
+#: ../src/eom-window.c:3963
 msgid "Flip _Vertical"
 msgstr "اقلب _رأسيا"
 
-#: ../src/eog-window.c:3964
+#: ../src/eom-window.c:3964
 msgid "Mirror the image vertically"
 msgstr "اعكس الصورة رأسيا"
 
-#: ../src/eog-window.c:3966
+#: ../src/eom-window.c:3966
 msgid "_Rotate Clockwise"
 msgstr "ا_ستدر مع عقارب الساعة"
 
-#: ../src/eog-window.c:3967
+#: ../src/eom-window.c:3967
 msgid "Rotate the image 90 degrees to the right"
 msgstr "أدِر الصورة 90 درجة لليمين"
 
-#: ../src/eog-window.c:3969
+#: ../src/eom-window.c:3969
 msgid "Rotate Counterc_lockwise"
 msgstr "استدر _عكس عقارب الساعة"
 
-#: ../src/eog-window.c:3970
+#: ../src/eom-window.c:3970
 msgid "Rotate the image 90 degrees to the left"
 msgstr "أدِر الصورة 90 درجة لليسار"
 
-#: ../src/eog-window.c:3972
+#: ../src/eom-window.c:3972
 msgid "Set as _Desktop Background"
 msgstr "اضبط كخلفية _سطح المكتب"
 
-#: ../src/eog-window.c:3973
+#: ../src/eom-window.c:3973
 msgid "Set the selected image as the desktop background"
 msgstr "يضبط الصورة المختارة كخلفية سطح المكتب"
 
-#: ../src/eog-window.c:3976
+#: ../src/eom-window.c:3976
 msgid "Move the selected image to the trash folder"
 msgstr "انقل الصورة المحددة إلى مجلد المهملات"
 
-#: ../src/eog-window.c:3978 ../src/eog-window.c:3990 ../src/eog-window.c:3993
+#: ../src/eom-window.c:3978 ../src/eom-window.c:3990 ../src/eom-window.c:3993
 msgid "_Zoom In"
 msgstr "_قرّب"
 
-#: ../src/eog-window.c:3979 ../src/eog-window.c:3991
+#: ../src/eom-window.c:3979 ../src/eom-window.c:3991
 msgid "Enlarge the image"
 msgstr "كبّر الصورة"
 
-#: ../src/eog-window.c:3981 ../src/eog-window.c:3996
+#: ../src/eom-window.c:3981 ../src/eom-window.c:3996
 msgid "Zoom _Out"
 msgstr "_بعّد"
 
-#: ../src/eog-window.c:3982 ../src/eog-window.c:3994 ../src/eog-window.c:3997
+#: ../src/eom-window.c:3982 ../src/eom-window.c:3994 ../src/eom-window.c:3997
 msgid "Shrink the image"
 msgstr "صغّر الصورة"
 
-#: ../src/eog-window.c:3984
+#: ../src/eom-window.c:3984
 msgid "_Normal Size"
 msgstr "حجم _عادي"
 
-#: ../src/eog-window.c:3985
+#: ../src/eom-window.c:3985
 msgid "Show the image at its normal size"
 msgstr "اعرض الصورة في حجمها العادي"
 
-#: ../src/eog-window.c:3987
+#: ../src/eom-window.c:3987
 msgid "Best _Fit"
 msgstr "أفضل ملا_ئمة"
 
-#: ../src/eog-window.c:3988
+#: ../src/eom-window.c:3988
 msgid "Fit the image to the window"
 msgstr "لائم الصورة مع النافذة"
 
-#: ../src/eog-window.c:4005
+#: ../src/eom-window.c:4005
 msgid "_Fullscreen"
 msgstr "_ملء الشّاشة"
 
-#: ../src/eog-window.c:4006
+#: ../src/eom-window.c:4006
 msgid "Show the current image in fullscreen mode"
 msgstr "اعرض الصورة الحالية في نمط ملء الشاشة"
 
-#: ../src/eog-window.c:4008
+#: ../src/eom-window.c:4008
 msgid "Pause Slideshow"
 msgstr "ألبث شرائح"
 
-#: ../src/eog-window.c:4009
+#: ../src/eom-window.c:4009
 msgid "Pause or resume the slideshow"
 msgstr "ألبث أو استأنف عرض الشرائح"
 
-#: ../src/eog-window.c:4014 ../src/eog-window.c:4029
+#: ../src/eom-window.c:4014 ../src/eom-window.c:4029
 msgid "_Previous Image"
 msgstr "الصّ_ورة السّابقة"
 
-#: ../src/eog-window.c:4015
+#: ../src/eom-window.c:4015
 msgid "Go to the previous image of the collection"
 msgstr "اذهب للصّورة السّابقة للمجموعة"
 
-#: ../src/eog-window.c:4017
+#: ../src/eom-window.c:4017
 msgid "_Next Image"
 msgstr "الصّورة ال_تّالية"
 
-#: ../src/eog-window.c:4018
+#: ../src/eom-window.c:4018
 msgid "Go to the next image of the collection"
 msgstr "اذهب للصورة التالية للمجموعة"
 
-#: ../src/eog-window.c:4020 ../src/eog-window.c:4032
+#: ../src/eom-window.c:4020 ../src/eom-window.c:4032
 msgid "_First Image"
 msgstr "الصّورة ال_أولى"
 
-#: ../src/eog-window.c:4021
+#: ../src/eom-window.c:4021
 msgid "Go to the first image of the collection"
 msgstr "اذهب للصورة الأولى للمجموعة"
 
-#: ../src/eog-window.c:4023 ../src/eog-window.c:4035
+#: ../src/eom-window.c:4023 ../src/eom-window.c:4035
 msgid "_Last Image"
 msgstr "الصّورة الأ_خيرة"
 
-#: ../src/eog-window.c:4024
+#: ../src/eom-window.c:4024
 msgid "Go to the last image of the collection"
 msgstr "اذهب للصورة الأخيرة للمجموعة"
 
-#: ../src/eog-window.c:4026
+#: ../src/eom-window.c:4026
 msgid "_Random Image"
 msgstr "صورة _عشوائية"
 
-#: ../src/eog-window.c:4027
+#: ../src/eom-window.c:4027
 msgid "Go to a random image of the collection"
 msgstr "اذهب لصورة عشوائية من المجموعة"
 
-#: ../src/eog-window.c:4041
+#: ../src/eom-window.c:4041
 msgid "_Slideshow"
 msgstr "عرض _شرائح"
 
-#: ../src/eog-window.c:4042
+#: ../src/eom-window.c:4042
 msgid "Start a slideshow view of the images"
 msgstr "ابدأ عرض شرائح للصور"
 
-#: ../src/eog-window.c:4108
+#: ../src/eom-window.c:4108
 msgid "Previous"
 msgstr "السّابقة"
 
-#: ../src/eog-window.c:4112
+#: ../src/eom-window.c:4112
 msgid "Next"
 msgstr "التّالية"
 
-#: ../src/eog-window.c:4116
+#: ../src/eom-window.c:4116
 msgid "Right"
 msgstr "اليمين"
 
-#: ../src/eog-window.c:4119
+#: ../src/eom-window.c:4119
 msgid "Left"
 msgstr "اليسار"
 
-#: ../src/eog-window.c:4122
+#: ../src/eom-window.c:4122
 msgid "In"
 msgstr "داخل"
 
-#: ../src/eog-window.c:4125
+#: ../src/eom-window.c:4125
 msgid "Out"
 msgstr "خارج"
 
-#: ../src/eog-window.c:4128
+#: ../src/eom-window.c:4128
 msgid "Normal"
 msgstr "عادي"
 
-#: ../src/eog-window.c:4131
+#: ../src/eom-window.c:4131
 msgid "Fit"
 msgstr "ملائمة"
 
-#: ../src/eog-window.c:4134
+#: ../src/eom-window.c:4134
 msgid "Collection"
 msgstr "مجموعة"
 
-#: ../src/eog-window.c:4137
+#: ../src/eom-window.c:4137
 msgctxt "action (to trash)"
 msgid "Trash"
 msgstr "المهملات"
 
-#: ../src/eog-plugin-manager.c:51
+#: ../src/eom-plugin-manager.c:51
 msgid "Plugin"
 msgstr "ملحق"
 
-#: ../src/eog-plugin-manager.c:52
+#: ../src/eom-plugin-manager.c:52
 msgid "Enabled"
 msgstr "مفعّل"
 
-#: ../src/eog-plugin-manager.c:513
+#: ../src/eom-plugin-manager.c:513
 msgid "C_onfigure"
 msgstr "ا_ضبط"
 
-#: ../src/eog-plugin-manager.c:523
+#: ../src/eom-plugin-manager.c:523
 msgid "A_ctivate"
 msgstr "ن_شّط"
 
-#: ../src/eog-plugin-manager.c:535
+#: ../src/eom-plugin-manager.c:535
 msgid "Ac_tivate All"
 msgstr "ن_شّط الكل"
 
-#: ../src/eog-plugin-manager.c:540
+#: ../src/eom-plugin-manager.c:540
 msgid "_Deactivate All"
 msgstr "أ_خمِد الكل"
 
-#: ../src/eog-plugin-manager.c:834
+#: ../src/eom-plugin-manager.c:834
 msgid "Active _Plugins:"
 msgstr "الملحقات النشِ_طة:"
 
-#: ../src/eog-plugin-manager.c:863
+#: ../src/eom-plugin-manager.c:863
 msgid "_About Plugin"
 msgstr "_عنْ الملحق"
 
-#: ../src/eog-plugin-manager.c:870
+#: ../src/eom-plugin-manager.c:870
 msgid "C_onfigure Plugin"
 msgstr "ا_ضبط الملحق"
 
@@ -1513,7 +1513,7 @@ msgstr "أظهر نسخة التطبيق"
 msgid "[FILE…]"
 msgstr "[ملف…]"
 
-#. I18N: The '%s' is replaced with eog's command name.
+#. I18N: The '%s' is replaced with eom's command name.
 #: ../src/main.c:207
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options."

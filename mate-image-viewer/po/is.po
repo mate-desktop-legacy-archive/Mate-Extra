@@ -5,7 +5,7 @@
 # Samúel Jón Gunnarsson <sammi@techattack.nu>, 2003
 msgid ""
 msgstr ""
-"Project-Id-Version: eog\n"
+"Project-Id-Version: eom\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-10-11 19:50+0200\n"
 "PO-Revision-Date: 2004-03-13 06:28-0000\n"
@@ -15,166 +15,166 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: eog.desktop.in.h:1
+#: eom.desktop.in.h:1
 msgid "Image Viewer"
 msgstr "Myndarýnir"
 
-#: eog.desktop.in.h:2
+#: eom.desktop.in.h:2
 msgid "View many different types of images"
 msgstr "Skoða margar mismunandi gerðir af myndum"
 
-#: eog.glade.h:1
+#: eom.glade.h:1
 msgid "    "
 msgstr "    "
 
-#: eog.glade.h:2
+#: eom.glade.h:2
 msgid "*"
 msgstr ""
 
-#: eog.glade.h:3
+#: eom.glade.h:3
 msgid "."
 msgstr ""
 
-#: eog.glade.h:4
+#: eom.glade.h:4
 msgid "<b>File Name Preview</b>"
 msgstr ""
 
-#: eog.glade.h:5
+#: eom.glade.h:5
 msgid "<b>File Path Specifications</b>"
 msgstr ""
 
-#: eog.glade.h:6
+#: eom.glade.h:6
 msgid "<b>Image Interpolation</b>"
 msgstr "<b>Innreikningur myndar</b>"
 
-#: eog.glade.h:7
+#: eom.glade.h:7
 msgid "<b>Image Zoom</b>"
 msgstr "<b>Súmm myndar</b>"
 
-#: eog.glade.h:8
+#: eom.glade.h:8
 #, fuzzy
 msgid "<b>Options</b>"
 msgstr "<b>Innreikningur myndar</b>"
 
-#: eog.glade.h:9
+#: eom.glade.h:9
 msgid "<b>Sequence</b>"
 msgstr "<b>Syrpa</b>"
 
-#: eog.glade.h:10
+#: eom.glade.h:10
 #, fuzzy
 msgid "<b>Transparent Parts</b>"
 msgstr "<b>Glærleiki</b>"
 
-#: eog.glade.h:12
+#: eom.glade.h:12
 #, no-c-format
 msgid "Allow _zoom greater than 100% initially"
 msgstr ""
 
-#: eog.glade.h:13
+#: eom.glade.h:13
 msgid "As _background"
 msgstr "Sem _bakgrunnur"
 
-#: eog.glade.h:14
+#: eom.glade.h:14
 msgid "As check _pattern"
 msgstr "Sem hakað m_ynstur"
 
-#: eog.glade.h:15
+#: eom.glade.h:15
 msgid "As custom c_olor"
 msgstr "Sem sér_valin litur"
 
-#: eog.glade.h:16
+#: eom.glade.h:16
 msgid "Color for Transparent Areas"
 msgstr "Litur fyrir glær svæði"
 
-#: eog.glade.h:17
+#: eom.glade.h:17
 #, fuzzy
 msgid "Destination Folder:"
 msgstr "Opna Möppu"
 
-#: eog.glade.h:18
+#: eom.glade.h:18
 msgid "Eye of Mate Preferences"
 msgstr "Stillingar Eye of Mate"
 
-#: eog.glade.h:19
+#: eom.glade.h:19
 #, fuzzy
 msgid "Filename Format:"
 msgstr "Skráarnafn"
 
-#: eog.glade.h:20
+#: eom.glade.h:20
 msgid "Image _View"
 msgstr "_Myndasýn"
 
-#: eog.glade.h:21
+#: eom.glade.h:21
 msgid "Rename From:"
 msgstr ""
 
-#: eog.glade.h:22
+#: eom.glade.h:22
 msgid "Replace spaces by underscore"
 msgstr ""
 
-#: eog.glade.h:23
+#: eom.glade.h:23
 #, fuzzy
 msgid "Save As"
 msgstr "Vist_a sem..."
 
-#: eog.glade.h:24
+#: eom.glade.h:24
 #, fuzzy
 msgid "Saving Image"
 msgstr "Vista mynd"
 
-#: eog.glade.h:25
+#: eom.glade.h:25
 #, fuzzy
 msgid "Show _next image automatically after:"
 msgstr ""
 "Sýna næstu mynd sjálfkrafa:\n"
 "(0 til slá frá)"
 
-#: eog.glade.h:26
+#: eom.glade.h:26
 msgid "Sli_de Show"
 msgstr "Myn_dasyrpa"
 
-#: eog.glade.h:27
+#: eom.glade.h:27
 msgid "Start counter at:"
 msgstr ""
 
-#: eog.glade.h:28
+#: eom.glade.h:28
 msgid "To:"
 msgstr ""
 
-#: eog.glade.h:29
+#: eom.glade.h:29
 #, fuzzy
 msgid "_Browse"
 msgstr "_Loka"
 
-#: eog.glade.h:30
+#: eom.glade.h:30
 #, fuzzy
 msgid "_Interpolate image on zoom"
 msgstr "Innreikna mynd"
 
-#: eog.glade.h:31
+#: eom.glade.h:31
 msgid "_Loop sequence"
 msgstr "_Endurtaka syrpu"
 
-#: eog.glade.h:32
+#: eom.glade.h:32
 msgid "seconds"
 msgstr "sek"
 
-#: eog.schemas.in.h:1
+#: eom.schemas.in.h:1
 msgid ""
 "A value greater than 0 determines the seconds an image stays on screen until "
 "the next one is shown automatically. Zero disables the automatic browsing."
 msgstr ""
 
-#: eog.schemas.in.h:3
+#: eom.schemas.in.h:3
 #, no-c-format
 msgid "Allow zoom greater than 100% initially"
 msgstr ""
 
-#: eog.schemas.in.h:4
+#: eom.schemas.in.h:4
 msgid "Delay in seconds until showing the next image"
 msgstr ""
 
-#: eog.schemas.in.h:5
+#: eom.schemas.in.h:5
 #, fuzzy
 msgid ""
 "Determines how transparency should be indicated. Valid values are "
@@ -182,7 +182,7 @@ msgid ""
 "determines the used color value."
 msgstr "Ákvarðar hvernig eigi að sýna eigi glærleika. "
 
-#: eog.schemas.in.h:6
+#: eom.schemas.in.h:6
 msgid ""
 "If the transparency key has the value COLOR, then this key determines the "
 "color which is used for indicating transparency."
@@ -190,41 +190,41 @@ msgstr ""
 "Ef glærleikalykill inniheldur gildið LITUR, þá mun þessi lykill ákvarða "
 "litinn sem notaður verður til að sýna eigi glærleika."
 
-#: eog.schemas.in.h:7
+#: eom.schemas.in.h:7
 msgid ""
 "If this is set to FALSE small images will not be stretched to fit into the "
 "screen initially."
 msgstr ""
 
-#: eog.schemas.in.h:8
+#: eom.schemas.in.h:8
 msgid "Interpolate Image"
 msgstr "Innreikna mynd"
 
-#: eog.schemas.in.h:9
+#: eom.schemas.in.h:9
 msgid "Loop through the image sequence"
 msgstr ""
 
-#: eog.schemas.in.h:10
+#: eom.schemas.in.h:10
 msgid "Open images in a new window"
 msgstr "Opna myndir í nýjum glugga"
 
-#: eog.schemas.in.h:11
+#: eom.schemas.in.h:11
 msgid "Show/hide the window statusbar."
 msgstr "Sýna/fela tólstiku"
 
-#: eog.schemas.in.h:12
+#: eom.schemas.in.h:12
 msgid "Show/hide the window toolbar."
 msgstr "Sýna/fela tólstiku"
 
-#: eog.schemas.in.h:13
+#: eom.schemas.in.h:13
 msgid "Transparency color"
 msgstr "Glærleikalitur"
 
-#: eog.schemas.in.h:14
+#: eom.schemas.in.h:14
 msgid "Transparency indicator"
 msgstr "Staða glærleika"
 
-#: eog.schemas.in.h:15
+#: eom.schemas.in.h:15
 #, fuzzy
 msgid ""
 "Whether opening an image should create a new window instead of replacing the "
@@ -233,209 +233,209 @@ msgstr ""
 "Hvort að opna eigi mynd í nýjum glugga í stað fyrir að útskipta mynd í "
 "núverandi glugga."
 
-#: eog.schemas.in.h:16
+#: eom.schemas.in.h:16
 msgid ""
 "Whether or not the sequence of images should be shown in an endless loop."
 msgstr ""
 
-#: eog.schemas.in.h:17
+#: eom.schemas.in.h:17
 #, fuzzy
 msgid ""
 "Whether the image should be interpolated on zoom or not. This leads to "
 "better quality but is somewhat slower than non interpolated images."
 msgstr "Hvort að innreikna eigi mynd við notkun á súmmi eður ei. "
 
-#: libeog/eog-file-selection.c:124
+#: libeom/eom-file-selection.c:124
 msgid "All Files"
 msgstr "Allar Skrár"
 
-#: libeog/eog-file-selection.c:129
+#: libeom/eom-file-selection.c:129
 msgid "All Images"
 msgstr "Allar Myndir"
 
 #  Filter name: First description then file extension, eg. "The PNG-Format (*.png)".
 #. Filter name: First description then file extension, eg. "The PNG-Format (*.png)".
-#: libeog/eog-file-selection.c:147
+#: libeom/eom-file-selection.c:147
 #, c-format
 msgid "%s (*.%s)"
 msgstr "%s (*.%s)"
 
 #  Pixel size of image: width x height in pixel
 #. Pixel size of image: width x height in pixel
-#: libeog/eog-file-selection.c:240
+#: libeom/eom-file-selection.c:240
 #, c-format
 msgid "%s x %s pixel"
 msgstr "%s x %s pixel"
 
-#: libeog/eog-file-selection.c:396
+#: libeom/eom-file-selection.c:396
 msgid "Load Image"
 msgstr "Hlaða mynd"
 
-#: libeog/eog-file-selection.c:404
+#: libeom/eom-file-selection.c:404
 msgid "Save Image"
 msgstr "Vista mynd"
 
-#: libeog/eog-file-selection.c:412
+#: libeom/eom-file-selection.c:412
 msgid "Open Folder"
 msgstr "Opna Möppu"
 
-#: libeog/eog-image-jpeg.c:330 libeog/eog-image-jpeg.c:569
+#: libeom/eom-image-jpeg.c:330 libeom/eom-image-jpeg.c:569
 #, fuzzy, c-format
 msgid "Couldn't create temporary file for saving: %s"
 msgstr "Ekki tókst að tileinka minni fyrir hleðslu á JPEG skrá"
 
-#: libeog/eog-image-jpeg.c:349 libeog/eog-image-jpeg.c:590
+#: libeom/eom-image-jpeg.c:349 libeom/eom-image-jpeg.c:590
 msgid "Couldn't allocate memory for loading JPEG file"
 msgstr "Ekki tókst að tileinka minni fyrir hleðslu á JPEG skrá"
 
-#: libeog/eog-image.c:814
+#: libeom/eom-image.c:814
 msgid "empty file"
 msgstr "tóm skrá"
 
-#: libeog/eog-image.c:1247 libeog/eog-image.c:1458
+#: libeom/eom-image.c:1247 libeom/eom-image.c:1458
 msgid "File exists"
 msgstr "Skráin er þegar til"
 
-#: libeog/eog-image.c:1400 libeog/eog-image.c:1526
+#: libeom/eom-image.c:1400 libeom/eom-image.c:1526
 msgid "No image loaded."
 msgstr "Engar innhlaðnar myndir."
 
-#: libeog/eog-image.c:1409 libeog/eog-image.c:1535
+#: libeom/eom-image.c:1409 libeom/eom-image.c:1535
 msgid "Temporary file creation failed."
 msgstr ""
 
-#: libeog/eog-info-view-exif.c:26
+#: libeom/eom-info-view-exif.c:26
 #, fuzzy
 msgid "Camera"
 msgstr "Nafn"
 
-#: libeog/eog-info-view-exif.c:27
+#: libeom/eom-info-view-exif.c:27
 #, fuzzy
 msgid "Image Data"
 msgstr "Breidd myndar"
 
-#: libeog/eog-info-view-exif.c:28
+#: libeom/eom-info-view-exif.c:28
 #, fuzzy
 msgid "Image Taking Conditions"
 msgstr "Myndasafn"
 
-#: libeog/eog-info-view-exif.c:29
+#: libeom/eom-info-view-exif.c:29
 msgid "Maker Note"
 msgstr ""
 
-#: libeog/eog-info-view-exif.c:30
+#: libeom/eom-info-view-exif.c:30
 msgid "Other"
 msgstr ""
 
-#: libeog/eog-info-view-exif.c:212
+#: libeom/eom-info-view-exif.c:212
 msgid "Tag"
 msgstr ""
 
-#: libeog/eog-info-view-exif.c:220 libeog/eog-info-view-file.c:96
+#: libeom/eom-info-view-exif.c:220 libeom/eom-info-view-file.c:96
 msgid "Value"
 msgstr "Gildi"
 
 #. only used for internal purpose
-#: libeog/eog-info-view-file.c:25 libeog/eog-uri-converter.h:45
+#: libeom/eom-info-view-file.c:25 libeom/eom-uri-converter.h:45
 msgid "Filename"
 msgstr "Skráarnafn"
 
-#: libeog/eog-info-view-file.c:26
+#: libeom/eom-info-view-file.c:26
 msgid "Width"
 msgstr "Breidd"
 
-#: libeog/eog-info-view-file.c:27
+#: libeom/eom-info-view-file.c:27
 msgid "Height"
 msgstr "Hæð"
 
-#: libeog/eog-info-view-file.c:28
+#: libeom/eom-info-view-file.c:28
 msgid "Filesize"
 msgstr "Skráarstærð"
 
-#: libeog/eog-info-view-file.c:88
+#: libeom/eom-info-view-file.c:88
 msgid "Attribute"
 msgstr "Egind"
 
-#: libeog/eog-info-view.c:92
+#: libeom/eom-info-view.c:92
 #, fuzzy
 msgid "File"
 msgstr "_Skrá"
 
-#: libeog/eog-info-view.c:101
+#: libeom/eom-info-view.c:101
 msgid "EXIF"
 msgstr ""
 
-#: libeog/eog-info-view.c:108
+#: libeom/eom-info-view.c:108
 msgid "IPTC"
 msgstr ""
 
-#: libeog/eog-save-as-dialog-helper.c:137
+#: libeom/eom-save-as-dialog-helper.c:137
 msgid "Option not available."
 msgstr ""
 
-#: libeog/eog-save-as-dialog-helper.c:138
+#: libeom/eom-save-as-dialog-helper.c:138
 msgid ""
 "To use this function you need the libexif library. Please install libexif "
 "(http://libexif.sf.net) and recompile Eye of Mate."
 msgstr ""
 
-#: libeog/eog-save-as-dialog-helper.c:214
+#: libeom/eom-save-as-dialog-helper.c:214
 msgid "as is"
 msgstr ""
 
-#: libeog/eog-save-dialog-helper.c:162
+#: libeom/eom-save-dialog-helper.c:162
 #, fuzzy, c-format
 msgid "Saving image %s."
 msgstr "Vista mynd"
 
-#: libeog/eog-save-dialog-helper.c:208
+#: libeom/eom-save-dialog-helper.c:208
 #, fuzzy
 msgid "Cancel saving ..."
 msgstr "Hætta við vistun"
 
-#: libeog/eog-uri-converter.c:1023
+#: libeom/eom-uri-converter.c:1023
 msgid "Filenames are not disjunct."
 msgstr ""
 
-#: libeog/eog-uri-converter.h:46
+#: libeom/eom-uri-converter.h:46
 #, fuzzy
 msgid "Counter"
 msgstr "Miðjað"
 
-#: libeog/eog-uri-converter.h:47
+#: libeom/eom-uri-converter.h:47
 #, fuzzy
 msgid "Comment"
 msgstr "_Innihald"
 
-#: libeog/eog-uri-converter.h:48
+#: libeom/eom-uri-converter.h:48
 msgid "Date"
 msgstr ""
 
-#: libeog/eog-uri-converter.h:49
+#: libeom/eom-uri-converter.h:49
 msgid "Time"
 msgstr ""
 
-#: libeog/eog-uri-converter.h:50
+#: libeom/eom-uri-converter.h:50
 msgid "Day"
 msgstr ""
 
-#: libeog/eog-uri-converter.h:51
+#: libeom/eom-uri-converter.h:51
 msgid "Month"
 msgstr ""
 
-#: libeog/eog-uri-converter.h:52
+#: libeom/eom-uri-converter.h:52
 msgid "Year"
 msgstr ""
 
-#: libeog/eog-uri-converter.h:53
+#: libeom/eom-uri-converter.h:53
 msgid "Hour"
 msgstr ""
 
-#: libeog/eog-uri-converter.h:54
+#: libeom/eom-uri-converter.h:54
 msgid "Minute"
 msgstr ""
 
-#: libeog/eog-uri-converter.h:55
+#: libeom/eom-uri-converter.h:55
 #, fuzzy
 msgid "Second"
 msgstr "sek"
@@ -444,20 +444,20 @@ msgstr "sek"
 #. * which will give them credit in the About box.
 #. * E.g. "Fulano de Tal <fulano@detal.com>"
 #.
-#: shell/eog-window.c:314
+#: shell/eom-window.c:314
 msgid "translator-credits"
 msgstr ""
 
-#: shell/eog-window.c:319 shell/eog-window.c:2167 shell/eog-window.c:2482
+#: shell/eom-window.c:319 shell/eom-window.c:2167 shell/eom-window.c:2482
 #: shell/main.c:498
 msgid "Eye of Mate"
 msgstr "Eye of Mate"
 
-#: shell/eog-window.c:322
+#: shell/eom-window.c:322
 msgid "The MATE image viewing and cataloging program."
 msgstr "Myndarýnir og myndflokkunarforrit fyrir MATE"
 
-#: shell/eog-window.c:359
+#: shell/eom-window.c:359
 #, c-format
 msgid ""
 "Could not display help for Eye of Mate.\n"
@@ -466,210 +466,210 @@ msgstr ""
 "Ekki tókst að sýna hjálp fyrir Eye of Mate.\n"
 "%s"
 
-#: shell/eog-window.c:626
+#: shell/eom-window.c:626
 #, c-format
 msgid "Overwrite file %s?"
 msgstr ""
 
-#: shell/eog-window.c:627
+#: shell/eom-window.c:627
 #, fuzzy
 msgid "File exists. Do you want to overwrite it?"
 msgstr "Viltu yfirskrifa %s?"
 
-#: shell/eog-window.c:636 shell/eog-window.c:649
+#: shell/eom-window.c:636 shell/eom-window.c:649
 msgid "Skip"
 msgstr ""
 
-#: shell/eog-window.c:637
+#: shell/eom-window.c:637
 msgid "Overwrite"
 msgstr ""
 
-#: shell/eog-window.c:642
+#: shell/eom-window.c:642
 #, c-format
 msgid "Error on saving %s."
 msgstr ""
 
-#: shell/eog-window.c:650 shell/eog-window.c:1034
+#: shell/eom-window.c:650 shell/eom-window.c:1034
 msgid "Retry"
 msgstr ""
 
-#: shell/eog-window.c:1023
+#: shell/eom-window.c:1023
 #, fuzzy, c-format
 msgid "Couldn't determine file format of %s"
 msgstr "Ekki tókst að tileinka minni fyrir hleðslu á JPEG skrá"
 
-#: shell/eog-window.c:1024
+#: shell/eom-window.c:1024
 msgid "Please use an appropriate filename suffix or select a file format."
 msgstr ""
 
-#: shell/eog-window.c:1166
+#: shell/eom-window.c:1166
 #, fuzzy
 msgid "Error on saving images."
 msgstr "Vista mynd"
 
-#: shell/eog-window.c:1399
+#: shell/eom-window.c:1399
 #, fuzzy, c-format
 msgid "Do you really want to move %i image to trash?"
 msgid_plural "Do you really want to move %i images to trash?"
 msgstr[0] "Viltu yfirskrifa %s?"
 msgstr[1] "Viltu yfirskrifa %s?"
 
-#: shell/eog-window.c:1437
+#: shell/eom-window.c:1437
 msgid "Couldn't access trash."
 msgstr ""
 
-#: shell/eog-window.c:1511
+#: shell/eom-window.c:1511
 #, c-format
 msgid "Error on deleting image %s"
 msgstr ""
 
 #  [image width] x [image height] pixel  [bytes]    [zoom in percent]
 #. [image width] x [image height] pixel  [bytes]    [zoom in percent]
-#: shell/eog-window.c:2096
+#: shell/eom-window.c:2096
 #, c-format
 msgid "%i x %i pixel  %s    %i%%"
 msgstr "%i x %i pixel  %s    %i%%"
 
-#: shell/eog-window.c:2233
+#: shell/eom-window.c:2233
 msgid "_File"
 msgstr "_Skrá"
 
-#: shell/eog-window.c:2234
+#: shell/eom-window.c:2234
 msgid "_Edit"
 msgstr "Sýs_l"
 
-#: shell/eog-window.c:2235
+#: shell/eom-window.c:2235
 msgid "_View"
 msgstr "Sý_n"
 
-#: shell/eog-window.c:2236
+#: shell/eom-window.c:2236
 msgid "_Help"
 msgstr "_Hjálp"
 
-#: shell/eog-window.c:2237
+#: shell/eom-window.c:2237
 msgid "_New"
 msgstr "_Nýtt"
 
-#: shell/eog-window.c:2237
+#: shell/eom-window.c:2237
 msgid "Open a new window"
 msgstr "Opna nýjan glugga"
 
-#: shell/eog-window.c:2238
+#: shell/eom-window.c:2238
 msgid "_Open..."
 msgstr "_Opna..."
 
-#: shell/eog-window.c:2238
+#: shell/eom-window.c:2238
 msgid "Open a file"
 msgstr "Opna skrá"
 
-#: shell/eog-window.c:2239
+#: shell/eom-window.c:2239
 #, fuzzy
 msgid "Open _Directory..."
 msgstr "_Opna Möppu..."
 
-#: shell/eog-window.c:2239
+#: shell/eom-window.c:2239
 msgid "Open a directory"
 msgstr "Opna Möppu"
 
-#: shell/eog-window.c:2240
+#: shell/eom-window.c:2240
 msgid "_Close"
 msgstr "_Loka"
 
-#: shell/eog-window.c:2240
+#: shell/eom-window.c:2240
 msgid "Close window"
 msgstr "Loka glugga"
 
-#: shell/eog-window.c:2241
+#: shell/eom-window.c:2241
 msgid "Prefere_nces"
 msgstr "Stilli_ngar"
 
-#: shell/eog-window.c:2241
+#: shell/eom-window.c:2241
 #, fuzzy
 msgid "Preferences for Eye of Mate"
 msgstr "Stillingar fyrir EoG íhluti"
 
-#: shell/eog-window.c:2242
+#: shell/eom-window.c:2242
 msgid "_Contents"
 msgstr "_Innihald"
 
-#: shell/eog-window.c:2242
+#: shell/eom-window.c:2242
 msgid "Help On this application"
 msgstr "Skoða hjálp fyrir þetta forrit"
 
-#: shell/eog-window.c:2243
+#: shell/eom-window.c:2243
 msgid "_About"
 msgstr "_Um"
 
-#: shell/eog-window.c:2243
+#: shell/eom-window.c:2243
 msgid "About this application"
 msgstr "Um þetta forrit"
 
-#: shell/eog-window.c:2248
+#: shell/eom-window.c:2248
 msgid "_Toolbar"
 msgstr "_Tólstika"
 
-#: shell/eog-window.c:2249
+#: shell/eom-window.c:2249
 #, fuzzy
 msgid "_Statusbar"
 msgstr "Texti tólstiku"
 
-#: shell/eog-window.c:2254
+#: shell/eom-window.c:2254
 msgid "_Save"
 msgstr "Vi_sta"
 
-#: shell/eog-window.c:2255
+#: shell/eom-window.c:2255
 #, fuzzy
 msgid "Save _As"
 msgstr "Vist_a sem..."
 
-#: shell/eog-window.c:2257
+#: shell/eom-window.c:2257
 msgid "_Undo"
 msgstr "Aft_urkalla"
 
-#: shell/eog-window.c:2259
+#: shell/eom-window.c:2259
 msgid "Flip _Horizontal"
 msgstr "Velta Lá_rétt"
 
-#: shell/eog-window.c:2260
+#: shell/eom-window.c:2260
 msgid "Flip _Vertical"
 msgstr "Velta _Lóðrétt"
 
-#: shell/eog-window.c:2262
+#: shell/eom-window.c:2262
 #, fuzzy
 msgid "_Rotate Clockwise"
 msgstr "Snúa með k_lukku"
 
-#: shell/eog-window.c:2263
+#: shell/eom-window.c:2263
 #, fuzzy
 msgid "Rotate Counter C_lockwise"
 msgstr "Snúa á móti kl_ukku"
 
-#: shell/eog-window.c:2264
+#: shell/eom-window.c:2264
 #, fuzzy
 msgid "Rotat_e 180°"
 msgstr "Snúa um 180 grá_ður"
 
-#: shell/eog-window.c:2266
+#: shell/eom-window.c:2266
 msgid "Delete"
 msgstr ""
 
-#: shell/eog-window.c:2268
+#: shell/eom-window.c:2268
 msgid "_Full Screen"
 msgstr "_Heilskjásýn"
 
-#: shell/eog-window.c:2269
+#: shell/eom-window.c:2269
 msgid "_Zoom In"
 msgstr "_Súma inn"
 
-#: shell/eog-window.c:2270
+#: shell/eom-window.c:2270
 msgid "Zoom _Out"
 msgstr "Súma ú_t"
 
-#: shell/eog-window.c:2271
+#: shell/eom-window.c:2271
 msgid "_Normal Size"
 msgstr "Ve_njuleg Stærð"
 
-#: shell/eog-window.c:2272
+#: shell/eom-window.c:2272
 msgid "Best _Fit"
 msgstr "Besta _Snið"
 
@@ -706,11 +706,11 @@ msgstr[1] "Skrá(r) fannst/fundust ekki"
 msgid "Could not open `%s'"
 msgstr "Ekki tókst að opna `%s'"
 
-#~ msgid "EOG Image Collection Viewer"
-#~ msgstr "EOG safnmyndarýnir"
+#~ msgid "EOM Image Collection Viewer"
+#~ msgstr "EOM safnmyndarýnir"
 
-#~ msgid "EOG Image collection view factory"
-#~ msgstr "Versmiðja EOG safnmyndarýnis"
+#~ msgid "EOM Image collection view factory"
+#~ msgstr "Versmiðja EOM safnmyndarýnis"
 
 #, fuzzy
 #~ msgid "View as I_mage Collection"
@@ -756,17 +756,17 @@ msgstr "Ekki tókst að opna `%s'"
 #~ msgid "Progress of Image Loading"
 #~ msgstr "Staða á hleðslu myndar"
 
-#~ msgid "EOG Image"
-#~ msgstr "EOG mynd"
+#~ msgid "EOM Image"
+#~ msgstr "EOM mynd"
 
-#~ msgid "EOG Image Viewer"
-#~ msgstr "EOG myndarýnir"
+#~ msgid "EOM Image Viewer"
+#~ msgstr "EOM myndarýnir"
 
-#~ msgid "EOG Image viewer factory"
-#~ msgstr "Verksmiðja EOG myndarýnis"
+#~ msgid "EOM Image viewer factory"
+#~ msgstr "Verksmiðja EOM myndarýnis"
 
-#~ msgid "Embeddable EOG Image"
-#~ msgstr "Innfelld EOG mynd"
+#~ msgid "Embeddable EOM Image"
+#~ msgstr "Innfelld EOM mynd"
 
 #~ msgid "Image"
 #~ msgstr "Mynd"

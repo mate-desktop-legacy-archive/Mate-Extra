@@ -31,13 +31,13 @@
 #include <gdk/gdkx.h>
 #endif
 
-#include "eog-session.h"
-#include "eog-debug.h"
-#include "eog-thumbnail.h"
-#include "eog-job-queue.h"
-#include "eog-application.h"
-#include "eog-plugin-engine.h"
-#include "eog-util.h"
+#include "eom-session.h"
+#include "eom-debug.h"
+#include "eom-thumbnail.h"
+#include "eom-job-queue.h"
+#include "eom-application.h"
+#include "eom-plugin-engine.h"
+#include "eom-util.h"
 
 #include <string.h>
 #include <stdlib.h>
@@ -47,7 +47,7 @@
 #include <exempi/xmp.h>
 #endif
 
-static EogStartupFlags flags;
+static EomStartupFlags flags;
 
 static gboolean fullscreen = FALSE;
 static gboolean slide_show = FALSE;
@@ -86,13 +86,13 @@ static void
 set_startup_flags (void)
 {
   if (fullscreen)
-    flags |= EOG_STARTUP_FULLSCREEN;
+    flags |= EOM_STARTUP_FULLSCREEN;
 
   if (disable_collection)
-    flags |= EOG_STARTUP_DISABLE_COLLECTION;
+    flags |= EOM_STARTUP_DISABLE_COLLECTION;
 
   if (slide_show)
-    flags |= EOG_STARTUP_SLIDE_SHOW;
+    flags |= EOM_STARTUP_SLIDE_SHOW;
 }
 
 static void
@@ -100,9 +100,9 @@ load_files (void)
 {
 	GSList *files = NULL;
 
-	files = eog_util_string_array_to_list ((const gchar **) startup_files, TRUE);
+	files = eom_util_string_array_to_list ((const gchar **) startup_files, TRUE);
 
-	eog_application_open_uri_list (EOG_APP,
+	eom_application_open_uri_list (EOM_APP,
 				       files,
 				       GDK_CURRENT_TIME,
 				       flags,
@@ -136,12 +136,12 @@ load_files_remote (void)
  		return FALSE;
  	}
 
- 	files = eog_util_string_array_make_absolute (startup_files);
+ 	files = eom_util_string_array_make_absolute (startup_files);
 
  	remote_object = dbus_g_proxy_new_for_name (connection,
- 						   "org.mate.eog.ApplicationService",
-						   "/org/mate/eog/Eog",
-						   "org.mate.eog.Application");
+ 						   "org.mate.eom.ApplicationService",
+						   "/org/mate/eom/Eom",
+						   "org.mate.eom.Application");
 
  	if (!files) {
  		if (!dbus_g_proxy_call (remote_object, "OpenWindow", &error,
@@ -188,11 +188,11 @@ main (int argc, char **argv)
 	if (!g_thread_supported ())
 		g_thread_init (NULL);
 
-	bindtextdomain (PACKAGE, EOG_LOCALE_DIR);
+	bindtextdomain (PACKAGE, EOM_LOCALE_DIR);
 	bind_textdomain_codeset (PACKAGE, "UTF-8");
 	textdomain (PACKAGE);
 
-	gtk_rc_parse (EOG_DATA_DIR G_DIR_SEPARATOR_S "gtkrc");
+	gtk_rc_parse (EOM_DATA_DIR G_DIR_SEPARATOR_S "gtkrc");
 
 	ctx = g_option_context_new (NULL);
 	g_option_context_add_main_entries (ctx, goption_options, PACKAGE);
@@ -203,7 +203,7 @@ main (int argc, char **argv)
 	if (!g_option_context_parse (ctx, &argc, &argv, &error)) {
 		gchar *help_msg;
 
-		/* I18N: The '%s' is replaced with eog's command name. */
+		/* I18N: The '%s' is replaced with eom's command name. */
 		help_msg = g_strdup_printf (_("Run '%s --help' to see a full "
 					      "list of available command line "
 					      "options."), argv[0]);
@@ -221,7 +221,7 @@ main (int argc, char **argv)
 
 #ifdef HAVE_DBUS
 	if (!force_new_instance &&
-	    !eog_application_register_service (EOG_APP)) {
+	    !eom_application_register_service (EOM_APP)) {
 		if (load_files_remote ()) {
 			return 0;
 		}
@@ -234,17 +234,17 @@ main (int argc, char **argv)
 #ifdef HAVE_RSVG
 	rsvg_init();
 #endif
-	eog_debug_init ();
-	eog_job_queue_init ();
+	eom_debug_init ();
+	eom_job_queue_init ();
 	gdk_threads_init ();
-	eog_thumbnail_init ();
-	eog_plugin_engine_init ();
+	eom_thumbnail_init ();
+	eom_plugin_engine_init ();
 
 	/* Add application specific icons to search path */
 	gtk_icon_theme_append_search_path (gtk_icon_theme_get_default (),
-                                           EOG_DATA_DIR G_DIR_SEPARATOR_S "icons");
+                                           EOM_DATA_DIR G_DIR_SEPARATOR_S "icons");
 
-	gtk_window_set_default_icon_name ("eog");
+	gtk_window_set_default_icon_name ("eom");
 	g_set_application_name (_("Eye of MATE Image Viewer"));
 
 	load_files ();
@@ -258,7 +258,7 @@ main (int argc, char **argv)
   	if (startup_files)
 		g_strfreev (startup_files);
 
-	eog_plugin_engine_shutdown ();
+	eom_plugin_engine_shutdown ();
 
 #ifdef HAVE_RSVG
 	rsvg_term();

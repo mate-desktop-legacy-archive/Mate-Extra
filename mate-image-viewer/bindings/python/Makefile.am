@@ -1,34 +1,34 @@
 noinst_LTLIBRARIES = \
-	eog.la
+	eom.la
 
-nodist_eog_la_SOURCES = \
-	eog.c
+nodist_eom_la_SOURCES = \
+	eom.c
 
-eog_la_LDFLAGS = \
+eom_la_LDFLAGS = \
 	-module -avoid-version
 
-eog_la_LIBADD = 		\
+eom_la_LIBADD = 		\
 	$(PYTHON_LIB_LOC)       \
 	$(PYTHON_LIBS)		\
 	$(PYTHON_EXTRA_LIBS)	\
 	$(PYGTK_LIBS)
 
-eog_la_CFLAGS = 					\
+eom_la_CFLAGS = 					\
 	-I$(top_srcdir)					\
 	-I$(top_builddir)				\
 	-I$(top_srcdir)/src				\
 	-I$(top_builddir)/src				\
 	-I$(top_srcdir)/cut-n-paste/toolbar-editor	\
-	$(EOG_CFLAGS)					\
+	$(EOM_CFLAGS)					\
 	$(NO_STRICT_ALIASING_CFLAGS)			\
 	$(PYGTK_CFLAGS)					\
 	$(PYTHON_CFLAGS)				\
 	$(AM_CFLAGS)
 
-$(top_builddir)/src/eog-enum-types.h:
-	$(AM_V_GEN)cd $(top_builddir)/src && $(MAKE) eog-enum-types.h
+$(top_builddir)/src/eom-enum-types.h:
+	$(AM_V_GEN)cd $(top_builddir)/src && $(MAKE) eom-enum-types.h
 
-eog.c: eog.defs eog.override $(top_builddir)/src/eog-enum-types.h
+eom.c: eom.defs eom.override $(top_builddir)/src/eom-enum-types.h
 	$(AM_V_GEN)( cd $(srcdir) && $(PYGOBJECT_CODEGEN) \
 		--register $(PYGOBJECT_DEFSDIR)/gio-types.defs \
 		--register $(PYGTK_DEFSDIR)/pango-types.defs \
@@ -37,37 +37,37 @@ eog.c: eog.defs eog.override $(top_builddir)/src/eog-enum-types.h
 		--override $*.override \
 		--prefix py$* $(<F) ) > $@
 
-BINDING_EOG_HEADERS_SRCDIR_IN = 			\
-	src/eog-application.h				\
-	src/eog-window.h				\
-	src/eog-dialog.h				\
-	src/eog-properties-dialog.h			\
-	src/eog-message-area.h				\
-	src/eog-statusbar.h				\
-	src/eog-thumb-nav.h				\
-	src/eog-image.h					\
-	src/eog-scroll-view.h				\
-	src/eog-thumb-view.h				\
-	src/eog-list-store.h				\
-	src/eog-job-queue.h				\
-	src/eog-jobs.h					\
-	src/eog-plugin.h
+BINDING_EOM_HEADERS_SRCDIR_IN = 			\
+	src/eom-application.h				\
+	src/eom-window.h				\
+	src/eom-dialog.h				\
+	src/eom-properties-dialog.h			\
+	src/eom-message-area.h				\
+	src/eom-statusbar.h				\
+	src/eom-thumb-nav.h				\
+	src/eom-image.h					\
+	src/eom-scroll-view.h				\
+	src/eom-thumb-view.h				\
+	src/eom-list-store.h				\
+	src/eom-job-queue.h				\
+	src/eom-jobs.h					\
+	src/eom-plugin.h
 
 BINDING_HEADERS_BUILDDIR_IN =
 
-BINDING_EOG_HEADERS_SRCDIR := $(addprefix $(top_srcdir)/,$(BINDING_EOG_HEADERS_SRCDIR_IN))
+BINDING_EOM_HEADERS_SRCDIR := $(addprefix $(top_srcdir)/,$(BINDING_EOM_HEADERS_SRCDIR_IN))
 
 BINDING_HEADERS_BUILDDIR   := $(addprefix $(top_builddir)/,$(BINDING_HEADERS_BUILDDIR_IN))
 
 regenerate-python-binding:
-	$(PYGTK_H2DEF) $(sort $(BINDING_EOG_HEADERS_SRCDIR) $(BINDING_HEADERS_BUILDDIR)) > eog.defs.new
+	$(PYGTK_H2DEF) $(sort $(BINDING_EOM_HEADERS_SRCDIR) $(BINDING_HEADERS_BUILDDIR)) > eom.defs.new
 
 BUILT_SOURCES = \
-	eog.c
+	eom.c
 
 EXTRA_DIST = 		\
-	eog.override	\
-	eog.defs
+	eom.override	\
+	eom.defs
 
 CLEANFILES = $(BUILT_SOURCES)
 

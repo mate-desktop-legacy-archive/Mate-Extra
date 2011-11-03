@@ -6,14 +6,14 @@
 /* Define to compile with python support */
 #undef ENABLE_PYTHON
 
-/* EOG major version */
-#undef EOG_MAJOR_VERSION
+/* EOM major version */
+#undef EOM_MAJOR_VERSION
 
-/* EOG micro version */
-#undef EOG_MICRO_VERSION
+/* EOM micro version */
+#undef EOM_MICRO_VERSION
 
-/* EOG minor version */
-#undef EOG_MINOR_VERSION
+/* EOM minor version */
+#undef EOM_MINOR_VERSION
 
 /* Gettext package. */
 #undef GETTEXT_PACKAGE

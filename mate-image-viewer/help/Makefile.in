@@ -111,14 +111,14 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
-EOG_API_VERSION = @EOG_API_VERSION@
-EOG_CFLAGS = @EOG_CFLAGS@
-EOG_DOC_EXIF_START = @EOG_DOC_EXIF_START@
-EOG_DOC_EXIF_STOP = @EOG_DOC_EXIF_STOP@
-EOG_LIBS = @EOG_LIBS@
-EOG_MAJOR_VERSION = @EOG_MAJOR_VERSION@
-EOG_MICRO_VERSION = @EOG_MICRO_VERSION@
-EOG_MINOR_VERSION = @EOG_MINOR_VERSION@
+EOM_API_VERSION = @EOM_API_VERSION@
+EOM_CFLAGS = @EOM_CFLAGS@
+EOM_DOC_EXIF_START = @EOM_DOC_EXIF_START@
+EOM_DOC_EXIF_STOP = @EOM_DOC_EXIF_STOP@
+EOM_LIBS = @EOM_LIBS@
+EOM_MAJOR_VERSION = @EOM_MAJOR_VERSION@
+EOM_MICRO_VERSION = @EOM_MICRO_VERSION@
+EOM_MINOR_VERSION = @EOM_MINOR_VERSION@
 EXEEXT = @EXEEXT@
 EXEMPI_CFLAGS = @EXEMPI_CFLAGS@
 EXEMPI_LIBS = @EXEMPI_LIBS@
@@ -395,13 +395,13 @@ _clean_dsk = $(if $(_DOC_DSK_IN),clean-doc-dsk)
 _clean_lc = $(if $(_DOC_REAL_LINGUAS),clean-doc-lc)
 _clean_dir = $(if $(DOC_MODULE)$(DOC_ID),clean-doc-dir)
 _doc_install_dir = $(if $(DOC_ID),$(DOC_ID),$(DOC_MODULE))
-DOC_MODULE = eog
+DOC_MODULE = eom
 DOC_ENTITIES = legal.xml
 DOC_INCLUDES = 
 DOC_FIGURES = \
-	figures/eog_save_as_window.png		\
-	figures/eog_start_window.png		\
-	figures/eog_toolbar_editor_window.png
+	figures/eom_save_as_window.png		\
+	figures/eom_start_window.png		\
+	figures/eom_toolbar_editor_window.png
 
 DOC_LINGUAS = ar ca cs da de el en_GB es eu fi fr it ja ko oc pa pl pt_BR ru sv th uk zh_CN zh_TW
 all: all-am

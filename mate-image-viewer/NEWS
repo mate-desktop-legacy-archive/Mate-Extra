@@ -41,7 +41,7 @@ Version 2.31.92
 
 Bug fixes:
 
-  #534348, eog should suggest to reload a modified file (Claudio Saavedra)
+  #534348, eom should suggest to reload a modified file (Claudio Saavedra)
   #613056, Side pane always shown at startup when plug-in is activated
            (Claudio Saavedra)
   #625384, Background setting doesn't work as expected (Claudio Saavedra)
@@ -152,7 +152,7 @@ Bug fixes:
   #618304, Rename 'Image Collection' to 'Gallery' (Felix Riemann)
   #621370, invalid character (_) in gsettings key (Felix Riemann)
   #621439, Update totem-scrsaver from upstream (Bastien Nocera, Florian Müllner)
-  #621616, eog-2.30.1 fails to configure when --without-libjpeg is passed
+  #621616, eom-2.30.1 fails to configure when --without-libjpeg is passed
            (Claudio Saavedra)
 
 New and updated translations:
@@ -191,11 +191,11 @@ New and updated translations:
 Version 2.31.2
 --------------
 
-  * Make eog fully GSEAL-compilant (Felix Riemann)
+  * Make eom fully GSEAL-compilant (Felix Riemann)
 
 Bug fixes:
 
-  #606883, Make eog GSEAL-compatible (Andre Klapper, Felix Riemann)
+  #606883, Make eom GSEAL-compatible (Andre Klapper, Felix Riemann)
 
 New and updated translations:
 
@@ -225,7 +225,7 @@ Bug fixes:
   #614497, bad wording in open file dialog (Gabriel Corvalan Cornejo)
   #615344, Does not show external linked images that the URI is
            relative path in svg (Hiroyuki Ikezoe)
-  #615356, hires icon for eog (Hylke Bons)
+  #615356, hires icon for eom (Hylke Bons)
   #615387, libjpeg-8 breaks lossless JPEG modification (Felix Riemann)
   #615531, Please support --version (Felix Riemann)
 
@@ -255,7 +255,7 @@ Version 2.30.2
 
 Bug fixes:
 
-  #621616, eog-2.30.1 fails to configure when --without-libjpeg
+  #621616, eom-2.30.1 fails to configure when --without-libjpeg
            is passed (Claudio Saavedra)
 
 New und updated translations:
@@ -329,7 +329,7 @@ Version 2.29.91
 Bug fixes:
 
   #609184, Build failure: doesn't look for some required libs (Felix Riemann)
-  #610692, eog 2.29.90 fails to build (Maciej Piechotka)
+  #610692, eom 2.29.90 fails to build (Maciej Piechotka)
 
 New and updated translations:
 
@@ -426,7 +426,7 @@ Version 2.29.2
 
 Bug fixes:
 
-  #322243, eog doesn't ask whether to save changes (Marcus Carlson)
+  #322243, eom doesn't ask whether to save changes (Marcus Carlson)
   #600893, don't use LOCALMODLIBS in the configure (Sebastien Bacher)
 
 New and updated translations
@@ -556,7 +556,7 @@ Version 2.27.90
 
 Bug fixes:
 
-  #590124, Eog fails to compile if exempi/exif are not available (Felix Riemann)
+  #590124, Eom fails to compile if exempi/exif are not available (Felix Riemann)
 
 New and updated translations:
 
@@ -679,7 +679,7 @@ Bug fixes:
   #576558, Crashes when trying to save write protected file
            (Josselin Mouette, Felix Riemann)
   #579212, JPEG file causes memory corruption (Claudio Saavedra)
-  #580600, eog crashes on drag&drop a directory from places menu (Felix Riemann)
+  #580600, eom crashes on drag&drop a directory from places menu (Felix Riemann)
   #581180, Set as background on Right click (Cyriac Thomas)
 
 New and updated translations:
@@ -740,7 +740,7 @@ Bug fixes:
 
   #550086, Rotate image counterclockwise shortcut (Felix Riemann)
   #558086, simplify drag targets handling (Christian Persch)
-  #572410, eog crashed with SIGSEGV in g_closure_invoke() (Claudio Saavedra)
+  #572410, eom crashed with SIGSEGV in g_closure_invoke() (Claudio Saavedra)
   #572723, Misspelled word in a window (Milo Casagrande)
   #572889, Possible typo (Łukasz Jernaś)
 
@@ -772,7 +772,7 @@ Version 2.25.91
 
 Bug fixes:
 
-  #569228, eog: untrusted python modules search path (Morten Welinder)
+  #569228, eom: untrusted python modules search path (Morten Welinder)
 
 New and updated translations:
 
@@ -807,9 +807,9 @@ Version 2.25.90
 Bug fixes:
 
   #441637, Patch to delete file when Trash isn't found (Claudio Saavedra)
-  #568410, eog 2.25.5 build fails (Felix Riemann)
+  #568410, eom 2.25.5 build fails (Felix Riemann)
   #568882, don't rely on gtk implementation details (Christian Persch)
-  #569657, Eog needs update on data/eog.pc.in (Luis Medinas)
+  #569657, Eom needs update on data/eom.pc.in (Luis Medinas)
   #569855, Unref on thumbnail manipulator functions (Joaquim Rocha)
 
 New and updated translations:
@@ -881,13 +881,13 @@ Bug fixes:
 
   #514352, HIG says "Page Setup" not "Page Setup..." (Bob Mauchin)
   #555480, Add a delete button (Robin Sonefors)
-  #558442, eog should load image tooltips data asynchronously (Claudio Saavedra)
+  #558442, eom should load image tooltips data asynchronously (Claudio Saavedra)
   #560070, Sub-optimal -I flag ordering (Daniel Macks)
   #560073, Poor linking against convenience libs (Daniel Macks, Felix Riemann)
   #563570, MATE Goal: Clean up GLib and GTK+ includes (Claudio Saavedra)
-  #564290, eog_image_load doesn't correctly clear errors on read issues
+  #564290, eom_image_load doesn't correctly clear errors on read issues
            (Tom Parker)
-  #564526, eog SIGBUS on sparc (Friedrich Oslage)
+  #564526, eom SIGBUS on sparc (Friedrich Oslage)
 
 New and updated translations:
 
@@ -911,7 +911,7 @@ Bug fixes:
 -   #560068, Insufficient check for libz (Felix Riemann)
 -   #560336, need to update the eggtreemultidnd.[ch] copy from libegg (Felix Riemann)
 -   #560396, can't open menu with keyboard when no image is shown (Frederic Peters)
--   #562119, eog doesn't open remote images (Felix Riemann)
+-   #562119, eom doesn't open remote images (Felix Riemann)
 
 New and updated translations:
 
@@ -934,9 +934,9 @@ Version 2.25.1
 Bug fixes:
 
 -   #553232, copy remote wallpapers locally (Claudio Saavedra)
--   #476709, I need to drag & drop images from eog's simple viewer (Claudio Saavedra)
+-   #476709, I need to drag & drop images from eom's simple viewer (Claudio Saavedra)
 -   #530447, Eye of MATE opens images resized at 98% or 99% zoom (Felix Riemann)
--   #555940, eog is vulnerable to pango injection attack :-) (Martin Olsson)
+-   #555940, eom is vulnerable to pango injection attack :-) (Martin Olsson)
 -   #555942, Not all public EXIF API headers are installed (Pierre-Luc Beaudoin)
 -   #556086, Use gtk_show_uri instead of mate_help (Diego Escalante Urrelo)
 -   #555916, drop libglade dependency; use GtkBuilder (Felix Riemann)
@@ -1023,8 +1023,8 @@ Version 2.23.92
 Bug fixes:
 
   #548392, redisplay image plugin is broken (Claudio Saavedra, Felix Riemann)
-  #504538, When image is not found, eog shows broken background for the message (Claudio Saavedra)
-  #550252, The Gimp breaks EOG's recent files order (Felix Riemann)
+  #504538, When image is not found, eom shows broken background for the message (Claudio Saavedra)
+  #550252, The Gimp breaks EOM's recent files order (Felix Riemann)
 
 New and updated translations
 
@@ -1052,9 +1052,9 @@ Bug fixes:
 
   #548738, Segfault trying to see properties of an image with XMP metadata
            (Felix Riemann)
-  #547466, eog builds without python support can't build documentation
+  #547466, eom builds without python support can't build documentation
            (Tom Parker)
-  #548736, eog's 'Open..' dialog gives an false "No such file or directory"
+  #548736, eom's 'Open..' dialog gives an false "No such file or directory"
            (Claudio Saavedra)
 
 New and updated translations:
@@ -1081,10 +1081,10 @@ Misc improvements/fixes:
 
 Bug fixes:
 
-  #547302, eog trunk needs gtk >= 2.13.1 not 2.11.6 (Tom Parker)
-  #547566, eog crashed with SIGSEGV in eog_thumbnail_load() (Felix Riemann)
+  #547302, eom trunk needs gtk >= 2.13.1 not 2.11.6 (Tom Parker)
+  #547566, eom crashed with SIGSEGV in eom_thumbnail_load() (Felix Riemann)
   #548079, can not access File menu with Alt-F key combo (Felix Riemann)
-  #548202, in the plugins, move $(EOG_LIBS) from libwhatever_la_LDFLAGS
+  #548202, in the plugins, move $(EOM_LIBS) from libwhatever_la_LDFLAGS
            to libwhatever_la_LIBADD (Paul)
 
 New and updated translations:
@@ -1144,7 +1144,7 @@ Misc improvements/fixes:
 
 Bug fixes:
 
-  #539495, eog stays in Slideshow mode even in Full Screen or normal window
+  #539495, eom stays in Slideshow mode even in Full Screen or normal window
            (Felix Riemann)
   #543171, Unexpected/Wrong EXIF information about "Focal length" shown
            (Felix Riemann)
@@ -1203,7 +1203,7 @@ Misc improvements/fixes:
 Bug fixes:
 
   #528454, Metadata box should have limited width (Lucas Rocha)
-  #533041, Eog generates thumbnails of thumbnails (Lucas Rocha)
+  #533041, Eom generates thumbnails of thumbnails (Lucas Rocha)
   #532925, Missing feature: movement of image not possible with keyboard
            when image is zoomed
 
@@ -1255,10 +1255,10 @@ Bug fixes:
 
   * Fixed #343061, Can't save picture after opened a link picture (Cosimo
     Cecchi, Felix Riemann)
-  * Fixed #427053, Keyboard shortcuts managed in eog-scroll-view.c only work
+  * Fixed #427053, Keyboard shortcuts managed in eom-scroll-view.c only work
     if image has focus (Claudio Saavedra)
   * Fixed #466566, Display date in a more prominent place (Claudio Saavedra)
-  * Fixed #492017, Bring back 'Q' to exit eog (Lucas Rocha)
+  * Fixed #492017, Bring back 'Q' to exit eom (Lucas Rocha)
   * Fixed #517017, Gtk-CRITICAL **: gtk_widget_event: assertion
     `WIDGET_REALIZED_FOR_EVENT (widget, event)' failed (Wouter Bolsterlee)
   * Fixed #517821, Save print settings in key file (Claudio Saavedra)
@@ -1305,10 +1305,10 @@ Misc improvements/fixes:
 
 Bug fixes:
 
-  #519028, EOG crashes when loading too small ICC chunk (Felix Riemann)
+  #519028, EOM crashes when loading too small ICC chunk (Felix Riemann)
   #519910, crash in Image Viewer: I saved a new picture in... (Felix Riemann)
-  #498989, Eog gets it's locking wrong and crashes. (Matt Keenan)
-  #506421, eog with python enabled requires NO_IMPORT, NO_IMPORT_PYGOBJECT
+  #498989, Eom gets it's locking wrong and crashes. (Matt Keenan)
+  #506421, eom with python enabled requires NO_IMPORT, NO_IMPORT_PYGOBJECT
            defined to prevent multiply defined symbols (Paul)
   #509079, Recent files wrong direction when in RTL with latin file names
            (Djihed Afifi)
@@ -1351,7 +1351,7 @@ Version 2.21.92
 Bug fixes:
 
   #513958, crash in Image Viewer: Pressing page down to go... (Felix Riemann)
-  #500203, eog crash when .mate2/eog is not a directory (Felix Riemann)
+  #500203, eom crash when .mate2/eom is not a directory (Felix Riemann)
   #513827, Use DateTimeOriginal for the "Taken on" metadata (Francisco Rojas)
   #517450, Missing return ? (Rodrigo Moya)
 
@@ -1396,9 +1396,9 @@ Bug fixes:
 
   #322728, Add support for --disable-scrollkeeper (Felix Riemann)
   #511393, Tooltip could be more precise (Felix Riemann)
-  #512626, eog 2.20.4 crashes on some jpeg files when there's a loaded
+  #512626, eom 2.20.4 crashes on some jpeg files when there's a loaded
            color profile (Felix Riemann)
-  #515250, EOG slow, locks up system on bitonal TIFF (Claudio Saavedra)
+  #515250, EOM slow, locks up system on bitonal TIFF (Claudio Saavedra)
 
 New and updated translations:
 
@@ -1447,7 +1447,7 @@ Misc improvements/fixes:
 Bug fixes:
 
   #487075, crash in Image Viewer: Trying to ``save as'' Th... (Felix Riemann)
-  #491092, eog shouldn't quit while an image is being saved (Claudio Saavedra)
+  #491092, eom shouldn't quit while an image is being saved (Claudio Saavedra)
   #496464, Tooltips in Eye of MATE (Claudio Saavedra)
   #501073, Toolbar in full screen view should be more "discrete" (Francisco
   	   Rojas)
@@ -1456,10 +1456,10 @@ Bug fixes:
   #505576, Keypress navigation in slideshow mode do not reset slideshow timer
   	   (Priit Laes)
   #505811, slow image switching due to GtkRecent (Claudio Saavedra)
-  #505949, String fixes for EOG HEAD (Seán de Búrca, Felix Riemann)
-  #507068, XICC implementation is broken, causing eog to quit when loading
+  #505949, String fixes for EOM HEAD (Seán de Búrca, Felix Riemann)
+  #507068, XICC implementation is broken, causing eom to quit when loading
   	   sRGB images (Frederic Crozat)
-  #509149, Build failure for eog-properties-dialog.c (Claudio Saavedra)
+  #509149, Build failure for eom-properties-dialog.c (Claudio Saavedra)
 
 New and updated translations:
 
@@ -1514,11 +1514,11 @@ Bug fixes:
            menu item (Jaap Haitsma)
   #491826, Defaults are wrong (Lucas Rocha)
   #494881, Support for exempi 1.99.5 (Sebastian Dröge)
-  #496184, Eog does not support color management (Felix Riemann)
-  #499154, Specify correct type for eog_image_load and
+  #496184, Eom does not support color management (Felix Riemann)
+  #499154, Specify correct type for eom_image_load and
            _has_data (Ross Burton)
-  #499156, Wrap eog_image_load in Python (Ross Burton)
-  #480975, Feature request : EOG lack an option to reset
+  #499156, Wrap eom_image_load in Python (Ross Burton)
+  #480975, Feature request : EOM lack an option to reset
            toolbars (Felix Riemann)
 
 New and updated translations:
@@ -1553,14 +1553,14 @@ Misc improvements/fixes:
 
 Bug fixes:
 
-  #482752, crash when opening a tiff image (eog_image_load) (Felix Riemann)
+  #482752, crash when opening a tiff image (eom_image_load) (Felix Riemann)
   #475124, Add " (invalid Unicode)" suffix when image caption is not a valid utf8
            string (Lucas Rocha)
   #475645, When an image is saved, the selection is lost (Lucas Rocha)
   #476313, plugins about dialog is not gtk+-2.11/2.12 ready (Felix Riemann)
-  #476919, eog save menu is always active (Cosimo Cecchi)
+  #476919, eom save menu is always active (Cosimo Cecchi)
   #477550, fileformat combobox in save-as-many dialog is empty (Felix Riemann)
-  #479029, eog crashes when showing Image Collection (Felix Riemann)
+  #479029, eom crashes when showing Image Collection (Felix Riemann)
   #479400, Renamed files vanish from the collection (Claudio Saavedra)
   #479884, Mouse dragging UI broken. (Lucas Rocha)
   #481096, Thumbnails in collection viewer not updated when scrolling
@@ -1570,9 +1570,9 @@ Bug fixes:
   #482128, Hangs on XPM file (Felix Riemann)
   #486057, "SetAsWallpaper" functionality doesn't launch background properties
            (Felix Riemann)
-  #488344, using the scroll buttons of a non-first instance of eog scrolls the
+  #488344, using the scroll buttons of a non-first instance of eom scrolls the
            collection on the first one (Claudio Saavedra)
-  #488808, eog won't display some .jpg files (Felix Riemann)
+  #488808, eom won't display some .jpg files (Felix Riemann)
   #490065, Retry string not marked for translation (Kelemen Gabor)
   #481712, Substandard .desktop file (patch against latest SVN attached)
            (Stéphane Loeuillet)
@@ -1595,7 +1595,7 @@ New features:
 
   * Complete rewrite of application core which means more stable,
     maintanable, faster image viewer for MATE
-  * New plugin system which allows developers to extend EOG's UI
+  * New plugin system which allows developers to extend EOM's UI
     and behavior. Python support is available.
   * Editable application toolbar
   * New image collection pane with on-demand thumbnail loading,
@@ -1622,9 +1622,9 @@ Bug fixes:
 
   #354352, Show incomplete images (Lucas Rocha)
   #394803, Fails to load .svgz (Matthias Clasen, Felix Riemann)
-  #440254, Eog crashes when opening an image with invalid unicode
+  #440254, Eom crashes when opening an image with invalid unicode
            as filename (Lucas Rocha)
-  #447063, eog hangs when opening SVG files that include external
+  #447063, eom hangs when opening SVG files that include external
            images (Felix Riemann)
   #459665, opened images should take as much screen space as
            possible (Claudio Saavedra)
@@ -1632,7 +1632,7 @@ Bug fixes:
   #470521, some image is rendered with a wrong rotation (Lucas Rocha)
   #471530, Confusing PyGtk configure failure message (Paolo Borelli)
   #474642, ./configure is semi-broken (Martin Olsson)
-  #474710, eog crashes when you try to open this .jpg file (it works fine on
+  #474710, eom crashes when you try to open this .jpg file (it works fine on
            Vista/XP) (Claudio Saavedra)
   #474931, factore out some code in the metadata consumer (Claudio Saavedra)
 
@@ -1716,8 +1716,8 @@ Misc improvements/fixes:
 
 Bug fixes:
 
-  #470297, eog doesn't display images from an empty window (Felix Riemann)
-  #311308, Drag and Dropping the same image twice in EOG will open
+  #470297, eom doesn't display images from an empty window (Felix Riemann)
+  #311308, Drag and Dropping the same image twice in EOM will open
            2 windows (Lucas Rocha)
   #467835, Patch to HIGify plugin list (Martin Ejdestig)
   #470416, Icon install location (Lucas Rocha)
@@ -1765,7 +1765,7 @@ Misc improvements/fixes:
 
 Bug fixes:
 
-   #456451, crash in EOG: Saving rotated image (Claudio Saavedra)
+   #456451, crash in EOM: Saving rotated image (Claudio Saavedra)
    #408591, Add wbmp to supported image types (Sven Arvidsson)
    #427806, Crash: when specifying an invalid extension in save
             as dialog (Felix Riemann)
@@ -1780,7 +1780,7 @@ Bug fixes:
    #462362, Application specific icons are installed in the wrong directory
             (Jaap Haitsma)
    #462785, Fail to build with undefined reference to
-            `eog_application_register_service' (Felix Riemann)
+            `eom_application_register_service' (Felix Riemann)
    #462971, Thumbnails of modified images wrongly loaded from thumbnail
             factory (Claudio Saavedra)
    #462973, thumbnails not updated after applying a transformation
@@ -1842,22 +1842,22 @@ Bug fixes:
    #350809, Exif MakerNotes are not decoded (even when supported by
             libexif) (Jef Driesen)
    #374582, Need 'slideshow' button on toolbar (Felix Riemann)
-   #413211, eog crashed with SIGSEGV in eog_image_load() (Chris Wilson)
+   #413211, eom crashed with SIGSEGV in eom_image_load() (Chris Wilson)
    #425613, Grey border around images in fullscreen/presentation mode
             (Felix Riemann)
    #435408, next and previos button don't get sensitive (Lucas Rocha)
    #435456, focus on the "Exif" tab should be remebered (Lucas Rocha)
-   #438242, EOG should have a drag mode when zooming (Lucas Rocha)
+   #438242, EOM should have a drag mode when zooming (Lucas Rocha)
    #440168, spacing in vertical collection not ideal (Lucas Rocha)
    #445535, Plugin menù problem (Lucas Rocha)
    #449741, Add ability to enable collection pane when in fullscreen
             (Lucas Rocha)
    #452849, egg-toolbareditor copy needs to be synched with libegg (Jaap
             Haitsma)
-   #452886, Typo in data/eog.schemas.in (Bob Mauchin)
+   #452886, Typo in data/eom.schemas.in (Bob Mauchin)
    #453064, Use a shorter label for collection button on toolbar (Lucas
             Rocha)
-   #453503, null string pointer for "value" in eog_window.c at line 345
+   #453503, null string pointer for "value" in eom_window.c at line 345
             (Lucas Rocha)
    #450590, [toolbareditor] allow named icons with
             Gtk{Radio,Toggle}Actions (Felix Riemann, Jaap Haitsma)
@@ -1904,12 +1904,12 @@ Misc improvements/fixes:
 
 Bug fixes:
 
-   #430021, crash in Image Viewer: Eog crashes when it star...
+   #430021, crash in Image Viewer: Eom crashes when it star...
    	    (Claudio Saavedra)
-   #439907, /usr/lib/eog/plugins/ warning not required (Claudio Saavedra)
+   #439907, /usr/lib/eom/plugins/ warning not required (Claudio Saavedra)
    #440207, duplicate actions (Christian Persch)
    #440716, sys/time.h header needed to build on Solaris (Damien Carbery)
-   #385327, Keyboard navigation doesn't work in eog toolbar. (Patrick Wade,
+   #385327, Keyboard navigation doesn't work in eom toolbar. (Patrick Wade,
    	    Claudio Saavedra)
 
 New and updated translations:
@@ -1930,7 +1930,7 @@ Version 2.19.2
 
 New features:
 
-   * New plugin system which allows developers to extend EOG's UI
+   * New plugin system which allows developers to extend EOM's UI
      and behavior (Lucas Rocha)
 
 Misc improvements/fixes:
@@ -1986,56 +1986,56 @@ New features:
 
 Bug fixes:
 
-   #377123, [eog-ng] implement EogJobSave (Felix Riemann, Lucas Rocha)
+   #377123, [eom-ng] implement EomJobSave (Felix Riemann, Lucas Rocha)
    #319859, "open image with" function (Rodrigo Aguilar)
-   #334321, Should be possible move the collection in EOG (Lucas Rocha)
-   #316175, EOG gives no error upon opening non image files (Lucas Rocha)
+   #334321, Should be possible move the collection in EOM (Lucas Rocha)
+   #316175, EOM gives no error upon opening non image files (Lucas Rocha)
    #432439, Run gtk-update-icon-cache in uninstall-hook (Brian Pepple)
    #429156, [patch] "Save As" dialog for multiple files is way too
             ugly (Claudio Saavedra)
    #427154, Some strings are not translated in save-as-multiple dialog.
             (Felix Riemann)
    #419756, Slideshow background should be black. (Diego Escalante)
-   #404708, eog crashed with SIGSEGV in g_closure_invoke() (Lucas Rocha)
-   #404126, Convert debug messages to eog_debug_message (Claudio André)
-   #401939, [eog-ng] Remove leaftag support. (Claudio Saavedra)
-   #399333, EOG-NG crash while opening Print dialog (Claudio Saavedra)
+   #404708, eom crashed with SIGSEGV in g_closure_invoke() (Lucas Rocha)
+   #404126, Convert debug messages to eom_debug_message (Claudio André)
+   #401939, [eom-ng] Remove leaftag support. (Claudio Saavedra)
+   #399333, EOM-NG crash while opening Print dialog (Claudio Saavedra)
    #398250, build bug: missing symbols from libpangoft2 (Elijah Newren)
-   #389314, eog should use stock_print-setup from g-i-t for the
+   #389314, eom should use stock_print-setup from g-i-t for the
             "Page setup..." action (Thomas Andersen)
    #376513, TRACKER: command-line options (Bruno Boaventura, Lucas Rocha)
    #355858, switching image forward and back quickly can display wrong
             image (Felix Riemann)
-   #351040, [eog-ng] use GtkRecent (Felix Riemann)
-   #344140, [eog-ng] remove duplicate code in fullscreen-code (Claudio
+   #351040, [eom-ng] use GtkRecent (Felix Riemann)
+   #344140, [eom-ng] remove duplicate code in fullscreen-code (Claudio
             Saavedra)
    #342817, crash trying to view profile image (Felix Riemann)
-   #342103, [patch] [eog-ng] update about dialog (Claudio Saavedra)
+   #342103, [patch] [eom-ng] update about dialog (Claudio Saavedra)
    #341935, Should not zoom with mouse wheel (Lucas Rocha)
-   #341831, [eog-ng] memory usage increases when switching fastly between
+   #341831, [eom-ng] memory usage increases when switching fastly between
             images (Lucas Rocha)
-   #341600, [eog-ng] EOG eats a lot o CPU when inactive (Paolo Borelli)
+   #341600, [eom-ng] EOM eats a lot o CPU when inactive (Paolo Borelli)
    #340957, Filenames containing numbers are not properly sorted (as how
             caja does) (Felix Riemann)
    #335689, Middle mouse drag should also scroll (Wouter Bolsterlee,
             Lucas Rocha)
    #327424, progress bar changes view size which forces re-zooming of
             image (Lucas Rocha)
-   #322057, eog print output is corrupt (Jan Kümmel)
+   #322057, eom print output is corrupt (Jan Kümmel)
    #305823, The rotate buttons on the toolbar are blurred (Luca Ferretti)
-   #404907, [eog-ng] Crash when opening properties dialog (broken EXIF).
+   #404907, [eom-ng] Crash when opening properties dialog (broken EXIF).
             (Felix Riemann)
    #372820, First call to PKG_CHECK_MODULES is conditional without a prior
             call to PKG_PROG_PKG_CONFIG (Felix Riemann)
    #381867, mouse cursor disappear after exit fullscreen mode
             (Bruno Boaventura)
    #383090, Slideshow / Slide Show (Bruno Boaventura)
-   #336973, [eog-ng] Migration of the collection pane to GtkIconView and
+   #336973, [eom-ng] Migration of the collection pane to GtkIconView and
             GtkListStore (Claudio Saavedra, Felix Riemann, Lucas Rocha)
-   #356947, [eog-ng] GtkPrint support (Claudio Saavedra)
-   #393586, [eog-ng] Editable toolbar for EOG (Claudio Saavedra, Lucas Rocha)
-   #401946, [eog-ng] [patch] D-Bus based activation (Claudio Saavedra)
-   #416321, [eog-ng] Use tooltips to show image information in the
+   #356947, [eom-ng] GtkPrint support (Claudio Saavedra)
+   #393586, [eom-ng] Editable toolbar for EOM (Claudio Saavedra, Lucas Rocha)
+   #401946, [eom-ng] [patch] D-Bus based activation (Claudio Saavedra)
+   #416321, [eom-ng] Use tooltips to show image information in the
             thumbview (Lucas Rocha)
    #89512,  Setting for how much the mouse wheel should affect
             zoom (Lucas Rocha)
@@ -2091,7 +2091,7 @@ Version 2.17.92
 
 - Take other images in the same location into account even for remote
   URIs (if the image's parent is a directory) (Lucas Rocha) [#364426]
-- EOG dependency on GTK >= 2.10 (Felix Riemann)
+- EOM dependency on GTK >= 2.10 (Felix Riemann)
 - Several code cleanups (Claudio Saavedra)
 - Updated manual translations: Daniel Nylander (sv),
   Amadeu A. Barbosa Junior (pt_BR), Maxim Dziumanenko (uk),
@@ -2110,9 +2110,9 @@ Version 2.17.91
 
 - Show an error message instead of closing the program if the image
   loading has failed (Claudio Saavedra) [#399988]
-- Fix crash when exiting EOG (Kees Cook) [#389755]
+- Fix crash when exiting EOM (Kees Cook) [#389755]
 - Several code cleanups and memory leak fixes (Felix Riemann, Claudio Saavedra)
-- Fix crash when closing EOG while printing (Felix Riemann) [#404708]
+- Fix crash when closing EOM while printing (Felix Riemann) [#404708]
 - Change launcher description to match UI review (Lucas Rocha) [#383436]
 - Updated manual translations: Vasiliy Faronov (ru), AP Singh Alam (pa),
   David Lodge (en_GB)
@@ -2142,7 +2142,7 @@ Version 2.17.4
 - Use mate-icon-theme icon for printing setup (Thomas Andersen) [#389314]
 - Fix fatal warning when reusing windows (Felix Riemann) [#390268]
 - Several code cleanups (Felix Riemann, Lucas Rocha) [#354106]
-- New themable EOG icon by Ulisse Perusin (Luca Ferretti) [#357413]
+- New themable EOM icon by Ulisse Perusin (Luca Ferretti) [#357413]
 - New interactive image print preview on printing
   dialog (Claudio Saavedra) [##356947, #321815]
 - Updated manual translations: Daniel Nylander (sv)
@@ -2308,7 +2308,7 @@ Version 2.15.1
 - GOption migration (Michael Plump)
 - Small UI fixes (Lucas Rocha) [#339315, #335109]
 - Duplex printing off by default (Lucas Rocha) [#334016]
-- Fix crash when saving files on directories that EOG
+- Fix crash when saving files on directories that EOM
   is watching (Lucas Rocha) [#336050]
 - Use of po/LINGUAS file (Michiel Sikkes)
 - Updated translations: Baris Cicek (tr), Gora Mohanty (or),
@@ -2321,7 +2321,7 @@ Version 2.14.0
 ---------------
 - Fixes crasher when opening images with strange extensions
   (Ryan Lortie) [#333551]
-- Quit EOG when not able to load images (Lucas Rocha)
+- Quit EOM when not able to load images (Lucas Rocha)
 - Fix window positioning behavior (Lucas Rocha)
 - Updated translations: Alexander Shopov (bg), Mugurel Tudor (ro),
   Rajesh Ranjan (hi), Luca Ferretti (it), Ole Laursen (da),
@@ -2341,7 +2341,7 @@ Version 2.13.92
 - Mouse scroll wheel now makes image switching on collection
   pane (Lucas Rocha) [#331645]
 - Fixes crash when removing images from a directory with images
-  that EOG is watching (Lucas Rocha)
+  that EOM is watching (Lucas Rocha)
 - Updated translations: Žygimantas Beručka (lt), Kostas Papadimas (el),
   Satoru Satoh (ja), Inaki Larrañaga (eu), Artur Flinta (pl),
   Rhys Jones (cy), Leonid Kanter (ru), Alessio Frusciante (it),
@@ -2461,7 +2461,7 @@ Version 2.13.2
 - Window icon is a thumbnail of the image. Fixed bug
   #311720. (Lucas Rocha)
 - Use intuitive mate-icon-theme icon for image viewer
-  instead of EOG icon. Fixes bug #167087. (Lucas Rocha)
+  instead of EOM icon. Fixes bug #167087. (Lucas Rocha)
 - Fix width of the information pane that was too small.
   Fixes bug #313674. (Ed Catmur)
 
@@ -2488,7 +2488,7 @@ Version 2.13.1
   doesn't exist anymore. Fixes bug #312448. (Lucas Rocha)
 - Change X development libraries checking in build system
   to work on every platform. Fixes bug #317828. (Christophe Belle)
-- Fix crash when adding new non-image files to a directory eog
+- Fix crash when adding new non-image files to a directory eom
   watches and when trying to view a PNG image with a JPEG extension.
   Fixes bugs #316808 and #311925. (Callum McKenzie)
 - Translation Updates: Ivan Noris (sk)
@@ -2664,7 +2664,7 @@ Version 2.8.0
 
 Version 2.7.1
 -------------
-- eog.desktop fix (Ray Strode)
+- eom.desktop fix (Ray Strode)
 - About icon added (Mason Kidd)
 - Removed bonob dependencies
 - Compile with new libexif (Grzegorz Golawski)
@@ -2685,7 +2685,7 @@ Version 2.7.1
 
 Version 2.7.0
 -------------
-- Kicked matecomponent components. Eog is a monolithic program again.
+- Kicked matecomponent components. Eom is a monolithic program again.
 - Display image info for single and collection view.
 - Better metadata reader
 - Speed improvements
@@ -2807,7 +2807,7 @@ Version 2.5.3
 * General:
   - Preview of images in the fileselector if an thumbnail
     already exists.
-  - 'eog *.jpg' works again and give you a nice collection view
+  - 'eom *.jpg' works again and give you a nice collection view
   - Handle spaces in filenames.
 * Translation Updates:
   Žygimantas Beručka (lt), Miloslav Trmac (cs), Francisco Javier
@@ -2875,7 +2875,7 @@ Version 2.5.0.1
   - Updated help (Breda McColgan)
 * Collection:
   - Don't include auto-generated files in tarball - #125118
-  - New model implementation (EogImageList)
+  - New model implementation (EomImageList)
   - Mem leak fix
   - Slideshow: automatic switching after user determined timeout.
   - Slideshow: determine upscale status for small images by config
@@ -2957,7 +2957,7 @@ Version 2.3.5
   - Documentation build fixes (John Fleck)
   - Don't show title on error dialogs
   - Unified copyright string - #101726 (Christian Neumair)
-  - eog.desktop fixes (Jordi Mallach)
+  - eom.desktop fixes (Jordi Mallach)
 * Collection View:
   - Hide side panes on splitter mouse click
   - Draw frame around thumbnails
@@ -3098,7 +3098,7 @@ Version 1.1.0
 * The window is correctly sized upon startup, and you can shrink it
   again - #72352, #75713 (Jens).
 * Caja will now display "Display as Image", which is better than
-  "Display as EOG Image" - #73651 (Federico).
+  "Display as EOM Image" - #73651 (Federico).
 * Images now have a simple context menu - #75889 (Federico).
 * We do the right thing to destroy the window list on File/Exit -
   #86469 (Federico).
@@ -3106,7 +3106,7 @@ Version 1.1.0
 * #89372 (Federico).
 * The File/Open dialog now displays a list of the supported image
   types - #85690 (Jens).
-* Removed Tiles interpolation as it does not make sense for EOG. (Federico)
+* Removed Tiles interpolation as it does not make sense for EOM. (Federico)
 * Reworked preferences dialog and droped View menu settings. (Jens)
 * Components are installed in $(libexec) (Michael).
 * Restarted work on the collection component, currently disabled
@@ -3146,7 +3146,7 @@ Version 0.119
 
 * Updated the scrolling engine for GTK+ 2.0; it is nice and fast again -
   #82417 (Federico)
-* EOG doesn't crash on exit anymore if you bring up the preferences
+* EOM doesn't crash on exit anymore if you bring up the preferences
   dialog - #82426 (Federico)
 * Session is saved and discarded correctly - #82603 (Federico)
 * Re-added scroll wheel support - #79351 (Federico)
@@ -3255,7 +3255,7 @@ Version 0.112.0
   within the Mate2 timeframe:   (Jens)
     - evolution & gnocam configure options
     - printing support
-* eog.desktop updates for Mate2 (Jens)
+* eom.desktop updates for Mate2 (Jens)
 * build fixes for Forte CC (Laszlo Peter)
 * disable properites menu item when
   no component is loaded (Jens)
@@ -3269,7 +3269,7 @@ Version 0.112.0
 Version 0.111.0
 ---------------
 
-* setup eog-image-viewer component for translation (Jens)
+* setup eom-image-viewer component for translation (Jens)
 * removed decorations on fullscreen mode (Jens)
 * fixed image saving (Jens)
 * fixed all the remaining issues where strings don't get translated (Jens
@@ -3300,7 +3300,7 @@ Version 0.110.0
 Version 0.6
 -----------
 
-* There's a totally new MateComponent component which uses the core EOG
+* There's a totally new MateComponent component which uses the core EOM
   code to display things (Martin, Michael). The old component has
   been moved into Caja.
 
@@ -3309,7 +3309,7 @@ Version 0.6
 Version 0.5
 -----------
 
-* You can now drag a bunch of filenames into a window and EOG will
+* You can now drag a bunch of filenames into a window and EOM will
   open them for you (patch from Juan Pablo Mendoza).
 
 * Introduced a maximum zoom factor so that the gdk-pixbuf scaling
@@ -3371,7 +3371,7 @@ Version 0.3
 
 * RGBA print support for the MateComponent component (Michael).
 
-* We now install an eog.desktop file and a cool icon (Tuomas).
+* We now install an eom.desktop file and a cool icon (Tuomas).
 
 * Many new and updated translations (Ville, Jarkko, Pablo, Dan, Gergo,
   Alastair, Tomasz, Richard, Yuri, Matthias, Sergey, Fatih, Dennis,

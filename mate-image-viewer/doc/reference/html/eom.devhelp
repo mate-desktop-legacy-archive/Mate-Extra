@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Eye of MATE Reference Manual" link="index.html" author="" name="eom">
+  <chapters>
+    <sub name="User Interface" link="ch01.html">
+      <sub name="EomPropertiesDialog" link="eom-eom-properties-dialog.html"/>
+      <sub name="EomListStore" link="eom-eom-list-store.html"/>
+      <sub name="EomFileChooser" link="EomFileChooser.html"/>
+      <sub name="EomThumbNav" link="eom-eom-thumb-nav.html"/>
+      <sub name="EomThumbView" link="eom-eom-thumb-view.html"/>
+      <sub name="EomScrollView" link="EomScrollView.html"/>
+      <sub name="EomWindow" link="eom-eom-window.html"/>
+      <sub name="EomStatusbar" link="EomStatusbar.html"/>
+      <sub name="EomExifDetails" link="EomExifDetails.html"/>
+      <sub name="EomDialog" link="EomDialog.html"/>
+      <sub name="EomSidebar" link="EomSidebar.html"/>
+      <sub name="eom-thumbnail" link="eom-eom-thumbnail.html"/>
+      <sub name="eom-save-as-dialog-helper" link="eom-eom-save-as-dialog-helper.html"/>
+      <sub name="eom-error-message-area" link="eom-eom-error-message-area.html"/>
+    </sub>
+    <sub name="Image data and manipulation" link="ch02.html">
+      <sub name="EomImage" link="eom-eom-image.html"/>
+      <sub name="EomImageSaveInfo" link="EomImageSaveInfo.html"/>
+      <sub name="EomTransform" link="eom-eom-transform.html"/>
+      <sub name="eom-metadata-reader" link="eom-eom-metadata-reader.html"/>
+      <sub name="EomMetadataReaderPng" link="EomMetadataReaderPng.html"/>
+      <sub name="EomMetadataReaderJpg" link="EomMetadataReaderJpg.html"/>
+    </sub>
+    <sub name="Printing" link="ch03.html">
+      <sub name="EomPrintPreview" link="EomPrintPreview.html"/>
+      <sub name="EomPrintImageSetup" link="EomPrintImageSetup.html"/>
+      <sub name="eom-print" link="eom-eom-print.html"/>
+    </sub>
+    <sub name="Application and configuration" link="ch04.html">
+      <sub name="EomPreferencesDialog" link="EomPreferencesDialog.html"/>
+      <sub name="EomApplication" link="eom-eom-application.html"/>
+      <sub name="eom-session" link="eom-eom-session.html"/>
+      <sub name="eom-config-keys" link="eom-eom-config-keys.html"/>
+    </sub>
+    <sub name="Plugins" link="ch05.html">
+      <sub name="EomPlugin" link="eom-eom-plugin.html"/>
+      <sub name="EomPluginManager" link="EomPluginManager.html"/>
+      <sub name="eom-plugin-engine" link="eom-eom-plugin-engine.html"/>
+    </sub>
+    <sub name="Utilities" link="ch06.html">
+      <sub name="eom-debug" link="eom-eom-debug.html"/>
+      <sub name="EomURIConverter" link="eom-eom-uri-converter.html"/>
+      <sub name="eom-util" link="eom-eom-util.html"/>
+      <sub name="eom-exif-util" link="eom-eom-exif-util.html"/>
+      <sub name="eom-pixbuf-util" link="eom-eom-pixbuf-util.html"/>
+      <sub name="zoom" link="eom-zoom.html"/>
+      <sub name="uta" link="eom-uta.html"/>
+    </sub>
+    <sub name="Asynchronous jobs" link="ch07.html">
+      <sub name="EomJobCopy" link="eom-eom-jobs.html"/>
+      <sub name="eom-job-queue" link="eom-eom-job-queue.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <function name="enum EomPropertiesDialogPage" link="eom-eom-properties-dialog.html#EomPropertiesDialogPage"/>
+    <function name="EomPropertiesDialog" link="eom-eom-properties-dialog.html#EomPropertiesDialog-struct"/>
+    <function name="eom_properties_dialog_new ()" link="eom-eom-properties-dialog.html#eom-properties-dialog-new"/>
+    <function name="eom_properties_dialog_update ()" link="eom-eom-properties-dialog.html#eom-properties-dialog-update"/>
+    <function name="eom_properties_dialog_set_page ()" link="eom-eom-properties-dialog.html#eom-properties-dialog-set-page"/>
+    <function name="The &quot;netbook-mode&quot; property" link="eom-eom-properties-dialog.html#EomPropertiesDialog--netbook-mode"/>
+    <function name="The &quot;thumbview&quot; property" link="eom-eom-properties-dialog.html#EomPropertiesDialog--thumbview"/>
+    <function name="EOM_LIST_STORE_THUMB_SIZE" link="eom-eom-list-store.html#EOM-LIST-STORE-THUMB-SIZE:CAPS"/>
+    <function name="enum EomListStoreColumn" link="eom-eom-list-store.html#EomListStoreColumn"/>
+    <function name="EomListStore" link="eom-eom-list-store.html#EomListStore-struct"/>
+    <function name="eom_list_store_new ()" link="eom-eom-list-store.html#eom-list-store-new"/>
+    <function name="eom_list_store_new_from_glist ()" link="eom-eom-list-store.html#eom-list-store-new-from-glist"/>
+    <function name="eom_list_store_append_image ()" link="eom-eom-list-store.html#eom-list-store-append-image"/>
+    <function name="eom_list_store_add_files ()" link="eom-eom-list-store.html#eom-list-store-add-files"/>
+    <function name="eom_list_store_remove_image ()" link="eom-eom-list-store.html#eom-list-store-remove-image"/>
+    <function name="eom_list_store_get_pos_by_image ()" link="eom-eom-list-store.html#eom-list-store-get-pos-by-image"/>
+    <function name="eom_list_store_get_image_by_pos ()" link="eom-eom-list-store.html#eom-list-store-get-image-by-pos"/>
+    <function name="eom_list_store_get_pos_by_iter ()" link="eom-eom-list-store.html#eom-list-store-get-pos-by-iter"/>
+    <function name="eom_list_store_length ()" link="eom-eom-list-store.html#eom-list-store-length"/>
+    <function name="eom_list_store_get_initial_pos ()" link="eom-eom-list-store.html#eom-list-store-get-initial-pos"/>
+    <function name="eom_list_store_thumbnail_set ()" link="eom-eom-list-store.html#eom-list-store-thumbnail-set"/>
+    <function name="eom_list_store_thumbnail_unset ()" link="eom-eom-list-store.html#eom-list-store-thumbnail-unset"/>
+    <function name="eom_list_store_thumbnail_refresh ()" link="eom-eom-list-store.html#eom-list-store-thumbnail-refresh"/>
+    <function name="EomFileChooser" link="EomFileChooser.html#EomFileChooser-struct"/>
+    <function name="eom_file_chooser_new ()" link="EomFileChooser.html#eom-file-chooser-new"/>
+    <function name="eom_file_chooser_get_format ()" link="EomFileChooser.html#eom-file-chooser-get-format"/>
+    <function name="enum EomThumbNavMode" link="eom-eom-thumb-nav.html#EomThumbNavMode"/>
+    <function name="EomThumbNav" link="eom-eom-thumb-nav.html#EomThumbNav-struct"/>
+    <function name="eom_thumb_nav_new ()" link="eom-eom-thumb-nav.html#eom-thumb-nav-new"/>
+    <function name="eom_thumb_nav_get_show_buttons ()" link="eom-eom-thumb-nav.html#eom-thumb-nav-get-show-buttons"/>
+    <function name="eom_thumb_nav_set_show_buttons ()" link="eom-eom-thumb-nav.html#eom-thumb-nav-set-show-buttons"/>
+    <function name="eom_thumb_nav_get_mode ()" link="eom-eom-thumb-nav.html#eom-thumb-nav-get-mode"/>
+    <function name="eom_thumb_nav_set_mode ()" link="eom-eom-thumb-nav.html#eom-thumb-nav-set-mode"/>
+    <function name="The &quot;mode&quot; property" link="eom-eom-thumb-nav.html#EomThumbNav--mode"/>
+    <function name="The &quot;show-buttons&quot; property" link="eom-eom-thumb-nav.html#EomThumbNav--show-buttons"/>
+    <function name="The &quot;thumbview&quot; property" link="eom-eom-thumb-nav.html#EomThumbNav--thumbview"/>
+    <function name="enum EomThumbViewSelectionChange" link="eom-eom-thumb-view.html#EomThumbViewSelectionChange"/>
+    <function name="EomThumbView" link="eom-eom-thumb-view.html#EomThumbView-struct"/>
+    <function name="eom_thumb_view_new ()" link="eom-eom-thumb-view.html#eom-thumb-view-new"/>
+    <function name="eom_thumb_view_set_model ()" link="eom-eom-thumb-view.html#eom-thumb-view-set-model"/>
+    <function name="eom_thumb_view_set_item_height ()" link="eom-eom-thumb-view.html#eom-thumb-view-set-item-height"/>
+    <function name="eom_thumb_view_get_n_selected ()" link="eom-eom-thumb-view.html#eom-thumb-view-get-n-selected"/>
+    <function name="eom_thumb_view_get_first_selected_image ()" link="eom-eom-thumb-view.html#eom-thumb-view-get-first-selected-image"/>
+    <function name="eom_thumb_view_get_selected_images ()" link="eom-eom-thumb-view.html#eom-thumb-view-get-selected-images"/>
+    <function name="eom_thumb_view_select_single ()" link="eom-eom-thumb-view.html#eom-thumb-view-select-single"/>
+    <function name="eom_thumb_view_set_current_image ()" link="eom-eom-thumb-view.html#eom-thumb-view-set-current-image"/>
+    <function name="eom_thumb_view_set_thumbnail_popup ()" link="eom-eom-thumb-view.html#eom-thumb-view-set-thumbnail-popup"/>
+    <function name="EomScrollView" link="EomScrollView.html#EomScrollView-struct"/>
+    <function name="enum EomTransparencyStyle" link="EomScrollView.html#EomTransparencyStyle"/>
+    <function name="eom_scroll_view_new ()" link="EomScrollView.html#eom-scroll-view-new"/>
+    <function name="eom_scroll_view_set_image ()" link="EomScrollView.html#eom-scroll-view-set-image"/>
+    <function name="eom_scroll_view_set_scroll_wheel_zoom ()" link="EomScrollView.html#eom-scroll-view-set-scroll-wheel-zoom"/>
+    <function name="eom_scroll_view_set_zoom_upscale ()" link="EomScrollView.html#eom-scroll-view-set-zoom-upscale"/>
+    <function name="eom_scroll_view_set_zoom_multiplier ()" link="EomScrollView.html#eom-scroll-view-set-zoom-multiplier"/>
+    <function name="eom_scroll_view_set_antialiasing_in ()" link="EomScrollView.html#eom-scroll-view-set-antialiasing-in"/>
+    <function name="eom_scroll_view_set_antialiasing_out ()" link="EomScrollView.html#eom-scroll-view-set-antialiasing-out"/>
+    <function name="eom_scroll_view_set_transparency ()" link="EomScrollView.html#eom-scroll-view-set-transparency"/>
+    <function name="eom_scroll_view_scrollbars_visible ()" link="EomScrollView.html#eom-scroll-view-scrollbars-visible"/>
+    <function name="eom_scroll_view_set_popup ()" link="EomScrollView.html#eom-scroll-view-set-popup"/>
+    <function name="eom_scroll_view_zoom_in ()" link="EomScrollView.html#eom-scroll-view-zoom-in"/>
+    <function name="eom_scroll_view_zoom_out ()" link="EomScrollView.html#eom-scroll-view-zoom-out"/>
+    <function name="eom_scroll_view_zoom_fit ()" link="EomScrollView.html#eom-scroll-view-zoom-fit"/>
+    <function name="eom_scroll_view_set_zoom ()" link="EomScrollView.html#eom-scroll-view-set-zoom"/>
+    <function name="eom_scroll_view_get_zoom ()" link="EomScrollView.html#eom-scroll-view-get-zoom"/>
+    <function name="eom_scroll_view_get_zoom_is_min ()" link="EomScrollView.html#eom-scroll-view-get-zoom-is-min"/>
+    <function name="eom_scroll_view_get_zoom_is_max ()" link="EomScrollView.html#eom-scroll-view-get-zoom-is-max"/>
+    <function name="eom_scroll_view_show_cursor ()" link="EomScrollView.html#eom-scroll-view-show-cursor"/>
+    <function name="eom_scroll_view_hide_cursor ()" link="EomScrollView.html#eom-scroll-view-hide-cursor"/>
+    <function name="The &quot;background-color&quot; property" link="EomScrollView.html#EomScrollView--background-color"/>
+    <function name="The &quot;use-background-color&quot; property" link="EomScrollView.html#EomScrollView--use-background-color"/>
+    <function name="The &quot;zoom-changed&quot; signal" link="EomScrollView.html#EomScrollView-zoom-changed"/>
+    <function name="EOM_WINDOW_ERROR" link="eom-eom-window.html#EOM-WINDOW-ERROR:CAPS"/>
+    <function name="enum EomWindowMode" link="eom-eom-window.html#EomWindowMode"/>
+    <function name="enum EomWindowError" link="eom-eom-window.html#EomWindowError"/>
+    <function name="enum EomStartupFlags" link="eom-eom-window.html#EomStartupFlags"/>
+    <function name="EomWindow" link="eom-eom-window.html#EomWindow-struct"/>
+    <function name="eom_window_new ()" link="eom-eom-window.html#eom-window-new"/>
+    <function name="eom_window_get_mode ()" link="eom-eom-window.html#eom-window-get-mode"/>
+    <function name="eom_window_set_mode ()" link="eom-eom-window.html#eom-window-set-mode"/>
+    <function name="eom_window_get_ui_manager ()" link="eom-eom-window.html#eom-window-get-ui-manager"/>
+    <function name="eom_window_get_store ()" link="eom-eom-window.html#eom-window-get-store"/>
+    <function name="eom_window_get_view ()" link="eom-eom-window.html#eom-window-get-view"/>
+    <function name="eom_window_get_sidebar ()" link="eom-eom-window.html#eom-window-get-sidebar"/>
+    <function name="eom_window_get_thumb_view ()" link="eom-eom-window.html#eom-window-get-thumb-view"/>
+    <function name="eom_window_get_thumb_nav ()" link="eom-eom-window.html#eom-window-get-thumb-nav"/>
+    <function name="eom_window_get_statusbar ()" link="eom-eom-window.html#eom-window-get-statusbar"/>
+    <function name="eom_window_get_image ()" link="eom-eom-window.html#eom-window-get-image"/>
+    <function name="eom_window_open_file_list ()" link="eom-eom-window.html#eom-window-open-file-list"/>
+    <function name="eom_window_is_empty ()" link="eom-eom-window.html#eom-window-is-empty"/>
+    <function name="The &quot;startup-flags&quot; property" link="eom-eom-window.html#EomWindow--startup-flags"/>
+    <function name="The &quot;prepared&quot; signal" link="eom-eom-window.html#EomWindow-prepared"/>
+    <function name="EomStatusbar" link="EomStatusbar.html#EomStatusbar-struct"/>
+    <function name="eom_statusbar_new ()" link="EomStatusbar.html#eom-statusbar-new"/>
+    <function name="eom_statusbar_set_image_number ()" link="EomStatusbar.html#eom-statusbar-set-image-number"/>
+    <function name="eom_statusbar_set_progress ()" link="EomStatusbar.html#eom-statusbar-set-progress"/>
+    <function name="eom_statusbar_set_has_resize_grip ()" link="EomStatusbar.html#eom-statusbar-set-has-resize-grip"/>
+    <function name="EomExifDetails" link="EomExifDetails.html#EomExifDetails-struct"/>
+    <function name="eom_exif_details_new ()" link="EomExifDetails.html#eom-exif-details-new"/>
+    <function name="eom_exif_details_update ()" link="EomExifDetails.html#eom-exif-details-update"/>
+    <function name="eom_exif_details_xmp_update ()" link="EomExifDetails.html#eom-exif-details-xmp-update"/>
+    <function name="EomDialog" link="EomDialog.html#EomDialog-struct"/>
+    <function name="eom_dialog_construct ()" link="EomDialog.html#eom-dialog-construct"/>
+    <function name="eom_dialog_show ()" link="EomDialog.html#eom-dialog-show"/>
+    <function name="eom_dialog_hide ()" link="EomDialog.html#eom-dialog-hide"/>
+    <function name="eom_dialog_get_controls ()" link="EomDialog.html#eom-dialog-get-controls"/>
+    <function name="The &quot;parent-window&quot; property" link="EomDialog.html#EomDialog--parent-window"/>
+    <function name="EomSidebar" link="EomSidebar.html#EomSidebar-struct"/>
+    <function name="eom_sidebar_new ()" link="EomSidebar.html#eom-sidebar-new"/>
+    <function name="eom_sidebar_add_page ()" link="EomSidebar.html#eom-sidebar-add-page"/>
+    <function name="eom_sidebar_remove_page ()" link="EomSidebar.html#eom-sidebar-remove-page"/>
+    <function name="eom_sidebar_set_page ()" link="EomSidebar.html#eom-sidebar-set-page"/>
+    <function name="eom_sidebar_get_n_pages ()" link="EomSidebar.html#eom-sidebar-get-n-pages"/>
+    <function name="eom_sidebar_is_empty ()" link="EomSidebar.html#eom-sidebar-is-empty"/>
+    <function name="The &quot;current-page&quot; property" link="EomSidebar.html#EomSidebar--current-page"/>
+    <function name="The &quot;page-added&quot; signal" link="EomSidebar.html#EomSidebar-page-added"/>
+    <function name="The &quot;page-removed&quot; signal" link="EomSidebar.html#EomSidebar-page-removed"/>
+    <function name="eom_thumbnail_init ()" link="eom-eom-thumbnail.html#eom-thumbnail-init"/>
+    <function name="eom_thumbnail_fit_to_size ()" link="eom-eom-thumbnail.html#eom-thumbnail-fit-to-size"/>
+    <function name="eom_thumbnail_add_frame ()" link="eom-eom-thumbnail.html#eom-thumbnail-add-frame"/>
+    <function name="eom_thumbnail_load ()" link="eom-eom-thumbnail.html#eom-thumbnail-load"/>
+    <function name="EOM_THUMBNAIL_ORIGINAL_WIDTH" link="eom-eom-thumbnail.html#EOM-THUMBNAIL-ORIGINAL-WIDTH:CAPS"/>
+    <function name="EOM_THUMBNAIL_ORIGINAL_HEIGHT" link="eom-eom-thumbnail.html#EOM-THUMBNAIL-ORIGINAL-HEIGHT:CAPS"/>
+    <function name="eom_save_as_dialog_new ()" link="eom-eom-save-as-dialog-helper.html#eom-save-as-dialog-new"/>
+    <function name="eom_save_as_dialog_get_converter ()" link="eom-eom-save-as-dialog-helper.html#eom-save-as-dialog-get-converter"/>
+    <function name="eom_image_load_error_message_area_new ()" link="eom-eom-error-message-area.html#eom-image-load-error-message-area-new"/>
+    <function name="eom_no_images_error_message_area_new ()" link="eom-eom-error-message-area.html#eom-no-images-error-message-area-new"/>
+    <function name="enum EomImageData" link="eom-eom-image.html#EomImageData"/>
+    <function name="EOM_IMAGE_DATA_ALL" link="eom-eom-image.html#EOM-IMAGE-DATA-ALL:CAPS"/>
+    <function name="enum EomImageError" link="eom-eom-image.html#EomImageError"/>
+    <function name="EOM_IMAGE_ERROR" link="eom-eom-image.html#EOM-IMAGE-ERROR:CAPS"/>
+    <function name="enum EomImageStatus" link="eom-eom-image.html#EomImageStatus"/>
+    <function name="EomImage" link="eom-eom-image.html#EomImage-struct"/>
+    <function name="eom_image_error_quark ()" link="eom-eom-image.html#eom-image-error-quark"/>
+    <function name="eom_image_new ()" link="eom-eom-image.html#eom-image-new"/>
+    <function name="eom_image_new_file ()" link="eom-eom-image.html#eom-image-new-file"/>
+    <function name="eom_image_load ()" link="eom-eom-image.html#eom-image-load"/>
+    <function name="eom_image_cancel_load ()" link="eom-eom-image.html#eom-image-cancel-load"/>
+    <function name="eom_image_has_data ()" link="eom-eom-image.html#eom-image-has-data"/>
+    <function name="eom_image_data_ref ()" link="eom-eom-image.html#eom-image-data-ref"/>
+    <function name="eom_image_data_unref ()" link="eom-eom-image.html#eom-image-data-unref"/>
+    <function name="eom_image_set_thumbnail ()" link="eom-eom-image.html#eom-image-set-thumbnail"/>
+    <function name="eom_image_save_as_by_info ()" link="eom-eom-image.html#eom-image-save-as-by-info"/>
+    <function name="eom_image_save_by_info ()" link="eom-eom-image.html#eom-image-save-by-info"/>
+    <function name="eom_image_get_pixbuf ()" link="eom-eom-image.html#eom-image-get-pixbuf"/>
+    <function name="eom_image_get_thumbnail ()" link="eom-eom-image.html#eom-image-get-thumbnail"/>
+    <function name="eom_image_get_size ()" link="eom-eom-image.html#eom-image-get-size"/>
+    <function name="eom_image_get_bytes ()" link="eom-eom-image.html#eom-image-get-bytes"/>
+    <function name="eom_image_is_modified ()" link="eom-eom-image.html#eom-image-is-modified"/>
+    <function name="eom_image_modified ()" link="eom-eom-image.html#eom-image-modified"/>
+    <function name="eom_image_get_caption ()" link="eom-eom-image.html#eom-image-get-caption"/>
+    <function name="eom_image_get_collate_key ()" link="eom-eom-image.html#eom-image-get-collate-key"/>
+    <function name="eom_image_get_exif_info ()" link="eom-eom-image.html#eom-image-get-exif-info"/>
+    <function name="eom_image_get_xmp_info ()" link="eom-eom-image.html#eom-image-get-xmp-info"/>
+    <function name="eom_image_get_file ()" link="eom-eom-image.html#eom-image-get-file"/>
+    <function name="eom_image_get_uri_for_display ()" link="eom-eom-image.html#eom-image-get-uri-for-display"/>
+    <function name="eom_image_get_status ()" link="eom-eom-image.html#eom-image-get-status"/>
+    <function name="eom_image_transform ()" link="eom-eom-image.html#eom-image-transform"/>
+    <function name="eom_image_autorotate ()" link="eom-eom-image.html#eom-image-autorotate"/>
+    <function name="eom_image_get_profile ()" link="eom-eom-image.html#eom-image-get-profile"/>
+    <function name="eom_image_apply_display_profile ()" link="eom-eom-image.html#eom-image-apply-display-profile"/>
+    <function name="eom_image_undo ()" link="eom-eom-image.html#eom-image-undo"/>
+    <function name="eom_image_get_supported_mime_types ()" link="eom-eom-image.html#eom-image-get-supported-mime-types"/>
+    <function name="eom_image_is_supported_mime_type ()" link="eom-eom-image.html#eom-image-is-supported-mime-type"/>
+    <function name="eom_image_file_changed ()" link="eom-eom-image.html#eom-image-file-changed"/>
+    <function name="The &quot;changed&quot; signal" link="eom-eom-image.html#EomImage-changed"/>
+    <function name="The &quot;file-changed&quot; signal" link="eom-eom-image.html#EomImage-file-changed"/>
+    <function name="The &quot;next-frame&quot; signal" link="eom-eom-image.html#EomImage-next-frame"/>
+    <function name="The &quot;save-progress&quot; signal" link="eom-eom-image.html#EomImage-save-progress"/>
+    <function name="The &quot;size-prepared&quot; signal" link="eom-eom-image.html#EomImage-size-prepared"/>
+    <function name="The &quot;thumbnail-changed&quot; signal" link="eom-eom-image.html#EomImage-thumbnail-changed"/>
+    <function name="EomImageSaveInfo" link="EomImageSaveInfo.html#EomImageSaveInfo-struct"/>
+    <function name="EOM_FILE_FORMAT_JPEG" link="EomImageSaveInfo.html#EOM-FILE-FORMAT-JPEG:CAPS"/>
+    <function name="eom_image_save_info_from_image ()" link="EomImageSaveInfo.html#eom-image-save-info-from-image"/>
+    <function name="eom_image_save_info_from_uri ()" link="EomImageSaveInfo.html#eom-image-save-info-from-uri"/>
+    <function name="eom_image_save_info_from_file ()" link="EomImageSaveInfo.html#eom-image-save-info-from-file"/>
+    <function name="enum EomTransformType" link="eom-eom-transform.html#EomTransformType"/>
+    <function name="EomTransform" link="eom-eom-transform.html#EomTransform-struct"/>
+    <function name="eom_transform_apply ()" link="eom-eom-transform.html#eom-transform-apply"/>
+    <function name="eom_transform_reverse ()" link="eom-eom-transform.html#eom-transform-reverse"/>
+    <function name="eom_transform_compose ()" link="eom-eom-transform.html#eom-transform-compose"/>
+    <function name="eom_transform_is_identity ()" link="eom-eom-transform.html#eom-transform-is-identity"/>
+    <function name="eom_transform_identity_new ()" link="eom-eom-transform.html#eom-transform-identity-new"/>
+    <function name="eom_transform_rotate_new ()" link="eom-eom-transform.html#eom-transform-rotate-new"/>
+    <function name="eom_transform_flip_new ()" link="eom-eom-transform.html#eom-transform-flip-new"/>
+    <function name="eom_transform_scale_new ()" link="eom-eom-transform.html#eom-transform-scale-new"/>
+    <function name="eom_transform_new ()" link="eom-eom-transform.html#eom-transform-new"/>
+    <function name="eom_transform_get_transform_type ()" link="eom-eom-transform.html#eom-transform-get-transform-type"/>
+    <function name="EOM_METADATA_READER_GET_INTERFACE()" link="eom-eom-metadata-reader.html#EOM-METADATA-READER-GET-INTERFACE:CAPS"/>
+    <function name="EomMetadataReader" link="eom-eom-metadata-reader.html#EomMetadataReader-struct"/>
+    <function name="EomMetadataReaderInterface" link="eom-eom-metadata-reader.html#EomMetadataReaderInterface"/>
+    <function name="enum EomMetadataFileType" link="eom-eom-metadata-reader.html#EomMetadataFileType"/>
+    <function name="eom_metadata_reader_new ()" link="eom-eom-metadata-reader.html#eom-metadata-reader-new"/>
+    <function name="eom_metadata_reader_consume ()" link="eom-eom-metadata-reader.html#eom-metadata-reader-consume"/>
+    <function name="eom_metadata_reader_finished ()" link="eom-eom-metadata-reader.html#eom-metadata-reader-finished"/>
+    <function name="eom_metadata_reader_get_exif_chunk ()" link="eom-eom-metadata-reader.html#eom-metadata-reader-get-exif-chunk"/>
+    <function name="eom_metadata_reader_get_exif_data ()" link="eom-eom-metadata-reader.html#eom-metadata-reader-get-exif-data"/>
+    <function name="eom_metadata_reader_get_xmp_data ()" link="eom-eom-metadata-reader.html#eom-metadata-reader-get-xmp-data"/>
+    <function name="eom_metadata_reader_get_iptc_chunk ()" link="eom-eom-metadata-reader.html#eom-metadata-reader-get-iptc-chunk"/>
+    <function name="eom_metadata_reader_get_iptc_data ()" link="eom-eom-metadata-reader.html#eom-metadata-reader-get-iptc-data"/>
+    <function name="eom_metadata_reader_get_icc_profile ()" link="eom-eom-metadata-reader.html#eom-metadata-reader-get-icc-profile"/>
+    <function name="EomMetadataReaderPng" link="EomMetadataReaderPng.html#EomMetadataReaderPng-struct"/>
+    <function name="EomMetadataReaderJpg" link="EomMetadataReaderJpg.html#EomMetadataReaderJpg-struct"/>
+    <function name="EomPrintPreview" link="EomPrintPreview.html#EomPrintPreview-struct"/>
+    <function name="eom_print_preview_new ()" link="EomPrintPreview.html#eom-print-preview-new"/>
+    <function name="eom_print_preview_new_with_pixbuf ()" link="EomPrintPreview.html#eom-print-preview-new-with-pixbuf"/>
+    <function name="eom_print_preview_set_page_margins ()" link="EomPrintPreview.html#eom-print-preview-set-page-margins"/>
+    <function name="eom_print_preview_set_from_page_setup ()" link="EomPrintPreview.html#eom-print-preview-set-from-page-setup"/>
+    <function name="eom_print_preview_get_image_position ()" link="EomPrintPreview.html#eom-print-preview-get-image-position"/>
+    <function name="eom_print_preview_set_image_position ()" link="EomPrintPreview.html#eom-print-preview-set-image-position"/>
+    <function name="eom_print_preview_set_scale ()" link="EomPrintPreview.html#eom-print-preview-set-scale"/>
+    <function name="The &quot;image&quot; property" link="EomPrintPreview.html#EomPrintPreview--image"/>
+    <function name="The &quot;image-scale&quot; property" link="EomPrintPreview.html#EomPrintPreview--image-scale"/>
+    <function name="The &quot;image-x-align&quot; property" link="EomPrintPreview.html#EomPrintPreview--image-x-align"/>
+    <function name="The &quot;image-y-align&quot; property" link="EomPrintPreview.html#EomPrintPreview--image-y-align"/>
+    <function name="The &quot;page-bottom-margin&quot; property" link="EomPrintPreview.html#EomPrintPreview--page-bottom-margin"/>
+    <function name="The &quot;page-left-margin&quot; property" link="EomPrintPreview.html#EomPrintPreview--page-left-margin"/>
+    <function name="The &quot;page-right-margin&quot; property" link="EomPrintPreview.html#EomPrintPreview--page-right-margin"/>
+    <function name="The &quot;page-top-margin&quot; property" link="EomPrintPreview.html#EomPrintPreview--page-top-margin"/>
+    <function name="The &quot;paper-height&quot; property" link="EomPrintPreview.html#EomPrintPreview--paper-height"/>
+    <function name="The &quot;paper-width&quot; property" link="EomPrintPreview.html#EomPrintPreview--paper-width"/>
+    <function name="The &quot;image-moved&quot; signal" link="EomPrintPreview.html#EomPrintPreview-image-moved"/>
+    <function name="EomPrintImageSetup" link="EomPrintImageSetup.html#EomPrintImageSetup-struct"/>
+    <function name="eom_print_image_setup_new ()" link="EomPrintImageSetup.html#eom-print-image-setup-new"/>
+    <function name="eom_print_image_setup_get_options ()" link="EomPrintImageSetup.html#eom-print-image-setup-get-options"/>
+    <function name="The &quot;image&quot; property" link="EomPrintImageSetup.html#EomPrintImageSetup--image"/>
+    <function name="The &quot;page-setup&quot; property" link="EomPrintImageSetup.html#EomPrintImageSetup--page-setup"/>
+    <function name="eom_print_operation_new ()" link="eom-eom-print.html#eom-print-operation-new"/>
+    <function name="eom_print_get_page_setup ()" link="eom-eom-print.html#eom-print-get-page-setup"/>
+    <function name="eom_print_set_page_setup ()" link="eom-eom-print.html#eom-print-set-page-setup"/>
+    <function name="eom_print_get_print_settings ()" link="eom-eom-print.html#eom-print-get-print-settings"/>
+    <function name="eom_print_set_print_settings ()" link="eom-eom-print.html#eom-print-set-print-settings"/>
+    <function name="EomPreferencesDialog" link="EomPreferencesDialog.html#EomPreferencesDialog-struct"/>
+    <function name="eom_preferences_dialog_get_instance ()" link="EomPreferencesDialog.html#eom-preferences-dialog-get-instance"/>
+    <function name="The &quot;mateconf-client&quot; property" link="EomPreferencesDialog.html#EomPreferencesDialog--mateconf-client"/>
+    <function name="EOM_APP" link="eom-eom-application.html#EOM-APP:CAPS"/>
+    <function name="EomApplication" link="eom-eom-application.html#EomApplication-struct"/>
+    <function name="eom_application_get_instance ()" link="eom-eom-application.html#eom-application-get-instance"/>
+    <function name="eom_application_register_service ()" link="eom-eom-application.html#eom-application-register-service"/>
+    <function name="eom_application_shutdown ()" link="eom-eom-application.html#eom-application-shutdown"/>
+    <function name="eom_application_open_window ()" link="eom-eom-application.html#eom-application-open-window"/>
+    <function name="eom_application_open_uri_list ()" link="eom-eom-application.html#eom-application-open-uri-list"/>
+    <function name="eom_application_open_file_list ()" link="eom-eom-application.html#eom-application-open-file-list"/>
+    <function name="eom_application_open_uris ()" link="eom-eom-application.html#eom-application-open-uris"/>
+    <function name="eom_application_get_windows ()" link="eom-eom-application.html#eom-application-get-windows"/>
+    <function name="eom_application_get_toolbars_model ()" link="eom-eom-application.html#eom-application-get-toolbars-model"/>
+    <function name="eom_application_save_toolbars_model ()" link="eom-eom-application.html#eom-application-save-toolbars-model"/>
+    <function name="eom_application_reset_toolbars_model ()" link="eom-eom-application.html#eom-application-reset-toolbars-model"/>
+    <function name="eom_application_screensaver_enable ()" link="eom-eom-application.html#eom-application-screensaver-enable"/>
+    <function name="eom_application_screensaver_disable ()" link="eom-eom-application.html#eom-application-screensaver-disable"/>
+    <function name="eom_session_init ()" link="eom-eom-session.html#eom-session-init"/>
+    <function name="eom_session_is_restored ()" link="eom-eom-session.html#eom-session-is-restored"/>
+    <function name="eom_session_load ()" link="eom-eom-session.html#eom-session-load"/>
+    <function name="EOM_CONF_DIR" link="eom-eom-config-keys.html#EOM-CONF-DIR:CAPS"/>
+    <function name="EOM_CONF_DESKTOP_WALLPAPER" link="eom-eom-config-keys.html#EOM-CONF-DESKTOP-WALLPAPER:CAPS"/>
+    <function name="EOM_CONF_DESKTOP_CAN_SAVE" link="eom-eom-config-keys.html#EOM-CONF-DESKTOP-CAN-SAVE:CAPS"/>
+    <function name="EOM_CONF_DESKTOP_CAN_PRINT" link="eom-eom-config-keys.html#EOM-CONF-DESKTOP-CAN-PRINT:CAPS"/>
+    <function name="EOM_CONF_DESKTOP_CAN_SETUP_PAGE" link="eom-eom-config-keys.html#EOM-CONF-DESKTOP-CAN-SETUP-PAGE:CAPS"/>
+    <function name="EOM_CONF_VIEW_INTERPOLATE" link="eom-eom-config-keys.html#EOM-CONF-VIEW-INTERPOLATE:CAPS"/>
+    <function name="EOM_CONF_VIEW_SCROLL_WHEEL_ZOOM" link="eom-eom-config-keys.html#EOM-CONF-VIEW-SCROLL-WHEEL-ZOOM:CAPS"/>
+    <function name="EOM_CONF_VIEW_ZOOM_MULTIPLIER" link="eom-eom-config-keys.html#EOM-CONF-VIEW-ZOOM-MULTIPLIER:CAPS"/>
+    <function name="EOM_CONF_VIEW_AUTOROTATE" link="eom-eom-config-keys.html#EOM-CONF-VIEW-AUTOROTATE:CAPS"/>
+    <function name="EOM_CONF_VIEW_TRANSPARENCY" link="eom-eom-config-keys.html#EOM-CONF-VIEW-TRANSPARENCY:CAPS"/>
+    <function name="EOM_CONF_VIEW_TRANS_COLOR" link="eom-eom-config-keys.html#EOM-CONF-VIEW-TRANS-COLOR:CAPS"/>
+    <function name="EOM_CONF_FULLSCREEN_LOOP" link="eom-eom-config-keys.html#EOM-CONF-FULLSCREEN-LOOP:CAPS"/>
+    <function name="EOM_CONF_FULLSCREEN_UPSCALE" link="eom-eom-config-keys.html#EOM-CONF-FULLSCREEN-UPSCALE:CAPS"/>
+    <function name="EOM_CONF_FULLSCREEN_SECONDS" link="eom-eom-config-keys.html#EOM-CONF-FULLSCREEN-SECONDS:CAPS"/>
+    <function name="EOM_CONF_UI_TOOLBAR" link="eom-eom-config-keys.html#EOM-CONF-UI-TOOLBAR:CAPS"/>
+    <function name="EOM_CONF_UI_STATUSBAR" link="eom-eom-config-keys.html#EOM-CONF-UI-STATUSBAR:CAPS"/>
+    <function name="EOM_CONF_UI_IMAGE_COLLECTION" link="eom-eom-config-keys.html#EOM-CONF-UI-IMAGE-COLLECTION:CAPS"/>
+    <function name="EOM_CONF_UI_IMAGE_COLLECTION_POSITION" link="eom-eom-config-keys.html#EOM-CONF-UI-IMAGE-COLLECTION-POSITION:CAPS"/>
+    <function name="EOM_CONF_UI_IMAGE_COLLECTION_RESIZABLE" link="eom-eom-config-keys.html#EOM-CONF-UI-IMAGE-COLLECTION-RESIZABLE:CAPS"/>
+    <function name="EOM_CONF_UI_SIDEBAR" link="eom-eom-config-keys.html#EOM-CONF-UI-SIDEBAR:CAPS"/>
+    <function name="EOM_CONF_UI_SCROLL_BUTTONS" link="eom-eom-config-keys.html#EOM-CONF-UI-SCROLL-BUTTONS:CAPS"/>
+    <function name="EOM_CONF_PLUGINS_ACTIVE_PLUGINS" link="eom-eom-config-keys.html#EOM-CONF-PLUGINS-ACTIVE-PLUGINS:CAPS"/>
+    <function name="EOM_PLUGIN_CONST()" link="eom-eom-plugin.html#EOM-PLUGIN-CONST:CAPS"/>
+    <function name="EomPlugin" link="eom-eom-plugin.html#EomPlugin-struct"/>
+    <function name="eom_plugin_activate ()" link="eom-eom-plugin.html#eom-plugin-activate"/>
+    <function name="eom_plugin_deactivate ()" link="eom-eom-plugin.html#eom-plugin-deactivate"/>
+    <function name="eom_plugin_update_ui ()" link="eom-eom-plugin.html#eom-plugin-update-ui"/>
+    <function name="eom_plugin_is_configurable ()" link="eom-eom-plugin.html#eom-plugin-is-configurable"/>
+    <function name="eom_plugin_create_configure_dialog ()" link="eom-eom-plugin.html#eom-plugin-create-configure-dialog"/>
+    <function name="EOM_PLUGIN_REGISTER_TYPE_WITH_CODE()" link="eom-eom-plugin.html#EOM-PLUGIN-REGISTER-TYPE-WITH-CODE:CAPS"/>
+    <function name="EOM_PLUGIN_REGISTER_TYPE()" link="eom-eom-plugin.html#EOM-PLUGIN-REGISTER-TYPE:CAPS"/>
+    <function name="EOM_PLUGIN_DEFINE_TYPE_WITH_CODE()" link="eom-eom-plugin.html#EOM-PLUGIN-DEFINE-TYPE-WITH-CODE:CAPS"/>
+    <function name="EOM_PLUGIN_DEFINE_TYPE()" link="eom-eom-plugin.html#EOM-PLUGIN-DEFINE-TYPE:CAPS"/>
+    <function name="EomPluginManager" link="EomPluginManager.html#EomPluginManager-struct"/>
+    <function name="eom_plugin_manager_new ()" link="EomPluginManager.html#eom-plugin-manager-new"/>
+    <function name="EomPluginInfo" link="eom-eom-plugin-engine.html#EomPluginInfo"/>
+    <function name="eom_plugin_engine_init ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-init"/>
+    <function name="eom_plugin_engine_shutdown ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-shutdown"/>
+    <function name="eom_plugin_engine_garbage_collect ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-garbage-collect"/>
+    <function name="eom_plugin_engine_get_plugins_list ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-get-plugins-list"/>
+    <function name="eom_plugin_engine_activate_plugin ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-activate-plugin"/>
+    <function name="eom_plugin_engine_deactivate_plugin ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-deactivate-plugin"/>
+    <function name="eom_plugin_engine_plugin_is_active ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-plugin-is-active"/>
+    <function name="eom_plugin_engine_plugin_is_available ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-plugin-is-available"/>
+    <function name="eom_plugin_engine_plugin_is_configurable ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-plugin-is-configurable"/>
+    <function name="eom_plugin_engine_configure_plugin ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-configure-plugin"/>
+    <function name="eom_plugin_engine_update_plugins_ui ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-update-plugins-ui"/>
+    <function name="eom_plugin_engine_get_plugin_name ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-get-plugin-name"/>
+    <function name="eom_plugin_engine_get_plugin_description ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-get-plugin-description"/>
+    <function name="eom_plugin_engine_get_plugin_icon_name ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-get-plugin-icon-name"/>
+    <function name="eom_plugin_engine_get_plugin_authors ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-get-plugin-authors"/>
+    <function name="eom_plugin_engine_get_plugin_website ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-get-plugin-website"/>
+    <function name="eom_plugin_engine_get_plugin_copyright ()" link="eom-eom-plugin-engine.html#eom-plugin-engine-get-plugin-copyright"/>
+    <function name="enum EomDebugSection" link="eom-eom-debug.html#EomDebugSection"/>
+    <function name="DEBUG_WINDOW" link="eom-eom-debug.html#DEBUG-WINDOW:CAPS"/>
+    <function name="DEBUG_VIEW" link="eom-eom-debug.html#DEBUG-VIEW:CAPS"/>
+    <function name="DEBUG_JOBS" link="eom-eom-debug.html#DEBUG-JOBS:CAPS"/>
+    <function name="DEBUG_THUMBNAIL" link="eom-eom-debug.html#DEBUG-THUMBNAIL:CAPS"/>
+    <function name="DEBUG_IMAGE_DATA" link="eom-eom-debug.html#DEBUG-IMAGE-DATA:CAPS"/>
+    <function name="DEBUG_IMAGE_LOAD" link="eom-eom-debug.html#DEBUG-IMAGE-LOAD:CAPS"/>
+    <function name="DEBUG_IMAGE_SAVE" link="eom-eom-debug.html#DEBUG-IMAGE-SAVE:CAPS"/>
+    <function name="DEBUG_LIST_STORE" link="eom-eom-debug.html#DEBUG-LIST-STORE:CAPS"/>
+    <function name="DEBUG_PREFERENCES" link="eom-eom-debug.html#DEBUG-PREFERENCES:CAPS"/>
+    <function name="DEBUG_PRINTING" link="eom-eom-debug.html#DEBUG-PRINTING:CAPS"/>
+    <function name="DEBUG_LCMS" link="eom-eom-debug.html#DEBUG-LCMS:CAPS"/>
+    <function name="DEBUG_PLUGINS" link="eom-eom-debug.html#DEBUG-PLUGINS:CAPS"/>
+    <function name="eom_debug_init ()" link="eom-eom-debug.html#eom-debug-init"/>
+    <function name="eom_debug ()" link="eom-eom-debug.html#eom-debug"/>
+    <function name="eom_debug_message ()" link="eom-eom-debug.html#eom-debug-message"/>
+    <function name="enum EomUCType" link="eom-eom-uri-converter.html#EomUCType"/>
+    <function name="EomUCInfo" link="eom-eom-uri-converter.html#EomUCInfo"/>
+    <function name="enum EomUCError" link="eom-eom-uri-converter.html#EomUCError"/>
+    <function name="EOM_UC_ERROR" link="eom-eom-uri-converter.html#EOM-UC-ERROR:CAPS"/>
+    <function name="EomURIConverter" link="eom-eom-uri-converter.html#EomURIConverter-struct"/>
+    <function name="eom_uc_error_quark ()" link="eom-eom-uri-converter.html#eom-uc-error-quark"/>
+    <function name="eom_uri_converter_new ()" link="eom-eom-uri-converter.html#eom-uri-converter-new"/>
+    <function name="eom_uri_converter_check ()" link="eom-eom-uri-converter.html#eom-uri-converter-check"/>
+    <function name="eom_uri_converter_requires_exif ()" link="eom-eom-uri-converter.html#eom-uri-converter-requires-exif"/>
+    <function name="eom_uri_converter_do ()" link="eom-eom-uri-converter.html#eom-uri-converter-do"/>
+    <function name="eom_uri_converter_preview ()" link="eom-eom-uri-converter.html#eom-uri-converter-preview"/>
+    <function name="eom_uri_converter_print_list ()" link="eom-eom-uri-converter.html#eom-uri-converter-print-list"/>
+    <function name="The &quot;convert-spaces&quot; property" link="eom-eom-uri-converter.html#EomURIConverter--convert-spaces"/>
+    <function name="The &quot;counter-n-digits&quot; property" link="eom-eom-uri-converter.html#EomURIConverter--counter-n-digits"/>
+    <function name="The &quot;counter-start&quot; property" link="eom-eom-uri-converter.html#EomURIConverter--counter-start"/>
+    <function name="The &quot;n-images&quot; property" link="eom-eom-uri-converter.html#EomURIConverter--n-images"/>
+    <function name="The &quot;space-character&quot; property" link="eom-eom-uri-converter.html#EomURIConverter--space-character"/>
+    <function name="eom_util_show_help ()" link="eom-eom-util.html#eom-util-show-help"/>
+    <function name="eom_util_make_valid_utf8 ()" link="eom-eom-util.html#eom-util-make-valid-utf8"/>
+    <function name="eom_util_parse_uri_string_list_to_file_list ()" link="eom-eom-util.html#eom-util-parse-uri-string-list-to-file-list"/>
+    <function name="eom_util_string_list_to_file_list ()" link="eom-eom-util.html#eom-util-string-list-to-file-list"/>
+    <function name="eom_util_strings_to_file_list ()" link="eom-eom-util.html#eom-util-strings-to-file-list"/>
+    <function name="eom_util_string_array_to_list ()" link="eom-eom-util.html#eom-util-string-array-to-list"/>
+    <function name="eom_util_string_array_make_absolute ()" link="eom-eom-util.html#eom-util-string-array-make-absolute"/>
+    <function name="eom_util_launch_desktop_file ()" link="eom-eom-util.html#eom-util-launch-desktop-file"/>
+    <function name="eom_util_dot_dir ()" link="eom-eom-util.html#eom-util-dot-dir"/>
+    <function name="eom_util_file_is_persistent ()" link="eom-eom-util.html#eom-util-file-is-persistent"/>
+    <function name="eom_exif_util_format_date ()" link="eom-eom-exif-util.html#eom-exif-util-format-date"/>
+    <function name="eom_exif_util_get_value ()" link="eom-eom-exif-util.html#eom-exif-util-get-value"/>
+    <function name="eom_pixbuf_get_savable_formats ()" link="eom-eom-pixbuf-util.html#eom-pixbuf-get-savable-formats"/>
+    <function name="eom_pixbuf_get_format_by_suffix ()" link="eom-eom-pixbuf-util.html#eom-pixbuf-get-format-by-suffix"/>
+    <function name="eom_pixbuf_get_format ()" link="eom-eom-pixbuf-util.html#eom-pixbuf-get-format"/>
+    <function name="eom_pixbuf_get_common_suffix ()" link="eom-eom-pixbuf-util.html#eom-pixbuf-get-common-suffix"/>
+    <function name="zoom_fit_size ()" link="eom-zoom.html#zoom-fit-size"/>
+    <function name="zoom_fit_scale ()" link="eom-zoom.html#zoom-fit-scale"/>
+    <function name="uta_ensure_size ()" link="eom-uta.html#uta-ensure-size"/>
+    <function name="uta_add_rect ()" link="eom-uta.html#uta-add-rect"/>
+    <function name="uta_remove_rect ()" link="eom-uta.html#uta-remove-rect"/>
+    <function name="uta_find_first_glom_rect ()" link="eom-uta.html#uta-find-first-glom-rect"/>
+    <function name="uta_copy_area ()" link="eom-uta.html#uta-copy-area"/>
+    <function name="EOM_TYPE_JOB_THUMBNAIL" link="eom-eom-jobs.html#EOM-TYPE-JOB-THUMBNAIL:CAPS"/>
+    <function name="EOM_JOB_THUMBNAIL()" link="eom-eom-jobs.html#EOM-JOB-THUMBNAIL:CAPS"/>
+    <function name="EOM_JOB_THUMBNAIL_CLASS()" link="eom-eom-jobs.html#EOM-JOB-THUMBNAIL-CLASS:CAPS"/>
+    <function name="EOM_IS_JOB_THUMBNAIL()" link="eom-eom-jobs.html#EOM-IS-JOB-THUMBNAIL:CAPS"/>
+    <function name="EOM_TYPE_JOB_LOAD" link="eom-eom-jobs.html#EOM-TYPE-JOB-LOAD:CAPS"/>
+    <function name="EOM_JOB_LOAD()" link="eom-eom-jobs.html#EOM-JOB-LOAD:CAPS"/>
+    <function name="EOM_JOB_LOAD_CLASS()" link="eom-eom-jobs.html#EOM-JOB-LOAD-CLASS:CAPS"/>
+    <function name="EOM_IS_JOB_LOAD()" link="eom-eom-jobs.html#EOM-IS-JOB-LOAD:CAPS"/>
+    <function name="EOM_TYPE_JOB_MODEL" link="eom-eom-jobs.html#EOM-TYPE-JOB-MODEL:CAPS"/>
+    <function name="EOM_JOB_MODEL()" link="eom-eom-jobs.html#EOM-JOB-MODEL:CAPS"/>
+    <function name="EOM_JOB_MODEL_CLASS()" link="eom-eom-jobs.html#EOM-JOB-MODEL-CLASS:CAPS"/>
+    <function name="EOM_IS_JOB_MODEL()" link="eom-eom-jobs.html#EOM-IS-JOB-MODEL:CAPS"/>
+    <function name="EOM_TYPE_JOB_TRANSFORM" link="eom-eom-jobs.html#EOM-TYPE-JOB-TRANSFORM:CAPS"/>
+    <function name="EOM_JOB_TRANSFORM()" link="eom-eom-jobs.html#EOM-JOB-TRANSFORM:CAPS"/>
+    <function name="EOM_JOB_TRANSFORM_CLASS()" link="eom-eom-jobs.html#EOM-JOB-TRANSFORM-CLASS:CAPS"/>
+    <function name="EOM_IS_JOB_TRANSFORM()" link="eom-eom-jobs.html#EOM-IS-JOB-TRANSFORM:CAPS"/>
+    <function name="EOM_TYPE_JOB_SAVE" link="eom-eom-jobs.html#EOM-TYPE-JOB-SAVE:CAPS"/>
+    <function name="EOM_JOB_SAVE()" link="eom-eom-jobs.html#EOM-JOB-SAVE:CAPS"/>
+    <function name="EOM_JOB_SAVE_CLASS()" link="eom-eom-jobs.html#EOM-JOB-SAVE-CLASS:CAPS"/>
+    <function name="EOM_IS_JOB_SAVE()" link="eom-eom-jobs.html#EOM-IS-JOB-SAVE:CAPS"/>
+    <function name="EOM_JOB_SAVE_GET_CLASS()" link="eom-eom-jobs.html#EOM-JOB-SAVE-GET-CLASS:CAPS"/>
+    <function name="EOM_TYPE_JOB_SAVE_AS" link="eom-eom-jobs.html#EOM-TYPE-JOB-SAVE-AS:CAPS"/>
+    <function name="EOM_JOB_SAVE_AS()" link="eom-eom-jobs.html#EOM-JOB-SAVE-AS:CAPS"/>
+    <function name="EOM_JOB_SAVE_AS_CLASS()" link="eom-eom-jobs.html#EOM-JOB-SAVE-AS-CLASS:CAPS"/>
+    <function name="EOM_IS_JOB_SAVE_AS()" link="eom-eom-jobs.html#EOM-IS-JOB-SAVE-AS:CAPS"/>
+    <function name="EOM_JOB_COPY()" link="eom-eom-jobs.html#EOM-JOB-COPY:CAPS"/>
+    <function name="EOM_JOB_COPY_CLASS()" link="eom-eom-jobs.html#EOM-JOB-COPY-CLASS:CAPS"/>
+    <function name="EomJob" link="eom-eom-jobs.html#EomJob-struct"/>
+    <function name="EomJobThumbnail" link="eom-eom-jobs.html#EomJobThumbnail-struct"/>
+    <function name="EomJobLoad" link="eom-eom-jobs.html#EomJobLoad-struct"/>
+    <function name="EomJobModel" link="eom-eom-jobs.html#EomJobModel-struct"/>
+    <function name="EomJobTransform" link="eom-eom-jobs.html#EomJobTransform-struct"/>
+    <function name="enum EomJobSaveResponse" link="eom-eom-jobs.html#EomJobSaveResponse"/>
+    <function name="EomJobSave" link="eom-eom-jobs.html#EomJobSave-struct"/>
+    <function name="EomJobSaveAs" link="eom-eom-jobs.html#EomJobSaveAs-struct"/>
+    <function name="EomJobCopy" link="eom-eom-jobs.html#EomJobCopy-struct"/>
+    <function name="eom_job_finished ()" link="eom-eom-jobs.html#eom-job-finished"/>
+    <function name="eom_job_run ()" link="eom-eom-jobs.html#eom-job-run"/>
+    <function name="eom_job_set_progress ()" link="eom-eom-jobs.html#eom-job-set-progress"/>
+    <function name="eom_job_thumbnail_get_type ()" link="eom-eom-jobs.html#eom-job-thumbnail-get-type"/>
+    <function name="eom_job_thumbnail_new ()" link="eom-eom-jobs.html#eom-job-thumbnail-new"/>
+    <function name="eom_job_load_get_type ()" link="eom-eom-jobs.html#eom-job-load-get-type"/>
+    <function name="eom_job_load_new ()" link="eom-eom-jobs.html#eom-job-load-new"/>
+    <function name="eom_job_model_get_type ()" link="eom-eom-jobs.html#eom-job-model-get-type"/>
+    <function name="eom_job_model_new ()" link="eom-eom-jobs.html#eom-job-model-new"/>
+    <function name="eom_job_transform_get_type ()" link="eom-eom-jobs.html#eom-job-transform-get-type"/>
+    <function name="eom_job_transform_new ()" link="eom-eom-jobs.html#eom-job-transform-new"/>
+    <function name="eom_job_save_get_type ()" link="eom-eom-jobs.html#eom-job-save-get-type"/>
+    <function name="eom_job_save_new ()" link="eom-eom-jobs.html#eom-job-save-new"/>
+    <function name="eom_job_save_as_get_type ()" link="eom-eom-jobs.html#eom-job-save-as-get-type"/>
+    <function name="eom_job_save_as_new ()" link="eom-eom-jobs.html#eom-job-save-as-new"/>
+    <function name="eom_job_copy_get_type ()" link="eom-eom-jobs.html#eom-job-copy-get-type"/>
+    <function name="eom_job_copy_new ()" link="eom-eom-jobs.html#eom-job-copy-new"/>
+    <function name="The &quot;finished&quot; signal" link="eom-eom-jobs.html#EomJob-finished"/>
+    <function name="The &quot;progress&quot; signal" link="eom-eom-jobs.html#EomJob-progress"/>
+    <function name="eom_job_queue_init ()" link="eom-eom-job-queue.html#eom-job-queue-init"/>
+    <function name="eom_job_queue_add_job ()" link="eom-eom-job-queue.html#eom-job-queue-add-job"/>
+    <function name="eom_job_queue_remove_job ()" link="eom-eom-job-queue.html#eom-job-queue-remove-job"/>
+  </functions>
+</book>

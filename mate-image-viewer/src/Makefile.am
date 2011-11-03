@@ -1,112 +1,112 @@
 if ENABLE_JPEG
-jpeg_LIB = $(top_builddir)/jpegutils/libeog-jpegutils.la
+jpeg_LIB = $(top_builddir)/jpegutils/libeom-jpegutils.la
 endif
 
 toolbar_LIB = $(top_builddir)/cut-n-paste/toolbar-editor/libtoolbareditor.la
 
 screensaver_LIB = $(top_builddir)/cut-n-paste/totem-screensaver/libtotemscrsaver.la
 
-noinst_LTLIBRARIES = libeog.la
+noinst_LTLIBRARIES = libeom.la
 
 bin_PROGRAMS = eom
 
-headerdir = $(prefix)/include/eog-@EOG_API_VERSION@/eog
+headerdir = $(prefix)/include/eom-@EOM_API_VERSION@/eom
 header_DATA = $(INST_H_FILES)
 
 MARSHAL_OUTPUT = 	\
-	eog-marshal.h	\
-	eog-marshal.c
+	eom-marshal.h	\
+	eom-marshal.c
 
 NOINST_H_FILES =			\
-	eog-session.h			\
-	eog-util.h			\
-	eog-pixbuf-util.h		\
-	eog-preferences-dialog.h	\
-	eog-config-keys.h		\
-	eog-image-jpeg.h		\
-	eog-image-private.h		\
-	eog-uri-converter.h		\
-	eog-metadata-reader.h		\
-	eog-metadata-reader-jpg.h	\
-	eog-metadata-reader-png.h	\
-	eog-save-as-dialog-helper.h	\
-	eog-print-image-setup.h         \
-	eog-print-preview.h             \
-	eog-print.h			\
-	eog-module.h             	\
-	eog-plugin-manager.h            \
-	eog-plugin-engine.h             \
+	eom-session.h			\
+	eom-util.h			\
+	eom-pixbuf-util.h		\
+	eom-preferences-dialog.h	\
+	eom-config-keys.h		\
+	eom-image-jpeg.h		\
+	eom-image-private.h		\
+	eom-uri-converter.h		\
+	eom-metadata-reader.h		\
+	eom-metadata-reader-jpg.h	\
+	eom-metadata-reader-png.h	\
+	eom-save-as-dialog-helper.h	\
+	eom-print-image-setup.h         \
+	eom-print-preview.h             \
+	eom-print.h			\
+	eom-module.h             	\
+	eom-plugin-manager.h            \
+	eom-plugin-engine.h             \
 	uta.h				\
-	eog-close-confirmation-dialog.h	\
+	eom-close-confirmation-dialog.h	\
 	zoom.h
 
 if ENABLE_PYTHON
 NOINST_H_FILES += 			\
-	eog-python-module.h		\
-	eog-python-plugin.h
+	eom-python-module.h		\
+	eom-python-plugin.h
 endif
 
 INST_H_FILES =				\
-	eog-application.h		\
-	eog-debug.h			\
-	eog-window.h			\
-	eog-sidebar.h			\
-	eog-dialog.h			\
-	eog-properties-dialog.h		\
-	eog-error-message-area.h	\
-	eog-file-chooser.h		\
-	eog-statusbar.h			\
-	eog-thumb-nav.h			\
-	eog-transform.h			\
-	eog-image.h			\
-	eog-enums.h			\
-	eog-image-save-info.h		\
-	eog-scroll-view.h		\
-	eog-thumb-view.h		\
-	eog-list-store.h		\
-	eog-thumbnail.h			\
-	eog-job-queue.h			\
-	eog-jobs.h			\
-	eog-plugin.h
+	eom-application.h		\
+	eom-debug.h			\
+	eom-window.h			\
+	eom-sidebar.h			\
+	eom-dialog.h			\
+	eom-properties-dialog.h		\
+	eom-error-message-area.h	\
+	eom-file-chooser.h		\
+	eom-statusbar.h			\
+	eom-thumb-nav.h			\
+	eom-transform.h			\
+	eom-image.h			\
+	eom-enums.h			\
+	eom-image-save-info.h		\
+	eom-scroll-view.h		\
+	eom-thumb-view.h		\
+	eom-list-store.h		\
+	eom-thumbnail.h			\
+	eom-job-queue.h			\
+	eom-jobs.h			\
+	eom-plugin.h
 
-libeog_la_SOURCES =			\
-	eog-application.c		\
-	eog-session.c			\
-	eog-debug.c			\
-	eog-util.c			\
-	eog-pixbuf-util.c		\
-	eog-window.c			\
-	eog-sidebar.c			\
-	eog-dialog.c			\
-	eog-preferences-dialog.c	\
-	eog-properties-dialog.c		\
-	eog-error-message-area.c	\
-	eog-file-chooser.c		\
-	eog-statusbar.c			\
-	eog-thumb-nav.c			\
-	eog-transform.c			\
-	eog-image.c			\
-	eog-image-jpeg.c		\
-	eog-image-save-info.c		\
-	eog-scroll-view.c		\
-	eog-thumb-view.c		\
-	eog-list-store.c		\
-	eog-thumbnail.c			\
-	eog-job-queue.c			\
-	eog-jobs.c			\
-	eog-uri-converter.c		\
-	eog-metadata-reader.c		\
-	eog-metadata-reader-jpg.c	\
-	eog-metadata-reader-png.c	\
-	eog-save-as-dialog-helper.c	\
-	eog-print-image-setup.c         \
-	eog-print-preview.c           	\
-	eog-print.c			\
-	eog-module.c            	\
-	eog-close-confirmation-dialog.c \
-	eog-plugin.c            	\
-	eog-plugin-manager.c            \
-	eog-plugin-engine.c            	\
+libeom_la_SOURCES =			\
+	eom-application.c		\
+	eom-session.c			\
+	eom-debug.c			\
+	eom-util.c			\
+	eom-pixbuf-util.c		\
+	eom-window.c			\
+	eom-sidebar.c			\
+	eom-dialog.c			\
+	eom-preferences-dialog.c	\
+	eom-properties-dialog.c		\
+	eom-error-message-area.c	\
+	eom-file-chooser.c		\
+	eom-statusbar.c			\
+	eom-thumb-nav.c			\
+	eom-transform.c			\
+	eom-image.c			\
+	eom-image-jpeg.c		\
+	eom-image-save-info.c		\
+	eom-scroll-view.c		\
+	eom-thumb-view.c		\
+	eom-list-store.c		\
+	eom-thumbnail.c			\
+	eom-job-queue.c			\
+	eom-jobs.c			\
+	eom-uri-converter.c		\
+	eom-metadata-reader.c		\
+	eom-metadata-reader-jpg.c	\
+	eom-metadata-reader-png.c	\
+	eom-save-as-dialog-helper.c	\
+	eom-print-image-setup.c         \
+	eom-print-preview.c           	\
+	eom-print.c			\
+	eom-module.c            	\
+	eom-close-confirmation-dialog.c \
+	eom-plugin.c            	\
+	eom-plugin-manager.c            \
+	eom-plugin-engine.c            	\
 	uta.c				\
 	zoom.c				\
 	$(BUILT_SOURCES)		\
@@ -115,82 +115,82 @@ libeog_la_SOURCES =			\
 
 if HAVE_EXIF
 INST_H_FILES +=				\
-	eog-exif-util.h			\
-	eog-exif-details.h
-libeog_la_SOURCES +=			\
-	eog-exif-util.c			\
-	eog-exif-details.c
+	eom-exif-util.h			\
+	eom-exif-details.h
+libeom_la_SOURCES +=			\
+	eom-exif-util.c			\
+	eom-exif-details.c
 endif
 
 if ENABLE_PYTHON
-libeog_la_SOURCES += 			\
-	eog-python-module.c		\
-	eog-python-module.h		\
-	eog-python-plugin.c		\
-	eog-python-plugin.h
+libeom_la_SOURCES += 			\
+	eom-python-module.c		\
+	eom-python-module.h		\
+	eom-python-plugin.c		\
+	eom-python-plugin.h
 endif
 
 if HAVE_EXEMPI
-# We need to make sure eog-exif-details.h
+# We need to make sure eom-exif-details.h
 # is only listed once in INST_H_FILES
 # or the build will break with automake-1.11
 if !HAVE_EXIF
 INST_H_FILES +=				\
-	eog-exif-details.h
+	eom-exif-details.h
 endif !HAVE_EXIF
-libeog_la_SOURCES +=			\
-	eog-exif-details.c
+libeom_la_SOURCES +=			\
+	eom-exif-details.c
 endif HAVE_EXEMPI
 
-libeog_la_CFLAGS =						\
+libeom_la_CFLAGS =						\
 	-I$(top_srcdir)/jpegutils				\
 	-I$(top_srcdir)/cut-n-paste/toolbar-editor		\
 	-I$(top_srcdir)/cut-n-paste/totem-screensaver		\
-	$(EOG_CFLAGS)						\
+	$(EOM_CFLAGS)						\
 	$(WARN_CFLAGS)						\
-	-DG_LOG_DOMAIN=\"EOG\"					\
-	-DEOG_PREFIX=\""${prefix}"\"				\
-	-DEOG_DATA_DIR=\""$(pkgdatadir)"\"			\
-	-DEOG_LOCALE_DIR=\""$(datadir)/locale"\"		\
-	-DEOG_PIXMAPS_DIR=\""$(datadir)/pixmaps/eog"\"		\
-	-DEOG_PLUGIN_DIR=\""$(libdir)/eog/plugins"\"
+	-DG_LOG_DOMAIN=\"EOM\"					\
+	-DEOM_PREFIX=\""${prefix}"\"				\
+	-DEOM_DATA_DIR=\""$(pkgdatadir)"\"			\
+	-DEOM_LOCALE_DIR=\""$(datadir)/locale"\"		\
+	-DEOM_PIXMAPS_DIR=\""$(datadir)/pixmaps/eom"\"		\
+	-DEOM_PLUGIN_DIR=\""$(libdir)/eom/plugins"\"
 
-libeog_la_LIBADD = \
-	$(EOG_LIBS)
+libeom_la_LIBADD = \
+	$(EOM_LIBS)
 
 if HAVE_LCMS
-libeog_la_CFLAGS += 	\
+libeom_la_CFLAGS += 	\
 	$(X11_CFLAGS)
 
-libeog_la_LIBADD += \
+libeom_la_LIBADD += \
 	$(X11_LIBS)
 endif
 
 if ENABLE_PYTHON
-libeog_la_CFLAGS += 			\
+libeom_la_CFLAGS += 			\
 	$(NO_STRICT_ALIASING_CFLAGS)	\
 	$(PYGTK_CFLAGS)			\
 	$(PYTHON_CFLAGS)		\
 	$(AM_CFLAGS)
 
-libeog_la_LIBADD += \
-	$(top_builddir)/bindings/python/eog.la
+libeom_la_LIBADD += \
+	$(top_builddir)/bindings/python/eom.la
 endif
 
-libeog_la_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
+libeom_la_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
 
 eom_SOURCES = main.c
 
 eom_CFLAGS = 							\
 	-I$(top_srcdir)/cut-n-paste/toolbar-editor		\
 	-I$(top_srcdir)/cut-n-paste/totem-screensaver		\
-	$(EOG_CFLAGS)						\
-	-DEOG_DATA_DIR=\""$(pkgdatadir)"\"			\
-	-DEOG_LOCALE_DIR=\""$(datadir)/locale"\"
+	$(EOM_CFLAGS)						\
+	-DEOM_DATA_DIR=\""$(pkgdatadir)"\"			\
+	-DEOM_LOCALE_DIR=\""$(datadir)/locale"\"
 
 eom_LDADD = 				\
-	libeog.la			\
-	$(EOG_LIBS)			\
+	libeom.la			\
+	$(EOM_LIBS)			\
 	$(LIBJPEG)			\
 	$(toolbar_LIB)			\
 	$(screensaver_LIB)		\
@@ -199,35 +199,35 @@ eom_LDADD = 				\
 eom_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
 
 BUILT_SOURCES = 			\
-	eog-enum-types.c		\
-	eog-enum-types.h		\
+	eom-enum-types.c		\
+	eom-enum-types.h		\
 	$(MARSHAL_OUTPUT)
 
-eog-enum-types.h: eog-enum-types.h.template $(INST_H_FILES) $(GLIB_MKENUMS)
-	$(AM_V_GEN)(cd $(srcdir) && $(GLIB_MKENUMS) --template eog-enum-types.h.template $(INST_H_FILES)) > $@
+eom-enum-types.h: eom-enum-types.h.template $(INST_H_FILES) $(GLIB_MKENUMS)
+	$(AM_V_GEN)(cd $(srcdir) && $(GLIB_MKENUMS) --template eom-enum-types.h.template $(INST_H_FILES)) > $@
 
-eog-enum-types.c: eog-enum-types.c.template $(INST_H_FILES) $(GLIB_MKENUMS)
-	$(AM_V_GEN)(cd $(srcdir) && $(GLIB_MKENUMS) --template eog-enum-types.c.template $(INST_H_FILES)) > $@
+eom-enum-types.c: eom-enum-types.c.template $(INST_H_FILES) $(GLIB_MKENUMS)
+	$(AM_V_GEN)(cd $(srcdir) && $(GLIB_MKENUMS) --template eom-enum-types.c.template $(INST_H_FILES)) > $@
 
-eog-marshal.h: eog-marshal.list $(GLIB_GENMARSHAL)
-	$(AM_V_GEN)$(GLIB_GENMARSHAL) $< --header --internal --prefix=eog_marshal > $@
+eom-marshal.h: eom-marshal.list $(GLIB_GENMARSHAL)
+	$(AM_V_GEN)$(GLIB_GENMARSHAL) $< --header --internal --prefix=eom_marshal > $@
 
-eog-marshal.c: eog-marshal.list $(GLIB_GENMARSHAL)
-	$(AM_V_GEN)$(GLIB_GENMARSHAL) $< --body --header --prefix=eog_marshal > $@
+eom-marshal.c: eom-marshal.list $(GLIB_GENMARSHAL)
+	$(AM_V_GEN)$(GLIB_GENMARSHAL) $< --body --header --prefix=eom_marshal > $@
 
 EXTRA_DIST = 				\
-	eog-enum-types.h.template	\
-	eog-enum-types.c.template	\
-	eog-marshal.list
+	eom-enum-types.h.template	\
+	eom-enum-types.c.template	\
+	eom-marshal.list
 
 if HAVE_DBUS
 
-BUILT_SOURCES += eog-application-service.h
+BUILT_SOURCES += eom-application-service.h
 
-EXTRA_DIST += eog-application-service.xml
+EXTRA_DIST += eom-application-service.xml
 
-eog-application-service.h: eog-application-service.xml
-	$(AM_V_GEN)dbus-binding-tool --prefix=eog_application --mode=glib-server --output=eog-application-service.h $<
+eom-application-service.h: eom-application-service.xml
+	$(AM_V_GEN)dbus-binding-tool --prefix=eom_application --mode=glib-server --output=eom-application-service.h $<
 
 endif
 

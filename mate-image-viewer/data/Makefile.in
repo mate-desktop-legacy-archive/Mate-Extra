@@ -36,14 +36,14 @@ build_triplet = @build@
 host_triplet = @host@
 subdir = data
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
-	$(srcdir)/eog.desktop.in.in $(srcdir)/eog.pc.in
+	$(srcdir)/eom.desktop.in.in $(srcdir)/eom.pc.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = eog.pc eog.desktop.in
+CONFIG_CLEAN_FILES = eom.pc eom.desktop.in
 CONFIG_CLEAN_VPATH_FILES =
 AM_V_GEN = $(am__v_GEN_$(V))
 am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))
@@ -154,14 +154,14 @@ ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
 EGREP = @EGREP@
-EOG_API_VERSION = @EOG_API_VERSION@
-EOG_CFLAGS = @EOG_CFLAGS@
-EOG_DOC_EXIF_START = @EOG_DOC_EXIF_START@
-EOG_DOC_EXIF_STOP = @EOG_DOC_EXIF_STOP@
-EOG_LIBS = @EOG_LIBS@
-EOG_MAJOR_VERSION = @EOG_MAJOR_VERSION@
-EOG_MICRO_VERSION = @EOG_MICRO_VERSION@
-EOG_MINOR_VERSION = @EOG_MINOR_VERSION@
+EOM_API_VERSION = @EOM_API_VERSION@
+EOM_CFLAGS = @EOM_CFLAGS@
+EOM_DOC_EXIF_START = @EOM_DOC_EXIF_START@
+EOM_DOC_EXIF_STOP = @EOM_DOC_EXIF_STOP@
+EOM_LIBS = @EOM_LIBS@
+EOM_MAJOR_VERSION = @EOM_MAJOR_VERSION@
+EOM_MICRO_VERSION = @EOM_MICRO_VERSION@
+EOM_MINOR_VERSION = @EOM_MINOR_VERSION@
 EXEEXT = @EXEEXT@
 EXEMPI_CFLAGS = @EXEMPI_CFLAGS@
 EXEMPI_LIBS = @EXEMPI_LIBS@
@@ -329,26 +329,26 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = pixmaps icons
-DESKTOP_IN_FILES = eog.desktop.in.in
+DESKTOP_IN_FILES = eom.desktop.in.in
 DESKTOP_FILES = $(DESKTOP_IN_FILES:.desktop.in.in=.desktop)
 desktopdir = $(datadir)/applications
 desktop_DATA = $(DESKTOP_FILES)
-schemas_in_files = eog.schemas.in
+schemas_in_files = eom.schemas.in
 schemasdir = $(MATECONF_SCHEMA_FILE_DIR)
 schemas_DATA = $(schemas_in_files:.schemas.in=.schemas)
 gladedir = $(pkgdatadir)
-glade_DATA = eog-image-properties-dialog.ui \
-	     eog-multiple-save-as-dialog.ui \
-	     eog-preferences-dialog.ui
+glade_DATA = eom-image-properties-dialog.ui \
+	     eom-multiple-save-as-dialog.ui \
+	     eom-preferences-dialog.ui
 
-uidir = $(datadir)/eog
+uidir = $(datadir)/eom
 UI_FILES = \
-	eog-ui.xml \
-	eog-toolbar.xml
+	eom-ui.xml \
+	eom-toolbar.xml
 
 ui_DATA = $(UI_FILES)
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = eog.pc
+pkgconfig_DATA = eom.pc
 gtkrcdir = $(pkgdatadir)
 gtkrc_DATA = gtkrc
 EXTRA_DIST = \
@@ -395,9 +395,9 @@ $(top_srcdir)/configure: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 $(am__aclocal_m4_deps):
-eog.pc: $(top_builddir)/config.status $(srcdir)/eog.pc.in
+eom.pc: $(top_builddir)/config.status $(srcdir)/eom.pc.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
-eog.desktop.in: $(top_builddir)/config.status $(srcdir)/eog.desktop.in.in
+eom.desktop.in: $(top_builddir)/config.status $(srcdir)/eom.desktop.in.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 
 mostlyclean-libtool:

@@ -1,0 +1,1025 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EomJobCopy</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.0">
+<link rel="home" href="index.html" title="Eye of MATE Reference Manual">
+<link rel="up" href="ch07.html" title="Asynchronous jobs">
+<link rel="prev" href="ch07.html" title="Asynchronous jobs">
+<link rel="next" href="eom-eom-job-queue.html" title="eom-job-queue">
+<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="ch07.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch07.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Eye of MATE Reference Manual</th>
+<td><a accesskey="n" href="eom-eom-job-queue.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#eom-eom-jobs.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#eom-eom-jobs.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#eom-eom-jobs.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#eom-eom-jobs.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry" title="EomJobCopy">
+<a name="eom-eom-jobs"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="eom-eom-jobs.top_of_page"></a>EomJobCopy</span></h2>
+<p>EomJobCopy</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv" title="Synopsis">
+<a name="eom-eom-jobs.synopsis"></a><h2>Synopsis</h2>
+<a name="EomJob"></a><a name="EomJobThumbnail"></a><a name="EomJobLoad"></a><a name="EomJobModel"></a><a name="EomJobTransform"></a><a name="EomJobSave"></a><a name="EomJobSaveAs"></a><a name="EomJobCopy"></a><pre class="synopsis">#define             <a class="link" href="eom-eom-jobs.html#EOM-TYPE-JOB-THUMBNAIL:CAPS" title="EOM_TYPE_JOB_THUMBNAIL">EOM_TYPE_JOB_THUMBNAIL</a>
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-THUMBNAIL:CAPS" title="EOM_JOB_THUMBNAIL()">EOM_JOB_THUMBNAIL</a>                   (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-THUMBNAIL-CLASS:CAPS" title="EOM_JOB_THUMBNAIL_CLASS()">EOM_JOB_THUMBNAIL_CLASS</a>             (klass)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-IS-JOB-THUMBNAIL:CAPS" title="EOM_IS_JOB_THUMBNAIL()">EOM_IS_JOB_THUMBNAIL</a>                (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-TYPE-JOB-LOAD:CAPS" title="EOM_TYPE_JOB_LOAD">EOM_TYPE_JOB_LOAD</a>
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-LOAD:CAPS" title="EOM_JOB_LOAD()">EOM_JOB_LOAD</a>                        (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-LOAD-CLASS:CAPS" title="EOM_JOB_LOAD_CLASS()">EOM_JOB_LOAD_CLASS</a>                  (klass)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-IS-JOB-LOAD:CAPS" title="EOM_IS_JOB_LOAD()">EOM_IS_JOB_LOAD</a>                     (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-TYPE-JOB-MODEL:CAPS" title="EOM_TYPE_JOB_MODEL">EOM_TYPE_JOB_MODEL</a>
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-MODEL:CAPS" title="EOM_JOB_MODEL()">EOM_JOB_MODEL</a>                       (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-MODEL-CLASS:CAPS" title="EOM_JOB_MODEL_CLASS()">EOM_JOB_MODEL_CLASS</a>                 (klass)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-IS-JOB-MODEL:CAPS" title="EOM_IS_JOB_MODEL()">EOM_IS_JOB_MODEL</a>                    (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-TYPE-JOB-TRANSFORM:CAPS" title="EOM_TYPE_JOB_TRANSFORM">EOM_TYPE_JOB_TRANSFORM</a>
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-TRANSFORM:CAPS" title="EOM_JOB_TRANSFORM()">EOM_JOB_TRANSFORM</a>                   (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-TRANSFORM-CLASS:CAPS" title="EOM_JOB_TRANSFORM_CLASS()">EOM_JOB_TRANSFORM_CLASS</a>             (klass)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-IS-JOB-TRANSFORM:CAPS" title="EOM_IS_JOB_TRANSFORM()">EOM_IS_JOB_TRANSFORM</a>                (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-TYPE-JOB-SAVE:CAPS" title="EOM_TYPE_JOB_SAVE">EOM_TYPE_JOB_SAVE</a>
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-SAVE:CAPS" title="EOM_JOB_SAVE()">EOM_JOB_SAVE</a>                        (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-SAVE-CLASS:CAPS" title="EOM_JOB_SAVE_CLASS()">EOM_JOB_SAVE_CLASS</a>                  (klass)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-IS-JOB-SAVE:CAPS" title="EOM_IS_JOB_SAVE()">EOM_IS_JOB_SAVE</a>                     (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-SAVE-GET-CLASS:CAPS" title="EOM_JOB_SAVE_GET_CLASS()">EOM_JOB_SAVE_GET_CLASS</a>              (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-TYPE-JOB-SAVE-AS:CAPS" title="EOM_TYPE_JOB_SAVE_AS">EOM_TYPE_JOB_SAVE_AS</a>
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-SAVE-AS:CAPS" title="EOM_JOB_SAVE_AS()">EOM_JOB_SAVE_AS</a>                     (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-SAVE-AS-CLASS:CAPS" title="EOM_JOB_SAVE_AS_CLASS()">EOM_JOB_SAVE_AS_CLASS</a>               (klass)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-IS-JOB-SAVE-AS:CAPS" title="EOM_IS_JOB_SAVE_AS()">EOM_IS_JOB_SAVE_AS</a>                  (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-COPY:CAPS" title="EOM_JOB_COPY()">EOM_JOB_COPY</a>                        (obj)
+#define             <a class="link" href="eom-eom-jobs.html#EOM-JOB-COPY-CLASS:CAPS" title="EOM_JOB_COPY_CLASS()">EOM_JOB_COPY_CLASS</a>                  (klass)
+                    <a class="link" href="eom-eom-jobs.html#EomJob-struct" title="EomJob">EomJob</a>;
+                    <a class="link" href="eom-eom-jobs.html#EomJobThumbnail-struct" title="EomJobThumbnail">EomJobThumbnail</a>;
+                    <a class="link" href="eom-eom-jobs.html#EomJobLoad-struct" title="EomJobLoad">EomJobLoad</a>;
+                    <a class="link" href="eom-eom-jobs.html#EomJobModel-struct" title="EomJobModel">EomJobModel</a>;
+                    <a class="link" href="eom-eom-jobs.html#EomJobTransform-struct" title="EomJobTransform">EomJobTransform</a>;
+enum                <a class="link" href="eom-eom-jobs.html#EomJobSaveResponse" title="enum EomJobSaveResponse">EomJobSaveResponse</a>;
+                    <a class="link" href="eom-eom-jobs.html#EomJobSave-struct" title="EomJobSave">EomJobSave</a>;
+                    <a class="link" href="eom-eom-jobs.html#EomJobSaveAs-struct" title="EomJobSaveAs">EomJobSaveAs</a>;
+                    <a class="link" href="eom-eom-jobs.html#EomJobCopy-struct" title="EomJobCopy">EomJobCopy</a>;
+<span class="returnvalue">void</span>                <a class="link" href="eom-eom-jobs.html#eom-job-finished" title="eom_job_finished ()">eom_job_finished</a>                    (<em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="eom-eom-jobs.html#eom-job-run" title="eom_job_run ()">eom_job_run</a>                         (<em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="eom-eom-jobs.html#eom-job-set-progress" title="eom_job_set_progress ()">eom_job_set_progress</a>                (<em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>,
+                                                         <em class="parameter"><code><span class="type">float</span> progress</code></em>);
+<a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="eom-eom-jobs.html#eom-job-thumbnail-get-type" title="eom_job_thumbnail_get_type ()">eom_job_thumbnail_get_type</a>          (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            <a class="link" href="eom-eom-jobs.html#eom-job-thumbnail-new" title="eom_job_thumbnail_new ()">eom_job_thumbnail_new</a>               (<em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>);
+<a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="eom-eom-jobs.html#eom-job-load-get-type" title="eom_job_load_get_type ()">eom_job_load_get_type</a>               (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            <a class="link" href="eom-eom-jobs.html#eom-job-load-new" title="eom_job_load_new ()">eom_job_load_new</a>                    (<em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImageData" title="enum EomImageData"><span class="type">EomImageData</span></a> data</code></em>);
+<a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="eom-eom-jobs.html#eom-job-model-get-type" title="eom_job_model_get_type ()">eom_job_model_get_type</a>              (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            <a class="link" href="eom-eom-jobs.html#eom-job-model-new" title="eom_job_model_new ()">eom_job_model_new</a>                   (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *file_list</code></em>);
+<a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="eom-eom-jobs.html#eom-job-transform-get-type" title="eom_job_transform_get_type ()">eom_job_transform_get_type</a>          (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            <a class="link" href="eom-eom-jobs.html#eom-job-transform-new" title="eom_job_transform_new ()">eom_job_transform_new</a>               (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *images</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);
+<a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="eom-eom-jobs.html#eom-job-save-get-type" title="eom_job_save_get_type ()">eom_job_save_get_type</a>               (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            <a class="link" href="eom-eom-jobs.html#eom-job-save-new" title="eom_job_save_new ()">eom_job_save_new</a>                    (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *images</code></em>);
+<a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="eom-eom-jobs.html#eom-job-save-as-get-type" title="eom_job_save_as_get_type ()">eom_job_save_as_get_type</a>            (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            <a class="link" href="eom-eom-jobs.html#eom-job-save-as-new" title="eom_job_save_as_new ()">eom_job_save_as_new</a>                 (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *images</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-uri-converter.html#EomURIConverter"><span class="type">EomURIConverter</span></a> *converter</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);
+<a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="eom-eom-jobs.html#eom-job-copy-get-type" title="eom_job_copy_get_type ()">eom_job_copy_get_type</a>               (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            <a class="link" href="eom-eom-jobs.html#eom-job-copy-new" title="eom_job_copy_new ()">eom_job_copy_new</a>                    (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *images</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dest</code></em>);
+</pre>
+</div>
+<div class="refsect1" title="Object Hierarchy">
+<a name="eom-eom-jobs.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----EomJob
+         +----<a class="link" href="eom-eom-jobs.html#EomJobCopy">EomJobCopy</a>
+         +----<a class="link" href="eom-eom-jobs.html#EomJobLoad">EomJobLoad</a>
+         +----<a class="link" href="eom-eom-jobs.html#EomJobModel">EomJobModel</a>
+         +----<a class="link" href="eom-eom-jobs.html#EomJobSave">EomJobSave</a>
+         +----<a class="link" href="eom-eom-jobs.html#EomJobThumbnail">EomJobThumbnail</a>
+         +----<a class="link" href="eom-eom-jobs.html#EomJobTransform">EomJobTransform</a>
+</pre>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="eom-eom-jobs.html#EomJob">EomJob</a>
+         +----EomJobThumbnail
+</pre>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="eom-eom-jobs.html#EomJob">EomJob</a>
+         +----EomJobLoad
+</pre>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="eom-eom-jobs.html#EomJob">EomJob</a>
+         +----EomJobModel
+</pre>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="eom-eom-jobs.html#EomJob">EomJob</a>
+         +----EomJobTransform
+</pre>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="eom-eom-jobs.html#EomJob">EomJob</a>
+         +----EomJobSave
+               +----<a class="link" href="eom-eom-jobs.html#EomJobSaveAs">EomJobSaveAs</a>
+</pre>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="eom-eom-jobs.html#EomJob">EomJob</a>
+         +----<a class="link" href="eom-eom-jobs.html#EomJobSave">EomJobSave</a>
+               +----EomJobSaveAs
+</pre>
+<pre class="synopsis">
+  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a class="link" href="eom-eom-jobs.html#EomJob">EomJob</a>
+         +----EomJobCopy
+</pre>
+</div>
+<div class="refsect1" title="Signals">
+<a name="eom-eom-jobs.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="eom-eom-jobs.html#EomJob-finished" title='The "finished" signal'>finished</a>"                                       : Run Last
+  "<a class="link" href="eom-eom-jobs.html#EomJob-progress" title='The "progress" signal'>progress</a>"                                       : Run Last
+</pre>
+</div>
+<div class="refsect1" title="Description">
+<a name="eom-eom-jobs.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1" title="Details">
+<a name="eom-eom-jobs.details"></a><h2>Details</h2>
+<div class="refsect2" title="EOM_TYPE_JOB_THUMBNAIL">
+<a name="EOM-TYPE-JOB-THUMBNAIL:CAPS"></a><h3>EOM_TYPE_JOB_THUMBNAIL</h3>
+<pre class="programlisting">#define EOM_TYPE_JOB_THUMBNAIL	       (eom_job_thumbnail_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_THUMBNAIL()">
+<a name="EOM-JOB-THUMBNAIL:CAPS"></a><h3>EOM_JOB_THUMBNAIL()</h3>
+<pre class="programlisting">#define EOM_JOB_THUMBNAIL(obj)	       (G_TYPE_CHECK_INSTANCE_CAST((obj), EOM_TYPE_JOB_THUMBNAIL, EomJobThumbnail))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_THUMBNAIL_CLASS()">
+<a name="EOM-JOB-THUMBNAIL-CLASS:CAPS"></a><h3>EOM_JOB_THUMBNAIL_CLASS()</h3>
+<pre class="programlisting">#define EOM_JOB_THUMBNAIL_CLASS(klass) (G_TYPE_CHECK_CLASS_CAST((klass),  EOM_TYPE_JOB_THUMBNAIL, EomJobThumbnailClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_IS_JOB_THUMBNAIL()">
+<a name="EOM-IS-JOB-THUMBNAIL:CAPS"></a><h3>EOM_IS_JOB_THUMBNAIL()</h3>
+<pre class="programlisting">#define EOM_IS_JOB_THUMBNAIL(obj)      (G_TYPE_CHECK_INSTANCE_TYPE((obj), EOM_TYPE_JOB_THUMBNAIL))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_TYPE_JOB_LOAD">
+<a name="EOM-TYPE-JOB-LOAD:CAPS"></a><h3>EOM_TYPE_JOB_LOAD</h3>
+<pre class="programlisting">#define EOM_TYPE_JOB_LOAD	       (eom_job_load_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_LOAD()">
+<a name="EOM-JOB-LOAD:CAPS"></a><h3>EOM_JOB_LOAD()</h3>
+<pre class="programlisting">#define EOM_JOB_LOAD(obj)	       (G_TYPE_CHECK_INSTANCE_CAST((obj), EOM_TYPE_JOB_LOAD, EomJobLoad))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_LOAD_CLASS()">
+<a name="EOM-JOB-LOAD-CLASS:CAPS"></a><h3>EOM_JOB_LOAD_CLASS()</h3>
+<pre class="programlisting">#define EOM_JOB_LOAD_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST((klass),  EOM_TYPE_JOB_LOAD, EomJobLoadClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_IS_JOB_LOAD()">
+<a name="EOM-IS-JOB-LOAD:CAPS"></a><h3>EOM_IS_JOB_LOAD()</h3>
+<pre class="programlisting">#define EOM_IS_JOB_LOAD(obj)	       (G_TYPE_CHECK_INSTANCE_TYPE((obj), EOM_TYPE_JOB_LOAD))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_TYPE_JOB_MODEL">
+<a name="EOM-TYPE-JOB-MODEL:CAPS"></a><h3>EOM_TYPE_JOB_MODEL</h3>
+<pre class="programlisting">#define EOM_TYPE_JOB_MODEL	       (eom_job_model_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_MODEL()">
+<a name="EOM-JOB-MODEL:CAPS"></a><h3>EOM_JOB_MODEL()</h3>
+<pre class="programlisting">#define EOM_JOB_MODEL(obj)	       (G_TYPE_CHECK_INSTANCE_CAST((obj), EOM_TYPE_JOB_MODEL, EomJobModel))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_MODEL_CLASS()">
+<a name="EOM-JOB-MODEL-CLASS:CAPS"></a><h3>EOM_JOB_MODEL_CLASS()</h3>
+<pre class="programlisting">#define EOM_JOB_MODEL_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST((klass),  EOM_TYPE_JOB_MODEL, EomJobModelClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_IS_JOB_MODEL()">
+<a name="EOM-IS-JOB-MODEL:CAPS"></a><h3>EOM_IS_JOB_MODEL()</h3>
+<pre class="programlisting">#define EOM_IS_JOB_MODEL(obj)          (G_TYPE_CHECK_INSTANCE_TYPE((obj), EOM_TYPE_JOB_MODEL))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_TYPE_JOB_TRANSFORM">
+<a name="EOM-TYPE-JOB-TRANSFORM:CAPS"></a><h3>EOM_TYPE_JOB_TRANSFORM</h3>
+<pre class="programlisting">#define EOM_TYPE_JOB_TRANSFORM	       (eom_job_transform_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_TRANSFORM()">
+<a name="EOM-JOB-TRANSFORM:CAPS"></a><h3>EOM_JOB_TRANSFORM()</h3>
+<pre class="programlisting">#define EOM_JOB_TRANSFORM(obj)	       (G_TYPE_CHECK_INSTANCE_CAST((obj), EOM_TYPE_JOB_TRANSFORM, EomJobTransform))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_TRANSFORM_CLASS()">
+<a name="EOM-JOB-TRANSFORM-CLASS:CAPS"></a><h3>EOM_JOB_TRANSFORM_CLASS()</h3>
+<pre class="programlisting">#define EOM_JOB_TRANSFORM_CLASS(klass) (G_TYPE_CHECK_CLASS_CAST((klass),  EOM_TYPE_JOB_TRANSFORM, EomJobTransformClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_IS_JOB_TRANSFORM()">
+<a name="EOM-IS-JOB-TRANSFORM:CAPS"></a><h3>EOM_IS_JOB_TRANSFORM()</h3>
+<pre class="programlisting">#define EOM_IS_JOB_TRANSFORM(obj)      (G_TYPE_CHECK_INSTANCE_TYPE((obj), EOM_TYPE_JOB_TRANSFORM))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_TYPE_JOB_SAVE">
+<a name="EOM-TYPE-JOB-SAVE:CAPS"></a><h3>EOM_TYPE_JOB_SAVE</h3>
+<pre class="programlisting">#define EOM_TYPE_JOB_SAVE              (eom_job_save_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_SAVE()">
+<a name="EOM-JOB-SAVE:CAPS"></a><h3>EOM_JOB_SAVE()</h3>
+<pre class="programlisting">#define EOM_JOB_SAVE(obj)              (G_TYPE_CHECK_INSTANCE_CAST((obj), EOM_TYPE_JOB_SAVE, EomJobSave))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_SAVE_CLASS()">
+<a name="EOM-JOB-SAVE-CLASS:CAPS"></a><h3>EOM_JOB_SAVE_CLASS()</h3>
+<pre class="programlisting">#define EOM_JOB_SAVE_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST((klass), EOM_TYPE_JOB_SAVE, EomJobSaveClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_IS_JOB_SAVE()">
+<a name="EOM-IS-JOB-SAVE:CAPS"></a><h3>EOM_IS_JOB_SAVE()</h3>
+<pre class="programlisting">#define EOM_IS_JOB_SAVE(obj)           (G_TYPE_CHECK_INSTANCE_TYPE((obj), EOM_TYPE_JOB_SAVE))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_SAVE_GET_CLASS()">
+<a name="EOM-JOB-SAVE-GET-CLASS:CAPS"></a><h3>EOM_JOB_SAVE_GET_CLASS()</h3>
+<pre class="programlisting">#define EOM_JOB_SAVE_GET_CLASS(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), EOM_TYPE_JOB_SAVE, EomJobSaveClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_TYPE_JOB_SAVE_AS">
+<a name="EOM-TYPE-JOB-SAVE-AS:CAPS"></a><h3>EOM_TYPE_JOB_SAVE_AS</h3>
+<pre class="programlisting">#define EOM_TYPE_JOB_SAVE_AS           (eom_job_save_as_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_SAVE_AS()">
+<a name="EOM-JOB-SAVE-AS:CAPS"></a><h3>EOM_JOB_SAVE_AS()</h3>
+<pre class="programlisting">#define EOM_JOB_SAVE_AS(obj)           (G_TYPE_CHECK_INSTANCE_CAST((obj), EOM_TYPE_JOB_SAVE_AS, EomJobSaveAs))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_SAVE_AS_CLASS()">
+<a name="EOM-JOB-SAVE-AS-CLASS:CAPS"></a><h3>EOM_JOB_SAVE_AS_CLASS()</h3>
+<pre class="programlisting">#define EOM_JOB_SAVE_AS_CLASS(klass)   (G_TYPE_CHECK_CLASS_CAST((klass), EOM_TYPE_JOB_SAVE_AS, EomJobSaveAsClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_IS_JOB_SAVE_AS()">
+<a name="EOM-IS-JOB-SAVE-AS:CAPS"></a><h3>EOM_IS_JOB_SAVE_AS()</h3>
+<pre class="programlisting">#define EOM_IS_JOB_SAVE_AS(obj)        (G_TYPE_CHECK_INSTANCE_TYPE((obj), EOM_TYPE_JOB_SAVE_AS))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_COPY()">
+<a name="EOM-JOB-COPY:CAPS"></a><h3>EOM_JOB_COPY()</h3>
+<pre class="programlisting">#define EOM_JOB_COPY(obj)	       (G_TYPE_CHECK_INSTANCE_CAST((obj), EOM_TYPE_JOB_COPY, EomJobCopy))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EOM_JOB_COPY_CLASS()">
+<a name="EOM-JOB-COPY-CLASS:CAPS"></a><h3>EOM_JOB_COPY_CLASS()</h3>
+<pre class="programlisting">#define EOM_JOB_COPY_CLASS(klass) (G_TYPE_CHECK_CLASS_CAST((klass),  EOM_TYPE_JOB_COPY, EomJobCopyClass))
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>klass</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="EomJob">
+<a name="EomJob-struct"></a><h3>EomJob</h3>
+<pre class="programlisting">typedef struct _EomJob EomJob;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomJobThumbnail">
+<a name="EomJobThumbnail-struct"></a><h3>EomJobThumbnail</h3>
+<pre class="programlisting">typedef struct _EomJobThumbnail EomJobThumbnail;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomJobLoad">
+<a name="EomJobLoad-struct"></a><h3>EomJobLoad</h3>
+<pre class="programlisting">typedef struct _EomJobLoad EomJobLoad;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomJobModel">
+<a name="EomJobModel-struct"></a><h3>EomJobModel</h3>
+<pre class="programlisting">typedef struct _EomJobModel EomJobModel;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomJobTransform">
+<a name="EomJobTransform-struct"></a><h3>EomJobTransform</h3>
+<pre class="programlisting">typedef struct _EomJobTransform EomJobTransform;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="enum EomJobSaveResponse">
+<a name="EomJobSaveResponse"></a><h3>enum EomJobSaveResponse</h3>
+<pre class="programlisting">typedef enum {
+	EOM_SAVE_RESPONSE_NONE,
+	EOM_SAVE_RESPONSE_RETRY,
+	EOM_SAVE_RESPONSE_SKIP,
+	EOM_SAVE_RESPONSE_OVERWRITE,
+	EOM_SAVE_RESPONSE_CANCEL,
+	EOM_SAVE_RESPONSE_LAST
+} EomJobSaveResponse;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomJobSave">
+<a name="EomJobSave-struct"></a><h3>EomJobSave</h3>
+<pre class="programlisting">typedef struct _EomJobSave EomJobSave;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomJobSaveAs">
+<a name="EomJobSaveAs-struct"></a><h3>EomJobSaveAs</h3>
+<pre class="programlisting">typedef struct _EomJobSaveAs EomJobSaveAs;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="EomJobCopy">
+<a name="EomJobCopy-struct"></a><h3>EomJobCopy</h3>
+<pre class="programlisting">typedef struct _EomJobCopy EomJobCopy;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_finished ()">
+<a name="eom-job-finished"></a><h3>eom_job_finished ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_job_finished                    (<em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_run ()">
+<a name="eom-job-run"></a><h3>eom_job_run ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_job_run                         (<em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>);</pre>
+<p>
+Executes the job passed as <em class="parameter"><code>job</code></em>. Usually there is no need to call this
+on your own. Jobs should be executed by using the EomJobQueue.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td>the job to execute.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_set_progress ()">
+<a name="eom-job-set-progress"></a><h3>eom_job_set_progress ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_job_set_progress                (<em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>,
+                                                         <em class="parameter"><code><span class="type">float</span> progress</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>job</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>progress</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_thumbnail_get_type ()">
+<a name="eom-job-thumbnail-get-type"></a><h3>eom_job_thumbnail_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               eom_job_thumbnail_get_type          (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_thumbnail_new ()">
+<a name="eom-job-thumbnail-new"></a><h3>eom_job_thumbnail_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            eom_job_thumbnail_new               (<em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>image</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_load_get_type ()">
+<a name="eom-job-load-get-type"></a><h3>eom_job_load_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               eom_job_load_get_type               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_load_new ()">
+<a name="eom-job-load-new"></a><h3>eom_job_load_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            eom_job_load_new                    (<em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImageData" title="enum EomImageData"><span class="type">EomImageData</span></a> data</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>image</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_model_get_type ()">
+<a name="eom-job-model-get-type"></a><h3>eom_job_model_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               eom_job_model_get_type              (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_model_new ()">
+<a name="eom-job-model-new"></a><h3>eom_job_model_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            eom_job_model_new                   (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *file_list</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>file_list</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_transform_get_type ()">
+<a name="eom-job-transform-get-type"></a><h3>eom_job_transform_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               eom_job_transform_get_type          (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_transform_new ()">
+<a name="eom-job-transform-new"></a><h3>eom_job_transform_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            eom_job_transform_new               (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *images</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>images</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>trans</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_save_get_type ()">
+<a name="eom-job-save-get-type"></a><h3>eom_job_save_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               eom_job_save_get_type               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_save_new ()">
+<a name="eom-job-save-new"></a><h3>eom_job_save_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            eom_job_save_new                    (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *images</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>images</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_save_as_get_type ()">
+<a name="eom-job-save-as-get-type"></a><h3>eom_job_save_as_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               eom_job_save_as_get_type            (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_save_as_new ()">
+<a name="eom-job-save-as-new"></a><h3>eom_job_save_as_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            eom_job_save_as_new                 (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *images</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="eom-eom-uri-converter.html#EomURIConverter"><span class="type">EomURIConverter</span></a> *converter</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>images</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>converter</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>file</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_copy_get_type ()">
+<a name="eom-job-copy-get-type"></a><h3>eom_job_copy_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.mate.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               eom_job_copy_get_type               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title="eom_job_copy_new ()">
+<a name="eom-job-copy-new"></a><h3>eom_job_copy_new ()</h3>
+<pre class="programlisting"><a class="link" href="eom-eom-jobs.html#EomJob"><span class="returnvalue">EomJob</span></a> *            eom_job_copy_new                    (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *images</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dest</code></em>);</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>images</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>dest</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" title="Signal Details">
+<a name="eom-eom-jobs.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2" title='The "finished" signal'>
+<a name="EomJob-finished"></a><h3>The <code class="literal">"finished"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a>  *eomjob,
+                                                        <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)      : Run Last</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>eomjob</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" title='The "progress" signal'>
+<a name="EomJob-progress"></a><h3>The <code class="literal">"progress"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a>  *eomjob,
+                                                        <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a>   arg1,
+                                                        <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)      : Run Last</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>eomjob</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.15</div>
+</body>
+</html>

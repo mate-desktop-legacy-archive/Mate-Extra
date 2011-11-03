@@ -26,7 +26,7 @@ libtoolbareditor_la_CPPFLAGS = \
 libtoolbareditor_la_LIBADD = $(LIBXML2_LIBS)
 
 libtoolbareditor_la_CFLAGS = \
-	$(EOG_CFLAGS)				\
+	$(EOM_CFLAGS)				\
 	$(WARN_CFLAGS)				\
 	$(LIBXML2_CFLAGS)			\
 	-DCURSOR_DIR=\"$(pkgdatadir)\"
