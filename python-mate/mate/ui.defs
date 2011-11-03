@@ -2764,12 +2764,6 @@
   (return-type "const-gchar*")
 )
 
-(define-method get_font
-  (of-object "MateFontPicker")
-  (c-name "mate_font_picker_get_font")
-  (return-type "GdkFont*")
-)
-
 (define-method set_font_name
   (of-object "MateFontPicker")
   (c-name "mate_font_picker_set_font_name")
