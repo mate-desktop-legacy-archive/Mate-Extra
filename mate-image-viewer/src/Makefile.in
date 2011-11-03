@@ -36,7 +36,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-bin_PROGRAMS = eog$(EXEEXT)
+bin_PROGRAMS = eom$(EXEEXT)
 @ENABLE_PYTHON_TRUE@am__append_1 = \
 @ENABLE_PYTHON_TRUE@	eog-python-module.h		\
 @ENABLE_PYTHON_TRUE@	eog-python-plugin.h
@@ -176,14 +176,14 @@ libeog_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(CFLAGS) $(libeog_la_LDFLAGS) $(LDFLAGS) -o $@
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(headerdir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_eog_OBJECTS = eog-main.$(OBJEXT)
-eog_OBJECTS = $(am_eog_OBJECTS)
-eog_DEPENDENCIES = libeog.la $(am__DEPENDENCIES_1) \
+am_eom_OBJECTS = eom-main.$(OBJEXT)
+eom_OBJECTS = $(am_eom_OBJECTS)
+eom_DEPENDENCIES = libeog.la $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(toolbar_LIB) $(screensaver_LIB) \
 	$(jpeg_LIB)
-eog_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
-	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(eog_CFLAGS) $(CFLAGS) \
-	$(eog_LDFLAGS) $(LDFLAGS) -o $@
+eom_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(eom_CFLAGS) $(CFLAGS) \
+	$(eom_LDFLAGS) $(LDFLAGS) -o $@
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -210,8 +210,8 @@ am__v_CCLD_0 = @echo "  CCLD  " $@;
 AM_V_GEN = $(am__v_GEN_$(V))
 am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))
 am__v_GEN_0 = @echo "  GEN   " $@;
-SOURCES = $(libeog_la_SOURCES) $(eog_SOURCES)
-DIST_SOURCES = $(am__libeog_la_SOURCES_DIST) $(eog_SOURCES)
+SOURCES = $(libeog_la_SOURCES) $(eom_SOURCES)
+DIST_SOURCES = $(am__libeog_la_SOURCES_DIST) $(eom_SOURCES)
 am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;
 am__vpath_adj = case $$p in \
     $(srcdir)/*) f=`echo "$$p" | sed "s|^$$srcdirstrip/||"`;; \
@@ -285,9 +285,6 @@ EXEMPI_LIBS = @EXEMPI_LIBS@
 EXIF_CFLAGS = @EXIF_CFLAGS@
 EXIF_LIBS = @EXIF_LIBS@
 FGREP = @FGREP@
-MATECONFTOOL = @MATECONFTOOL@
-MATECONF_SCHEMA_CONFIG_SOURCE = @MATECONF_SCHEMA_CONFIG_SOURCE@
-MATECONF_SCHEMA_FILE_DIR = @MATECONF_SCHEMA_FILE_DIR@
 GETTEXT_PACKAGE = @GETTEXT_PACKAGE@
 GLIB_GENMARSHAL = @GLIB_GENMARSHAL@
 GLIB_MKENUMS = @GLIB_MKENUMS@
@@ -295,6 +292,8 @@ GMOFILES = @GMOFILES@
 GMSGFMT = @GMSGFMT@
 GREP = @GREP@
 GTKDOC_CHECK = @GTKDOC_CHECK@
+GTKDOC_DEPS_CFLAGS = @GTKDOC_DEPS_CFLAGS@
+GTKDOC_DEPS_LIBS = @GTKDOC_DEPS_LIBS@
 GTKDOC_MKPDF = @GTKDOC_MKPDF@
 GTKDOC_REBASE = @GTKDOC_REBASE@
 HELP_DIR = @HELP_DIR@
@@ -326,6 +325,9 @@ LTLIBOBJS = @LTLIBOBJS@
 MAINT = @MAINT@
 MAKEINFO = @MAKEINFO@
 MANIFEST_TOOL = @MANIFEST_TOOL@
+MATECONFTOOL = @MATECONFTOOL@
+MATECONF_SCHEMA_CONFIG_SOURCE = @MATECONF_SCHEMA_CONFIG_SOURCE@
+MATECONF_SCHEMA_FILE_DIR = @MATECONF_SCHEMA_FILE_DIR@
 MKDIR_P = @MKDIR_P@
 MKINSTALLDIRS = @MKINSTALLDIRS@
 MSGFMT = @MSGFMT@
@@ -495,15 +497,15 @@ libeog_la_CFLAGS = -I$(top_srcdir)/jpegutils \
 	$(am__append_9)
 libeog_la_LIBADD = $(EOG_LIBS) $(am__append_8) $(am__append_10)
 libeog_la_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
-eog_SOURCES = main.c
-eog_CFLAGS = \
+eom_SOURCES = main.c
+eom_CFLAGS = \
 	-I$(top_srcdir)/cut-n-paste/toolbar-editor		\
 	-I$(top_srcdir)/cut-n-paste/totem-screensaver		\
 	$(EOG_CFLAGS)						\
 	-DEOG_DATA_DIR=\""$(pkgdatadir)"\"			\
 	-DEOG_LOCALE_DIR=\""$(datadir)/locale"\"
 
-eog_LDADD = \
+eom_LDADD = \
 	libeog.la			\
 	$(EOG_LIBS)			\
 	$(LIBJPEG)			\
@@ -511,7 +513,7 @@ eog_LDADD = \
 	$(screensaver_LIB)		\
 	$(jpeg_LIB)
 
-eog_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
+eom_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
 BUILT_SOURCES = eog-enum-types.c eog-enum-types.h $(MARSHAL_OUTPUT) \
 	$(am__append_11)
 EXTRA_DIST = eog-enum-types.h.template eog-enum-types.c.template \
@@ -606,9 +608,9 @@ clean-binPROGRAMS:
 	list=`for p in $$list; do echo "$$p"; done | sed 's/$(EXEEXT)$$//'`; \
 	echo " rm -f" $$list; \
 	rm -f $$list
-eog$(EXEEXT): $(eog_OBJECTS) $(eog_DEPENDENCIES) 
-	@rm -f eog$(EXEEXT)
-	$(AM_V_CCLD)$(eog_LINK) $(eog_OBJECTS) $(eog_LDADD) $(LIBS)
+eom$(EXEEXT): $(eom_OBJECTS) $(eom_DEPENDENCIES) 
+	@rm -f eom$(EXEEXT)
+	$(AM_V_CCLD)$(eom_LINK) $(eom_OBJECTS) $(eom_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -616,7 +618,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eog-main.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/eom-main.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libeog_la-eog-application.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libeog_la-eog-close-confirmation-dialog.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libeog_la-eog-debug.Plo@am__quote@
@@ -1047,21 +1049,21 @@ libeog_la-eog-python-plugin.lo: eog-python-plugin.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libeog_la_CFLAGS) $(CFLAGS) -c -o libeog_la-eog-python-plugin.lo `test -f 'eog-python-plugin.c' || echo '$(srcdir)/'`eog-python-plugin.c
 
-eog-main.o: main.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eog_CFLAGS) $(CFLAGS) -MT eog-main.o -MD -MP -MF $(DEPDIR)/eog-main.Tpo -c -o eog-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/eog-main.Tpo $(DEPDIR)/eog-main.Po
+eom-main.o: main.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eom_CFLAGS) $(CFLAGS) -MT eom-main.o -MD -MP -MF $(DEPDIR)/eom-main.Tpo -c -o eom-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/eom-main.Tpo $(DEPDIR)/eom-main.Po
 @am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='main.c' object='eog-main.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='main.c' object='eom-main.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eog_CFLAGS) $(CFLAGS) -c -o eog-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eom_CFLAGS) $(CFLAGS) -c -o eom-main.o `test -f 'main.c' || echo '$(srcdir)/'`main.c
 
-eog-main.obj: main.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eog_CFLAGS) $(CFLAGS) -MT eog-main.obj -MD -MP -MF $(DEPDIR)/eog-main.Tpo -c -o eog-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/eog-main.Tpo $(DEPDIR)/eog-main.Po
+eom-main.obj: main.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eom_CFLAGS) $(CFLAGS) -MT eom-main.obj -MD -MP -MF $(DEPDIR)/eom-main.Tpo -c -o eom-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/eom-main.Tpo $(DEPDIR)/eom-main.Po
 @am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='main.c' object='eog-main.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	source='main.c' object='eom-main.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eog_CFLAGS) $(CFLAGS) -c -o eog-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
+@am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(eom_CFLAGS) $(CFLAGS) -c -o eom-main.obj `if test -f 'main.c'; then $(CYGPATH_W) 'main.c'; else $(CYGPATH_W) '$(srcdir)/main.c'; fi`
 
 mostlyclean-libtool:
 	-rm -f *.lo

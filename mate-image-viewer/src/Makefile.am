@@ -8,7 +8,7 @@ screensaver_LIB = $(top_builddir)/cut-n-paste/totem-screensaver/libtotemscrsaver
 
 noinst_LTLIBRARIES = libeog.la
 
-bin_PROGRAMS = eog
+bin_PROGRAMS = eom
 
 headerdir = $(prefix)/include/eog-@EOG_API_VERSION@/eog
 header_DATA = $(INST_H_FILES)
@@ -179,16 +179,16 @@ endif
 
 libeog_la_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
 
-eog_SOURCES = main.c
+eom_SOURCES = main.c
 
-eog_CFLAGS = 							\
+eom_CFLAGS = 							\
 	-I$(top_srcdir)/cut-n-paste/toolbar-editor		\
 	-I$(top_srcdir)/cut-n-paste/totem-screensaver		\
 	$(EOG_CFLAGS)						\
 	-DEOG_DATA_DIR=\""$(pkgdatadir)"\"			\
 	-DEOG_LOCALE_DIR=\""$(datadir)/locale"\"
 
-eog_LDADD = 				\
+eom_LDADD = 				\
 	libeog.la			\
 	$(EOG_LIBS)			\
 	$(LIBJPEG)			\
@@ -196,7 +196,7 @@ eog_LDADD = 				\
 	$(screensaver_LIB)		\
 	$(jpeg_LIB)
 
-eog_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
+eom_LDFLAGS = -export-dynamic -no-undefined -export-symbols-regex "^[[^_]].*"
 
 BUILT_SOURCES = 			\
 	eog-enum-types.c		\
