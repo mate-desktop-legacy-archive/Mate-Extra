@@ -1,0 +1,33 @@
+pkgname=mate-system-tools
+pkgver=2011.11.04
+pkgrel=1
+pkgdesc="A system tools for MATE"
+arch=(i686 x86_64)
+license=('GPL')
+depends=('mate-icon-theme' 'liboobs' 'gtk2' 'dbus' 'system-tools-backends' 'mate-polkit')
+makedepends=('mate-doc-utils' 'pkgconfig' 'intltool')
+groups=('mate-extras')
+options=(!emptydirs !libtool)
+url="http://matsusoft.com.ar/projects"
+source=(http://sourceforge.net/projects/matede/files/${pkgver}/${pkgname}.tar.gz/download)
+sha256sums=('270d997c90cff57275031f02adc6563ef13e2ca3f8db073bc75a46f5fb8e67af')
+
+build() {
+	cd "${srcdir}/${pkgname}"
+
+	./configure --prefix=/usr --sysconfdir=/etc \
+		--libexecdir=/usr/lib/${pkgname} \
+		--localstatedir=/var --disable-static \
+		--disable-scrollkeeper || return 1
+
+	# there is some pre-compiled files on the tar
+	make || return 1
+}
+
+package() {
+	cd "${srcdir}/${pkgname}"
+
+	make MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 DESTDIR="${pkgdir}" install || return 1
+	
+	mv ${pkgdir}/usr/share/omf ${pkgdir}/usr/share/mate-omf 
+}
