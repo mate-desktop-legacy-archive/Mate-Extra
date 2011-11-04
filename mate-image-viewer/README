@@ -23,7 +23,7 @@ GTK+, libmateui, libglade, mateconf, mate-desktop, gio, gdk-pixbuf,
 mate-icon-theme, shared-mime-info, libart, and libglade.
 
 You can get these packages from your favourite MATE FTP mirror or at
-http://download.mate.org/sources or from other sources where MATE
+http://download.gnome.org/sources or from other sources where MATE
 packages are distributed. shared-mime-info can be downloaded
 from the freedesktop.org website.
 
@@ -49,21 +49,21 @@ Availability
 ------------
 
 The bleeding-edge version of this package is always available from the MATE
-SVN repository (instructions at http://developer.mate.org/tools/svn.html).
-Released versions are available at http://download.mate.org/sources/eom.
+SVN repository (instructions at http://developer.gnome.org/tools/svn.html).
+Released versions are available at http://download.gnome.org/sources/eom.
 
 Webpage
 -------
 
 You can find screenshots and the latest news about 'Eye of MATE' in
-http://www.mate.org/projects/eom.
+http://www.gnome.org/projects/eom.
 
 
 Reporting bugs
 --------------
 
 Please use the MATE bug tracking system to report bugs.  You can
-reach it at http://bugzilla.mate.org.
+reach it at http://bugzilla.gnome.org.
 
 
 License
@@ -78,7 +78,7 @@ Authors
 
 Maintainer: Lucas Rocha (lucasr@gnome.org)
 
-Felix Riemann (friemann@svn.mate.org)
+Felix Riemann (friemann@svn.gnome.org)
 Claudio Saaevedra (csaavedra@igalia.com)
 Tim Gerla (tim+matebugs@gerla.net)
 Arik Devens (arik@gnome.org)

@@ -670,7 +670,7 @@ button_press_event_cb (GtkWidget          *tree,
 {
 	/* We want the treeview selection to be updated before showing the menu.
 	 * This code is evil, thanks to Federico Mena Quintero's black magic.
-	 * See: http://mail.mate.org/archives/gtk-devel-list/2006-February/msg00168.html
+	 * See: http://mail.gnome.org/archives/gtk-devel-list/2006-February/msg00168.html
 	 * FIXME: Let's remove it asap.
 	 */
 	static gboolean in_press = FALSE;

@@ -1024,7 +1024,7 @@ msgstr ""
 "Vincent van Adrighem\n"
 "Dennis Smit\n"
 "Reinout van Schouwen\n"
-"Kijk voor meer informatie op http://nl.mate.org/"
+"Kijk voor meer informatie op http://nl.gnome.org/"
 
 #: ../src/eom-window.c:2843
 msgid ""

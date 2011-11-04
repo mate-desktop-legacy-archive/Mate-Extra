@@ -37,11 +37,11 @@
 </tr></table></div>
 <div class="refsynopsisdiv" title="Synopsis">
 <a name="eom-eom-exif-util.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              <a class="link" href="eom-eom-exif-util.html#eom-exif-util-format-date" title="eom_exif_util_format_date ()">eom_exif_util_format_date</a>           (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *date</code></em>);
-const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="eom-eom-exif-util.html#eom-exif-util-get-value" title="eom_exif_util_get_value ()">eom_exif_util_get_value</a>             (<em class="parameter"><code><span class="type">ExifData</span> *exif_data</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> tag_id</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *buffer</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> buf_size</code></em>);
+<pre class="synopsis"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              <a class="link" href="eom-eom-exif-util.html#eom-exif-util-format-date" title="eom_exif_util_format_date ()">eom_exif_util_format_date</a>           (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *date</code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="eom-eom-exif-util.html#eom-exif-util-get-value" title="eom_exif_util_get_value ()">eom_exif_util_get_value</a>             (<em class="parameter"><code><span class="type">ExifData</span> *exif_data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> tag_id</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *buffer</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> buf_size</code></em>);
 </pre>
 </div>
 <div class="refsect1" title="Description">
@@ -53,7 +53,7 @@ const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html
 <a name="eom-eom-exif-util.details"></a><h2>Details</h2>
 <div class="refsect2" title="eom_exif_util_format_date ()">
 <a name="eom-exif-util-format-date"></a><h3>eom_exif_util_format_date ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              eom_exif_util_format_date           (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *date</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a>*              eom_exif_util_format_date           (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *date</code></em>);</pre>
 <p>
 Takes a date string formatted after Exif specifications and generates a
 more readable, possibly localized, string out of it.
@@ -78,10 +78,10 @@ current locale.
 <hr>
 <div class="refsect2" title="eom_exif_util_get_value ()">
 <a name="eom-exif-util-get-value"></a><h3>eom_exif_util_get_value ()</h3>
-<pre class="programlisting">const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       eom_exif_util_get_value             (<em class="parameter"><code><span class="type">ExifData</span> *exif_data</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> tag_id</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *buffer</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> buf_size</code></em>);</pre>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       eom_exif_util_get_value             (<em class="parameter"><code><span class="type">ExifData</span> *exif_data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> tag_id</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *buffer</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> buf_size</code></em>);</pre>
 <p>
 Convenience function to extract a string representation of an Exif tag
 directly from an <span class="structname">ExifData</span> struct. The string is

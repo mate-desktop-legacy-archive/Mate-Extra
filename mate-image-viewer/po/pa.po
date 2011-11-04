@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: eom.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=eom&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eom&component=general\n"
 "POT-Creation-Date: 2010-09-20 13:24+0000\n"
 "PO-Revision-Date: 2010-09-22 21:20+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"

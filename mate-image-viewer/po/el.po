@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: eom-HEAD-po-el-4121\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=eom&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eom&component=general\n"
 "POT-Creation-Date: 2010-08-28 21:41+0000\n"
 "PO-Revision-Date: 2010-08-29 11:28+0200\n"
 "Last-Translator: Michael Kotsarinis <mk73628@gmail.com>\n"

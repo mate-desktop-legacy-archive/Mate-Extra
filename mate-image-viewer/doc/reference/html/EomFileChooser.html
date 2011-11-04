@@ -42,22 +42,22 @@
 <div class="refsynopsisdiv" title="Synopsis">
 <a name="EomFileChooser.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="EomFileChooser.html#EomFileChooser-struct" title="EomFileChooser">EomFileChooser</a>;
-<a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         <a class="link" href="EomFileChooser.html#eom-file-chooser-new" title="eom_file_chooser_new ()">eom_file_chooser_new</a>                (<em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkFileChooser.html#GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>);
-<a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="returnvalue">GdkPixbufFormat</span></a> *   <a class="link" href="EomFileChooser.html#eom-file-chooser-get-format" title="eom_file_chooser_get_format ()">eom_file_chooser_get_format</a>         (<em class="parameter"><code><a class="link" href="EomFileChooser.html" title="EomFileChooser"><span class="type">EomFileChooser</span></a> *chooser</code></em>);
+<a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         <a class="link" href="EomFileChooser.html#eom-file-chooser-new" title="eom_file_chooser_new ()">eom_file_chooser_new</a>                (<em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkFileChooser.html#GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>);
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="returnvalue">GdkPixbufFormat</span></a> *   <a class="link" href="EomFileChooser.html#eom-file-chooser-get-format" title="eom_file_chooser_get_format ()">eom_file_chooser_get_format</a>         (<em class="parameter"><code><a class="link" href="EomFileChooser.html" title="EomFileChooser"><span class="type">EomFileChooser</span></a> *chooser</code></em>);
 </pre>
 </div>
 <div class="refsect1" title="Object Hierarchy">
 <a name="EomFileChooser.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
-         +----<a href="http://library.mate.org/devel/gtk/unstable/GtkObject.html">GtkObject</a>
-               +----<a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html">GtkWidget</a>
-                     +----<a href="http://library.mate.org/devel/gtk/unstable/GtkContainer.html">GtkContainer</a>
-                           +----<a href="http://library.mate.org/devel/gtk/unstable/GtkBin.html">GtkBin</a>
-                                 +----<a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html">GtkWindow</a>
-                                       +----<a href="http://library.mate.org/devel/gtk/unstable/GtkDialog.html">GtkDialog</a>
-                                             +----<a href="http://library.mate.org/devel/gtk/unstable/GtkFileChooserDialog.html">GtkFileChooserDialog</a>
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+         +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkObject.html">GtkObject</a>
+               +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html">GtkWidget</a>
+                     +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkContainer.html">GtkContainer</a>
+                           +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkBin.html">GtkBin</a>
+                                 +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html">GtkWindow</a>
+                                       +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkDialog.html">GtkDialog</a>
+                                             +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkFileChooserDialog.html">GtkFileChooserDialog</a>
                                                    +----EomFileChooser
 </pre>
 </div>
@@ -65,7 +65,7 @@
 <a name="EomFileChooser.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
 <p>
 EomFileChooser implements
- AtkImplementorIface,  <a href="http://library.mate.org/devel/gtk/unstable/gtk-gtkbuildable.html#GtkBuildable">GtkBuildable</a> and  <a href="http://library.mate.org/devel/gtk/unstable/GtkFileChooser.html">GtkFileChooser</a>.</p>
+ AtkImplementorIface,  <a href="http://library.gnome.org/devel/gtk/unstable/gtk-gtkbuildable.html#GtkBuildable">GtkBuildable</a> and  <a href="http://library.gnome.org/devel/gtk/unstable/GtkFileChooser.html">GtkFileChooser</a>.</p>
 </div>
 <div class="refsect1" title="Description">
 <a name="EomFileChooser.description"></a><h2>Description</h2>
@@ -83,7 +83,7 @@ EomFileChooser implements
 <hr>
 <div class="refsect2" title="eom_file_chooser_new ()">
 <a name="eom-file-chooser-new"></a><h3>eom_file_chooser_new ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         eom_file_chooser_new                (<em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkFileChooser.html#GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         eom_file_chooser_new                (<em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkFileChooser.html#GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -105,7 +105,7 @@ EomFileChooser implements
 <hr>
 <div class="refsect2" title="eom_file_chooser_get_format ()">
 <a name="eom-file-chooser-get-format"></a><h3>eom_file_chooser_get_format ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="returnvalue">GdkPixbufFormat</span></a> *   eom_file_chooser_get_format         (<em class="parameter"><code><a class="link" href="EomFileChooser.html" title="EomFileChooser"><span class="type">EomFileChooser</span></a> *chooser</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Module-Interface.html#GdkPixbufFormat"><span class="returnvalue">GdkPixbufFormat</span></a> *   eom_file_chooser_get_format         (<em class="parameter"><code><a class="link" href="EomFileChooser.html" title="EomFileChooser"><span class="type">EomFileChooser</span></a> *chooser</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">

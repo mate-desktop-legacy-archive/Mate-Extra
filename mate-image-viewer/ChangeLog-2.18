@@ -1,4 +1,4 @@
-2007-03-16  Felix Riemann  <friemann@svn.mate.org>
+2007-03-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* shell/eom-save-as-dialog-helper.c: (prepare_format_options):
 	Fix leaked list.
@@ -98,7 +98,7 @@
 
 	Unref URI's returned by eom_image_get_uri ().
 
-2007-02-13  Felix Riemann  <friemann@svn.mate.org>
+2007-02-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.in: Make it clear that EOM requires GTK+ >= 2.10.
 
@@ -112,7 +112,7 @@
 	* eom.desktop.in.in: Change launcher description to match UI
 	review (Fixes bug #383436).
 
-2007-02-09  Felix Riemann  <friemann@svn.mate.org>
+2007-02-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* shell/eom-window.c: (eom_window_print): Make sure the window is not
 	finalized while we are printing. Fixes bug #404708.
@@ -130,31 +130,31 @@
 	* shell/eom-window.c: (eom_window_destroy), (eom_window_init):
 	Initialize and finish properly the printing objects.
 
-2007-02-07  Felix Riemann  <friemann@svn.mate.org>
+2007-02-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-uri-converter.c: (eom_uri_converter_preview):
 	* shell/eom-save-as-dialog-helper.c: (eom_save_as_dialog_new):
 	* shell/eom-window.c: (verb_FileOpen_cb):
 	Fix several leaked strings.
 
-2007-02-07  Felix Riemann  <friemann@svn.mate.org>
+2007-02-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-image.c: (update_exif_data): According to the EXIF	specs
 	Pixel{X,Y}Dimension tags can be either of short or long	datatype.
 	Respect that. This fixes warnings in Valgrind and wrong	values in
 	images using the short type.
 
-2007-02-03  Felix Riemann  <friemann@svn.mate.org>
+2007-02-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-image-list.c: (eom_image_list_add_uris): Fix leak.
 
-2007-02-02  Felix Riemann  <friemann@svn.mate.org>
+2007-02-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-image.c: (update_exif_data): No need to keep empty
 	function boilerplate as calls are wrapped in proper ifdefs.
 	Fixes compiler warning if compiling without libexif.
 
-2007-01-30  Felix Riemann  <friemann@svn.mate.org>
+2007-01-30  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-collection-item.c: (job_thumb_create): Workaround problem
 	that the passed object is not valid anymore.
@@ -178,12 +178,12 @@
 	* libeom/Makefile.am: fix broken distcheck because failing
 	libeom-marshal.[ch] generation.
 
-2007-01-20  Felix Riemann  <friemann@svn.mate.org>
+2007-01-20  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/Makefile.am: Improve rules to avoid compiler warning.
 	* libeom/libeom-marshal.list: Remove unused marshal.
 
-2007-01-19  Felix Riemann  <friemann@svn.mate.org>
+2007-01-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-collection-item.c: (job_thumb_finished): Fix leaked error.
 	* shell/main.c: (open_uri_list_cb): Fix leaked list.
@@ -192,18 +192,18 @@
 
 	* shell/eom-window.c: updated EOM's webpage in about dialog.
 
-2007-01-13  Felix Riemann  <friemann@svn.mate.org>
+2007-01-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-wrap-list.c: (eom_wrap_list_dispose):
 	* shell/main.c: (handle_cmdline_args):
 	Fix several leaked lists.
 
-2007-01-13  Felix Riemann  <friemann@svn.mate.org>
+2007-01-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-wrap-list.c: (eom_wrap_list_init),
 	(eom_wrap_list_new): Remove unused (leaked) hash table.
 
-2007-01-12  Felix Riemann  <friemann@svn.mate.org>
+2007-01-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* shell/eom-window.c: (gen_role):
 	* shell/recent-files/egg-recent-util.c:
@@ -214,17 +214,17 @@
 
 	* shell/eom-window.c: Fix #395541, patch by Phillip Kerling
 
-2007-01-11  Felix Riemann  <friemann@svn.mate.org>
+2007-01-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-transform.c: (eom_transform_identity_new):
 	* libeom/eom-transform.h: Fix compiler warning.
 
-2007-01-10  Felix Riemann  <friemann@svn.mate.org>
+2007-01-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* shell/eom-preferences.c: (color_change_cb): Free color string after
 	setting it in MateConf.
 
-2007-01-09  Felix Riemann  <friemann@svn.mate.org>
+2007-01-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* shell/eom-window.c: (job_image_load_finished): Release image data
 	when the just loaded image is not needed anymore. Closes a memory hole
@@ -238,13 +238,13 @@
 
 	* NEWS: Update for 2.17.4
 
-2007-01-07  Felix Riemann  <friemann@svn.mate.org>
+2007-01-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-image.c: (eom_image_free_mem_private):
 	Make the double free guard actually work.
 	This might fix bug #354106 (confirmation needed).
 
-2007-01-06  Felix Riemann  <friemann@svn.mate.org>
+2007-01-06  Felix Riemann  <friemann@svn.gnome.org>
 
 	* libeom/eom-image-list.c: (cleanup_dead_files): Use GINT_TO_POINTER
 	to save a gint in list. This should avoid a compiler warning on 64bit
@@ -287,7 +287,7 @@
 	data/icons/32x32/apps/Makefile.am: update icon cache only once on
 	installation.
 
-2007-01-04  Felix Riemann  <friemann@svn.mate.org>
+2007-01-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* *.cvsignore, *.svnignore: Rename old CVS files to Subversion. Make
 	updates where necessary. Update svn properties where required.
@@ -307,7 +307,7 @@
 	Use custom "eom" named icon instead generic "image-viewer" from
 	MATE icon theme.
 
-2007-01-04  Felix Riemann  <friemann@svn.mate.org>
+2007-01-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* shell/eom-window.c: (job_image_load_finished): Unsetting the
 	displayed image through display_image_data() does not work currently.
@@ -318,12 +318,12 @@
 
 	* eom.glade: Change "Slide Show" to "Slideshow". Fix #383090
 
-2006-12-28  Felix Riemann  <friemann@cvs.mate.org>
+2006-12-28  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-window.c: (eom_window_update_properties):
 	mateconf_entry_free() is deprecated. Use mateconf_entry_unref() instead.
 
-2006-12-28  Felix Riemann  <friemann@cvs.mate.org>
+2006-12-28  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image-list.c: (eom_image_list_class_init):
 	* libeom/eom-image-list.h: Remove list-prepared signal as it is
@@ -341,7 +341,7 @@
 	Use "print-setup" icon from g-i-t. Patch from Thomas Andersen
 	<phomes@gmail.com>. Fixes bug #389314.
 
-2006-12-22  Felix Riemann  <friemann@cvs.mate.org>
+2006-12-22  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image.c: (eom_image_get_exif_orientation): Fix NULL
 	pointer	dereference when orientation tag is not present in EXIF data.
@@ -378,7 +378,7 @@
 	* libeom/eom-transform.[ch]: auto-rotation support.
 	* shell/eom-window.c: queue autorotation on image list initialization.
 
-2006-12-17  Felix Riemann  <friemann@cvs.mate.org>
+2006-12-17  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-window.c: (save_as_uri_selection_dialog):
 	Don't leak folder_uri.
@@ -401,16 +401,16 @@
 
 	* NEWS: Update for 2.17.2
 
-2006-12-02  Felix Riemann  <friemann@cvs.mate.org>
+2006-12-02  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-uri-converter.h: Reformat for better readability.
 
-2006-11-28  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-28  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* configure.in: Generate configure help strings using an autoconf
 	macro instead of tabbing/spacing them by hand.
 
-2006-11-28  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-28  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* configure.in: Put MATE_DOC_INIT down further and make sure
 	PKG_PROG_PKG_CONFIG is called before any other PKG_CHECK_MODULES call.
@@ -444,18 +444,18 @@
 	and MATE libraries. I hope this won't break anyone's builds, but if it
 	does, please report it.
 
-2006-11-20  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-20  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-save-as-dialog-helper.c: (prepare_token_options):
 	Actually use the translated token descriptions
 	Hide the non-working ones so the UI doesn't look broken.
 	Fixes bugs #337642 and #340490.
 
-2006-11-18  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-18  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image.h: Remove prototype of long gone eom_image_save().
 
-2006-11-18  Felix Riemann <friemann@cvs.mate.org>
+2006-11-18  Felix Riemann <friemann@cvs.gnome.org>
 
 	* autogen.sh: automake-1.7 depends on autoconf-2.54. Also require
 	intltool-0.35.0.
@@ -471,12 +471,12 @@
 
 	* macros/*: Remove old and unused macros from CVS.
 
-2006-11-17  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-17  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/main.c: (load_context_free): free_uri_list() does the same as
 	mate_vfs_uri_list_free(). Remove the former.
 
-2006-11-16  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-16  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* acconfig.h:
 	* configure.in: Move config.h templating into configure.in to silence
@@ -502,7 +502,7 @@
 	* libeom/eom-scroll-view.c: (paint_rectangle): Make check
 	pattern for transparent images a bit lighter. Fixes bug #350183.
 
-2006-11-15  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-15  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* art/Makefile.am:
 	* art/down-right.png:
@@ -545,7 +545,7 @@
 	Use stock icons for rotate and flip actions. (Fixes bug #305823). Patch
 	from Luca Ferreti <elle.uca@libero.it>.
 
-2006-11-10  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-10  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image-save-info.c:
 	* libeom/eom-image.c:
@@ -561,7 +561,7 @@
 	Remove unneeded mate-macros.h includes.
 	The code that used it was removed in 2.13.4.
 
-2006-10-29  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-29  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* configure.in: Remove help/sv from manual translation list as it has
 	been converted to g-d-u. (Fixes bug #366695)
@@ -583,13 +583,13 @@
 
 	* NEWS, configure.in: Update for 2.17.1
 
-2006-10-16  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-16  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-transform.c: (eom_transform_apply):
 	Optimize calculation of dy variable. It is now only calculated
 	dest_height times not dest_height*dest_width times.
 
-2006-10-15  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-15  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-full-screen.c: (eom_full_screen_new):
 	* libeom/eom-image-save-info.c: (is_local_uri):
@@ -598,36 +598,36 @@
 	(trans_color_changed_cb):
 	Replace deprecated g_strcasecmp() calls.
 
-2006-10-11  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-11  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-file-chooser.c: (eom_file_chooser_add_preview):
 	* shell/eom-save-dialog-helper.c: (update_counter_label):
 	* shell/eom-window.c: (eom_window_construct_ui): Replace deprecated
 	gtk_label_set() and gtk_widget_set_usize() calls.
 
-2006-10-09  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-09  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image-save-info.c: (eom_image_save_info_from_image),
 	(eom_image_save_info_from_vfs_uri): Replace file_exists() with
 	identical mate_vfs_uri_exists().
 
-2006-10-05  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-05  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image.c: (eom_image_real_load), (eom_image_load): Merge
 	eom_image_load_exif_data_only() into eom_image_real_load() as they are
 	mostly identical.
 
-2006-10-02  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-02  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-window.c: Add stock icon to undo action.
 
-2006-09-28  Felix Riemann  <friemann@cvs.mate.org>
+2006-09-28  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-window.c: (handle_image_selection_changed): Make sure the
 	correct image is displayed when reselecting the current image while
 	loading another one (Fixes bug #355858).
 
-2006-09-27  Felix Riemann  <friemann@cvs.mate.org>
+2006-09-27  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image-private.h:
 	* libeom/eom-image.c: (eom_image_dispose), (image_transform),
@@ -640,7 +640,7 @@
 	* libeom/eom-image-list.c: (is_supported_mime_type): Check if
 	given string is NULL. Fixes several critical warnings.
 
-2006-09-13  Felix Riemann  <friemann@cvs.mate.org>
+2006-09-13  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/accessible-image-view-factory.h:
 	* libeom/accessible-image-view.h: replace "#ifdef __cplusplus" defines
@@ -825,7 +825,7 @@
 	replace duplicated code with a call to _save_any_as_jpeg () (#321267).
 	Patch from Felix Riemann <felix@hsgheli.de>.
 
-2006-06-10  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2006-06-10  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* shell/eom-window.c (verb_HelpAbout_cb): Replaced old FSF addres
 	with current one
@@ -1263,7 +1263,7 @@
 
 	* README, AUTHORS: Update and UTF-8 encoding.
 
-2005-11-18  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-18  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-canvas-pixbuf.c, libeom/eom-collection-item.c,
 	libeom/eom-full-screen.c, libeom/eom-image-cache.c,
@@ -1283,18 +1283,18 @@
 	libeom/eom-horizontal-splitter.c, libeom/eom-horizontal-splitter.h:
 	removed.
 
-2005-11-17  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-17  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* eom.schemas.in: image information pane is disabled
 	by default (Fixes bug #313672).
 
-2005-11-17  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-17  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-window.c (verb_HelpAbout_cb): icon in about
 	dialog (Fixes bug #321665). Patch from Vincent Noel
 	<vincent.noel@gmail.com>.
 
-2005-11-13  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-13  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-wrap-list.c: (eom_wrap_list_select_single),
 	(eom_wrap_list_key_press_cb): Use one single function when changing
@@ -1305,16 +1305,16 @@
 	* shell/eom-window.c: (verb_Go_cb): Call new function
 	eom_wrap_list_select_single () instead old ones.
 
-2005-11-13  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-13  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* configure.in: post release version bump.
 
-2005-11-13  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-13  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* configure.in, NEWS: Update for 2.13.2
 	* shell/eom-window.c: added my name to the maintainers list.
 
-2005-11-13  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-13  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* eom.schemas.in (/apps/eom/ui/image_collection),
 	libeom/eom-config-keys.h (EOM_CONF_UI_IMAGE_COLLECTION):
@@ -1350,7 +1350,7 @@
 	of current image within a collection, not the number of selected
 	images.
 
-2005-11-10  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-10  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-window.c: use fullscreen stock icon on Fullscreen
 	menu item.
@@ -1360,7 +1360,7 @@
 	* libeom/eom-image.c (eom_image_real_load): don't stomp on an
 	already	set GError. Fixes bug #320342.
 
-2005-11-09  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-09  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-window.c (delete_image_real, show_delete_confirm_dialog):
 	no confirmation dialog when deleting (moving to trash) a
@@ -1373,7 +1373,7 @@
 	it is too big (Workaround that fixes bug #320245. See related gtk+
 	bug #320909).
 
-2005-11-06  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-06  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-window.c (verb_SetAsWallpaper_cb,
 	eom_file_launch_desktop_file, launch_desktop_item,
@@ -1385,61 +1385,61 @@
 	* shell/eom-gtk-ui.xml: new "Set As Wallpaper" Image menu
 	item.
 
-2005-11-05  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-05  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-scroll-view.c (display_key_press_event):
 	Page Up and Page Down keys scroll images up and
 	down (Fixes bug #152364).
 
-2005-11-03  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-03  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-window.c: fix build error (Fixes bug #320616).
 
-2005-11-03  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-03  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-gtk-ui.xml, shell/eom-window.c, shell/main.c:
 	remove useless "New Window" action item from File menu and
 	toolbar as part of UI rework.
 
-2005-11-03  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-03  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-image.c, libeom/eom-scroll-view.c,
 	libeom/eom-thumbnail.c, shell/eom-preferences.c,
 	shell/eom-window.c, shell/main.c: several build warning
 	fixes (Fixes bug #318020).
 
-2005-11-01  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-01  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-full-screen.c: make F9 key only cancel slide
 	show and F11 only cancel fullscreen mode.
 	* shell/eom-window.c (verb_FullScreen_cb): string comparison
 	with g_ascii_strcasecmp().
 
-2005-11-01  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-01  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-scroll-view.c, shell/eom-window.c: on single
 	image view, default focus on scroll-view. On collection view,
 	default focus on wrap-list (Fixes bug #169836).
 
-2005-11-01  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-01  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-scroll-view.c: make it possible to use '='
 	or '+' for zooming in (Fixes bug #320367).
 
-2005-10-30  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-30  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-gtk-ui.xml, shell/eom-window.c: added
 	accelerators from numerical keypad for zooming in
 	and out (Fixes bug #315183). Patch from Felix Riemann
 	<felix@hsgheli.de>.
 
-2005-10-30  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-30  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-window.c: make scrollbar buttons work in
 	thumbnails pane (Fixes bug #124653). Patch from
 	Juan Carlos Inostroza <jci@tux.cl>.
 
-2005-10-29  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-29  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* eom.glade, eom.schemas.in, libeom/eom-config-keys.h,
 	libeom/eom-full-screen.c, libeom/eom-full-screen.h,
@@ -1453,33 +1453,33 @@
 	mode, the user can use keys to switch to next, previous, first
 	and last images and exiting fullscreen (Fixes bug #317392).
 
-2005-10-28  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-28  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-window.c: window icon is a thumbnail
 	of the image (Fixes bug #311720).
 
-2005-10-28  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-28  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* eom.desktop.in.in, shell/eom-window.c, shell/main.c:
 	use intuitive generic image viewer icon instead of EOM
 	icon (Fixes bug #167087).
 
-2005-10-27  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-27  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-info-view.c: fix width of the information
 	pane that was too small (Fixes bug #313674). Patch
 	from Ed Catmur <ed@catmur.co.uk>.
 
-2005-10-25  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-25  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* configure.in: post release version bump.
 
-2005-10-25  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-25  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* configure.in, NEWS: Update for 2.13.1
 	* MAINTAINERS: added my name.
 
-2005-10-24  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-24  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-thumbnail.c: fix crash when adding new
 	non-image files	to a directory eom watches (Fixes bug
@@ -1487,36 +1487,36 @@
 	JPEG extension (Fixes bug #316808). Patch from
 	Callum McKenzie <callum@physics.otago.ac.nz>
 
-2005-10-23  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-23  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* configure.in: change X development libraries checking to
 	work on every platform (Fixes bug #317828). Patch from
 	Christophe Belle <christophe.belle@bull.net>.
 
-2005-10-23  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-23  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* shell/eom-window.c, shell/main.c: fix crash when trying
 	to view an image from recent list that doesn't exist
 	anymore (Fixes bug #312448 with contribution from
 	Claudio Saavedra <csaavedra@alumnos.utalca.cl>).
 
-2005-10-22  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-22  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-window.c: Ctrl+I keybinding to show/hide
 	Image Properties bar (Fixes bug #307188).
 
-2005-10-22  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-22  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-window.c: update "recent files" when viewing
 	images (Fixes bug #316004).
 
-2005-10-22  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-22  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-image-jpeg.c: fix RGBA->RGB conversion when saving
 	PNG images to JPEG (Fixes bug #314742). Patch from Felix Riemann
 	<felix@hsgheli.de>.
 
-2005-10-17  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-17  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* eom.desktop.in.in: Add image/svg+xml to the list of supported
 	file types. Closes bug #314566.
@@ -1525,7 +1525,7 @@
 
 	* configure.in: Post-release-bump version to 2.13.0.
 
-2005-10-12  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-12  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-image.c, libeom/eom-wrap-list.c, shell/eom-window.c:
 	Update window title when saving in another location (Fixes bug #318318).
@@ -1559,7 +1559,7 @@
 
 	* configure.in: Added ku to ALL_LINGUAS
 
-2005-08-23  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-08-23  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* libeom/eom-image.c: fixes bug #311086.
 
@@ -1850,7 +1850,7 @@
 	* TODO: Some notes about stuff I've worked on at last.
 
 	My last commit. See also
-	http://mail.mate.org/archives/eom-list/2005-May/msg00001.html
+	http://mail.gnome.org/archives/eom-list/2005-May/msg00001.html
 
 2005-05-10  Jens Finke <jens@triq.net>
 
@@ -2000,7 +2000,7 @@
 	* shell/main.c: Create and prepare EomImageList aka model before
 	opening a new EomWindow.
 
-2005-03-04  Adi Attar  <aattar@cvs.mate.org>
+2005-03-04  Adi Attar  <aattar@cvs.gnome.org>
 
 	* configure.in: Added "xh" to ALL_LINGUAS.
 

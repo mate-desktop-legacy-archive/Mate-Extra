@@ -44,35 +44,35 @@
 <a name="EomListStore"></a><pre class="synopsis">#define             <a class="link" href="eom-eom-list-store.html#EOM-LIST-STORE-THUMB-SIZE:CAPS" title="EOM_LIST_STORE_THUMB_SIZE">EOM_LIST_STORE_THUMB_SIZE</a>
 enum                <a class="link" href="eom-eom-list-store.html#EomListStoreColumn" title="enum EomListStoreColumn">EomListStoreColumn</a>;
                     <a class="link" href="eom-eom-list-store.html#EomListStore-struct" title="EomListStore">EomListStore</a>;
-<a href="http://library.mate.org/devel/gtk/unstable/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      <a class="link" href="eom-eom-list-store.html#eom-list-store-new" title="eom_list_store_new ()">eom_list_store_new</a>                  (<em class="parameter"><code><span class="type">void</span></code></em>);
-<a href="http://library.mate.org/devel/gtk/unstable/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      <a class="link" href="eom-eom-list-store.html#eom-list-store-new-from-glist" title="eom_list_store_new_from_glist ()">eom_list_store_new_from_glist</a>       (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);
+<a href="http://library.gnome.org/devel/gtk/unstable/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      <a class="link" href="eom-eom-list-store.html#eom-list-store-new" title="eom_list_store_new ()">eom_list_store_new</a>                  (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a href="http://library.gnome.org/devel/gtk/unstable/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      <a class="link" href="eom-eom-list-store.html#eom-list-store-new-from-glist" title="eom_list_store_new_from_glist ()">eom_list_store_new_from_glist</a>       (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-list-store.html#eom-list-store-append-image" title="eom_list_store_append_image ()">eom_list_store_append_image</a>         (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-list-store.html#eom-list-store-add-files" title="eom_list_store_add_files ()">eom_list_store_add_files</a>            (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *file_list</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *file_list</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-list-store.html#eom-list-store-remove-image" title="eom_list_store_remove_image ()">eom_list_store_remove_image</a>         (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="eom-eom-list-store.html#eom-list-store-get-pos-by-image" title="eom_list_store_get_pos_by_image ()">eom_list_store_get_pos_by_image</a>     (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="eom-eom-list-store.html#eom-list-store-get-pos-by-image" title="eom_list_store_get_pos_by_image ()">eom_list_store_get_pos_by_image</a>     (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>);
 <a class="link" href="eom-eom-image.html#EomImage"><span class="returnvalue">EomImage</span></a> *          <a class="link" href="eom-eom-list-store.html#eom-list-store-get-image-by-pos" title="eom_list_store_get_image_by_pos ()">eom_list_store_get_image_by_pos</a>     (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pos</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="eom-eom-list-store.html#eom-list-store-get-pos-by-iter" title="eom_list_store_get_pos_by_iter ()">eom_list_store_get_pos_by_iter</a>      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="eom-eom-list-store.html#eom-list-store-length" title="eom_list_store_length ()">eom_list_store_length</a>               (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="eom-eom-list-store.html#eom-list-store-get-initial-pos" title="eom_list_store_get_initial_pos ()">eom_list_store_get_initial_pos</a>      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pos</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="eom-eom-list-store.html#eom-list-store-get-pos-by-iter" title="eom_list_store_get_pos_by_iter ()">eom_list_store_get_pos_by_iter</a>      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="eom-eom-list-store.html#eom-list-store-length" title="eom_list_store_length ()">eom_list_store_length</a>               (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="eom-eom-list-store.html#eom-list-store-get-initial-pos" title="eom_list_store_get_initial_pos ()">eom_list_store_get_initial_pos</a>      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-list-store.html#eom-list-store-thumbnail-set" title="eom_list_store_thumbnail_set ()">eom_list_store_thumbnail_set</a>        (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-list-store.html#eom-list-store-thumbnail-unset" title="eom_list_store_thumbnail_unset ()">eom_list_store_thumbnail_unset</a>      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-list-store.html#eom-list-store-thumbnail-refresh" title="eom_list_store_thumbnail_refresh ()">eom_list_store_thumbnail_refresh</a>    (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);
 </pre>
 </div>
 <div class="refsect1" title="Object Hierarchy">
 <a name="eom-eom-list-store.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a href="http://library.mate.org/devel/gtk/unstable/GtkListStore.html">GtkListStore</a>
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkListStore.html">GtkListStore</a>
          +----EomListStore
 </pre>
 </div>
@@ -80,7 +80,7 @@ enum                <a class="link" href="eom-eom-list-store.html#EomListStoreCo
 <a name="eom-eom-list-store.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
 <p>
 EomListStore implements
- <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html">GtkTreeModel</a>,  <a href="http://library.mate.org/devel/gtk/unstable/gtk-GtkTreeView-drag-and-drop.html#GtkTreeDragSource">GtkTreeDragSource</a>,  <a href="http://library.mate.org/devel/gtk/unstable/gtk-GtkTreeView-drag-and-drop.html#GtkTreeDragDest">GtkTreeDragDest</a>,  <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeSortable.html">GtkTreeSortable</a> and  <a href="http://library.mate.org/devel/gtk/unstable/gtk-gtkbuildable.html#GtkBuildable">GtkBuildable</a>.</p>
+ <a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html">GtkTreeModel</a>,  <a href="http://library.gnome.org/devel/gtk/unstable/gtk-GtkTreeView-drag-and-drop.html#GtkTreeDragSource">GtkTreeDragSource</a>,  <a href="http://library.gnome.org/devel/gtk/unstable/gtk-GtkTreeView-drag-and-drop.html#GtkTreeDragDest">GtkTreeDragDest</a>,  <a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeSortable.html">GtkTreeSortable</a> and  <a href="http://library.gnome.org/devel/gtk/unstable/gtk-gtkbuildable.html#GtkBuildable">GtkBuildable</a>.</p>
 </div>
 <div class="refsect1" title="Description">
 <a name="eom-eom-list-store.description"></a><h2>Description</h2>
@@ -120,7 +120,7 @@ EomListStore implements
 <hr>
 <div class="refsect2" title="eom_list_store_new ()">
 <a name="eom-list-store-new"></a><h3>eom_list_store_new ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/gtk/unstable/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      eom_list_store_new                  (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk/unstable/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      eom_list_store_new                  (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>
 Creates a new and empty <a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a>.
 </p>
@@ -136,17 +136,17 @@ Creates a new and empty <a class="link" href="eom-eom-list-store.html#EomListSto
 <hr>
 <div class="refsect2" title="eom_list_store_new_from_glist ()">
 <a name="eom-list-store-new-from-glist"></a><h3>eom_list_store_new_from_glist ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/gtk/unstable/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      eom_list_store_new_from_glist       (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk/unstable/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      eom_list_store_new_from_glist       (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);</pre>
 <p>
 Creates a new <a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> from a list of <a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a>'s.
-The given list must be <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.
+The given list must be <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>list</code></em> :</span></p></td>
-<td>a <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of <a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a>'s.
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of <a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a>'s.
 </td>
 </tr>
 <tr>
@@ -187,13 +187,13 @@ or <code class="function">eom_list_store_set_thumbnail()</code> is called.
 <div class="refsect2" title="eom_list_store_add_files ()">
 <a name="eom-list-store-add-files"></a><h3>eom_list_store_add_files ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_list_store_add_files            (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *file_list</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *file_list</code></em>);</pre>
 <p>
-Adds a list of <a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>'s to <em class="parameter"><code>store</code></em>. The given list
-must be <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.
+Adds a list of <a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>'s to <em class="parameter"><code>store</code></em>. The given list
+must be <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.
 </p>
 <p>
-If any of the <a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>'s in <em class="parameter"><code>file_list</code></em> is a directory, all the images
+If any of the <a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>'s in <em class="parameter"><code>file_list</code></em> is a directory, all the images
 in that directory will be added to <em class="parameter"><code>store</code></em>. If the list of files contains
 only one file and this is a regular file, then all the images in the same
 directory will be added as well to <em class="parameter"><code>store</code></em>.
@@ -208,7 +208,7 @@ directory will be added as well to <em class="parameter"><code>store</code></em>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>file_list</code></em> :</span></p></td>
-<td>A <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of <a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>'s.
+<td>A <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of <a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>'s.
 </td>
 </tr>
 </tbody>
@@ -241,7 +241,7 @@ Removes <em class="parameter"><code>image</code></em> from <em class="parameter"
 <hr>
 <div class="refsect2" title="eom_list_store_get_pos_by_image ()">
 <a name="eom-list-store-get-pos-by-image"></a><h3>eom_list_store_get_pos_by_image ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_list_store_get_pos_by_image     (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_list_store_get_pos_by_image     (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>);</pre>
 <p>
 Gets the position where <em class="parameter"><code>image</code></em> is stored in <em class="parameter"><code>store</code></em>. If <em class="parameter"><code>image</code></em>
@@ -272,10 +272,10 @@ is not stored in <em class="parameter"><code>store</code></em>, -1 is returned.
 <div class="refsect2" title="eom_list_store_get_image_by_pos ()">
 <a name="eom-list-store-get-image-by-pos"></a><h3>eom_list_store_get_image_by_pos ()</h3>
 <pre class="programlisting"><a class="link" href="eom-eom-image.html#EomImage"><span class="returnvalue">EomImage</span></a> *          eom_list_store_get_image_by_pos     (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pos</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> pos</code></em>);</pre>
 <p>
 Gets the <a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> in the position <em class="parameter"><code>pos</code></em> of <em class="parameter"><code>store</code></em>. If there is
-no image at position <em class="parameter"><code>pos</code></em>, <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.
+no image at position <em class="parameter"><code>pos</code></em>, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -292,7 +292,7 @@ no image at position <em class="parameter"><code>pos</code></em>, <a href="http:
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the <a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> in position <em class="parameter"><code>pos</code></em> or <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
+<td> the <a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> in position <em class="parameter"><code>pos</code></em> or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
 
 </td>
 </tr>
@@ -302,8 +302,8 @@ no image at position <em class="parameter"><code>pos</code></em>, <a href="http:
 <hr>
 <div class="refsect2" title="eom_list_store_get_pos_by_iter ()">
 <a name="eom-list-store-get-pos-by-iter"></a><h3>eom_list_store_get_pos_by_iter ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_list_store_get_pos_by_iter      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_list_store_get_pos_by_iter      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
 <p>
 Gets the position of the image pointed by <em class="parameter"><code>iter</code></em>.
 </p>
@@ -317,7 +317,7 @@ Gets the position of the image pointed by <em class="parameter"><code>iter</code
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>iter</code></em> :</span></p></td>
-<td>A <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> pointing to an image in <em class="parameter"><code>store</code></em>.
+<td>A <a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> pointing to an image in <em class="parameter"><code>store</code></em>.
 </td>
 </tr>
 <tr>
@@ -331,7 +331,7 @@ Gets the position of the image pointed by <em class="parameter"><code>iter</code
 <hr>
 <div class="refsect2" title="eom_list_store_length ()">
 <a name="eom-list-store-length"></a><h3>eom_list_store_length ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_list_store_length               (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_list_store_length               (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>);</pre>
 <p>
 Returns the number of images in the store.
 </p>
@@ -354,7 +354,7 @@ Returns the number of images in the store.
 <hr>
 <div class="refsect2" title="eom_list_store_get_initial_pos ()">
 <a name="eom-list-store-get-initial-pos"></a><h3>eom_list_store_get_initial_pos ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_list_store_get_initial_pos      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_list_store_get_initial_pos      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>);</pre>
 <p>
 Gets the position of the <a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> that should be loaded first.
 If not set, it returns -1.
@@ -380,7 +380,7 @@ If not set, it returns -1.
 <div class="refsect2" title="eom_list_store_thumbnail_set ()">
 <a name="eom-list-store-thumbnail-set"></a><h3>eom_list_store_thumbnail_set ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_list_store_thumbnail_set        (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
 <p>
 Sets the thumbnail for the image pointed by <em class="parameter"><code>iter</code></em>.
 </p>
@@ -394,7 +394,7 @@ Sets the thumbnail for the image pointed by <em class="parameter"><code>iter</co
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>iter</code></em> :</span></p></td>
-<td>A <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> pointing to an image in <em class="parameter"><code>store</code></em>.
+<td>A <a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> pointing to an image in <em class="parameter"><code>store</code></em>.
 </td>
 </tr>
 </tbody>
@@ -404,7 +404,7 @@ Sets the thumbnail for the image pointed by <em class="parameter"><code>iter</co
 <div class="refsect2" title="eom_list_store_thumbnail_unset ()">
 <a name="eom-list-store-thumbnail-unset"></a><h3>eom_list_store_thumbnail_unset ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_list_store_thumbnail_unset      (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
 <p>
 Unsets the thumbnail for the image pointed by <em class="parameter"><code>iter</code></em>, changing
 it to a "busy" icon.
@@ -419,7 +419,7 @@ it to a "busy" icon.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>iter</code></em> :</span></p></td>
-<td>A <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> pointing to an image in <em class="parameter"><code>store</code></em>.
+<td>A <a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> pointing to an image in <em class="parameter"><code>store</code></em>.
 </td>
 </tr>
 </tbody>
@@ -429,7 +429,7 @@ it to a "busy" icon.
 <div class="refsect2" title="eom_list_store_thumbnail_refresh ()">
 <a name="eom-list-store-thumbnail-refresh"></a><h3>eom_list_store_thumbnail_refresh ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_list_store_thumbnail_refresh    (<em class="parameter"><code><a class="link" href="eom-eom-list-store.html#EomListStore"><span class="type">EomListStore</span></a> *store</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
 <p>
 Refreshes the thumbnail for the image pointed by <em class="parameter"><code>iter</code></em>.
 </p>
@@ -443,7 +443,7 @@ Refreshes the thumbnail for the image pointed by <em class="parameter"><code>ite
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>iter</code></em> :</span></p></td>
-<td>A <a href="http://library.mate.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> pointing to an image in <em class="parameter"><code>store</code></em>.
+<td>A <a href="http://library.gnome.org/devel/gtk/unstable/GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> pointing to an image in <em class="parameter"><code>store</code></em>.
 </td>
 </tr>
 </tbody>

@@ -20,7 +20,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: eom HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=eom&component=general\n"
 "POT-Creation-Date: 2010-09-18 11:34+0000\n"
 "PO-Revision-Date: 2010-09-03 23:47+0200\n"

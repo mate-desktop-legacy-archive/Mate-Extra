@@ -46,28 +46,28 @@
 <div class="refsynopsisdiv" title="Synopsis">
 <a name="EomSidebar.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="EomSidebar.html#EomSidebar-struct" title="EomSidebar">EomSidebar</a>;
-<a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         <a class="link" href="EomSidebar.html#eom-sidebar-new" title="eom_sidebar_new ()">eom_sidebar_new</a>                     (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         <a class="link" href="EomSidebar.html#eom-sidebar-new" title="eom_sidebar_new ()">eom_sidebar_new</a>                     (<em class="parameter"><code><span class="type">void</span></code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="EomSidebar.html#eom-sidebar-add-page" title="eom_sidebar_add_page ()">eom_sidebar_add_page</a>                (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="EomSidebar.html#eom-sidebar-remove-page" title="eom_sidebar_remove_page ()">eom_sidebar_remove_page</a>             (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="EomSidebar.html#eom-sidebar-set-page" title="eom_sidebar_set_page ()">eom_sidebar_set_page</a>                (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="EomSidebar.html#eom-sidebar-get-n-pages" title="eom_sidebar_get_n_pages ()">eom_sidebar_get_n_pages</a>             (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="EomSidebar.html#eom-sidebar-is-empty" title="eom_sidebar_is_empty ()">eom_sidebar_is_empty</a>                (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                <a class="link" href="EomSidebar.html#eom-sidebar-get-n-pages" title="eom_sidebar_get_n_pages ()">eom_sidebar_get_n_pages</a>             (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="EomSidebar.html#eom-sidebar-is-empty" title="eom_sidebar_is_empty ()">eom_sidebar_is_empty</a>                (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>);
 </pre>
 </div>
 <div class="refsect1" title="Object Hierarchy">
 <a name="EomSidebar.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
-         +----<a href="http://library.mate.org/devel/gtk/unstable/GtkObject.html">GtkObject</a>
-               +----<a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html">GtkWidget</a>
-                     +----<a href="http://library.mate.org/devel/gtk/unstable/GtkContainer.html">GtkContainer</a>
-                           +----<a href="http://library.mate.org/devel/gtk/unstable/GtkBox.html">GtkBox</a>
-                                 +----<a href="http://library.mate.org/devel/gtk/unstable/GtkVBox.html">GtkVBox</a>
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+         +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkObject.html">GtkObject</a>
+               +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html">GtkWidget</a>
+                     +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkContainer.html">GtkContainer</a>
+                           +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkBox.html">GtkBox</a>
+                                 +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkVBox.html">GtkVBox</a>
                                        +----EomSidebar
 </pre>
 </div>
@@ -75,12 +75,12 @@
 <a name="EomSidebar.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
 <p>
 EomSidebar implements
- AtkImplementorIface,  <a href="http://library.mate.org/devel/gtk/unstable/gtk-gtkbuildable.html#GtkBuildable">GtkBuildable</a> and  <a href="http://library.mate.org/devel/gtk/unstable/gtk-Orientable.html#GtkOrientable">GtkOrientable</a>.</p>
+ AtkImplementorIface,  <a href="http://library.gnome.org/devel/gtk/unstable/gtk-gtkbuildable.html#GtkBuildable">GtkBuildable</a> and  <a href="http://library.gnome.org/devel/gtk/unstable/gtk-Orientable.html#GtkOrientable">GtkOrientable</a>.</p>
 </div>
 <div class="refsect1" title="Properties">
 <a name="EomSidebar.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="EomSidebar.html#EomSidebar--current-page" title='The "current-page" property'>current-page</a>"             <a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a>*            : Read / Write
+  "<a class="link" href="EomSidebar.html#EomSidebar--current-page" title='The "current-page" property'>current-page</a>"             <a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a>*            : Read / Write
 </pre>
 </div>
 <div class="refsect1" title="Signals">
@@ -106,7 +106,7 @@ EomSidebar implements
 <hr>
 <div class="refsect2" title="eom_sidebar_new ()">
 <a name="eom-sidebar-new"></a><h3>eom_sidebar_new ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         eom_sidebar_new                     (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         eom_sidebar_new                     (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -122,8 +122,8 @@ EomSidebar implements
 <div class="refsect2" title="eom_sidebar_add_page ()">
 <a name="eom-sidebar-add-page"></a><h3>eom_sidebar_add_page ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_sidebar_add_page                (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);</pre>
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -151,7 +151,7 @@ EomSidebar implements
 <div class="refsect2" title="eom_sidebar_remove_page ()">
 <a name="eom-sidebar-remove-page"></a><h3>eom_sidebar_remove_page ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_sidebar_remove_page             (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -174,7 +174,7 @@ EomSidebar implements
 <div class="refsect2" title="eom_sidebar_set_page ()">
 <a name="eom-sidebar-set-page"></a><h3>eom_sidebar_set_page ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_sidebar_set_page                (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *main_widget</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -196,7 +196,7 @@ EomSidebar implements
 <hr>
 <div class="refsect2" title="eom_sidebar_get_n_pages ()">
 <a name="eom-sidebar-get-n-pages"></a><h3>eom_sidebar_get_n_pages ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_sidebar_get_n_pages             (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>                eom_sidebar_get_n_pages             (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -218,7 +218,7 @@ EomSidebar implements
 <hr>
 <div class="refsect2" title="eom_sidebar_is_empty ()">
 <a name="eom-sidebar-is-empty"></a><h3>eom_sidebar_is_empty ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_sidebar_is_empty                (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_sidebar_is_empty                (<em class="parameter"><code><a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eom_sidebar</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -242,7 +242,7 @@ EomSidebar implements
 <a name="EomSidebar.property-details"></a><h2>Property Details</h2>
 <div class="refsect2" title='The "current-page" property'>
 <a name="EomSidebar--current-page"></a><h3>The <code class="literal">"current-page"</code> property</h3>
-<pre class="programlisting">  "current-page"             <a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a>*            : Read / Write</pre>
+<pre class="programlisting">  "current-page"             <a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a>*            : Read / Write</pre>
 <p>The currently visible page.</p>
 </div>
 </div>
@@ -251,8 +251,8 @@ EomSidebar implements
 <div class="refsect2" title='The "page-added" signal'>
 <a name="EomSidebar-page-added"></a><h3>The <code class="literal">"page-added"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eomsidebar,
-                                                        <a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a>  *widget,
-                                                        <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)       : Run First</pre>
+                                                        <a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a>  *widget,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)       : Run First</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -279,8 +279,8 @@ EomSidebar implements
 <div class="refsect2" title='The "page-removed" signal'>
 <a name="EomSidebar-page-removed"></a><h3>The <code class="literal">"page-removed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="EomSidebar.html" title="EomSidebar"><span class="type">EomSidebar</span></a> *eomsidebar,
-                                                        <a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a>  *widget,
-                                                        <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)       : Run First</pre>
+                                                        <a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a>  *widget,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)       : Run First</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">

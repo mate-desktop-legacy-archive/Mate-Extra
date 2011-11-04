@@ -3,14 +3,14 @@
 # Jan Arne Petersen <jpetersen@jpetersen.org>, 2006.
 # Mario Blättermann <mariobl@gnome.org>, 2008.
 # Andre Klapper <ak-47@gmx.net>, 2009.
-# Felix Riemann <friemann@svn.mate.org>, 2009
+# Felix Riemann <friemann@svn.gnome.org>, 2009
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: eom\n"
 "POT-Creation-Date: 2009-03-21 19:36+0000\n"
 "PO-Revision-Date: 2009-01-24 18:36+0100\n"
-"Last-Translator: Felix Riemann <friemann@svn.mate.org>\n"
+"Last-Translator: Felix Riemann <friemann@svn.gnome.org>\n"
 "Language-Team: German <mate-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1736,7 +1736,7 @@ msgid "translator-credits"
 msgstr ""
 "Jan Arne Petersen <jpetersen@jpetersen.org>, 2006\n"
 "Mario Blättermann <mariobl@gnome.org>, 2008\n"
-"Felix Riemann <friemann@svn.mate.org>, 2009"
+"Felix Riemann <friemann@svn.gnome.org>, 2009"
 
 #~ msgid "December 2006"
 #~ msgstr "Dezember 2006"

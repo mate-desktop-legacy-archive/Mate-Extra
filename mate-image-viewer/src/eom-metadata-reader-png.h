@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2008 The Free Software Foundation
  *
- * Author: Felix Riemann <friemann@svn.mate.org>
+ * Author: Felix Riemann <friemann@svn.gnome.org>
  *
  * Based on the old EomMetadataReader code.
  *

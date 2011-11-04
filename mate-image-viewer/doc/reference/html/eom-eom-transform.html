@@ -41,13 +41,13 @@
 <a name="eom-eom-transform.synopsis"></a><h2>Synopsis</h2>
 <a name="EomTransform"></a><pre class="synopsis">enum                <a class="link" href="eom-eom-transform.html#EomTransformType" title="enum EomTransformType">EomTransformType</a>;
                     <a class="link" href="eom-eom-transform.html#EomTransform-struct" title="EomTransform">EomTransform</a>;
-<a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a>*          <a class="link" href="eom-eom-transform.html#eom-transform-apply" title="eom_transform_apply ()">eom_transform_apply</a>                 (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a>*          <a class="link" href="eom-eom-transform.html#eom-transform-apply" title="eom_transform_apply ()">eom_transform_apply</a>                 (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>);
 <a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-reverse" title="eom_transform_reverse ()">eom_transform_reverse</a>               (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);
 <a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-compose" title="eom_transform_compose ()">eom_transform_compose</a>               (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *compose</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-transform.html#eom-transform-is-identity" title="eom_transform_is_identity ()">eom_transform_is_identity</a>           (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-transform.html#eom-transform-is-identity" title="eom_transform_is_identity ()">eom_transform_is_identity</a>           (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);
 <a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-identity-new" title="eom_transform_identity_new ()">eom_transform_identity_new</a>          (<em class="parameter"><code><span class="type">void</span></code></em>);
 <a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-rotate-new" title="eom_transform_rotate_new ()">eom_transform_rotate_new</a>            (<em class="parameter"><code><span class="type">int</span> degree</code></em>);
 <a class="link" href="eom-eom-transform.html#EomTransform"><span class="returnvalue">EomTransform</span></a>*       <a class="link" href="eom-eom-transform.html#eom-transform-flip-new" title="eom_transform_flip_new ()">eom_transform_flip_new</a>              (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransformType" title="enum EomTransformType"><span class="type">EomTransformType</span></a> type</code></em>);
@@ -60,7 +60,7 @@
 <div class="refsect1" title="Object Hierarchy">
 <a name="eom-eom-transform.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----EomTransform
 </pre>
 </div>
@@ -97,8 +97,8 @@
 <hr>
 <div class="refsect2" title="eom_transform_apply ()">
 <a name="eom-transform-apply"></a><h3>eom_transform_apply ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a>*          eom_transform_apply                 (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a>*          eom_transform_apply                 (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-gdk-pixbuf.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-jobs.html#EomJob"><span class="type">EomJob</span></a> *job</code></em>);</pre>
 <p>
 </p>
@@ -181,7 +181,7 @@
 <hr>
 <div class="refsect2" title="eom_transform_is_identity ()">
 <a name="eom-transform-is-identity"></a><h3>eom_transform_is_identity ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_transform_is_identity           (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_transform_is_identity           (<em class="parameter"><code><a class="link" href="eom-eom-transform.html#EomTransform"><span class="type">EomTransform</span></a> *trans</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">

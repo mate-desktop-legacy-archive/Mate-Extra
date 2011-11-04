@@ -5,7 +5,7 @@ m4_define(eom_minor_version, 32)
 m4_define(eom_micro_version, 0)
 m4_define(eom_version, eom_major_version.eom_minor_version.eom_micro_version)
 
-AC_INIT([eom], eom_version, [http://bugzilla.mate.org/enter_bug.cgi?product=eom], [eom])
+AC_INIT([eom], eom_version, [http://bugzilla.gnome.org/enter_bug.cgi?product=eom], [eom])
 AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-bzip2])
 
 # Support silencing the build output if supported (automake-1.11+)

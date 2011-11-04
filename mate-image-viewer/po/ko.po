@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: eom\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=eom&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=eom&component=general\n"
 "POT-Creation-Date: 2010-03-14 03:20+0900\n"
 "PO-Revision-Date: 2010-03-14 03:31+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"

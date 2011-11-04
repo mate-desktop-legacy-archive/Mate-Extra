@@ -118,7 +118,7 @@ Date:   Mon Sep 20 17:04:19 2010 +0900
  1 files changed, 6 insertions(+), 6 deletions(-)
 
 commit 2dede0d387718dc6132ab5dc0615169f2cdd18ab
-Author: Yuri Myasoedov <ymyasoedov@src.mate.org>
+Author: Yuri Myasoedov <ymyasoedov@src.gnome.org>
 Date:   Sun Sep 19 21:08:14 2010 +0400
 
     Updated Russian translation
@@ -272,7 +272,7 @@ Date:   Wed Sep 15 17:53:36 2010 +0200
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 8a0601efd1cdb03416ec8d01f4d50cd041f3b9e1
-Author: Matej Urbančič <mateju@svn.mate.org>
+Author: Matej Urbančič <mateju@svn.gnome.org>
 Date:   Wed Sep 15 15:11:36 2010 +0200
 
     Updated Slovenian translation
@@ -291,7 +291,7 @@ Date:   Wed Sep 15 13:58:47 2010 +0600
  2 files changed, 1405 insertions(+), 0 deletions(-)
 
 commit 9eeeab88e45dda2c9ec00cd87c0f375a04b27147
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Wed Sep 15 09:10:43 2010 +0200
 
     Updated Spanish translation
@@ -531,7 +531,7 @@ Date:   Sun Sep 5 16:48:47 2010 +0200
  1 files changed, 28 insertions(+), 29 deletions(-)
 
 commit c492ea6adaa425e19b31324b17536acc8cc12f88
-Author: Matej Urbančič <mateju@svn.mate.org>
+Author: Matej Urbančič <mateju@svn.gnome.org>
 Date:   Sat Sep 4 19:56:51 2010 +0200
 
     Updated Slovenian translation
@@ -667,7 +667,7 @@ Date:   Sun Aug 29 13:19:10 2010 +0200
  1 files changed, 33 insertions(+), 32 deletions(-)
 
 commit b6a7c56bd263f7cb146cd73f52ff682ed506438d
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Sun Aug 29 11:26:28 2010 +0200
 
     Updated Spanish translation
@@ -866,7 +866,7 @@ Date:   Wed Aug 11 21:12:18 2010 +0700
  1 files changed, 1188 insertions(+), 617 deletions(-)
 
 commit 3f039873976f3ac1127b347ddded8b3c1f8d61a7
-Author: Matej Urbančič <mateju@svn.mate.org>
+Author: Matej Urbančič <mateju@svn.gnome.org>
 Date:   Mon Aug 9 14:52:04 2010 +0200
 
     Updated Slovenian translation
@@ -884,7 +884,7 @@ Date:   Mon Aug 9 15:41:54 2010 +0300
  1 files changed, 365 insertions(+), 304 deletions(-)
 
 commit 004ac3400694fd06a7c30ec52335a7b6ceb72cb8
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Mon Aug 9 02:28:19 2010 +0200
 
     Updated Spanish translation
@@ -965,7 +965,7 @@ Date:   Sat Aug 7 18:46:09 2010 +0200
  1 files changed, 158 insertions(+), 153 deletions(-)
 
 commit 6f0fc0d49456a5a8342d476457a4f0a8e0b5d43f
-Author: Matej Urbančič <mateju@svn.mate.org>
+Author: Matej Urbančič <mateju@svn.gnome.org>
 Date:   Fri Aug 6 15:20:01 2010 +0200
 
     Updated Slovenian translation
@@ -1001,7 +1001,7 @@ Date:   Thu Aug 5 15:58:15 2010 +0200
  1 files changed, 169 insertions(+), 154 deletions(-)
 
 commit b7e4b83c591580a580e6aef7c08ed8aef772bbf0
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Thu Aug 5 10:28:13 2010 +0200
 
     Updated Spanish translation
@@ -1092,7 +1092,7 @@ Date:   Tue Jul 13 07:51:09 2010 +0200
     Quoting Hylke Bons:
     "[...] it doesn't have a purpose and only causes visual clutter."
     
-    https://bugzilla.mate.org/show_bug.cgi?id=614807
+    https://bugzilla.gnome.org/show_bug.cgi?id=614807
 
  src/eom-window.c |    9 +--------
  1 files changed, 1 insertions(+), 8 deletions(-)
@@ -1159,7 +1159,7 @@ Date:   Sun Jun 13 13:31:40 2010 +0100
     
     Update from recent evince and totem changes, port to libgdbus.
     
-    https://bugzilla.mate.org/show_bug.cgi?id=621439
+    https://bugzilla.gnome.org/show_bug.cgi?id=621439
 
  configure.ac                                   |    2 +-
  cut-n-paste/totem-screensaver/totem-scrsaver.c |  382 ++++++++++++++----------
@@ -1537,7 +1537,7 @@ Date:   Sun May 9 14:37:00 2010 +0200
     
     Fixes warnings and unsaved toolbars when ~/.mate2 does not exists yet.
     Also set the directory permissions less permissive by default.
-    See: http://mail.mate.org/archives/eom-list/2010-May/msg00003.html
+    See: http://mail.gnome.org/archives/eom-list/2010-May/msg00003.html
 
  src/eom-util.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
@@ -1579,7 +1579,7 @@ Date:   Thu Apr 22 22:54:03 2010 +0200
  1 files changed, 416 insertions(+), 319 deletions(-)
 
 commit 7595af6ac3d2f230d15d88b5178ecafd046c520f
-Author: Shankar Prasad <sprasad@git.mate.org>
+Author: Shankar Prasad <sprasad@git.gnome.org>
 Date:   Thu Apr 22 12:38:53 2010 +0530
 
     Updated Kannada translations
@@ -1987,7 +1987,7 @@ Date:   Sun Mar 7 20:51:47 2010 +0100
  1 files changed, 7 insertions(+), 0 deletions(-)
 
 commit cef2bbf0efc316b75ce7f4d06f860d07ff087c7f
-Author: Miloš Popović <mpopovic@src.mate.org>
+Author: Miloš Popović <mpopovic@src.gnome.org>
 Date:   Sun Mar 7 17:12:32 2010 +0100
 
     Updated Serbian translations
@@ -2038,9 +2038,9 @@ Date:   Sun Feb 28 21:59:51 2010 +0900
 
     Updated Japanese translation.
       Original update by Hideki Yamane (Debian-JP).
-        http://l10n.mate.org/vertimus/eom/master/po/ja
+        http://l10n.gnome.org/vertimus/eom/master/po/ja
       Merged bug report by SUGITA Toshinori.
-        https://bugzilla.mate.org/show_bug.cgi?id=611279
+        https://bugzilla.gnome.org/show_bug.cgi?id=611279
 
  po/ja.po |  771 ++++++++++++++++++++++++++++++++++++++------------------------
  1 files changed, 473 insertions(+), 298 deletions(-)
@@ -2223,7 +2223,7 @@ Date:   Thu Feb 11 22:04:16 2010 +0100
  1 files changed, 326 insertions(+), 259 deletions(-)
 
 commit d4782d40fd43e7ffc3c57588767ad62fbc798ac5
-Author: Matej Urbančič <mateju@svn.mate.org>
+Author: Matej Urbančič <mateju@svn.gnome.org>
 Date:   Thu Feb 11 15:00:39 2010 +0100
 
     Updated Slovenian translation
@@ -2241,7 +2241,7 @@ Date:   Wed Feb 10 21:55:31 2010 +0100
  1 files changed, 133 insertions(+), 110 deletions(-)
 
 commit 01cfc78d6139ffe49ddc6152294139a93c07b271
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Wed Feb 10 07:55:39 2010 +0100
 
     Updated Spanish translation
@@ -2340,7 +2340,7 @@ Date:   Sat Feb 6 12:51:18 2010 +0000
  1 files changed, 7 insertions(+), 3 deletions(-)
 
 commit 444e57447fd1c7e5d738950743f547cb41c65a90
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Fri Feb 5 20:18:55 2010 +0100
 
     Updated Spanish translation
@@ -2380,7 +2380,7 @@ Date:   Fri Feb 5 15:54:05 2010 +0100
     
     This allows the user to crawl randomly through his collection.
     Patch posted to eom-list:
-    http://mail.mate.org/archives/eom-list/2009-December/msg00003.html
+    http://mail.gnome.org/archives/eom-list/2009-December/msg00003.html
 
  src/eom-thumb-view.c |    9 +++++++++
  src/eom-thumb-view.h |    3 ++-
@@ -2553,7 +2553,7 @@ Date:   Sun Jan 17 13:58:55 2010 +0100
  1 files changed, 11 insertions(+), 12 deletions(-)
 
 commit 1fb61f05ff2a59e3bb579b8731c263c4308ca722
-Author: Matej Urbančič <mateju@svn.mate.org>
+Author: Matej Urbančič <mateju@svn.gnome.org>
 Date:   Fri Jan 15 19:29:03 2010 +0100
 
     Updated Slovenian translation
@@ -2715,7 +2715,7 @@ Date:   Thu Jan 7 22:35:24 2010 +0100
  1 files changed, 290 insertions(+), 263 deletions(-)
 
 commit be03516a57f0456636223e1b42af0969e0913a19
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Wed Jan 6 16:00:32 2010 +0100
 
     Updated Spanish translation
@@ -2848,7 +2848,7 @@ Date:   Sun Dec 13 11:53:01 2009 +0100
  1 files changed, 1 insertions(+), 1 deletions(-)
 
 commit 3793023b1bb6ec41890f7c84c488370cc1a1c655
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Tue Dec 8 17:58:05 2009 +0100
 
     Updated Spanish translation, fixed typo
@@ -3005,7 +3005,7 @@ Date:   Tue Nov 17 21:26:21 2009 +0100
  1 files changed, 20 insertions(+), 1 deletions(-)
 
 commit 478928adeb7b49506cac094014ffdd6d1b119324
-Author: Matej Urbančič <mateju@svn.mate.org>
+Author: Matej Urbančič <mateju@svn.gnome.org>
 Date:   Tue Nov 17 08:28:03 2009 +0100
 
     Updated Slovenian translation
@@ -3014,7 +3014,7 @@ Date:   Tue Nov 17 08:28:03 2009 +0100
  1 files changed, 185 insertions(+), 150 deletions(-)
 
 commit 2acd79bddaf91bf39b01a80821dc7ee1c64dcb49
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Sun Nov 15 23:03:07 2009 +0100
 
     Updated Spanish translation
@@ -3219,7 +3219,7 @@ Date:   Thu Oct 15 13:14:34 2009 +0530
  1 files changed, 149 insertions(+), 132 deletions(-)
 
 commit 376ffe828bc48df79a41ac6dc97dc44d5741e270
-Author: Matej Urbančič <mateju@svn.mate.org>
+Author: Matej Urbančič <mateju@svn.gnome.org>
 Date:   Tue Oct 13 14:56:55 2009 +0200
 
     Updated Slovenian translation
@@ -3365,7 +3365,7 @@ Date:   Sat Oct 10 11:59:12 2009 +0200
  1 files changed, 14 insertions(+), 8 deletions(-)
 
 commit 2e1c0143565812264250e62ed4e38c368cf028f7
-Author: Jorge González <jorgegonz@svn.mate.org>
+Author: Jorge González <jorgegonz@svn.gnome.org>
 Date:   Sat Oct 10 10:54:24 2009 +0200
 
     Updated Spanish translation
@@ -3435,7 +3435,7 @@ Date:   Thu Oct 8 13:28:45 2009 +0200
  1 files changed, 3 insertions(+), 0 deletions(-)
 
 commit 00ff0cf6c523dac1cbb5ec869c78ef0f598a008a
-Author: Denis ARNAUD <darnaud@src.mate.org>
+Author: Denis ARNAUD <darnaud@src.gnome.org>
 Date:   Mon Oct 5 06:19:53 2009 +0200
 
     Updated breton translation
@@ -3511,7 +3511,7 @@ Date:   Mon Sep 21 00:03:17 2009 +0200
  1 files changed, 359 insertions(+), 361 deletions(-)
 
 commit e76786389211eebfe73f9d234893fa7d9ba83df1
-Author: Matej Urbančič <mateju@svn.mate.org>
+Author: Matej Urbančič <mateju@svn.gnome.org>
 Date:   Fri Sep 18 14:10:02 2009 +0200
 
     Updated Slovenian translation
@@ -3666,7 +3666,7 @@ Date:   Wed Sep 9 14:03:47 2009 +0530
  1 files changed, 251 insertions(+), 192 deletions(-)
 
 commit 97c9c36cc7e71706c50f599c34297bfef04b2e33
-Author: Denis ARNAUD <darnaud@src.mate.org>
+Author: Denis ARNAUD <darnaud@src.gnome.org>
 Date:   Wed Sep 9 06:06:56 2009 +0200
 
     Updated breton translation
@@ -3758,7 +3758,7 @@ Date:   Fri Aug 28 14:42:06 2009 +0200
  1 files changed, 261 insertions(+), 185 deletions(-)
 
 commit e5919d15240cde5fcdb824b643a848a73e4e4c88
-Author: Miloš Popović <mpopovic@src.mate.org>
+Author: Miloš Popović <mpopovic@src.gnome.org>
 Date:   Fri Aug 28 03:13:50 2009 +0200
 
     Updated Serbian translation
@@ -3786,7 +3786,7 @@ Date:   Tue Aug 25 20:00:21 2009 +0200
     each image a simple image dimension query could prevent autorotation
     entirely for an image. Fixes bgo#592945.
     
-    Closes: http://bugzilla.mate.org/show_bug.cgi?id=592945
+    Closes: http://bugzilla.gnome.org/show_bug.cgi?id=592945
 
  src/eom-image.c |    5 ++++-
  1 files changed, 4 insertions(+), 1 deletions(-)
@@ -3805,7 +3805,7 @@ Date:   Tue Aug 25 19:56:17 2009 +0200
  1 files changed, 2 insertions(+), 1 deletions(-)
 
 commit f54d50e992ed57bb06ea433de65d9cce8d129463
-Author: Denis Arnaud <darnaud@src.mate.org>
+Author: Denis Arnaud <darnaud@src.gnome.org>
 Date:   Tue Aug 25 04:58:26 2009 +0200
 
     Updated breton translation and added br in LINGUAS
@@ -3876,7 +3876,7 @@ Date:   Mon Aug 24 17:47:15 2009 +0200
     displays the application icon if available. This will make the menu look
     more like the "Open with" list in caja (not identical though).
     
-    Closes: http://bugzilla.mate.org/show_bug.cgi?id=592649 (bgo#592649).
+    Closes: http://bugzilla.gnome.org/show_bug.cgi?id=592649 (bgo#592649).
 
  src/eom-window.c |   36 +++++++++++++++++++++++++++++++++++-
  1 files changed, 35 insertions(+), 1 deletions(-)

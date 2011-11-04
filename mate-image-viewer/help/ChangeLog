@@ -1,4 +1,4 @@
-2009-06-10  Felix Riemann  <friemann@svn.mate.org>
+2009-06-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* de/de.po: Fix "Umlaut" entity producing at least warnings,
 	possibly failures, during build. Fixes bug #585357.
@@ -12,7 +12,7 @@
 	* fr/fr.po: Updated French translation.
 	* fr/figures/*: Updated figures.
 
-2009-03-23  Mario Blättermann  <mariobl@svn.mate.org>
+2009-03-23  Mario Blättermann  <mariobl@svn.gnome.org>
 
 	* de/de.po: Updated German translation by Felix Riemann.
 	* de/figures/*: Updated screenshot.
@@ -43,7 +43,7 @@
 
 	* en_GB/en_GB.po: Updated British English translation.
 
-2009-03-03  Felix Riemann  <friemann@svn.mate.org>
+2009-03-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.92 version marker.
 
@@ -51,7 +51,7 @@
 
 	* sv/sv.po: Updated Swedish translation.
 
-2009-02-24  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2009-02-24  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation.
 
@@ -63,7 +63,7 @@
 
 	* C/eom.xml: Fix a typo. Fixes bug #572889 (Łukasz Jernaś).
 
-2009-02-16  Felix Riemann  <friemann@svn.mate.org>
+2009-02-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.91 version marker.
 
@@ -76,7 +76,7 @@
 
 	* da/da.po: Updated Danish translation by Ask. H. Larsen
 
-2009-02-03  Felix Riemann  <friemann@svn.mate.org>
+2009-02-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.90 version marker.
 
@@ -92,34 +92,34 @@
 
 	* 2.25.4 version marker.
 
-2009-01-05  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2009-01-05  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
 
-2009-01-05  Felix Riemann  <friemann@svn.mate.org>
+2009-01-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* C/figures/eom_save_as_window.png: Use better compression. 
 
-2009-01-05  Felix Riemann  <friemann@svn.mate.org>
+2009-01-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* C/figures/eom_save_as_window.png: Update figure to show the actual
 	layout the dialog has since 2.19.1. 
 	* C/eom.xml: Several smaller updates in the 'Saving Multiple Images'
 	section.
 
-2008-12-15  Felix Riemann  <friemann@svn.mate.org>
+2008-12-15  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.3 version marker.
 
-2008-12-01  Felix Riemann  <friemann@svn.mate.org>
+2008-12-01  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.2 version marker.
 
-2008-11-03  Felix Riemann  <friemann@svn.mate.org>
+2008-11-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.1 version marker.
 
-2008-10-20  Felix Riemann  <friemann@svn.mate.org>
+2008-10-20  Felix Riemann  <friemann@svn.gnome.org>
 
 	* de/de.po: Fix typo. Avoids XML validation warning. Fixes bug #556842.
 
@@ -134,15 +134,15 @@
 	* Makefile.am: Added 'th' to DOC_LINGUAS.
 	* th/th.po: Added initial Thai translation by Sira Nokyoongtong.
 
-2008-09-26  Mario Blättermann  <mariobl@svn.mate.org>
+2008-09-26  Mario Blättermann  <mariobl@svn.gnome.org>
 
 	* de/de.po: Updated German translation
 
-2008-09-22  Felix Riemann  <friemann@svn.mate.org>
+2008-09-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.24.0 version marker.
 
-2008-09-21  Mario Blättermann  <mariobl@svn.mate.org>
+2008-09-21  Mario Blättermann  <mariobl@svn.gnome.org>
 
 	* de/de.po: Updated German translation
 	* de/figures/eom_toolbar_editor_window.png: Added new screenshot
@@ -155,7 +155,7 @@
 
 	* fr/fr.po: Updated French translation.
 
-2008-09-18  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-09-18  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
 	* es/figures/*: Updated Spanish screenshot
@@ -173,7 +173,7 @@
 	* pt_BR/pt_BR.po: Brazilian Portuguese translation updated by Leonardo
 	Gregianin.
 
-2008-07-19  Felix Riemann  <friemann@svn.mate.org>
+2008-07-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.23.90 version marker.
 
@@ -185,7 +185,7 @@
 
 	* sv/sv.po: Updated Swedish translation.
 
-2008-07-21  Felix Riemann  <friemann@svn.mate.org>
+2008-07-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.23.5 version marker.
 
@@ -211,7 +211,7 @@
 
 	* 2.23.3 version marker.
 
-2008-05-12  Felix Riemann  <friemann@svn.mate.org>
+2008-05-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.23.2 version marker.
 
@@ -219,11 +219,11 @@
 
 	* 2.23.1 version marker.
 
-2008-04-19  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-04-19  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
 
-2008-04-18  Felix Riemann  <friemann@svn.mate.org>
+2008-04-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* C/eom.xml: Update manual to reflect the current default scroll wheel
 	policy.	Also try to be a bit more precise about how "Zoom Fit" works.
@@ -244,7 +244,7 @@
 
 	* sv/sv.po: Updated Swedish translation.
 
-2008-03-07  Felix Riemann  <friemann@svn.mate.org>
+2008-03-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* Makefile.am: Keep lang list sorted alphabetically.
 	* C/eom.xml: 
@@ -268,12 +268,12 @@
 
 	* da/da.po: Updated Danish translation
 
-2008-03-04  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-03-04  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
 	* es/figures/*.png: Updated Screenshots
 
-2008-03-01  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2008-03-01  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR/pt_BR.po: Minor update in Brazilian Portuguese translation.
 
@@ -289,7 +289,7 @@
 
 	* 2.21.92 version marker.
 
-2008-02-22  Felix Riemann  <friemann@svn.mate.org>
+2008-02-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* zh_TW/zh_TW.po: Fix the fuzzy PO header (forgot it during g-d-u
 	conversion) which could produce build failures. Fixes bug #517702.
@@ -304,7 +304,7 @@
 	* da/da.po: Added Danish translaton
 	* Makefile.am: Added da to DOC_LINGUAS
 
-2008-02-11  Felix Riemann  <friemann@svn.mate.org>
+2008-02-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.21.90 version marker.
 
@@ -312,7 +312,7 @@
 
 	* it/it.po: Updated Italian translation
 
-2008-02-02  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2008-02-02  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR/pt_BR.po: Brazilian Portuguese translation updated by Rodrigo
 	Flores and myself.
@@ -321,7 +321,7 @@
 
 	* oc.po: Updated Occitan translation.
 
-2008-01-16  Felix Riemann  <friemann@svn.mate.org>
+2008-01-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* Makefile.am:
 	* eu/Makefile.am:
@@ -347,11 +347,11 @@
 	Convert remaining translations to g-d-u. That should make
 	"--disable-scrollkeeper" work. Fixes bug #322728.
 
-2008-01-13  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-01-13  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
 
-2008-01-13  Felix Riemann  <friemann@svn.mate.org>
+2008-01-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* C/eom.xml:
 	* C/figures/eom_toolbar_editor_window.png:
@@ -409,7 +409,7 @@
 
 	* sv/sv.po: Updated Swedish translation.
 
-2007-08-28  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2007-08-28  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
 
@@ -429,7 +429,7 @@
 
 	* fr/fr.po: Updated French translation.
 
-2007-07-15  Felix Riemann  <friemann@svn.mate.org>
+2007-07-15  Felix Riemann  <friemann@svn.gnome.org>
 
 	* en_GB/en_GB.po: Remove executable bit.
 
@@ -441,7 +441,7 @@
 
 	* sv/sv.po: Updated Swedish translation.
 
-2007-06-25  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-06-25  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
 
@@ -471,11 +471,11 @@
 
 	* 2.19.1 version marker.
 
-2007-04-23  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-04-23  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation.
 
-2007-04-22  Felix Riemann  <friemann@svn.mate.org>
+2007-04-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* C/eom.xml: Fix wrong label. Fixes bug 431297.
 
@@ -519,7 +519,7 @@
 
 	* fr/fr.po: Updated French translation.
 
-2007-03-04  Raphael Higino  <raphaelh@svn.mate.org>
+2007-03-04  Raphael Higino  <raphaelh@svn.gnome.org>
 
 	* pt_BR/pt_BR.po: Updated Brazilian Portuguese translation
 	by Amadeu A. Barbosa Junior <amadeu@gmail.com>.
@@ -573,7 +573,7 @@
 	* en_GB/en_GB.po: Added English (British) translation
 	* Makefile.am: Added en_GB to DOC_LINGUAS
 
-2007-02-04  Felix Riemann  <friemann@svn.mate.org>
+2007-02-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* Makefile.am: Fix Makefile.
 	Set svn:ignore properties where necessary.
@@ -715,7 +715,7 @@
 
 	* 2.15.90 version marker.
 
-2006-07-13  Lucas Rocha  <lucasr@cvs.mate.org>
+2006-07-13  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* C/eom.xml: manual update from
 	Felix Riemann <felix@hsgheli.de>.
@@ -736,7 +736,7 @@
 
 	* 2.15.1 version marker.
 
-2006-04-20  Lucas Rocha  <lucasr@cvs.mate.org>
+2006-04-20  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* C/eom.xml, C/figures/*: manual update from
 	Felix Riemann <felix@hsgheli.de>.

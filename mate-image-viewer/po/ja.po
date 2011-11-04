@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: eom mate-2-32\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=eom&component=general\n"
 "POT-Creation-Date: 2010-09-19 17:08+0000\n"
 "PO-Revision-Date: 2010-09-15 01:45+0900\n"
@@ -746,14 +746,14 @@ msgid "Value"
 msgstr "値"
 
 # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=550830
-# https://bugzilla.mate.org/show_bug.cgi?id=611279
+# https://bugzilla.gnome.org/show_bug.cgi?id=611279
 #. A strftime-formatted string, to display the date the image was taken.
 #: ../src/eom-exif-util.c:113 ../src/eom-exif-util.c:153
 msgid "%a, %d %B %Y  %X"
 msgstr "%Y年%B%e日 (%a) %X"
 
 # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=550830
-# https://bugzilla.mate.org/show_bug.cgi?id=611279
+# https://bugzilla.gnome.org/show_bug.cgi?id=611279
 #. A strftime-formatted string, to display the date the image was taken, for the case we don't have the time.
 #: ../src/eom-exif-util.c:147
 msgid "%a, %d %B %Y"

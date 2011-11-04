@@ -43,10 +43,10 @@
 <a name="eom-eom-properties-dialog.synopsis"></a><h2>Synopsis</h2>
 <a name="EomPropertiesDialog"></a><pre class="synopsis">enum                <a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialogPage" title="enum EomPropertiesDialogPage">EomPropertiesDialogPage</a>;
                     <a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog-struct" title="EomPropertiesDialog">EomPropertiesDialog</a>;
-<a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           <a class="link" href="eom-eom-properties-dialog.html#eom-properties-dialog-new" title="eom_properties_dialog_new ()">eom_properties_dialog_new</a>           (<em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           <a class="link" href="eom-eom-properties-dialog.html#eom-properties-dialog-new" title="eom_properties_dialog_new ()">eom_properties_dialog_new</a>           (<em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-thumb-view.html#EomThumbView"><span class="type">EomThumbView</span></a> *thumbview</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *next_image_action</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *previous_image_action</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *next_image_action</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *previous_image_action</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-properties-dialog.html#eom-properties-dialog-update" title="eom_properties_dialog_update ()">eom_properties_dialog_update</a>        (<em class="parameter"><code><a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog"><span class="type">EomPropertiesDialog</span></a> *prop</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-image.html#EomImage"><span class="type">EomImage</span></a> *image</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-properties-dialog.html#eom-properties-dialog-set-page" title="eom_properties_dialog_set_page ()">eom_properties_dialog_set_page</a>      (<em class="parameter"><code><a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog"><span class="type">EomPropertiesDialog</span></a> *prop</code></em>,
@@ -56,7 +56,7 @@
 <div class="refsect1" title="Object Hierarchy">
 <a name="eom-eom-properties-dialog.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----<a class="link" href="EomDialog.html" title="EomDialog">EomDialog</a>
          +----EomPropertiesDialog
 </pre>
@@ -64,7 +64,7 @@
 <div class="refsect1" title="Properties">
 <a name="eom-eom-properties-dialog.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog--netbook-mode" title='The "netbook-mode" property'>netbook-mode</a>"             <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
+  "<a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog--netbook-mode" title='The "netbook-mode" property'>netbook-mode</a>"             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
   "<a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog--thumbview" title='The "thumbview" property'>thumbview</a>"                <a class="link" href="eom-eom-thumb-view.html#EomThumbView"><span class="type">EomThumbView</span></a>*         : Read / Write / Construct Only
 </pre>
 </div>
@@ -97,10 +97,10 @@
 <hr>
 <div class="refsect2" title="eom_properties_dialog_new ()">
 <a name="eom-properties-dialog-new"></a><h3>eom_properties_dialog_new ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           eom_properties_dialog_new           (<em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *           eom_properties_dialog_new           (<em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-thumb-view.html#EomThumbView"><span class="type">EomThumbView</span></a> *thumbview</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *next_image_action</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *previous_image_action</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *next_image_action</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkAction.html"><span class="type">GtkAction</span></a> *previous_image_action</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -185,7 +185,7 @@
 <a name="eom-eom-properties-dialog.property-details"></a><h2>Property Details</h2>
 <div class="refsect2" title='The "netbook-mode" property'>
 <a name="EomPropertiesDialog--netbook-mode"></a><h3>The <code class="literal">"netbook-mode"</code> property</h3>
-<pre class="programlisting">  "netbook-mode"             <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<pre class="programlisting">  "netbook-mode"             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
 <p>Netbook Mode.</p>
 <p>Default value: FALSE</p>
 </div>

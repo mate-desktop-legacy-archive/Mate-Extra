@@ -37,20 +37,20 @@
 </tr></table></div>
 <div class="refsynopsisdiv" title="Synopsis">
 <a name="eom-eom-util.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis"><span class="returnvalue">void</span>                <a class="link" href="eom-eom-util.html#eom-util-show-help" title="eom_util_show_help ()">eom_util_show_help</a>                  (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *section</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="eom-eom-util.html#eom-util-make-valid-utf8" title="eom_util_make_valid_utf8 ()">eom_util_make_valid_utf8</a>            (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            <a class="link" href="eom-eom-util.html#eom-util-parse-uri-string-list-to-file-list" title="eom_util_parse_uri_string_list_to_file_list ()">eom_util_parse_uri_string_list_to_file_list</a>
-                                                        (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri_list</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            <a class="link" href="eom-eom-util.html#eom-util-string-list-to-file-list" title="eom_util_string_list_to_file_list ()">eom_util_string_list_to_file_list</a>   (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *string_list</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            <a class="link" href="eom-eom-util.html#eom-util-strings-to-file-list" title="eom_util_strings_to_file_list ()">eom_util_strings_to_file_list</a>       (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **strings</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            <a class="link" href="eom-eom-util.html#eom-util-string-array-to-list" title="eom_util_string_array_to_list ()">eom_util_string_array_to_list</a>       (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **files</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> create_uri</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **            <a class="link" href="eom-eom-util.html#eom-util-string-array-make-absolute" title="eom_util_string_array_make_absolute ()">eom_util_string_array_make_absolute</a> (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **files</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-util.html#eom-util-launch-desktop-file" title="eom_util_launch_desktop_file ()">eom_util_launch_desktop_file</a>        (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> user_time</code></em>);
-const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *    <a class="link" href="eom-eom-util.html#eom-util-dot-dir" title="eom_util_dot_dir ()">eom_util_dot_dir</a>                    (<em class="parameter"><code><span class="type">void</span></code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-util.html#eom-util-file-is-persistent" title="eom_util_file_is_persistent ()">eom_util_file_is_persistent</a>         (<em class="parameter"><code><a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);
+<pre class="synopsis"><span class="returnvalue">void</span>                <a class="link" href="eom-eom-util.html#eom-util-show-help" title="eom_util_show_help ()">eom_util_show_help</a>                  (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *section</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="eom-eom-util.html#eom-util-make-valid-utf8" title="eom_util_make_valid_utf8 ()">eom_util_make_valid_utf8</a>            (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            <a class="link" href="eom-eom-util.html#eom-util-parse-uri-string-list-to-file-list" title="eom_util_parse_uri_string_list_to_file_list ()">eom_util_parse_uri_string_list_to_file_list</a>
+                                                        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri_list</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            <a class="link" href="eom-eom-util.html#eom-util-string-list-to-file-list" title="eom_util_string_list_to_file_list ()">eom_util_string_list_to_file_list</a>   (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *string_list</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            <a class="link" href="eom-eom-util.html#eom-util-strings-to-file-list" title="eom_util_strings_to_file_list ()">eom_util_strings_to_file_list</a>       (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **strings</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            <a class="link" href="eom-eom-util.html#eom-util-string-array-to-list" title="eom_util_string_array_to_list ()">eom_util_string_array_to_list</a>       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **files</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> create_uri</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **            <a class="link" href="eom-eom-util.html#eom-util-string-array-make-absolute" title="eom_util_string_array_make_absolute ()">eom_util_string_array_make_absolute</a> (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **files</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-util.html#eom-util-launch-desktop-file" title="eom_util_launch_desktop_file ()">eom_util_launch_desktop_file</a>        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> user_time</code></em>);
+const    <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *    <a class="link" href="eom-eom-util.html#eom-util-dot-dir" title="eom_util_dot_dir ()">eom_util_dot_dir</a>                    (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-util.html#eom-util-file-is-persistent" title="eom_util_file_is_persistent ()">eom_util_file_is_persistent</a>         (<em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);
 </pre>
 </div>
 <div class="refsect1" title="Description">
@@ -62,8 +62,8 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <a name="eom-eom-util.details"></a><h2>Details</h2>
 <div class="refsect2" title="eom_util_show_help ()">
 <a name="eom-util-show-help"></a><h3>eom_util_show_help ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                eom_util_show_help                  (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *section</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>                eom_util_show_help                  (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *section</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -85,7 +85,7 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <hr>
 <div class="refsect2" title="eom_util_make_valid_utf8 ()">
 <a name="eom-util-make-valid-utf8"></a><h3>eom_util_make_valid_utf8 ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             eom_util_make_valid_utf8            (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             eom_util_make_valid_utf8            (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -107,8 +107,8 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <hr>
 <div class="refsect2" title="eom_util_parse_uri_string_list_to_file_list ()">
 <a name="eom-util-parse-uri-string-list-to-file-list"></a><h3>eom_util_parse_uri_string_list_to_file_list ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            eom_util_parse_uri_string_list_to_file_list
-                                                        (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri_list</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            eom_util_parse_uri_string_list_to_file_list
+                                                        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri_list</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -130,7 +130,7 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <hr>
 <div class="refsect2" title="eom_util_string_list_to_file_list ()">
 <a name="eom-util-string-list-to-file-list"></a><h3>eom_util_string_list_to_file_list ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            eom_util_string_list_to_file_list   (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *string_list</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            eom_util_string_list_to_file_list   (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *string_list</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -152,7 +152,7 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <hr>
 <div class="refsect2" title="eom_util_strings_to_file_list ()">
 <a name="eom-util-strings-to-file-list"></a><h3>eom_util_strings_to_file_list ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            eom_util_strings_to_file_list       (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **strings</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            eom_util_strings_to_file_list       (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **strings</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -174,8 +174,8 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <hr>
 <div class="refsect2" title="eom_util_string_array_to_list ()">
 <a name="eom-util-string-array-to-list"></a><h3>eom_util_string_array_to_list ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            eom_util_string_array_to_list       (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **files</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> create_uri</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            eom_util_string_array_to_list       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **files</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> create_uri</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -202,7 +202,7 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <hr>
 <div class="refsect2" title="eom_util_string_array_make_absolute ()">
 <a name="eom-util-string-array-make-absolute"></a><h3>eom_util_string_array_make_absolute ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **            eom_util_string_array_make_absolute (<em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **files</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **            eom_util_string_array_make_absolute (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **files</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -224,8 +224,8 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <hr>
 <div class="refsect2" title="eom_util_launch_desktop_file ()">
 <a name="eom-util-launch-desktop-file"></a><h3>eom_util_launch_desktop_file ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_util_launch_desktop_file        (<em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> user_time</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_util_launch_desktop_file        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> user_time</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -252,7 +252,7 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <hr>
 <div class="refsect2" title="eom_util_dot_dir ()">
 <a name="eom-util-dot-dir"></a><h3>eom_util_dot_dir ()</h3>
-<pre class="programlisting">const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *    eom_util_dot_dir                    (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<pre class="programlisting">const    <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *    eom_util_dot_dir                    (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -267,7 +267,7 @@ const    <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.h
 <hr>
 <div class="refsect2" title="eom_util_file_is_persistent ()">
 <a name="eom-util-file-is-persistent"></a><h3>eom_util_file_is_persistent ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_util_file_is_persistent         (<em class="parameter"><code><a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_util_file_is_persistent         (<em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
 <p>
 Checks whether <em class="parameter"><code>file</code></em> is a non-removable local mount.
 </p>
@@ -276,13 +276,13 @@ Checks whether <em class="parameter"><code>file</code></em> is a non-removable l
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>file</code></em> :</span></p></td>
-<td>a <a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>
+<td>a <a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>file</code></em> is in a non-removable mount,
-<a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise or when it is remote.
+<td> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>file</code></em> is in a non-removable mount,
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise or when it is remote.
 </td>
 </tr>
 </tbody>

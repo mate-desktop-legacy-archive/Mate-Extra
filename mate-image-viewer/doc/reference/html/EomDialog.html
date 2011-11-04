@@ -43,19 +43,19 @@
 <a name="EomDialog.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis">                    <a class="link" href="EomDialog.html#EomDialog-struct" title="EomDialog">EomDialog</a>;
 <span class="returnvalue">void</span>                <a class="link" href="EomDialog.html#eom-dialog-construct" title="eom_dialog_construct ()">eom_dialog_construct</a>                (<em class="parameter"><code><a class="link" href="EomDialog.html" title="EomDialog"><span class="type">EomDialog</span></a> *dialog</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *glade_file</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dlg_node</code></em>);
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *glade_file</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dlg_node</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="EomDialog.html#eom-dialog-show" title="eom_dialog_show ()">eom_dialog_show</a>                     (<em class="parameter"><code><a class="link" href="EomDialog.html" title="EomDialog"><span class="type">EomDialog</span></a> *dialog</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="EomDialog.html#eom-dialog-hide" title="eom_dialog_hide ()">eom_dialog_hide</a>                     (<em class="parameter"><code><a class="link" href="EomDialog.html" title="EomDialog"><span class="type">EomDialog</span></a> *dialog</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="EomDialog.html#eom-dialog-get-controls" title="eom_dialog_get_controls ()">eom_dialog_get_controls</a>             (<em class="parameter"><code><a class="link" href="EomDialog.html" title="EomDialog"><span class="type">EomDialog</span></a> *dialog</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property_id</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property_id</code></em>,
                                                          <em class="parameter"><code>...</code></em>);
 </pre>
 </div>
 <div class="refsect1" title="Object Hierarchy">
 <a name="EomDialog.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----EomDialog
          +----<a class="link" href="EomPreferencesDialog.html" title="EomPreferencesDialog">EomPreferencesDialog</a>
          +----<a class="link" href="eom-eom-properties-dialog.html#EomPropertiesDialog">EomPropertiesDialog</a>
@@ -64,7 +64,7 @@
 <div class="refsect1" title="Properties">
 <a name="EomDialog.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="EomDialog.html#EomDialog--parent-window" title='The "parent-window" property'>parent-window</a>"            <a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a>*            : Read / Write / Construct Only
+  "<a class="link" href="EomDialog.html#EomDialog--parent-window" title='The "parent-window" property'>parent-window</a>"            <a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a>*            : Read / Write / Construct Only
 </pre>
 </div>
 <div class="refsect1" title="Description">
@@ -84,8 +84,8 @@
 <div class="refsect2" title="eom_dialog_construct ()">
 <a name="eom-dialog-construct"></a><h3>eom_dialog_construct ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_dialog_construct                (<em class="parameter"><code><a class="link" href="EomDialog.html" title="EomDialog"><span class="type">EomDialog</span></a> *dialog</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *glade_file</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dlg_node</code></em>);</pre>
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *glade_file</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dlg_node</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -143,7 +143,7 @@
 <div class="refsect2" title="eom_dialog_get_controls ()">
 <a name="eom-dialog-get-controls"></a><h3>eom_dialog_get_controls ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_dialog_get_controls             (<em class="parameter"><code><a class="link" href="EomDialog.html" title="EomDialog"><span class="type">EomDialog</span></a> *dialog</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property_id</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property_id</code></em>,
                                                          <em class="parameter"><code>...</code></em>);</pre>
 <p>
 </p>
@@ -173,7 +173,7 @@
 <a name="EomDialog.property-details"></a><h2>Property Details</h2>
 <div class="refsect2" title='The "parent-window" property'>
 <a name="EomDialog--parent-window"></a><h3>The <code class="literal">"parent-window"</code> property</h3>
-<pre class="programlisting">  "parent-window"            <a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a>*            : Read / Write / Construct Only</pre>
+<pre class="programlisting">  "parent-window"            <a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html"><span class="type">GtkWindow</span></a>*            : Read / Write / Construct Only</pre>
 <p>Parent window.</p>
 </div>
 </div>

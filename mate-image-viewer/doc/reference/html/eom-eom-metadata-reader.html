@@ -47,15 +47,15 @@
 enum                <a class="link" href="eom-eom-metadata-reader.html#EomMetadataFileType" title="enum EomMetadataFileType">EomMetadataFileType</a>;
 <a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="returnvalue">EomMetadataReader</span></a>*  <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-new" title="eom_metadata_reader_new ()">eom_metadata_reader_new</a>             (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataFileType" title="enum EomMetadataFileType"><span class="type">EomMetadataFileType</span></a> type</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-consume" title="eom_metadata_reader_consume ()">eom_metadata_reader_consume</a>         (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> len</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-finished" title="eom_metadata_reader_finished ()">eom_metadata_reader_finished</a>        (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> len</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-finished" title="eom_metadata_reader_finished ()">eom_metadata_reader_finished</a>        (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-exif-chunk" title="eom_metadata_reader_get_exif_chunk ()">eom_metadata_reader_get_exif_chunk</a>  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> **data</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> **data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);
 <span class="returnvalue">ExifData</span>*           <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-exif-data" title="eom_metadata_reader_get_exif_data ()">eom_metadata_reader_get_exif_data</a>   (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
 <span class="returnvalue">XmpPtr</span>              <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-xmp-data" title="eom_metadata_reader_get_xmp_data ()">eom_metadata_reader_get_xmp_data</a>    (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-iptc-chunk" title="eom_metadata_reader_get_iptc_chunk ()">eom_metadata_reader_get_iptc_chunk</a>  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-iptc-chunk" title="eom_metadata_reader_get_iptc_chunk ()">eom_metadata_reader_get_iptc_chunk</a>  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
 <span class="returnvalue">IptcData</span>*           <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-iptc-data" title="eom_metadata_reader_get_iptc_data ()">eom_metadata_reader_get_iptc_data</a>   (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
 <span class="returnvalue">cmsHPROFILE</span>         <a class="link" href="eom-eom-metadata-reader.html#eom-metadata-reader-get-icc-profile" title="eom_metadata_reader_get_icc_profile ()">eom_metadata_reader_get_icc_profile</a> (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);
 </pre>
@@ -165,8 +165,8 @@ EomMetadataReader is implemented by
 <div class="refsect2" title="eom_metadata_reader_consume ()">
 <a name="eom-metadata-reader-consume"></a><h3>eom_metadata_reader_consume ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_metadata_reader_consume         (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> len</code></em>);</pre>
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> len</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -193,7 +193,7 @@ EomMetadataReader is implemented by
 <hr>
 <div class="refsect2" title="eom_metadata_reader_finished ()">
 <a name="eom-metadata-reader-finished"></a><h3>eom_metadata_reader_finished ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_metadata_reader_finished        (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_metadata_reader_finished        (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -216,8 +216,8 @@ EomMetadataReader is implemented by
 <div class="refsect2" title="eom_metadata_reader_get_exif_chunk ()">
 <a name="eom-metadata-reader-get-exif-chunk"></a><h3>eom_metadata_reader_get_exif_chunk ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_metadata_reader_get_exif_chunk  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> **data</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> **data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">
@@ -288,7 +288,7 @@ EomMetadataReader is implemented by
 <hr>
 <div class="refsect2" title="eom_metadata_reader_get_iptc_chunk ()">
 <a name="eom-metadata-reader-get-iptc-chunk"></a><h3>eom_metadata_reader_get_iptc_chunk ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            eom_metadata_reader_get_iptc_chunk  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            eom_metadata_reader_get_iptc_chunk  (<em class="parameter"><code><a class="link" href="eom-eom-metadata-reader.html#EomMetadataReader"><span class="type">EomMetadataReader</span></a> *emr</code></em>);</pre>
 <p>
 </p>
 <div class="variablelist"><table border="0">

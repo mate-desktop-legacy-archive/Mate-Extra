@@ -45,12 +45,12 @@
 <a name="eom-eom-thumb-nav.synopsis"></a><h2>Synopsis</h2>
 <a name="EomThumbNav"></a><pre class="synopsis">enum                <a class="link" href="eom-eom-thumb-nav.html#EomThumbNavMode" title="enum EomThumbNavMode">EomThumbNavMode</a>;
                     <a class="link" href="eom-eom-thumb-nav.html#EomThumbNav-struct" title="EomThumbNav">EomThumbNav</a>;
-<a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         <a class="link" href="eom-eom-thumb-nav.html#eom-thumb-nav-new" title="eom_thumb_nav_new ()">eom_thumb_nav_new</a>                   (<em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *thumbview</code></em>,
+<a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         <a class="link" href="eom-eom-thumb-nav.html#eom-thumb-nav-new" title="eom_thumb_nav_new ()">eom_thumb_nav_new</a>                   (<em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *thumbview</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNavMode" title="enum EomThumbNavMode"><span class="type">EomThumbNavMode</span></a> mode</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_buttons</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-thumb-nav.html#eom-thumb-nav-get-show-buttons" title="eom_thumb_nav_get_show_buttons ()">eom_thumb_nav_get_show_buttons</a>      (<em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNav"><span class="type">EomThumbNav</span></a> *nav</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_buttons</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-thumb-nav.html#eom-thumb-nav-get-show-buttons" title="eom_thumb_nav_get_show_buttons ()">eom_thumb_nav_get_show_buttons</a>      (<em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNav"><span class="type">EomThumbNav</span></a> *nav</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-thumb-nav.html#eom-thumb-nav-set-show-buttons" title="eom_thumb_nav_set_show_buttons ()">eom_thumb_nav_set_show_buttons</a>      (<em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNav"><span class="type">EomThumbNav</span></a> *nav</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_buttons</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_buttons</code></em>);
 <a class="link" href="eom-eom-thumb-nav.html#EomThumbNavMode" title="enum EomThumbNavMode"><span class="returnvalue">EomThumbNavMode</span></a>     <a class="link" href="eom-eom-thumb-nav.html#eom-thumb-nav-get-mode" title="eom_thumb_nav_get_mode ()">eom_thumb_nav_get_mode</a>              (<em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNav"><span class="type">EomThumbNav</span></a> *nav</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-thumb-nav.html#eom-thumb-nav-set-mode" title="eom_thumb_nav_set_mode ()">eom_thumb_nav_set_mode</a>              (<em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNav"><span class="type">EomThumbNav</span></a> *nav</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNavMode" title="enum EomThumbNavMode"><span class="type">EomThumbNavMode</span></a> mode</code></em>);
@@ -59,13 +59,13 @@
 <div class="refsect1" title="Object Hierarchy">
 <a name="eom-eom-thumb-nav.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
-         +----<a href="http://library.mate.org/devel/gtk/unstable/GtkObject.html">GtkObject</a>
-               +----<a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html">GtkWidget</a>
-                     +----<a href="http://library.mate.org/devel/gtk/unstable/GtkContainer.html">GtkContainer</a>
-                           +----<a href="http://library.mate.org/devel/gtk/unstable/GtkBox.html">GtkBox</a>
-                                 +----<a href="http://library.mate.org/devel/gtk/unstable/GtkHBox.html">GtkHBox</a>
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+         +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkObject.html">GtkObject</a>
+               +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html">GtkWidget</a>
+                     +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkContainer.html">GtkContainer</a>
+                           +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkBox.html">GtkBox</a>
+                                 +----<a href="http://library.gnome.org/devel/gtk/unstable/GtkHBox.html">GtkHBox</a>
                                        +----EomThumbNav
 </pre>
 </div>
@@ -73,13 +73,13 @@
 <a name="eom-eom-thumb-nav.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
 <p>
 EomThumbNav implements
- AtkImplementorIface,  <a href="http://library.mate.org/devel/gtk/unstable/gtk-gtkbuildable.html#GtkBuildable">GtkBuildable</a> and  <a href="http://library.mate.org/devel/gtk/unstable/gtk-Orientable.html#GtkOrientable">GtkOrientable</a>.</p>
+ AtkImplementorIface,  <a href="http://library.gnome.org/devel/gtk/unstable/gtk-gtkbuildable.html#GtkBuildable">GtkBuildable</a> and  <a href="http://library.gnome.org/devel/gtk/unstable/gtk-Orientable.html#GtkOrientable">GtkOrientable</a>.</p>
 </div>
 <div class="refsect1" title="Properties">
 <a name="eom-eom-thumb-nav.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="eom-eom-thumb-nav.html#EomThumbNav--mode" title='The "mode" property'>mode</a>"                     <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write
-  "<a class="link" href="eom-eom-thumb-nav.html#EomThumbNav--show-buttons" title='The "show-buttons" property'>show-buttons</a>"             <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
+  "<a class="link" href="eom-eom-thumb-nav.html#EomThumbNav--mode" title='The "mode" property'>mode</a>"                     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write
+  "<a class="link" href="eom-eom-thumb-nav.html#EomThumbNav--show-buttons" title='The "show-buttons" property'>show-buttons</a>"             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
   "<a class="link" href="eom-eom-thumb-nav.html#EomThumbNav--thumbview" title='The "thumbview" property'>thumbview</a>"                <a class="link" href="eom-eom-thumb-view.html#EomThumbView"><span class="type">EomThumbView</span></a>*         : Read / Write / Construct Only
 </pre>
 </div>
@@ -112,9 +112,9 @@ EomThumbNav implements
 <hr>
 <div class="refsect2" title="eom_thumb_nav_new ()">
 <a name="eom-thumb-nav-new"></a><h3>eom_thumb_nav_new ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         eom_thumb_nav_new                   (<em class="parameter"><code><a href="http://library.mate.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *thumbview</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         eom_thumb_nav_new                   (<em class="parameter"><code><a href="http://library.gnome.org/devel/gtk/unstable/GtkWidget.html"><span class="type">GtkWidget</span></a> *thumbview</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNavMode" title="enum EomThumbNavMode"><span class="type">EomThumbNavMode</span></a> mode</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_buttons</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_buttons</code></em>);</pre>
 <p>
 Creates a new thumbnail navigation widget.
 </p>
@@ -147,7 +147,7 @@ Creates a new thumbnail navigation widget.
 <hr>
 <div class="refsect2" title="eom_thumb_nav_get_show_buttons ()">
 <a name="eom-thumb-nav-get-show-buttons"></a><h3>eom_thumb_nav_get_show_buttons ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_thumb_nav_get_show_buttons      (<em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNav"><span class="type">EomThumbNav</span></a> *nav</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_thumb_nav_get_show_buttons      (<em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNav"><span class="type">EomThumbNav</span></a> *nav</code></em>);</pre>
 <p>
 Gets whether the navigation buttons are visible.
 </p>
@@ -161,8 +161,8 @@ Gets whether the navigation buttons are visible.
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the navigation buttons are visible,
-<a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.
+<td> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the navigation buttons are visible,
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.
 </td>
 </tr>
 </tbody>
@@ -172,7 +172,7 @@ Gets whether the navigation buttons are visible.
 <div class="refsect2" title="eom_thumb_nav_set_show_buttons ()">
 <a name="eom-thumb-nav-set-show-buttons"></a><h3>eom_thumb_nav_set_show_buttons ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                eom_thumb_nav_set_show_buttons      (<em class="parameter"><code><a class="link" href="eom-eom-thumb-nav.html#EomThumbNav"><span class="type">EomThumbNav</span></a> *nav</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_buttons</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_buttons</code></em>);</pre>
 <p>
 Sets whether the navigation buttons to the left and right of the
 widget should be visible.
@@ -188,7 +188,7 @@ widget should be visible.
 <tr>
 <td><p><span class="term"><em class="parameter"><code>show_buttons</code></em> :</span></p></td>
 <td>
-<a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to show the buttons, <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to hide them.
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to show the buttons, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to hide them.
 </td>
 </tr>
 </tbody>
@@ -246,7 +246,7 @@ Sets the navigation mode in <em class="parameter"><code>nav</code></em>. See <a 
 <a name="eom-eom-thumb-nav.property-details"></a><h2>Property Details</h2>
 <div class="refsect2" title='The "mode" property'>
 <a name="EomThumbNav--mode"></a><h3>The <code class="literal">"mode"</code> property</h3>
-<pre class="programlisting">  "mode"                     <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write</pre>
+<pre class="programlisting">  "mode"                     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write</pre>
 <p>Thumb navigator mode.</p>
 <p>Allowed values: [0,2]</p>
 <p>Default value: 0</p>
@@ -254,7 +254,7 @@ Sets the navigation mode in <em class="parameter"><code>nav</code></em>. See <a 
 <hr>
 <div class="refsect2" title='The "show-buttons" property'>
 <a name="EomThumbNav--show-buttons"></a><h3>The <code class="literal">"show-buttons"</code> property</h3>
-<pre class="programlisting">  "show-buttons"             <a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<pre class="programlisting">  "show-buttons"             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
 <p>Whether to show navigation buttons or not.</p>
 <p>Default value: TRUE</p>
 </div>

@@ -123,29 +123,29 @@
 	This make the handler easier and should fix crashes with plugins
 	using Clutter (at least Clutter-0.8).
 
-2009-06-16  Felix Riemann  <friemann@svn.mate.org>
+2009-06-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Post-release version bump.
 
-2009-06-16  Felix Riemann  <friemann@svn.mate.org>
+2009-06-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.27.3.
 
-2009-05-26  Felix Riemann  <friemann@svn.mate.org>
+2009-05-26  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.27.2.
 
-2009-05-23  Felix Riemann  <friemann@svn.mate.org>
+2009-05-23  Felix Riemann  <friemann@svn.gnome.org>
 
 	* doc/reference/eom-sections.txt:
 	* src/eom-scroll-view.h:
 	Remove traces of pre-split interpolation API.
 
-2009-05-22  Felix Riemann  <friemann@svn.mate.org>
+2009-05-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-util.c: Add API docs.
 
-2009-05-22  Felix Riemann  <friemann@svn.mate.org>
+2009-05-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* bindings/python/eom.defs:
 	* src/eom-job-queue.c (handle_job):
@@ -164,31 +164,31 @@
 	implemented in the EomJob base class as an abstract function.
 	Special casing the execution is thus not necessary anymore.
 
-2009-05-22  Felix Riemann  <friemann@svn.mate.org>
+2009-05-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c (eom_image_set_exif_data):
 	Secure Exif data updating with a mutex. Should fix crashes when
 	reading the Exif block during the update. Fixes bug #583448.
 
-2009-05-20  Felix Riemann  <friemann@svn.mate.org>
+2009-05-20  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom-image-properties-dialog.glade:
 	* data/eom-image-properties-dialog.ui:
 	Make property labels in image properties dialog selectable to allow
 	copy&pasting their values elsewhere. Fixes bug #583268.
 
-2009-05-12  Felix Riemann  <friemann@svn.mate.org>
+2009-05-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* bindings/python/eom.defs:
 	Reflect antialiasing changes in Python bindings.
 
-2009-05-12  Felix Riemann  <friemann@svn.mate.org>
+2009-05-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* doc/reference/eom-docs.sgml.in:
 	* doc/reference/eom-sections.txt:
 	Remove traces of the removed EomPixbufCellRenderer from API docs.
 
-2009-05-12  Felix Riemann  <friemann@svn.mate.org>
+2009-05-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom-preferences-dialog.glade:
 	* data/eom-preferences-dialog.ui:
@@ -208,22 +208,22 @@
 	Split the antialiasing setting to be able to disable smoothing when
 	zooming in. Fixes bug #491197 (Brad Greco, Evert Verhellen).
 
-2009-05-08  Felix Riemann  <friemann@svn.mate.org>
+2009-05-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c (eom_window_cmd_about):
 	Update project URL to the new subdomain form.
 
-2009-05-08  Felix Riemann  <friemann@svn.mate.org>
+2009-05-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* autogen.sh:
 	* configure.ac:
 	Require at least automake 1.9 and dist to bzip2 format.
 
-2009-05-05  Felix Riemann  <friemann@svn.mate.org>
+2009-05-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Post-release version bump.
 
-2009-05-05  Felix Riemann  <friemann@svn.mate.org>
+2009-05-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* ChangeLog: Fix trailing whitespaces.
 	* NEWS:
@@ -237,11 +237,11 @@
 	main image and image collection. Also added a Keyboard shortcut
 	"Ctrl+F8" for the same. Fixes bug #581180.
 
-2009-05-02  Felix Riemann  <friemann@svn.mate.org>
+2009-05-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* git.mk: Add Behdad's git.mk script to generate .gitignore files.
 
-2009-05-02  Felix Riemann  <friemann@svn.mate.org>
+2009-05-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/Makefile.am:
 	* src/eom-pixbuf-cell-renderer.c:
@@ -250,30 +250,30 @@
 	Remove our own pixbuf cell renderer as the same functionality is
 	included in gtk+ now.
 
-2009-05-01  Felix Riemann  <friemann@svn.mate.org>
+2009-05-01  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/main.c (main):
 	Output option parsing errors to stderr instead of stdout.
 
-2009-05-01  Felix Riemann  <friemann@svn.mate.org>
+2009-05-01  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/main.c (main): One doesn't need to call gtk_init explicitly if
 	one is using gtk_get_option_group during GOption parsing.
 	Also makes it possible to see help output without an X server again.
 
-2009-04-30  Felix Riemann  <friemann@svn.mate.org>
+2009-04-30  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c (eom_image_set_exif_data):
 	Fix build error when building without libexif.
 
-2009-04-28  Felix Riemann  <friemann@svn.mate.org>
+2009-04-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-util.c (eom_util_parse_uri_string_list_to_file_list):
 	Use function provided by GLib to extract the uris from the uri list
 	instead of doing it ourselves. Fixes crashes on malformed uri lists
 	as it is less picky. Fixes bug #580600.
 
-2009-04-26  Felix Riemann  <friemann@svn.mate.org>
+2009-04-26  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-application.c: Improve API documentation.
 
@@ -295,7 +295,7 @@
 	data before setting it, to avoid leaking it in case it is loaded
 	more than once.
 
-2009-04-24  Felix Riemann  <friemann@svn.mate.org>
+2009-04-24  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image-jpeg.h:
 	* src/eom-metadata-reader-jpg.h:
@@ -327,27 +327,27 @@
 	a size request on one row/column mode, since it breaks when
 	a scrollbar is needed.
 
-2009-04-22  Felix Riemann  <friemann@svn.mate.org>
+2009-04-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/Makefile.am:
 	* src/eom-enum-types.h.template:
 	* cut-n-paste/toolbar-editor/Makefile.am:
 	Don't export generated marshaller and enum symbols.
 
-2009-04-18  Felix Riemann  <friemann@svn.mate.org>
+2009-04-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-uri-converter.c (eom_uri_converter_get_property):
 	* src/eom-window.c (eom_window_get_property):
 	Add missing break statements to fix crashes with gtkparasite.
 
-2009-04-17  Felix Riemann  <friemann@svn.mate.org>
+2009-04-17  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-jpg.c (eom_metadata_reader_jpg_consume):
 	Fix segfaults when loading images with multiple APP1 chunks of the
 	same metadata type (EXIF, XMP). Fixes bug 579212.
 
 
-2009-04-10  Felix Riemann  <friemann@svn.mate.org>
+2009-04-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.schemas.in:
 	* src/eom-config-keys.h:
@@ -356,28 +356,28 @@
 	using a MateConf key. Same restrictions apply as before.
 	Fixes bug #541967.
 
-2009-04-09  Felix Riemann  <friemann@svn.mate.org>
+2009-04-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (show_move_to_trash_confirm_dialog):
 	Allow the user user to disable the trash confirmation dialog for the
 	running session. This is only offered if all images can be trashed.
 	Fixes bug #543158.
 
-2009-04-08  Felix Riemann  <friemann@svn.mate.org>
+2009-04-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/gtkrc:
 	Make the colletion scrollbar's slider proportionial to make the
 	behaviour more consistent with other widgets of this kind.
 	Fixes bug #557317 (Robin Stocker).
 
-2009-04-08  Felix Riemann  <friemann@svn.mate.org>
+2009-04-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-scroll-view.c: (display_key_press_event):
 	* src/eom-window.c:
 	Make the hidden shortcut "F" for best fit zooming "official" by
 	placing it in the menu. Fixes bug #556378.
 
-2009-04-07  Felix Riemann  <friemann@svn.mate.org>
+2009-04-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Raise gtk+ dependency.
 	* cut-n-paste/toolbar-editor/egg-editable-toolbar.c:
@@ -386,16 +386,16 @@
 	* src/eom-window.c: (menu_item_select_cb):
 	Fix symbols deprecated as of gtk+-2.16.
 
-2009-04-07  Felix Riemann  <friemann@svn.mate.org>
+2009-04-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Strip forgotten libart_lgpl version from configure.
 
-2009-04-07  Felix Riemann  <friemann@svn.mate.org>
+2009-04-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image-jpeg.c: (_save_any_as_jpeg):
 	Fix two leaks reported on eom-list.
 
-2009-04-05  Felix Riemann  <friemann@svn.mate.org>
+2009-04-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image-private.h:
 	* src/eom-metadata-reader-jpg.c:
@@ -404,7 +404,7 @@
 	on 64bit machines. e.g. sizeof(EomImagePrivate) went down from
 	208 Bytes to 184 Bytes. No change for 32bit machines though.
 
-2009-04-05  Felix Riemann  <friemann@svn.mate.org>
+2009-04-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Remove libart dependency and set version.
 	* src/eom-scroll-view.c: (pull_rectangle), (paint_background),
@@ -419,7 +419,7 @@
 	namespace as there is no replacement available. This removes the
 	libart_lgpl dependency. Fixes bug #571732.
 
-2009-04-05  Felix Riemann  <friemann@svn.mate.org>
+2009-04-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-transform.c: (eom_transform_apply),
 	(_eom_cairo_matrix_copy), (_eom_cairo_matrix_equal),
@@ -430,23 +430,23 @@
 	Use cairo_matrix_t instead of libart for affine transformations.
 	Import missing parts from libart_lgpl. Part of bug #571732.
 
-2009-04-02  Felix Riemann  <friemann@svn.mate.org>
+2009-04-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-jpg.c: Make sure the JPEG metadata segment
 	has been read completely before stopping the parser.
 
-2009-03-24  Felix Riemann  <friemann@svn.mate.org>
+2009-03-24  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (tmp_file_move_to_uri): Fix GError usage and avoid
 	crashes when the tempfile can't be moved to the destination.
 	Fixes bug #576558 (Josselin Mouette, Felix Riemann).
 
-2009-03-20  Felix Riemann  <friemann@svn.mate.org>
+2009-03-20  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-util.c:
 	Fix compiler warnings spotted in Ubuntu's latest 64-bit build logs.
 
-2009-03-18  Felix Riemann  <friemann@svn.mate.org>
+2009-03-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c (show_move_to_trash_confirm_dialog):
 	Add missing mnemonic. Reuses already existing translation.
@@ -460,21 +460,21 @@
 
 	* NEWS: Updates for 2.26.0
 
-2009-03-03  Felix Riemann  <friemann@svn.mate.org>
+2009-03-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Post release version bump.
 
-2009-03-03  Felix Riemann  <friemann@svn.mate.org>
+2009-03-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.25.92. Fix encoding to be (hopefully)
 	correct	UTF-8 again. Strip trailing whitespaces.
 
-2009-02-28  Felix Riemann  <friemann@svn.mate.org>
+2009-02-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: Add keyboard shortcut for counterclockwise
 	image rotation. Fixes bug #550086.
 
-2009-02-23  Felix Riemann  <friemann@svn.mate.org>
+2009-02-23  Felix Riemann  <friemann@svn.gnome.org>
 
 	* HACKING:
 	* TODO:
@@ -483,12 +483,12 @@
 	* plugins/reload/reload.eom-plugin.desktop.in:
 	Drop more trailing whitespaces.
 
-2009-02-22  Felix Riemann  <friemann@svn.mate.org>
+2009-02-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (show_move_to_trash_confirm_dialog):
 	Fix typo in UI string. Fixes bug #572723 (Milo Casagrande).
 
-2009-02-19  Felix Riemann  <friemann@svn.mate.org>
+2009-02-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/*:
 	Update to latest toolbareditor from libegg.
@@ -503,7 +503,7 @@
 	* src/eom-window.c (move_to_trash_real): Return FALSE only if an
 	error has been set. Fixes bug #572410.
 
-2009-02-19  Felix Riemann  <friemann@svn.mate.org>
+2009-02-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumb-view.c: (eom_thumb_view_init):
 	* src/eom-window.c: (eom_window_drag_data_received),
@@ -511,35 +511,35 @@
 	Simplify drag targets handling. Use functions from latest gtk+
 	if available. Fixes bug #558086 (Christian Persch).
 
-2009-02-16  Felix Riemann  <friemann@svn.mate.org>
+2009-02-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Post release version bump.
 
-2009-02-16  Felix Riemann  <friemann@svn.mate.org>
+2009-02-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.25.91.
 
-2009-02-16  Felix Riemann  <friemann@svn.mate.org>
+2009-02-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-python-module.c: (eom_python_init):
 	Add a further workaround for the python searchpath issue.
 	Works around bug #569228 (Morten Welinder).
 
-2009-02-15  Felix Riemann  <friemann@svn.mate.org>
+2009-02-15  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumbnail.c: (eom_thumbnail_stretch_frame_image):
 	Don't use deprecated libart_lgpl calls to fill an empty pixbuf when
 	there's a GDK function for it. Part of bug #571732.
 
-2009-02-03  Felix Riemann  <friemann@svn.mate.org>
+2009-02-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Post release version bump.
 
-2009-02-03  Felix Riemann  <friemann@svn.mate.org>
+2009-02-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.25.90.
 
-2009-02-03  Felix Riemann  <friemann@svn.mate.org>
+2009-02-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-print-image-setup.c:
 	* src/eom-print-preview.c:
@@ -575,7 +575,7 @@
 	(eom_window_cmd_move_to_trash): Check if all images can be trashed
 	and warn the user otherwise. Fixes bug #441637.
 
-2009-01-23  Felix Riemann  <friemann@svn.mate.org>
+2009-01-23  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-editable-toolbar.c:
 	(drag_begin_cb), (drag_end_cb), (configure_item_tooltip):
@@ -584,7 +584,7 @@
 	Don't rely on GTK associating an action to its proxy widget using the
 	"gtk-action" keyword. Fixes bug #568882 (Christian Persch).
 
-2009-01-20  Felix Riemann  <friemann@svn.mate.org>
+2009-01-20  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Separate libxml from other library checks.
 	* cut-n-paste/toolbar-editor/Makefile.am:
@@ -599,18 +599,18 @@
 
 	* NEWS: Update for 2.25.5.
 
-2009-01-19  Felix Riemann  <friemann@svn.mate.org>
+2009-01-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_update_recent_files_menu),
 	(eom_window_key_press):
 	Flip Alt+Left/Right arrow combos in RTL locales.
 	Fixes bug #566104 (Khaled Hosny)
 
-2009-01-19  Felix Riemann  <friemann@svn.mate.org>
+2009-01-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* doc/reference/Makefile.am: Fix incomplete filename in last commit.
 
-2009-01-19  Felix Riemann  <friemann@svn.mate.org>
+2009-01-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* doc/reference/Makefile.am:
@@ -626,15 +626,15 @@
         Reverse icon view scroll buttons scroll direction for RTL locales.
         Closes bug #566190.
 
-2009-01-10  Felix Riemann  <friemann@svn.mate.org>
+2009-01-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_copy_file): Fix unintialized GError.
 
-2009-01-09  Felix Riemann  <friemann@svn.mate.org>
+2009-01-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/main.c: (main): Simplify error message.
 
-2009-01-09  Felix Riemann  <friemann@svn.mate.org>
+2009-01-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Drop libmateui dependency.
 	* src/eom-session.c: (eom_session_init): Remove session handling
@@ -645,7 +645,7 @@
 	and libmateui in eom. This finally drops the dependency on
 	libmate and libmateui. Fixes bug #559500.
 
-2009-01-09  Felix Riemann  <friemann@svn.mate.org>
+2009-01-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Re-instate mate-desktop dependency (2.25.1).
 	* src/eom-file-chooser.c: (update_preview_cb),
@@ -657,7 +657,7 @@
 	Use MateDesktopThumbnail from libmate-desktop instead of
 	MateThumbnail from libmateui for thumbnailing. Part of bug #559500.
 
-2009-01-09  Felix Riemann  <friemann@svn.mate.org>
+2009-01-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-application.c: (eom_application_init),
 	(eom_application_shutdown), (eom_application_load_accelerators),
@@ -674,7 +674,7 @@
 
 	* NEWS: Update for 2.25.4.
 
-2009-01-05  Felix Riemann  <friemann@svn.mate.org>
+2009-01-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-list-store.c: (eom_list_store_get_image_by_pos):
 	* src/eom-list-store.h: Remove unneeded const keyword for
@@ -682,20 +682,20 @@
 	* bindings/python/eom.defs: Make eom_list_store_get_image_by_pos
 	available in the Python bindings.
 
-2009-01-05  Felix Riemann  <friemann@svn.mate.org>
+2009-01-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-util.c: (eom_util_dot_dir): Find config folder without
 	using functions from libmate. Part of bug #559500.
 
-2009-01-05  Felix Riemann  <friemann@svn.mate.org>
+2009-01-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-util.c: Fix gtk-doc warning.
 
-2009-01-03  Felix Riemann  <friemann@svn.mate.org>
+2009-01-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumb-view.c: (on_data_loaded_cb): Remove unused variable.
 
-2009-01-03  Felix Riemann  <friemann@svn.mate.org>
+2009-01-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-util.c: (_check_strptime_updates_wday),
 	(_calculate_wday_yday), (eom_exif_util_format_date_with_strptime),
@@ -704,7 +704,7 @@
 	weekday name when printing the date later. Several strptime()
 	implementations (e.g. BSD, uClibc) don't do this. Fixes bug #566367.
 
-2009-01-03  Felix Riemann  <friemann@svn.mate.org>
+2009-01-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Update pygtk/gobject dependencies to version having
 	GIO support. Drop mate-python dependency as it was needed for
@@ -715,16 +715,16 @@
 	* bindings/python/eom.override:
 	Remove traces of broken MateVFS support from the Python bindings.
 
-2008-12-25  Felix Riemann  <friemann@svn.mate.org>
+2008-12-25  Felix Riemann  <friemann@svn.gnome.org>
 
 	* doc/reference/eom-sections.txt: Remove section entries for classes
 	that were dropped from the API docs.
 
-2008-12-23  Felix Riemann  <friemann@svn.mate.org>
+2008-12-23  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-util.c: (eom_util_show_help): Fix leaky string handling.
 
-2008-12-23  Felix Riemann  <friemann@svn.mate.org>
+2008-12-23  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-uri-converter.c: (eom_uri_converter_dispose),
 	(eom_uri_converter_init), (eom_uri_converter_set_property),
@@ -732,15 +732,15 @@
 	Use proper printf-format strings to enable type checking for the
 	counter strings. Fix one occassion with wrong type.
 
-2008-12-15  Felix Riemann  <friemann@svn.mate.org>
+2008-12-15  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Post release version bump.
 
-2008-12-15  Felix Riemann  <friemann@svn.mate.org>
+2008-12-15  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.25.3.
 
-2008-12-14  Felix Riemann  <friemann@svn.mate.org>
+2008-12-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-png.c: (eom_metadata_reader_png_consume):
 	Don't use a pointer->uint32 conversion to check the chunk
@@ -805,7 +805,7 @@
 	* src/eom-window.c: (set_action_properties): Add the action for the new
 	"Trash" item. Fixes bug #555480 (Robin Sonefors)
 
-2008-12-05  Felix Riemann  <friemann@svn.mate.org>
+2008-12-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* jpegutils/Makefile.am: Produce .la-file as well.
 	* doc/reference/Makefile.am:
@@ -815,36 +815,36 @@
 	calculate the dependencies list. Remove now unneeded vars.
 	Fixes bug #560073 (Daniel Macks, Felix Riemann).
 
-2008-12-05  Felix Riemann  <friemann@svn.mate.org>
+2008-12-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/Makefile.am: Sanitize include search path order.
 	Fixes bug #560070 (Daniel Macks).
 
-2008-12-05  Felix Riemann  <friemann@svn.mate.org>
+2008-12-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: Use stock label for page setup menu item to stay
 	in sync with HIG. Fixes bug #514352 (Bob Mauchin).
 
-2008-12-01  Felix Riemann  <friemann@svn.mate.org>
+2008-12-01  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Post release version bump.
 
-2008-12-01  Felix Riemann  <friemann@svn.mate.org>
+2008-12-01  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.25.2.
 
-2008-11-26  Felix Riemann  <friemann@svn.mate.org>
+2008-11-26  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-jobs.c: (filter_files):
 	* src/eom-list-store.c: (eom_list_store_add_files): Try to check if a
 	file is supported by content type as well, if the gvfs backend could
 	not determine the file type. Fixes bug #562119.
 
-2008-11-26  Felix Riemann  <friemann@svn.mate.org>
+2008-11-26  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-jobs.c: (eom_job_model_run): Fix leaking list.
 
-2008-11-20  Felix Riemann  <friemann@svn.mate.org>
+2008-11-20  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-file-chooser.c: (save_response_cb):
 	* src/eom-save-as-dialog-helper.c: (set_default_values),
@@ -853,7 +853,7 @@
 	Switch from GtkFileChooser's old uri-based API to the new GFile-based
 	API new to GTK+-2.14 where applicable.
 
-2008-11-16  Felix Riemann  <friemann@svn.mate.org>
+2008-11-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_key_press): Fix broken keyboard
 	keys if the toolbar is hidden and no image being displayed yet.
@@ -865,13 +865,13 @@
 	prefer the GDP recommended term "Desktop background". Fixes
 	bug #559579 (Luca Ferretti).
 
-2008-11-14  Felix Riemann  <friemann@svn.mate.org>
+2008-11-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/main.c: (main): Change variable name to something that should
 	be less prone to produce conflicts. Should fix compilation errors
 	under Mac OS X.	Fixes bug #560065.
 
-2008-11-14  Felix Riemann  <friemann@svn.mate.org>
+2008-11-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* src/Makefile.am:
@@ -880,7 +880,7 @@
 	Merge the two CRC calculation steps into one. Fixes issues with zlib
 	not always exporting crc32_combine() on Mac OS X. Fixes bug #560068.
 
-2008-11-12  Felix Riemann  <friemann@svn.mate.org>
+2008-11-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/eggtreemultidnd.c:
 	* cut-n-paste/toolbar-editor/eggtreemultidnd.h:
@@ -898,16 +898,16 @@
 	* cut-n-paste/toolbar-editor/egg-toolbar-editor.c:
 	Fix include file name.
 
-2008-11-07  Felix Riemann  <friemann@svn.mate.org>
+2008-11-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_construct_ui): Call gtk_box_pack_start
 	directly instead of using the newly deprecated _defaults variant.
 
-2008-11-03  Felix Riemann  <friemann@svn.mate.org>
+2008-11-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Post release version bump.
 
-2008-11-03  Felix Riemann  <friemann@svn.mate.org>
+2008-11-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS:
 	* configure.ac:
@@ -976,12 +976,12 @@
 	(eom_window_cmd_wallpaper): Factor out the calls to set
 	the wallpaper.
 
-2008-10-21  Felix Riemann  <friemann@svn.mate.org>
+2008-10-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Fix warning about unknown options when compiling
 	without DBus.
 
-2008-10-18  Felix Riemann  <friemann@svn.mate.org>
+2008-10-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-print.c: (eom_print_end_print),
 	(eom_print_operation_new):
@@ -989,19 +989,19 @@
 	(eom_save_as_dialog_new):
 	Use GSlice for even more internal structures.
 
-2008-10-18  Felix Riemann  <friemann@svn.mate.org>
+2008-10-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-application.c:
 	* src/eom-print-preview.c:
 	* src/eom-window.c:
 	A few minor API doc cleanups.
 
-2008-10-18  Felix Riemann  <friemann@svn.mate.org>
+2008-10-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-application.c: (eom_application_open_uri_list):
 	Fix two gtk-doc parameter warnings.
 
-2008-10-18  Felix Riemann  <friemann@svn.mate.org>
+2008-10-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom-multiple-save-as-dialog.glade:
 	* data/eom-multiple-save-as-dialog.ui:
@@ -1010,32 +1010,32 @@
 	brings the dialog in sync with the other GtkBuilder generated dialogs
 	and allows us to unexport the callbacks.
 
-2008-10-14  Felix Riemann  <friemann@svn.mate.org>
+2008-10-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-uri-converter.c: (free_token), (create_token_string),
 	(create_token_counter), (create_token_other):
 	Use GSlice to allocate the token structures.
 
-2008-10-14  Felix Riemann  <friemann@svn.mate.org>
+2008-10-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-util.c: (eom_util_show_help):
 	Use gtk_get_current_event_time() instead of GDK_CURRENT_TIME
 	with gtk_show_uri (Diego Escalante Urrelo).
 
-2008-10-13  Felix Riemann  <friemann@svn.mate.org>
+2008-10-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-print-image-setup.c: Remove gtk+-2.12 compatibility includes
 	now that we require at least 2.13.1. This removes the last single
 	includes from EOM.
 
-2008-10-13  Felix Riemann  <friemann@svn.mate.org>
+2008-10-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: this requires at least GTK+-2.13.1
 	* src/eom-util.c: (eom_util_show_help):
 	Use gtk_show_uri instead of mate-help to launch the help.
 	Fixes bug #556086 (Diego Escalante Urrelo).
 
-2008-10-13  Felix Riemann  <friemann@svn.mate.org>
+2008-10-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* data/Makefile.am:
@@ -1054,7 +1054,7 @@
 	preserved as source for the GtkBuilder files until there is a UI editor
 	fully supporting GtkBuilder files. Fixes bug #555916.
 
-2008-10-13  Felix Riemann  <friemann@svn.mate.org>
+2008-10-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* src/eom-util.c:
@@ -1073,7 +1073,7 @@
 	* src/Makefile.am: Install metadata related headers properly.
 	Fixes bug #555942 (Pierre-Luc Beaudoin)
 
-2008-10-08  Felix Riemann  <friemann@svn.mate.org>
+2008-10-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_cmd_show_hide_bar): Avoid realizing
 	the scrollview too early as that would break its allocation when the
@@ -1085,38 +1085,38 @@
 	attempt to monitor a directory if monitoring is not supported.
 	Fixes a couple of critical warnings.
 
-2008-09-30  Felix Riemann  <friemann@svn.mate.org>
+2008-09-30  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-jpg.c: (eom_metadata_reader_jpg_consume):
 	Don't overwrite the last read chunk when skipping over unrecognized
 	APP1 chunks. Avoids memory corruption and subsequent segfaults.
 
-2008-09-30  Felix Riemann  <friemann@svn.mate.org>
+2008-09-30  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_copy_file),
 	(eom_image_save_as_by_info):
 	Fix progress reporting when images only need copying during SaveAs.
 
-2008-09-29  Felix Riemann  <friemann@svn.mate.org>
+2008-09-29  Felix Riemann  <friemann@svn.gnome.org>
 
 	* autogen.sh: Reflect gtk-doc dependency in autogen script.
 
-2008-09-25  Felix Riemann  <friemann@svn.mate.org>
+2008-09-25  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-jpg.c: (eom_metadata_reader_jpg_consume):
 	Don't let a JPEG comment interrupt the parsing.
 
-2008-09-24  Felix Riemann  <friemann@svn.mate.org>
+2008-09-24  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom-multiple-save-as-dialog.glade:
 	* data/eom-preferences-dialog.glade:
 	Fix GtkAdjustment page_size value for GtkSpinbuttons (Vincent Untz).
 
-2008-09-23  Felix Riemann  <friemann@svn.mate.org>
+2008-09-23  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Post release version bump.
 
-2008-09-22  Felix Riemann  <friemann@svn.mate.org>
+2008-09-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.24.0
 
@@ -1138,7 +1138,7 @@
 
 	* src/eom-application.c: Document EomApplication API.
 
-2008-09-07  Felix Riemann  <friemann@svn.mate.org>
+2008-09-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_reload_image):
 	* src/eom-window.h:
@@ -1152,7 +1152,7 @@
 	* AUTHORS: Updates.
 	* README: Updates.
 
-2008-09-07  Felix Riemann  <friemann@svn.mate.org>
+2008-09-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_cmd_save_as): Fix "Operation not
 	supported" error when using Save-As-Many dialog.
@@ -1162,7 +1162,7 @@
 	* src/eom-message-area.c: (size_allocate), (eom_message_area_init):
 	Enqueue a redraw of the widget upon allocation. Fixes bug #504538.
 
-2008-09-02  Felix Riemann  <friemann@svn.mate.org>
+2008-09-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (sort_recents_mru),
 	(eom_window_update_recent_files_menu):
@@ -1170,7 +1170,7 @@
 	timestamps made by EOM for sorting. This keeps other apps from
 	affecting EOM's sort order. Fixes bug #550252.
 
-2008-09-02  Felix Riemann  <friemann@svn.mate.org>
+2008-09-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (add_file_to_recent_files),
 	(eom_window_update_recent_files_menu):
@@ -1221,7 +1221,7 @@
 
 	* src/eom-window.c: (eom_window_cmd_about): Update my email address.
 
-2008-08-27  Felix Riemann  <friemann@svn.mate.org>
+2008-08-27  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_real_load): Don't assert if pixbuf
 	loaders don't report errors correctly. Return a generic error message.
@@ -1232,42 +1232,42 @@
 	in the filechooser using the URI variant. Also renamed some variables
 	to make this more obvious. Fixes bug #548736.
 
-2008-08-21  Felix Riemann  <friemann@svn.mate.org>
+2008-08-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (eom_exif_set_focal_length_label):
 	Fix segfaults with XMP-only files when opening properties dialog.
 	Fixes bug #548738.
 
-2008-08-19  Felix Riemann  <friemann@svn.mate.org>
+2008-08-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-08-19  Felix Riemann  <friemann@svn.mate.org>
+2008-08-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.23.90
 
-2008-08-17  Felix Riemann  <friemann@svn.mate.org>
+2008-08-17  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-scroll-view.c: (display_key_press_event): Don't let
 	EomScrollView handle Alt+Key combos to avoid interferences with
 	the menubar shortcuts. Fixes bug #548079.
 
-2008-08-13  Felix Riemann  <friemann@svn.mate.org>
+2008-08-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumbnail.c: (eom_thumb_data_new): Fix GError usage to
 	avoid crashes when querying the file info fails. Fixes bug #547566.
 
-2008-08-12  Felix Riemann  <friemann@svn.mate.org>
+2008-08-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-print-image-setup.c: Fix rev.4674 to be compatible
 	with a pre-2.13.1 GTK+. Fixes bug #547302 (Tom Parker).
 
-2008-08-09  Felix Riemann  <friemann@svn.mate.org>
+2008-08-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_copy_file):
 	Remove unused file path variable. Stops leaking it.
 
-2008-08-08  Felix Riemann  <friemann@svn.mate.org>
+2008-08-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/*.{c,h}:
 	* src/eom-file-chooser.h:
@@ -1283,7 +1283,7 @@
 
 	* NEWS: Update for 2.23.6
 
-2008-08-02  Felix Riemann  <friemann@svn.mate.org>
+2008-08-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_update_recent_files_menu):
 	Use name by icon naming specs instead of the deprecated MATE one for
@@ -1303,64 +1303,64 @@
 
 	Remove unneeded header includes.
 
-2008-07-21  Felix Riemann  <friemann@svn.mate.org>
+2008-07-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-07-21  Felix Riemann  <friemann@svn.mate.org>
+2008-07-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.23.5.
 
-2008-07-21  Felix Riemann  <friemann@svn.mate.org>
+2008-07-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (eom_exif_set_focal_length_label),
 	(pd_update_metadata_tab): Show the 35mm equivalent in addition to the
 	lens focal length in the properties dialog (if it is provided by the
 	camera). Fixes bug #543171.
 
-2008-07-19  Felix Riemann  <friemann@svn.mate.org>
+2008-07-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (pd_update_metadata_tab):
 	Remove duplicate function call.
 
-2008-07-04  Felix Riemann  <friemann@svn.mate.org>
+2008-07-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-png.c: (eom_metadata_reader_png_consume):
 	Fix warnings about wrong format specifiers on 64bit machines.
 
-2008-07-03  Felix Riemann  <friemann@svn.mate.org>
+2008-07-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_key_press):
 	Fix critical warnings when using Q or ESC to close a window.
 
-2008-06-25  Felix Riemann  <friemann@svn.mate.org>
+2008-06-25  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader.c: Remove unneeded include.
 
-2008-06-22  Felix Riemann  <friemann@svn.mate.org>
+2008-06-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_run_fullscreen):
 	Remember to stop the slideshow timer when switching from slideshow to
 	normal fullscreen mode. Fixes bug #539495.
 
-2008-06-21  Felix Riemann  <friemann@svn.mate.org>
+2008-06-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-scroll-view.c: (eom_scroll_view_set_bg_color):
 	* src/eom-window.c: (eom_window_run_fullscreen):
 	Fix compiler warnings.
 
-2008-06-21  Felix Riemann  <friemann@svn.mate.org>
+2008-06-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-print.c: (eom_print_get_key_file),
 	(eom_print_get_page_setup), (eom_print_save_key_file),
 	(eom_print_get_print_settings):
 	Unmark some unnecessarily translated warnings.
 
-2008-06-18  Felix Riemann  <friemann@svn.mate.org>
+2008-06-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-plugin-engine.c: Fix GLib single include.
 
-2008-06-18  Felix Riemann  <friemann@svn.mate.org>
+2008-06-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* autogen.sh: Reflect the raised intltool dep in autogen.sh.
 
@@ -1390,7 +1390,7 @@
 
 	* NEWS: Update for 2.23.4
 
-2008-06-17  Felix Riemann  <friemann@svn.mate.org>
+2008-06-17  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* data/icons/16x16/actions/Makefile.am:
@@ -1410,12 +1410,12 @@
 	icons and is not deprecated. Fixes bug #526483 (Andreas Nilsson,
 	Michael Monreal).
 
-2008-06-16  Felix Riemann  <friemann@svn.mate.org>
+2008-06-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/Makefile.am: Explicitly depend on zlib. Fixes build errors on
 	Solaris. Fixes bug #537758 (Damien Carbery).
 
-2008-06-12  Felix Riemann  <friemann@svn.mate.org>
+2008-06-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Disable building plugins as static archives by default.
 
@@ -1431,13 +1431,13 @@
 	* src/main.c: (load_files_remote):
 	Fix some build warnings. Bug #537488.
 
-2008-06-07  Felix Riemann  <friemann@svn.mate.org>
+2008-06-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-png.c: (eom_metadata_reader_png_consume):
 	As an additional security measure, check if the chunk size is in the
 	limits given by the PNG specs.
 
-2008-06-06  Felix Riemann  <friemann@svn.mate.org>
+2008-06-06  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: Remove unused widget pointer.
 
@@ -1449,7 +1449,7 @@
 
 	* NEWS: Update for 2.23.3
 
-2008-06-03  Felix Riemann  <friemann@svn.mate.org>
+2008-06-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_key_press): Allow to use arrow keys to
 	scroll the image if zoomed in. Navigation is still possible using the
@@ -1466,18 +1466,18 @@
 	all metadata labels to avoid the dialog to expand too much.
 	Fixes bug #528454.
 
-2008-05-31  Felix Riemann  <friemann@svn.mate.org>
+2008-05-31  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_update_openwith_menu):
 	Close the possible leak I created with my last commit.
 
-2008-05-30  Felix Riemann  <friemann@svn.mate.org>
+2008-05-30  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_update_openwith_menu):
 	Keep the GFileInfo alive while we depend on pointers to its data.
 	Fixes lots of invalid read errors with Valgrind.
 
-2008-05-30  Felix Riemann  <friemann@svn.mate.org>
+2008-05-30  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumb-view.c: (thumbview_on_query_tooltip_cb):
 	Fix leaking GFileInfo.
@@ -1526,15 +1526,15 @@
 	* src/eom-thumb-view.c: Rename all EomThumbView objects
 	from 'tb' to 'thumbview' and clean indentation.
 
-2008-05-12  Felix Riemann  <friemann@svn.mate.org>
+2008-05-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-05-12  Felix Riemann  <friemann@svn.mate.org>
+2008-05-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.23.2
 
-2008-05-12  Felix Riemann  <friemann@svn.mate.org>
+2008-05-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* doc/reference/Makefile.am: Make the API docs pass distcheck.
 
@@ -1543,31 +1543,31 @@
 	* doc/reference/eom-sections.txt: Remove unneeded private elements
 	from documentation.
 
-2008-05-09  Felix Riemann  <friemann@svn.mate.org>
+2008-05-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c:
 	* src/eom-list-store.c:
 	Fix gtk-doc error messages.
 
-2008-05-09  Felix Riemann  <friemann@svn.mate.org>
+2008-05-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-print-preview.c:
 	* src/eom-print-preview.h:
 	Fix gtk-doc warnings. Make property reference clickable.
 
-2008-05-08  Felix Riemann  <friemann@svn.mate.org>
+2008-05-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/gtkrc: Ensure that the thumbnav hides the scrollbar's
 	secondary steppers when using themes which enable them.
 	Fixes bug #531809 (Benjamin Berg).
 
-2008-05-04  Felix Riemann  <friemann@svn.mate.org>
+2008-05-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-png.c:
 	(eom_metadata_reader_png_get_icc_profile):
 	Remove bogus newline in debug message.
 
-2008-05-04  Felix Riemann  <friemann@svn.mate.org>
+2008-05-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_get_display_profile):
 	Don't let lcms abort EOM if it encounters an error while trying to
@@ -1589,11 +1589,11 @@
 
 	Add API reference for plugins developers. Fixes bug #526352.
 
-2008-04-28  Felix Riemann  <friemann@svn.mate.org>
+2008-04-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.desktop.in.in: Remove unsupported "image/x-psd" file type.
 
-2008-04-28  Felix Riemann  <friemann@svn.mate.org>
+2008-04-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.desktop.in.in: Add "image/svg+xml-compressed" to the list
 	of supported file types. Fixes bug #530102 (Franklin Piat).
@@ -1606,7 +1606,7 @@
 
 	* NEWS: Update for 2.23.1
 
-2008-04-15  Felix Riemann  <friemann@svn.mate.org>
+2008-04-15  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-jpg.c: (eom_metadata_reader_jpg_consume):
 	Check if the passed object is actually a JPEG reader not just a
@@ -1625,22 +1625,22 @@
 	GObject property instead of a pixbuf option, to avoid using the
 	private gdk_pixbuf_set_option. Fixes bug #527798.
 
-2008-04-11  Felix Riemann  <friemann@svn.mate.org>
+2008-04-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_apply_display_profile): Don't try to
 	colorcorrect images with an alpha channel. EOM is not doing it
 	correctly yet.
 
-2008-04-11  Felix Riemann  <friemann@svn.mate.org>
+2008-04-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Set development version number.
 
-2008-04-06  Felix Riemann  <friemann@svn.mate.org>
+2008-04-06  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-details.c: (xmp_entry_insert):
 	Replace a printf used to concat two strings together.
 
-2008-04-06  Felix Riemann  <friemann@svn.mate.org>
+2008-04-06  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-jpg.c:
 	* src/eom-metadata-reader-png.c:
@@ -1669,20 +1669,20 @@
 	(eom_window_init), (eom_window_dispose): Load and save print
 	settings to and from a GKeyFile. Fixes bug #517821.
 
-2008-04-05  Felix Riemann  <friemann@svn.mate.org>
+2008-04-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-jpg.c:
 	(eom_metadata_reader_jpg_get_icc_profile):
 	Unref the ExifData at the right place after using it for profile
 	generation to stop leaking it.
 
-2008-04-04  Felix Riemann  <friemann@svn.mate.org>
+2008-04-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-list-store.c: (eom_list_store_add_files):
 	* src/eom-properties-dialog.c: (eom_xmp_set_label):
 	Fix leaks.
 
-2008-04-03  Michael J. Chudobiak  <mjc@svn.mate.org>
+2008-04-03  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* src/eom-thumbnail.c: (get_valid_thumbnail),
 	(create_thumbnail_from_pixbuf), (eom_thumb_data_new),
@@ -1714,17 +1714,17 @@
 	a chance to handle the key press event, to allow zooming in/out
 	if the image doesn't have the focus. Fixes bug #427053.
 
-2008-04-02  Felix Riemann  <friemann@svn.mate.org>
+2008-04-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_cmd_show_hide_bar): Make sure the
 	widget we assign focus to is realized. This avoids critical warnings
 	if some UI elements are hidden. Fixes bug #517017 (Wouter Bolsterlee).
 
-2008-03-31  Felix Riemann  <friemann@svn.mate.org>
+2008-03-31  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumb-nav.c: Removed unused private class member.
 
-2008-03-30  Felix Riemann  <friemann@svn.mate.org>
+2008-03-30  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/Makefile.am:
 	* src/eom-image.c: (check_for_metadata_img_format),
@@ -1765,7 +1765,7 @@
 	* src/main.c: (main): Add a --new-instance command line parameter.
 	Fixes bug #523173.
 
-2008-03-21  Felix Riemann  <friemann@svn.mate.org>
+2008-03-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumbnail.c: (eom_thumb_data_free), (eom_thumb_data_new):
 	Use GSlice to alloc/free the internal EomThumbData structure.
@@ -1800,7 +1800,7 @@
 	Do not show the date as "Unknown" if it can't be formatted, simply
 	ignore it.
 
-2008-03-18  Felix Riemann  <friemann@svn.mate.org>
+2008-03-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-jpg.c:
 	* src/eom-metadata-reader-jpg.h:
@@ -1808,7 +1808,7 @@
 	* src/eom-metadata-reader.h:
 	Add license headers to the new files.
 
-2008-03-18  Felix Riemann  <friemann@svn.mate.org>
+2008-03-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader-jpg.c: (eom_metadata_reader_jpg_dispose),
 	(eom_metadata_reader_jpg_init),
@@ -1824,7 +1824,7 @@
 	* src/eom-metadata-reader-jpg.h:
 	Add missing files to the metadata reader commit.
 
-2008-03-18  Felix Riemann  <friemann@svn.mate.org>
+2008-03-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/Makefile.am:
 	* src/eom-metadata-reader.c: (eom_metadata_reader_get_type),
@@ -1855,11 +1855,11 @@
 	catching G_FILE_MONITOR_EVENT_DELETED as the file monitoring behavior
 	works as expected in gio.
 
-2008-03-14  Felix Riemann  <friemann@svn.mate.org>
+2008-03-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-pixbuf-cell-renderer.h: Fix compiler warning. (Cosimo	Cecchi)
 
-2008-03-14  Felix Riemann  <friemann@svn.mate.org>
+2008-03-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* src/eom-application.c: (eom_application_get_file_window),
@@ -1932,11 +1932,11 @@
 	Stop using MateVFS. Use GIO instead from now on.
 	Fixes bugs #509239 and #343061 (Cosimo Cecchi, Felix Riemann).
 
-2008-03-14  Felix Riemann  <friemann@svn.mate.org>
+2008-03-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumbnail.h: Remove unneeded include.
 
-2008-03-12  Felix Riemann  <friemann@svn.mate.org>
+2008-03-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader.c:
 	* src/eom-scroll-view.c:
@@ -1976,14 +1976,14 @@
 	in order to be compliant with FD.o Trash spec. Full gio migration will
 	come on next cycle. Patch from Cosimo Cecchi <anarki@lilik.it>
 
-2008-03-03  Felix Riemann  <friemann@svn.mate.org>
+2008-03-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_dispose):
 	Disconnect collection update callbacks when disposing a window to
 	avoid spurious calls when another window watches the same folder which
 	results in EOM crashing. Fixes bug #519910.
 
-2008-02-29  Felix Riemann  <friemann@svn.mate.org>
+2008-02-29  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader.c: (eom_metadata_reader_consume):
 	Only extract a possible ICC block from a JPEG file if is actually
@@ -2021,7 +2021,7 @@
 	Many functions and variables declarations fixes, courtesy of
 	sparse.
 
-2008-02-27  Felix Riemann  <friemann@svn.mate.org>
+2008-02-27  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_class_init):
 	Remove an obsoleted code comment.
@@ -2034,7 +2034,7 @@
 
 	* NEWS: Update for 2.21.92
 
-2008-02-25  Felix Riemann  <friemann@svn.mate.org>
+2008-02-25  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-application.c: (eom_application_init),
 	(eom_application_save_toolbars_model):
@@ -2049,7 +2049,7 @@
 	* src/eom-image.c (eom_image_load): return when the data being
 	received has already been loaded. Fixes bug #517450.
 
-2008-02-19  Felix Riemann  <friemann@svn.mate.org>
+2008-02-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (eom_exif_set_label): Make the date
 	value in the properties dialog locale formatted again. This function
@@ -2063,26 +2063,26 @@
 	the "Date/Time:" field in the metadata tab. Fixes bug #513827
 	(Francisco Rojas).
 
-2008-02-18  Felix Riemann  <friemann@svn.mate.org>
+2008-02-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* autogen.sh: configure checks for autoconf >= 2.59. Let autogen.sh do
 	the same.
 
-2008-02-15  Felix Riemann  <friemann@svn.mate.org>
+2008-02-15  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_key_press): Skip to the next image
 	when pressing PgUp/PgDown while the collection is hidden. Avoids some
 	critical warnings/crashes in that case. Fixes bug #513958.
 
-2008-02-11  Felix Riemann  <friemann@svn.mate.org>
+2008-02-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: post release version bump.
 
-2008-02-11  Felix Riemann  <friemann@svn.mate.org>
+2008-02-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* NEWS: Update for 2.21.90
 
-2008-02-11  Felix Riemann  <friemann@svn.mate.org>
+2008-02-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* bindings/python/eom.defs: Reflect some of the recent changes in the
 	python API.
@@ -2104,12 +2104,12 @@
 	and thumbnail under ~/.thumbnail is not valid/doesn't exist.
 	Improves performance and memory usage. Fixes bug #515250.
 
-2008-02-11  Felix Riemann  <friemann@svn.mate.org>
+2008-02-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: Make the tooltips for image switching more
 	precise. Fixes bug #511393.
 
-2008-02-08  Felix Riemann  <friemann@svn.mate.org>
+2008-02-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_apply_display_profile): Skip ICC
 	correction for non-RGB input colorspaces. There appears to be
@@ -2124,14 +2124,14 @@
 	right nav. button sensitive on image switch if the scrollbar is
 	still in the right end.
 
-2008-02-08  Felix Riemann  <friemann@svn.mate.org>
+2008-02-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-list-store.c: (eom_list_store_add_uris):
 	Disable sorting while adding a directory to the collection.
 	This should improve the startup time in huge directories.
 	Improves bug #495825.
 
-2008-01-16  Felix Riemann  <friemann@svn.mate.org>
+2008-01-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Convert remaining translations to g-d-u.
 	That should make "--disable-scrollkeeper" work. Fixes bug #322728.
@@ -2151,13 +2151,13 @@
 	(eom_properties_dialog_init): Fix build when compiled without
 	libexif support but with exempi enabled. Fixes bug #509149.
 
-2008-01-13  Felix Riemann  <friemann@svn.mate.org>
+2008-01-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_cmd_edit_toolbar_cb),
 	(eom_window_cmd_edit_toolbar):
 	Add help button to toolbar editor. Fixes bug #503637.
 
-2008-01-11  Felix Riemann  <friemann@svn.mate.org>
+2008-01-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_cmd_save_as): Close leak.
 
@@ -2165,7 +2165,7 @@
 
 	* src/eom-window.c: Add tooltips to the actions. Fixes bug #496464.
 
-2008-01-09  Felix Riemann  <friemann@svn.mate.org>
+2008-01-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* src/eom-print-image-setup.c: (get_scale_to_px_factor),
@@ -2175,7 +2175,7 @@
 	Use the locale data to determine if the metric or the imperial system
 	should be the default for the print setup tab. Fixes bug #504093.
 
-2008-01-06  Felix Riemann  <friemann@svn.mate.org>
+2008-01-06  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-util.c: (eom_exif_util_get_value):
 	* src/eom-exif-util.h:
@@ -2202,21 +2202,21 @@
 	* src/eom-window.c: (eom_window_key_press): Update slideshow timeout
 	when image switched by user. Fixes bug #505576 (Priit Laes).
 
-2008-01-04  Felix Riemann  <friemann@svn.mate.org>
+2008-01-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_get_display_profile):
 	Check what kind of data the XServer has actually returned when querying
 	for an ICC profile. This fixes crashes when using xicc-0.1 to upload
 	the profile. Fixes bug #507068 (Frederic Crozat).
 
-2008-01-04  Felix Riemann  <friemann@svn.mate.org>
+2008-01-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader.c: (eom_metadata_reader_consume),
 	(eom_metadata_reader_get_xmp_data):
 	Make XMP reader work if the XMP block cannot be fully read at once.
 	Strip more duplicate code on the way.
 
-2008-01-03  Felix Riemann  <friemann@svn.mate.org>
+2008-01-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader.c: (eom_metadata_reader_consume):
 	Remove duplicated code. Make debug messages more consistent.
@@ -2261,19 +2261,19 @@
 	(eom_window_delete): Wait until there is no image being saved before
 	destroying the window. Fixes #491092.
 
-2007-12-29  Felix Riemann  <friemann@svn.mate.org>
+2007-12-29  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-uri-converter.c: (eom_uri_converter_class_init):
 	Add a missing g_type_class_add_private call which I accidentially
 	undoed away before committing.
 
-2007-12-28  Felix Riemann  <friemann@svn.mate.org>
+2007-12-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (pd_update_metadata_tab):
 	Fix some compiler warnings I introduced today and magically didn't
 	notice during testing.
 
-2007-12-28  Felix Riemann  <friemann@svn.mate.org>
+2007-12-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader.c: (eom_metadata_reader_init),
 	(eom_metadata_reader_class_init):
@@ -2286,14 +2286,14 @@
 	Convert classes to have their private data structures handled by the
 	GObject type system.
 
-2007-12-28  Felix Riemann  <friemann@svn.mate.org>
+2007-12-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (eom_xmp_set_label),
 	(pd_update_metadata_tab): Clear XMP labels so they won't show the XMP
 	data of the previous image for images which don't have XMP data or the
 	corresponding XMP property.
 
-2007-12-28  Felix Riemann  <friemann@svn.mate.org>
+2007-12-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	Fix several translation and other string issues.
 	Fixes bug #505949 (Seán de Búrca, Felix Riemann).
@@ -2306,7 +2306,7 @@
 	message while saving images more translator-friendly. Add a translator
 	comment. Use the correct format tokens in the printf-statement.
 
-2007-12-26  Felix Riemann  <friemann@svn.mate.org>
+2007-12-26  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_cmd_save_as): Do not crash/assert when
 	the user tries to SaveAs while no image is selected. Fixes bug #487075.
@@ -2329,7 +2329,7 @@
 	for plugins when updating actions groups because this should only be
 	done on EomWindow contructor.
 
-2007-12-07  Felix Riemann  <friemann@svn.mate.org>
+2007-12-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumb-view.c: (tb_on_query_tooltip_cb): Correctly escape the
 	tooltip	markup string. This unbreaks the tooltips for images whose
@@ -2370,7 +2370,7 @@
 	* src/eom-image.h: Use existing EomImageData enum instead of guint.
 	Fixes bug #499154 (Ross Burton).
 
-2007-11-22  Felix Riemann  <friemann@svn.mate.org>
+2007-11-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-list-store.c: (eom_list_store_add_thumbnail_job):
 	Check if there is already a thumbnailing job for an image before
@@ -2378,25 +2378,25 @@
 	especially on setups where there are a lot of thumbs visible in the
 	collection.
 
-2007-11-21  Felix Riemann  <friemann@svn.mate.org>
+2007-11-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (pd_update_metadata_tab):
 	Display the metadata tab for images without EXIF data,
 	but with XMP data too.
 
-2007-11-17  Felix Riemann  <friemann@svn.mate.org>
+2007-11-17  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader.c: (eom_metadata_reader_consume):
 	Correctly increase the MetadataReader's position after reading an
 	IPTC block (although it's unused). This ignored all the possible
 	metadata following after the IPTC block. Fixes bug #496184.
 
-2007-11-16  Felix Riemann  <friemann@svn.mate.org>
+2007-11-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_real_load):
 	Fix leaked mime string when loading image dimensions.
 
-2007-11-16  Felix Riemann  <friemann@svn.mate.org>
+2007-11-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-list-store.c: (is_file_in_list_store_uri),
 	(eom_job_thumbnail_cb), (eom_list_store_add_uris),
@@ -2405,7 +2405,7 @@
 	instead of a string URI. Replace now duplicate code with wrapper
 	calls. Fixes a leak on the way.
 
-2007-11-16  Felix Riemann  <friemann@svn.mate.org>
+2007-11-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_collection_mode_changed_cb):
 	Fix leaking MateConf data.
@@ -2432,21 +2432,21 @@
 	Require exempi >= 1.99.5 and update for the API changes. Patch
 	by Michael Biebl <biebl@debian.org>. Fixes bug #494881.
 
-2007-11-10  Felix Riemann  <friemann@svn.mate.org>
+2007-11-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_init), (eom_window_dispose):
 	Disconnect the MateConfNotifications from the windows when closing them.
 	This avoids leaked notifiers and critical messages in multi-window
 	sessions.
 
-2007-11-04  Felix Riemann  <friemann@svn.mate.org>
+2007-11-04  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-util.c: (eom_util_string_array_make_absolute):
 	Make sure the returned list is really NULL-terminated.
 	This fixes segfaults when trying to load images (odd numbers seem to
 	trigger it easily) into an existing instance from the commandline.
 
-2007-11-03  Felix Riemann  <friemann@svn.mate.org>
+2007-11-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-application.c: (eom_application_reset_toolbars_model):
 	* src/eom-application.h:
@@ -2454,7 +2454,7 @@
 	(eom_window_cmd_edit_toolbar):
 	Support resetting the toolbar to its default state. Fixes bug #480975.
 
-2007-11-03  Felix Riemann  <friemann@svn.mate.org>
+2007-11-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-toolbar-editor.c:
 	(egg_toolbar_editor_disconnect_model),
@@ -2520,18 +2520,18 @@
 	* src/eom-error-message-area.c: (create_error_message_area): Mark
 	a forgotten string for translation. Fixes bug #490065 (Kelemen Gabor).
 
-2007-10-23  Stéphane Loeuillet  <sloeuille@svn.mate.org>
+2007-10-23  Stéphane Loeuillet  <sloeuille@svn.gnome.org>
 
 	* data/eom.desktop.in.in:
 	Fixed to comply to latest fd.o .desktop specs. Fixes bug #481712
 
-2007-10-21  Felix Riemann  <friemann@svn.mate.org>
+2007-10-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-metadata-reader.c: (eom_metadata_reader_consume):
 	Simply skip APP1 markers with unknown content in JPEG files.
 	This makes such files work as startup files again. Fixes bug #488808.
 
-2007-10-20  Felix Riemann  <friemann@svn.mate.org>
+2007-10-20  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-list-store.c: (eom_list_store_thumbnail_set):
 	Convert an accidential pointer variable to a normal one.
@@ -2595,13 +2595,13 @@
 	(directory_visit_cb), (eom_list_store_add_uris): set images as
 	monitored accordingly.
 
-2007-10-13  Felix Riemann  <friemann@svn.mate.org>
+2007-10-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_cmd_wallpaper):
 	Fix SetAsWallpaper functionality to show the background properties
 	capplet again. Fixes bug #486057.
 
-2007-10-12  Felix Riemann  <friemann@svn.mate.org>
+2007-10-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/Makefile.am:
 	* data/eom-image-properties-dialog.glade:
@@ -2619,13 +2619,13 @@
 	of the dialog definitions does not directly affect the others.
 	It should also ease a possible GtkBuilder transition.
 
-2007-10-10  Felix Riemann  <friemann@svn.mate.org>
+2007-10-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-plugin-manager.c: (about_button_cb):
 	* src/eom-window.c: (eom_window_cmd_about):
 	Remove two now unneeded gtk+-2.10 compatibility checks.
 
-2007-10-08  Felix Riemann  <friemann@svn.mate.org>
+2007-10-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* src/eom-thumb-view.c: (tb_on_query_tooltip_cb),
@@ -2633,7 +2633,7 @@
 	As EOM now depends on gtk+-2.12 we don't need the extra GtkTooltip
 	check anymore.
 
-2007-10-08  Felix Riemann  <friemann@svn.mate.org>
+2007-10-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* src/eom-window.c: (add_uri_to_recent_files),
@@ -2641,7 +2641,7 @@
 	(eom_window_init), (eom_window_dispose), (eom_window_class_init):
 	Adapt recent files code to changes made in gtk+-2.12.
 
-2007-10-07  Felix Riemann  <friemann@svn.mate.org>
+2007-10-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-editable-toolbar.c:
 	(configure_item_cursor), (new_pixbuf_from_widget):
@@ -2651,7 +2651,7 @@
 	Update to latest toolbar-editor. This contains multihead enhancements
 	and an optimized marshallers list.
 
-2007-10-05  Felix Riemann  <friemann@svn.mate.org>
+2007-10-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_real_load):
 	Just drop the error from gdk_pixbuf_loader_close() if the
@@ -2659,7 +2659,7 @@
 	crashes which loaders not supporting this or because of an invalid
 	file format. Fixes bug #482752.
 
-2007-10-02  Felix Riemann  <friemann@svn.mate.org>
+2007-10-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (check_loader_threadsafety),
 	(eom_image_pre_size_prepared), (eom_image_real_load):
@@ -2673,18 +2673,18 @@
 	to the store on file creation, if the mimetype is recognized.
 	Fixes bug #479400.
 
-2007-09-22  Felix Riemann  <friemann@svn.mate.org>
+2007-09-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumb-view.c: (tb_on_query_tooltip_cb): Improve URI handling
 	and catch the case where mate-vfs is unable to determine a mimetype
 	to avoid a crasher. Fixes bug #479029.
 
-2007-09-19  Felix Riemann  <friemann@svn.mate.org>
+2007-09-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.glade: Remove some accidentialy duplicated widgets.
 	This makes the SaveAsMany dialog work again. Fixes bug #477550.
 
-2007-09-19  Felix Riemann  <friemann@svn.mate.org>
+2007-09-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-plugin-manager.c: (about_button_cb): Adapt the plugin about
 	dialog to a changed property name in gtk+-2.11. Fixes bug #476313.
@@ -2758,7 +2758,7 @@
 	EomTransform for the auto-orientation in order to avoid wrong
 	orientation of thumbnails. Fixes bug #465583.
 
-2007-09-08  Felix Riemann  <friemann@svn.mate.org>
+2007-09-08  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-transform.c: (eom_transform_apply): Limit progress reporting
 	during transformation. This should avoid slowdowns due to unnecessary
@@ -2770,17 +2770,17 @@
 	(eom_window_stop_fullscreen): Build correctly without dbus.
 	Fixes bug #474642 (Martin Olsson).
 
-2007-09-07  Felix Riemann  <friemann@svn.mate.org>
+2007-09-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.schemas.in:
 	* src/eom-config-keys.h:
 	Remove two obsoleted/unused MateConf keys.
 
-2007-09-07  Felix Riemann  <friemann@svn.mate.org>
+2007-09-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.schemas.in: Remove obsoleted MateConf key.
 
-2007-09-07  Felix Riemann  <friemann@svn.mate.org>
+2007-09-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.schemas.in: Use the same keyname in application and schema.
 
@@ -2788,7 +2788,7 @@
 
 	* src/eom-properties-dialog.c: Actually build without libexif.
 
-2007-09-06  Felix Riemann  <friemann@svn.mate.org>
+2007-09-06  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-application.c: (eom_application_get_uri_window):
 	Avoid a critcal warning when loading an image into an empty window.
@@ -2883,13 +2883,13 @@
 	* src/Makefile.am, src/main.c: renamed EOM_DATADIR to EOM_DATA_DIR
 	for consistency.
 
-2007-09-03  Felix Riemann  <friemann@svn.mate.org>
+2007-09-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-list-store.c: (eom_list_store_add_uris): Fix leak.
 	* src/eom-thumb-view.c: (tb_on_query_tooltip_cb): Unref the exif data
 	after using it to avoid a leak.
 
-2007-08-31  Felix Riemann  <friemann@svn.mate.org>
+2007-08-31  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-util.c: (eom_exif_util_get_value): Set the first byte
 	in the result buffer to 0 before buffering the exif value in it.
@@ -2900,25 +2900,25 @@
 	* src/eom-window.c (eom_window_construct_ui): correctly size the side
 	bar with default width.
 
-2007-08-29  Felix Riemann  <friemann@svn.mate.org>
+2007-08-29  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (pd_update_general_tab):
 	Fix a leak in my previous commit.
 
-2007-08-29  Felix Riemann  <friemann@svn.mate.org>
+2007-08-29  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (pd_update_general_tab):
 	Make the unit (px) in the width/height fields translatable and
 	distinguish between singular/plural form. This is unaffected by the
 	string freeze as it uses an existing translation.
 
-2007-08-29  Felix Riemann  <friemann@svn.mate.org>
+2007-08-29  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (pd_update_metadata_tab):
 	Use present private data pointer instead of permanently derefencing it
 	from the main object.
 
-2007-08-28  Felix Riemann  <friemann@svn.mate.org>
+2007-08-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-application.c: (eom_application_real_open_uri_list):
 	Fix segfault when starting without any images.
@@ -2963,7 +2963,7 @@
 	* data/pixmaps/Makefile.am: install pixmaps on $(pkgdatadir)/pixmaps
 	instead of $(datadir)/pixmaps/eom/.
 
-2007-08-27  Felix Riemann  <friemann@svn.mate.org>
+2007-08-27  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (update_action_groups_state): Only use
 	gtk_widget_hide instead of _hide_all to allow loading images into an
@@ -2974,7 +2974,7 @@
 	* src/eom-thumb-view.c (eom_thumb_view_init): do not colorize
 	thumbnails on selection.
 
-2007-08-17  Felix Riemann  <friemann@svn.mate.org>
+2007-08-17  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-statusbar.c: Remove unused private structure member.
 
@@ -3019,7 +3019,7 @@
 	eom_window_stop_fullscreen): activate/deactivate screensaver when
 	fullscreen or slideshow modes are activated.
 
-2007-08-13  Felix Riemann  <friemann@svn.mate.org>
+2007-08-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Make sure s-m-i >= 0.20 is installed.
 	* data/eom.desktop.in.in: Add WBMP to supported filetypes.
@@ -3043,11 +3043,11 @@
 	* src/eom-image.c: (eom_image_set_xmp_data): No need
 	to define this function if exempi is not present.
 
-2007-08-10  Felix Riemann  <friemann@svn.mate.org>
+2007-08-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* */.svnignore: Remove unneeded .svnignore files.
 
-2007-08-10  Felix Riemann  <friemann@svn.mate.org>
+2007-08-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-file-chooser.c: (save_response_cb),
 	(eom_file_chooser_new):
@@ -3071,7 +3071,7 @@
 	* src/eom-list-store.c: (vfs_monitor_dir_cb): Update thumbnail
 	on MATE_VFS_EVENT_METADATA_CHANGED. Fixes bug #464709.
 
-2007-08-09  Felix Riemann  <friemann@svn.mate.org>
+2007-08-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image-save-info.c: (get_save_file_type_by_uri):
 	Remove duplicated code.
@@ -3130,7 +3130,7 @@
 	Update thumbnails after applying transformations to images. Fixes
 	bug #462973.
 
-2007-08-06  Felix Riemann  <friemann@svn.mate.org>
+2007-08-06  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-save-as-dialog-helper.c: (eom_save_as_dialog_new):
 	Use g_build_filename instead of mate_program_locate_file to find the
@@ -3153,13 +3153,13 @@
 	* src/eom-jobs.c: (eom_job_thumbnail_run): remove forgotten
 	calls to gdk_pixbuf_get_width/height().
 
-2007-08-03  Felix Riemann  <friemann@svn.mate.org>
+2007-08-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* bindings/python/eom.defs: Remove eom_application_register_service
 	from python bindings. There is no need to have it called again by a
 	plugin and it breaks the build with dbus disabled. Fixes bug #462785.
 
-2007-08-01  Felix Riemann  <friemann@svn.mate.org>
+2007-08-01  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac:
 	* data/icons/16x16/actions/Makefile.am:
@@ -3173,11 +3173,11 @@
 	Install app specific icons into correct directory. Install the
 	scalable action icons as well. Fixes bug #462362 (Jaap Haitsma).
 
-2007-07-30  Felix Riemann  <friemann@svn.mate.org>
+2007-07-30  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.glade: Fix several UI problems. Fixes bug #460780.
 
-2007-07-29  Felix Riemann  <friemann@svn.mate.org>
+2007-07-29  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-editable-toolbar.c:
 	(egg_editable_toolbar_dispose):
@@ -3185,7 +3185,7 @@
 	* cut-n-paste/toolbar-editor/egg-toolbars-model.c:
 	Update to latest code from libegg to fix a memory leak.
 
-2007-07-29  Felix Riemann  <friemann@svn.mate.org>
+2007-07-29  Felix Riemann  <friemann@svn.gnome.org>
 
 	* configure.ac: Adjust the GtkTooltip check to work with Claudio's
 	last commit.
@@ -3196,7 +3196,7 @@
 	gtk_icon_view_get_tooltip_context() function to build tooltips. Fixes
 	bug #455700.
 
-2007-07-24  Felix Riemann  <friemann@svn.mate.org>
+2007-07-24  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-print-preview.c: (create_image_scaled):
 	Fix a MIN/MAX mix-up. Really closes bug #453151 (Stefan Röllin).
@@ -3241,13 +3241,13 @@
 	* src/eom-window.c: Use "document-page-setup" icon from g-i-t.
 	Fixes bug #455672 (Luca Ferretti)
 
-2007-07-14  Felix Riemann <friemann@svn.mate.org>
+2007-07-14  Felix Riemann <friemann@svn.gnome.org>
 
 	* src/eom-file-chooser.c: (set_preview_pixbuf):
 	* src/eom-thumb-view.c: (tb_on_query_tooltip_cb): Correct plural form.
 	* src/eom-window.c: (update_status_bar): The same and fix typo.
 
-2007-07-14  Felix Riemann  <friemann@svn.mate.org>
+2007-07-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.glade: Remove some unnecessary translations.
 
@@ -3259,7 +3259,7 @@
 
 	* NEWS: Update for 2.19.4
 
-2007-07-09  Felix Riemann  <friemann@svn.mate.org>
+2007-07-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-jobs.c: (eom_job_save_as_real_run):
 	Make file overwriting actually work in single-SaveAs mode.
@@ -3280,7 +3280,7 @@
 	events on image collection pane when in fullscreen mode in order to
 	keep toolbar visible.
 
-2007-07-05  Felix Riemann  <friemann@svn.mate.org>
+2007-07-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_trans_color_changed_cb):
 	Use correct operator in fix for bug #453503.
@@ -3333,7 +3333,7 @@
 	* cut-n-paste/toolbar-editor/update-toolbareditor-from-libegg.sh: added
 	This script syncs the toolbar with libegg
 
-2007-07-02  Felix Riemann  <friemann@svn.mate.org>
+2007-07-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	Update from upstream (bug #452923):
 
@@ -3351,7 +3351,7 @@
 
 	* cut-n-paste/toolbar-editor/egg*: Sync from libegg. Fixes bug #452849
 
-2007-07-01  Felix Riemann  <friemann@svn.mate.org>
+2007-07-01  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.schemas.in: Fix typo. Fixes bug #452886 (Bob Mauchin).
 
@@ -3381,13 +3381,13 @@
 	pd_exif_details_activated_cb, pd_resize_dialog): resize dialog when
 	exif details expander is closed. Fixes bug #313676.
 
-2007-06-25  Felix Riemann  <friemann@svn.mate.org>
+2007-06-25  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-toolbar-editor.c:
 	(event_box_realize_cb):
 	Make named drag icons toolbar-sized like the others.
 
-2007-06-24  Felix Riemann  <friemann@svn.mate.org>
+2007-06-24  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-toolbar-editor.c:
 	(editor_create_item_from_name):
@@ -3405,13 +3405,13 @@
 	* src/eom-window.c (eom_window_key_press): don't use GDK_Q and GDK_q
 	to close window in order to keep HIG compliance.
 
-2007-06-24  Felix Riemann  <friemann@svn.mate.org>
+2007-06-24  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-toolbar-editor.c:
 	(editor_create_item_from_name):
 	Check for icon-name first as it is only set if the icon is a named one
 
-2007-06-24  Felix Riemann  <friemann@svn.mate.org>
+2007-06-24  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-toolbar-editor.c:
 	(editor_create_item_from_name):
@@ -3420,7 +3420,7 @@
 	the image type. This makes it possible to display the icon of such
 	actions in the toolbar editor.
 
-2007-06-23  Felix Riemann  <friemann@svn.mate.org>
+2007-06-23  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-details.c: (eom_exif_details_dispose),
 	(eom_exif_details_init), (exif_entry_cb), (eom_exif_details_reset):
@@ -3474,7 +3474,7 @@
 	eom_properties_dialog_update, eom_properties_dialog_page_switch):
 	remember which tab was selected in the dialog. Fixes bug #435456.
 
-2007-06-16  Felix Riemann  <friemann@svn.mate.org>
+2007-06-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-details.c: (eom_exif_details_init),
 	(eom_exif_details_reset), (eom_exif_details_update):
@@ -3493,7 +3493,7 @@
 	show_tree_popup_menu): don't show contextual menu when there are no
 	plugins available in order to avoid crashers. Fixes bug #445535.
 
-2007-06-10  Felix Riemann  <friemann@svn.mate.org>
+2007-06-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_cmd_about): Make about dialog work
 	correctly with gtk+ >= 2.11.
@@ -3524,7 +3524,7 @@
 	Allow keyboard navigation in the application toolbar. Fixes bug #385327
 	(Patrick Wade, Claudio Saavedra).
 
-2007-05-28  Felix Riemann  <friemann@svn.mate.org>
+2007-05-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-thumb-view.c: (tb_on_button_press_event_cb): Fix leak.
 
@@ -3533,11 +3533,11 @@
 	* src/eom-window.c (): don't use duplicated action ids when updating
 	the "Open with" submenu. Fixes bug #440207 (Christian Persch).
 
-2007-05-27  Felix Riemann  <friemann@svn.mate.org>
+2007-05-27  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.glade: Move image collection tab to second place.
 
-2007-05-27  Felix Riemann  <friemann@svn.mate.org>
+2007-05-27  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.glade:
 	* src/eom-preferences-dialog.c: (pd_check_toggle_cb),
@@ -3590,13 +3590,13 @@
 	* README, AUTHORS: Update README and AUTHORS. Fixes
 	bug #437691.
 
-2007-05-10  Felix Riemann  <friemann@svn.mate.org>
+2007-05-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-uri-converter.c: (free_token):
 	* src/eom-window.c: (eom_window_retrieve_save_as_uri):
 	Forgot these in the last commit.
 
-2007-05-10  Felix Riemann  <friemann@svn.mate.org>
+2007-05-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-pixbuf-util.c: (eom_pixbuf_get_common_suffix):
 	* src/eom-save-as-dialog-helper.c: (update_preview):
@@ -3637,14 +3637,14 @@
 	src/eom-image-save-info.h: added G_GNUC_CONST to all *_get_type
 	functions.
 
-2007-05-05  Felix Riemann  <friemann@svn.mate.org>
+2007-05-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* cut-n-paste/toolbar-editor/egg-toolbar-editor.c:
 	(event_box_realize_cb), (editor_create_item_from_name):
 	Fix usage of themed icons and have them displayed under the pointer
 	while dragging them to the toolbar. Fixes bug #435614.
 
-2007-05-02  Felix Riemann  <friemann@svn.mate.org>
+2007-05-02  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-preferences-dialog.c:
 	(eom_preferences_dialog_constructor):
@@ -3738,7 +3738,7 @@
 	dimensions.
 	* configure.ac: added checks for new tooltip API in GTK+.
 
-2007-04-25  Felix Riemann  <friemann@svn.mate.org>
+2007-04-25  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-details.c: (eom_exif_details_dispose):
 	* src/eom-image-save-info.c: (eom_image_save_info_dispose):
@@ -3761,7 +3761,7 @@
 	fullscreen/slideshow mode. Patch by Diego Escalante Urrelo
 	<diego@aureal.com.pe>. Fixes bug #419756.
 
-2007-04-18  Felix Riemann  <friemann@svn.mate.org>
+2007-04-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (move_to_trash_real): Fix trash functionality on
 	mounted media and automatically create a trash directory if needed.
@@ -3773,11 +3773,11 @@
 	correctly the maximum printed image size. Fixes a bug when printing
 	an image in a landscape page (it wouldn't fit the page).
 
-2007-04-14  Felix Riemann  <friemann@svn.mate.org>
+2007-04-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.schemas.in: Add missing autorotation key.
 
-2007-04-13  Felix Riemann  <friemann@svn.mate.org>
+2007-04-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-file-chooser.c: (eom_file_chooser_new): Ask user if the wants
 	to overwrite an existing file. Partially fixes bug 421637 as we still
@@ -3789,20 +3789,20 @@
 	* configure.ac: Removed help/ko/Makefile due to mate-doc-utils
 	migration.
 
-2007-04-07  Felix Riemann  <friemann@svn.mate.org>
+2007-04-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-save-as-dialog-helper.c: (prepare_token_options):
 	Apply forgotten patch from stable branch. Hide unsupported tokens.
 	Make sure the token descriptions are being translated. (bug #427154)
 
-2007-04-05  Felix Riemann  <friemann@svn.mate.org>
+2007-04-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-save-as-dialog-helper.c: (prepare_format_options),
 	(eom_save_as_dialog_new):
 	* src/eom-uri-converter.c: (eom_uri_converter_preview):
 	Fix several leaks.
 
-2007-03-28  Felix Riemann  <friemann@svn.mate.org>
+2007-03-28  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-marshal.list: Remove unused marshallers from list.
 
@@ -3815,22 +3815,22 @@
 	* src/eom-window.c (eom_window_window_state_event): use GtkStatusBar
 	API for setting resize grip.
 
-2007-03-23  Felix Riemann  <friemann@svn.mate.org>
+2007-03-23  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_cmd_save_as): Fix crash when
 	cancelling SaveAs dialog (fixes bug 421633).
 	Patch by Jaap Haitsma <jaap@haitsma.org>.
 
-2007-03-22  Felix Riemann  <friemann@svn.mate.org>
+2007-03-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (image_thumb_changed_cb): Use stack for
 	GtkTreeIter variable.
 
-2007-03-20  Felix Riemann  <friemann@svn.mate.org>
+2007-03-20  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.glade: No need to translate the string "EXIF".
 
-2007-03-19  Felix Riemann  <friemann@svn.mate.org>
+2007-03-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image-jpeg.c: (eom_image_jpeg_save_file):
 	* src/eom-image-jpeg.h:
@@ -3839,21 +3839,21 @@
 	* src/eom-transform.h:
 	Disable scaling transformation until it is supported.
 
-2007-03-19  Felix Riemann  <friemann@svn.mate.org>
+2007-03-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-exif-details.c: (set_row_data): Remove duplicate code
 	provided by utility function.
 
-2007-03-18  Felix Riemann  <friemann@svn.mate.org>
+2007-03-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* data/eom.glade: Remove placeholders from translation.
 
-2007-03-18  Felix Riemann  <friemann@svn.mate.org>
+2007-03-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-transform.c: (eom_transform_identity_new):
 	* src/eom-transform.h: Fix compiler warning.
 
-2007-03-18  Felix Riemann  <friemann@svn.mate.org>
+2007-03-18  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-application.c: (eom_application_show_window),
 	(eom_application_real_open_uri_list): Use correct GPOINTER macros to
@@ -3923,7 +3923,7 @@
 2007-03-10  Lucas Rocha  <lucasr@gnome.org>
 
 	Restabilished the image saving functionalities. Based on patch from
-	Felix Riemann <friemann@svn.mate.org>. Fixes bug #377123. A lot
+	Felix Riemann <friemann@svn.gnome.org>. Fixes bug #377123. A lot
 	of polishing is still needed.
 
 	* src/eom-image.[ch] (eom_image_class_init, eom_image_real_transform,
@@ -4086,7 +4086,7 @@
 	(eom_util_format_exif_date_by_hand), (eom_util_format_exif_date):
 	Parse and localize the EXIF date, using strptime when possible, and
 	taking care of broken EXIF headers (Fixes bug #404907). Patch
-	from Felix Riemann <friemann@svn.mate.org> and me.
+	from Felix Riemann <friemann@svn.gnome.org> and me.
 
 2007-02-13  Lucas Rocha  <lucasr@gnome.org>
 
@@ -4109,7 +4109,7 @@
 	* eom.desktop.in.in: Change launcher description to match UI
 	review (Fixes bug #383436).
 
-2007-02-09  Felix Riemann  <friemann@svn.mate.org>
+2007-02-09  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-window.c: (eom_window_print): Make sure the window is not
 	finalized while we are printing. Fixes bug #404708.
@@ -4119,7 +4119,7 @@
 	* shell/eom-window.c: (eom_window_dispose), (eom_window_init):
 	Initialize and finish properly the printing objects.
 
-2007-02-07  Felix Riemann  <friemann@svn.mate.org>
+2007-02-07  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_update_exif_data): According to the EXIF
 	specs Pixel{X,Y}Dimension tags can be either of short or long
@@ -4143,7 +4143,7 @@
 	widgets for showing error/warning messages.
 	* configure.ac: set version to 2.19.1.
 
-2007-02-05  Felix Riemann  <friemann@svn.mate.org>
+2007-02-05  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-properties-dialog.c: (pd_update_general_tab): Fix leaks.
 
@@ -4273,11 +4273,11 @@
 	src/eom-scroll-view.c, src/eom-window.c, src/eom-window.h,
 	src/eom-image-save-info.c: update for EomImage new API.
 
-2007-01-14  Felix Riemann  <friemann@svn.mate.org>
+2007-01-14  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-jobs.c: (eom_job_model_run): Fix leaked list.
 
-2007-01-10  Felix Riemann  <friemann@svn.mate.org>
+2007-01-10  Felix Riemann  <friemann@svn.gnome.org>
 
 	* src/eom-image.c: (eom_image_free_mem_private): Make the double free
 	guard actually work.
@@ -4318,7 +4318,7 @@
 
 	* src/eom-application.c, src/eom-file-chooser.c: small code cleanups.
 
-2007-01-01  Felix Riemann <friemann@svn.mate.org>
+2007-01-01  Felix Riemann <friemann@svn.gnome.org>
 
 	* .svnignore: Remove duplicate entries.
 	* src/.svnignore: Re-add and update file.
@@ -4348,7 +4348,7 @@
 	* shell/Makefile.am, shell/eom-window.c, shell/eom-preferences-dialog.[ch]:
 	rename eom-preferences.* to eom-preferences-dialog.*
 
-2006-12-28  Felix Riemann  <friemann@cvs.mate.org>
+2006-12-28  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-window.c: (eom_window_construct_ui): mateconf_entry_free() is
 	deprecated. Use mateconf_entry_unref() instead.
@@ -4401,22 +4401,22 @@
 	* shell/eom-window.c (eom_window_print_draw_page): Do not use a group
 	in the cairo context. Fixes bug #381358.
 
-2006-12-04  Felix Riemann  <friemann@cvs.mate.org>
+2006-12-04  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-window.c: (eom_window_stop_fullscreen): Unhide mouse
 	cursor upon leaving fullscreen mode. Fixes bug #381867.
 	Patch by Bruno Boaventura <brunoboaventura@gmail.com>.
 
-2006-12-02  Felix Riemann  <friemann@cvs.mate.org>
+2006-12-02  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-uri-converter.h: Reformat for better readability.
 
-2006-11-28  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-28  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* configure.ac: Generate configure help strings using an autoconf
 	macro instead of tabbing/spacing them by hand.
 
-2006-11-28  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-28  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* configure.ac: Put MATE_DOC_INIT down further and call
 	PKG_PROG_PKG_CONFIG before it. Fixes bug #372820.
@@ -4428,22 +4428,22 @@
 	eom-window.c: new thumbnail pane navigator widget. No captions shown
 	anymore. Tooltips still need to be added.
 
-2006-11-19  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-19  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-list-store.c: (vfs_monitor_dir_cb): Update the thumbnail
 	of a changed image by resetting it and not by removing and readding the
 	whole image.
 
-2006-11-18  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-18  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image.h: Remove prototype of long gone eom_image_save().
 
-2006-11-18  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-18  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* autogen.sh: We need to require pkg-config >= 0.16.0 because we use
 	the PKG_PROG_PKG_CONFIG macro.
 
-2006-11-17  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-17  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* autogen.sh: configure.ac asks for autoconf >= 2.57 and
 	intltool >= 0.35.0. Do the same in autogen.sh.
@@ -4457,7 +4457,7 @@
 	* libeom/eom-scroll-view.c: (paint_rectangle): Make check
 	pattern for transparent images a bit lighter. Fixes bug #350183.
 
-2006-11-15  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-15  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image.c: (eom_image_class_init):
 	* libeom/eom-image.h: Remove some unneeded signals.
@@ -4491,7 +4491,7 @@
 	Add support for GtkPrint. Remove old and unused libmateprint{ui}
 	dependence. This is work in progress. See bug #356947.
 
-2006-11-14  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-14  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* Makefile.am:
 	* art/.cvsignore:
@@ -4511,12 +4511,12 @@
 	stock icons instead. Remove now obsolete files. Based on patch for
 	HEAD by Luca Ferretti <elle.uca@libero.it>. Fixes bug #305823.
 
-2006-11-12  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-12  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* configure.ac: Remove unneeded AM_PROG_LIBTOOL and with it the
 	unnecessary C++/Fortran checks.
 
-2006-11-10  Felix Riemann  <friemann@cvs.mate.org>
+2006-11-10  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image-save-info.c:
 	* libeom/eom-image.c:
@@ -4543,17 +4543,17 @@
 	* libeom/eom-thumb-shadow.c: (eom_thumb_shadow_add_rectangle): Slightly
 	optimize the rectangle creation.
 
-2006-10-20  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-20  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* configure.ac: Remove unneeded direct dependency on libmatecanvas.
 
-2006-10-16  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-16  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-transform.c: (eom_transform_apply):
 	Optimize calculation of dy variable. It is now only calulated
 	dest_height times instead of dest_height*dest_width times.
 
-2006-10-15  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-15  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image-save-info.c: (is_local_uri):
 	* shell/eom-preferences.c: (eom_preferences_show):
@@ -4561,19 +4561,19 @@
 	(eom_window_trans_color_changed_cb):
 	Replace deprecated g_strcasecmp() calls.
 
-2006-10-11  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-11  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-file-chooser.c: (eom_file_chooser_add_preview):
 	* shell/eom-save-dialog-helper.c: (update_counter_label): Replace
 	deprecated gtk_label_set() and gtk_widget_set_usize() calls.
 
-2006-10-09  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-09  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image-save-info.c: (eom_image_save_info_from_image),
 	(eom_image_save_info_from_vfs_uri): Replace file_exists() with
 	identical mate_vfs_uri_exists().
 
-2006-10-09  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-09  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-job-queue.c: (eom_job_queue_remove_job): Fix crash when
 	removing transformation jobs from their queue.
@@ -4616,12 +4616,12 @@
 	* libeom/eom-list-store.h: Add a column to store the EomJob that
 	loads the thumbnail.
 
-2006-10-05  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-05  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-window.c: (image_thumb_changed_cb): Only start the manual
 	thumbnail generation introduced by last commit if it is necessary.
 
-2006-10-05  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-05  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image.c: (eom_image_class_init),
 	(eom_image_set_thumbnail):
@@ -4631,17 +4631,17 @@
 	(eom_window_display_image): Set window icon using the new signal. Make
 	it work when the collection view is hidden.
 
-2006-10-05  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-05  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image.c: (eom_image_real_load), (eom_image_load): Merge
 	eom_image_load_exif_data_only() into eom_image_real_load() as they are
 	mostly identical.
 
-2006-10-02  Felix Riemann  <friemann@cvs.mate.org>
+2006-10-02  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-window.c: Add stock icon to undo action.
 
-2006-09-27  Felix Riemann  <friemann@cvs.mate.org>
+2006-09-27  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/eom-image-private.h:
 	* libeom/eom-image.c: (eom_image_dispose), (image_transform),
@@ -4654,13 +4654,13 @@
 	* libeom/eom-image.c: (eom_image_is_supported_mime_type): Check if
 	given string is NULL. Fixes several critical warnings.
 
-2006-09-18  Felix Riemann  <friemann@cvs.mate.org>
+2006-09-18  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* shell/eom-window.c: (eom_window_clear_load_job),
 	(handle_image_selection_changed_cb): make sure a possible loading job
 	is cancelled when re-selecting the current image (Fixes bug #355858).
 
-2006-09-13  Felix Riemann  <friemann@cvs.mate.org>
+2006-09-13  Felix Riemann  <friemann@cvs.gnome.org>
 
 	* libeom/accessible-image-view-factory.h:
 	* libeom/accessible-image-view.h: replace "#ifdef __cplusplus" defines

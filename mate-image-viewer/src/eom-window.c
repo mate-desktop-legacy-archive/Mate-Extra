@@ -2868,7 +2868,7 @@ eom_window_cmd_about (GtkAction *action, gpointer user_data)
 			       "authors", authors,
 			       "documenters", documenters,
 			       "translator-credits", translators,
-			       "website", "http://projects.mate.org/eom/",
+			       "website", "http://projects.gnome.org/eom/",
 			       "logo-icon-name", "eom",
 			       "wrap-license", TRUE,
 			       "license", license_trans,

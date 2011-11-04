@@ -42,28 +42,28 @@
 <a name="EomApplication"></a><pre class="synopsis">#define             <a class="link" href="eom-eom-application.html#EOM-APP:CAPS" title="EOM_APP">EOM_APP</a>
                     <a class="link" href="eom-eom-application.html#EomApplication-struct" title="EomApplication">EomApplication</a>;
 <a class="link" href="eom-eom-application.html#EomApplication"><span class="returnvalue">EomApplication</span></a> *    <a class="link" href="eom-eom-application.html#eom-application-get-instance" title="eom_application_get_instance ()">eom_application_get_instance</a>        (<em class="parameter"><code><span class="type">void</span></code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-register-service" title="eom_application_register_service ()">eom_application_register_service</a>    (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-register-service" title="eom_application_register_service ()">eom_application_register_service</a>    (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-application.html#eom-application-shutdown" title="eom_application_shutdown ()">eom_application_shutdown</a>            (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-open-window" title="eom_application_open_window ()">eom_application_open_window</a>         (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-open-window" title="eom_application_open_window ()">eom_application_open_window</a>         (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-window.html#EomStartupFlags" title="enum EomStartupFlags"><span class="type">EomStartupFlags</span></a> flags</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-open-uri-list" title="eom_application_open_uri_list ()">eom_application_open_uri_list</a>       (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *uri_list</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-open-uri-list" title="eom_application_open_uri_list ()">eom_application_open_uri_list</a>       (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *uri_list</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-window.html#EomStartupFlags" title="enum EomStartupFlags"><span class="type">EomStartupFlags</span></a> flags</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-open-file-list" title="eom_application_open_file_list ()">eom_application_open_file_list</a>      (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *file_list</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-open-file-list" title="eom_application_open_file_list ()">eom_application_open_file_list</a>      (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *file_list</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-window.html#EomStartupFlags" title="enum EomStartupFlags"><span class="type">EomStartupFlags</span></a> flags</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-open-uris" title="eom_application_open_uris ()">eom_application_open_uris</a>           (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **uris</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="eom-eom-application.html#eom-application-open-uris" title="eom_application_open_uris ()">eom_application_open_uris</a>           (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **uris</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-window.html#EomStartupFlags" title="enum EomStartupFlags"><span class="type">EomStartupFlags</span></a> flags</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
-<a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *             <a class="link" href="eom-eom-application.html#eom-application-get-windows" title="eom_application_get_windows ()">eom_application_get_windows</a>         (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *             <a class="link" href="eom-eom-application.html#eom-application-get-windows" title="eom_application_get_windows ()">eom_application_get_windows</a>         (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);
 <span class="returnvalue">EggToolbarsModel</span> *  <a class="link" href="eom-eom-application.html#eom-application-get-toolbars-model" title="eom_application_get_toolbars_model ()">eom_application_get_toolbars_model</a>  (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-application.html#eom-application-save-toolbars-model" title="eom_application_save_toolbars_model ()">eom_application_save_toolbars_model</a> (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="eom-eom-application.html#eom-application-reset-toolbars-model" title="eom_application_reset_toolbars_model ()">eom_application_reset_toolbars_model</a>
@@ -75,7 +75,7 @@
 <div class="refsect1" title="Object Hierarchy">
 <a name="eom-eom-application.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.mate.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----EomApplication
 </pre>
 </div>
@@ -120,11 +120,11 @@ If not running yet, it will create one.
 <hr>
 <div class="refsect2" title="eom_application_register_service ()">
 <a name="eom-application-register-service"></a><h3>eom_application_register_service ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_register_service    (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_register_service    (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);</pre>
 <p>
 Registers <a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a>'s DBus service, to allow
 remote calls. If the DBus service is already registered,
-or there is any other connection error, returns <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.
+or there is any other connection error, returns <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
@@ -136,7 +136,7 @@ or there is any other connection error, returns <a href="http://library.mate.org
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the service was registered succesfully. <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>
+<td> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the service was registered succesfully. <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>
 otherwise.
 </td>
 </tr>
@@ -162,10 +162,10 @@ Takes care of shutting down the Eye of MATE, and quits.
 <hr>
 <div class="refsect2" title="eom_application_open_window ()">
 <a name="eom-application-open-window"></a><h3>eom_application_open_window ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_open_window         (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_open_window         (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-window.html#EomStartupFlags" title="enum EomStartupFlags"><span class="type">EomStartupFlags</span></a> flags</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>
 Opens and presents an empty <a class="link" href="eom-eom-window.html#EomWindow"><span class="type">EomWindow</span></a> to the user. If there is
 an empty window already open, this will be used. Otherwise, a
@@ -182,7 +182,7 @@ new one will be instantiated.
 <tr>
 <td><p><span class="term"><em class="parameter"><code>timestamp</code></em> :</span></p></td>
 <td>The timestamp of the user interaction which triggered this call
-(see <a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html#gtk-window-present-with-time"><code class="function">gtk_window_present_with_time()</code></a>).
+(see <a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html#gtk-window-present-with-time"><code class="function">gtk_window_present_with_time()</code></a>).
 </td>
 </tr>
 <tr>
@@ -192,12 +192,12 @@ new one will be instantiated.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>Return location for a <a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or NULL to ignore errors.
+<td>Return location for a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or NULL to ignore errors.
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>application</code></em> is invalid, <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> otherwise
+<td> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if <em class="parameter"><code>application</code></em> is invalid, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> otherwise
 </td>
 </tr>
 </tbody>
@@ -206,11 +206,11 @@ new one will be instantiated.
 <hr>
 <div class="refsect2" title="eom_application_open_uri_list ()">
 <a name="eom-application-open-uri-list"></a><h3>eom_application_open_uri_list ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_open_uri_list       (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *uri_list</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_open_uri_list       (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *uri_list</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-window.html#EomStartupFlags" title="enum EomStartupFlags"><span class="type">EomStartupFlags</span></a> flags</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>
 Opens a list of images, from a list of URIs. See
 <a class="link" href="eom-eom-application.html#eom-application-open-file-list" title="eom_application_open_file_list ()"><code class="function">eom_application_open_file_list()</code></a> for details.
@@ -231,7 +231,7 @@ Opens a list of images, from a list of URIs. See
 <tr>
 <td><p><span class="term"><em class="parameter"><code>timestamp</code></em> :</span></p></td>
 <td>The timestamp of the user interaction which triggered this call
-(see <a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html#gtk-window-present-with-time"><code class="function">gtk_window_present_with_time()</code></a>).
+(see <a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html#gtk-window-present-with-time"><code class="function">gtk_window_present_with_time()</code></a>).
 </td>
 </tr>
 <tr>
@@ -241,12 +241,12 @@ Opens a list of images, from a list of URIs. See
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>Return location for a <a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or NULL to ignore errors.
+<td>Return location for a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or NULL to ignore errors.
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> Currently always <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
+<td> Currently always <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
 </td>
 </tr>
 </tbody>
@@ -255,11 +255,11 @@ Opens a list of images, from a list of URIs. See
 <hr>
 <div class="refsect2" title="eom_application_open_file_list ()">
 <a name="eom-application-open-file-list"></a><h3>eom_application_open_file_list ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_open_file_list      (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *file_list</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_open_file_list      (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *file_list</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-window.html#EomStartupFlags" title="enum EomStartupFlags"><span class="type">EomStartupFlags</span></a> flags</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>
 Opens a list of files in a <a class="link" href="eom-eom-window.html#EomWindow"><span class="type">EomWindow</span></a>. If an <a class="link" href="eom-eom-window.html#EomWindow"><span class="type">EomWindow</span></a> displaying the first
 image in the list is already open, this will be used. Otherwise, an empty
@@ -275,13 +275,13 @@ image in the list is already open, this will be used. Otherwise, an empty
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>file_list</code></em> :</span></p></td>
-<td>A list of <a href="http://library.mate.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>s.
+<td>A list of <a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a>s.
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>timestamp</code></em> :</span></p></td>
 <td>The timestamp of the user interaction which triggered this call
-(see <a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html#gtk-window-present-with-time"><code class="function">gtk_window_present_with_time()</code></a>).
+(see <a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html#gtk-window-present-with-time"><code class="function">gtk_window_present_with_time()</code></a>).
 </td>
 </tr>
 <tr>
@@ -291,12 +291,12 @@ image in the list is already open, this will be used. Otherwise, an empty
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>Return location for a <a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or NULL to ignore errors.
+<td>Return location for a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or NULL to ignore errors.
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> Currently always <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
+<td> Currently always <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
 </td>
 </tr>
 </tbody>
@@ -305,11 +305,11 @@ image in the list is already open, this will be used. Otherwise, an empty
 <hr>
 <div class="refsect2" title="eom_application_open_uris ()">
 <a name="eom-application-open-uris"></a><h3>eom_application_open_uris ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_open_uris           (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **uris</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            eom_application_open_uris           (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **uris</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> timestamp</code></em>,
                                                          <em class="parameter"><code><a class="link" href="eom-eom-window.html#EomStartupFlags" title="enum EomStartupFlags"><span class="type">EomStartupFlags</span></a> flags</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>
 Opens a list of images, from a list of URI strings. See
 <a class="link" href="eom-eom-application.html#eom-application-open-file-list" title="eom_application_open_file_list ()"><code class="function">eom_application_open_file_list()</code></a> for details.
@@ -324,13 +324,13 @@ Opens a list of images, from a list of URI strings. See
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>uris</code></em> :</span></p></td>
-<td>A <a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of URI strings.
+<td>A <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of URI strings.
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>timestamp</code></em> :</span></p></td>
 <td>The timestamp of the user interaction which triggered this call
-(see <a href="http://library.mate.org/devel/gtk/unstable/GtkWindow.html#gtk-window-present-with-time"><code class="function">gtk_window_present_with_time()</code></a>).
+(see <a href="http://library.gnome.org/devel/gtk/unstable/GtkWindow.html#gtk-window-present-with-time"><code class="function">gtk_window_present_with_time()</code></a>).
 </td>
 </tr>
 <tr>
@@ -340,12 +340,12 @@ Opens a list of images, from a list of URI strings. See
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>Return location for a <a href="http://library.mate.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or NULL to ignore errors.
+<td>Return location for a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or NULL to ignore errors.
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> Currently always <a href="http://library.mate.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
+<td> Currently always <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
 </td>
 </tr>
 </tbody>
@@ -354,7 +354,7 @@ Opens a list of images, from a list of URI strings. See
 <hr>
 <div class="refsect2" title="eom_application_get_windows ()">
 <a name="eom-application-get-windows"></a><h3>eom_application_get_windows ()</h3>
-<pre class="programlisting"><a href="http://library.mate.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *             eom_application_get_windows         (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *             eom_application_get_windows         (<em class="parameter"><code><a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a> *application</code></em>);</pre>
 <p>
 Gets the list of existing <a class="link" href="eom-eom-application.html#EomApplication"><span class="type">EomApplication</span></a>s. The windows
 in this list are not individually referenced, you need to keep

@@ -1,4 +1,4 @@
-2009-04-12  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2009-04-12  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -10,7 +10,7 @@
 
 	* el.po: Updated Greek translation (Thanos Lefteris).
 
-2009-03-29  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2009-03-29  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -18,7 +18,7 @@
 
 	* fr.po: Fixed French translation.
 
-2009-03-25  Amitakhya Phukan <amitakhya@svn.mate.org>
+2009-03-25  Amitakhya Phukan <amitakhya@svn.gnome.org>
 
 	* as.po: Updated Assamese translations.
 
@@ -34,11 +34,11 @@
 
 	* ar.po: Updated Arabic translation by Osama Khalid.
 
-2009-03-18  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2009-03-18  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
         * es.po: Updated Spanish translation.
 
-2009-03-17  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2009-03-17  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -112,7 +112,7 @@
 
 	* lt.po: Updated Lithuanian translation.
 
-2009-03-03  Felix Riemann  <friemann@svn.mate.org>
+2009-03-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.92 version marker.
 
@@ -144,7 +144,7 @@
 
 	* en_GB.po: Updated British English translation.
 
-2009-02-22  Felix Riemann  <friemann@svn.mate.org>
+2009-02-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* be@latin.po:
 	* bg.po:
@@ -194,7 +194,7 @@
 
 	* gu.po: Committed Gujarati Translation.
 
-2009-02-16  Felix Riemann  <friemann@svn.mate.org>
+2009-02-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.91 version marker.
 
@@ -258,7 +258,7 @@
 
 	* vi.po: Updated Vietnamese translation.
 
-2009-02-04  Wouter Bolsterlee  <wbolster@svn.mate.org>
+2009-02-04  Wouter Bolsterlee  <wbolster@svn.gnome.org>
 
 	* nl.po: Dutch translation updated by Wouter Bolsterlee.
 
@@ -270,7 +270,7 @@
 
 	* pl.po: Updated Polish translation
 
-2009-02-03  Felix Riemann  <friemann@svn.mate.org>
+2009-02-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.90 version marker.
 
@@ -291,7 +291,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2009-01-24  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2009-01-24  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -320,7 +320,7 @@
 
 	* nb.po: Updated Norwegian bokmål translation.
 
-2009-01-10  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2009-01-10  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -349,11 +349,11 @@
 
 	* nb.po: Updated Norwegian bokmål translation.
 
-2008-12-15  Felix Riemann  <friemann@svn.mate.org>
+2008-12-15  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.3 version marker.
 
-2008-12-15  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-12-15  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -365,19 +365,19 @@
 
 	* sv.po: Updated Swedish translation.
 
-2008-12-01  Felix Riemann  <friemann@svn.mate.org>
+2008-12-01  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.2 version marker.
 
-2008-11-16  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-11-16  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
-2008-11-08  Jorge Gonzalez  <joregegonz@svn.mate.org>
+2008-11-08  Jorge Gonzalez  <joregegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
-2008-11-03  Felix Riemann  <friemann@svn.mate.org>
+2008-11-03  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.25.1 version marker.
 
@@ -389,7 +389,7 @@
 
 	* ar.po: Updated Arabic Translation by OsamaKhalid.
 
-2008-10-13  Felix Riemann  <friemann@svn.mate.org>
+2008-10-13  Felix Riemann  <friemann@svn.gnome.org>
 
 	* POTFILES.in:
 	* POTFILES.skip:
@@ -400,7 +400,7 @@
 	* cs.po: Updated Czech translation by Adrian Gunis
 	(bug #548506 again).
 
-2008-09-29  Wouter Bolsterlee  <wbolster@svn.mate.org>
+2008-09-29  Wouter Bolsterlee  <wbolster@svn.gnome.org>
 
 	* nl.po: Updated Dutch translation by Wouter Bolsterlee.
 
@@ -433,7 +433,7 @@
 
 	* ja.po: Updated Japanese translation.
 
-2008-09-22  Felix Riemann  <friemann@svn.mate.org>
+2008-09-22  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.24.0 version marker.
 
@@ -526,7 +526,7 @@
 
 	* en_GB.po: Updated British English translation.
 
-2008-09-21  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-09-21  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -644,7 +644,7 @@
 
 	* 2.23.91 version marker.
 
-2008-08-29  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-08-29  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -674,7 +674,7 @@
 
 	* pl.po: Updated Polish translation
 
-2008-07-19  Felix Riemann  <friemann@svn.mate.org>
+2008-07-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.23.90 version marker.
 
@@ -690,7 +690,7 @@
 
 	* ml.po: Malayalam translation updated by Hari Vishnu.
 
-2008-08-15  Sarath Lakshman  <slynux@svn.mate.org>
+2008-08-15  Sarath Lakshman  <slynux@svn.gnome.org>
 
 	* ml.po: update for malayalam language po
 
@@ -743,7 +743,7 @@
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2008-07-29  Wouter Bolsterlee  <wbolster@svn.mate.org>
+2008-07-29  Wouter Bolsterlee  <wbolster@svn.gnome.org>
 
 	* nl.po: Dutch translation updated by Wouter Bolsterlee.
 
@@ -767,7 +767,7 @@
 
 	* pt_BR.po: Terminology fixes by Fabrício Godoy.
 
-2008-06-24  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-06-24  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -775,7 +775,7 @@
 
 	* sq.po: Updated Albanian Translation.
 
-2008-07-21  Felix Riemann  <friemann@svn.mate.org>
+2008-07-21  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.23.5 version marker.
 
@@ -833,7 +833,7 @@
 
 	* 2.23.3 version marker.
 
-2008-05-25  Philip Withnall  <pwithnall@svn.mate.org>
+2008-05-25  Philip Withnall  <pwithnall@svn.gnome.org>
 
 	* en_GB.po: Updated British English translation.
 
@@ -849,7 +849,7 @@
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2008-05-12  Felix Riemann  <friemann@svn.mate.org>
+2008-05-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.23.2 version marker.
 
@@ -884,7 +884,7 @@
 
 	* he.po: Updated Hebrew translation.
 
-2008-04-19  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-04-19  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -897,7 +897,7 @@
 
 	* nb.po: Updated Norwegian bokmål translation.
 
-2008-03-30  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-03-30  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -905,7 +905,7 @@
 
 	* he.po: Updated Hebrew translation.
 
-2008-03-25  Philip Withnall  <pwithnall@svn.mate.org>
+2008-03-25  Philip Withnall  <pwithnall@svn.gnome.org>
 
 	* en_GB.po: Updated British English translation.
 
@@ -922,7 +922,7 @@
 
 	* sk.po: Updated Slovak translation by Peter Tuhársky.
 
-2008-03-16  Felix Riemann  <friemann@svn.mate.org>
+2008-03-16  Felix Riemann  <friemann@svn.gnome.org>
 
 	* POTFILES.in: Fix intltool warnings.
 
@@ -992,7 +992,7 @@
 
 	* gu.po: Updated Gujarati Translation.
 
-2008-03-04  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-03-04  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -1004,7 +1004,7 @@
 
 	* mr.po: Updated Marathi translations from Sandeep Shedmake.
 
-2008-03-03  Philip Withnall  <pwithnall@svn.mate.org>
+2008-03-03  Philip Withnall  <pwithnall@svn.gnome.org>
 
 	* en_GB.po: Updated British English translation.
 
@@ -1012,7 +1012,7 @@
 
 	* lt.po: Updated Lithuanian translation.
 
-2008-03-01  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-03-01  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -1068,7 +1068,7 @@
 
 	* nb.po: Updated Norwegian bokmål translation.
 
-2008-02-16  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2008-02-16  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Brazilian Portuguese translation updated by Hugo Doria.
 
@@ -1120,7 +1120,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2008-02-12  Artur Flinta  <aflinta@svn.mate.org>
+2008-02-12  Artur Flinta  <aflinta@svn.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -1136,11 +1136,11 @@
 
 	* th.po: Updated Thai translation.
 
-2008-02-11  Felix Riemann  <friemann@svn.mate.org>
+2008-02-11  Felix Riemann  <friemann@svn.gnome.org>
 
 	* 2.21.90 version marker.
 
-2008-02-11  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-02-11  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1156,7 +1156,7 @@
 
 	* it.po: Update Italian translation from 2.20 branch.
 
-2008-02-07  Artur Flinta  <aflinta@svn.mate.org>
+2008-02-07  Artur Flinta  <aflinta@svn.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -1164,7 +1164,7 @@
 
 	* el.po: Updated Greek translation
 
-2008-02-03  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2008-02-03  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Fixed typo in Brazilian Portuguese translation.
 
@@ -1176,11 +1176,11 @@
 
 	* oc.po: Updated Occitan translation.
 
-2008-02-02  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2008-02-02  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Improved translation of "Go to" messages.
 
-2008-02-02  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2008-02-02  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -1188,7 +1188,7 @@
 
 	* he.po: Updated Hebrew translaion by Mark Krapviner.
 
-2008-02-01  Amitakhya Phukan <amitakhya@svn.mate.org>
+2008-02-01  Amitakhya Phukan <amitakhya@svn.gnome.org>
 
 	* LINGUAS: Added as to LINGUAS.
 	* as.po: Updated assamese translations.
@@ -1263,11 +1263,11 @@
 
 	* ar.po: Updated Arabic Translation by Khaled Hosny.
 
-2008-01-11  Espen Stefansen  <espens@svn.mate.org>
+2008-01-11  Espen Stefansen  <espens@svn.gnome.org>
 
 	* nb.po: Updated Norwegian Bokmål translation.
 
-2008-01-11  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2008-01-11  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -1283,7 +1283,7 @@
 
 	* be@latin.po: Updated Belarusian Latin translation.
 
-2008-01-04  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2008-01-04  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -1307,7 +1307,7 @@
 
 	* eu.po: Updated Basque translation.
 
-2007-12-30  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2007-12-30  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1315,18 +1315,18 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-12-29  Seán de Búrca  <sdeburca@svn.mate.org>
+2007-12-29  Seán de Búrca  <sdeburca@svn.gnome.org>
 
 	* ga.po: Updated Irish translation.
 
 2007-12-28  Priit Laes  <plaes at svn dot mate dot org>
 
 	* et.po: Translation updated by Ivar Smolin echo
-2007-12-27  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2007-12-27  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
-2007-12-27  Seán de Búrca  <sdeburca@svn.mate.org>
+2007-12-27  Seán de Búrca  <sdeburca@svn.gnome.org>
 
 	* ga.po: Updated Irish translation.
 
@@ -1338,7 +1338,7 @@
 
 	* 2.21.3 version marker.
 
-2007-12-13  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2007-12-13  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Translation of "status bar" fixed by Rodrigo Flores.
 
@@ -1375,7 +1375,7 @@
 	* bg.po: Updated Bulgarian translation by
 	Alexander Shopov <ash@contact.bg>
 
-2007-11-12  Matej Urbančič  <mateju@svn.mate.org>
+2007-11-12  Matej Urbančič  <mateju@svn.gnome.org>
 
 	* sl.po: Updated Slovenian translation.
 
@@ -1383,15 +1383,15 @@
 
 	* hu.po: Translation updated
 
-2007-11-08  Gil Forcada  <gforcada@svn.mate.org>
+2007-11-08  Gil Forcada  <gforcada@svn.gnome.org>
 
 	* ca.po: Updated Catalan translation.
 
-2007-11-04  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2007-11-04  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
-2007-11-04  Priit Laes  <plaes@svn.mate.org>
+2007-11-04  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Translation updated by Priit Laes.
 
@@ -1403,7 +1403,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-11-01  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2007-11-01  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
 
@@ -1411,7 +1411,7 @@
 
 	* 2.21.1 version marker.
 
-2007-10-28  Priit Laes  <plaes@svn.mate.org>
+2007-10-28  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -1423,11 +1423,11 @@
 
 	* da.po: Updated Danish translation
 
-2007-10-25  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2007-10-25  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
-2007-10-24  Matej Urbančič  <mateju@svn.mate.org>
+2007-10-24  Matej Urbančič  <mateju@svn.gnome.org>
 
 	* sl.po: Updated Slovenian translation.
 
@@ -1443,7 +1443,7 @@
 
 	* he.po: Updated Hebrew translation.
 
-2007-10-12  Felix Riemann  <friemann@svn.mate.org>
+2007-10-12  Felix Riemann  <friemann@svn.gnome.org>
 
 	* POTFILES.in: Glade-file has been split into muliple files.
 
@@ -1468,7 +1468,7 @@
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
-2007-09-16  Gil Forcada <gforcada@svn.mate.org>
+2007-09-16  Gil Forcada <gforcada@svn.gnome.org>
 
 	* ca.po: Updated Catalan translation.
 
@@ -1484,7 +1484,7 @@
 
 	* eu.po: Updated Basque translation.
 
-2007-09-15  Artur Flinta  <aflinta@svn.mate.org>
+2007-09-15  Artur Flinta  <aflinta@svn.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -1521,7 +1521,7 @@
 
 	* sq.po: Updated Albanian translation.
 
-2007-09-10  Priit Laes  <plaes@svn.mate.org>
+2007-09-10  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Updated Estonian translation.
 
@@ -1590,7 +1590,7 @@
 
 	* ml.po: Updated Malayalam Translation
 
-2007-08-30  Priit Laes  <plaes@svn.mate.org>
+2007-08-30  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation updates by Ivar Smolin <okul@linux.ee>
 
@@ -1606,11 +1606,11 @@
 
 	* gu.po: Updated Gujarati Translation.
 
-2007-08-29  I. Felix <ifelix@svn.mate.org>
+2007-08-29  I. Felix <ifelix@svn.gnome.org>
 
 	* ta.po:  Tamil Translation updated by Tirumurthi Vasudevan
 
-2007-08-28  Raphael Higino  <raphaelh@svn.mate.org>
+2007-08-28  Raphael Higino  <raphaelh@svn.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation
 
@@ -1623,7 +1623,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-08-28  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2007-08-28  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1647,7 +1647,7 @@
 
 	* hu.po: Translation updated.
 
-2007-08-26  Raphael Higino  <raphaelh@svn.mate.org>
+2007-08-26  Raphael Higino  <raphaelh@svn.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation
 	by Og Maciel <ogmaciel@ubuntu.com>.
@@ -1661,7 +1661,7 @@
 
 	* en_CA.po: Updated Canadian English translation.
 
-2007-08-23  Priit Laes  <plaes@svn.mate.org>
+2007-08-23  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation updates by Ivar Smolin <okul@linux.ee>
 
@@ -1669,7 +1669,7 @@
 
 	* nb.po: Updated Norwegian bokmål translation.
 
-2007-08-19  Artur Flinta  <aflinta@svn.mate.org>
+2007-08-19  Artur Flinta  <aflinta@svn.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -1689,7 +1689,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2007-08-17  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-08-17  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1697,11 +1697,11 @@
 
 	* gu.po: Updated Gujarati Translation.
 
-2007-08-16  Priit Laes  <plaes@svn.mate.org>
+2007-08-16  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation updates by Ivar Smolin <okul@linux.ee>
 
-2007-08-16  Priit Laes  <plaes@svn.mate.org>
+2007-08-16  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin.
 
@@ -1721,11 +1721,11 @@
 
 	* de.po: intltool-update de
 
-2007-08-14  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-08-14  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
-2007-08-14  I. Felix <ifelix@svn.mate.org>
+2007-08-14  I. Felix <ifelix@svn.gnome.org>
 
 	* ta.po:  Tamil Translation updated by Tirumurthi Vasudevan
 
@@ -1745,11 +1745,11 @@
 
 	* fi.po: Updated Finnish translation.
 
-2007-08-13  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-08-13  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
-2007-08-12  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2007-08-12  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Brazilian Portuguese translation updated by Og Maciel
 	<ogmaciel@gnome.org>.
@@ -1762,7 +1762,7 @@
 
 	* lt.po: Updated Lithuanian translation.
 
-2007-08-11  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-08-11  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1782,7 +1782,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-08-08  Artur Flinta  <aflinta@svn.mate.org>
+2007-08-08  Artur Flinta  <aflinta@svn.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -1790,7 +1790,7 @@
 
 	* gu.po: Updated Gujarati Translation.
 
-2007-08-07  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-08-07  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1802,11 +1802,11 @@
 
 	* fi.po: Updated Finnish translation.
 
-2007-08-05  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2007-08-05  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: s/_Conteúdo/S_umário; see bug #461308.
 
-2007-08-05  Raphael Higino  <raphaelh@svn.mate.org>
+2007-08-05  Raphael Higino  <raphaelh@svn.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation
 
@@ -1826,19 +1826,19 @@
 
 	* nb.po: Updated Norwegian bokmål translation.
 
-2007-08-01  Priit Laes  <plaes@svn.mate.org>
+2007-08-01  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin.
 
-2007-07-30  Wouter Bolsterlee  <wbolster@svn.mate.org>
+2007-07-30  Wouter Bolsterlee  <wbolster@svn.gnome.org>
 
 	* nl.po: Dutch translation updated by Wouter Bolsterlee.
 
-2007-07-30  Priit Laes  <plaes@svn.mate.org>
+2007-07-30  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin.
 
-2007-07-30  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-07-30  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1850,7 +1850,7 @@
 
 	* eu.po: Updated Basque translation.
 
-2007-07-24  Priit Laes  <plaes@svn.mate.org>
+2007-07-24  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin.
 
@@ -1871,11 +1871,11 @@
 
 	* th.po: Updated Thai translation.
 
-2007-07-19  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-07-19  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
-2007-07-18  Wouter Bolsterlee  <wbolster@svn.mate.org>
+2007-07-18  Wouter Bolsterlee  <wbolster@svn.gnome.org>
 
 	* nl.po: Translation updated by Wouter Bolsterlee.
 
@@ -1887,7 +1887,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2007-07-15  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-07-15  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1895,7 +1895,7 @@
 
 	* ja.po: Updated Japanese translation.
 
-2007-07-13  Priit Laes  <plaes@svn.mate.org>
+2007-07-13  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin.
 
@@ -1916,7 +1916,7 @@
 
 	* th.po: Updated Thai translation.
 
-2007-07-09  I. Felix <ifelix@svn.mate.org>
+2007-07-09  I. Felix <ifelix@svn.gnome.org>
 
 	* ta.po:  Tamil Translation updated by Tirumurthi Vasudevan
 
@@ -1924,7 +1924,7 @@
 
 	* gu.po: Updated Gujarati Translation.
 
-2007-07-05  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-07-05  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es/es.po: Updated Spanish translation
 
@@ -1936,7 +1936,7 @@
 
 	* vi.po: Updated Vietnamese translation.
 
-2007-07-02  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-07-02  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1957,7 +1957,7 @@
 
 	* dz.po: Updated dzongkha translation
 
-2007-06-28  Artur Flinta  <aflinta@svn.mate.org>
+2007-06-28  Artur Flinta  <aflinta@svn.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -1965,7 +1965,7 @@
 
 	* vi.po: Updated Vietnamese translation.
 
-2007-06-25  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-06-25  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -1973,7 +1973,7 @@
 
 	* nb.po: Updated Norwegian bokmål translation.
 
-2007-06-22  I. Felix <ifelix@svn.mate.org>
+2007-06-22  I. Felix <ifelix@svn.gnome.org>
 
 	* si.po:  Sinhala Translation updated by Danishka Navin
 	* LINGUAS: Added Sinhala (si) to The List of Languages.
@@ -1986,15 +1986,15 @@
 
 	* ta.po: Updated Tamil Translation.
 
-2007-06-18  Priit Laes  <plaes@svn.mate.org>
+2007-06-18  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin.
 
-2007-06-17  Priit Laes  <plaes@svn.mate.org>
+2007-06-17  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin.
 
-2007-06-15  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-06-15  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -2002,7 +2002,7 @@
 
 	* dz.po: Updated dzongkha translation
 
-2007-06-11  Artur Flinta  <aflinta@svn.mate.org>
+2007-06-11  Artur Flinta  <aflinta@svn.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -2022,7 +2022,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2007-05-31  Priit Laes  <plaes@svn.mate.org>
+2007-05-31  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Updated Estonian translation by Ivar Smolin <okul@linux.ee>.
 
@@ -2030,11 +2030,11 @@
 
 	* th.po: Updated Thai translation.
 
-2007-05-30  Priit Laes  <plaes@svn.mate.org>
+2007-05-30  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Updated Estonian translation by Ivar Smolin <okul@linux.ee>.
 
-2007-05-28  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-05-28  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -2062,7 +2062,7 @@
 
 	* en_GB.po: Updated British English translation
 
-2007-05-15  Jorge Gonzalez <jorgegonz@svn.mate.org>
+2007-05-15  Jorge Gonzalez <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -2074,7 +2074,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-05-08  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2007-05-08  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -2092,7 +2092,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-05-03  Jorge Gonzalez  <jorgegonz@svn.mate.org>
+2007-05-03  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -2119,7 +2119,7 @@
 	Yannig MARCHEGAY <yannig@marchegay.org>.
 	* LINGUAS: Added "oc" (Occitan).
 
-2007-04-23  Jorge González <jorgegonz@svn.mate.org>
+2007-04-23  Jorge González <jorgegonz@svn.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -2159,7 +2159,7 @@
 
 	* sq.po: Updated Albanian translation.
 
-2007-03-19  Felix Riemann  <friemann@svn.mate.org>
+2007-03-19  Felix Riemann  <friemann@svn.gnome.org>
 
 	* POTFILES.in: Add missing eom-exif-util.c to file list.
 
@@ -2219,7 +2219,7 @@
 
 	* ku.po: Updated Kurdish translation
 
-2007-03-03  Artur Flinta  <aflinta@svn.mate.org>
+2007-03-03  Artur Flinta  <aflinta@svn.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -2273,7 +2273,7 @@
 
 	* vi.po: Updated Vietnamese translation.
 
-2007-02-18  Priit Laes  <plaes@svn.mate.org>
+2007-02-18  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Updated Estonian translation by Ivar Smolin <okul@linux.ee>.
 
@@ -2293,7 +2293,7 @@
 
 	* pt.po: Updated Portuguese translation.
 
-2007-02-14  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2007-02-14  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -2342,7 +2342,7 @@
 
 	* ko.po: Updated Korean translation.
 
-2007-02-05  Priit Laes  <plaes@svn.mate.org>
+2007-02-05  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Updated Estonian translation by Ivar Smolin <okul@linux.ee>.
 
@@ -2372,7 +2372,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2007-01-28  Priit Laes  <plaes@svn.mate.org>
+2007-01-28  Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Updated Estonian translation by Ivar Smolin <okul@linux.ee>.
 
@@ -2380,7 +2380,7 @@
 
 	* ru.po: Updated Russian translation.
 
-2007-01-26  Leonardo Ferreira Fontenelle  <leonardof@svn.mate.org>
+2007-01-26  Leonardo Ferreira Fontenelle  <leonardof@svn.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -2392,7 +2392,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-01-24 Priit Laes  <plaes@svn.mate.org>
+2007-01-24 Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin <okul@linux.ee>.
 
@@ -2457,7 +2457,7 @@
 
 	* ar.po: Updated Arabic Translation by Khaled Hosny.
 
-2007-01-13  Raphael Higino  <raphaelh@svn.mate.org>
+2007-01-13  Raphael Higino  <raphaelh@svn.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -2473,7 +2473,7 @@
 
 	* sv.po: Updated Swedish translation.
 
-2007-01-09 Priit Laes  <plaes@svn.mate.org>
+2007-01-09 Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin <okul@linux.ee>.
 
@@ -2485,7 +2485,7 @@
 
 	* en_GB.po: Updated English (British) translation
 
-2007-01-07 Priit Laes  <plaes@svn.mate.org>
+2007-01-07 Priit Laes  <plaes@svn.gnome.org>
 
 	* et.po: Estonian translation update by Ivar Smolin.
 
@@ -2574,7 +2574,7 @@
 
 	* ar.po: Updated Arabic Translation.
 
-2006-12-17  Priit Laes  <plaes@cvs.mate.org>
+2006-12-17  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -2631,15 +2631,15 @@
 	* fr.po: Updated French translation from
 	Christophe Bliard <christophe.bliard@trux.info>.
 
-2006-10-02  Priit Laes  <plaes@cvs.mate.org>
+2006-10-02  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
-2006-09-20  Priit Laes  <plaes@cvs.mate.org>
+2006-09-20  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
-2006-09-16  Priit Laes  <plaes@cvs.mate.org>
+2006-09-16  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -2652,7 +2652,7 @@
 
 	* nb.po: Updated Norwegian bokmal translation.
 
-2006-09-08  Priit Laes  <plaes@cvs.mate.org>
+2006-09-08  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -2769,7 +2769,7 @@
 
 	* nl.po: Translation updated by Wouter Bolsterlee.
 
-2006-08-16  Artur Flinta  <aflinta@cvs.mate.org>
+2006-08-16  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -2850,7 +2850,7 @@
 	* dz.po: Updated Dzongkha translation by
 	Dzongkhalinux team, DIT
 
-2006-08-09  Priit Laes  <plaes@cvs.mate.org>
+2006-08-09  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -2977,7 +2977,7 @@
 	* zh_HK.po: Updated Traditional Chinese translation(Hong Kong).
 	* zh_TW.po: Updated Traditional Chinese translation(Taiwan).
 
-2006-07-08  Raphael Higino  <raphaelh@cvs.mate.org>
+2006-07-08  Raphael Higino  <raphaelh@cvs.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -3011,7 +3011,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2006-07-02  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2006-07-02  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -3036,12 +3036,12 @@
 
 	* da.po: Updated Danish translation.
 
-2006-06-20  Thierry S. Randrianiriana  <thierryR@cvs.mate.org>
+2006-06-20  Thierry S. Randrianiriana  <thierryR@cvs.gnome.org>
 
 	* mg.po: Added Malagasy translation
 	* LINGUAS: Added Malagasy code 'mg'
 
-2006-06-17  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2006-06-17  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -3061,7 +3061,7 @@
 
 	* gu.po: Updated Gujarati Translation.
 
-2006-06-10  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2006-06-10  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated spanish translation.
 
@@ -3105,7 +3105,7 @@
 
 	* 2.15.2 version marker.
 
-2006-05-06  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2006-05-06  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -3126,7 +3126,7 @@
 
 	* 2.15.1 version marker.
 
-2006-04-26  Gora Mohanty  <gmohanty@cvs.mate.org>
+2006-04-26  Gora Mohanty  <gmohanty@cvs.gnome.org>
 
 	* lv.po: Updated Latvian translation by Raivis Dejus <orvils@gmail.com>
 
@@ -3159,7 +3159,7 @@
 
 	* nn.po: Updated Norwegian Nynorsk translation.
 
-2006-04-09  Lukas Novotny  <lukasnov@cvs.mate.org>
+2006-04-09  Lukas Novotny  <lukasnov@cvs.gnome.org>
 
 	* cs.po: Updated Czech translation.
 
@@ -3183,11 +3183,11 @@
 
 	* dz.po: Added Dzongkha translation from Pema Geyleg.
 
-2006-03-15 Gora Mohanty  <gmohanty@cvs.mate.org>
+2006-03-15 Gora Mohanty  <gmohanty@cvs.gnome.org>
 
 	* or.po: Updated Oriya translation.
 
-2006-03-15 Gora Mohanty  <gmohanty@cvs.mate.org>
+2006-03-15 Gora Mohanty  <gmohanty@cvs.gnome.org>
 
 	* or.po: Updated Oriya translation.
 
@@ -3265,7 +3265,7 @@
 
 	* cy.po: Updated Welsh translation.
 
-2006-02-25  Artur Flinta  <aflinta@cvs.mate.org>
+2006-02-25  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -3294,7 +3294,7 @@
 	* ru.po: Updated Russian translation by
 	Alexander Sigachov <alexander.sigachov@gmail.com>.
 
-2006-02-09  Lukas Novotny  <lukasnov@cvs.mate.org>
+2006-02-09  Lukas Novotny  <lukasnov@cvs.gnome.org>
 
 	* cs.po: Updated Czech translation.
 
@@ -3331,7 +3331,7 @@
 
 	* nl.po: Translation updated by Tino Meinen.
 
-2006-01-21  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2006-01-21  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -3356,7 +3356,7 @@
 
 	* vi.po: Updated Vietnamese translation.
 
-2006-01-18  Priit Laes  <plaes@cvs.mate.org>
+2006-01-18  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -3396,7 +3396,7 @@
 
 	* sr.po, sr@Latn.po: Updated Serbian translation
 
-2006-01-14  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2006-01-14  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -3414,7 +3414,7 @@
 
 	* ja.po: Updated Japanese translation.
 
-2006-01-12  Priit Laes  <plaes@cvs.mate.org>
+2006-01-12  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -3523,7 +3523,7 @@
 
 	* nn.po: Updated Norwegian Nynorsk translation.
 
-2005-11-27  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2005-11-27  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -3552,7 +3552,7 @@
 
 	* zh_CN.po: Updated Simplified Chinese translation.
 
-2005-11-16  Priit Laes  <plaes@cvs.mate.org>
+2005-11-16  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated.
 
@@ -3577,7 +3577,7 @@
 
 	* th.po: Updated Thai translation.
 
-2005-11-13  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-11-13  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* 2.13.2 version marker.
 
@@ -3586,7 +3586,7 @@
 	* fa.po: Updated Persian translation by Elnaz Sarbar
 	<elnaz@farsiweb.info> and Meelad Zakaria <meelad@farsiweb.info>.
 
-2005-11-13  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2005-11-13  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -3618,7 +3618,7 @@
 
 	* zh_CN.po: Corrected a typo.
 
-2005-10-25  Lucas Rocha  <lucasr@cvs.mate.org>
+2005-10-25  Lucas Rocha  <lucasr@cvs.gnome.org>
 
 	* 2.13.1 version marker.
 
@@ -3750,7 +3750,7 @@
 
 	* ro.po: Updated Romanian translation
 
-2005-08-13  Guilherme de S. Pastore  <gpastore@cvs.mate.org>
+2005-08-13  Guilherme de S. Pastore  <gpastore@cvs.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation
 
@@ -3791,7 +3791,7 @@
 
 	* ja.po: Updated Japanese translation.
 
-2005-07-27  Artur Flinta  <aflinta@cvs.mate.org>
+2005-07-27  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -3804,7 +3804,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2005-07-22  Priit Laes  <plaes@cvs.mate.org>
+2005-07-22  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated.
 
@@ -3816,7 +3816,7 @@
 
 	* ne.po: Updated Nepali Translation
 
-2005-07-21  Priit Laes  <plaes@cvs.mate.org>
+2005-07-21  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated.
 
@@ -3841,11 +3841,11 @@
 
 	* th.po: Updated Thai translation.
 
-2005-07-18  Priit Laes  <plaes@cvs.mate.org>
+2005-07-18  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
-2005-07-17  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2005-07-17  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -3865,7 +3865,7 @@
 
 	* nn.po: Updated Norwegian Nynorsk translation.
 
-2005-07-14  Priit Laes  <plaes@cvs.mate.org>
+2005-07-14  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated.
 
@@ -3891,7 +3891,7 @@
 	* fa.po: Updated Persian translation by Meelad Zakaria
 	<meelad@farsiweb.info>.
 
-2005-07-03  Priit Laes  <plaes@cvs.mate.org>
+2005-07-03  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -3921,7 +3921,7 @@
 	* nb.po: Updated Norwegian Bokmaal translation.
 	* no.po: Same.
 
-2005-06-27  Priit Laes  <plaes@cvs.mate.org>
+2005-06-27  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -3933,7 +3933,7 @@
 
 	* th.po: Updated Thai translation.
 
-2005-06-25  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2005-06-25  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -3949,7 +3949,7 @@
 
 	* nl.po: Translation updated by Michiel Sikkes.
 
-2005-06-10  Priit Laes  <plaes@cvs.mate.org>
+2005-06-10  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -3957,7 +3957,7 @@
 
 	* da.po: Updated Danish translation.
 
-2005-06-06  Priit Laes  <plaes@cvs.mate.org>
+2005-06-06  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -3980,7 +3980,7 @@
 	* gl.po: Updated Galician translation by
 	Ignacio Casal Quinteiro <nacho.resa@gmail.com>.
 
-2005-06-01  Priit Laes  <plaes@cvs.mate.org>
+2005-06-01  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -4017,7 +4017,7 @@
 
 	* hi.po: Updated hindi translation.
 
-2005-04-23  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2005-04-23  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4034,7 +4034,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2005-04-15  Priit Laes  <plaes@cvs.mate.org>
+2005-04-15  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -4084,7 +4084,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2005-03-29  Adi Attar  <aattar@cvs.mate.org>
+2005-03-29  Adi Attar  <aattar@cvs.gnome.org>
 
 	* xh.po: Updated Xhosa translation.
 
@@ -4108,7 +4108,7 @@
 
 	* en_CA.po: Updated Canadian English translation.
 
-2005-03-15  Guilherme de S. Pastore <gpastore@cvs.mate.org>
+2005-03-15  Guilherme de S. Pastore <gpastore@cvs.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -4116,7 +4116,7 @@
 
 	* pt.po: Updated Portuguese translation.
 
-2005-03-15  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2005-03-15  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4128,7 +4128,7 @@
 
 	* hu.po: Hungarian translation updated by Gabor Kelemen.
 
-2005-03-04  Adi Attar  <aattar@cvs.mate.org>
+2005-03-04  Adi Attar  <aattar@cvs.gnome.org>
 
 	* xh.po: Added Xhosa translation.
 
@@ -4165,7 +4165,7 @@
 
 	* ar.po: Updated Arabic translation.
 
-2005-02-24  Raphael Higino  <raphaelh@cvs.mate.org>
+2005-02-24  Raphael Higino  <raphaelh@cvs.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -4202,15 +4202,15 @@
 
 	* fr.po: Updated French translation.
 
-2005-02-09  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2005-02-09  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
-2005-02-09  Artur Flinta  <aflinta@cvs.mate.org>
+2005-02-09  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
-2005-02-09  Priit Laes  <plaes@cvs.mate.org>
+2005-02-09  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -4230,7 +4230,7 @@
 
 	* da.po: Updated Danish translation.
 
-2005-02-06  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2005-02-06  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4242,7 +4242,7 @@
 
 	* el.po: Updated Greek translation.
 
-2005-02-02  Priit Laes  <plaes@cvs.mate.org>
+2005-02-02  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -4254,7 +4254,7 @@
 
 	* lt.po: Updated Lithuanian translation.
 
-2005-01-29  Raphael Higino  <raphaelh@cvs.mate.org>
+2005-01-29  Raphael Higino  <raphaelh@cvs.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -4271,11 +4271,11 @@
 
 	* zh_CN.po: Updated Simplified Chinese translation.
 
-2005-01-21  Priit Laes  <plaes@cvs.mate.org>
+2005-01-21  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
-2005-01-21  Priit Laes  <plaes@cvs.mate.org>
+2005-01-21  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -4287,11 +4287,11 @@
 
 	* ca.po: Updated Catalan translation.
 
-2005-01-18  Frank Arnold  <farnold@cvs.mate.org>
+2005-01-18  Frank Arnold  <farnold@cvs.gnome.org>
 
 	* de.po: Updated German translation.
 
-2005-01-18  Priit Laes  <plaes@cvs.mate.org>
+2005-01-18  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -4304,7 +4304,7 @@
 	* POTFILES.skip: Removed nonexisting entry.
 	* sv.po: Updated Swedish translation.
 
-2005-01-16  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2005-01-16  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4319,7 +4319,7 @@
 	* nb.po: Update
 	* no.po: Update
 
-2005-01-15  Priit Laes  <plaes@cvs.mate.org>
+2005-01-15  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated by Ivar Smolin.
 
@@ -4339,7 +4339,7 @@
 
 	* ca.po: Updated Catalan translation.
 
-2004-12-29  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-12-29  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4411,7 +4411,7 @@
 
 	* en_GB.po: Updated British English translation.
 
-2004-10-30  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-10-30  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4559,7 +4559,7 @@
 
 	* nl.po: Translation updated by Tino Meinen.
 
-2004-09-07  Gora Mohanty  <gmohanty@cvs.mate.org>
+2004-09-07  Gora Mohanty  <gmohanty@cvs.gnome.org>
 
 	* or.po: Updated Oriya translation.
 
@@ -4598,15 +4598,15 @@
 
 	* cs.po: Updated Czech translation.
 
-2004-09-03  Gora Mohanty  <gmohanty@cvs.mate.org>
+2004-09-03  Gora Mohanty  <gmohanty@cvs.gnome.org>
 
 	* or.po: Updated Oriya translation.
 
-2004-09-03  Gora Mohanty  <gmohanty@cvs.mate.org>
+2004-09-03  Gora Mohanty  <gmohanty@cvs.gnome.org>
 
 	* or.po: Updated Oriya translation.
 
-2004-09-01  Estuvo Samuel Procípio  <tevaum@cvs.mate.org>
+2004-09-01  Estuvo Samuel Procípio  <tevaum@cvs.gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
 
@@ -4630,7 +4630,7 @@
 
 	* en_GB.po: Updated British translation.
 
-2004-08-24  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-08-24  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4717,7 +4717,7 @@
 
 	* pt.po: Updated Portuguese translation.
 
-2004-08-17  Artur Flinta  <aflinta@cvs.mate.org>
+2004-08-17  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -4726,7 +4726,7 @@
 	* bs.po: Added Bosnian translation by
 	Kenan Hadiavdi <kenanh@frisurf.no>.
 
-2004-08-16  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-08-16  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4751,7 +4751,7 @@
 
 	* fi.po: Unified some fields in po headers for Finnish team.
 
-2004-08-10  Gora Mohanty  <gmohanty@cvs.mate.org>
+2004-08-10  Gora Mohanty  <gmohanty@cvs.gnome.org>
 
 	* or.po: Updated Oriya translation.
 
@@ -4759,7 +4759,7 @@
 
 	* ms.po: Updated Malay translation.
 
-2004-08-09  Artur Flinta  <aflinta@cvs.mate.org>
+2004-08-09  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -4805,7 +4805,7 @@
 
 	* zh_CN.po: Updated Simplified Chinese translation.
 
-2004-07-31  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-07-31  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4880,7 +4880,7 @@
 
 	* en_GB.po: Updated British translation.
 
-2004-07-24  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-07-24  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -4992,7 +4992,7 @@
 
 	* en_CA.po: Updated Canadian English translation.
 
-2004-05-13  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-05-13  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spansih translation.
 
@@ -5166,7 +5166,7 @@
 
 	* ga.po: Updated Irish translation.
 
-2004-03-08  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-03-08  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -5204,7 +5204,7 @@
 
 	* fi.po: Updated Finnish translation.
 
-2004-03-05  Yuriy Syrota  <rasta@cvs.mate.org>
+2004-03-05  Yuriy Syrota  <rasta@cvs.gnome.org>
 
 	* uk.po: Updated Ukrainian translation.
 
@@ -5221,7 +5221,7 @@
 
 	* fr.po: Updated French translation.
 
-2004-02-28  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-02-28  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spansih translation.
 
@@ -5233,7 +5233,7 @@
 
 	* th.po: Updated Thai translation.
 
-2004-02-27  Priit Laes  <plaes@cvs.mate.org>
+2004-02-27  Priit Laes  <plaes@cvs.gnome.org>
 
 	* et.po: Translation updated.
 
@@ -5303,7 +5303,7 @@
 
 	* nn.po: Updated Norwegian Nynorsk translation.
 
-2004-02-23  Artur Flinta  <aflinta@cvs.mate.org>
+2004-02-23  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -5344,11 +5344,11 @@
 
 	* sq.po: Updated Albanian translation.
 
-2004-02-20  Artur Flinta  <aflinta@cvs.mate.org>
+2004-02-20  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
-2004-02-20  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-02-20  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spansih translation.
 
@@ -5410,7 +5410,7 @@
 
 	* el.po:  Updated Greek translation.
 
-2004-02-08  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-02-08  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -5436,7 +5436,7 @@
 
 	* lt.po: Updated Lithuanian translation.
 
-2004-02-03  Artur Flinta  <aflinta@cvs.mate.org>
+2004-02-03  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -5524,7 +5524,7 @@
 
 	* ko.po: Updated Korean translation.
 
-2004-01-16  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-01-16  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation
 
@@ -5536,7 +5536,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2004-01-15  Artur Flinta  <aflinta@cvs.mate.org>
+2004-01-15  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -5558,7 +5558,7 @@
 
 	* no.po: Updated Norwegian translation.
 
-2004-01-11  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-01-11  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -5570,7 +5570,7 @@
 
 	* ar.po: Updated Arabic translation
 
-2004-01-09  Artur Flinta  <aflinta@cvs.mate.org>
+2004-01-09  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation by MATE PL Team.
 
@@ -5618,7 +5618,7 @@
 
 	* bn.po: Updated Bangla (Bengali) translation.
 
-2004-01-01  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2004-01-01  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -5632,7 +5632,7 @@
 
 ===== 2.5.2.1 ====
 
-2003-12-29  Artur Flinta  <aflinta@cvs.mate.org>
+2003-12-29  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation.
 
@@ -5674,7 +5674,7 @@
 
 	* sr.po, sr@Latn.po: Updated Serbian translation.
 
-2003-12-21  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2003-12-21  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -5710,7 +5710,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2003-12-12  Francisco Javier F. Serrador  <serrador@cvs.mate.org>
+2003-12-12  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
 
 	* es.po: Updated Spanish translation.
 
@@ -6067,7 +6067,7 @@
 
 	* de.po: Updated German translation.
 
-2003-07-16  Artur Flinta  <aflinta@cvs.mate.org>
+2003-07-16  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation.
 
@@ -6133,11 +6133,11 @@
 
 	* de.po: Updated German translation.
 
-2003-07-01  Artur Flinta  <aflinta@cvs.mate.org>
+2003-07-01  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation.
 
-2003-07-01  Artur Flinta  <aflinta@cvs.mate.org>
+2003-07-01  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation.
 
@@ -6165,7 +6165,7 @@
 
 	* id.po: Updated Indonesian translation
 
-2003-06-27  Artur Flinta  <aflinta@cvs.mate.org>
+2003-06-27  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* pl.po: Updated Polish translation.
 
