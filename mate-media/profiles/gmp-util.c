@@ -47,7 +47,7 @@ gmp_util_load_builder_file (const char *filename,
     goto end;
 
   if (error != NULL) {
-    g_warning (error->message);
+    g_warning ("%s", error->message);
     g_error_free (error);
     error = NULL;
   }
