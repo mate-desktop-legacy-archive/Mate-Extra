@@ -344,20 +344,16 @@ on_profile_changed (GMAudioProfile *profile,
 }
 
 /* ui callbacks */
-static void
-new_button_clicked (GtkWidget   *button,
-                    GMAudioProfilesEdit *dialog)
+static void new_button_clicked(GtkWidget* button, GMAudioProfilesEdit* dialog)
 {
-  gm_audio_profiles_edit_new_profile (dialog, GTK_WINDOW (dialog));
+	gm_audio_profiles_edit_new_profile(dialog, GTK_WINDOW(dialog));
 }
 
-static void
-edit_button_clicked (GtkWidget   *button,
-                     GMAudioProfilesEdit *dialog)
+static void edit_button_clicked(GtkWidget* button, GMAudioProfilesEdit* dialog)
 {
-  GtkTreeSelection *selection;
-  GList *profiles;
-  GMAudioProfile *profile;
+	GtkTreeSelection* selection;
+	GList* profiles;
+	GMAudioProfile* profile;
 
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->priv->manage_profiles_list));
 
@@ -372,7 +368,7 @@ edit_button_clicked (GtkWidget   *button,
   /* only one selection ? */
   if (profiles->next == NULL)
   {
-    GtkWidget *edit_dialog;	  
+    GtkWidget *edit_dialog;
     profile = (GMAudioProfile *) profiles->data;
     /* connect to profile changed signal so we can update the name in the list
      * if it gets changed */
@@ -531,7 +527,7 @@ on_gm_audio_profiles_edit_response (GtkWidget *dialog,
         }
       return;
     }
-      
+
     gtk_widget_destroy (dialog);
 }
 
@@ -896,96 +892,97 @@ new_profile_name_entry_changed_callback (GtkEditable *editable, gpointer data)
   g_free (saved_name);
 }
 
-void
-gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
-                               GtkWindow *transient_parent)
+void gm_audio_profiles_edit_new_profile(GMAudioProfilesEdit* dialog, GtkWindow* transient_parent)
 {
-  GtkWindow *old_transient_parent;
-  GtkWidget *create_button;
-  gint response;
-  GError *error = NULL;
+	GtkWindow* old_transient_parent;
+	GtkWidget* create_button;
+	gint response;
+	GError* error = NULL;
 
-  if (dialog->priv->new_profile_dialog == NULL)
-  {
-    GtkBuilder *builder;
-    GtkWidget *w, *wl;
-    GtkWidget *create_button;
-    GtkSizeGroup *size_group, *size_group_labels;
+	if (dialog->priv->new_profile_dialog == NULL)
+	{
+		GtkBuilder* builder;
+		GtkWidget* w;
+		GtkWidget* wl;
+		GtkWidget* create_button;
+		GtkSizeGroup* size_group;
+		GtkSizeGroup* size_group_labels;
 
-    builder = gmp_util_load_builder_file ("mate-audio-profile-new.ui", transient_parent, &error);
+		builder = gmp_util_load_builder_file("mate-audio-profile-new.ui", transient_parent, &error);
 
-    if (error != NULL) {
-      g_warning (error->message);
-      g_error_free (error);
-      return;
-    }
+		if (error != NULL)
+		{
+			g_warning("%s", error->message);
+			g_error_free(error);
+			return;
+		}
 
-    dialog->priv->new_profile_dialog = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-dialog"));
-    g_signal_connect (G_OBJECT (dialog->priv->new_profile_dialog), "response", G_CALLBACK (new_profile_response_callback), dialog);
+		dialog->priv->new_profile_dialog = GTK_WIDGET(gtk_builder_get_object(builder, "new-profile-dialog"));
+		g_signal_connect(G_OBJECT (dialog->priv->new_profile_dialog), "response", G_CALLBACK(new_profile_response_callback), dialog);
 
-    g_object_add_weak_pointer (G_OBJECT (dialog->priv->new_profile_dialog), (void**) &dialog->priv->new_profile_dialog);
+		g_object_add_weak_pointer(G_OBJECT(dialog->priv->new_profile_dialog), (void**) &dialog->priv->new_profile_dialog);
 
-    create_button = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-create-button"));
-    g_object_set_data (G_OBJECT (dialog->priv->new_profile_dialog), "create_button", create_button);
-    gtk_widget_set_sensitive (create_button, FALSE);
+		create_button = GTK_WIDGET(gtk_builder_get_object(builder, "new-profile-create-button"));
+		g_object_set_data(G_OBJECT(dialog->priv->new_profile_dialog), "create_button", create_button);
+		gtk_widget_set_sensitive(create_button, FALSE);
 
-    size_group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
-    size_group_labels = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
+		size_group = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+		size_group_labels = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
 
-    /* the name entry */
-    w = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-name-entry"));
-    g_object_set_data (G_OBJECT (dialog->priv->new_profile_dialog), "name_entry", w);
-    g_signal_connect (G_OBJECT (w), "changed", G_CALLBACK (new_profile_name_entry_changed_callback), create_button);
-    gtk_entry_set_activates_default (GTK_ENTRY (w), TRUE);
-    gtk_widget_grab_focus (w);
-    // FIXME terminal_util_set_atk_name_description (w, _("Enter profile name"), NULL);
-    gtk_size_group_add_widget (size_group, w);
+		/* the name entry */
+		w = GTK_WIDGET(gtk_builder_get_object(builder, "new-profile-name-entry"));
+		g_object_set_data (G_OBJECT(dialog->priv->new_profile_dialog), "name_entry", w);
+		g_signal_connect(G_OBJECT(w), "changed", G_CALLBACK(new_profile_name_entry_changed_callback), create_button);
+		gtk_entry_set_activates_default(GTK_ENTRY (w), TRUE);
+		gtk_widget_grab_focus(w);
+		// FIXME terminal_util_set_atk_name_description (w, _("Enter profile name"), NULL);
+		gtk_size_group_add_widget(size_group, w);
 
-    wl = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-name-label"));
-    gtk_label_set_mnemonic_widget (GTK_LABEL (wl), w);
-    // FIXME terminal_util_set_labelled_by (w, GTK_LABEL (wl));
-    gtk_size_group_add_widget (size_group_labels, wl);
+		wl = GTK_WIDGET(gtk_builder_get_object (builder, "new-profile-name-label"));
+		gtk_label_set_mnemonic_widget(GTK_LABEL(wl), w);
+		// FIXME terminal_util_set_labelled_by (w, GTK_LABEL (wl));
+		gtk_size_group_add_widget(size_group_labels, wl);
 
-#ifdef BASE
-    /* the base profile option menu */
-    w = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-base-option-menu"));
-    g_object_set_data (G_OBJECT (dialog->priv->new_profile_dialog), "base_option_menu", w);
-    // FIXME terminal_util_set_atk_name_description (w, _("Choose base profile"), NULL);
-    //FIXME profile_optionmenu_refill (w);
-    gtk_size_group_add_widget (size_group, w);
+		#ifdef BASE
+			/* the base profile option menu */
+			w = GTK_WIDGET (gtk_builder_get_object(builder, "new-profile-base-option-menu"));
+			g_object_set_data(G_OBJECT(dialog->priv->new_profile_dialog), "base_option_menu", w);
+			// FIXME terminal_util_set_atk_name_description (w, _("Choose base profile"), NULL);
+			//FIXME profile_optionmenu_refill (w);
+			gtk_size_group_add_widget(size_group, w);
 
-    wl = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-base-label"));
-    gtk_label_set_mnemonic_widget (GTK_LABEL (wl), w);
-    // FIXME terminal_util_set_labelled_by (w, GTK_LABEL (wl));
-    gtk_size_group_add_widget (size_group_labels, wl);
-#endif
+			wl = GTK_WIDGET(gtk_builder_get_object (builder, "new-profile-base-label"));
+			gtk_label_set_mnemonic_widget(GTK_LABEL(wl), w);
+			// FIXME terminal_util_set_labelled_by (w, GTK_LABEL (wl));
+			gtk_size_group_add_widget(size_group_labels, wl);
+		#endif
 
 
-    /* gtk_dialog_set_default_response (GTK_DIALOG (dialog->priv->new_profile_dialog), GTK_RESPONSE_CREATE); */
+		/* gtk_dialog_set_default_response (GTK_DIALOG (dialog->priv->new_profile_dialog), GTK_RESPONSE_CREATE); */
 
-    g_object_unref (G_OBJECT (size_group));
-    g_object_unref (G_OBJECT (size_group_labels));
+		g_object_unref(G_OBJECT(size_group));
+		g_object_unref(G_OBJECT(size_group_labels));
 
-    g_object_unref (G_OBJECT (builder));
-  }
+		g_object_unref(G_OBJECT(builder));
+	}
 
-  old_transient_parent = gtk_window_get_transient_for (GTK_WINDOW (dialog->priv->new_profile_dialog));
-  if (old_transient_parent != transient_parent)
-  {
-    gtk_window_set_transient_for (GTK_WINDOW (dialog->priv->new_profile_dialog),
-                                  transient_parent);
-    gtk_widget_hide (dialog->priv->new_profile_dialog); /* re-show the window on its new parent */
-  }
+	old_transient_parent = gtk_window_get_transient_for(GTK_WINDOW(dialog->priv->new_profile_dialog));
 
-  create_button = g_object_get_data (G_OBJECT (dialog->priv->new_profile_dialog), "create_button");
-  gtk_widget_set_sensitive (create_button, FALSE);
+	if (old_transient_parent != transient_parent)
+	{
+		gtk_window_set_transient_for(GTK_WINDOW(dialog->priv->new_profile_dialog), transient_parent);
+		gtk_widget_hide(dialog->priv->new_profile_dialog); /* re-show the window on its new parent */
+	}
 
-  gtk_window_set_modal (GTK_WINDOW (dialog->priv->new_profile_dialog), TRUE);
-  gtk_widget_show_all (dialog->priv->new_profile_dialog);
-  gtk_window_present (GTK_WINDOW (dialog->priv->new_profile_dialog));
-  
-  //keep running the dialog until the response is GTK_RESPONSE_NONE
-  do {
-    response = gtk_dialog_run (GTK_DIALOG (dialog->priv->new_profile_dialog));
-  } while (response != GTK_RESPONSE_NONE);
+	create_button = g_object_get_data(G_OBJECT(dialog->priv->new_profile_dialog), "create_button");
+	gtk_widget_set_sensitive(create_button, FALSE);
+
+	gtk_window_set_modal(GTK_WINDOW(dialog->priv->new_profile_dialog), TRUE);
+	gtk_widget_show_all(dialog->priv->new_profile_dialog);
+	gtk_window_present(GTK_WINDOW(dialog->priv->new_profile_dialog));
+
+	//keep running the dialog until the response is GTK_RESPONSE_NONE
+	do {
+		response = gtk_dialog_run(GTK_DIALOG(dialog->priv->new_profile_dialog));
+	} while(response != GTK_RESPONSE_NONE);
 }
