@@ -1,8 +1,8 @@
 SUBDIRS = . help
-bin_PROGRAMS = gstreamer-properties
+bin_PROGRAMS = mate-gstreamer-properties
 
-gstreamer_properties_LDADD = $(GSTPROPS_LIBS)
-gstreamer_properties_SOURCES = \
+mate_gstreamer_properties_LDADD = $(GSTPROPS_LIBS)
+mate_gstreamer_properties_SOURCES = \
 	gstreamer-properties.c gstreamer-properties-structs.h \
 	pipeline-tests.h pipeline-tests.c \
 	pipeline-constants.c

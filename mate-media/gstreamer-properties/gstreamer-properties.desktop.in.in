@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Multimedia Systems Selector
 _Comment=Configure defaults for GStreamer applications
-Exec=gstreamer-properties
+Exec=mate-gstreamer-properties
 Icon=gstreamer-properties
 StartupNotify=true
 Terminal=false
