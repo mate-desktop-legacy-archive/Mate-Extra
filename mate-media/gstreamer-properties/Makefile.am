@@ -19,7 +19,7 @@ uidir   = $(datadir)/mate-gstreamer-properties/
 ui_DATA = gstreamer-properties.ui
 
 desktopdir = $(datadir)/applications
-Desktop_in_files = gstreamer-properties.desktop.in.in
+Desktop_in_files = mate-gstreamer-properties.desktop.in.in
 desktop_DATA = $(Desktop_in_files:.desktop.in.in=.desktop)
 
 AM_CPPFLAGS = \

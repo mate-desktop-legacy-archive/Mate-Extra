@@ -17,13 +17,13 @@ build() {
 	cd "${srcdir}/${pkgname}"
 
 	# brute force
-	mate-doc-prepare --force --copy
-	automake
-	autoconf
-	autoreconf -i --force
-	aclocal
-	intltoolize --automake --copy --force
-	automake --add-missing
+	#mate-doc-prepare --force --copy
+	#automake
+	#autoconf
+	#autoreconf -i --force
+	#aclocal
+	#intltoolize --automake --copy --force
+	#automake --add-missing
 
 	# Optional Features:
 	#    --enable-pulseaudio     Enable PulseAudio support [default=auto]

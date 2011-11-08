@@ -432,7 +432,7 @@ profiles/glade/Makefile
 profiles/help/Makefile
 grecord/mate-sound-recorder.desktop.in
 gst-mixer/mate-volume-control.desktop.in
-gstreamer-properties/gstreamer-properties.desktop.in
+gstreamer-properties/mate-gstreamer-properties.desktop.in
 ])
 
 AC_OUTPUT

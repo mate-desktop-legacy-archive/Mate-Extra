@@ -38,7 +38,7 @@ host_triplet = @host@
 bin_PROGRAMS = mate-gstreamer-properties$(EXEEXT)
 subdir = gstreamer-properties
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
-	$(srcdir)/gstreamer-properties.desktop.in.in
+	$(srcdir)/mate-gstreamer-properties.desktop.in.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/as-ac-expand.m4 \
 	$(top_srcdir)/m4/as-compiler-flag.m4 \
@@ -51,7 +51,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(SHELL) $(top_srcdir)/build-aux/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = gstreamer-properties.desktop.in
+CONFIG_CLEAN_FILES = mate-gstreamer-properties.desktop.in
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(desktopdir)" \
 	"$(DESTDIR)$(desktop_iconsdir)" "$(DESTDIR)$(iconsdir)" \
@@ -351,7 +351,7 @@ desktop_icons_DATA = gstreamer-properties.png
 uidir = $(datadir)/mate-gstreamer-properties/
 ui_DATA = gstreamer-properties.ui
 desktopdir = $(datadir)/applications
-Desktop_in_files = gstreamer-properties.desktop.in.in
+Desktop_in_files = mate-gstreamer-properties.desktop.in.in
 desktop_DATA = $(Desktop_in_files:.desktop.in.in=.desktop)
 AM_CPPFLAGS = \
 	$(GSTPROPS_CFLAGS) \
@@ -400,7 +400,7 @@ $(top_srcdir)/configure: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 $(am__aclocal_m4_deps):
-gstreamer-properties.desktop.in: $(top_builddir)/config.status $(srcdir)/gstreamer-properties.desktop.in.in
+mate-gstreamer-properties.desktop.in: $(top_builddir)/config.status $(srcdir)/mate-gstreamer-properties.desktop.in.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 install-binPROGRAMS: $(bin_PROGRAMS)
 	@$(NORMAL_INSTALL)
