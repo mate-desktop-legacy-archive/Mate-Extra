@@ -1,4 +1,4 @@
-themedir = $(datadir)/icons/hicolor
+themedir = $(datadir)/icons/mate
 size = 16x16
 context = devices
 
@@ -10,7 +10,7 @@ icons_DATA = 			\
 	gvc-line-in.png	  	\
 	gvc-tone.png
 
-noinst_DATA = 
+noinst_DATA =
 
 EXTRA_DIST =		\
 	$(icons_DATA)	\

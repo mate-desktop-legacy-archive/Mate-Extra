@@ -9,13 +9,13 @@ gstreamer_properties_SOURCES = \
 
 @INTLTOOL_DESKTOP_RULE@
 
-iconsdir   = $(datadir)/gstreamer-properties/icons
+iconsdir   = $(datadir)/mate-gstreamer-properties/icons
 icons_DATA = gstreamer-properties.png
 
-desktop_iconsdir = $(datadir)/icons/hicolor/48x48/apps
+desktop_iconsdir = $(datadir)/icons/mate/48x48/apps
 desktop_icons_DATA = gstreamer-properties.png
 
-uidir   = $(datadir)/gstreamer-properties/
+uidir   = $(datadir)/mate-gstreamer-properties/
 ui_DATA = gstreamer-properties.ui
 
 desktopdir = $(datadir)/applications
