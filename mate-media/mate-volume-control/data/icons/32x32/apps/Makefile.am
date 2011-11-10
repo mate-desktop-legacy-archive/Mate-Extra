@@ -1,6 +1,6 @@
 NULL =
 
-themedir = $(datadir)/icons/hicolor
+themedir = $(datadir)/icons/mate
 size = 32x32
 context = apps
 
