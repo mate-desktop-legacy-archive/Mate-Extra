@@ -278,13 +278,13 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-NULL =
+NULL = 
 SUBDIRS = \
-	scalable	\
-	16x16		\
-	22x22		\
-	24x24		\
-	32x32		\
+	scalable \
+	16x16 \
+	22x22 \
+	24x24 \
+	32x32 \
 	$(NULL)
 
 gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/mate
