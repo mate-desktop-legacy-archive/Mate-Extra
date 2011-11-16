@@ -6894,6 +6894,12 @@ fi
 
 
 
+
+    if $PKG_CONFIG --atleast-version 2.26 glib-2.0; then
+        VOLUME_CONTROL_CFLAGS="$VOLUME_CONTROL_CFLAGS -DG_CONST_RETURN=const"
+    fi
+
+
 $as_echo "#define HAVE_PULSEAUDIO /**/" >>confdefs.h
 
   fi

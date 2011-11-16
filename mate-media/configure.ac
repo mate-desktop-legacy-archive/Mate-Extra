@@ -118,8 +118,14 @@ if test "x$enable_pulseaudio" != "xno"; then
             unique-1.0
             libxml-2.0
     )
+
     AC_SUBST(VOLUME_CONTROL_CFLAGS)
     AC_SUBST(VOLUME_CONTROL_LIBS)
+    
+    if $PKG_CONFIG --atleast-version 2.26 glib-2.0; then
+        VOLUME_CONTROL_CFLAGS="$VOLUME_CONTROL_CFLAGS -DG_CONST_RETURN=const"
+    fi
+    
     AC_DEFINE(HAVE_PULSEAUDIO, [], [Define if we have pulseaudio])
   fi
 else
