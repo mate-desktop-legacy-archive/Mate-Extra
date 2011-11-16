@@ -1,4 +1,4 @@
-themedir = $(datadir)/icons/hicolor
+themedir = $(datadir)/icons/mate
 size = 16x16
 context = status
 
@@ -7,7 +7,7 @@ iconsdir = $(themedir)/$(size)/$(context)
 icons_DATA = 			  \
 	audio-input-microphone-muted.png
 
-noinst_DATA = 
+noinst_DATA =
 
 EXTRA_DIST =		\
 	$(icons_DATA)	\
