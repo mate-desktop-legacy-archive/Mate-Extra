@@ -12,9 +12,9 @@ INCLUDES = \
 	-DMATELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale"\" 	\
 	$(NULL)
 
-bin_PROGRAMS = baobab
+bin_PROGRAMS = mate-disk-usage-analyzer
 
-baobab_SOURCES = \
+mate_disk_usage_analyzer_SOURCES = \
 	baobab.c \
 	baobab.h \
 	baobab-cell-renderer-progress.c \
@@ -38,13 +38,13 @@ baobab_SOURCES = \
 	baobab-treemap.c \
 	baobab-treemap.h
 
-baobab_CFLAGS = 			\
+mate_disk_usage_analyzer_CFLAGS = 			\
 	$(MATE_UTILS_CFLAGS)		\
 	$(LIBGTOP_CFLAGS)		\
 	$(NULL)
 
-baobab_LDFLAGS = -export-dynamic
-baobab_LDADD = 				\
+mate_disk_usage_analyzer_LDFLAGS = -export-dynamic
+mate_disk_usage_analyzer_LDADD = 				\
 	-lm				\
 	$(MATE_UTILS_LIBS)		\
 	$(LIBGTOP_LIBS)			\

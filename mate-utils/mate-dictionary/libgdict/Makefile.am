@@ -61,7 +61,7 @@ libgdict_1_0_la_LDFLAGS  = \
 	-export-dynamic \
 	-no-undefined
 
-libgdict_includedir = $(includedir)/gdict-1.0/gdict
+libgdict_includedir = $(includedir)/mate-dict/gdict
 libgdict_include_HEADERS = 	\
 	$(sources_h)		\
 	gdict-enum-types.h	\
@@ -89,7 +89,7 @@ EXTRA_DIST = 			\
 	gdict-1.0.pc.in		\
 	$(NULL)
 
-BUILT_SOURCES = $(gdict_built_files) 
+BUILT_SOURCES = $(gdict_built_files)
 
 gdict-marshal.h: stamp-gdict-marshal.h
 	@true

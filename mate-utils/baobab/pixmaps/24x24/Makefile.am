@@ -2,7 +2,7 @@ NULL =
 
 size = 24x24
 
-iconsdir = $(datadir)/icons/hicolor/$(size)/apps
+iconsdir = $(datadir)/icons/mate/$(size)/apps
 
 icons_DATA =					\
 	baobab.png				\
