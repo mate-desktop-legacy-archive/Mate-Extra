@@ -1,9 +1,9 @@
 uidir   = $(datadir)/mate-disk-usage-analyzer.desktop
 ui_DATA = baobab-main-window.ui \
-	  baobab-dialog-scan-props.ui
+	baobab-dialog-scan-props.ui
 
-baobabappdir	   = $(datadir)/applications
-baobabapp_in_files = mate-disk-usage-analyzer.desktop.desktop.in
+baobabappdir       = $(datadir)/applications
+baobabapp_in_files = mate-disk-usage-analyzer.desktop.in
 baobabapp_DATA     = $(baobabapp_in_files:.desktop.in=.desktop)
 
 $(baobabapp_in_files): $(baobabapp_in_files:.desktop.in=.desktop.in.in)
@@ -11,12 +11,12 @@ $(baobabapp_in_files): $(baobabapp_in_files:.desktop.in=.desktop.in.in)
 
 @INTLTOOL_DESKTOP_RULE@
 
-schemasdir	 = $(MATECONF_SCHEMA_FILE_DIR)
+schemasdir       = $(MATECONF_SCHEMA_FILE_DIR)
 schemas_in_files = baobab.schemas.in
-schemas_DATA 	 = $(schemas_in_files:.schemas.in=.schemas)
+schemas_DATA     = $(schemas_in_files:.schemas.in=.schemas)
 @INTLTOOL_SCHEMAS_RULE@
 
-man_MANS = mate-disk-usage-analyzer.desktop.1
+man_MANS = mate-disk-usage-analyzer.1
 
 if MATECONF_SCHEMAS_INSTALL
 install-data-local:
@@ -27,13 +27,13 @@ else
 install-data-local:
 endif
 
-EXTRA_DIST = 				\
-	$(ui_DATA)			\
-	mate-disk-usage-analyzer.desktop.desktop.in.in		\
-	$(schemas_in_files)		\
+EXTRA_DIST = \
+	$(ui_DATA) \
+	mate-disk-usage-analyzer.desktop.desktop.in.in \
+	$(schemas_in_files) \
 	$(man_MANS)
 
-CLEANFILES =	 			\
-	$(baobabapp_in_files)		\
-	$(baobabapp_DATA)		\
+CLEANFILES = \
+	$(baobabapp_in_files) \
+	$(baobabapp_DATA) \
 	$(schemas_DATA)
