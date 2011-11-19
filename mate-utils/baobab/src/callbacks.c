@@ -63,10 +63,9 @@ on_esci1_activate (GtkObject *menuitem, gpointer user_data)
 	gtk_main_quit ();
 }
 
-void
-on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
+void on_about_activate(GtkMenuItem* menuitem, gpointer user_data)
 {
-	const gchar * const authors[] = {
+	const gchar* const authors[] = {
 		"Fabio Marzocca <thesaltydog@gmail.com>",
 		"Paolo Borelli <pborelli@katamail.com>",
 		"Benoît Dejean <benoit@placenet.org>",
@@ -74,46 +73,40 @@ on_about_activate (GtkMenuItem *menuitem, gpointer user_data)
 		NULL
 	};
 
-	const gchar *license[] = {
-	N_("This program is free software; you can redistribute it and/or "
-	"modify it under the terms of the GNU General Public License as "
-	"published by the Free Software Foundation; either version 2 of "
-	"the License, or (at your option) any later version."),
+	const gchar* license[] = {
+		N_("This program is free software; you can redistribute it and/or "
+		"modify it under the terms of the GNU General Public License as "
+		"published by the Free Software Foundation; either version 2 of "
+		"the License, or (at your option) any later version."),
 
-	N_("This program is distributed in the hope that it will be useful, "
-	"but WITHOUT ANY WARRANTY; without even the implied warranty of "
-	"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU "
-	"General Public License for more details."),
+		N_("This program is distributed in the hope that it will be useful, "
+		"but WITHOUT ANY WARRANTY; without even the implied warranty of "
+		"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU "
+		"General Public License for more details."),
 
-	N_("You should have received a copy of the GNU General Public License "
-	"along with this program; if not, write to the Free Software Foundation, Inc., 51 "
-	"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA")
+		N_("You should have received a copy of the GNU General Public License "
+		"along with this program; if not, write to the Free Software Foundation, Inc., 51 "
+		"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA")
 	};
 
 
-	gchar *license_trans = g_strjoin ("\n\n",
-	                                  _(license[0]),
-	                                  _(license[1]),
-	                                  _(license[2]),
-	                                  NULL);
+	gchar* license_trans = g_strjoin("\n\n", _(license[0]), _(license[1]), _(license[2]), NULL);
 
-	static const gchar copyright[] = "Fabio Marzocca <thesaltydog@gmail.com> \xc2\xa9 2005-2010";
+	static const gchar copyright[] = "Copyright \xc2\xa9 2005-2010 Fabio Marzocca";
 
 	gtk_show_about_dialog (NULL,
-			       "name", _("Baobab"),
-			       "comments", _("A graphical tool to analyze "
-					     "disk usage."),
-			       "version", VERSION,
-			       "copyright", copyright,
-			       "logo-icon-name", "baobab",
-			       "license", license_trans,
-			       "authors", authors,
-			       "translator-credits",
-			       _("translator-credits"),
-			       "wrap-license", TRUE,
-			        NULL);
+		"name", _("Baobab"),
+		"comments", _("A graphical tool to analyze disk usage."),
+		"version", VERSION,
+		"copyright", copyright,
+		"logo-icon-name", "baobab",
+		"license", license_trans,
+		"authors", authors,
+		"translator-credits", _("translator-credits"),
+		"wrap-license", TRUE,
+		NULL);
 
-	g_free (license_trans);
+	g_free(license_trans);
 }
 
 void
