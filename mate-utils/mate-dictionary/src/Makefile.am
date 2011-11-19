@@ -42,7 +42,7 @@ mate_dictionary_CFLAGS = \
 	$(NULL)
 mate_dictionary_LDADD = \
 	-lm			\
-	$(top_builddir)/mate-dictionary/libgdict/libgdict-1.0.la \
+	$(top_builddir)/mate-dictionary/libgdict/libmatedict.la \
 	$(MATE_UTILS_LIBS) \
 	$(NULL)
 
@@ -74,7 +74,7 @@ mate_dictionary_applet_CFLAGS = \
 	$(NULL)
 mate_dictionary_applet_LDADD = \
 	-lm			\
-	$(top_builddir)/mate-dictionary/libgdict/libgdict-1.0.la \
+	$(top_builddir)/mate-dictionary/libgdict/libmatedict.la \
 	$(MATE_UTILS_LIBS) \
 	$(APPLET_LIBS) \
 	$(NULL)

@@ -6,7 +6,7 @@ INCLUDES = -DG_LOG_DOMAIN=\"Gdict\" 				\
 	-DSYSCONFDIR=\""$(sysconfdir)"\" 			\
 	-DPREFIX=\""$(prefix)"\" 				\
 	-DMATELOCALEDIR=\""$(mateutilslocaledir)"\" 		\
-	-DGDICTSOURCESDIR=\""$(datadir)/gdict-1.0/sources"\" 	\
+	-DGDICTSOURCESDIR=\""$(datadir)/mate-dict/sources"\" 	\
 	-DGDICT_ENABLE_INTERNALS=1 				\
 	-DG_DISABLE_DEPRECATED					\
 	-DGDK_DISABLE_DEPRECATED				\
@@ -50,13 +50,13 @@ sources_c =	\
 	$(srcdir)/gdict-utils.c			\
 	$(NULL)
 
-lib_LTLIBRARIES = libgdict-1.0.la
+lib_LTLIBRARIES = libmatedict.la
 
 # MATE Dictionary shared library
-libgdict_1_0_la_SOURCES  = $(sources_h) $(sources_h_priv) $(sources_c)
-libgdict_1_0_la_CPPFLAGS = $(LIBGDICT_CFLAGS) $(GDICT_DEBUG_CFLAGS) $(MAINTAINER_CFLAGS)
-libgdict_1_0_la_LIBADD   = $(LIBGDICT_LIBS)
-libgdict_1_0_la_LDFLAGS  = \
+libmatedict_la_SOURCES  = $(sources_h) $(sources_h_priv) $(sources_c)
+libmatedict_la_CPPFLAGS = $(LIBGDICT_CFLAGS) $(GDICT_DEBUG_CFLAGS) $(MAINTAINER_CFLAGS)
+libmatedict_la_LIBADD   = $(LIBGDICT_LIBS)
+libmatedict_la_LDFLAGS  = \
 	-version-info $(LIBGDICT_LT_VERSION) \
 	-export-dynamic \
 	-no-undefined
@@ -69,10 +69,10 @@ libgdict_include_HEADERS = 	\
 	$(srcdir)/gdict.h	\
 	$(NULL)
 
-gdict_built_files = 		\
-	gdict-enum-types.h	\
-	gdict-enum-types.c	\
-	gdict-marshal.h		\
+gdict_built_files = \
+	gdict-enum-types.h \
+	gdict-enum-types.c \
+	gdict-marshal.h \
 	gdict-marshal.c
 
 stamp_files = stamp-gdict-enum-types.h stamp-gdict-marshal.h
@@ -81,12 +81,12 @@ CLEANFILES = $(stamp_files) $(gdict_built_files)
 DISTCLEANFILES = gdict-version.h
 MAINTAINERCLEANFILES = $(stamp_files) $(gdict_built_files) gdict-version.h
 
-EXTRA_DIST = 			\
-	gdict-version.h.in 	\
-	gdict-enum-types.h.in	\
-	gdict-enum-types.c.in	\
-	gdict-marshal.list	\
-	gdict-1.0.pc.in		\
+EXTRA_DIST = \
+	gdict-version.h.in \
+	gdict-enum-types.h.in \
+	gdict-enum-types.c.in \
+	gdict-marshal.list \
+	mate-dict.pc.in \
 	$(NULL)
 
 BUILT_SOURCES = $(gdict_built_files)
@@ -125,7 +125,7 @@ gdict-enum-types.c: gdict-enum-types.h gdict-enum-types.c.in Makefile
 	&& rm -f xgen-cetc
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = gdict-1.0.pc
+pkgconfig_DATA = mate-dict.pc
 
 distclean-local:
 	if test $(srcdir) != .; then \

@@ -1,5 +1,5 @@
-icondir = $(datadir)/pixmaps/gsearchtool
-icon_DATA = thumbnail_frame.png 
+icondir = $(datadir)/pixmaps/mate-search-tool
+icon_DATA = thumbnail_frame.png
 
 EXTRA_DIST = $(icon_DATA)
 

@@ -172,7 +172,7 @@ AC_SUBST(LIBCANBERRA_GTK_CFLAGS)
 AC_SUBST(LIBCANBERRA_GTK_LIBS)
 
 dnl ***************************************************************
-dnl Other miscellaneous checks 
+dnl Other miscellaneous checks
 dnl ***************************************************************
 
 dnl Enable debug messages
@@ -311,7 +311,7 @@ AS_IF([test "x$enable_zlib" != "xno"],
 
 AC_SUBST(Z_LIBS)
 
-dnl scrollkeeper checks 
+dnl scrollkeeper checks
 AC_PATH_PROG(SCROLLKEEPER_CONFIG, [scrollkeeper-config], [no])
 AS_IF([test x$SCROLLKEEPER_CONFIG = xno],
       [
@@ -356,47 +356,47 @@ MATE_DOC_INIT
 SHAVE_INIT([m4], [enable])
 
 AC_CONFIG_FILES([
-        Makefile
+Makefile
 
-        m4/Makefile
-        m4/shave-libtool
-        m4/shave
+m4/Makefile
+m4/shave-libtool
+m4/shave
 
-        po/Makefile.in
+po/Makefile.in
 
-        libeggsmclient/Makefile
+libeggsmclient/Makefile
 
-        baobab/Makefile
-        baobab/data/Makefile
-        baobab/pixmaps/Makefile
-        baobab/pixmaps/24x24/Makefile
-        baobab/pixmaps/scalable/Makefile
-        baobab/src/Makefile
-        baobab/help/Makefile
+baobab/Makefile
+baobab/data/Makefile
+baobab/pixmaps/Makefile
+baobab/pixmaps/24x24/Makefile
+baobab/pixmaps/scalable/Makefile
+baobab/src/Makefile
+baobab/help/Makefile
 
-        logview/Makefile
-        logview/data/Makefile
-        logview/tests/Makefile
-        logview/help/Makefile
+logview/Makefile
+logview/data/Makefile
+logview/tests/Makefile
+logview/help/Makefile
 
-        gsearchtool/Makefile
-        gsearchtool/data/Makefile
-        gsearchtool/help/Makefile
-        gsearchtool/libmateui-deprecated/Makefile
+gsearchtool/Makefile
+gsearchtool/data/Makefile
+gsearchtool/help/Makefile
+gsearchtool/libmateui-deprecated/Makefile
 
-        mate-dictionary/Makefile
-        mate-dictionary/libgdict/Makefile
-        mate-dictionary/libgdict/gdict-version.h
-        mate-dictionary/libgdict/gdict-1.0.pc
-        mate-dictionary/data/Makefile
-        mate-dictionary/docs/Makefile
-        mate-dictionary/docs/reference/Makefile
-        mate-dictionary/docs/reference/gdict/Makefile
-        mate-dictionary/docs/reference/gdict/version.xml
-        mate-dictionary/help/Makefile
-        mate-dictionary/src/Makefile
+mate-dictionary/Makefile
+mate-dictionary/libgdict/Makefile
+mate-dictionary/libgdict/gdict-version.h
+mate-dictionary/libgdict/mate-dict.pc
+mate-dictionary/data/Makefile
+mate-dictionary/docs/Makefile
+mate-dictionary/docs/reference/Makefile
+mate-dictionary/docs/reference/gdict/Makefile
+mate-dictionary/docs/reference/gdict/version.xml
+mate-dictionary/help/Makefile
+mate-dictionary/src/Makefile
 
-        mate-screenshot/Makefile
+mate-screenshot/Makefile
 ])
 
 AC_OUTPUT
@@ -416,8 +416,8 @@ mate-utils $VERSION configuration summary:
                          sbin dir : $sbindir
                          data dir : $datadir
 
-        Debug messages (libgdict) : $enable_debug
+     Debug messages (libmatedict) : $enable_debug
          API Reference (libgdict) : $enable_gtk_doc
   Logview built with ZLib support : $msg_zlib
-    Dictionary mate-panel applet : $enable_gdict_applet
+     Dictionary mate-panel applet : $enable_gdict_applet
 "

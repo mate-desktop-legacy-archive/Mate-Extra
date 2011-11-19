@@ -12,7 +12,7 @@ $(gdictapp_in_files): $(gdictapp_in_files:.desktop.in=.desktop.in.in)
 @INTLTOOL_DESKTOP_RULE@
 
 # dictionary sources definitions
-dictsourcedir = $(datadir)/gdict-1.0/sources
+dictsourcedir = $(datadir)/mate-dict/sources
 dictsource_in_files = \
 	default.desktop.in \
 	spanish.desktop.in \
@@ -21,27 +21,27 @@ dictsource_in_files = \
 dictsource_DATA = $(dictsource_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
-builderdir        = $(datadir)/mate-dictionary
-builder_DATA      = mate-dictionary-preferences.ui \
-		    mate-dictionary-source.ui
+builderdir = $(datadir)/mate-dictionary
+builder_DATA = mate-dictionary-preferences.ui \
+	mate-dictionary-source.ui
 
-uidir           = $(datadir)/mate-dictionary
-ui_DATA         = mate-dictionary-ui.xml
+uidir = $(datadir)/mate-dictionary
+ui_DATA = mate-dictionary-ui.xml
 
 if BUILD_GDICT_APPLET
 
 # applet menu definition
-appletuidir	= $(datadir)/mate-2.0/ui
-appletui_DATA	= MATE_DictionaryApplet.xml
+appletuidir = $(datadir)/mate-2.0/ui
+appletui_DATA = MATE_DictionaryApplet.xml
 
-serverdir       = $(libdir)/matecomponent/servers
+serverdir = $(libdir)/matecomponent/servers
 server_in_files = MATE_DictionaryApplet.server.in
-server_DATA     = $(server_in_files:.server.in=.server)
+server_DATA = $(server_in_files:.server.in=.server)
 
 $(server_in_files): $(server_in_files:.server.in=.server.in.in)
-	@sed 						\
-		-e "s|\@VERSION\@|@VERSION@|" 		\
-		-e "s|\@LIBEXECDIR\@|$(libexecdir)|" 	\
+	@sed \
+		-e "s|\@VERSION\@|@VERSION@|" \
+		-e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
 	$< > $@
 
 
@@ -49,29 +49,29 @@ $(server_in_files): $(server_in_files:.server.in=.server.in.in)
 
 endif # BUILD_GDICT_APPLET
 
-schemadir   = $(MATECONF_SCHEMA_FILE_DIR)
+schemadir = $(MATECONF_SCHEMA_FILE_DIR)
 schemas_in_file = mate-dictionary.schemas.in
 schema_DATA = $(schemas_in_file:.schemas.in=.schemas)
 @INTLTOOL_SCHEMAS_RULE@
 
 EXTRA_DIST = \
-	MATE_DictionaryApplet.server.in.in 	\
-	mate-dictionary.desktop.in.in		\
-	$(dictsource_in_files)			\
-	$(man_MANS) 				\
-	$(schemas_in_file) 			\
-	$(builder_DATA) 				\
-	$(ui_DATA)				\
-	$(appletui_DATA)			\
+	MATE_DictionaryApplet.server.in.in \
+	mate-dictionary.desktop.in.in \
+	$(dictsource_in_files) \
+	$(man_MANS) \
+	$(schemas_in_file) \
+	$(builder_DATA) \
+	$(ui_DATA) \
+	$(appletui_DATA) \
 	$(NULL)
 
-CLEANFILES = 				\
-	$(dictsource_DATA)		\
-	$(server_in_files) 		\
-	$(server_DATA) 			\
-	$(gdictapp_in_files)		\
-	$(gdictapp_DATA) 		\
-	$(schema_DATA)			\
+CLEANFILES = \
+	$(dictsource_DATA) \
+	$(server_in_files) \
+	$(server_DATA) \
+	$(gdictapp_in_files) \
+	$(gdictapp_DATA) \
+	$(schema_DATA) \
 	$(NULL)
 
 if MATECONF_SCHEMAS_INSTALL

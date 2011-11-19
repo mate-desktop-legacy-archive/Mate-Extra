@@ -3,7 +3,7 @@
 AUTOMAKE_OPTIONS = 1.6
 
 # The name of the module, e.g. 'glib'.
-DOC_MODULE=gdict
+DOC_MODULE=mate-dict
 
 # The top-level SGML file. Change it if you want.
 DOC_MAIN_SGML_FILE=$(DOC_MODULE)-docs.sgml
@@ -30,12 +30,12 @@ HFILE_GLOB=$(top_srcdir)/mate-dictionary/libgdict/*.h
 CFILE_GLOB=$(top_srcdir)/mate-dictionary/libgdict/*.c
 
 # Header files to ignore when scanning.
-IGNORE_HFILES =			\
-	gdict-enum-types.h	\
-	gdict-marshal.h		\
+IGNORE_HFILES = \
+	gdict-enum-types.h \
+	gdict-marshal.h \
 	gdict-context-private.h \
-	gdict-debug.h		\
-	gdict-private.h		\
+	gdict-debug.h \
+	gdict-private.h \
 	stamp-gdict-enum-types.h \
 	stamp-gdict-marshal.h
 
@@ -50,17 +50,17 @@ extra_files =
 
 # CFLAGS and LDFLAGS for compiling scan program. Only needed if your app/lib
 # contains GtkObjects/GObjects and you want to document signals and properties.
-GTKDOC_CFLAGS =					\
-	$(CFLAGS)				\
-	$(CPPFLAGS)				\
-	$(LIBGDICT_CFLAGS)			\
-	-I$(srcdir)/../../../libgdict    	\
+GTKDOC_CFLAGS = \
+	$(CFLAGS) \
+	$(CPPFLAGS) \
+	$(LIBGDICT_CFLAGS) \
+	-I$(srcdir)/../../../libgdict \
 	-I$(top_builddir)/mate-dictionary/libgdict
 
-GTKDOC_LIBS =						\
-	$(LDFLAGS)					\
-	$(LIBGDICT_LIBS)				\
-	../../../libgdict/libgdict-1.0.la
+GTKDOC_LIBS = \
+	$(LDFLAGS) \
+	$(LIBGDICT_LIBS) \
+	../../../libgdict/libmatedict.la
 
 include $(top_srcdir)/gtk-doc.make
 
