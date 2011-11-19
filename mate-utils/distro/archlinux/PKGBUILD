@@ -15,9 +15,10 @@ sha256sums=('999caaa8a0dd07a23481d724a6295edf581471a422cfeeda39755a453dd35611')
 
 build() {
     cd "${srcdir}/${pkgname}"
-    gtkdocize --copy
-    mate-doc-prepare --copy --force
-    ./configure --prefix=/usr --sysconfdir=/etc --disable-static \
+    ./autogen.sh \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --disable-static \
         --libexecdir=/usr/lib/mate-utils \
         --localstatedir=/var \
         --disable-scrollkeeper \
