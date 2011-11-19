@@ -128,8 +128,8 @@ gsearchtool_mateconf_set_string (const gchar * key,
 
 	mateconf_client_set_string (client, key, value, &error);
 
-	gsearchtool_mateconf_handle_error (&error);			      
-			      
+	gsearchtool_mateconf_handle_error (&error);
+
 }
 
 GSList *
@@ -613,7 +613,7 @@ backslash_special_characters (const gchar * string)
 		return NULL;
 	}
 
-	if ((count_of_char_in_string (string, '\\') == 0) && 
+	if ((count_of_char_in_string (string, '\\') == 0) &&
 	    (count_of_char_in_string (string, '-') == 0)) {
 		return g_strdup(string);
 	}
@@ -858,7 +858,7 @@ get_file_type_description (const gchar * file,
 
 	if (content_type == NULL || g_content_type_is_unknown (content_type) == TRUE) {
 		return g_strdup (g_content_type_get_description ("application/octet-stream"));
-	}	
+	}
 
 	desc = g_strdup (g_content_type_get_description (content_type));
 
@@ -898,31 +898,36 @@ get_file_type_description (const gchar * file,
 	return desc;
 }
 
-static gchar *
-gsearchtool_pixmap_file (const gchar * partial_path)
+static gchar* gsearchtool_pixmap_file(const gchar* partial_path)
 {
-	gchar * path;
+	gchar* path;
 
-	path = g_build_filename (DATADIR "/pixmaps/gsearchtool", partial_path, NULL);
-	if (g_file_test (path, G_FILE_TEST_EXISTS)) {
+	path = g_build_filename(DATADIR "/pixmaps/mate-search-tool", partial_path, NULL);
+
+	if (g_file_test(path, G_FILE_TEST_EXISTS))
+	{
 		return path;
 	}
-	g_free (path);
+
+	g_free(path);
+
 	return NULL;
 }
 
-static GdkPixbuf *
-gsearchtool_load_thumbnail_frame (void)
+static GdkPixbuf* gsearchtool_load_thumbnail_frame(void)
 {
-	GdkPixbuf * pixbuf = NULL;
-	gchar * image_path;
+	GdkPixbuf* pixbuf = NULL;
+	gchar* image_path;
 
-	image_path = gsearchtool_pixmap_file ("thumbnail_frame.png");
+	image_path = gsearchtool_pixmap_file("thumbnail_frame.png");
 
-	if (image_path != NULL) {
-		pixbuf = gdk_pixbuf_new_from_file (image_path, NULL);
+	if (image_path != NULL)
+	{
+		pixbuf = gdk_pixbuf_new_from_file(image_path, NULL);
 	}
-	g_free (image_path);
+
+	g_free(image_path);
+
 	return pixbuf;
 }
 
@@ -1177,7 +1182,7 @@ get_file_pixbuf (GSearchWindow * gsearch,
 	else {
 		gchar * icon_string;
 
-		icon_string = g_icon_to_string (icon);		
+		icon_string = g_icon_to_string (icon);
 		pixbuf = (GdkPixbuf *) g_hash_table_lookup (gsearch->search_results_filename_hash_table, icon_string);
 
 		if (pixbuf == NULL) {
@@ -1233,7 +1238,7 @@ open_file_with_filemanager (GtkWidget * window,
 	key_file = g_key_file_new ();
 	g_key_file_load_from_data (key_file, contents, strlen(contents), G_KEY_FILE_NONE, NULL);
 	d_app_info = g_desktop_app_info_new_from_keyfile (key_file);
-	
+
 	if (d_app_info != NULL) {
 		ctx = gdk_app_launch_context_new ();
 		gdk_app_launch_context_set_screen (ctx, gtk_widget_get_screen (window));
@@ -1481,7 +1486,7 @@ gsearchtool_get_stored_window_geometry (gint * width,
 
 /* START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES */
 
-/* Localizers: 
+/* Localizers:
  * Feel free to leave out the st, nd, rd and th suffix or
  * make some or all of them match.
  */
@@ -1590,18 +1595,18 @@ make_valid_utf8 (const gchar * name)
 }
 
 static gchar *
-extract_string_until (const gchar * original, 
+extract_string_until (const gchar * original,
                       const gchar * until_substring)
 {
 	gchar * result;
-	
+
 	g_assert ((gint) strlen (original) >= until_substring - original);
 	g_assert (until_substring - original >= 0);
 
 	result = g_malloc (until_substring - original + 1);
 	strncpy (result, original, until_substring - original);
 	result[until_substring - original] = '\0';
-	
+
 	return result;
 }
 
@@ -1618,7 +1623,7 @@ parse_previous_duplicate_name (const gchar * name,
 	const gchar * tag;
 
 	g_assert (name[0] != '\0');
-	
+
 	*suffix = strchr (name + 1, '.');
 	if (*suffix == NULL || (*suffix)[1] == '\0') {
 		/* no suffix */
@@ -1701,7 +1706,7 @@ parse_previous_duplicate_name (const gchar * name,
 }
 
 static gchar *
-make_next_duplicate_name (const gchar *base, 
+make_next_duplicate_name (const gchar *base,
                           const gchar *suffix,
                           gint count)
 {
@@ -1800,12 +1805,12 @@ gsearchtool_get_next_duplicate_name (const gchar * basename)
 	gchar * result;
 
 	utf8_name = g_filename_to_utf8 (basename, -1, NULL, NULL, NULL);
-	
+
 	if (utf8_name == NULL) {
 		/* Couldn't convert to utf8 - probably
 		 * G_BROKEN_FILENAMES not set when it should be.
 		 * Try converting from the locale */
-		utf8_name = g_locale_to_utf8 (basename, -1, NULL, NULL, NULL);	
+		utf8_name = g_locale_to_utf8 (basename, -1, NULL, NULL, NULL);
 
 		if (utf8_name == NULL) {
 			utf8_name = make_valid_utf8 (basename);
