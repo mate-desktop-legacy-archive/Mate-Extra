@@ -2,18 +2,18 @@ uidir   = $(datadir)/mate-disk-usage-analyzer.desktop
 ui_DATA = baobab-main-window.ui \
 	baobab-dialog-scan-props.ui
 
-baobabappdir       = $(datadir)/applications
+baobabappdir = $(datadir)/applications
 baobabapp_in_files = mate-disk-usage-analyzer.desktop.in
-baobabapp_DATA     = $(baobabapp_in_files:.desktop.in=.desktop)
+baobabapp_DATA = $(baobabapp_in_files:.desktop.in=.desktop)
 
 $(baobabapp_in_files): $(baobabapp_in_files:.desktop.in=.desktop.in.in)
 	sed -e "s|\@VERSION\@|@VERSION@|" $< > $@
 
 @INTLTOOL_DESKTOP_RULE@
 
-schemasdir       = $(MATECONF_SCHEMA_FILE_DIR)
+schemasdir = $(MATECONF_SCHEMA_FILE_DIR)
 schemas_in_files = baobab.schemas.in
-schemas_DATA     = $(schemas_in_files:.schemas.in=.schemas)
+schemas_DATA = $(schemas_in_files:.schemas.in=.schemas)
 @INTLTOOL_SCHEMAS_RULE@
 
 man_MANS = mate-disk-usage-analyzer.1
