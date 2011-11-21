@@ -1,4 +1,4 @@
-uidir   = $(datadir)/mate-disk-usage-analyzer.desktop
+uidir   = $(datadir)/mate-disk-usage-analyzer
 ui_DATA = baobab-main-window.ui \
 	baobab-dialog-scan-props.ui
 
