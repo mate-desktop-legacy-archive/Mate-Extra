@@ -1,18 +1,16 @@
-## Process this file with automake to produce Makefile.in
-
 SUBDIRS = doc icons interfaces pixmaps src po
 
 distuninstallcheck_listfiles = find . -type f -print | grep -v scrollkeeper
 
 EXTRA_DIST = \
-	HACKING 		\
-	BUGS			\
-	intltool-extract.in	\
-	intltool-merge.in 	\
-	intltool-update.in 	\
-	omf.make		\
-	xmldocs.make		\
-	mate-doc-utils.make	\
+	HACKING \
+	BUGS \
+	intltool-extract.in \
+	intltool-merge.in \
+	intltool-update.in \
+	omf.make \
+	xmldocs.make \
+	mate-doc-utils.make \
 	mate-system-tools.pc.in \
 	org.mate.system-tools.gschema.xml.in
 
@@ -35,22 +33,20 @@ DISTCLEANFILES = \
 	org.mate.system-tools.gschema.xml
 
 MAINTAINERCLEANFILES = \
-	INSTALL			\
-	aclocal.m4              \
-	config.guess            \
-	config.h.in             \
-	config.sub              \
-	depcomp                 \
-	install-sh              \
-	ltmain.sh               \
-	missing                 \
-	mkinstalldirs           \
-	omf.make                \
-        xmldocs.make		\
+	INSTALL \
+	aclocal.m4 \
+	config.guess \
+	config.h.in \
+	config.sub \
+	depcomp \
+	install-sh \
+	ltmain.sh \
+	missing \
+	mkinstalldirs \
+	omf.make \
+	xmldocs.make \
 	`find "$(srcdir)" -type f -name Makefile.in -print`
 
-
 DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
-
 
 -include $(top_srcdir)/git.mk

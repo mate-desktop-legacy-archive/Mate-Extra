@@ -8,29 +8,42 @@
 include ../common/CommonMakefile
 
 toolname = users
-bin_PROGRAMS = users-admin
+bin_PROGRAMS = mate-users-admin
 
 SUBDIRS = 
 INCLUDES += $(GST_TOOL_CFLAGS)
 
-users_admin_LDADD = $(GST_TOOL_LIBS) 
-users_admin_DEPENDENCIES = $(GST_TOOL_DEPENDENCIES) 
-users_admin_SOURCES = \
-	main.c 			\
-	passwd.c 		passwd.h \
-	users-tool.c 		users-tool.h \
-	callbacks.c 		callbacks.h \
-	user-settings.c 	user-settings.h \
-	group-settings.c 	group-settings.h \
-	users-table.c 		users-table.h \
-	groups-table.c 		groups-table.h \
-	table.c 		table.h	\
-	privileges-table.c 	privileges-table.h \
-	group-members-table.c 	group-members-table.h \
-	user-profiles.c		user-profiles.h \
-	test-battery.c		test-battery.h	\
-	run-passwd.c		run-passwd.h	\
-	user-password.c		user-password.h
+mate_users_admin_LDADD = $(GST_TOOL_LIBS) 
+mate_users_admin_DEPENDENCIES = $(GST_TOOL_DEPENDENCIES) 
+mate_users_admin_SOURCES = \
+	main.c \
+	passwd.c \passwd.h \
+	users-tool.c \
+	users-tool.h \
+	callbacks.c \
+	callbacks.h \
+	user-settings.c \
+	user-settings.h \
+	group-settings.c \
+	group-settings.h \
+	users-table.c \
+	users-table.h \
+	groups-table.c \
+	groups-table.h \
+	table.c \
+	table.h \
+	privileges-table.c \
+	privileges-table.h \
+	group-members-table.c \
+	group-members-table.h \
+	user-profiles.c \
+	user-profiles.h \
+	test-battery.c \
+	test-battery.h \
+	run-passwd.c \
+	run-passwd.h \
+	user-password.c \
+	user-password.h
 
 toolpixmaps =
 

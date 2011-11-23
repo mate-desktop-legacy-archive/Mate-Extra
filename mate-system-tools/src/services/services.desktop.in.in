@@ -2,7 +2,7 @@
 Version=1.0
 _Name=Services
 _Comment=Configure which services will be run when the system starts
-Exec=services-admin
+Exec=mate-services-admin
 Icon=network-server
 Terminal=false
 Type=Application

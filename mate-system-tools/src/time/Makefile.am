@@ -18,10 +18,14 @@ EXTRA_DIST = $(GST_TOOL_EXTRA_DIST)
 mate_time_admin_LDADD = $(GST_TOOL_LIBS) $(DBUS_LIBS) ./e-map/libemap.a
 mate_time_admin_DEPENDENCIES = $(GST_TOOL_DEPENDENCIES) ./e-map/libemap.a
 mate_time_admin_SOURCES = \
-	time-tool.c	time-tool.h \
-	tz.c		tz.h \
-	tz-map.c	tz-map.h \
-	ntp-servers-list.c	ntp-servers-list.h	\
+	time-tool.c \
+	time-tool.h \
+	tz.c \
+	tz.h \
+	tz-map.c \
+	tz-map.h \
+	ntp-servers-list.c \
+	ntp-servers-list.h \
 	main.c
 
 toolpixmaps =

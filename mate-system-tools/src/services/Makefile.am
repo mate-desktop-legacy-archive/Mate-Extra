@@ -8,22 +8,27 @@
 include ../common/CommonMakefile
 
 toolname = services
-bin_PROGRAMS = services-admin
+bin_PROGRAMS = mate-services-admin
 
 ## SUBDIRS =
 INCLUDES += $(GST_TOOL_CFLAGS)
 CLEANFILES = $(GST_TOOL_CLEANFILES)
 EXTRA_DIST = $(GST_TOOL_EXTRA_DIST)
 
-services_admin_LDADD = $(GST_TOOL_LIBS)
-services_admin_DEPENDENCIES = $(GST_TOOL_DEPENDENCIES)
-services_admin_SOURCES = \
-	main.c                              \
-	callbacks.c 		callbacks.h     \
-	service.c		service.h	\
-	table.c			table.h	\
-	service-settings-table.c service-settings-table.h \
-	services-tool.c		services-tool.h
+mate_services_admin_LDADD = $(GST_TOOL_LIBS)
+mate_services_admin_DEPENDENCIES = $(GST_TOOL_DEPENDENCIES)
+mate_services_admin_SOURCES = \
+	main.c \
+	callbacks.c \
+	callbacks.h \
+	service.c \
+	service.h \
+	table.c \
+	table.h \
+	service-settings-table.c \
+	service-settings-table.h \
+	services-tool.c \
+	services-tool.h
 
 toolpixmaps =
 

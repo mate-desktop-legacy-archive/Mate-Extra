@@ -8,7 +8,7 @@
 include ../common/CommonMakefile
 
 toolname = shares
-bin_PROGRAMS = shares-admin
+bin_PROGRAMS = mate-shares-admin
 
 if BUILD_CAJA
 SUBDIRS = caja
@@ -18,9 +18,9 @@ INCLUDES += $(GST_TOOL_CFLAGS)
 CLEANFILES = $(GST_TOOL_CLEANFILES)
 EXTRA_DIST = $(GST_TOOL_EXTRA_DIST)
 
-shares_admin_LDADD = $(GST_TOOL_LIBS) 
-shares_admin_DEPENDENCIES = $(GST_TOOL_DEPENDENCIES)
-shares_admin_SOURCES = \
+mate_shares_admin_LDADD = $(GST_TOOL_LIBS) 
+mate_shares_admin_DEPENDENCIES = $(GST_TOOL_DEPENDENCIES)
+mate_shares_admin_SOURCES = \
 	table.c table.h \
 	users-table.c users-table.h \
 	nfs-acl-table.c nfs-acl-table.h \

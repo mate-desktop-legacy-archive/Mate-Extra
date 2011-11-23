@@ -8,31 +8,39 @@
 include ../common/CommonMakefile
 
 toolname = network
-bin_PROGRAMS = network-admin
+bin_PROGRAMS = mate-network-admin
 
 ## SUBDIRS =
 INCLUDES += $(GST_TOOL_CFLAGS) $(DBUS_CFLAGS) $(GIO_CFLAGS)
 CLEANFILES = $(GST_TOOL_CLEANFILES)
 EXTRA_DIST = $(GST_TOOL_EXTRA_DIST)
 
-network_admin_LDADD = $(GST_TOOL_LIBS) $(GST_IW_LIBS) $(DBUS_LIBS) $(GIO_LIBS)
-network_admin_DEPENDENCIES = $(GST_TOOL_DEPENDENCIES)
+mate_network_admin_LDADD = $(GST_TOOL_LIBS) $(GST_IW_LIBS) $(DBUS_LIBS) $(GIO_LIBS)
+mate_network_admin_DEPENDENCIES = $(GST_TOOL_DEPENDENCIES)
 
 if HAVE_LIBIW_H
 essid_SOURCES = essid-list.c essid-list.h
 endif
 
-network_admin_SOURCES = \
-	$(essid_SOURCES)				\
-	nm-integration.c nm-integration.h	\
-	address-list.c	address-list.h		\
-	network-locations.c network-locations.h	\
-	network-tool.c network-tool.h		\
-	locations-combo.c locations-combo.h	\
-	ifaces-list.c ifaces-list.h		\
-	callbacks.c callbacks.h			\
-	connection.c connection.h		\
-	hosts.c hosts.h				\
+mate_network_admin_SOURCES = \
+	$(essid_SOURCES) \
+	nm-integration.c \
+	nm-integration.h \
+	address-list.c \
+	address-list.h \
+	network-locations.c \
+	network-locations.h \
+	network-tool.c \
+	network-tool.h \
+	locations-combo.c \
+	locations-combo.h \
+	ifaces-list.c \
+	ifaces-list.h \
+	callbacks.c \
+	callbacks.h \
+	connection.c \
+	connection.h \
+	hosts.c hosts.h \
 	main.c
 
 toolpixmaps =

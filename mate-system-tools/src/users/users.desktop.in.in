@@ -2,7 +2,7 @@
 Version=1.0
 _Name=Users and Groups
 _Comment=Add or remove users and groups
-Exec=users-admin
+Exec=mate-users-admin
 Icon=config-users
 Terminal=false
 Type=Application

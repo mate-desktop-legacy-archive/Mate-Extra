@@ -2,7 +2,7 @@
 Version=1.0
 _Name=Network
 _Comment=Configure network devices and connections
-Exec=network-admin
+Exec=mate-network-admin
 Icon=preferences-system-network
 Terminal=false
 Type=Application

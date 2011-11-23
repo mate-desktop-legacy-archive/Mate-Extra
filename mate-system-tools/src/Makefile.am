@@ -19,11 +19,11 @@ shares_SUBDIR = shares
 endif
 
 SUBDIRS = \
-	common			\
-	$(network_SUBDIR)	\
-	$(services_SUBDIR)	\
-	$(shares_SUBDIR)	\
-	$(time_SUBDIR)		\
+	common \
+	$(network_SUBDIR) \
+	$(services_SUBDIR) \
+	$(shares_SUBDIR) \
+	$(time_SUBDIR) \
 	$(users_SUBDIR)
 
 -include $(top_srcdir)/git.mk
