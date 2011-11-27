@@ -1,9 +1,9 @@
 
-bin_PROGRAMS = bluetooth-applet
+bin_PROGRAMS = mate-bluetooth-applet
 
-bluetooth_applet_SOURCES = main.c notify.h notify.c agent.h agent.c
+mate_bluetooth_applet_SOURCES = main.c notify.h notify.c agent.h agent.c
 
-bluetooth_applet_LDADD = $(top_builddir)/lib/libcommon.la $(top_builddir)/lib/libmate-bluetooth.la $(APPLET_LIBS)
+mate_bluetooth_applet_LDADD = $(top_builddir)/lib/libcommon.la $(top_builddir)/lib/libmate-bluetooth.la $(APPLET_LIBS)
 
 noinst_PROGRAMS = test-agentdialog test-icon
 
@@ -17,15 +17,15 @@ AM_CFLAGS = $(APPLET_CFLAGS) $(WARN_CFLAGS) $(DISABLE_DEPRECATED) -DPKGDATADIR="
 
 INCLUDES = -I$(top_srcdir)/lib
 
-man_MANS = bluetooth-applet.1
+man_MANS = mate-bluetooth-applet.1
 
 ui_DATA = popup-menu.ui authorisation-dialogue.ui confirm-dialogue.ui passkey-dialogue.ui
 uidir = $(pkgdatadir)
 
 autostartdir = $(sysconfdir)/xdg/autostart
 
-autostart_in_in_files = bluetooth-applet.desktop.in.in
-autostart_in_files = bluetooth-applet.desktop.in
+autostart_in_in_files = mate-bluetooth-applet.desktop.in.in
+autostart_in_files = mate-bluetooth-applet.desktop.in
 
 autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
 

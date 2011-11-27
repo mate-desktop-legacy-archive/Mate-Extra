@@ -1,25 +1,21 @@
-.TH BLUETOOTH-SENDTO 1 "Oct 4, 2006" "mate-bluetooth" "Linux User's Manual"
+.TH BLUETOOTH-APPLET 1 "Oct 4, 2006" "bluez-mate" "Linux User's Manual"
 .SH NAME
-bluetooth-sendto - GTK application for transfering files over Bluetooth
+mate-bluetooth-applet - MATE applet for prompting the user for a Bluetooth passkey (PIN)
 .SH SYNOPSIS
-.B bluetooth-sendto
-[\--device=XX:XX:XX:XX:XX:XX] [file] [file...]
+.B mate-bluetooth-applet
 .SH DESCRIPTION
-.I bluetooth-sendto
-will display a dialog for transfering files over Bluetooth.
-.I bluetooth-sendto
-is part of mate-bluetooth, see also http://live.mate.org/MateBluetooth
+.I mate-bluetooth-applet
+will stay in your MATE panel as a Bluetooth icon and will pop up a dialog
+whenever a passkey (aka PIN) is required from the Linux Bluetooth stack.
+.I mate-bluetooth-applet
+is part of bluez-mate, see also http://www.bluez.org
 .SH OPTIONS
-.TP
-\--device
-Define the device address to send the file to
-.TP
-file
-The file(s) to send to the device
+.I mate-bluetooth-applet
+takes no options
 .SH AUTHOR
 Marcel Holtmann <marcel@holtmann.org>
 .SH LICENSE
-bluetooth-sendto is free software; you can redistribute it and/or modify it
+mate-bluetooth-applet is free software; you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the Free
 Software Foundation; either version 2 of the License, or (at your option)
 any later version.

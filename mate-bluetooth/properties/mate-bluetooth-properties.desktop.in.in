@@ -1,8 +1,8 @@
 [Desktop Entry]
 _Name=Bluetooth
-_Comment=Configure Bluetooth settings
+_Comment=Configure MATE Bluetooth settings
 Icon=bluetooth
-Exec=bluetooth-properties
+Exec=mate-bluetooth-properties
 Terminal=false
 Type=Application
 Categories=GTK;MATE;Settings;X-MATE-NetworkSettings;

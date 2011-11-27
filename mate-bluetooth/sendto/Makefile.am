@@ -11,13 +11,13 @@ AM_CFLAGS =                                     \
 	$(DISABLE_DEPRECATED)			\
 	$(WARN_CFLAGS)
 
-bin_PROGRAMS = bluetooth-sendto
+bin_PROGRAMS = mate-bluetooth-sendto
 
-bluetooth_sendto_SOURCES = main.c
+mate_bluetooth_sendto_SOURCES = main.c
 
-bluetooth_sendto_LDADD = $(top_builddir)/lib/libcommon.la $(top_builddir)/lib/libmate-bluetooth.la $(SENDTO_LIBS)
+mate_bluetooth_sendto_LDADD = $(top_builddir)/lib/libcommon.la $(top_builddir)/lib/libmate-bluetooth.la $(SENDTO_LIBS)
 
-man_MANS = bluetooth-sendto.1
+man_MANS = mate-bluetooth-sendto.1
 
 if HAVE_NST
 plugindir = $(libdir)/caja-sendto/plugins
