@@ -1,6 +1,6 @@
 [Desktop Entry]
 _Name=Bluetooth
-_Comment=Configure MATE Bluetooth settings
+_Comment=Configure Bluetooth settings
 Icon=bluetooth
 Exec=mate-bluetooth-properties
 Terminal=false
@@ -13,4 +13,3 @@ X-MATE-Bugzilla-Product=mate-bluetooth
 X-MATE-Bugzilla-Component=properties
 X-MATE-Bugzilla-Version=@VERSION@
 X-MATE-Bugzilla-OtherBinaries=bluetooth-sendto;bluetooth-wizard;
-
