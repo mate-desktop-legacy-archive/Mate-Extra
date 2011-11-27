@@ -1,9 +1,9 @@
 
 bin_PROGRAMS = mate-bluetooth-properties
 
-bluetooth_properties_SOURCES = main.c general.h general.c adapter.h adapter.c
+mate_bluetooth_properties_SOURCES = main.c general.h general.c adapter.h adapter.c
 
-bluetooth_properties_LDADD = $(top_builddir)/lib/libmate-bluetooth.la $(top_builddir)/lib/libcommon.la $(PROPS_LIBS)
+mate_bluetooth_properties_LDADD = $(top_builddir)/lib/libmate-bluetooth.la $(top_builddir)/lib/libcommon.la $(PROPS_LIBS)
 
 AM_CFLAGS = $(PROPS_CFLAGS) $(WARN_CFLAGS) $(DISABLE_DEPRECATED) -DPKGDATADIR="\"$(pkgdatadir)\""
 

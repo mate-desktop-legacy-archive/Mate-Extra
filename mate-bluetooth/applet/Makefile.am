@@ -1,9 +1,9 @@
 
 bin_PROGRAMS = mate-bluetooth-applet
 
-bluetooth_applet_SOURCES = main.c notify.h notify.c agent.h agent.c
+mate_bluetooth_applet_SOURCES = main.c notify.h notify.c agent.h agent.c
 
-bluetooth_applet_LDADD = $(top_builddir)/lib/libcommon.la $(top_builddir)/lib/libmate-bluetooth.la $(APPLET_LIBS)
+mate_bluetooth_applet_LDADD = $(top_builddir)/lib/libcommon.la $(top_builddir)/lib/libmate-bluetooth.la $(APPLET_LIBS)
 
 noinst_PROGRAMS = test-agentdialog test-icon
 
