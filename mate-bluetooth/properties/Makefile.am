@@ -1,5 +1,5 @@
 
-bin_PROGRAMS = bluetooth-properties
+bin_PROGRAMS = mate-bluetooth-properties
 
 bluetooth_properties_SOURCES = main.c general.h general.c adapter.h adapter.c
 
@@ -9,11 +9,11 @@ AM_CFLAGS = $(PROPS_CFLAGS) $(WARN_CFLAGS) $(DISABLE_DEPRECATED) -DPKGDATADIR="\
 
 INCLUDES = -I$(top_srcdir)/lib
 
-man_MANS = bluetooth-properties.1
+man_MANS = mate-bluetooth-properties.1
 
 desktopdir = $(datadir)/applications
-desktop_in_in_files = bluetooth-properties.desktop.in.in
-desktop_in_files = bluetooth-properties.desktop.in
+desktop_in_in_files = mate-bluetooth-properties.desktop.in.in
+desktop_in_files = mate-bluetooth-properties.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 

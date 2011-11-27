@@ -202,9 +202,9 @@ AC_OUTPUT(Makefile
 	  lib/Makefile
 	  lib/plugins/Makefile
 	  applet/Makefile
-	  applet/bluetooth-applet.desktop.in
+	  applet/mate-bluetooth-applet.desktop.in
 	  properties/Makefile
-	  properties/bluetooth-properties.desktop.in
+	  properties/mate-bluetooth-properties.desktop.in
 	  wizard/Makefile
 	  sendto/Makefile
 	  moblin/Makefile
