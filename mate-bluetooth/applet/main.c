@@ -87,7 +87,7 @@ void quit_callback(GObject *widget, gpointer user_data)
 
 void settings_callback(GObject *widget, gpointer user_data)
 {
-	const char *command = "bluetooth-properties";
+	const char *command = "mate-bluetooth-properties";
 
 	if (!g_spawn_command_line_async(command, NULL))
 		g_printerr("Couldn't execute command: %s\n", command);
@@ -256,7 +256,7 @@ static void sound_callback(GObject *widget, gpointer user_data)
 
 void wizard_callback(GObject *widget, gpointer user_data)
 {
-	const char *command = "bluetooth-wizard";
+	const char *command = "mate-bluetooth-wizard";
 
 	if (!g_spawn_command_line_async(command, NULL))
 		g_printerr("Couldn't execute command: %s\n", command);
