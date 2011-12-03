@@ -1,5 +1,5 @@
 pkgname=mate-video-player
-pkgver=2011.08.31
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="A MATE integrated movie player based on Gstreamer."
 arch=(i686 x86_64)

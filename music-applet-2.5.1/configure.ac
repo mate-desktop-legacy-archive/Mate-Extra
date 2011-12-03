@@ -3,7 +3,7 @@ dnl Preamble
 dnl
 
 AC_PREREQ(2.53)
-AC_INIT([music-applet], [2.5.1], [paul@kuliniewicz.org])
+AC_INIT([music-applet], [2011.12.01], [paul@kuliniewicz.org])
 AM_INIT_AUTOMAKE
 
 AC_CONFIG_SRCDIR([src/music-applet])

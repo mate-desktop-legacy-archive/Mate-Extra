@@ -2,7 +2,7 @@
 
 # fill it
 pkgname=mate-indicator-applet
-pkgver=2011.10.14
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="The MATE Indicator Applet"
 #depends="gstreamer0.10-base-plugins, mate-panel, mate-character-map, libgtop, libmatenotify, cpufrequtils"

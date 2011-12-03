@@ -2,7 +2,7 @@
 
 # fill it
 pkgname=python-mate-desktop
-pkgver=2011.10.19
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="Python binding for Mate Desktop"
 #depends="gstreamer0.10-base-plugins, mate-panel, mate-character-map, libgtop, libmatenotify, cpufrequtils"

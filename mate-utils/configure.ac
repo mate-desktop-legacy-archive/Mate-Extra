@@ -1,6 +1,6 @@
-m4_define([mate_utils_major], [2])
-m4_define([mate_utils_minor], [32])
-m4_define([mate_utils_micro], [0])
+m4_define([mate_utils_major], [2011])
+m4_define([mate_utils_minor], [12])
+m4_define([mate_utils_micro], [01])
 
 m4_define([mate_utils_version], [mate_utils_major.mate_utils_minor.mate_utils_micro])
 

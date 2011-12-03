@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT(caja-sendto, 2.32.0, http://www.mate.org)
+AC_INIT(caja-sendto, 2011.12.01, http://www.mate-desktop.org)
 AM_CONFIG_HEADER(config.h)
 
 AM_INIT_AUTOMAKE([1.9 dist-bzip2 no-dist-gzip check-news])

@@ -1,8 +1,8 @@
 AC_PREREQ(2.62)
 
-m4_define(totem_version_major, 2)
-m4_define(totem_version_minor, 32)
-m4_define(totem_version_micro, 0)
+m4_define(totem_version_major, 2011)
+m4_define(totem_version_minor, 12)
+m4_define(totem_version_micro, 01)
 
 AC_INIT([totem-pl-parser],
         [totem_version_major.totem_version_minor.totem_version_micro],

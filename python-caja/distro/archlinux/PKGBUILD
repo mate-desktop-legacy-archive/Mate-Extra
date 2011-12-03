@@ -1,5 +1,5 @@
 pkgname=python-caja
-pkgver=2011.08.31
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="Python binding for Caja components"
 arch=('i686' 'x86_64')

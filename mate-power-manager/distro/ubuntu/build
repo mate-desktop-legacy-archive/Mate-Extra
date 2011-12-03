@@ -2,7 +2,7 @@
 
 # fill it
 pkgname=mate-power-manager
-pkgver=2011.08.31
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="Session daemon that makes it easy to manage your laptop or desktop system for Mate Desktop"
 

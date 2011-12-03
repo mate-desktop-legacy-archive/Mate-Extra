@@ -2,9 +2,9 @@
 AC_PREREQ(2.52)
 
 dnl the mate-python version number
-m4_define(mate_python_major_version, 2)
-m4_define(mate_python_minor_version, 28)
-m4_define(mate_python_micro_version, 1)
+m4_define(mate_python_major_version, 2011)
+m4_define(mate_python_minor_version, 12)
+m4_define(mate_python_micro_version, 01)
 m4_define(mate_python_version, dnl
   mate_python_major_version.mate_python_minor_version.mate_python_micro_version)
 

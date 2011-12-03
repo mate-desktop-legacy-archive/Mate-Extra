@@ -1,5 +1,5 @@
 AC_INIT([MateConf Editor],
-        [2.32.0],
+        [2011.12.01],
         [http://bugzilla.mate.org/enter_bug.cgi?product=mateconf-editor],
         [mateconf-editor])
 AC_CONFIG_SRCDIR([src/main.c])

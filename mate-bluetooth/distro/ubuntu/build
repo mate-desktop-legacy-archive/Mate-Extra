@@ -2,7 +2,7 @@
 
 # fill it
 pkgname=mate-bluetooth
-pkgver=2011.08.31
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="A collection of Bluetooth utilities and modules for MATE"
 #depends="gstreamer0.10-base-plugins, mate-panel, mate-character-map, libgtop, libmatenotify, cpufrequtils"

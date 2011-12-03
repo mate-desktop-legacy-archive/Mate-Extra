@@ -3,7 +3,7 @@
 # Contributor: Tobias Kieslich <tobias (at) archlinux.org>
 
 pkgname=xfce4-xfapplet-plugin
-pkgver=0.1.0
+pkgver=2011.12.01
 pkgrel=7
 pkgdesc="plugin that allows to use gnome applets in the Xfce4 panel"
 arch=('i686' 'x86_64')

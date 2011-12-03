@@ -1,5 +1,5 @@
 pkgname=mate-conf-editor
-pkgver=2011.08.31
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="A configuration database system editor"
 arch=(i686 x86_64)

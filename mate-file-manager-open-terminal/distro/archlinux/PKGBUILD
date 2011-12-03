@@ -1,5 +1,5 @@
 pkgname=mate-file-manager-open-terminal
-pkgver=2011.08.31
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="An extension for opening terminals in arbitrary local paths"
 arch=('i686' 'x86_64')

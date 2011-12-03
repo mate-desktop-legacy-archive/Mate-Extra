@@ -2,7 +2,7 @@
 
 # fill it
 pkgname=python-corba
-pkgver=2011.08.31
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="Python binding for Mate CORBA"
 #depends="gstreamer0.10-base-plugins, mate-panel, mate-character-map, libgtop, libmatenotify, cpufrequtils"

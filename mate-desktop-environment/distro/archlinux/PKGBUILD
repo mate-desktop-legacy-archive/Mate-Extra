@@ -1,5 +1,5 @@
 pkgname=mate-desktop-environment
-pkgver=2011.11.17
+pkgver=2011.12.01
 pkgrel=2
 pkgdesc="MATE Desktop Environment base"
 arch=('any')

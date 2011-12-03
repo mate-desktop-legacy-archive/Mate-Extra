@@ -1,5 +1,5 @@
 pkgname=mate-pl-parser
-pkgver=2011.08.31
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="Totem playlist parser library"
 arch=(i686 x86_64)

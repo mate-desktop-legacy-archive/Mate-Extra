@@ -1,5 +1,5 @@
 pkgname=python-corba
-pkgver=2011.08.31
+pkgver=2011.12.01
 pkgrel=1
 pkgdesc="Python binding for Mate CORBA"
 arch=('i686' 'x86_64')

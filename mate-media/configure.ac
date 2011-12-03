@@ -1,7 +1,7 @@
 AC_PREREQ(2.60)
 
 AC_INIT([mate-media],
-        [2.32.0],
+        [2011.12.01],
         [http://bugzilla.mate.org/enter_bug.cgi?product=mate-media])
 
 AC_CONFIG_AUX_DIR([build-aux])

@@ -1,4 +1,4 @@
-AC_INIT([PolicyKit-mate],[0.9.2],[mailto:david@fubar.dk],[PolicyKit-mate])
+AC_INIT([PolicyKit-mate],[2011.12.01],[mailto:david@fubar.dk],[PolicyKit-mate])
 
 AM_INIT_AUTOMAKE([1.9 foreign dist-bzip2 no-dist-gzip])
 
