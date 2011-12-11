@@ -1,6 +1,0 @@
-#!/bin/sh -e
-
-pkgname=mate-conf-editor
-
-/usr/sbin/mateconfpkg --uninstall ${pkgname}
-
