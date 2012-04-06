@@ -62,6 +62,17 @@ if test "x$GCC" = "xyes"; then
 fi
 changequote([,])dnl
 
+AH_TEMPLATE([PACKAGE])
+AH_TEMPLATE([VERSION])
+AH_TEMPLATE([HAVE_CATGETS])
+AH_TEMPLATE([HAVE_GETTEXT])
+AH_TEMPLATE([HAVE_LC_MESSAGES])
+AH_TEMPLATE([HAVE_STPCPY])
+AH_TEMPLATE([ENABLE_NLS])
+AH_TEMPLATE([HAVE_PTHREAD_H])
+AH_TEMPLATE([GETTEXT_PACKAGE])
+AH_TEMPLATE([HAVE_DB3_DB_H])
+
 dnl used to rename everything and support simultaneous installs.
 dnl not incremented for bugfix or unstable releases.
 MAJOR_VERSION=2
